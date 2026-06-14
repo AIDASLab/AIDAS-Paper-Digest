@@ -45,11 +45,13 @@ alter table paper_votes enable row level security;
 drop policy if exists "read votes" on paper_votes;
 create policy "read votes"
 on paper_votes for select
+to anon, authenticated
 using (true);
 
 drop policy if exists "insert votes" on paper_votes;
 create policy "insert votes"
 on paper_votes for insert
+to anon, authenticated
 with check (
   length(paper_id) > 0
   and length(voter_name) between 1 and 80
@@ -58,6 +60,7 @@ with check (
 drop policy if exists "delete votes" on paper_votes;
 create policy "delete votes"
 on paper_votes for delete
+to anon, authenticated
 using (true);
 
 alter table feedback_posts enable row level security;
@@ -65,31 +68,68 @@ alter table feedback_posts enable row level security;
 drop policy if exists "read feedback" on feedback_posts;
 create policy "read feedback"
 on feedback_posts for select
+to anon, authenticated
 using (true);
 
 drop policy if exists "insert feedback" on feedback_posts;
 create policy "insert feedback"
 on feedback_posts for insert
+to anon, authenticated
 with check (
   length(message) between 1 and 500
   and length(voter_name) between 1 and 80
 );
+
+drop policy if exists "update feedback" on feedback_posts;
+create policy "update feedback"
+on feedback_posts for update
+to anon, authenticated
+using (true)
+with check (
+  length(message) between 1 and 500
+  and length(voter_name) between 1 and 80
+);
+
+drop policy if exists "delete feedback" on feedback_posts;
+create policy "delete feedback"
+on feedback_posts for delete
+to anon, authenticated
+using (true);
 
 alter table paper_comments enable row level security;
 
 drop policy if exists "read paper comments" on paper_comments;
 create policy "read paper comments"
 on paper_comments for select
+to anon, authenticated
 using (true);
 
 drop policy if exists "insert paper comments" on paper_comments;
 create policy "insert paper comments"
 on paper_comments for insert
+to anon, authenticated
 with check (
   length(paper_id) > 0
   and length(message) between 1 and 500
   and length(voter_name) between 1 and 80
 );
+
+drop policy if exists "update paper comments" on paper_comments;
+create policy "update paper comments"
+on paper_comments for update
+to anon, authenticated
+using (true)
+with check (
+  length(paper_id) > 0
+  and length(message) between 1 and 500
+  and length(voter_name) between 1 and 80
+);
+
+drop policy if exists "delete paper comments" on paper_comments;
+create policy "delete paper comments"
+on paper_comments for delete
+to anon, authenticated
+using (true);
 ```
 
 This is intentionally permissive because the prototype has no real user identity. For stronger security, move vote writes behind a Supabase Edge Function or Cloudflare Worker that validates the shared password server-side.

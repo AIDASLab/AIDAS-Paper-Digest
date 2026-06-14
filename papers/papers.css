@@ -403,6 +403,32 @@ main {
   color: #1e293b;
 }
 
+.feedback-item .item-actions,
+.comment-item .item-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  color: inherit;
+}
+
+.feedback-item .item-actions button,
+.comment-item .item-actions button {
+  min-height: 24px;
+  padding: 0 7px;
+  color: #334155;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 720;
+}
+
+.feedback-item .item-actions button:hover,
+.comment-item .item-actions button:hover {
+  border-color: var(--blue);
+}
+
 .paper-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

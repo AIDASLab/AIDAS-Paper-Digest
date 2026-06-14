@@ -193,6 +193,10 @@ function saveLocalComments() {
   localStorage.setItem(localCommentsKey(), JSON.stringify([...state.comments.entries()]));
 }
 
+function isOwnItem(item) {
+  return state.unlocked && state.voterName && (item.voter_name || item.name) === state.voterName;
+}
+
 function renderFeedback() {
   if (!state.feedback.length) {
     feedbackList.innerHTML = `<p class="feedback-empty">No feedback yet.</p>`;
@@ -208,6 +212,16 @@ function renderFeedback() {
             <strong>${escapeHtml(item.voter_name || item.name || "AIDAS")}</strong>
             <span>${formatFeedbackDate(item.created_at)}</span>
           </div>
+          ${
+            isOwnItem(item)
+              ? `
+                <div class="item-actions">
+                  <button type="button" data-edit-feedback="${item.id}">Edit</button>
+                  <button type="button" data-delete-feedback="${item.id}">Delete</button>
+                </div>
+              `
+              : ""
+          }
         </article>
       `,
     )
@@ -306,6 +320,65 @@ async function postComment(paperId, message) {
   }
 }
 
+async function editComment(paperId, commentId) {
+  if (!requireAccess()) return;
+  const comments = state.comments.get(paperId) || [];
+  const comment = comments.find((item) => String(item.id) === String(commentId));
+  if (!comment || !isOwnItem(comment)) return;
+  const next = window.prompt("Edit comment", comment.message);
+  if (next === null) return;
+  const trimmed = next.trim();
+  if (!trimmed) return;
+
+  comment.message = trimmed;
+  renderPapers();
+
+  if (!state.supabase) {
+    saveLocalComments();
+    return;
+  }
+
+  const { error } = await state.supabase
+    .from("paper_comments")
+    .update({ message: trimmed })
+    .eq("id", commentId)
+    .eq("voter_name", state.voterName);
+  if (error) {
+    console.warn("Unable to edit paper comment", error);
+    await loadComments();
+    renderPapers();
+  }
+}
+
+async function deleteComment(paperId, commentId) {
+  if (!requireAccess()) return;
+  const comments = state.comments.get(paperId) || [];
+  const comment = comments.find((item) => String(item.id) === String(commentId));
+  if (!comment || !isOwnItem(comment)) return;
+  if (!window.confirm("Delete this comment?")) return;
+
+  const next = comments.filter((item) => String(item.id) !== String(commentId));
+  state.comments.set(paperId, next);
+  rebuildCommentCounts();
+  renderPapers();
+
+  if (!state.supabase) {
+    saveLocalComments();
+    return;
+  }
+
+  const { error } = await state.supabase
+    .from("paper_comments")
+    .delete()
+    .eq("id", commentId)
+    .eq("voter_name", state.voterName);
+  if (error) {
+    console.warn("Unable to delete paper comment", error);
+    await loadComments();
+    renderPapers();
+  }
+}
+
 async function postFeedback(message) {
   if (!requireAccess()) return;
   const trimmed = message.trim();
@@ -331,6 +404,59 @@ async function postFeedback(message) {
     .insert({ message: trimmed, voter_name: state.voterName });
   if (error) {
     console.warn("Unable to post feedback", error);
+    await loadFeedback();
+  }
+}
+
+async function editFeedback(feedbackId) {
+  if (!requireAccess()) return;
+  const feedback = state.feedback.find((item) => String(item.id) === String(feedbackId));
+  if (!feedback || !isOwnItem(feedback)) return;
+  const next = window.prompt("Edit feedback", feedback.message);
+  if (next === null) return;
+  const trimmed = next.trim();
+  if (!trimmed) return;
+
+  feedback.message = trimmed;
+  renderFeedback();
+
+  if (!state.supabase) {
+    saveLocalFeedback();
+    return;
+  }
+
+  const { error } = await state.supabase
+    .from("feedback_posts")
+    .update({ message: trimmed })
+    .eq("id", feedbackId)
+    .eq("voter_name", state.voterName);
+  if (error) {
+    console.warn("Unable to edit feedback", error);
+    await loadFeedback();
+  }
+}
+
+async function deleteFeedback(feedbackId) {
+  if (!requireAccess()) return;
+  const feedback = state.feedback.find((item) => String(item.id) === String(feedbackId));
+  if (!feedback || !isOwnItem(feedback)) return;
+  if (!window.confirm("Delete this feedback?")) return;
+
+  state.feedback = state.feedback.filter((item) => String(item.id) !== String(feedbackId));
+  renderFeedback();
+
+  if (!state.supabase) {
+    saveLocalFeedback();
+    return;
+  }
+
+  const { error } = await state.supabase
+    .from("feedback_posts")
+    .delete()
+    .eq("id", feedbackId)
+    .eq("voter_name", state.voterName);
+  if (error) {
+    console.warn("Unable to delete feedback", error);
     await loadFeedback();
   }
 }
@@ -592,6 +718,16 @@ function renderPapers() {
                                       <strong>${escapeHtml(comment.voter_name || comment.name || "AIDAS")}</strong>
                                       <span>${formatFeedbackDate(comment.created_at)}</span>
                                     </div>
+                                    ${
+                                      isOwnItem(comment)
+                                        ? `
+                                          <div class="item-actions">
+                                            <button type="button" data-edit-comment="${comment.id}" data-paper-id="${paper.id}">Edit</button>
+                                            <button type="button" data-delete-comment="${comment.id}" data-paper-id="${paper.id}">Delete</button>
+                                          </div>
+                                        `
+                                        : ""
+                                    }
                                   </article>
                                 `,
                               )
@@ -643,6 +779,18 @@ categoryTabs.addEventListener("click", (event) => {
 });
 
 paperGrid.addEventListener("click", (event) => {
+  const editCommentButton = event.target.closest("[data-edit-comment]");
+  if (editCommentButton) {
+    editComment(editCommentButton.dataset.paperId, editCommentButton.dataset.editComment);
+    return;
+  }
+
+  const deleteCommentButton = event.target.closest("[data-delete-comment]");
+  if (deleteCommentButton) {
+    deleteComment(deleteCommentButton.dataset.paperId, deleteCommentButton.dataset.deleteComment);
+    return;
+  }
+
   const voteButton = event.target.closest("[data-vote]");
   if (voteButton) {
     toggleVote(voteButton.dataset.vote);
@@ -726,6 +874,19 @@ feedbackForm.addEventListener("submit", (event) => {
 
 feedbackRefresh.addEventListener("click", () => {
   loadFeedback();
+});
+
+feedbackList.addEventListener("click", (event) => {
+  const editButton = event.target.closest("[data-edit-feedback]");
+  if (editButton) {
+    editFeedback(editButton.dataset.editFeedback);
+    return;
+  }
+
+  const deleteButton = event.target.closest("[data-delete-feedback]");
+  if (deleteButton) {
+    deleteFeedback(deleteButton.dataset.deleteFeedback);
+  }
 });
 
 gateForm.addEventListener("submit", async (event) => {
