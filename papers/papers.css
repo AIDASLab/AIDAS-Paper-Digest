@@ -804,6 +804,43 @@ main {
   color: #1e293b;
 }
 
+.comment-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 720;
+}
+
+.comment-pager div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.comment-pager button {
+  min-height: 26px;
+  padding: 0 8px;
+  color: #334155;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 720;
+}
+
+.comment-pager button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.comment-pager strong {
+  color: #334155;
+}
+
 .empty {
   grid-column: 1 / -1;
   padding: 32px;

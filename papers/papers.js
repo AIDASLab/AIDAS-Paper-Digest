@@ -10,6 +10,7 @@ const categories = [
 ];
 
 const PAGE_SIZE = 20;
+const COMMENTS_PAGE_SIZE = 10;
 
 const state = {
   category: "All",
@@ -24,6 +25,7 @@ const state = {
   view: "papers",
   voterName: localStorage.getItem("aidas-paper-voter") || "",
   commentCounts: new Map(),
+  commentPages: new Map(),
   comments: new Map(),
   openComments: new Set(),
   voteCounts: new Map(),
@@ -118,6 +120,14 @@ function voteCount(paperId) {
 
 function commentCount(paperId) {
   return state.commentCounts.get(paperId) || 0;
+}
+
+function commentPageFor(paperId, totalComments) {
+  const totalPages = Math.max(1, Math.ceil(totalComments / COMMENTS_PAGE_SIZE));
+  const current = state.commentPages.get(paperId) || 1;
+  const page = Math.min(Math.max(1, current), totalPages);
+  state.commentPages.set(paperId, page);
+  return page;
 }
 
 function localVoteKey() {
@@ -277,6 +287,7 @@ async function postComment(paperId, message) {
   const current = state.comments.get(paperId) || [];
   state.comments.set(paperId, [item, ...current].slice(0, 20));
   state.commentCounts.set(paperId, commentCount(paperId) + 1);
+  state.commentPages.set(paperId, 1);
   renderPapers();
 
   if (!state.supabase) {
@@ -636,6 +647,10 @@ function renderPapers() {
       const comments = state.comments.get(paper.id) || [];
       const commentsOpen = state.openComments.has(paper.id);
       const commentTotal = commentCount(paper.id);
+      const commentPage = commentPageFor(paper.id, comments.length);
+      const commentPageCount = Math.max(1, Math.ceil(comments.length / COMMENTS_PAGE_SIZE));
+      const commentStart = (commentPage - 1) * COMMENTS_PAGE_SIZE;
+      const visibleComments = comments.slice(commentStart, commentStart + COMMENTS_PAGE_SIZE);
       return `
         <article class="paper-card">
           <div class="paper-body">
@@ -685,8 +700,7 @@ function renderPapers() {
                     <div class="comment-list">
                       ${
                         comments.length
-                          ? comments
-                              .slice(0, 6)
+                          ? visibleComments
                               .map(
                                 (comment) => `
                                   <article class="comment-item">
@@ -712,6 +726,20 @@ function renderPapers() {
                           : `<p class="comment-empty">No comments yet.</p>`
                       }
                     </div>
+                    ${
+                      comments.length > COMMENTS_PAGE_SIZE
+                        ? `
+                          <div class="comment-pager">
+                            <span>${commentStart + 1}-${Math.min(commentStart + COMMENTS_PAGE_SIZE, comments.length)} of ${comments.length}</span>
+                            <div>
+                              <button type="button" data-comment-page="${commentPage - 1}" data-paper-id="${paper.id}" ${commentPage === 1 ? "disabled" : ""}>Prev</button>
+                              <strong>${commentPage} / ${commentPageCount}</strong>
+                              <button type="button" data-comment-page="${commentPage + 1}" data-paper-id="${paper.id}" ${commentPage === commentPageCount ? "disabled" : ""}>Next</button>
+                            </div>
+                          </div>
+                        `
+                        : ""
+                    }
                   </section>
                 `
                 : ""
@@ -766,6 +794,13 @@ paperGrid.addEventListener("click", (event) => {
   const deleteCommentButton = event.target.closest("[data-delete-comment]");
   if (deleteCommentButton) {
     deleteComment(deleteCommentButton.dataset.paperId, deleteCommentButton.dataset.deleteComment);
+    return;
+  }
+
+  const commentPageButton = event.target.closest("[data-comment-page]");
+  if (commentPageButton && !commentPageButton.disabled) {
+    state.commentPages.set(commentPageButton.dataset.paperId, Number(commentPageButton.dataset.commentPage));
+    renderPapers();
     return;
   }
 
