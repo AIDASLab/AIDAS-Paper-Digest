@@ -11,6 +11,7 @@ const categories = [
 
 const PAGE_SIZE = 20;
 const COMMENTS_PAGE_SIZE = 10;
+const FEEDBACK_PAGE_SIZE = 10;
 
 const state = {
   category: "All",
@@ -31,6 +32,7 @@ const state = {
   voteCounts: new Map(),
   voted: new Set(),
   feedback: [],
+  feedbackPage: 1,
 };
 
 const aidasGate = document.querySelector("#aidasGate");
@@ -186,8 +188,12 @@ function renderFeedback() {
     feedbackList.innerHTML = `<p class="feedback-empty">No feedback yet.</p>`;
     return;
   }
-  feedbackList.innerHTML = state.feedback
-    .slice(0, 8)
+  const totalPages = Math.max(1, Math.ceil(state.feedback.length / FEEDBACK_PAGE_SIZE));
+  state.feedbackPage = Math.min(Math.max(1, state.feedbackPage), totalPages);
+  const start = (state.feedbackPage - 1) * FEEDBACK_PAGE_SIZE;
+  const visibleFeedback = state.feedback.slice(start, start + FEEDBACK_PAGE_SIZE);
+  feedbackList.innerHTML =
+    visibleFeedback
     .map(
       (item) => `
         <article class="feedback-item">
@@ -209,7 +215,19 @@ function renderFeedback() {
         </article>
       `,
     )
-    .join("");
+      .join("") +
+    (state.feedback.length > FEEDBACK_PAGE_SIZE
+      ? `
+        <div class="feedback-pager">
+          <span>${start + 1}-${Math.min(start + FEEDBACK_PAGE_SIZE, state.feedback.length)} of ${state.feedback.length}</span>
+          <div>
+            <button type="button" data-feedback-page="${state.feedbackPage - 1}" ${state.feedbackPage === 1 ? "disabled" : ""}>Prev</button>
+            <strong>${state.feedbackPage} / ${totalPages}</strong>
+            <button type="button" data-feedback-page="${state.feedbackPage + 1}" ${state.feedbackPage === totalPages ? "disabled" : ""}>Next</button>
+          </div>
+        </div>
+      `
+      : "");
 }
 
 function escapeHtml(value) {
@@ -377,6 +395,7 @@ async function postFeedback(message) {
     voter_name: state.voterName,
     created_at: new Date().toISOString(),
   };
+  state.feedbackPage = 1;
   state.feedback = [item, ...state.feedback].slice(0, 20);
   renderFeedback();
   feedbackInput.value = "";
@@ -890,6 +909,13 @@ feedbackRefresh.addEventListener("click", () => {
 });
 
 feedbackList.addEventListener("click", (event) => {
+  const pageButton = event.target.closest("[data-feedback-page]");
+  if (pageButton && !pageButton.disabled) {
+    state.feedbackPage = Number(pageButton.dataset.feedbackPage);
+    renderFeedback();
+    return;
+  }
+
   const editButton = event.target.closest("[data-edit-feedback]");
   if (editButton) {
     editFeedback(editButton.dataset.editFeedback);

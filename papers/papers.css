@@ -429,6 +429,47 @@ main {
   border-color: var(--blue);
 }
 
+.feedback-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-weight: 720;
+}
+
+.feedback-pager div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.feedback-pager button {
+  min-height: 28px;
+  padding: 0 8px;
+  color: #334155;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 720;
+}
+
+.feedback-pager button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.feedback-pager strong {
+  color: #334155;
+}
+
 .paper-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
