@@ -84,13 +84,15 @@ function thumbnailUrl(paper) {
 
 function fallbackThumbnail(paper) {
   const categoryLabel = categoryFor(paper);
+  const safeCategory = escapeHtml(categoryLabel);
+  const safeTitle = escapeHtml(paper.title).slice(0, 96);
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420">
       <rect width="600" height="420" fill="#eef2f7"/>
       <rect x="30" y="30" width="540" height="360" rx="18" fill="#ffffff" stroke="#d8e0ea"/>
-      <text x="58" y="82" font-family="Arial" font-size="24" font-weight="700" fill="#2563eb">${categoryLabel}</text>
+      <text x="58" y="82" font-family="Arial" font-size="24" font-weight="700" fill="#2563eb">${safeCategory}</text>
       <foreignObject x="58" y="116" width="484" height="190">
-        <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial;font-size:34px;font-weight:800;line-height:1.12;color:#111827;overflow-wrap:anywhere">${paper.title.slice(0, 72)}</div>
+        <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial;font-size:34px;font-weight:800;line-height:1.12;color:#111827;overflow-wrap:anywhere">${safeTitle}</div>
       </foreignObject>
       <text x="58" y="350" font-family="Arial" font-size="22" fill="#64748b">AIDAS Paper Digest</text>
     </svg>
@@ -527,10 +529,11 @@ function renderPapers() {
       const comments = state.comments.get(paper.id) || [];
       const commentsOpen = state.openComments.has(paper.id);
       const commentTotal = commentCount(paper.id);
+      const fallback = fallbackThumbnail(paper);
       return `
         <article class="paper-card">
           <a class="thumb-link" href="${paperUrl(paper)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${paper.title}">
-            <img class="thumb" src="${thumbnailUrl(paper)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${fallbackThumbnail(paper)}';" />
+            <img class="thumb" src="${thumbnailUrl(paper)}" alt="" loading="lazy" data-fallback="${fallback}" onerror="this.onerror=null;this.src=this.dataset.fallback;" />
           </a>
           <div class="paper-body">
             <div class="card-head">

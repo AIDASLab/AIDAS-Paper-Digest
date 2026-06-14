@@ -488,18 +488,39 @@ main {
 }
 
 .thumb-link {
+  position: relative;
   display: block;
   min-width: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(15, 159, 110, 0.1)),
+    var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.thumb-link::before {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #475569;
+  content: "AIDAS Paper";
+  font-size: 11px;
+  font-weight: 820;
+  letter-spacing: 0;
 }
 
 .thumb {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   aspect-ratio: 1.2;
   object-fit: cover;
-  background: var(--surface-2);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
 }
 
 .paper-body {
