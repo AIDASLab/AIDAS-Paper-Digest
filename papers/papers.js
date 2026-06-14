@@ -58,6 +58,11 @@ function categoryFor(paper) {
   return paper.category || paper.categories?.[0] || "Language Modeling";
 }
 
+function categoriesFor(paper) {
+  const values = paper.categories?.length ? paper.categories : [categoryFor(paper)];
+  return [...new Set(values)].filter(Boolean);
+}
+
 function paperUrl(paper) {
   if (paper.paper) return paper.paper;
   if (paper.url_abs) return paper.url_abs;
@@ -514,12 +519,13 @@ async function toggleVote(paperId) {
 }
 
 function matchesPaper(paper) {
-  const categoryMatch = state.category === "All" || categoryFor(paper) === state.category;
+  const categories = categoriesFor(paper);
+  const categoryMatch = state.category === "All" || categories.includes(state.category);
   const newestMatch = isWithinNewestWindow(paper);
   const haystack = [
     paper.id,
     paper.title,
-    categoryFor(paper),
+    ...categories,
     paper.authors,
     paper.org,
     paper.summary,
@@ -584,7 +590,7 @@ function renderTabs() {
       const count =
         category === "All"
           ? state.papers.length
-          : state.papers.filter((paper) => categoryFor(paper) === category).length;
+          : state.papers.filter((paper) => categoriesFor(paper).includes(category)).length;
       return `
         <button class="tab" type="button" aria-pressed="${state.category === category}" data-category="${category}">
           ${category} · ${count}
@@ -649,7 +655,9 @@ function renderPapers() {
       const codeLink = paper.code
         ? `<a href="${paper.code}" target="_blank" rel="noopener noreferrer">Code</a>`
         : "";
-      const categoryPills = `<span class="category-pill">${categoryFor(paper)}</span>`;
+      const categoryPills = categoriesFor(paper)
+        .map((category) => `<span class="category-pill">${category}</span>`)
+        .join("");
       const votes = voteCount(paper.id);
       const voted = state.voted.has(paper.id);
       const comments = state.comments.get(paper.id) || [];
@@ -762,6 +770,7 @@ async function loadPapers() {
   state.papers = (Array.isArray(data) ? data : data.papers || []).map((paper) => ({
     ...paper,
     category: categoryFor(paper),
+    categories: categoriesFor(paper),
   }));
   await loadVotes();
   await loadComments();

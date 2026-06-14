@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T14:19:56.904Z",
+  "generatedAt": "2026-06-14T15:04:53.363Z",
   "sourceStats": {
     "seed": 180,
     "paperswithcode": 540,
@@ -32,7 +32,12 @@
       "sources": [
         "seed"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Vision/Multimodal",
+        "Robotics"
+      ]
     },
     {
       "id": "2606.13652",
@@ -58,7 +63,10 @@
         "seed",
         "arxiv"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "diffusiongemma",
@@ -82,7 +90,11 @@
       "sources": [
         "seed"
       ],
-      "category": "Frontier Training"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.13681",
@@ -109,7 +121,10 @@
         "arxiv",
         "huggingface"
       ],
-      "category": "Benchmark"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.13392",
@@ -129,14 +144,21 @@
         "long context",
         "serving",
         "arxiv",
-        "data / retrieval"
+        "data / retrieval",
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "seed",
         "arxiv",
         "huggingface"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Frontier Training",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.13673",
@@ -163,7 +185,11 @@
         "arxiv",
         "huggingface"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2510.09665",
@@ -188,7 +214,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving"
+      ]
     },
     {
       "id": "2606.09426",
@@ -213,7 +242,11 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Benchmark"
+      ]
     },
     {
       "id": "2606.13361",
@@ -236,7 +269,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving"
+      ]
     },
     {
       "id": "2505.11709",
@@ -256,13 +292,19 @@
         "dexterous manipulation",
         "robot data",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "frontier training"
       ],
       "sources": [
         "seed",
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2504.01941",
@@ -282,12 +324,17 @@
         "Autonomous Driving",
         "serving",
         "data / retrieval",
-        "robotics"
+        "robotics",
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.08063",
@@ -313,7 +360,11 @@
         "seed",
         "huggingface"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.13679",
@@ -333,14 +384,20 @@
         "interleaved generation",
         "vision/multimodal",
         "language modeling",
-        "arxiv"
+        "arxiv",
+        "robotics"
       ],
       "sources": [
         "seed",
         "arxiv",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal",
+        "Robotics"
+      ]
     },
     {
       "id": "2604.26176",
@@ -360,12 +417,17 @@
         "semantic cache",
         "RAG",
         "data / retrieval",
-        "benchmark"
+        "benchmark",
+        "frontier training"
       ],
       "sources": [
         "seed"
       ],
-      "category": "Data / Retrieval"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2606.12303",
@@ -391,7 +453,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2604.26837",
@@ -416,7 +481,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving"
+      ]
     },
     {
       "id": "2606.06003",
@@ -441,7 +509,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Data / Retrieval"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval"
+      ]
     },
     {
       "id": "2606.13289",
@@ -461,14 +532,20 @@
         "visual tokenizer",
         "serving",
         "vision/multimodal",
-        "arxiv"
+        "arxiv",
+        "frontier training"
       ],
       "sources": [
         "seed",
         "arxiv",
         "huggingface"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Serving"
+      ]
     },
     {
       "id": "2606.12243",
@@ -493,7 +570,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving"
+      ]
     },
     {
       "id": "2606.13662",
@@ -520,7 +600,10 @@
         "arxiv",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2603.19137",
@@ -540,12 +623,18 @@
         "spatial memory",
         "embodied VLM",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "seed"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
+      ]
     },
     {
       "id": "2604.02996",
@@ -571,7 +660,11 @@
         "seed",
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
     },
     {
       "id": "2506.01232",
@@ -596,7 +689,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Data / Retrieval"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval"
+      ]
     },
     {
       "id": "2606.06113",
@@ -622,7 +718,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2602.12159",
@@ -642,12 +741,18 @@
         "object navigation",
         "VLM reasoning",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "seed"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
+      ]
     },
     {
       "id": "2601.16462",
@@ -672,7 +777,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Data / Retrieval"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval"
+      ]
     },
     {
       "id": "2505.23705",
@@ -692,12 +800,19 @@
         "Image Understanding",
         "Language Modeling",
         "Robotics",
-        "serving"
+        "serving",
+        "vision/multimodal",
+        "robotics"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2606.13473",
@@ -723,7 +838,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.13106",
@@ -748,7 +866,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2511.01815",
@@ -773,7 +894,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving"
+      ]
     },
     {
       "id": "2606.11709",
@@ -796,7 +920,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2410.20724",
@@ -816,12 +943,18 @@
         "Language Modeling",
         "BERT",
         "Chain-of-Thought (CoT)",
-        "Few-shot prompting"
+        "Few-shot prompting",
+        "data / retrieval",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Data / Retrieval"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2508.10391",
@@ -846,7 +979,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Data / Retrieval"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval"
+      ]
     },
     {
       "id": "2606.13594",
@@ -872,7 +1008,11 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
+      ]
     },
     {
       "id": "2606.13174",
@@ -897,7 +1037,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2510.14827",
@@ -921,7 +1064,38 @@
       "sources": [
         "seed"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
+    },
+    {
+      "id": "2411.19548",
+      "title": "ReconDreamer: Crafting World Models for Driving Scene Reconstruction via Online Restoration",
+      "authors": "Chaojun Ni, Guosheng Zhao, Xiaofeng Wang, Zheng Zhu, Wenkang Qin, Guan Huang, Chen Liu, Yuyin Chen, Yida Wang, Xueyang Zhang, Yifei Zhan, Kun Zhan, Peng Jia, Xianpeng Lang, Xingang Wang, Wenjun Mei",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 80,
+      "paper": "https://arxiv.org/abs/2411.19548",
+      "source": "https://paperswithcode.co/paper/2411.19548",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Closed-loop simulation is crucial for end-to-end autonomous driving. Existing sensor simulation methods (e.g., NeRF and 3DGS) reconstruct driving scenes based on conditions that closely mirror training data distributions. However, these methods struggle with rendering novel trajectories, such as lane changes. Recent work, DriveDreamer4D, has demonstrated that integrating world model knowledge alleviates these issues. Although the training-free integration approach is efficient, it still struggles to render larger maneuvers, such as multi-lane shifts.Therefore, we introduce ReconDreamer, which enhances driving scene reconstruction through incremental integration of world model knowledge. Specifically, based on the world model, DriveRestorer is proposed to mitigate ghosting artifacts via online restoration. Additionally, we propose the progressive data update strategy to ensure high-quality rendering for larger maneuvers. Notably, ReconDreamer is the first method to effectively render in large maneuvers (e.g., across multiple lanes, spanning up to 6 meters). Additionally, experimental results demonstrate that ReconDreamer outperforms Street Gaussians in the NTA-IoU, NTL-IoU, and FID, with a relative improvement by 24.87%, 6.72%, and 29.97%. Furthermore, ReconDreamer surpasses DriveDreamer4D with PVG during large maneuver rendering, as verified by a relative improvement of 195.87% in the NTA-IoU metric and a comprehensive user study.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "Stable Diffusion",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2509.20499",
@@ -941,13 +1115,19 @@
         "topological graph",
         "MLLM",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "seed",
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2407.10805",
@@ -967,12 +1147,17 @@
         "Language Modeling",
         "Chain-of-Thought (CoT)",
         "data / retrieval",
-        "benchmark"
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Data / Retrieval"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.13672",
@@ -992,14 +1177,20 @@
         "robotic manipulation",
         "robotics",
         "benchmark",
-        "frontier training"
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "seed",
         "arxiv",
         "huggingface"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.10423",
@@ -1025,7 +1216,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Benchmark"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.13657",
@@ -1051,7 +1245,42 @@
         "seed",
         "arxiv"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2412.11198",
+      "title": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control",
+      "authors": "Mariam Hassan, Sebastian Stapf, Ahmad Rahimi, Pedro M B Rezende, Yasaman Haghighi, David Brüggemann, Isinsu Katircioglu, Lin Zhang, Xiaoran Chen, Suman Saha, Marco Cannici, Elie Aljalbout, Botao Ye, Xi Wang, Aram Davtyan, Mathieu Salzmann, Davide Scaramuzza, Marc Pollefeys, Paolo Favaro, Alexandre Alahi",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2412.11198",
+      "source": "https://paperswithcode.co/paper/2412.11198",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "We present GEM, a Generalizable Ego-vision Multimodal world model that predicts future frames using a reference frame, sparse features, human poses, and ego-trajectories. Hence, our model has precise control over object dynamics, ego-agent motion and human poses. GEM generates paired RGB and depth outputs for richer spatial understanding. We introduce autoregressive noise schedules to enable stable long-horizon generations. Our dataset is comprised of 4000+ hours of multimodal data across domains like autonomous driving, egocentric human activities, and drone flights. Pseudo-labels are used to get depth maps, ego-trajectories, and human poses. We use a comprehensive evaluation framework, including a new Control of Object Manipulation (COM) metric, to assess controllability. Experiments show GEM excels at generating diverse, controllable scenarios and temporal consistency over long generations. Code, models, and datasets are fully open-sourced.",
+      "matchedBy": [
+        "papers with code",
+        "Depth Anything",
+        "LoRa",
+        "PEFT",
+        "Stable Diffusion",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2606.08039",
@@ -1077,7 +1306,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Robotics"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.12360",
@@ -1103,7 +1335,42 @@
         "seed",
         "arxiv"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2403.06833",
+      "title": "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?",
+      "authors": "Egor Zverev, Sahar Abdelnabi, Soroush Tabesh, Mario Fritz, Christoph H. Lampert",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 77,
+      "paper": "https://arxiv.org/abs/2403.06833",
+      "source": "https://paperswithcode.co/paper/2403.06833",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Large Language Models (LLMs) show impressive results in numerous practical applications, but they lack essential safety features that are common in other areas of computer science, particularly an explicit separation of instructions and data. This makes them vulnerable to manipulations such as indirect prompt injections and generally unsuitable for safety-critical tasks. Surprisingly, there is currently no established definition or benchmark to quantify this phenomenon. In this work, we close this gap by introducing a formal measure for instruction-data separation for single-turn language models and an empirical variant that is calculable from a model’s outputs. We also present a new dataset, SEP, that allows estimating the measure for real-world models. Our results on various LLMs show that the problem of instruction-data separation is real: all models fail to achieve high separation, and canonical mitigation techniques, such as prompt engineering and fine-tuning, either fail to substantially improve separation or reduce model utility.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Few-shot prompting",
+        "GPT-3",
+        "QLoRA",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Robotics"
+      ]
     },
     {
       "id": "2606.08103",
@@ -1128,7 +1395,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
     },
     {
       "id": "2606.10896",
@@ -1153,7 +1423,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.12674",
@@ -1179,7 +1452,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.12451",
@@ -1199,13 +1475,17 @@
         "audit",
         "data / retrieval",
         "benchmark",
-        "frontier training"
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "seed",
         "huggingface"
       ],
-      "category": "Benchmark"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.13120",
@@ -1231,7 +1511,72 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2404.10775",
+      "title": "COMBO: Compositional World Models for Embodied Multi-Agent Cooperation",
+      "authors": "Hongxin Zhang, Zeyuan Wang, Qiushi Lyu, Zheyuan Zhang, Sunli Chen, Tianmin Shu, Behzad Dariush, Kwonjoon Lee, Yilun Du, Chuang Gan",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 72,
+      "paper": "https://arxiv.org/abs/2404.10775",
+      "source": "https://paperswithcode.co/paper/2404.10775",
+      "code": "",
+      "project": "https://embodied-agi",
+      "thumbnail": "https://paperswithcode.co/api/thumbnails/2404_10775_v1.jpg?fit=fit3",
+      "summary": "In this paper, we investigate the problem of embodied multi-agent cooperation, where decentralized agents must cooperate given only egocentric views of the world. To effectively plan in this setting, in contrast to learning world dynamics in a single-agent scenario, we must simulate world dynamics conditioned on an arbitrary number of agents' actions given only partial egocentric visual observations of the world. To address this issue of partial observability, we first train generative models to estimate the overall world state given partial egocentric observations. To enable accurate simulation of multiple sets of actions on this world state, we then propose to learn a compositional world model for multi-agent cooperation by factorizing the naturally composable joint actions of multiple agents and compositionally generating the video conditioned on the world state. By leveraging this compositional world model, in combination with Vision Language Models to infer the actions of other agents, we can use a tree search procedure to integrate these modules and facilitate online cooperative planning. We evaluate our methods on three challenging benchmarks with 2-4 agents. The results show our compositional world model is effective and the framework enables the embodied agents to cooperate efficiently with different agents across various tasks and an arbitrary number of agents, showing the promising future of our proposed methods. More videos can be found at \\url{https://embodied-agi.cs.umass.edu/combo/}.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "BERT",
+        "Classifier-free guidance",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "2410.23156",
+      "title": "VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning",
+      "authors": "Yichao Liang, Nishanth Kumar, Hao Tang, Adrian Weller, Joshua B. Tenenbaum, Tom Silver, Joao F. Henriques, Kevin Ellis",
+      "org": "",
+      "published": "ICLR 2025 Spotlight",
+      "score": 72,
+      "paper": "https://arxiv.org/abs/2410.23156",
+      "source": "https://paperswithcode.co/paper/2410.23156",
+      "code": "",
+      "project": "",
+      "thumbnail": "https://paperswithcode.co/api/thumbnails/2410_23156_v1.jpg?fit=fit3",
+      "summary": "Broadly intelligent agents should form task-specific abstractions that selectively expose the essential elements of a task, while abstracting away the complexity of the raw sensorimotor space. In this work, we present Neuro-Symbolic Predicates, a first-order abstraction language that combines the strengths of symbolic and neural knowledge representations. We outline an online algorithm for inventing such predicates and learning abstract world models. We compare our approach to hierarchical reinforcement learning, vision-language model planning, and symbolic predicate invention approaches, on both in- and out-of-distribution tasks across five simulated robotic domains. Results show that our approach offers better sample complexity, stronger out-of-distribution generalization, and improved interpretability.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Reinforcement Learning",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2606.12385",
@@ -1255,7 +1600,10 @@
       "sources": [
         "seed"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2410.16713",
@@ -1275,12 +1623,16 @@
         "Few-shot prompting",
         "GPT-3",
         "LLaMa",
-        "benchmark"
+        "benchmark",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
     },
     {
       "id": "2606.08788",
@@ -1306,7 +1658,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Frontier Training"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2503.13446",
@@ -1326,12 +1681,17 @@
         "Robotics",
         "robotics",
         "vision/multimodal",
-        "benchmark"
+        "benchmark",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2505.16394",
@@ -1351,12 +1711,16 @@
         "Reinforcement Learning",
         "robotics",
         "benchmark",
-        "frontier training"
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2503.18278",
@@ -1376,12 +1740,19 @@
         "Image Understanding",
         "Language Modeling",
         "CLIP",
-        "Flash Attention"
+        "Flash Attention",
+        "vision/multimodal",
+        "serving"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2410.08368",
@@ -1401,12 +1772,19 @@
         "Grouped-Query Attention",
         "LLaVa",
         "Matryoshka representation learning (MRL)",
-        "Vision Transformer"
+        "Vision Transformer",
+        "vision/multimodal",
+        "benchmark"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.11096",
@@ -1432,7 +1810,36 @@
         "seed",
         "huggingface"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2406.19501",
+      "title": "Monitoring Latent World States in Language Models with Propositional Probes",
+      "authors": "Jiahai Feng, Stuart Russell, Jacob Steinhardt",
+      "org": "",
+      "published": "ICLR 2025 Spotlight",
+      "score": 70,
+      "paper": "https://arxiv.org/abs/2406.19501",
+      "source": "https://paperswithcode.co/paper/2406.19501",
+      "code": "",
+      "project": "",
+      "thumbnail": "https://paperswithcode.co/api/thumbnails/2406_19501_v1.jpg?fit=fit3",
+      "summary": "Language models (LMs) are susceptible to bias, sycophancy, backdoors, and other tendencies that lead to unfaithful responses to the input context. Interpreting internal states of LMs could help monitor and correct unfaithful behavior. We hypothesize that LMs faithfully represent their input contexts in a latent world model, and we seek to extract these latent world states as logical propositions. For example, given the input context ``Greg is a nurse. Laura is a physicist.'', we aim to decode the propositions WorksAs(Greg, nurse) and WorksAs(Laura, physicist) from the model's internal activations. To do so we introduce _propositional probes_, which compositionally extract lexical concepts from token activations and bind them into propositions. Key to this is identifying a _binding subspace_ in which bound tokens have high similarity (Greg $\\leftrightarrow$ nurse) but unbound ones do not (Greg $\\not\\leftrightarrow$ physicist). Despite only being trained on linguistically simple English templates, we find that propositional probes generalize to inputs written as short stories and translated to Spanish. Moreover, in three settings where LMs respond unfaithfully to the input context---prompt injections, backdoor attacks, and gender bias--- the decoded propositions remain faithful. This suggests that LMs often encode a faithful world model but decode it unfaithfully, which motivates the search for better interpretability tools for monitoring LMs.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2506.23075",
@@ -1452,12 +1859,16 @@
         "serving",
         "data / retrieval",
         "vision/multimodal",
-        "benchmark"
+        "benchmark",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
     },
     {
       "id": "2412.01441",
@@ -1477,12 +1888,46 @@
         "Chain-of-Thought (CoT)",
         "DQN",
         "Few-shot prompting",
-        "GPT-3"
+        "GPT-3",
+        "vision/multimodal",
+        "benchmark"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Benchmark",
+        "Frontier Training"
+      ]
+    },
+    {
+      "id": "2506.23468",
+      "title": "NavMorph: A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments",
+      "authors": "Xuan Yao, Junyu Gao, Changsheng Xu",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 69,
+      "paper": "https://arxiv.org/abs/2506.23468",
+      "source": "https://paperswithcode.co/paper/2506.23468",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Vision-and-Language Navigation in Continuous Environments (VLN-CE) requires agents to execute sequential navigation actions in complex environments guided by natural language instructions. Current approaches often struggle with generalizing to novel environments and adapting to ongoing changes during navigation. Inspired by human cognition, we present NavMorph, a self-evolving world model framework that enhances environmental understanding and decision-making in VLN-CE tasks. NavMorph employs compact latent representations to model environmental dynamics, equipping agents with foresight for adaptive planning and policy refinement. By integrating a novel Contextual Evolution Memory, NavMorph leverages scene-contextual information to support effective navigation while maintaining online adaptability. Extensive experiments demonstrate that our method achieves notable performance improvements on popular VLN-CE benchmarks. Code is available in the Supplementary Material.",
+      "matchedBy": [
+        "papers with code",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
+      ]
     },
     {
       "id": "2606.09304",
@@ -1507,7 +1952,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2410.03065",
@@ -1527,12 +1975,18 @@
         "Language Modeling",
         "Few-shot prompting",
         "GPT-3",
-        "Key-value cache"
+        "Key-value cache",
+        "serving",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.12575",
@@ -1558,7 +2012,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2501.18993",
@@ -1578,12 +2035,49 @@
         "Image super-resolution",
         "serving",
         "vision/multimodal",
-        "benchmark"
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
+      "id": "2509.13769",
+      "title": "AdaThinkDrive: Adaptive Thinking Via Reinforcement Learning for Autonomous Driving",
+      "authors": "Luo, Yuechen, Li, Fang, Xu, Shaoqing, Lai, Zhiyi, Yang, Lei, Chen, Qimao, Luo, Ziang, Xie, Zixun, Jiang, Shengyin, Liu, Jiaxin, Chen, Long, Wang, Bing, Yang, Zhi-Xin",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 67,
+      "paper": "https://arxiv.org/abs/2509.13769",
+      "source": "https://paperswithcode.co/paper/2509.13769",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "While reasoning technology like Chain-of-Thought (CoT) has been widely adopted in Vision-Language-Action (VLA) models, it demonstrates promising capabilities in end-to-end autonomous driving. However, recent efforts to integrate CoT reasoning often fall short in simple scenarios, introducing unnecessary computational overhead without improving decision quality. To address this, we propose AdaThinkDrive, a novel VLA framework with a dual-mode reasoning mechanism inspired by fast and slow thinking. First, our framework is pretrained on large-scale autonomous driving (AD) scenarios using both question-answering (QA) and trajectory datasets to acquire world knowledge and driving commonsense. During supervised fine-tuning (SFT), we introduce a two-mode dataset—fast answering (w/o CoT) and slow thinking (with CoT), enabling the model to distinguish between scenarios that require reasoning. Furthermore, an Adaptive Think Reward strategy is proposed in conjunction with the Group Relative Policy Optimization (GRPO), which rewards the model for selectively applying CoT by comparing trajectory quality across different reasoning modes. Extensive experiments on the Navsim benchmark show that AdaThinkDrive achieves a PDMS of 90.3, surpassing the best vision-only baseline by 1.7 points. Moreover, ablations show that AdaThinkDrive surpasses both the never-Think and always-Think baselines, improving PDMS by 2.0 and 1.4, respectively. It also reduces inference time by 14% compared to the always-Think baseline, demonstrating its ability to balance accuracy and efficiency through adaptive reasoning.",
+      "matchedBy": [
+        "papers with code",
+        "Question Answering",
+        "Reasoning",
+        "Reinforcement Learning",
+        "Robotics",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
+      ]
     },
     {
       "id": "2406.14595",
@@ -1603,12 +2097,18 @@
         "Gemini 1.5",
         "GPT-4",
         "Stable Diffusion",
-        "data / retrieval"
+        "data / retrieval",
+        "robotics",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Data / Retrieval"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2505.15660",
@@ -1628,12 +2128,19 @@
         "Language Modeling",
         "Robotics",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2410.05459",
@@ -1653,12 +2160,18 @@
         "Language Modeling",
         "Reasoning",
         "Adam",
-        "Chain-of-Thought (CoT)"
+        "Chain-of-Thought (CoT)",
+        "language modeling",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2507.13097",
@@ -1683,7 +2196,37 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
+      "id": "2408.11809",
+      "title": "Informed, Constrained, Aligned: A Field Analysis on Degeneracy-Aware Point Cloud Registration in the Wild (I)",
+      "authors": "Tuna, Turcan, Nubert, Julian, Pfreundschuh, Patrick, Cadena, Cesar, Khattak, Shehryar, Hutter, Marco",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 67,
+      "paper": "https://arxiv.org/abs/2408.11809",
+      "source": "https://paperswithcode.co/paper/2408.11809",
+      "code": "",
+      "project": "",
+      "thumbnail": "https://paperswithcode.co/api/thumbnails/2408_11809_v1.jpg?fit=fit3",
+      "summary": "The iterative closest point registration algorithm has been a preferred method for light detection and ranging LiDAR-based robot localization for nearly a decade. However, even in modern simultaneous localization and mapping (SLAM) solutions, ICP can degrade and become unreliable in geometrically ill-conditioned environments. In response, this work investigates and compares new and existing degeneracy mitigation methods for robust LiDAR-based localization and analyzes the efficacy of these approaches in degenerate environments for the first time in the literature at this scale. Specifically, this work investigates i) the effect of using active or passive degeneracy mitigation methods for the problem of ill-conditioned ICP in LiDAR degenerate environments and ii) the evaluation of truncated singular value decomposition (TSVD), inequality constraints (Ineq. Con.), and linear/nonlinear Tikhonov regularization for the application of degenerate point cloud registration for the first time. Furthermore, a sensitivity analysis for the least-squares minimization step of the ICP problem is carried out to better understand how each method affects the optimization and what to expect from each method. The results of the analysis are validated through multiple real-world robotic field and simulated experiments. The analysis demonstrates that active optimization degeneracy mitigation is necessary and advantageous in the absence of reliable external estimate assistance for LiDAR-SLAM.",
+      "matchedBy": [
+        "papers with code",
+        "SLAM and Localization",
+        "benchmark",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2505.05495",
@@ -1708,7 +2251,12 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
+      ]
     },
     {
       "id": "2606.11409",
@@ -1734,7 +2282,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Benchmark"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2410.19937",
@@ -1754,12 +2305,17 @@
         "Language Modeling",
         "serving",
         "benchmark",
-        "frontier training"
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
+      ]
     },
     {
       "id": "2502.14051",
@@ -1779,12 +2335,19 @@
         "Language Modeling",
         "Flash Attention",
         "Key-value cache",
-        "Multi-head attention"
+        "Multi-head attention",
+        "serving",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2503.18421",
@@ -1804,12 +2367,17 @@
         "3D generation",
         "Gaussian splatting",
         "serving",
-        "data / retrieval"
+        "data / retrieval",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving"
+      ]
     },
     {
       "id": "2411.16308",
@@ -1829,12 +2397,17 @@
         "3D semantic segmentation",
         "3D understanding",
         "Image segmentation",
-        "Key-value cache"
+        "Key-value cache",
+        "vision/multimodal",
+        "benchmark"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2502.09268",
@@ -1854,12 +2427,18 @@
         "Robotics",
         "Video generation",
         "Residual Block",
-        "ResNet"
+        "ResNet",
+        "robotics",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2411.15268",
@@ -1879,12 +2458,18 @@
         "Image Understanding",
         "Language Modeling",
         "CLIP",
-        "Few-shot prompting"
+        "Few-shot prompting",
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2405.16869",
@@ -1909,7 +2494,11 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2509.19480",
@@ -1929,12 +2518,19 @@
         "Omni models",
         "Robotics",
         "data / retrieval",
-        "robotics"
+        "robotics",
+        "vision/multimodal",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2606.00467",
@@ -1960,7 +2556,10 @@
         "seed",
         "huggingface"
       ],
-      "category": "Frontier Training"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2405.05956",
@@ -1980,12 +2579,19 @@
         "Image Understanding",
         "Language Modeling",
         "CLIP",
-        "GPT-4"
+        "GPT-4",
+        "language modeling",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2603.04448",
@@ -2005,12 +2611,18 @@
         "Agents",
         "Agent Skills",
         "ReAct",
-        "Residual Block"
+        "Residual Block",
+        "language modeling",
+        "data / retrieval"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
     },
     {
       "id": "2509.12594",
@@ -2030,12 +2642,51 @@
         "Robotics",
         "LLaMa",
         "LoRa",
-        "PEFT"
+        "PEFT",
+        "serving",
+        "robotics"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2506.00613",
+      "title": "WorldGym: World Model as An Environment for Policy Evaluation",
+      "authors": "Julian Hector Quevedo, Ansh Kumar Sharma, Yixiang Sun, Varad Suryavanshi, Percy Liang, Sherry Yang",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 66,
+      "paper": "https://arxiv.org/abs/2506.00613",
+      "source": "https://paperswithcode.co/paper/2506.00613",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Evaluating robot control policies is difficult: real-world testing is costly, and handcrafted simulators require manual effort to improve in realism and generality. We propose a world-model-based policy evaluation environment (WorldGym), an autoregressive, action-conditioned video generation model which serves as a proxy to real world environments. Policies are evaluated via Monte Carlo rollouts in the world model, with a vision-language model providing rewards. We evaluate a set of VLA-based real-robot policies in the world model using only initial frames from real robots, and show that policy success rates within the world model highly correlate with real-world success rates. Moreoever, we show that WorldGym is able to preserve relative policy rankings across different policy versions, sizes, and training checkpoints. Due to requiring only a single start frame as input, the world model further enables efficient evaluation of robot policies' generalization ability on novel tasks and environments. We find that modern VLA-based robot policies still struggle to distinguish object shapes and can become distracted by adversarial facades of objects. While generating highly realistic object interaction remains challenging, WorldGym faithfully emulates robot motions and offers a practical starting point for safe and reproducible policy evaluation before deployment.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Robotics",
+        "Video generation",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
+      ]
     },
     {
       "id": "2501.13072",
@@ -2055,12 +2706,16 @@
         "Autonomous Driving",
         "Reinforcement Learning",
         "robotics",
-        "benchmark"
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2503.02358",
@@ -2080,12 +2735,18 @@
         "Image Understanding",
         "Language Modeling",
         "Question Answering",
-        "Chain-of-Thought (CoT)"
+        "Chain-of-Thought (CoT)",
+        "vision/multimodal",
+        "benchmark"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2506.07639",
@@ -2105,12 +2766,50 @@
         "Reasoning",
         "Robotics",
         "Chain-of-Thought (CoT)",
-        "DeepSeek-R1"
+        "DeepSeek-R1",
+        "robotics",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
+      "id": "2503.17109",
+      "title": "Missing Target-Relevant Information Prediction with World Model for Accurate Zero-Shot Composed Image Retrieval",
+      "authors": "Yuanmin Tang, Jing Yu, Keke Gai, Jiamin Zhuang, Gang Xiong, Gaopeng Gou, Qi Wu",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2503.17109",
+      "source": "https://paperswithcode.co/paper/2503.17109",
+      "code": "https://github.com/Pter61/predicir",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Zero-Shot Composed Image Retrieval (ZS-CIR) involves diverse tasks with a broad range of visual content manipulation intent across domain, scene, object, and attribute. The key challenge for ZS-CIR tasks is to modify a reference image according to manipulation text to accurately retrieve a target image, especially when the reference image is missing essential target content. In this paper, we propose a novel prediction-based mapping network, named PrediCIR, to adaptively predict the missing target visual content in reference images in the latent space before mapping for accurate ZS-CIR. Specifically, a world view generation module first constructs a source view by omitting certain visual content of a target view, coupled with an action that includes the manipulation intent derived from existing image-caption pairs. Then, a target content prediction module trains a world model as a predictor to adaptively predict the missing visual information guided by user intention in manipulating text at the latent space. The two modules map an image with the predicted relevant information to a pseudo-word token without extra supervision. Our model shows strong generalization ability on six ZS-CIR tasks. It obtains consistent and significant performance boosts ranging from 1.73% to 4.45% over the best methods and achieves new state-of-the-art results on ZS-CIR. Our code is available at https://github.com/Pter61/predicir.",
+      "matchedBy": [
+        "papers with code",
+        "CLIP",
+        "Few-shot prompting",
+        "GPT-3",
+        "Residual Block",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
     },
     {
       "id": "2503.12382",
@@ -2135,7 +2834,11 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving"
+      ]
     },
     {
       "id": "2410.17194",
@@ -2155,12 +2858,17 @@
         "LLaMa",
         "Mamba",
         "RAG",
-        "data / retrieval"
+        "data / retrieval",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Data / Retrieval"
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2502.12216",
@@ -2180,12 +2888,17 @@
         "Language Modeling",
         "RoPE",
         "serving",
-        "data / retrieval"
+        "data / retrieval",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2505.17863",
@@ -2210,7 +2923,11 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Frontier Training"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2404.00242",
@@ -2230,12 +2947,76 @@
         "Language Modeling",
         "Chain-of-Thought (CoT)",
         "Few-shot prompting",
-        "Flash Attention"
+        "Flash Attention",
+        "serving",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2505.19239",
+      "title": "DriveX: Omni Scene Modeling for Learning Generalizable World Knowledge in Autonomous Driving",
+      "authors": "Chen Shi, Shaoshuai Shi, Kehua Sheng, Bo Zhang, Li Jiang",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2505.19239",
+      "source": "https://paperswithcode.co/paper/2505.19239",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Data-driven learning has advanced autonomous driving, yet task-specific models struggle with out-of-distribution scenarios due to their narrow optimization objectives and reliance on costly annotated data. We present DriveX, a self-supervised world model that learns generalizable scene dynamics and holistic representations (geometric, semantic, and motion) from large-scale driving videos. DriveX introduces Omni Scene Modeling (OSM), a module that unifies multimodal supervision--3D point cloud forecasting, 2D semantic representation, and image generation--to capture comprehensive scene evolution. To simplify learning complex dynamics, we propose a decoupled latent world modeling strategy that separates world representation learning from future state decoding, augmented by dynamic-aware ray sampling to enhance motion modeling. For downstream adaptation, we design Future Spatial Attention (FSA), a unified paradigm that dynamically aggregates spatiotemporal features from DriveX's predictions to enhance task-specific inference. Extensive experiments demonstrate DriveX's effectiveness: it achieves significant improvements in 3D future point cloud prediction over prior work, while attaining state-of-the-art results on diverse tasks including occupancy prediction, flow estimation, and end-to-end driving. These results validate DriveX's capability as a general-purpose world model, paving the way for robust and unified autonomous driving frameworks.",
+      "matchedBy": [
+        "papers with code",
+        "Autonomous Driving",
+        "Image generation",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2505.10075",
+      "title": "FlowDreamer: A RGB-D World Model with Flow-Based Motion Representations for Robot Manipulation",
+      "authors": "Guo, Jun, Ma, Xiaojian, Wang, Yikai, Yang, Min, Liu, Huaping, Li, Qing",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2505.10075",
+      "source": "https://paperswithcode.co/paper/2505.10075",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "This paper investigates training better visual world models for robot manipulation, i.e., models that can predict future visual observations by conditioning on past frames and robot actions. Specifically, we consider world models that operate on RGB-D frames (RGB-D world models). As opposed to canonical approaches that handle dynamics prediction mostly implicitly and reconcile it with visual rendering in a single model, we introduce FlowDreamer, which adopts 3D scene flow asexplicit motion representations. FlowDreamer first predicts 3D scene flow from past frame and action conditions with a U-Net, and then a diffusion model will predict the future frame utilizing the scene flow.FlowDreamer is trained end-to-end despite its modularized nature. We conduct experiments on 4 different benchmarks, covering both video prediction and visual planning tasks. The results demonstrate that FlowDreamer achieves better performance compared to other baseline RGB-D world models by 7% on semantic similarity, 11% on pixel quality, and 6% on success rate in various robot manipulation domains.",
+      "matchedBy": [
+        "papers with code",
+        "Diffusion",
+        "Key-value cache",
+        "Multi-head attention",
+        "MuZero",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
     },
     {
       "id": "2411.15432",
@@ -2255,12 +3036,19 @@
         "Image Understanding",
         "Language Modeling",
         "BERT",
-        "CLIP"
+        "CLIP",
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Serving"
+      ]
     },
     {
       "id": "2403.04348",
@@ -2284,7 +3072,10 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving"
+      ]
     },
     {
       "id": "2410.03618",
@@ -2304,12 +3095,17 @@
         "Reinforcement Learning",
         "robotics",
         "vision/multimodal",
-        "benchmark"
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2502.20853",
@@ -2329,12 +3125,17 @@
         "Key-value cache",
         "Multi-head attention",
         "Transformer",
-        "serving"
+        "serving",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Frontier Training"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Serving"
+      ]
     },
     {
       "id": "2502.14317",
@@ -2354,12 +3155,18 @@
         "Language Modeling",
         "GPT-4",
         "Key-value cache",
-        "LLaMa"
+        "LLaMa",
+        "serving",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2411.19036",
@@ -2382,7 +3189,10 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2505.11695",
@@ -2402,12 +3212,18 @@
         "Language Modeling",
         "QLoRA",
         "Qwen3",
-        "T5"
+        "T5",
+        "serving",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2502.14218",
@@ -2432,7 +3248,38 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2410.08822",
+      "title": "SOLD: Slot Object-Centric Latent Dynamics Models for Relational Manipulation Learning from Pixels",
+      "authors": "Malte Mosbach, Jan Niklas Ewertz, Angel Villar-Corrales, Sven Behnke",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2410.08822",
+      "source": "https://paperswithcode.co/paper/2410.08822",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Learning a latent dynamics model provides a task-agnostic representation of an agent's understanding of its environment. Leveraging this knowledge for model-based reinforcement learning (RL) holds the potential to improve sample efficiency over model-free methods by learning from imagined rollouts. Furthermore, because the latent space serves as input to behavior models, the informative representations learned by the world model facilitate efficient learning of desired skills. Most existing methods rely on holistic representations of the environment’s state. In contrast, humans reason about objects and their interactions, predicting how actions will affect specific parts of their surroundings. Inspired by this, we propose *Slot-Attention for Object-centric Latent Dynamics (SOLD)*, a novel model-based RL algorithm that learns object-centric dynamics models in an unsupervised manner from pixel inputs. We demonstrate that the structured latent space not only improves model interpretability but also provides a valuable input space for behavior models to reason over. Our results show that SOLD outperforms DreamerV3 and TD-MPC2 - state-of-the-art model-based RL algorithms - across a range of multi-object manipulation environments that require both relational reasoning and dexterous control. Videos and code are available at https:// slot-latent-dynamics.github.io.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
+      ]
     },
     {
       "id": "2502.18290",
@@ -2452,12 +3299,18 @@
         "Image Understanding",
         "Language Modeling",
         "CLIP",
-        "LLaVa"
+        "LLaVa",
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2503.02863",
@@ -2477,12 +3330,17 @@
         "Language Modeling",
         "serving",
         "data / retrieval",
-        "benchmark"
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
+      ]
     },
     {
       "id": "2501.08286",
@@ -2507,7 +3365,41 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2506.14198",
+      "title": "AMPLIFY: Actionless Motion Priors for Robot Learning from Videos",
+      "authors": "Collins, Jeremy, Cheng, Lorand, Aneja, Kunal, Wilcox, Albert, Joffe, Benjamin, Garg, Animesh",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2506.14198",
+      "source": "https://paperswithcode.co/paper/2506.14198",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Action-labeled data for robotics is scarce and expensive, limiting the generalization of learned policies. In contrast, vast amounts of action-free video data are readily available, but translating these observations into effective policies remains a challenge. We introduce AMPLIFY, a framework that leverages large-scale video data by encoding visual dynamics into compact, discrete motion tokens derived from keypoint trajectories. Our modular approach separates visual motion prediction from action inference, decoupling the challenges of learning what motion defines a task from how robots can perform it. We train a forward dynamics model on abundant action-free videos and an inverse dynamics model on a limited set of action-labeled examples, allowing for independent scaling. Extensive evaluations demonstrate our dynamics model achieves over 2× better point track prediction accuracy compared to the prior state-of-the-art. In downstream policy learning, our dynamics predictions enable a 1.2-2.2× success rate improvement in low-data regimes, a 1.4× average improvement by learning from action-free human videos, and the first generalization to LIBERO tasks with zero in-distribution action data. Beyond robotic control, we find the latent dynamics learned by AMPLIFY to enhance video prediction quality. Our results present a novel paradigm leveraging heterogeneous data sources to build efficient, generalizable world models.",
+      "matchedBy": [
+        "papers with code",
+        "CLIP",
+        "Few-shot prompting",
+        "GPT-3",
+        "GPT-4",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2411.17284",
@@ -2527,12 +3419,48 @@
         "Language Modeling",
         "Few-shot prompting",
         "GPT-3",
-        "GPT-4"
+        "GPT-4",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2512.12080",
+      "title": "BAgger: Backwards Aggregation for Mitigating Drift in Autoregressive Video Diffusion Models",
+      "authors": "Ryan Po, Eric Ryan Chan, Changan Chen, Gordon Wetzstein",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2512.12080",
+      "source": "https://paperswithcode.co/paper/2512.12080",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Autoregressive video models are promising for world modeling via next-frame prediction, but they suffer from exposure bias: a mismatch between training on clean contexts and inference on self-generated frames, causing errors to compound and quality to drift over time. We introduce Backwards Aggregation (BAgger), a self-supervised scheme that constructs corrective trajectories from the model's own rollouts, teaching it to recover from its mistakes. Unlike prior approaches that rely on few-step distillation and distribution-matching losses --which can hurt quality and diversity -- BAgger trains with standard score or flow matching objectives, avoiding large teachers and long-chain backpropagation through time. We instantiate BAgger on causal diffusion transformers and evaluate on text-to-video, video extension, and multi-prompt generation, observing more stable long-horizon motion and better visual consistency with reduced drift.",
+      "matchedBy": [
+        "papers with code",
+        "Video generation",
+        "Diffusion",
+        "Diffusion Transformer (DiT)",
+        "Flow matching",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Serving"
+      ]
     },
     {
       "id": "2506.21602",
@@ -2552,12 +3480,18 @@
         "Language Modeling",
         "Summarization",
         "T5",
-        "benchmark"
+        "benchmark",
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2507.00469",
@@ -2577,12 +3511,18 @@
         "Image Understanding",
         "Language Modeling",
         "Video classification",
-        "data / retrieval"
+        "data / retrieval",
+        "vision/multimodal",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2502.19958",
@@ -2602,12 +3542,18 @@
         "Image Understanding",
         "Language Modeling",
         "data / retrieval",
-        "vision/multimodal"
+        "vision/multimodal",
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2505.20948",
@@ -2627,12 +3573,75 @@
         "Reinforcement Learning",
         "GPT-4",
         "GRPO",
-        "Key-value cache"
+        "Key-value cache",
+        "language modeling",
+        "data / retrieval"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
+    },
+    {
+      "id": "2503.00653",
+      "title": "Discrete Codebook World Models for Continuous Control",
+      "authors": "Aidan Scannell, Mohammadreza Nakhaeinezhadfard, Kalle Kujanpää, Yi Zhao, Kevin Sebastian Luck, Arno Solin, Joni Pajarinen",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2503.00653",
+      "source": "https://paperswithcode.co/paper/2503.00653",
+      "code": "",
+      "project": "",
+      "thumbnail": "https://paperswithcode.co/api/thumbnails/2503_00653_v1.jpg?fit=fit3",
+      "summary": "In reinforcement learning (RL), world models serve as internal simulators, enabling agents to predict environment dynamics and future outcomes in order to make informed decisions. While previous approaches leveraging discrete latent spaces, such as DreamerV3, have demonstrated strong performance in discrete action settings and visual control tasks, their comparative performance in state-based continuous control remains underexplored. In contrast, methods with continuous latent spaces, such as TD-MPC2, have shown notable success in state-based continuous control benchmarks. In this paper, we demonstrate that modeling discrete latent states has benefits over continuous latent states and that discrete codebook encodings are more effective representations for continuous control, compared to alternative encodings, such as one-hot and label-based encodings. Based on these insights, we introduce DCWM: Discrete Codebook World Model, a self-supervised world model with a discrete and stochastic latent space, where latent states are codes from a codebook. We combine DCWM with decision-time planning to get our model-based RL algorithm, named DC-MPC: Discrete Codebook Model Predictive Control, which performs competitively against recent state-of-the-art algorithms, including TD-MPC2 and DreamerV3, on continuous control benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Key-value cache",
+        "Layer Normalization",
+        "Multi-head attention",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2503.08751",
+      "title": "Disentangled World Models: Learning to Transfer Semantic Knowledge from Distracting Videos for Reinforcement Learning",
+      "authors": "Qi Wang, Zhipeng Zhang, Baao Xie, Xin Jin, Yunbo Wang, Shiyu Wang, Liaomo Zheng, Xiaokang Yang, Wenjun Zeng",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2503.08751",
+      "source": "https://paperswithcode.co/paper/2503.08751",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Training visual reinforcement learning (RL) in practical scenarios presents a significant challenge, i.e., RL agents suffer from low sample efficiency in environments with variations. While various approaches have attempted to alleviate this issue by disentangled representation learning, these methods usually start learning from scratch without prior knowledge of the world. This paper, in contrast, tries to learn and understand underlying semantic variations from distracting videos via offline-to-online latent distillation and flexible disentanglement constraints. To enable effective cross-domain semantic knowledge transfer, we introduce an interpretable model-based RL framework, dubbed Disentangled World Models (DisWM). Specifically, we pretrain the action-free video prediction model offline with disentanglement regularization to extract semantic knowledge from distracting videos. The disentanglement capability of the pretrained model is then transferred to the world model through latent distillation. For finetuning in the online environment, we exploit the knowledge from the pretrained model and introduce a disentanglement constraint to the world model. During the adaptation phase, the incorporation of actions and rewards from online environment interactions enriches the diversity of the data, which in turn strengthens the disentangled representation learning. Experimental results validate the superiority of our approach on various benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2506.05735",
@@ -2652,12 +3661,17 @@
         "Language Modeling",
         "serving",
         "data / retrieval",
-        "benchmark"
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
     },
     {
       "id": "2509.13095",
@@ -2677,12 +3691,17 @@
         "Reinforcement Learning",
         "robotics",
         "vision/multimodal",
-        "benchmark"
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
+      ]
     },
     {
       "id": "2602.10825",
@@ -2702,12 +3721,18 @@
         "Video generation",
         "Diffusion Transformer (DiT)",
         "Flow matching",
-        "U-Net"
+        "U-Net",
+        "serving",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2505.13109",
@@ -2727,12 +3752,19 @@
         "Language Modeling",
         "Grouped-Query Attention",
         "RoPE",
-        "serving"
+        "serving",
+        "language modeling",
+        "data / retrieval"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
     },
     {
       "id": "2506.08822",
@@ -2752,12 +3784,18 @@
         "Image generation",
         "Robotics",
         "Time-series forecasting",
-        "serving"
+        "serving",
+        "robotics",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
     },
     {
       "id": "2504.04191",
@@ -2777,12 +3815,19 @@
         "Image Understanding",
         "Language Modeling",
         "Reinforcement Learning",
-        "CLIP"
+        "CLIP",
+        "language modeling",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2409.18084",
@@ -2807,7 +3852,12 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Robotics",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2501.02086",
@@ -2827,12 +3877,19 @@
         "Language Modeling",
         "Knowledge Distillation",
         "Multi-latent attention (MLA)",
-        "data / retrieval"
+        "data / retrieval",
+        "language modeling",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2506.16640",
@@ -2852,12 +3909,18 @@
         "Big Bird",
         "Key-value cache",
         "Multi-head attention",
-        "RoPE"
+        "RoPE",
+        "serving",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2509.25278",
@@ -2877,12 +3940,17 @@
         "serving",
         "data / retrieval",
         "vision/multimodal",
-        "benchmark"
+        "benchmark",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2502.00114",
@@ -2902,12 +3970,19 @@
         "Image Understanding",
         "Language Modeling",
         "Chain-of-Thought (CoT)",
-        "data / retrieval"
+        "data / retrieval",
+        "vision/multimodal",
+        "robotics"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2502.00706",
@@ -2927,12 +4002,16 @@
         "Language Modeling",
         "robotics",
         "benchmark",
-        "frontier training"
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2410.23703",
@@ -2952,12 +4031,47 @@
         "Document Understanding",
         "Language Modeling",
         "Reasoning",
-        "Reinforcement Learning"
+        "Reinforcement Learning",
+        "language modeling",
+        "data / retrieval"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
+    },
+    {
+      "id": "2502.07600",
+      "title": "PlaySlot: Learning Inverse Latent Dynamics for Controllable Object-Centric Video Prediction and Planning",
+      "authors": "Angel Villar-Corrales, Sven Behnke",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2502.07600",
+      "source": "https://paperswithcode.co/paper/2502.07600",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Predicting future scene representations is a crucial task for enabling robots to understand and interact with the environment. However, most existing methods rely on videos and simulations with precise action annotations, limiting their ability to leverage the large amount of avail- able unlabeled video data. To address this challenge, we propose PlaySlot, an object-centric video prediction model that infers object representations and latent actions from unlabeled video sequences. It then uses these representations to forecast future object states and video frames. PlaySlot allows the generation of multiple possible futures conditioned on latent actions, which can be inferred from video dynamics, provided by a user, or generated by a learned action policy, thus enabling versatile and interpretable world modeling. Our results show that PlaySlot outperforms both stochastic and object-centric baselines for video prediction across different environments. Furthermore, we show that our inferred latent actions can be used to learn robot behaviors sample-efficiently from unlabeled video demonstrations. Videos and code are available on our project website.",
+      "matchedBy": [
+        "papers with code",
+        "Key-value cache",
+        "Multi-head attention",
+        "Transformer",
+        "VQ-VAE",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
     },
     {
       "id": "2407.18213",
@@ -2982,7 +4096,40 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2505.22626",
+      "title": "SCIZOR: A Self-Supervised Approach to Data Curation for Large-Scale Imitation Learning",
+      "authors": "Zhang, Yu, Xie, Yuqi, Liu, Huihan, Shah, Rutav, Wan, Michael, Fan, Linxi, Zhu, Yuke",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2505.22626",
+      "source": "https://paperswithcode.co/paper/2505.22626",
+      "code": "",
+      "project": "https://scizor-icra2026",
+      "thumbnail": "https://paperswithcode.co/api/thumbnails/2505_22626_v1.jpg?fit=fit3",
+      "summary": "Imitation learning advances robot capabilities by enabling the acquisition of diverse behaviors from human demonstrations. However, large-scale datasets used for policy training often introduce substantial variability in quality, which can negatively impact performance. As a result, automatically curating datasets by filtering low-quality samples to improve quality becomes essential. Existing robotic curation approaches rely on costly manual annotations and perform curation at a coarse granularity, such as the dataset or trajectory level, failing to account for the quality of individual state-action pairs. To address this, we introduce SCIZOR, the first self-supervised transition-level curation framework that requires no annotations and scales to large-scale datasets to improve the performance of imitation learning policies and modern Vision-Language-Action (VLA) models. SCIZOR targets two complementary sources of low-quality data: suboptimal data, which hinders learning with undesirable actions, and redundant data, which dilutes training with repetitive patterns. SCIZOR leverages a self-supervised task progress predictor for suboptimal data to remove samples lacking task progression, and a deduplication module operating on joint state-action representation for samples with redundant patterns. Empirically, we show that SCIZOR enables imitation learning policies and modern VLA models to achieve higher performance with less data, yielding an average improvement of 15.4% across multiple benchmarks. More information is available at: https://scizor-icra2026.github.io",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "robotics",
+        "data / retrieval",
+        "benchmark"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Robotics"
+      ]
     },
     {
       "id": "2510.17238",
@@ -3002,12 +4149,18 @@
         "Language Modeling",
         "Question Answering",
         "Reasoning",
-        "Chain-of-Thought (CoT)"
+        "Chain-of-Thought (CoT)",
+        "serving",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2506.23434",
@@ -3032,7 +4185,10 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Serving",
+      "categories": [
+        "Serving"
+      ]
     },
     {
       "id": "2410.11201",
@@ -3052,12 +4208,19 @@
         "Image Understanding",
         "Language Modeling",
         "CLIP",
-        "Few-shot prompting"
+        "Few-shot prompting",
+        "vision/multimodal",
+        "data / retrieval"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Data / Retrieval",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2411.10446",
@@ -3077,12 +4240,19 @@
         "Image Understanding",
         "Language Modeling",
         "LLaMa",
-        "LLaVa"
+        "LLaVa",
+        "vision/multimodal",
+        "robotics"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2509.22643",
@@ -3102,12 +4272,48 @@
         "Robotics",
         "LLaMa",
         "MuZero",
-        "Residual Block"
+        "Residual Block",
+        "robotics",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "2412.20903",
+      "title": "WalkVLM: Aid Visually Impaired People Walking by Vision Language Model",
+      "authors": "Zhiqiang Yuan, Ting Zhang, Yeshuang Zhu, Jiapei Zhang, Ying Deng, Zexi Jia, Peixiang Luo, Xiaoyue Duan, Jie Zhou, Jinchao Zhang",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2412.20903",
+      "source": "https://paperswithcode.co/paper/2412.20903",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Approximately 200 million individuals around the world suffer from varying degrees of visual impairment, making it crucial to leverage AI technology to offer walking assistance for these people.With the recent progress of vision-language models (VLMs), applying VLMs to offer walking guidance has become popular. However, the existing methods of walking guidance are mainly based on self-curated question-answering datasets that are not publicly accessible, without a standardized benchmark for training or evaluation. Moreover, walking assistance often requires real-time streaming video analysis and the generation of concise yet informative reminders, making VLMs struggle due to excessive responses and low efficiency in inferences. In this paper, we introduce the first large-scale dataset dedicated to walking assistance, comprising 12,000 video-annotation pairs, to provide a unified benchmark for training and evaluating systems to help visually-impaired individuals walk. Furthermore, a WalkVLM model is proposed, which employs chain of thought for hierarchical planning to generate concise but informative reminders and utilizes temporal-aware adaptive prediction to reduce the temporal redundancy of reminders. Finally, we have established a solid benchmark for blind walking task and verified the advantages of WalkVLM in stream video processing for this task compared to other VLMs.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Reasoning",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.12488",
@@ -3129,7 +4335,10 @@
       "sources": [
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2510.16500",
@@ -3149,12 +4358,46 @@
         "Language Modeling",
         "U-Net",
         "robotics",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2512.11797",
+      "title": "AnchorDream: Repurposing Video Diffusion for Embodiment-Aware Robot Data Synthesis",
+      "authors": "Ye, Junjie, Xue, Rong, Van Hoorick, Basile, Tokmakov, Pavel, Irshad, Muhammad Zubair, Wang, Yue, Guizilini, Vitor",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2512.11797",
+      "source": "https://paperswithcode.co/paper/2512.11797",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "The collection of large-scale and diverse robot demonstrations remains a major bottleneck for imitation learning, as real-world data acquisition is costly and simulators offer limited diversity and fidelity with pronounced sim-to-real gaps. While generative models present an attractive solution, existing methods often alter only visual appearances without creating new behaviors, or suffer from embodiment inconsistencies that yield implausible motions. To address these limitations, we introduce AnchorDream, an embodiment-aware world model that repurposes pretrained video diffusion models for robot data synthesis. AnchorDream conditions the diffusion process on robot motion renderings, anchoring the embodiment to prevent hallucination while synthesizing objects and environments consistent with the robot's kinematics. Starting from only a handful of human teleoperation demonstrations, our method scales them into large, diverse, high-quality datasets without requiring explicit environment modeling. Experiments show that the generated data leads to consistent improvements in downstream policy learning, with relative gains of 36.4% in simulator benchmarks and nearly double performance in real-world studies. These results suggest that grounding generative world models in robot motion provides a practical path toward scaling imitation learning.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "LoRa",
+        "PEFT",
+        "robotics",
         "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2606.13572",
@@ -3180,7 +4423,42 @@
         "arxiv",
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2505.08627",
+      "title": "Augmented Reality for RObots (ARRO): Pointing Visuomotor Policies towards Visual Robustness",
+      "authors": "Mirjalili, Reihaneh, Jülg, Tobias Thomas, Walter, Florian, Burgard, Wolfram",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2505.08627",
+      "source": "https://paperswithcode.co/paper/2505.08627",
+      "code": "",
+      "project": "https://augmented-reality-for-robots",
+      "thumbnail": "",
+      "summary": "Visuomotor policies trained on human expert demonstrations have recently shown strong performance across a wide range of robotic manipulation tasks. However, these policies remain highly sensitive to domain shifts stemming from background or robot embodiment changes, which limits their generalization capabilities. In this paper, we present ARRO, a novel visual representation that leverages zero-shot open-vocabulary segmentation and object detection models to efficiently mask out task-irrelevant regions of the scene in real time without requiring additional training, modeling of the setup, or camera calibration. By filtering visual distractors and overlaying virtual guides during both training and inference, ARRO improves robustness to scene variations and reduces the need for additional data collection. We extensively evaluate ARRO with Diffusion Policy on a range of tabletop manipulation tasks in both simulation and real-world environments, and further demonstrate its compatibility and effectiveness with generalist robot policies, such as Octo, OpenVLA and Pi0 . Across all settings in our evaluation, ARRO yields consistent performance gains, allows for selective masking to choose between different objects, and shows robustness even to challenging segmentation conditions. Videos showcasing our results are available at: https://augmented-reality-for-robots.github.io/",
+      "matchedBy": [
+        "papers with code",
+        "Object Detection",
+        "GPT-4",
+        "Key-value cache",
+        "Multi-head attention",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
     },
     {
       "id": "2412.05507",
@@ -3200,12 +4478,16 @@
         "Adam",
         "Gaussian splatting",
         "serving",
-        "data / retrieval"
+        "data / retrieval",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2503.02841",
@@ -3225,12 +4507,18 @@
         "Deformable Attention",
         "DETR",
         "Fast RCNN",
-        "Key-value cache"
+        "Key-value cache",
+        "vision/multimodal",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2503.02593",
@@ -3250,12 +4538,17 @@
         "CLIP",
         "Key-value cache",
         "Multi-head attention",
-        "T5"
+        "T5",
+        "vision/multimodal",
+        "benchmark"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2505.11123",
@@ -3275,12 +4568,18 @@
         "Robotics",
         "data / retrieval",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "benchmark",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2506.00911",
@@ -3305,7 +4604,37 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Data / Retrieval"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
+      "id": "2507.09177",
+      "title": "Continual Reinforcement Learning by Planning with Online World Models",
+      "authors": "Zichen Liu, Guoji Fu, Chao Du, Wee Sun Lee, Min Lin",
+      "org": "",
+      "published": "ICML 2025 Spotlight",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2507.09177",
+      "source": "https://paperswithcode.co/paper/2507.09177",
+      "code": "",
+      "project": "",
+      "thumbnail": "https://paperswithcode.co/api/thumbnails/2507_09177_v1.jpg?fit=fit3",
+      "summary": "Continual reinforcement learning (CRL) refers to a naturalistic setting where an agent needs to endlessly evolve, by trial and error, to solve multiple tasks that are presented sequentially. One of the largest obstacles to CRL is that the agent may forget how to solve previous tasks when learning a new task, known as catastrophic forgetting. In this paper, we propose to address this challenge by planning with online world models. Specifically, we learn a Follow-The-Leader shallow model online to capture the world dynamics, in which we plan using model predictive control to solve a set of tasks specified by any reward functions. The online world model is immune to forgetting by construction with a proven regret bound of $\\mathcal{O}(\\sqrt{K^2D\\log(T)})$ under mild assumptions. The planner searches actions solely based on the latest online model, thus forming a FTL Online Agent (OA) that updates incrementally. To assess OA, we further design Continual Bench, a dedicated environment for CRL, and compare with several strong baselines under the same model-planning algorithmic framework. The empirical results show that OA learns continuously to solve new tasks while not forgetting old skills, outperforming agents built on deep world models with various continual learning techniques.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2508.00719",
@@ -3325,12 +4654,19 @@
         "Language Modeling",
         "Question Answering",
         "Adam",
-        "Chain-of-Thought (CoT)"
+        "Chain-of-Thought (CoT)",
+        "language modeling",
+        "data / retrieval"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2412.12722",
@@ -3350,12 +4686,18 @@
         "Image Understanding",
         "Language Modeling",
         "Gemini 1.5",
-        "GPT-4"
+        "GPT-4",
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2407.11249",
@@ -3375,12 +4717,18 @@
         "BERT",
         "Few-shot prompting",
         "GPT-3",
-        "Vision Transformer"
+        "Vision Transformer",
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Frontier Training"
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2502.07591",
@@ -3400,12 +4748,76 @@
         "serving",
         "robotics",
         "benchmark",
-        "frontier training"
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2411.18289",
+      "title": "Don't Let Your Robot Be Harmful: Responsible Robotic Manipulation Via Safety-As-Policy",
+      "authors": "Ni, Minheng, Zhang, Lei, Chen, Zihan, Bai, Kaixin, Chen, Zhaopeng, Zhang, Jianwei, Zuo, Wangmeng",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2411.18289",
+      "source": "https://paperswithcode.co/paper/2411.18289",
+      "code": "",
+      "project": "https://sites",
+      "thumbnail": "",
+      "summary": "Unthinking execution of human instructions in robotic manipulation can lead to severe safety risks, such as poisonings, fires, and even explosions. In this paper, we present responsible robotic manipulation, which requires robots to consider potential hazards in the real-world environment while completing instructions and performing complex operations safely and efficiently. However, such scenarios in real world are variable and risky for training. To address this challenge, we propose Safety-as-policy, which includes (i) a world model to automatically generate scenarios containing safety risks and conduct virtual interactions, and (ii) a mental model to infer consequences with reflections and gradually develop the cognition of safety, allowing robots to accomplish tasks while avoiding dangers. Additionally, we create the SafeBox synthetic dataset, which includes one hundred responsible robotic manipulation tasks with different safety risk scenarios and instructions, effectively reducing the risks associated with real-world experiments. Experiments demonstrate that Safety-as-policy can avoid risks and efficiently complete tasks in both synthetic dataset and real-world experiments, significantly outperforming baseline methods. Our SafeBox dataset shows consistent evaluation results with real-world scenarios, serving as a safe and effective benchmark for future research. Our code, data, and supplementary materials are available at: https://sites.google.com/view/safety-as-policy.",
+      "matchedBy": [
+        "papers with code",
+        "Chain-of-Thought (CoT)",
+        "Few-shot prompting",
+        "GPT-3",
+        "GPT-4",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
+    },
+    {
+      "id": "2504.02515",
+      "title": "Exploration-Driven Generative Interactive Environments",
+      "authors": "Nedko Savov, Naser Kazemi, Mohammad Mahdi, Danda Pani Paudel, Xi Wang, Luc Van Gool",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2504.02515",
+      "source": "https://paperswithcode.co/paper/2504.02515",
+      "code": "https://github.com/insait-institute/GenieRedux",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Modern world models require costly and time-consuming collection of large video datasets with action demonstrations by people or by environment-specific agents. To simplify training, we focus on using many virtual environments for inexpensive, automatically collected interaction data. Genie, a recent multi-environment world model, demonstrates simulation abilities of many environments with shared behavior. Unfortunately, training their model requires expensive demonstrations. Therefore, we propose a training framework merely using a random agent in virtual environments. While the model trained in this manner exhibits good controls, it is limited by the random exploration possibilities. To address this limitation, we propose AutoExplore Agent - an exploration agent that entirely relies on the uncertainty of the world model, delivering diverse data from which it can learn the best. Our agent is fully independent of environment-specific rewards and thus adapts easily to new environments. With this approach, the pretrained multi-environment model can quickly adapt to new environments achieving video fidelity and controllability improvement. In order to obtain automatically large-scale interaction datasets for pretraining, we group environments with similar behavior and controls. To this end, we annotate the behavior and controls of 974 virtual environments - a dataset that we name RetroAct. For building our model, we first create an open implementation of Genie - GenieRedux and apply enhancements and adaptations in our version GenieRedux-G. Our code and data are available at https://github.com/insait-institute/GenieRedux",
+      "matchedBy": [
+        "papers with code",
+        "Key-value cache",
+        "Mamba",
+        "Multi-head attention",
+        "Stable Diffusion",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2511.06202",
@@ -3425,12 +4837,19 @@
         "Robotics",
         "LoRa",
         "PEFT",
-        "RAG"
+        "RAG",
+        "robotics",
+        "data / retrieval"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Data / Retrieval",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2505.14709",
@@ -3450,12 +4869,18 @@
         "Image generation",
         "Video generation",
         "Classifier-free guidance",
-        "Diffusion Transformer (DiT)"
+        "Diffusion Transformer (DiT)",
+        "serving",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2509.16445",
@@ -3475,12 +4900,19 @@
         "Image Understanding",
         "Language Modeling",
         "Mamba",
-        "data / retrieval"
+        "data / retrieval",
+        "vision/multimodal",
+        "robotics"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2606.12087",
@@ -3502,7 +4934,10 @@
       "sources": [
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2503.05919",
@@ -3527,7 +4962,43 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
+      "id": "2506.23919",
+      "title": "Goal-VLA: Image-Generative VLMs As Object-Centric World Models Empowering Zero-Shot Robot Manipulation",
+      "authors": "Chen, Haonan, Guo, Jingxiang, Wang, Bangjun, Zhang, Tianrui, Huang, Xuchuan, Hou, Yiwen, Zheng, Boren, Tie, Chenrui, Deng, Jiajun, Shao, Lin",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2506.23919",
+      "source": "https://paperswithcode.co/paper/2506.23919",
+      "code": "",
+      "project": "https://nus-lins-lab",
+      "thumbnail": "",
+      "summary": "Generalization remains a fundamental challenge in robotic manipulation. To tackle this challenge, recent Vision-Language-Action (VLA) models build policies on top of Vision-Language Models (VLMs), seeking to transfer their open-world semantic knowledge. However, their zero-shot capability lags significantly behind the base VLMs, as the instruction-vision-action data is too limited to cover diverse scenarios, tasks, and robot embodiments. In this work, we present textbf{name}, a zero-shot framework that leverages Image-Generative VLMs as world models to generate desired goal states, from which the target object pose is derived to enable generalizable manipulation. The key insight is that object state representation is the golden interface, naturally separating a manipulation system into high-level and low-level policies. This representation abstracts away explicit action annotations, allowing the use of highly generalizable VLMs while simultaneously providing spatial cues for training-free low-level control. To further improve robustness, we introduce a Reflection-through-Synthesis process that iteratively validates and refines the generated goal image before execution. Both simulated and real-world experiments demonstrate that our name achieves strong performance and inspiring generalizability in manipulation tasks. Supplementary materials are available at https://nus-lins-lab.github.io/goalvlaweb/.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Robotics",
+        "Depth Anything",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2412.14579",
@@ -3547,12 +5018,16 @@
         "3D generation",
         "Deformable Attention",
         "Gaussian splatting",
-        "Key-value cache"
+        "Key-value cache",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2606.12882",
@@ -3575,7 +5050,10 @@
       "sources": [
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2506.01185",
@@ -3595,12 +5073,19 @@
         "Image Understanding",
         "Language Modeling",
         "data / retrieval",
-        "robotics"
+        "robotics",
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2501.14038",
@@ -3623,7 +5108,10 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2410.21759",
@@ -3643,12 +5131,18 @@
         "CLIP",
         "DINO",
         "Key-value cache",
-        "LoRa"
+        "LoRa",
+        "serving",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving"
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2410.12537",
@@ -3672,7 +5166,11 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
     },
     {
       "id": "2606.13578",
@@ -3692,13 +5190,18 @@
         "data / retrieval",
         "robotics",
         "vision/multimodal",
-        "benchmark"
+        "benchmark",
+        "frontier training"
       ],
       "sources": [
         "arxiv",
         "huggingface"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training"
+      ]
     },
     {
       "id": "2606.09446",
@@ -3716,12 +5219,16 @@
       "matchedBy": [
         "hugging face daily",
         "data / retrieval",
-        "benchmark"
+        "benchmark",
+        "language modeling"
       ],
       "sources": [
         "huggingface"
       ],
-      "category": "Data / Retrieval"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2410.03462",
@@ -3741,12 +5248,16 @@
         "Key-value cache",
         "Multi-head attention",
         "Performer",
-        "Transformer"
+        "Transformer",
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
     },
     {
       "id": "2511.09516",
@@ -3771,7 +5282,10 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics"
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
     },
     {
       "id": "2606.13376",
@@ -3791,13 +5305,18 @@
         "serving",
         "robotics",
         "vision/multimodal",
-        "frontier training"
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "arxiv",
         "huggingface"
       ],
-      "category": "Vision/Multimodal"
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
     },
     {
       "id": "2606.10768",
@@ -3819,7 +5338,10 @@
       "sources": [
         "huggingface"
       ],
-      "category": "Language Modeling"
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
     },
     {
       "id": "2502.09724",
@@ -3844,675 +5366,11 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Benchmark"
-    },
-    {
-      "id": "2509.03887",
-      "title": "OccTENS: 3D Occupancy World Model Via Temporal Next-Scale Prediction",
-      "authors": "Jin, Bu, Gu, Songen, Hu, Xiaotao, Zheng, Yupeng, Guo, Xiaoyang, Zhang, Qian, Long, Xiaoxiao, Yin, Wei",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2509.03887",
-      "source": "https://paperswithcode.co/paper/2509.03887",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "In this paper, we propose OccTENS, a generative occupancy world model that enables controllable, high-fidelity long-term occupancy generation while maintaining computational efficiency. Different from visual generation, the occupancy world model must capture the fine-grained 3D geometry and dynamic evolution of the 3D scenes, posing great challenges for the generative models. Recent approaches based on autoregression (AR) have demonstrated the potential to predict vehicle movement and future occupancy scenes simultaneously from historical observations, but they typically suffer from inefficiency, temporal degradation in long-term generation and lack of controllability. To holistically address these issues, we reformulate the occupancy world model as a temporal next-scale prediction (TENS) task, which decomposes the temporal sequence modeling problem to the modeling of spatial scale-by-scale generation and temporal scene-by-scene prediction. With a textbf{TensFormer}, OccTENS can effectively manage the temporal causality and spatial relationships of occupancy sequences in a flexible and scalable way. To enhance the pose controllability, we further propose a holistic pose aggregation strategy, which features a unified sequence modeling for occupancy and ego-motion. Experiments show that OccTENS outperforms the state-of-the-art method with both higher occupancy quality and faster inference time.",
-      "matchedBy": [
-        "papers with code",
-        "serving",
-        "robotics",
-        "vision/multimodal",
-        "benchmark"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2503.15748",
-      "title": "PARQ: Piecewise-Affine Regularized Quantization",
-      "authors": "Lisa Jin, Jianhao Ma, Zechun Liu, Andrey Gromov, Aaron Defazio, Lin Xiao",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2503.15748",
-      "source": "https://paperswithcode.co/paper/2503.15748",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "We develop a novel optimization method for quantization-aware training (QAT). Specifically, we show that convex, piecewise-affine regularization (PAR) can effectively induce neural network weights to cluster towards discrete values. We minimize PAR-regularized loss functions using an aggregate proximal stochastic gradient method (AProx) and prove that it enjoys last-iterate convergence. Our approach provides an interpretation of the straight-through estimator (STE), a widely used heuristic for QAT, as the asymptotic form of PARQ. We conduct experiments to demonstrate that PARQ obtains competitive performance on convolution- and transformer-based vision tasks.",
-      "matchedBy": [
-        "papers with code",
-        "CutMix",
-        "Residual Block",
-        "ResNet",
-        "Skip connection"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving"
-    },
-    {
-      "id": "2606.12282",
-      "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.12282",
-      "source": "https://huggingface.co/papers/2606.12282",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "",
-      "matchedBy": [
-        "hugging face daily",
-        "language modeling"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Language Modeling"
-    },
-    {
-      "id": "2505.13255",
-      "title": "Policy Contrastive Decoding for Robotic Foundation Models",
-      "authors": "Shihan Wu, Xu Luo, Ji Zhang, Junlin Xie, Jingkuan Song, Heng Tao Shen, Lianli Gao",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2505.13255",
-      "source": "https://paperswithcode.co/paper/2505.13255",
-      "code": "https://github.com/pcd-robot/PCD",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Generalist robot policies, or robotic foundation models, hold immense potential to enable flexible, general-purpose and dexterous robotic systems. Despite their advancements, our empirical experiments reveal that existing robot policies are prone to learning spurious correlations from pre-training trajectories, adversely affecting their generalization capabilities during inference. To tackle this, we propose a novel Policy Contrastive Decoding (PCD) approach, which redirects the robot policy’s focus toward object-relevant visual clues by contrasting action probability distributions derived from original and object-masked visual inputs. As a training-free method, our PCD can be used as a plugin to improve different types of robot policies without needing to finetune or access model weights. We conduct extensive experiments on top of three open-source robot policies, including the autoregressive policy OpenVLA and the diffusion-based policies Octo and Pi-0. The obtained results in both simulation and real-world environments prove PCD’s flexibility and effectiveness, e.g., PCD enhances the state-of-the-art policy $\\pi_0$ by 8.9% in the simulation environment and by 108% in the real-world environment. Our code is publicly available at: https://github.com/pcd-robot/PCD.",
-      "matchedBy": [
-        "papers with code",
-        "Classifier-free guidance",
-        "LLaMa",
-        "Speculative decoding",
-        "serving"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving"
-    },
-    {
-      "id": "2503.05025",
-      "title": "ProtComposer: Compositional Protein Structure Generation with 3D Ellipsoids",
-      "authors": "Hannes Stark, Bowen Jing, Tomas Geffner, Jason Yim, Tommi Jaakkola, Arash Vahdat, Karsten Kreis",
-      "org": "",
-      "published": "ICLR 2025 Oral",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2503.05025",
-      "source": "https://paperswithcode.co/paper/2503.05025",
-      "code": "https://github.com/NVlabs/protcomposer",
-      "project": "",
-      "thumbnail": "",
-      "summary": "We develop ProtComposer to generate protein structures conditioned on spatial protein layouts that are specified via a set of 3D ellipsoids capturing substructure shapes and semantics. At inference time, we condition on ellipsoids that are hand-constructed, extracted from existing proteins, or from a statistical model, with each option unlocking new capabilities. Hand-specifying ellipsoids enables users to control the location, size, orientation, secondary structure, and approximate shape of protein substructures. Conditioning on ellipsoids of existing proteins enables redesigning their substructure's connectivity or editing substructure properties. By conditioning on novel and diverse ellipsoid layouts from a simple statistical model, we improve protein generation with expanded Pareto frontiers between designability, novelty, and diversity. Further, this enables sampling designable proteins with a helix-fraction that matches PDB proteins, unlike existing generative models that commonly oversample conceptually simple helix bundles. Code is available at https://github.com/NVlabs/protcomposer.",
-      "matchedBy": [
-        "papers with code",
-        "Flow matching",
-        "Stable Diffusion",
-        "serving",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics"
-    },
-    {
-      "id": "2510.04354",
-      "title": "Reliable and Scalable Robot Policy Evaluation with Imperfect Simulators",
-      "authors": "Badithela, Apurva, Snyder, David, Zha, Lihan, Mikhail, Joseph, O'Kelly, Matthew, Dixit, Anushri, Majumdar, Anirudha",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2510.04354",
-      "source": "https://paperswithcode.co/paper/2510.04354",
-      "code": "",
-      "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2510_04354_v1.jpg?fit=fit3",
-      "summary": "Rapid progress in imitation learning, foundation models, and large-scale datasets has led to robot manipulation policies that generalize to a wide-range of tasks and environments. However, rigorous evaluation of these policies remains a challenge. Typically in practice, robot policies are often evaluated on a small number of hardware trials without any statistical assurances. We present SureSim, a framework to augment large-scale simulation with relatively small-scale real-world testing to provide reliable inferences on the real-world performance of a policy. Our key idea is to formalize the problem of combining real and simulation evaluations as a prediction-powered inference problem, in which a small number of paired real and simulation evaluations are used to rectify bias in large-scale simulation. We then leverage non-asymptotic mean estimation algorithms to provide confidence intervals on mean policy performance. Using physics-based simulation, we evaluate both diffusion policy and multi-task fine-tuned (pi_0) on a joint distribution of objects and initial conditions, and find that our approach saves over (20-25%) of hardware evaluation effort to achieve similar bounds on policy performance.",
-      "matchedBy": [
-        "papers with code",
-        "Residual Block",
-        "ResNet",
-        "Skip connection",
-        "serving"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Benchmark"
-    },
-    {
-      "id": "2606.12730",
-      "title": "Rethinking Psychometric Evaluation of LLMs: When and Why Self-Reports Predict Behavior",
-      "authors": "Rafal Kocielnik, Pengrui Han, Peiyang Song, Myrl G. Marmarelis, Ramit Debnath, Dean Mobbs, Anima Anandkumar, R. Michael Alvarez",
-      "org": "",
-      "published": "2026-06-10",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.12730",
-      "source": "https://huggingface.co/papers/2606.12730",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Anticipating LLM behavioral tendencies from low-cost psychometric probes is critical for safe deployment, but only if self-reports (SR) reliably predict behavior. Recent work documented substantial SR-behavior dissociation in LLMs, but relied on broad personality traits (Big 5) that predict specific behaviors weakly, even in humans. Furthermore, the isolation of conversational sessions combined with weak context matching left open whether LLMs truly lack coherence or whether the conditions needed to detect such coherence were not met. We contrast Big 5 with the Theory of Planned Behavior (TPB), which measures intention targeted to a specific behavior and predicts human behavior substantially better than broad traits. We run experiments across four behavioral tasks and 11 frontier LLMs, while also varying session context and identity induction. We find that SR-behavior coherence exists but is selective. 1) Within a shared conversation, the Theory of Planned Behavior reaches human-level coherence; Big 5 does not. 2) Across separate conversations, coherence survives only for behaviors anchored outside the immediate prompt, such as implicit bias shaped by training, and collapses when behavior is strongly primed by context, as with sycophancy. 3) Persona prompting makes self-reports more consistent across conversations, but does not bring behavior into alignment. These findings suggest that coarse personality frameworks, such as Big 5 may not be the best tools for testing deployment behavior. More task- and behavior-specific instruments are needed, and even these must be evaluated across tasks and contexts.",
-      "matchedBy": [
-        "arxiv",
-        "benchmark",
-        "frontier training",
-        "language modeling",
-        "hugging face daily"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Language Modeling"
-    },
-    {
-      "id": "2504.19581",
-      "title": "SAMBLE: Shape-Specific Point Cloud Sampling for an Optimal Trade-Off Between Local Detail and Global Uniformity",
-      "authors": "Chengzhi Wu, Yuxin Wan, Hao Fu, Julius Pfrommer, Zeyun Zhong, Junwei Zheng, Jiaming Zhang, Jürgen Beyerer",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2504.19581",
-      "source": "https://paperswithcode.co/paper/2504.19581",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Driven by the increasing demand for accurate and efficient representation of 3D data in various domains, point cloud sampling has emerged as a pivotal research topic in 3D computer vision. Recently, learning-to-sample methods have garnered growing interest from the community, particularly for their ability to be jointly trained with downstream tasks. However, previous learning-based sampling methods either lead to unrecognizable sampling patterns by generating a new point cloud or biased sampled results by focusing excessively on sharp edge details. Moreover, they all overlook the natural variations in point distribution across different shapes, applying a similar sampling strategy to all point clouds. In this paper, we propose a Sparse Attention Map and Bin-based Learning method (termed SAMBLE) to learn shape-specific sampling strategies for point cloud shapes. SAMBLE effectively achieves an improved balance between sampling edge points for local details and preserving uniformity in the global shape, resulting in superior performance across multiple common point cloud downstream tasks, even in scenarios with few-point sampling.",
-      "matchedBy": [
-        "papers with code",
-        "Key-value cache",
-        "Multi-head attention",
-        "Transformer",
-        "Vision Transformer"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2503.04119",
-      "title": "SCSA: A Plug-and-Play Semantic Continuous-Sparse Attention for Arbitrary Semantic Style Transfer",
-      "authors": "Chunnan Shang, Zhizhong Wang, Hongwei Wang, Xiangming Meng",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2503.04119",
-      "source": "https://paperswithcode.co/paper/2503.04119",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Attention-based arbitrary style transfer methods, including CNN-based, Transformer-based, and Diffusion-based, have flourished and produced high-quality stylized images. However, they perform poorly on the content and style images with the same semantics, i.e., the style of the corresponding semantic region of the generated stylized image is inconsistent with that of the style image. We argue that the root cause lies in their failure to consider the relationship between local regions and semantic regions. To address this issue, we propose a plug-and-play semantic continuous-sparse attention, dubbed SCSA, for arbitrary semantic style transfer---each query point considers certain key points in the corresponding semantic region. Specifically, semantic continuous attention ensures each query point fully attends to all the continuous key points in the same semantic region that reflect the overall style characteristics of that region; Semantic sparse attention allows each query point to focus on the most similar sparse key point in the same semantic region that exhibits the specific stylistic texture of that region. By combining the two modules, the resulting SCSA aligns the overall style of the corresponding semantic regions while transferring the vivid textures of these regions. Qualitative and quantitative results demonstrate that SCSA enables attention-based arbitrary style transfer methods to produce high-quality semantic stylized images.",
-      "matchedBy": [
-        "papers with code",
-        "Attention",
-        "Key-value cache",
-        "Multi-head attention",
-        "Stable Diffusion"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving"
-    },
-    {
-      "id": "2503.01584",
-      "title": "SENSEI: Semantic Exploration Guided by Foundation Models to Learn Versatile World Models",
-      "authors": "Cansu Sancaktar, Christian Gumbsch, Andrii Zadaianchuk, Pavel Kolev, Georg Martius",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2503.01584",
-      "source": "https://paperswithcode.co/paper/2503.01584",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Exploration is a cornerstone of reinforcement learning (RL). Intrinsic motivation attempts to decouple exploration from external, task-based rewards. However, established approaches to intrinsic motivation that follow general principles such as information gain, often only uncover low-level interactions. In contrast, children’s play suggests that they engage in meaningful high-level behavior by imitating or interacting with their caregivers. Recent work has focused on using foundation models to inject these semantic biases into exploration. However, these methods often rely on unrealistic assumptions, such as language-embedded environments or access to high-level actions. We propose SEmaNtically Sensible ExploratIon (SENSEI), a framework to equip model-based RL agents with an intrinsic motivation for semantically meaningful behavior. SENSEI distills a reward signal of interestingness from Vision Language Model (VLM) annotations, enabling an agent to predict these rewards through a world model. Using model-based RL, SENSEI trains an exploration policy that jointly maximizes semantic rewards and uncertainty. We show that in both robotic and video game-like simulations SENSEI discovers a variety of meaningful behaviors from image observations and low-level actions. SENSEI provides a general tool for learning from foundation model feedback, a crucial research direction, as VLMs become more powerful.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
+      "category": "Language Modeling",
+      "categories": [
         "Language Modeling",
-        "Reinforcement Learning",
-        "PPO"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling"
-    },
-    {
-      "id": "2509.18610",
-      "title": "SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones",
-      "authors": "Adang, Maximilian, Low, JunEn, Shorinwa, Ola, Schwager, Mac",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2509.18610",
-      "source": "https://paperswithcode.co/paper/2509.18610",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Large vision-language models have driven remarkable progress in open-vocabulary robot policies, e.g., generalist robot manipulation policies, that enable robots to complete complex tasks specified in natural language. Despite these successes, open-vocabulary autonomous drone navigation remains an unsolved challenge due to the scarcity of large-scale demonstrations, real-time control demands of drones for stabilization, and lack of reliable external pose estimation modules. In this work, we present SINGER for language-guided autonomous drone navigation in the open world using only onboard sensing and compute. To train robust, open-vocabulary navigation policies, SINGER leverages three central components: (i) a photorealistic language-embedded flight simulator with minimal sim-to-real gap using Gaussian Splatting for efficient data generation, (ii) an RRT-inspired multi-trajectory generation expert for collision-free navigation demonstrations, and these are used to train (iii) a lightweight end-to-end visuomotor policy for real-time closed-loop control. Through extensive hardware flight experiments, we demonstrate superior zero-shot sim-to-real transfer of our policy to unseen environments and unseen language-conditioned goal objects. When trained on ~700k-1M observation action pairs of language conditioned visuomotor data and deployed on hardware, SINGER outperforms a velocity-controlled semantic guidance baseline by reaching the query 23.33% more on average, and maintains the query in the field of view 16.67% more on average, with 10% fewer collisions.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Image Understanding",
-        "Language Modeling",
-        "Pose Estimation"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics"
-    },
-    {
-      "id": "2409.15298",
-      "title": "Sorbet: A Neuromorphic Hardware-Compatible Transformer-Based Spiking Language Model",
-      "authors": "Kaiwen Tang, Zhanglu Yan, Weng-Fai Wong",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2409.15298",
-      "source": "https://paperswithcode.co/paper/2409.15298",
-      "code": "https://github.com/Kaiwen-Tang/Sorbet](https://github",
-      "project": "",
-      "thumbnail": "",
-      "summary": "For reasons such as privacy, there are use cases for language models at the edge. This has given rise to small language models targeted for deployment in resource-constrained devices where energy efficiency is critical. Spiking neural networks (SNNs) offer a promising solution due to their energy efficiency, and there are already works on realizing transformer-based models on SNNs. However, key operations like softmax and layer normalization (LN) are difficult to implement on neuromorphic hardware, and many of these early works sidestepped them. To address these challenges, we introduce Sorbet, a transformer-based spiking language model that is more neuromorphic hardware-compatible. Sorbet incorporates a novel shifting-based softmax called PTsoftmax and a BitShifting-based PowerNorm (BSPN), both designed to replace the respective energy-intensive operations. By leveraging knowledge distillation and model quantization, Sorbet achieved a highly compressed binary weight model that maintains competitive performance while achieving $27.16\\times$ energy savings compared to BERT. We validate Sorbet through extensive testing on the GLUE benchmark and a series of ablation studies, demonstrating its potential as an energy-efficient solution for language model inference. Our code is publicly available at [https://github.com/Kaiwen-Tang/Sorbet](https://github.com/Kaiwen-Tang/Sorbet)",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "BERT",
-        "Few-shot prompting",
-        "Flash Attention"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling"
-    },
-    {
-      "id": "2411.12592",
-      "title": "SPARS3R: Semantic Prior Alignment and Regularization for Sparse 3D Reconstruction",
-      "authors": "Yutao Tang, Yuxiang Guo, Deming Li, Cheng Peng",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2411.12592",
-      "source": "https://paperswithcode.co/paper/2411.12592",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Recent efforts in Gaussian-Splat-based Novel View Synthesis can achieve photorealistic rendering; however, such capability is limited in sparse-view scenarios due to sparse initialization and over-fitting floaters. Recent progress in depth estimation and alignment can provide dense point cloud using few views; however, the resulting pose accuracy is suboptimal. In this work, we present SPARS3R, which combines the advantages of accurate pose estimation from Structure-from-Motion and dense point cloud from depth estimation. To this end, SPARS3R first performs a Global Fusion Alignment process that maps a prior dense point cloud to a sparse point cloud from Structure-from-Motion based on triangulated correspondences. RANSAC is applied during this process to distinguish inliers and outliers. SPARS3R then performs a second, Semantic Outlier Alignment step, which extracts semantically coherent regions around the outliers and performs local alignment in these regions. Along with several improvements in the evaluation process, we demonstrate that SPARS3R can achieve photorealistic rendering with sparse images and significantly outperforms existing approaches.",
-      "matchedBy": [
-        "papers with code",
-        "3D understanding",
-        "Depth estimation",
-        "Pose Estimation",
-        "DUSt3R"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2505.06729",
-      "title": "STRIVE: Structured Representation Integrating VLM Reasoning for Efficient Object Navigation",
-      "authors": "Zhu, Haokun, Li, Zongtai, Liu, Zhixuan, Wang, Wenshan, Zhang, Ji, Francis, Jonathan, Oh, Jean",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2505.06729",
-      "source": "https://paperswithcode.co/paper/2505.06729",
-      "code": "",
-      "project": "https://zwandering",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2505_06729_v1.jpg?fit=fit3",
-      "summary": "Vision-Language Models (VLMs) have been increasingly integrated into object navigation tasks for their rich prior knowledge and strong reasoning abilities. However, applying VLMs to navigation presents two key challenges: effectively parsing and structuring complex environment information and determining when and how to query VLMs. Insufficient environment understanding and over-reliance on VLMs (e.g. querying at every step) can easily lead to unnecessary backtracking and reduced navigation efficiency, especially in large continuous environments. To address these challenges, we propose a novel framework that incrementally constructs a multi-layer environment representation consisting of viewpoints, object nodes, and room nodes during navigation. Viewpoints and object nodes facilitate intra-room exploration and accurate target localization, while room nodes support efficient inter-room planning. Building on this structured representation, we propose a novel two-stage navigation policy, integrating high-level planning guided by VLM reasoning with low-level VLM-assisted exploration to efficiently and reliably locate a goal object. We evaluated our approach on four simulated benchmarks (HM3D v1&v2, RoboTHOR, and MP3D), and achieved state-of-the-art performance on both the success rate (SR% 13.1%) and navigation efficiency (SPL% 6.2%). We further validate our method on a real robot platform, demonstrating strong robustness across 120 episodes in 10 different indoor environments. Project page is available at: https://zwandering.github.io/STRIVE.github.io/.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2606.13644",
-      "title": "Surflo: Consistent 3D Surface Flow Model with Global State",
-      "authors": "Antoine Guédon, Shu Nakamura, Nicolas Dufour, Jiahui Lei, Ko Nishino, Angjoo Kanazawa",
-      "org": "",
-      "published": "2026-06-11",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.13644",
-      "source": "https://huggingface.co/papers/2606.13644",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Geometry is invariant to viewpoint, which makes any collection of images a redundant encoding of a single 3D state. Existing feed-forward reconstruction models fail to exploit this: per-view methods emit overlapping, unaligned pointmaps that grow linearly with input count, while global-latent methods commit to a fixed, low-resolution output. We introduce Surflo, which compresses a variable number of unposed RGB views into K latent tokens-one global state-and decodes oriented 3D surface points by independently transporting them from noise onto the surface via flow matching. This frees the output from any fixed grid or token budget: the same latent yields from a few thousand to a million points in a single forward pass. To suppress the local inconsistencies inherent to independent per-point decoding, an inference-time guidance term correlates nearby points by injecting a photometric gradient during ODE integration. Surflo matches or surpasses feed-forward baselines on surface metrics, runs an order of magnitude faster than optimization-based methods that require hundreds of views, and is the only feed-forward approach to combine a global latent with arbitrary-resolution decoding.",
-      "matchedBy": [
-        "arxiv",
-        "serving",
-        "vision/multimodal",
-        "language modeling",
-        "hugging face daily"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2606.07867",
-      "title": "The Cold-Start Safety Gap in LLM Agents",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.07867",
-      "source": "https://huggingface.co/papers/2606.07867",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "",
-      "matchedBy": [
-        "hugging face daily",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Language Modeling"
-    },
-    {
-      "id": "2503.18623",
-      "title": "Training-Free Personalization via Retrieval and Reasoning on Fingerprints",
-      "authors": "Deepayan Das, Davide Talon, Yiming Wang, Massimiliano Mancini, Elisa Ricci",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2503.18623",
-      "source": "https://paperswithcode.co/paper/2503.18623",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Vision Language Models (VLMs) have lead to major improvements in multimodal reasoning, yet they still struggle to understand user-specific concepts. Existing personalization methods address this limitation butheavily rely on training procedures, that can be either costly or unpleasant to individual users.We depart from existing work, and for the first time explore the training-free setting in the context of personalization. We propose a novel method, Retrieval and Reasoning for Personalization (R2P), leveraging internal knowledge of VLMs. First, we leverage VLMs to extract the concept fingerprint, i.e., key attributes uniquely defining the concept within its semantic class. When a query arrives, the most similar fingerprints are retrieved and scored via chain of thought reasoning. To reduce the risk of hallucinations, the scores are validated through cross-modal verification at the attribute level:in case of a discrepancy between the scores, R2P refines the concept association viapairwise multimodal matching, where the retrieved fingerprints and their images aredirectly compared with the query.We validate R2P on two publicly available benchmarks and a newly introduced dataset, Personal Concepts with Visual Ambiguity (PerVA), for concept identification highlighting challenges in visual ambiguity. R2P consistently outperforms state-of-the-art approaches on various downstream tasks across all benchmarks.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "Reasoning",
-        "data / retrieval"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2606.11662",
-      "title": "TreeSeeker: Tree-Structured Trial, Error, and Return in Deep Search",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.11662",
-      "source": "https://huggingface.co/papers/2606.11662",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "",
-      "matchedBy": [
-        "hugging face daily",
-        "language modeling"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Language Modeling"
-    },
-    {
-      "id": "2606.13364",
-      "title": "VideoMDM: Towards 3D Human Motion Generation From 2D Supervision",
-      "authors": "Amir Mann, Gal Michael Harari, Merav Keidar, Or Litany",
-      "org": "",
-      "published": "2026-06-11",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.13364",
-      "source": "https://huggingface.co/papers/2606.13364",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "We introduce VideoMDM, a diffusion-based framework that trains 3D human motion priors directly from accurate 2D poses extracted from monocular videos, without any 3D ground truth. A pretrained 2D-to-3D lifter provides approximate 3D pose sequences that serve as a noisy teacher: these are diffused, denoised by the model in 3D, and supervised in 2D by reprojecting the prediction and comparing against accurate keypoints. We show that, under mild assumptions, a depth-weighted 2D reprojection loss is equivalent in expectation to direct 3D supervision, and we adapt standard 3D motion regularizers - velocity consistency and over-parameterized representation alignment - to this 2D setting. Unlike methods that lift 2D to 3D only at inference, VideoMDM learns a coherent 3D motion manifold during training. On HumanML3D it nearly closes the gap to fully 3D-supervised MDM (FID 0.88 vs 0.54); On real video datasets Fit3D and NBA the method learns to generate motions consistently preferred by humans, with strong quantitative results.",
-      "matchedBy": [
-        "arxiv",
-        "serving",
-        "vision/multimodal",
-        "benchmark",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2606.09290",
-      "title": "Visual Para-Thinker++: A Single-Policy Multi-Agent Framework for Visual Reasoning",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.09290",
-      "source": "https://huggingface.co/papers/2606.09290",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "",
-      "matchedBy": [
-        "hugging face daily",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2405.15006",
-      "title": "A Rescaling-Invariant Lipschitz Bound Based on Path-Metrics for Modern ReLU Network Parameterizations",
-      "authors": "Antoine Gonon, Nicolas Brisebarre, Elisa Riccietti, Rémi Gribonval",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2405.15006",
-      "source": "https://paperswithcode.co/paper/2405.15006",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Robustness with respect to weight perturbations underpins guarantees for generalization, pruning and quantization. Existing guarantees rely on *Lipschitz bounds in parameter space*, cover only plain feed-forward MLPs, and break under the ubiquitous neuron-wise rescaling symmetry of ReLU networks. We prove a new Lipschitz inequality expressed through the $\\ell^{1}$-*path-metric* of the weights. The bound is (i) *rescaling-invariant* by construction and (ii) applies to any ReLU-DAG architecture with any combination of convolutions, skip connections, pooling, and frozen (inference-time) batch-normalization —thus encompassing ResNets, U-Nets, VGG-style CNNs, and more. By respecting the network’s natural symmetries, the new bound strictly sharpens prior parameter-space bounds and can be computed in two forward passes. To illustrate its utility, we derive from it a symmetry-aware pruning criterion and show—through a proof-of-concept experiment on a ResNet-18 trained on ImageNet—that its pruning performance matches that of classical magnitude pruning, while becoming totally immune to arbitrary neuron-wise rescalings.",
-      "matchedBy": [
-        "papers with code",
-        "Image Classification",
-        "Residual Block",
-        "ResNet",
-        "Skip connection"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving"
-    },
-    {
-      "id": "2506.17564",
-      "title": "Accelerating Residual Reinforcement Learning with Uncertainty Estimation",
-      "authors": "Dodeja, Lakshita, Schmeckpeper, Karl, Vats, Shivam, Weng, Thomas, Jia, Mingxi, Konidaris, George, Tellex, Stefanie",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2506.17564",
-      "source": "https://paperswithcode.co/paper/2506.17564",
-      "code": "",
-      "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2506_17564_v1.jpg?fit=fit3",
-      "summary": "Residual Reinforcement Learning (RL) is a popular approach for adapting pretrained policies by learning a lightweight residual policy that provides corrective actions. While Residual RL is more sample-efficient than finetuning the entire base policy, existing methods struggle with sparse rewards and are designed for deterministic base policies. We propose two improvements to Residual RL that further enhance its sample efficiency and make it suitable for stochastic base policies. First, we leverage uncertainty estimates of the base policy to focus exploration on regions in which the base policy is not confident. Second, we propose a simple modification to off-policy residual learning that allows it to observe base actions and better handle stochastic base policies. We evaluate our method with both Gaussian-based and Diffusion-based stochastic base policies on tasks from Robosuite and D4RL, and compare against state-of-the-art finetuning methods, demo-augmented RL methods, and other Residual RL methods. Our algorithm significantly outperforms existing baselines in a variety of simulation benchmark environments. We also deploy our learned policies in the real world to demonstrate their robustness with zero-shot sim-to-real transfer.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "data / retrieval",
-        "benchmark",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Benchmark"
-    },
-    {
-      "id": "2602.23814",
-      "title": "Action-Geometry Prediction with 3D Geometric Prior for Bimanual Manipulation",
-      "authors": "Chongyang Xu, Haipeng Li, Shen Cheng, Haoqiang Fan, Ziliang Feng, Shuaicheng Liu",
-      "org": "",
-      "published": "CVPR 2026",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2602.23814",
-      "source": "https://paperswithcode.co/paper/2602.23814",
-      "code": "https://github.com/Chongyang-99/GAP",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Bimanual manipulation requires policies that can reason about 3D geometry, anticipate how it evolves under action, and generate smooth, coordinated motions. However, existing methods typically rely on 2D features with limited spatial awareness, or require explicit point clouds that are difficult to obtain reliably in real-world settings. Meanwhile, recent 3D geometric foundation models show that accurate and diverse 3D structure can be reconstructed directly from RGB images in a fast and robust manner. Building on these advances, we propose a framework that builds bimanual manipulation directly on a pre-trained 3D geometric foundation model. Our policy fuses geometry-aware latents, 2D semantic features, and proprioception into a unified state representation, and uses a diffusion model to jointly predict an action chunk and a future 3D latent, which decodes into a dense point map. By explicitly predicting how the 3D scene will evolve together with the action sequence, the policy gains strong spatial understanding and predictive capability using only RGB observations. We evaluate our method both in simulation on the RoboTwin benchmark and in real-world robot executions. Our approach consistently outperforms 2D-based and point-cloud-based baselines, achieving state-of-the-art performance in manipulation success, inter-arm coordination, and 3D spatial prediction accuracy. Code is available at https://github.com/Chongyang-99/GAP.git.",
-      "matchedBy": [
-        "papers with code",
-        "CLIP",
-        "DETR",
-        "Diffusion",
-        "DUSt3R"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2603.07404",
-      "title": "Adaptive Capacity Allocation for Vision Language Action Fine-Tuning",
-      "authors": "Kim, Donghoon, Bae, Minji, Nam, Unghui, Kim, Gyeonghun, Lee, Suyun, Shim, Kyuhong, Shim, Byonghyo",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2603.07404",
-      "source": "https://paperswithcode.co/paper/2603.07404",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Vision language action models (VLAs) are increasingly used for Physical AI, but deploying a pre-trained VLA model to unseen environments, embodiments, or tasks still requires adaptation. Parameter-efficient fine-tuning (PEFT), especially LoRA, is common for VLA policies, yet the exposed capacity knob, the rank, does not transfer uniformly: robotics transfer exhibits a higher and task-varying intrinsic rank than language fine-tuning. Small ranks suffice for LLMs (e.g., r ∈ {4, 8}), while spectral analyses indicate VLAs may require much larger ranks (e.g., r ≈ 128) or near–full rank, a mismatch that worsens in multi-task settings. We present LoRA-SP (Select–Prune), a rank-adaptive fine-tuning method that replaces fixed-rank updates with input- and layer-wise capacity. LoRA-SP uses an SVD-style parameterization with a small router whose nonnegative scores act as singular values over a shared vector bank. The active set is chosen by an energy target on the cumulative squared scores E(k) ≥ η, providing a direct link to approximation error via our spectral analysis. During training, η concentrates energy on a few directions and teaches the router to rely on fewer vectors while preserving accuracy. This yields compact adapters that reduce cross-task interference and improve generalization. On four real-robot manipulation tasks collected on an unseen AgileX PiPER arm, across two VLA backbones (π0 and SmolVLA), LoRA-SP matches or exceeds full fine-tuning with far fewer trainable parameters, and improves multi-task success by up to 31.6% over standard LoRA while remaining robust to rank choice.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Robotics",
-        "GPT-4",
-        "LLaMa"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics"
-    },
-    {
-      "id": "2412.03002",
-      "title": "AdvDreamer Unveils: Are Vision-Language Models Truly Ready for Real-World 3D Variations?",
-      "authors": "Shouwei Ruan, Hanqing Liu, Yao Huang, Xiaoqi Wang, Caixin Kang, Hang Su, Yinpeng Dong, Xingxing Wei",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2412.03002",
-      "source": "https://paperswithcode.co/paper/2412.03002",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Vision Language Models (VLMs) have exhibited remarkable generalization capabilities, yet their robustness in dynamic real-world scenarios remains largely unexplored. To systematically evaluate VLMs' robustness to real-world 3D variations, we propose AdvDreamer, the first framework capable of generating physically reproducible Adversarial 3D Transformation (Adv-3DT) samples from single-view observations. In AdvDreamer, we integrate three key innovations: Firstly, to characterize real-world 3D variations with limited prior knowledge precisely, we design a zero-shot Monocular Pose Manipulation pipeline built upon generative 3D priors. Secondly, to ensure the visual quality of worst-case Adv-3DT samples, we propose Naturalness Reward Model that provides continuous naturalness regularization during adversarial optimization, effectively preventing convergence to hallucinated or unnatural elements. Thirdly, to enable systematic evaluation across diverse VLM architectures and visual-language tasks, we introduce the Inverse Semantic Probability loss as the adversarial optimization objective, which solely operates in the fundamental visual-textual alignment space. Based on the captured Adv-3DT samples with high aggressiveness and transferability, we establish MM3DTBench, the first VQA benchmark dataset tailored to evaluate VLM robustness under challenging 3D variations. Extensive evaluations of representative VLMs with varying architectures reveal that real-world 3D variations can pose severe threats to model performance across various tasks.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal"
-    },
-    {
-      "id": "2512.18987",
-      "title": "Affordance RAG: Hierarchical Multimodal Retrieval with Affordance-Aware Embodied Memory for Mobile Manipulation",
-      "authors": "Korekata, Ryosuke, Xie, Quanting, Bisk, Yonatan, Sugiura, Komei",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2512.18987",
-      "source": "https://paperswithcode.co/paper/2512.18987",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "In this study, we address the problem of open-vocabulary mobile manipulation, where a robot is required to carry a wide range of objects to receptacles based on free-form natural language instructions. This task is challenging, as it involves understanding visual semantics and the affordance of manipulation actions. To tackle these challenges, we propose Affordance RAG, a zero-shot hierarchical multimodal retrieval framework that constructs Affordance-Aware Embodied Memory from pre-explored images. The model retrieves candidate targets based on regional and visual semantics and reranks them with affordance scores, allowing the robot to identify manipulation options that are likely to be executable in real-world environments. Our method outperformed existing approaches in retrieval performance for mobile manipulation instruction in large-scale indoor environments. Furthermore, in real-world experiments where the robot performed mobile manipulation in indoor environments based on free-form instructions, the proposed method achieved a task success rate of 85%, outperforming existing methods in both retrieval performance and overall task success.",
-      "matchedBy": [
-        "papers with code",
-        "CLIP",
-        "Segment Anything (SAM)",
-        "data / retrieval",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics"
-    },
-    {
-      "id": "2602.09372",
-      "title": "AgentSkiller: Scaling Generalist Agent Intelligence through Semantically Integrated Cross-Domain Data Synthesis",
-      "authors": "Zexu Sun, Bokai Ji, Hengyi Cai, Shuaiqiang Wang, Lei Wang, Guangxia Li, Xu Chen",
-      "org": "",
-      "published": "2026-02-10",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2602.09372",
-      "source": "https://paperswithcode.co/paper/2602.09372",
-      "code": "",
-      "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2602_09372_v1.jpg?fit=fit3",
-      "summary": "AgentSkiller automates the creation of diverse, multi-turn interaction data for large language model agents through a DAG-based architecture with domain ontologies and persona-driven simulation.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Function calling",
-        "Gemini 2.5",
-        "Large language model (LLM)"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling"
+        "Frontier Training"
+      ]
     }
   ]
 }

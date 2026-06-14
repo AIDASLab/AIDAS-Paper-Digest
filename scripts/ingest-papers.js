@@ -118,7 +118,6 @@ const CATEGORY_RULES = [
       "embodied",
       "navigation",
       "vla",
-      "world model",
       "physical ai",
       "drone",
       "uav",
@@ -152,10 +151,7 @@ const CATEGORY_RULES = [
     category: "Benchmark",
     terms: [
       "benchmark",
-      "evaluation",
-      "eval",
       "leaderboard",
-      "dataset",
       "suite",
       "arena",
       "challenge",
@@ -251,32 +247,67 @@ function categoriesForText(text) {
     const hits = rule.terms.filter((term) => lower.includes(term)).length;
     if (hits) scores.set(rule.category, hits);
   }
-  return CATEGORY_PRIORITY.filter((category) => scores.has(category)).sort(
+  const ranked = CATEGORY_PRIORITY.filter((category) => scores.has(category)).sort(
     (a, b) => scores.get(b) - scores.get(a) || CATEGORY_PRIORITY.indexOf(a) - CATEGORY_PRIORITY.indexOf(b),
   );
+  const strongSingleHit = new Map([
+    ["Serving", ["kv cache", "kv-cache", "pagedattention", "speculative decoding", "quantization", "compression"]],
+    ["Data / Retrieval", ["graphrag", "knowledge graph", "ontology", "vector database"]],
+    ["Robotics", ["robotics", "embodied", "physical ai", "manipulation", "navigation", "vla"]],
+    ["Vision/Multimodal", ["multimodal", "gaussian splatting", "point cloud", "text-to-video", "text-to-image"]],
+    ["Benchmark", ["benchmark", "leaderboard", "testbed"]],
+    ["Frontier Training", ["technical report", "frontier", "foundation model", "omnimodal", "native multimodal"]],
+    ["Language Modeling", ["language model", "reasoning", "post-training", "autoregressive", "diffusion language"]],
+  ]);
+  return ranked
+    .filter((category) => {
+      if ((scores.get(category) || 0) >= 2) return true;
+      return (strongSingleHit.get(category) || []).some((term) => lower.includes(term));
+    })
+    .slice(0, 3);
 }
 
-function bestCategoryFor(paper) {
-  const current = paper.category || paper.categories?.[0] || "";
-  const text = [
+function categoryTextFor(paper) {
+  const categoryTags = new Set(CATEGORIES.map((category) => category.toLowerCase()));
+  const matchedBy = (paper.matchedBy || []).filter((tag) => !categoryTags.has(String(tag).toLowerCase()));
+  return [
     paper.title,
     paper.summary,
     paper.authors,
     paper.org,
     paper.source,
     paper.paper,
-    ...(paper.matchedBy || []),
+    ...matchedBy,
   ].join(" ");
-  const inferred = categoriesForText(text);
-  if (inferred.length) return inferred[0];
-  if (CATEGORIES.includes(current)) return current;
-  return "Language Modeling";
+}
+
+function categoriesForPaper(paper) {
+  const current = paper.category || paper.categories?.[0] || "";
+  const text = categoryTextFor(paper);
+  const categoryTags = new Set(CATEGORIES.map((category) => category.toLowerCase()));
+  const matchedBy = (paper.matchedBy || []).filter((tag) => !categoryTags.has(String(tag).toLowerCase()));
+  const titleAndTags = [paper.title, ...matchedBy].join(" ").toLowerCase();
+  const inferred = categoriesForText(text).filter((category) => {
+    if (category !== "Benchmark") return true;
+    return /\b(benchmark|leaderboard|arena|challenge|testbed)\b/i.test(titleAndTags);
+  });
+  if (inferred.length) return inferred;
+  if (Array.isArray(paper.categories) && paper.categories.some((category) => CATEGORIES.includes(category))) {
+    return paper.categories.filter((category) => CATEGORIES.includes(category)).slice(0, 3);
+  }
+  if (CATEGORIES.includes(current)) return [current];
+  return ["Language Modeling"];
+}
+
+function bestCategoryFor(paper) {
+  return categoriesForPaper(paper)[0];
 }
 
 function classifyPaper(paper) {
-  paper.category = bestCategoryFor(paper);
-  delete paper.categories;
-  paper.matchedBy = [...new Set([...(paper.matchedBy || []), paper.category.toLowerCase()])].slice(0, 5);
+  const categories = categoriesForPaper(paper);
+  paper.category = categories[0];
+  paper.categories = categories;
+  paper.matchedBy = [...new Set([...(paper.matchedBy || []), ...categories.map((category) => category.toLowerCase())])].slice(0, 7);
   return paper;
 }
 
@@ -321,7 +352,7 @@ function mergePapers(existing, incoming) {
         ...prev,
         ...Object.fromEntries(Object.entries(normalized).filter(([, value]) => value !== "" && value != null)),
         score: Math.max(prev.score || 0, normalized.score || 0),
-        category: bestCategoryFor({ ...prev, ...normalized }),
+        categories: [...new Set([...(prev.categories || []), ...(normalized.categories || [])])],
         matchedBy: [...new Set([...(prev.matchedBy || []), ...(normalized.matchedBy || [])])].slice(0, 5),
         sources: [...new Set([...(prev.sources || []), ...(normalized.sources || [])])],
       }),
@@ -331,7 +362,7 @@ function mergePapers(existing, incoming) {
 }
 
 function categoriesOf(paper) {
-  return [paper.category || paper.categories?.[0]].filter(Boolean);
+  return (paper.categories?.length ? paper.categories : [paper.category]).filter(Boolean);
 }
 
 async function fetchJson(url) {
@@ -569,7 +600,7 @@ async function main() {
 
   papers = papers
     .map((paper) => classifyPaper(paper))
-    .filter((paper) => CATEGORIES.includes(paper.category))
+    .filter((paper) => categoriesOf(paper).some((category) => CATEGORIES.includes(category)))
     .sort((a, b) => (b.score || 0) - (a.score || 0) || a.title.localeCompare(b.title))
     .slice(0, Number(process.env.MAX_PAPERS || 180));
 
