@@ -74,16 +74,6 @@ function sourceUrl(paper) {
   return paper.source || paperUrl(paper);
 }
 
-function thumbnailUrl(paper) {
-  if (paper.thumbnail) return paper.thumbnail;
-  if (paper.thumbnail_url) {
-    return paper.thumbnail_url.startsWith("http")
-      ? paper.thumbnail_url
-      : `https://paperswithcode.co${paper.thumbnail_url}`;
-  }
-  return "";
-}
-
 function saveState() {
   localStorage.setItem("paper-board-saved", JSON.stringify([...state.saved]));
 }
@@ -642,18 +632,8 @@ function renderPapers() {
       const comments = state.comments.get(paper.id) || [];
       const commentsOpen = state.openComments.has(paper.id);
       const commentTotal = commentCount(paper.id);
-      const thumbnail = thumbnailUrl(paper);
       return `
-        <article class="paper-card${thumbnail ? "" : " no-thumb"}">
-          ${
-            thumbnail
-              ? `
-                <a class="thumb-link" href="${paperUrl(paper)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${paper.title}">
-                  <img class="thumb" src="${thumbnail}" alt="" loading="lazy" onerror="this.closest('.paper-card').classList.add('no-thumb');this.closest('.thumb-link').remove();" />
-                </a>
-              `
-              : ""
-          }
+        <article class="paper-card">
           <div class="paper-body">
             <div class="card-head">
               <div class="category-row">${categoryPills}</div>

@@ -327,7 +327,7 @@ function normalizePaper(paper, sourceName) {
     source: paper.source || paper.url_abs || (arxivId ? `https://arxiv.org/abs/${arxivId}` : ""),
     code: paper.code || "",
     project: paper.project || "",
-    thumbnail: paper.thumbnail || paper.thumbnail_url || "",
+    thumbnail: "",
     summary: normalizeText(paper.summary || paper.abstract),
     matchedBy: paper.matchedBy || [sourceName],
     sources: [...new Set([...(paper.sources || []), sourceName])],
@@ -411,11 +411,6 @@ async function ingestPwc() {
               source: item.arxiv_id ? `https://paperswithcode.co/paper/${item.arxiv_id}` : item.url_abs,
               code: codeFromAbstract,
               project: projectFromAbstract,
-              thumbnail: item.thumbnail_url
-                ? item.thumbnail_url.startsWith("http")
-                  ? item.thumbnail_url
-                  : `https://paperswithcode.co${item.thumbnail_url}`
-                : "",
               summary: item.tldr || item.abstract,
               matchedBy: [
                 "papers with code",

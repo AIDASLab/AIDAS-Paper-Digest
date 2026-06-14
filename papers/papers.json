@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-14T15:04:53.363Z",
+  "generatedAt": "2026-06-14T15:21:37.742Z",
   "sourceStats": {
     "seed": 180,
     "paperswithcode": 540,
-    "arxiv": 175,
+    "arxiv": 100,
     "huggingface": 44,
     "twitterSignals": 0,
     "total": 180
@@ -79,7 +79,7 @@
       "source": "https://www.alphaxiv.org/abs/2026.diffusion-gemma-faster-text-generation",
       "code": "",
       "project": "",
-      "thumbnail": "https://www.alphaxiv.org/assets/og-image.png",
+      "thumbnail": "",
       "summary": "A 26B MoE experimental open model that replaces token-by-token autoregressive decoding with block-level text diffusion for faster local generation.",
       "matchedBy": [
         "diffusion LM",
@@ -325,7 +325,6 @@
         "serving",
         "data / retrieval",
         "robotics",
-        "benchmark",
         "language modeling"
       ],
       "sources": [
@@ -647,7 +646,7 @@
       "source": "https://paperswithcode.co/paper/2604.02996",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2604_02996_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Reconstructing dynamic scenes with multiple interacting humans and objects from sparse-view inputs is a critical yet challenging task, essential for creating high-fidelity digital twins for robotics and VR/AR. This problem, which we term Multi-Human Multi-Object (MHMO) rendering, presents two significant obstacles: achieving view-consistent representations for individual instances under severe mutual occlusion, and explicitly modeling the complex and combinatorial dependencies that arise from their interactions. To overcome these challenges, we propose MM-GS, a novel hierarchical framework built upon 3D Gaussian Splatting. Our method first employs a Per-Instance Multi-View Fusion module to establish a robust and consistent representation for each instance by aggregating visual information across all available views. Subsequently, a Scene-Level Instance Interaction module operates on a global scene graph to reason about relationships between all participants, refining their attributes to capture subtle interaction effects. Extensive experiments on challenging datasets demonstrate that our method significantly outperforms strong baselines, producing state-of-the-art results with high-fidelity details and plausible inter-instance contacts.",
       "matchedBy": [
         "3D Gaussian Splatting",
@@ -793,7 +792,7 @@
       "source": "https://paperswithcode.co/paper/2505.23705",
       "code": "",
       "project": "https://how-to-vla",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2505_23705_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Vision-language-action (VLA) models provide a powerful approach to training control policies for physical systems, such as robots, by combining end-to-end learning with transfer of semantic knowledge from web-scale vision-language model (VLM) training. However, the constraints of real-time control are often at odds with the design of VLMs: the most powerful VLMs have tens or hundreds of billions of parameters, presenting an obstacle to real-time inference, and operate on discrete tokens rather than the continuous-valued outputs that are required for controlling robots. To address this challenge, recent VLA models have used specialized modules for efficient continuous control, such as action experts or continuous output heads, which typically require adding new untrained parameters to the pretrained VLM backbone. While these modules improve real-time and control capabilities, it remains an open question whether they preserve or degrade the semantic knowledge contained in the pretrained VLM, and what effect they have on the VLA training dynamics. In this paper, we study this question in the context of VLAs that include a continuous diffusion or flow matching action expert, showing that naively including such experts significantly harms both training speed and knowledge transfer. We provide an extensive analysis of various design choices, their impact on performance and knowledge transfer, and propose a technique for insulating the VLM backbone during VLA training that mitigates this issue. Videos are available at https://how-to-vla.github.io/ (anonymous website).",
       "matchedBy": [
         "papers with code",
@@ -1108,7 +1107,7 @@
       "source": "https://paperswithcode.co/paper/2509.20499",
       "code": "https://github.com/michigan-traffic-lab/OMAP-VLN",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2509_20499_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "With the rapid progress of foundation models and robotics, vision-language navigation (VLN) has emerged as a key task for embodied agents with broad practical applications. We address VLN in continuous environments, a particularly challenging setting where an agent must jointly interpret natural language instructions, perceive its surroundings, and plan low-level actions. We propose a zero-shot framework that integrates a simplified yet effective waypoint predictor with a multimodal large language model (MLLM). The predictor operates on an abstract obstacle map, producing linearly reachable waypoints, which are incorporated into a dynamically updated topological graph with explicit visitation records. The graph and visitation information are encoded into the prompt, enabling reasoning over both spatial structure and exploration history to encourage exploration and equip MLLM with local path planning for error correction. Extensive experiments on R2R-CE and RxR-CE show that our method achieves state-of-the-art zero-shot performance, with success rates of 41% and 36%, respectively, outperforming prior state-of-the-art methods. The source code is available at: https://github.com/michigan-traffic-lab/OMAP-VLN.",
       "matchedBy": [
         "VLN",
@@ -1458,6 +1457,38 @@
       ]
     },
     {
+      "id": "2410.05340",
+      "title": "Generating CAD Code with Vision-Language Models for 3D Designs",
+      "authors": "Kamel Alrashedy, Pradyumna Tambwekar, Zulfiqar Haider Zaidi, Megan Langwasser, Wei Xu, Matthew Gombolay",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 74,
+      "paper": "https://arxiv.org/abs/2410.05340",
+      "source": "https://paperswithcode.co/paper/2410.05340",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Generative AI has transformed the fields of Design and Manufacturing by providing efficient and automated methods for generating and modifying 3D objects. One approach involves using Large Language Models (LLMs) to generate Computer- Aided Design (CAD) scripting code, which can then be executed to render a 3D object; however, the resulting 3D object may not meet the specified requirements. Testing the correctness of CAD generated code is challenging due to the complexity and structure of 3D objects (e.g., shapes, surfaces, and dimensions) that are not feasible in code. In this paper, we introduce CADCodeVerify, a novel approach to iteratively verify and improve 3D objects generated from CAD code. Our approach works by producing ameliorative feedback by prompting a Vision-Language Model (VLM) to generate and answer a set of validation questions to verify the generated object and prompt the VLM to correct deviations. To evaluate CADCodeVerify, we introduce, CADPrompt, the first benchmark for CAD code generation, consisting of 200 natural language prompts paired with expert-annotated scripting code for 3D objects to benchmark progress. Our findings show that CADCodeVerify improves VLM performance by providing visual feedback, enhancing the structure of the 3D objects, and increasing the success rate of the compiled program. When applied to GPT-4, CADCodeVerify achieved a 7.30% reduction in Point Cloud distance and a 5.0% improvement in success rate compared to prior work.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Chain-of-Thought (CoT)",
+        "CLIP",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.12451",
       "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
       "authors": "Ashutosh Hathidara, Sai Shruthi Sistla, Sebastian Schreiber",
@@ -1527,7 +1558,7 @@
       "source": "https://paperswithcode.co/paper/2404.10775",
       "code": "",
       "project": "https://embodied-agi",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2404_10775_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "In this paper, we investigate the problem of embodied multi-agent cooperation, where decentralized agents must cooperate given only egocentric views of the world. To effectively plan in this setting, in contrast to learning world dynamics in a single-agent scenario, we must simulate world dynamics conditioned on an arbitrary number of agents' actions given only partial egocentric visual observations of the world. To address this issue of partial observability, we first train generative models to estimate the overall world state given partial egocentric observations. To enable accurate simulation of multiple sets of actions on this world state, we then propose to learn a compositional world model for multi-agent cooperation by factorizing the naturally composable joint actions of multiple agents and compositionally generating the video conditioned on the world state. By leveraging this compositional world model, in combination with Vision Language Models to infer the actions of other agents, we can use a tree search procedure to integrate these modules and facilitate online cooperative planning. We evaluate our methods on three challenging benchmarks with 2-4 agents. The results show our compositional world model is effective and the framework enables the embodied agents to cooperate efficiently with different agents across various tasks and an arbitrary number of agents, showing the promising future of our proposed methods. More videos can be found at \\url{https://embodied-agi.cs.umass.edu/combo/}.",
       "matchedBy": [
         "papers with code",
@@ -1559,7 +1590,7 @@
       "source": "https://paperswithcode.co/paper/2410.23156",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2410_23156_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Broadly intelligent agents should form task-specific abstractions that selectively expose the essential elements of a task, while abstracting away the complexity of the raw sensorimotor space. In this work, we present Neuro-Symbolic Predicates, a first-order abstraction language that combines the strengths of symbolic and neural knowledge representations. We outline an online algorithm for inventing such predicates and learning abstract world models. We compare our approach to hierarchical reinforcement learning, vision-language model planning, and symbolic predicate invention approaches, on both in- and out-of-distribution tasks across five simulated robotic domains. Results show that our approach offers better sample complexity, stronger out-of-distribution generalization, and improved interpretability.",
       "matchedBy": [
         "papers with code",
@@ -1733,7 +1764,7 @@
       "source": "https://paperswithcode.co/paper/2503.18278",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2503_18278_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Vision-Language Models (VLMs) demand substantial computational resources during inference, largely due to the extensive visual input tokens for representing visual information. Previous studies have noted that visual tokens tend to receive less attention than text tokens, suggesting their lower importance during inference and potential for pruning. However, their methods encounter several chal- lenges: reliance on greedy heuristic criteria for token im- portance and incompatibility with FlashAttention and KV cache. To address these issues, we introduce TopV, a com- patible TOken Pruning with inference Time Optimization for fast and low-memory VLM, achieving efficient pruning without additional training or fine-tuning. Instead of re- lying on attention scores, we formulate token pruning as an optimization problem, accurately identifying important visual tokens while remaining compatible with FlashAtten- tion. Additionally, since we only perform this pruning once during the prefilling stage, it effectively reduces KV cache size. Our optimization framework incorporates a visual- aware cost function considering factors such as Feature Similarity, Relative Spatial Distance, and Absolute Central Distance, to measure the importance of each source visual token, enabling effective pruning of low-importance tokens. Extensive experiments demonstrate that our method outperforms previous token pruning methods, validating the effectiveness and efficiency of our approach.",
       "matchedBy": [
         "papers with code",
@@ -1765,7 +1796,7 @@
       "source": "https://paperswithcode.co/paper/2410.08368",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2410_08368_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Efficient video tokenization remains a key bottleneck in learning general purpose vision models that are capable of processing long video sequences. Prevailing approaches are restricted to encoding videos to a fixed number of tokens, where too few tokens will result in overly lossy encodings, and too many tokens will result in prohibitively long sequence lengths. In this work, we introduce ElasticTok, a method that conditions on prior frames to adaptively encode a frame into a variable number of tokens. To enable this in a computationally scalable way, we propose a masking technique that drops a random number of tokens at the end of each frames's token encoding. During inference, ElasticTok can dynamically allocate tokens when needed -- more complex data can leverage more tokens, while simpler data only needs a few tokens. Our empirical evaluations on images and video demonstrate the effectiveness of our approach in efficient token usage, paving the way for future development of more powerful multimodal models, world models, and agents. Video examples of using ElasticTok can be found on our website: http://largeworldmodel.github.io/elastictok",
       "matchedBy": [
         "papers with code",
@@ -1774,7 +1805,7 @@
         "Matryoshka representation learning (MRL)",
         "Vision Transformer",
         "vision/multimodal",
-        "benchmark"
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
@@ -1826,7 +1857,7 @@
       "source": "https://paperswithcode.co/paper/2406.19501",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2406_19501_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Language models (LMs) are susceptible to bias, sycophancy, backdoors, and other tendencies that lead to unfaithful responses to the input context. Interpreting internal states of LMs could help monitor and correct unfaithful behavior. We hypothesize that LMs faithfully represent their input contexts in a latent world model, and we seek to extract these latent world states as logical propositions. For example, given the input context ``Greg is a nurse. Laura is a physicist.'', we aim to decode the propositions WorksAs(Greg, nurse) and WorksAs(Laura, physicist) from the model's internal activations. To do so we introduce _propositional probes_, which compositionally extract lexical concepts from token activations and bind them into propositions. Key to this is identifying a _binding subspace_ in which bound tokens have high similarity (Greg $\\leftrightarrow$ nurse) but unbound ones do not (Greg $\\not\\leftrightarrow$ physicist). Despite only being trained on linguistically simple English templates, we find that propositional probes generalize to inputs written as short stories and translated to Spanish. Moreover, in three settings where LMs respond unfaithfully to the input context---prompt injections, backdoor attacks, and gender bias--- the decoded propositions remain faithful. This suggests that LMs often encode a faithful world model but decode it unfaithfully, which motivates the search for better interpretability tools for monitoring LMs.",
       "matchedBy": [
         "papers with code",
@@ -1838,6 +1869,37 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2411.16721",
+      "title": "Steering Away from Harm: An Adaptive Approach to Defending Vision Language Model Against Jailbreaks",
+      "authors": "Han Wang, Gang Wang, Huan Zhang",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 70,
+      "paper": "https://arxiv.org/abs/2411.16721",
+      "source": "https://paperswithcode.co/paper/2411.16721",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Vision Language Models (VLMs) can produce unintended and harmful content when exposed to adversarial attacks, particularly because their vision capabilities create new vulnerabilities. Existing defenses, such as input preprocessing, adversarial training, and response evaluation-based methods, are often impractical for real-world deployment due to their high costs. To address this challenge, we propose ASTRA, an efficient and effective defense by adaptively steering models away from adversarial feature directions to resist VLM attacks. Our key procedures involve finding transferable steering vectors representing the direction of harmful response and applying adaptive activation steering to remove these directions at inference time. To create effective steering vectors, we randomly ablate the visual tokens from the adversarial images and identify those most strongly associated with jailbreaks. These tokens are then used to construct steering vectors. During inference, we perform the adaptive steering method that involves the projection between the steering vectors and calibrated activation, resulting in little performance drops on benign inputs while strongly avoiding harmful outputs under adversarial inputs. Extensive experiments across multiple models and baselines demonstrate our state-of-the-art performance and high efficiency in mitigating jailbreak risks. Additionally, ASTRA exhibits good transferability, defending against unseen attacks (i.e., structured-based attack, perturbation-based attack with project gradient descent variants, and text-only attack).",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "GPT-4",
+        "LLaVa",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -2129,8 +2191,8 @@
         "Robotics",
         "robotics",
         "vision/multimodal",
-        "benchmark",
-        "language modeling"
+        "language modeling",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
@@ -2184,7 +2246,7 @@
       "source": "https://paperswithcode.co/paper/2507.13097",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2507_13097_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Grasping is a fundamental robot skill, yet despite significant research advancements, learning-based 6-DOF grasping approaches are still not turnkey and struggle to generalize across different embodiments and in-the-wild settings. We build upon the recent success on modeling the object-centric grasp generation process as an iterative diffusion process. Our proposed framework, GraspGen, consists of a Diffusion-Transformer architecture that enhances grasp generation, paired with an efficient discriminator to score and filter sampled grasps. We introduce a novel and performant on-generator training recipe for the discriminator. To scale GraspGen to both objects and grippers, we release a new simulated dataset consisting of over 53 million grasps. We demonstrate that GraspGen outperforms prior methods in simulations with singulated objects across different grippers, achieves state-of-the-art performance on the FetchBench benchmark for grasping in clutter, and performs well on a real robot with noisy visual observations.",
       "matchedBy": [
         "papers with code",
@@ -2212,7 +2274,7 @@
       "source": "https://paperswithcode.co/paper/2408.11809",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2408_11809_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "The iterative closest point registration algorithm has been a preferred method for light detection and ranging LiDAR-based robot localization for nearly a decade. However, even in modern simultaneous localization and mapping (SLAM) solutions, ICP can degrade and become unreliable in geometrically ill-conditioned environments. In response, this work investigates and compares new and existing degeneracy mitigation methods for robust LiDAR-based localization and analyzes the efficacy of these approaches in degenerate environments for the first time in the literature at this scale. Specifically, this work investigates i) the effect of using active or passive degeneracy mitigation methods for the problem of ill-conditioned ICP in LiDAR degenerate environments and ii) the evaluation of truncated singular value decomposition (TSVD), inequality constraints (Ineq. Con.), and linear/nonlinear Tikhonov regularization for the application of degenerate point cloud registration for the first time. Furthermore, a sensitivity analysis for the least-squares minimization step of the ICP problem is carried out to better understand how each method affects the optimization and what to expect from each method. The results of the analysis are validated through multiple real-world robotic field and simulated experiments. The analysis demonstrates that active optimization degeneracy mitigation is necessary and advantageous in the absence of reliable external estimate assistance for LiDAR-SLAM.",
       "matchedBy": [
         "papers with code",
@@ -2390,7 +2452,7 @@
       "source": "https://paperswithcode.co/paper/2411.16308",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2411_16308_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Existing conditional Denoising Diffusion Probabilistic Models (DDPMs) with a Noise-Conditional Framework (NCF) remain challenging for 3D scene understanding tasks, as the complex geometric details in scenes increase the difficulty of fitting the gradients of the data distribution (the scores) from semantic labels. This also results in longer training and inference time for DDPMs compared to non-DDPMs. From a different perspective, we delve deeply into the model paradigm dominated by the Conditional Network. In this paper, we propose an end-to-end robust semantic Segmentation Network based on a Conditional-Noise Framework (CNF) of DDPMs, named CDSegNet. Specifically, CDSegNet models the Noise Network (NN) as a learnable noise-feature generator. This enables the Conditional Network (CN) to understand 3D scene semantics under multi-level feature perturbations, enhancing the generalization in unseen scenes. Meanwhile, benefiting from the noise system of DDPMs, CDSegNet exhibits strong robustness for data noise and sparsity in experiments. Moreover, thanks to CNF, CDSegNet can generate the semantic labels in a single-step inference like non-DDPMs, due to avoiding directly fitting the scores from semantic labels in the dominant network of CDSegNet. On public indoor and outdoor benchmarks, CDSegNet significantly outperforms existing methods, achieving state-of-the-art performance.",
       "matchedBy": [
         "papers with code",
@@ -2511,7 +2573,7 @@
       "source": "https://paperswithcode.co/paper/2509.19480",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2509_19480_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Humans can flexibly interpret and compose different goal specifications, such as language instructions, spatial coordinates, or visual references, when navigating to a destination. In contrast, most existing robotic navigation policies are trained on a single modality, limiting their adaptability to real-world scenarios where different forms of goal specification are natural and complementary. In this work, we present a training framework for robotic foundation models that enables omni-modal goal conditioning for vision-based navigation. Our approach leverages a high-capacity vision-language-action (VLA) backbone and trains with three primary goal modalities: 2D poses, egocentric images, and natural language, as well as their combinations, through a randomized modality fusion strategy. This design not only expands the pool of usable datasets but also encourages the policy to develop richer geometric, semantic, and visual representations. The resulting model, OmniVLA, achieves strong generalization to unseen environments, robustness to scarce modalities, and the ability to follow novel natural language instructions. We demonstrate that OmniVLA outperforms specialist baselines across modalities and offers a flexible foundation for fine-tuning to new modalities and tasks. We believe OmniVLA provides a step toward broadly generalizable and flexible navigation policies, and a scalable path for building omni-modal robotic foundation models.",
       "matchedBy": [
         "papers with code",
@@ -2604,7 +2666,7 @@
       "source": "https://paperswithcode.co/paper/2603.04448",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2603_04448_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
       "matchedBy": [
         "papers with code",
@@ -2635,7 +2697,7 @@
       "source": "https://paperswithcode.co/paper/2509.12594",
       "code": "",
       "project": "https://liauto-research",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2509_12594_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "We present LightVLA, a simple yet effective differentiable token pruning framework for vision-language-action (VLA) models. While VLA models have shown impressive capability in executing real-world robotic tasks, their deployment on resource-constrained platforms is often bottlenecked by the heavy attention-based computation over large sets of visual tokens. LightVLA addresses this challenge through adaptive, performance-driven pruning of visual tokens: it generates dynamic queries to evaluate visual token importance, and adopts Gumbel softmax to enable differentiable token selection. Through fine-tuning, LightVLA learns to preserve the most informative visual tokens while pruning tokens which do not contribute to task execution, thereby improving efficiency and performance simultaneously. Notably, LightVLA requires no heuristic “magic numbers” and introduces no additional trainable parameters, making it compatible with modern inference frameworks. Experimental results demonstrate that LightVLA outperforms different VLA models and existing token pruning methods across diverse tasks on the LIBERO benchmark, achieving higher success rates with substantially reduced computational overhead. Specifically, LightVLA reduces FLOPs and latency by 59.1% and 38.2% respectively, with a 2.9% improvement in task success rate. Meanwhile, we also investigate the training-aware token pruning method LightVLA* with additional trainable parameters, which also achieves satisfactory performance. Our work reveals that as VLA pursues optimal performance, it spontaneously learns to prune tokens from a performance-driven perspective. To the best of our knowledge, LightVLA is the first work to apply adaptive visual token pruning to VLA tasks with the collateral goals of efficiency and performance, marking a significant step toward more efficient, powerful and practical real-time robotic systems. Project site: https://liauto-research.github.io/LightVLA.",
       "matchedBy": [
         "papers with code",
@@ -2737,7 +2799,38 @@
         "Question Answering",
         "Chain-of-Thought (CoT)",
         "vision/multimodal",
-        "benchmark"
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2501.04336",
+      "title": "Building a Mind Palace: Structuring Environment-Grounded Semantic Graphs for Effective Long Video Analysis with LLMs",
+      "authors": "Zeyi Huang, Yuyang Ji, Xiaofang Wang, Nikhil Mehta, Tong Xiao, Donghyun Lee, Sigmund Vanvalkenburgh, Shengxin Zha, Bolin Lai, Licheng Yu, Ning Zhang, Yong Jae Lee, Miao Liu",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2501.04336",
+      "source": "https://paperswithcode.co/paper/2501.04336",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Long-form video understanding with Large Vision Language Models is challenged by the need to analyze temporally dispersed yet spatially concentrated key moments within limited context windows. In this work, we introduce VideoMindPalace, a new framework inspired by the \"Mind Palace\", which organizes critical video moments into a topologically structured semantic graph. VideoMindPalace organizes key information through (i) hand-object tracking and interaction, (ii) clustered activity zones representing specific areas of recurring activities, and (iii) environment layout mapping, allowing natural language parsing by LLMs to provide grounded insights on spatio-temporal and 3D context. In addition, we propose the Video MindPalace Benchmark (VMB), to assess human-like reasoning, including spatial localization, temporal reasoning, and layout-aware sequential understanding. Evaluated on VMB and established video QA datasets, including EgoSchema, NExT-QA, IntentQA, and the Active Memories Benchmark, VideoMindPalace demonstrates notable gains in spatio-temporal coherence and human-aligned reasoning, advancing long-form video analysis capabilities in VLMs.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Question Answering",
+        "Video classification",
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
@@ -2759,7 +2852,7 @@
       "source": "https://paperswithcode.co/paper/2506.07639",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2506_07639_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Embodied Chain-of-Thought (ECoT) reasoning enhances vision-language-action (VLA) models by improving performance and interpretability through intermediate reasoning steps. However, its sequential autoregressive token generation introduces significant inference latency, limiting real-time deployment. We propose Fast ECoT, an inference-time acceleration method that exploits the structured and repetitive nature of ECoT to (1) cache and reuse high-level reasoning across timesteps and (2) parallelise the generation of modular reasoning steps. Additionally, we introduce an asynchronous scheduler that decouples reasoning from action decoding, further boosting responsiveness. Fast ECoT requires no model changes or additional training and easily integrates into existing VLA pipelines. Experiments in both simulation (LIBERO) and real-world robot tasks show up to a 7.5× reduction in latency with comparable or improved task success rate and reasoning faithfulness, bringing ECoT policies closer to practical real-time deployment.",
       "matchedBy": [
         "papers with code",
@@ -2809,6 +2902,33 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2503.18363",
+      "title": "MonoInstance: Enhancing Monocular Priors via Multi-view Instance Alignment for Neural Rendering and Reconstruction",
+      "authors": "Wenyuan Zhang, Yixiao Yang, Han Huang, Liang Han, Kanle Shi, Yu-Shen Liu, Zhizhong Han",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2503.18363",
+      "source": "https://paperswithcode.co/paper/2503.18363",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Monocular depth priors have been widely adopted by neural rendering in multi-view based tasks such as 3D reconstruction and novel view synthesis. However, due to the inconsistent prediction on each view, how to more effectively leverage monocular cues in a multi-view context remains a challenge. Current methods treat the entire estimated depth map indiscriminately, and use it as ground truth supervision, while ignoring the inherent inaccuracy and cross-view inconsistency in monocular priors. To resolve these issues, we propose MonoInstance, a general approach that explores the uncertainty of monocular depths to provide enhanced geometric priors for neural rendering and reconstruction. Our key insight lies in aligning each segmented instance depths from multiple views within a common 3D space, thereby casting the uncertainty estimation of monocular depths into a density measure within noisy point clouds. For high-uncertainty areas where depth priors are unreliable, we further introduce a constraint term that encourages the projected instances to align with corresponding instance masks on nearby views. MonoInstance is a versatile strategy which can be seamlessly integrated into various multi-view neural rendering frameworks. Our experimental results demonstrate that MonoInstance significantly improves the performance in both reconstruction and novel view synthesis under various benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "3D understanding",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -2868,6 +2988,38 @@
       "categories": [
         "Data / Retrieval",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2505.17702",
+      "title": "Seek-CAD: A Self-refined Generative Modeling for 3D Parametric CAD Using Local Inference via DeepSeek",
+      "authors": "Xueyang Li, Jiahao Li, Yu Song, Yunzhong Lou, Xiangdong Zhou",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2505.17702",
+      "source": "https://paperswithcode.co/paper/2505.17702",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "The advent of Computer-Aided Design (CAD) generative modeling will significantly transform the design of industrial products. The recent research endeavor has extended into the realm of Large Language Models (LLMs). In contrast to fine-tuning methods, training-free approaches typically utilize the advanced LLMs, thereby offering enhanced flexibility and efficiency in the development of AI agents for generating CAD parametric models. However, the lack of a mechanism to harness Chain-of-Thought (CoT) limits the potential of LLMs in CAD applications. The Seek-CAD is the pioneer exploration of locally deployed inference LLM DeepSeek-R1 for CAD parametric model generation with a training-free methodology. This study is the investigation to incorporate both visual and CoT feedback within the self-refinement mechanism for generating CAD models. Specifically, the initial generated parametric CAD model is rendered into a sequence of step-wise perspective images, which are subsequently processed by a Vision Language Model (VLM) alongside the corresponding CoTs derived from DeepSeek-R1 to assess the CAD model generation. Then, the feedback is utilized by DeepSeek-R1 to refine the initial generated model for the next round of generation. Moreover, we present an innovative 3D CAD model dataset structured around the SSR (Sketch, Sketch-based feature, and Refinements) triple design paradigm. This dataset encompasses a wide range of CAD commands, thereby aligning effectively with industrial application requirements and proving suitable for the generation of LLMs. Extensive experiments validate the effectiveness of Seek-CAD under various metrics.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Image Understanding",
+        "Language Modeling",
+        "Reasoning",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -2940,7 +3092,7 @@
       "source": "https://paperswithcode.co/paper/2404.00242",
       "code": "https://github.com/LINs-lab/DeFT",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2404_00242_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Large language models (LLMs) are increasingly employed for complex tasks that process multiple generation calls in a tree structure with shared prefixes of tokens, including few-shot prompting, multi-step reasoning, speculative decoding, etc. However, existing inference systems for tree-based applications are inefficient due to improper partitioning of queries and KV cache during attention calculation.This leads to two main issues: (1) a lack of memory access (IO) reuse for KV cache of shared prefixes, and (2) poor load balancing.As a result, there is redundant KV cache IO between GPU global memory and shared memory, along with low GPU utilization. To address these challenges, we propose DeFT(Decoding with Flash Tree-Attention), a hardware-efficient attention algorithm with prefix-aware and load-balanced KV cache partitions. DeFT reduces the number of read/write operations of KV cache during attention calculation through **KV-Guided Grouping**, a method that avoids repeatedly loading KV cache of shared prefixes in attention computation. Additionally, we propose **Flattened Tree KV Splitting**, a mechanism that ensures even distribution of the KV cache across partitions with little computation redundancy, enhancing GPU utilization during attention computations. By reducing 73-99% KV cache IO and nearly 100% IO for partial results during attention calculation, DeFT achieves up to 2.23/3.59$\\times$ speedup in the end-to-end/attention latency across three practical tree-based workloads compared to state-of-the-art attention algorithms. Our code is available at https://github.com/LINs-lab/DeFT.",
       "matchedBy": [
         "papers with code",
@@ -3019,6 +3171,66 @@
       ]
     },
     {
+      "id": "2502.19896",
+      "title": "GenPC: Zero-shot Point Cloud Completion via 3D Generative Priors",
+      "authors": "An Li, Zhe Zhu, Mingqiang Wei",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2502.19896",
+      "source": "https://paperswithcode.co/paper/2502.19896",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Existing point cloud completion methods, which typically depend on predefined synthetic training datasets, encounter significant challenges when applied to out-of-distribution, real-world scans. To overcome this limitation, we introduce a zero-shot completion framework, termed GenPC, designed to reconstruct high-quality real-world scans by leveraging explicit 3D generative priors.Our key insight is that recent feed-forward 3D generative models, trained on extensive internet-scale data, have demonstrated the ability to perform 3D generation from single-view images in a zero-shot setting. To harness this for completion, we first develop a Depth Prompting module that links partial point clouds with image-to-3D generative models by leveraging depth images as a stepping stone. To retain the original partial structure in the final results, we designed the Geometric Preserving Fusion module that aligns the generated shape with input by adaptively adjusting its pose and scale.Extensive experiments on widely used benchmarks validate the superiority and generalizability of our approach, bringing us a step closer to robust real-world scan completion.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "Key-value cache",
+        "Multi-head attention",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2406.05753",
+      "title": "Grounding Continuous Representations in Geometry: Equivariant Neural Fields",
+      "authors": "David Wessels, David M Knigge, Riccardo Valperga, Samuele Papa, Sharvaree Vadgama, Efstratios Gavves, Erik J Bekkers",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2406.05753",
+      "source": "https://paperswithcode.co/paper/2406.05753",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Conditional Neural Fields (CNFs) are increasingly being leveraged as continuous signal representations, by associating each data-sample with a latent variable that conditions a shared backbone Neural Field (NeF) to reconstruct the sample. However, existing CNF architectures face limitations when using this latent downstream in tasks requiring fine-grained geometric reasoning, such as classification and segmentation. We posit that this results from lack of explicit modelling of geometric information (e.g. locality in the signal or the orientation of a feature) in the latent space of CNFs. As such, we propose Equivariant Neural Fields (ENFs), a novel CNF architecture which uses a geometry-informed cross-attention to condition the NeF on a geometric variable—a latent point cloud of features—that enables an equivariant decoding from latent to field. We show that this approach induces a steerability property by which both field and latent are grounded in geometry and amenable to transformation laws: if the field transforms, the latent representation transforms accordingly—and vice versa. Crucially, this equivariance relation ensures that the latent is capable of (1) representing geometric patterns faitfhully, allowing for geometric reasoning in latent space, (2) weight-sharing over similar local patterns, allowing for efficient learning of datasets of fields. We validate these main properties in a range of tasks including classification, segmentation, forecasting, reconstruction and generative modelling, showing clear improvement over baselines with a geometry-free latent space.",
+      "matchedBy": [
+        "papers with code",
+        "Depthwise Convolution",
+        "Diffusion Transformer (DiT)",
+        "vision/multimodal",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2411.15432",
       "title": "Lifelong Knowledge Editing for Vision Language Models with Low-Rank Mixture-of-Experts",
       "authors": "Qizhou Chen, Chengyu Wang, Dakan Wang, Taolin Zhang, Wangyue Li, Xiaofeng He",
@@ -3061,7 +3273,7 @@
       "source": "https://paperswithcode.co/paper/2403.04348",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2403_04348_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "In $D$istributed optimization and $L$earning, and even more in the modern framework of federated learning, communication, which is slow and costly, is critical. We introduce LoCoDL, a communication-efficient algorithm that leverages the two popular and effective techniques of $Lo$cal training, which reduces the communication frequency, and $Co$mpression, in which short bitstreams are sent instead of full-dimensional vectors of floats. LoCoDL works with a large class of unbiased compressors that includes widely-used sparsification and quantization methods. LoCoDL provably benefits from local training and compression and enjoys a doubly-accelerated communication complexity, with respect to the condition number of the functions and the model dimension, in the general heterogeneous regime with strongly convex functions. This is confirmed in practice, with LoCoDL outperforming existing algorithms.",
       "matchedBy": [
         "papers with code",
@@ -3343,6 +3555,38 @@
       ]
     },
     {
+      "id": "2510.08510",
+      "title": "To Sink or Not to Sink: Visual Information Pathways in Large Vision-Language Models",
+      "authors": "Jiayun Luo, Wan-Cyuan Fan, Lyuyang Wang, Xiangteng He, Tanzila Rahman, Purang Abolmaesumi, Leonid Sigal",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2510.08510",
+      "source": "https://paperswithcode.co/paper/2510.08510",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Large Vision Language Models (LVLMs) have recently emerged as powerful architectures capable of understanding and reasoning over both visual and textual information. These models typically rely on two key components: a Vision Transformer (ViT) and a Large Language Model (LLM). ViT encodes visual content into a sequence of image tokens and serves as the perceptual front-end -- the eyes of the model. In contrast, the LLM interprets these tokens to perform high-level reasoning, generates responses, and functions as the cognitive core -- the brain of the model. However, it remains unclear which visual tokens contribute most significantly to understanding and reasoning, and how effectively these signals are propagated from ViT to the LLM. While most existing works have focused on identifying attention sinks, low-semantic tokens receiving disproportionately high attention, within the LLM, we shift the focus to the vision encoder by identifying a class of high-norm visual tokens from ViT, referred to as ViT attention sinks -- a problem that has been rarely studied but is indeed very important for LVLMs. Our findings show that these ViT sinks encapsulate high-level semantic concepts from images, allowing the LLM to perform more effective understanding and reasoning. Despite their importance, these sink tokens are often overlooked in existing LVLM architectures. To explore their contribution, we present both qualitative and quantitative analyses of the information embedded in these sink tokens. We also propose both training-free and training-based approaches to better leverage how this information is interpreted by the LLM, and to what extent. By explicitly utilizing these tokens, we demonstrate substantial improvements across a range of LVLMs and visual reasoning tasks, including but not limited to mathematical problem solving, logical inference, and geometric understanding, highlighting the untapped potential of ViT attention sinks in enhancing visual reasoning.",
+      "matchedBy": [
+        "papers with code",
+        "Image Classification",
+        "Image Understanding",
+        "Language Modeling",
+        "CLIP",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2501.08286",
       "title": "VINGS-Mono: Visual-Inertial Gaussian Splatting Monocular SLAM in Large Scenes",
       "authors": "Wu, Ke, Zhang, Zicheng, Tie, Muer, Ai, Ziqing, Gan, Zhongxue, Ding, Wenchao",
@@ -3353,7 +3597,7 @@
       "source": "https://paperswithcode.co/paper/2501.08286",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2501_08286_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "VINGS-Mono is a monocular inertial Gaussian Splatting (GS) SLAM framework designed for large-scale scenes. It integrates four main components: VIO Front End, 2D Gaussian Map, NVS Loop Closure, and Dynamic Eraser. The VIO Front End processes RGB frames with dense bundle adjustment and uncertainty estimation to extract scene geometry and poses. The mapping module incrementally builds a 2D Gaussian map with up to 50 million Gaussian ellipsoids. Key components like a Sample-based Rasterizer, Score Manager, and Pose Refinement enhance mapping efficiency and localization accuracy for large-scale urban environments. To ensure global consistency, the NVS Loop Closure uses Novel View Synthesis for loop detection and map correction, while the Dynamic Eraser addresses dynamic objects in outdoor scenes. Evaluationsdemonstrate localization performance comparable to Visual-Inertial Odometry and surpass GS/NeRF SLAM methods in mapping and rendering. A mobile app further verifies real-time capability, generating high-quality Gaussian maps using a smartphone camera and low-frequency IMU. VINGS-Mono is the first monocular Gaussian SLAM framework for outdoor, kilometer-scale scenes.",
       "matchedBy": [
         "papers with code",
@@ -3597,7 +3841,7 @@
       "source": "https://paperswithcode.co/paper/2503.00653",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2503_00653_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "In reinforcement learning (RL), world models serve as internal simulators, enabling agents to predict environment dynamics and future outcomes in order to make informed decisions. While previous approaches leveraging discrete latent spaces, such as DreamerV3, have demonstrated strong performance in discrete action settings and visual control tasks, their comparative performance in state-based continuous control remains underexplored. In contrast, methods with continuous latent spaces, such as TD-MPC2, have shown notable success in state-based continuous control benchmarks. In this paper, we demonstrate that modeling discrete latent states has benefits over continuous latent states and that discrete codebook encodings are more effective representations for continuous control, compared to alternative encodings, such as one-hot and label-based encodings. Based on these insights, we introduce DCWM: Discrete Codebook World Model, a self-supervised world model with a discrete and stochastic latent space, where latent states are codes from a codebook. We combine DCWM with decision-time planning to get our model-based RL algorithm, named DC-MPC: Discrete Codebook Model Predictive Control, which performs competitively against recent state-of-the-art algorithms, including TD-MPC2 and DreamerV3, on continuous control benchmarks.",
       "matchedBy": [
         "papers with code",
@@ -3684,7 +3928,7 @@
       "source": "https://paperswithcode.co/paper/2509.13095",
       "code": "https://github.com/zhaozijie2022/seqwm",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2509_13095_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Model-based reinforcement learning (MBRL) has achieved remarkable success in robotics due to its high sample efficiency and planning capability. However, extending MBRL to physical multi-robot cooperation remains challenging due to the complexity of joint dynamics. To address this challenge, we propose the Sequential World Model (**SeqWM**), a novel framework that integrates the sequential paradigm into multi-robot MBRL. SeqWM employs independent, autoregressive agent-wise world models to represent joint dynamics, where each agent generates its future trajectory and plans its actions based on the predictions of its predecessors. This design lowers modeling complexity and enables the emergence of advanced cooperative behaviors through explicit intention sharing. Experiments on Bi-DexHands and Multi-Quadruped demonstrate that SeqWM outperforms existing state-of-the-art model-based and model-free baselines in both overall performance and sample efficiency, while exhibiting advanced cooperative behaviors such as predictive adaptation, temporal alignment, and role division. Furthermore, SeqWM has been successfully deployed on physical quadruped robots, validating its effectiveness in real-world multi-robot systems. Demos and code are available at: https://github.com/zhaozijie2022/seqwm",
       "matchedBy": [
         "papers with code",
@@ -3785,8 +4029,8 @@
         "Robotics",
         "Time-series forecasting",
         "serving",
-        "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "robotics"
       ],
       "sources": [
         "paperswithcode"
@@ -3840,7 +4084,7 @@
       "source": "https://paperswithcode.co/paper/2409.18084",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2409_18084_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "With the increasing presence of service robots and autonomous vehicles in human environments, navigation systems need to evolve beyond simple destination reach to incorporate social awareness. This paper introduces GSON, a novel group-based social navigation framework that leverages Large Multimodal Models (LMMs) to enhance robots' social perception capabilities. Our approach uses visual prompting to enable zero-shot extraction of social relationships among pedestrians and integrates these results with robust pedestrian detection and tracking pipelines to overcome the inherent inference speed limitations of LMMs. The planning system incorporates a mid-level planner that sits between global path planning and local motion planning, effectively preserving both global context and reactive responsiveness while avoiding disruption of the predicted social group. We validate GSON through extensive real-world mobile robot navigation experiments involving complex social scenarios such as queuing, conversations, and photo sessions. Comparative results show that our system significantly outperforms existing navigation approaches in minimizing social perturbations while maintaining comparable performance on traditional navigation metrics.",
       "matchedBy": [
         "papers with code",
@@ -3963,7 +4207,7 @@
       "source": "https://paperswithcode.co/paper/2502.00114",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2502_00114_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Hand-drawn maps can be used to convey navigation instructions between humans and robots in a natural and efficient manner. However, these maps can often contain inaccuracies such as scale distortions and missing landmarks which present challenges for mobile robot navigation. This paper introduces a novel Hand-drawn Map Navigation (HAM-Nav) architecture that leverages pre-trained vision language models (VLMs) for robot navigation across diverse environments, hand-drawing styles, and robot embodiments, even in the presence of map inaccuracies. HAM-Nav integrates a unique Selective Visual Association Prompting approach for topological map-based position estimation and navigation planning as well as a Predictive Navigation Plan Parser to infer missing landmarks. Extensive experiments were conducted in photorealistic simulated environments, using both wheeled and legged robots, demonstrating the effectiveness of HAM-Nav in terms of navigation success rates and Success weighted by Path Length. Furthermore, a user study in real-world environments highlighted the practical utility of hand-drawn maps for robot navigation as well as successful navigation outcomes compared against a non-hand-drawn map approach.",
       "matchedBy": [
         "papers with code",
@@ -4014,6 +4258,34 @@
       ]
     },
     {
+      "id": "2504.00665",
+      "title": "Monocular and Generalizable Gaussian Talking Head Animation",
+      "authors": "Shengjie Gong, Haojie Li, Jiapeng Tang, Dongming Hu, Shuangping Huang, Hao Chen, Tianshui Chen, Zhuoman Liu",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2504.00665",
+      "source": "https://paperswithcode.co/paper/2504.00665",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "In this work, we introduce Monocular and Generalizable Gaussian Talking Head Animation (MGGTalk), which requires monocular datasets and generalizes to unseen identities without personalized re-training. Compared with previous 3D Gaussian Splatting (3DGS) methods that requires elusive multi-view datasets or tedious personalized learning/inference, MGGtalk enables more practical and broader applications. However, in the absence of multi-view and personalized training data, the incompleteness of geometric and appearance information poses a significant challenge. To address these challenges, MGGTalk explores depth information to enhance geometric and facial symmetry characteristics to supplement both geometric and appearance features. Initially, based on the pixel-wise geometric information obtained from depth estimation, we incorporate symmetry operations and point cloud filtering techniques to ensure a complete and precise position parameter for 3DGS. Subsequently, we adopt a two-stage strategy with symmetric priors for predicting the remaining 3DGS parameters. We begin by predicting Gaussian parameters for the visible facial regions of the source image. These parameters are subsequently utilized to improve the prediction of Gaussian parameters for the non-visible regions. Extensive experiments demonstrate that MGGTalk surpasses previous state-of-the-art methods, achieving superior performance across various metrics.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Depth estimation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2410.23703",
       "title": "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
       "authors": "Junda Wu, Xintong Li, Ruoyu Wang, Yu Xia, Yuxin Xiong, Jianing Wang, Tong Yu, Xiang Chen, Branislav Kveton, Lina Yao, Jingbo Shang, Julian McAuley",
@@ -4042,6 +4314,32 @@
       "categories": [
         "Language Modeling",
         "Data / Retrieval"
+      ]
+    },
+    {
+      "id": "2402.04836",
+      "title": "On the Completeness of Invariant Geometric Deep Learning Models",
+      "authors": "Zian Li, Xiyuan Wang, Shijia Kang, Muhan Zhang",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2402.04836",
+      "source": "https://paperswithcode.co/paper/2402.04836",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Invariant models, one important class of geometric deep learning models, are capable of generating meaningful geometric representations by leveraging informative geometric features in point clouds. These models are characterized by their simplicity, good experimental results and computational efficiency. However, their theoretical expressive power still remains unclear, restricting a deeper understanding of the potential of such models. In this work, we concentrate on characterizing the theoretical expressiveness of a wide range of invariant models under *fully-connected* conditions. We first rigorously characterize the expressiveness of the most classic invariant model, message-passing neural networks incorporating distance (DisGNN), restricting its unidentifiable cases to be only highly symmetric point clouds. We then prove that GeoNGNN, the geometric counterpart of one of the simplest subgraph graph neural networks, can effectively break these corner cases' symmetry and thus achieve E(3)-completeness. By leveraging GeoNGNN as a theoretical tool, we further prove that: 1) most subgraph GNNs developed in traditional graph learning can be seamlessly extended to geometric scenarios with E(3)-completeness; 2) DimeNet, GemNet and SphereNet, three well-established invariant models, are also all capable of achieving E(3)-completeness. Our theoretical results fill the gap in the expressive power of invariant models, contributing to a rigorous and comprehensive understanding of their capabilities.",
+      "matchedBy": [
+        "papers with code",
+        "GCN",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -4113,7 +4411,7 @@
       "source": "https://paperswithcode.co/paper/2505.22626",
       "code": "",
       "project": "https://scizor-icra2026",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2505_22626_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Imitation learning advances robot capabilities by enabling the acquisition of diverse behaviors from human demonstrations. However, large-scale datasets used for policy training often introduce substantial variability in quality, which can negatively impact performance. As a result, automatically curating datasets by filtering low-quality samples to improve quality becomes essential. Existing robotic curation approaches rely on costly manual annotations and perform curation at a coarse granularity, such as the dataset or trajectory level, failing to account for the quality of individual state-action pairs. To address this, we introduce SCIZOR, the first self-supervised transition-level curation framework that requires no annotations and scales to large-scale datasets to improve the performance of imitation learning policies and modern Vision-Language-Action (VLA) models. SCIZOR targets two complementary sources of low-quality data: suboptimal data, which hinders learning with undesirable actions, and redundant data, which dilutes training with repetitive patterns. SCIZOR leverages a self-supervised task progress predictor for suboptimal data to remove samples lacking task progression, and a deduplication module operating on joint state-action representation for samples with redundant patterns. Empirically, we show that SCIZOR enables imitation learning policies and modern VLA models to achieve higher performance with less data, yielding an average improvement of 15.4% across multiple benchmarks. More information is available at: https://scizor-icra2026.github.io",
       "matchedBy": [
         "papers with code",
@@ -4233,7 +4531,7 @@
       "source": "https://paperswithcode.co/paper/2411.10446",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2411_10446_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Recent advancements in vision-language models (VLMs) offer potential for robot task planning, but challenges remain due to VLMs’ tendency to generate incorrect action sequences. To address these limitations, we propose VeriGraph, a novel framework that integrates VLMs for robotic planning while verifying action feasibility. VeriGraph employs scene graphs as an intermediate representation, capturing key objects and spatial relationships to improve plan verification and refinement. The system generates a scene graph from input images and uses it to iteratively check and correct action sequences generated by an LLM-based task planner, ensuring constraints are respected and actions are executable. Our approach significantly enhances task completion rates across diverse manipulation scenarios, outperforming baseline methods by 58% for language-based tasks and 30% for image-based tasks.",
       "matchedBy": [
         "papers with code",
@@ -4255,6 +4553,35 @@
       ]
     },
     {
+      "id": "2506.15871",
+      "title": "Visual symbolic mechanisms: Emergent symbol processing in Vision Language Models",
+      "authors": "Rim Assouel, Declan Iain Campbell, Yoshua Bengio, Taylor Whittington Webb",
+      "org": "",
+      "published": "ICLR 2026 Oral",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2506.15871",
+      "source": "https://paperswithcode.co/paper/2506.15871",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "To accurately process a visual scene, observers must bind features together to represent individual objects. This capacity is necessary, for instance, to distinguish an image containing a red square and a blue circle from an image containing a blue square and a red circle. Recent work has found that language models solve this ‘binding problem’ via a set of symbol-like, content-independent indices, but it is unclear whether similar mechanisms are employed by Vision Language Models (VLM). This question is especially relevant, given the persistent failures of VLMs on tasks that require binding. Here, we identify a previously unknown set of emergent symbolic mechanisms that support binding specifically in VLMs, via a content-independent, spatial indexing scheme. Moreover, we find that binding errors, when they occur, can be traced directly to failures in these mechanisms. Taken together, these results shed light on the mechanisms that support symbol-like processing in VLMs, and suggest possible avenues for reducing the number of binding failures exhibited by these models.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2509.22643",
       "title": "VLA-Reasoner: Empowering Vision-Language-Action Models with Reasoning Via Online Monte Carlo Tree Search",
       "authors": "Guo, Wenkai, Lu, Guanxing, Deng, Haoyuan, Wu, Zhenyu, Tang, Yansong, Wang, Ziwei",
@@ -4273,8 +4600,8 @@
         "LLaMa",
         "MuZero",
         "Residual Block",
-        "robotics",
-        "language modeling"
+        "language modeling",
+        "robotics"
       ],
       "sources": [
         "paperswithcode"
@@ -4351,7 +4678,7 @@
       "source": "https://paperswithcode.co/paper/2510.16500",
       "code": "https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2510_16500_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "A major bottleneck in off-road autonomous driving research lies in the scarcity of large-scale, high-quality datasets and benchmarks. To bridge this gap, we present ORAD-3D, which, to the best of our knowledge, is the largest dataset specifically curated for off-road autonomous driving. ORAD-3D covers a wide spectrum of terrains—including woodlands, farmlands, grasslands, riversides, gravel roads, cement roads, and rural areas—while capturing diverse environmental variations across weather conditions (sunny, rainy, foggy, and snowy) and illumination levels (bright daylight, daytime, twilight, and nighttime). Building upon this dataset, we establish a comprehensive suite of benchmark evaluations spanning five fundamental tasks: 2D free-space detection, 3D occupancy prediction, rough GPS-guided path planning, vision–language model–driven autonomous driving, and world model for off-road environments. Together, the dataset and benchmarks provide a unified and robust resource for advancing perception and planning in challenging off-road scenarios. The dataset is publicly available at https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD.",
       "matchedBy": [
         "papers with code",
@@ -4427,6 +4754,37 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2505.19911",
+      "title": "Attention! You Vision Language Model Could Be Maliciously Manipulated",
+      "authors": "Xiaosen Wang, Shaokang Wang, Zhijin Ge, Yuyang Luo, Shudong Zhang",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2505.19911",
+      "source": "https://paperswithcode.co/paper/2505.19911",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Large Vision-Language Models (VLMs) have achieved remarkable success in understanding complex real-world scenarios and supporting data-driven decision-making processes. However, VLMs exhibit significant vulnerability against adversarial examples, either text or image, which can lead to various adversarial outcomes, e.g., jailbreaking, hijacking, and hallucination, etc. In this work, we empirically and theoretically demonstrate that VLMs are particularly susceptible to image-based adversarial examples, where imperceptible perturbations can precisely manipulate each output token. To this end, we propose a novel attack called Vision-language model Manipulation Attack (VMA), which integrates first-order and second-order momentum optimization techniques with a differentiable transformation mechanism to effectively optimize the adversarial perturbation. Notably, VMA can be a double-edged sword: it can be leveraged to implement various attacks, such as jailbreaking, hijacking, privacy breaches, Denial-of-Service, and the generation of sponge examples, etc, while simultaneously enabling the injection of watermarks for copyright protection. Extensive empirical evaluations substantiate the efficacy and generalizability of VMA across diverse scenarios and datasets.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "vision/multimodal",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
       ]
     },
     {
@@ -4521,6 +4879,37 @@
       ]
     },
     {
+      "id": "2510.05930",
+      "title": "Carré du champ flow matching: better quality-generalisation tradeoff in generative models",
+      "authors": "Jacob Bamberger, Iolo Jones, Dennis Duncan, Michael M. Bronstein, Pierre Vandergheynst, Adam Gosztolai",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2510.05930",
+      "source": "https://paperswithcode.co/paper/2510.05930",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Deep generative models often face a fundamental tradeoff: high sample quality can come at the cost of memorisation, where the model reproduces training data rather than generalising across the underlying data geometry. We introduce Carré du champ flow matching (CDC-FM), a generalisation of flow matching (FM), that improves the quality-generalisation tradeoff by regularising the probability path with a geometry-aware noise. Our method replaces the homogeneous, isotropic noise in FM with a spatially varying, anisotropic Gaussian noise whose covariance captures the local geometry of the latent data manifold. We prove that this geometric noise can be optimally estimated from the data and is scalable to large data. Further, we provide an extensive experimental evaluation on diverse datasets (synthetic manifolds, point clouds, single-cell genomics, animal motion capture, and images) as well as various neural network architectures (MLPs, CNNs, and transformers). We demonstrate that CDC-FM consistently offers a better quality-generalisation tradeoff, even when used as a latent space generation model. We observe significant improvements over standard FM in data-scarce regimes and in highly non-uniformly sampled datasets, which are often encountered in AI for science applications. Our work provides a mathematical framework for studying the interplay between data geometry, generalisation and memorisation in generative models, as well as a robust and scalable algorithm that can be readily integrated into existing flow matching pipelines.",
+      "matchedBy": [
+        "papers with code",
+        "Diffusion",
+        "Flow matching",
+        "Label smoothing",
+        "Stable Diffusion",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2503.02593",
       "title": "CMMLoc: Advancing Text-to-PointCloud Localization with Cauchy-Mixture-Model Based Framework",
       "authors": "Yanlong Xu, Haoxuan Qu, Jun Liu, Wenxiao Zhang, Xun Yang",
@@ -4569,7 +4958,6 @@
         "data / retrieval",
         "robotics",
         "vision/multimodal",
-        "benchmark",
         "frontier training"
       ],
       "sources": [
@@ -4621,7 +5009,7 @@
       "source": "https://paperswithcode.co/paper/2507.09177",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2507_09177_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Continual reinforcement learning (CRL) refers to a naturalistic setting where an agent needs to endlessly evolve, by trial and error, to solve multiple tasks that are presented sequentially. One of the largest obstacles to CRL is that the agent may forget how to solve previous tasks when learning a new task, known as catastrophic forgetting. In this paper, we propose to address this challenge by planning with online world models. Specifically, we learn a Follow-The-Leader shallow model online to capture the world dynamics, in which we plan using model predictive control to solve a set of tasks specified by any reward functions. The online world model is immune to forgetting by construction with a proven regret bound of $\\mathcal{O}(\\sqrt{K^2D\\log(T)})$ under mild assumptions. The planner searches actions solely based on the latest online model, thus forming a FTL Online Agent (OA) that updates incrementally. To assess OA, we further design Continual Bench, a dedicated environment for CRL, and compare with several strong baselines under the same model-planning algorithmic framework. The empirical results show that OA learns continuously to solve new tasks while not forgetting old skills, outperforming agents built on deep world models with various continual learning techniques.",
       "matchedBy": [
         "papers with code",
@@ -4647,7 +5035,7 @@
       "source": "https://paperswithcode.co/paper/2508.00719",
       "code": "",
       "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2508_00719_v1.jpg?fit=fit3",
+      "thumbnail": "",
       "summary": "Knowledge Graph Question Answering (KGQA) aims to interpret natural language queries and perform structured reasoning over knowledge graphs by leveraging their relational and semantic structures to retrieve accurate answers. Existing methods primarily follow either the retrieve-then-reason paradigm, which relies on Graph Neural Networks (GNNs) or heuristic rules to extract static candidate paths, or dynamic path generation strategies that employ large language models (LLMs) with prompting to jointly perform retrieval and reasoning. However, the former lacks adaptability due to static path extraction and the absence of contextual refinement, while the latter suffers from high computational costs and limited evaluation accuracy because of their dependence on fixed scoring functions and repeated LLM calls. To address these issues, this paper proposes Dynamically Adaptive MCTS-based Reasoning (DAMR), a novel framework that integrates LLM-guided Monte Carlo Tree Search (MCTS) with adaptive path evaluation to enable efficient and context-aware KGQA. DAMR leverages MCTS as a backbone, where an LLM-based planner selects the top-k semantically relevant relations at each expansion step to effectively reduce the search space. To enhance evaluation accuracy, we introduce a lightweight Transformer-based scorer that performs context-aware plausibility estimation by jointly encoding the question and relation sequence through cross-attention, thereby capturing fine-grained semantic shifts during multi-hop reasoning. Furthermore, to mitigate the scarcity of high-quality supervision, DAMR incorporates a dynamic pseudo-path refinement mechanism that periodically generates training signals from partial paths explored during search, enabling the scorer to continually adapt to the evolving distribution of reasoning trajectories. Extensive experiments on multiple KGQA benchmarks show that DAMR significantly outperforms state-of-the-art methods.",
       "matchedBy": [
         "papers with code",
@@ -4728,6 +5116,31 @@
       "categories": [
         "Frontier Training",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2412.16776",
+      "title": "DMesh++: An Efficient Differentiable Mesh for Complex Shapes",
+      "authors": "Sanghyun Son, Matheus Gadelha, Yang Zhou, Matthew Fisher, Zexiang Xu, Yi-Ling Qiao, Ming C. Lin, Yi Zhou",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2412.16776",
+      "source": "https://paperswithcode.co/paper/2412.16776",
+      "code": "",
+      "project": "https://sonsang",
+      "thumbnail": "",
+      "summary": "Recent probabilistic methods for 3D triangular meshes capture diverse shapes by differentiable mesh connectivity, but face high computational costs with increased shape details. We introduce a new differentiable mesh processing method that addresses this challenge and efficiently handles meshes with intricate structures. Our method reduces time complexity from O(N) to O(log N) and requires significantly less memory than previous approaches. Building on this innovation, we present a reconstruction algorithm capable of generating complex 2D and 3D shapes from point clouds or multi-view images. Visit https://sonsang.github.io/dmesh2-project for source code and supplementary material.",
+      "matchedBy": [
+        "papers with code",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -4955,410 +5368,6 @@
       "matchedBy": [
         "papers with code",
         "Language Modeling",
-        "benchmark",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
-      ]
-    },
-    {
-      "id": "2506.23919",
-      "title": "Goal-VLA: Image-Generative VLMs As Object-Centric World Models Empowering Zero-Shot Robot Manipulation",
-      "authors": "Chen, Haonan, Guo, Jingxiang, Wang, Bangjun, Zhang, Tianrui, Huang, Xuchuan, Hou, Yiwen, Zheng, Boren, Tie, Chenrui, Deng, Jiajun, Shao, Lin",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2506.23919",
-      "source": "https://paperswithcode.co/paper/2506.23919",
-      "code": "",
-      "project": "https://nus-lins-lab",
-      "thumbnail": "",
-      "summary": "Generalization remains a fundamental challenge in robotic manipulation. To tackle this challenge, recent Vision-Language-Action (VLA) models build policies on top of Vision-Language Models (VLMs), seeking to transfer their open-world semantic knowledge. However, their zero-shot capability lags significantly behind the base VLMs, as the instruction-vision-action data is too limited to cover diverse scenarios, tasks, and robot embodiments. In this work, we present textbf{name}, a zero-shot framework that leverages Image-Generative VLMs as world models to generate desired goal states, from which the target object pose is derived to enable generalizable manipulation. The key insight is that object state representation is the golden interface, naturally separating a manipulation system into high-level and low-level policies. This representation abstracts away explicit action annotations, allowing the use of highly generalizable VLMs while simultaneously providing spatial cues for training-free low-level control. To further improve robustness, we introduce a Reflection-through-Synthesis process that iteratively validates and refines the generated goal image before execution. Both simulated and real-world experiments demonstrate that our name achieves strong performance and inspiring generalizability in manipulation tasks. Supplementary materials are available at https://nus-lins-lab.github.io/goalvlaweb/.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "Robotics",
-        "Depth Anything",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Frontier Training"
-      ]
-    },
-    {
-      "id": "2412.14579",
-      "title": "GSRender: Deduplicated Occupancy Estimation Via Weakly Supervised 3D Gaussian Splatting",
-      "authors": "Sun, Qianpu, Zhou, Sifan, Changyong, Shu, Han, Sirui, Yuan, Chun",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2412.14579",
-      "source": "https://paperswithcode.co/paper/2412.14579",
-      "code": "",
-      "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2412_14579_v1.jpg?fit=fit3",
-      "summary": "Weakly-supervised 3D occupancy perception is crucial for vision-based autonomous driving in outdoor environments. Previous methods based on NeRF often face a challenge in balancing the number of samples used. Too many samples can decrease efficiency, while too few can compromise accuracy, leading to variations in the mean Intersection over Union (mIoU) by 5-10 points. Furthermore, even with surrounding-view image inputs, only a single image is rendered from each viewpoint at any given moment. This limitation leads to duplicated predictions, which significantly impacts the practicality of the approach. However, this issue has largely been overlooked in existing research. To address this, we propose GSRender, which uses 3D Gaussian Splatting for weakly-supervised occupancy estimation, simplifying the sampling process. Additionally, we introduce the Ray Compensation module, which reduces duplicated predictions by compensating for features from adjacent frames. Finally, we redesign the dynamic loss to remove the influence of dynamic objects from adjacent frames. Extensive experiments show that our approach achieves SOTA results in RayIoU (+6.0), while also narrowing the gap with 3D-supervised methods. This work lays a solid foundation for weakly-supervised occupancy perception. The code will be released soon.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Deformable Attention",
-        "Gaussian splatting",
-        "Key-value cache",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2606.12882",
-      "title": "HarnessBridge: Learnable Bidirectional Controller for LLM Agent Harness",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.12882",
-      "source": "https://huggingface.co/papers/2606.12882",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "",
-      "matchedBy": [
-        "hugging face daily",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2506.01185",
-      "title": "HoMeR: Learning In-The-Wild Mobile Manipulation Via Hybrid Imitation and Whole-Body Control",
-      "authors": "Sundaresan, Priya, Malhotra, Rhea, Miao, Phillip, Yang, Jingyun, Wu, Jimmy, Hu, Hengyuan, Antonova, Rika, Engelmann, Francis, Sadigh, Dorsa, Bohg, Jeannette",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2506.01185",
-      "source": "https://paperswithcode.co/paper/2506.01185",
-      "code": "",
-      "project": "https://homer-manip",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2506_01185_v1.jpg?fit=fit3",
-      "summary": "We introduce HoMeR, an imitation learning framework for mobile manipulation that combines whole-body control with hybrid action modes that handle both long-range and fine-grained motion, enabling effective performance on realistic in-the-wild tasks. At its core is a fast, kinematics-based whole-body controller that maps desired end-effector poses to coordinated motion across the mobile base and arm. Within this reduced end-effector action space, HoMeR learns to switch between absolute pose predictions for long-range movement and relative pose predictions for fine-grained manipulation, offloading low-level coordination to the controller and focusing learning on task-level decisions. We deploy HoMeR on a holonomic mobile manipulator with a 7-DoF arm in a real home. We compare HoMeR to baselines without hybrid actions or whole-body control across 3 simulated and 3 real household tasks such as opening cabinets, sweeping trash, and rearranging pillows. Across tasks, HoMeR achieves an overall success rate of 79.17% using just 20 demonstrations per task, outperforming the next best baseline by 29.17 on average. HoMeR is also compatible with vision-language models and can leverage their internet-scale priors to better generalize to novel object appearances, layouts, and cluttered scenes. In summary, HoMeR moves beyond tabletop settings and demonstrates a scalable path toward sample-efficient, generalizable manipulation in everyday indoor spaces. Code, videos, and supplementary material are available at: https://homer-manip.github.io/.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "data / retrieval",
-        "robotics",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics",
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2501.14038",
-      "title": "Implicit Neural Surface Deformation with Explicit Velocity Fields",
-      "authors": "Lu Sang, Zehranaz Canfes, Dongliang Cao, Florian Bernard, Daniel Cremers",
-      "org": "",
-      "published": "ICLR 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2501.14038",
-      "source": "https://paperswithcode.co/paper/2501.14038",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "In this work, we introduce the first unsupervised method that simultaneously predicts time-varying neural implicit surfaces and deformations between pairs of point clouds. We propose to model the point movement using an explicit velocity field and directly deform a time-varying implicit field using the modified level-set equation. This equation utilizes an iso-surface evolution with Eikonal constraints in a compact formulation, ensuring the integrity of the signed distance field. By applying a smooth, volume-preserving constraint to the velocity field, our method successfully recovers physically plausible intermediate shapes. Our method is able to handle both rigid and non-rigid deformations without any intermediate shape supervision. Our experimental results demonstrate that our method significantly outperforms existing works, delivering superior results in both quality and efficiency.",
-      "matchedBy": [
-        "papers with code",
-        "serving",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2410.21759",
-      "title": "IntLoRA: Integral Low-rank Adaptation of Quantized Diffusion Models",
-      "authors": "Hang Guo, Yawei Li, Tao Dai, Shu-Tao Xia, Luca Benini",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2410.21759",
-      "source": "https://paperswithcode.co/paper/2410.21759",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Fine-tuning pre-trained diffusion models under limited budgets has gained great success. In particular, the recent advances that directly fine-tune the quantized weights using Low-rank Adaptation (LoRA) further reduces training costs. Despite these progress, we point out that existing adaptation recipes are not inference-efficient. Specifically, additional post-training quantization (PTQ) on tuned weights is needed during deployment, which results in noticeable performance drop when the bit-width is low. Based on this observation, we introduce IntLoRA, which adapts quantized diffusion models with integer-type low-rank parameters, to include inference efficiency during tuning. Specifically, IntLoRA enables pre-trained weights to remain quantized during training, facilitating fine-tuning on consumer-level GPUs. During inference, IntLoRA weights can be seamlessly merged into pre-trained weights to directly obtain quantized downstream weights without PTQ. Extensive experiments show our IntLoRA achieves significant speedup on both training and inference without losing performance.",
-      "matchedBy": [
-        "papers with code",
-        "CLIP",
-        "DINO",
-        "Key-value cache",
-        "LoRa",
-        "serving",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving",
-      "categories": [
-        "Serving",
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2410.12537",
-      "title": "Is Complex Query Answering Really Complex?",
-      "authors": "Cosimo Gregucci, Bo Xiong, Daniel Hernández, Lorenzo Loconte, Pasquale Minervini, Steffen Staab, Antonio Vergari",
-      "org": "",
-      "published": "ICML 2025 Spotlight",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2410.12537",
-      "source": "https://paperswithcode.co/paper/2410.12537",
-      "code": "",
-      "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2410_12537_v1.jpg?fit=fit3",
-      "summary": "Complex query answering (CQA) on knowledge graphs (KGs) is gaining momentum as a challenging reasoning task. In this paper, we show that the current benchmarks for CQA might not be as *complex* as we think, as the way they are built distorts our perception of progress in this field. For example, we find that in these benchmarks most queries (up to 98% for some query types) can be reduced to simpler problems, e.g., link prediction, where only one link needs to be predicted. The performance of state-of-the-art CQA models decreses significantly when such models are evaluated on queries that cannot be reduced to easier types. Thus, we propose a set of more challenging benchmarks composed of queries that *require* models to reason over multiple hops and better reflect the construction of real-world KGs. In a systematic empirical investigation, the new benchmarks show that current methods leave much to be desired from current CQA methods.",
-      "matchedBy": [
-        "papers with code",
-        "data / retrieval",
-        "benchmark",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
-      ]
-    },
-    {
-      "id": "2606.13578",
-      "title": "LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories",
-      "authors": "Baochang Ren, Xinjie Liu, Xi Chen, Yanshuo Liu, Chenxi Li, Daqi Gao, Zeqin Su, Jintao Xing, Zirui Xue, Rui Li, Xiangyu Zhao, Shuofei Qiao, Minting Pan, Wangmeng Zuo, Lei Bai, Dongzhan Zhou, Ningyu Zhang, Huajun Chen",
-      "org": "",
-      "published": "2026-06-11",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.13578",
-      "source": "https://huggingface.co/papers/2606.13578",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Scientific laboratories increasingly rely on AI systems to reason about experiments, but the physical act of doing science remains largely outside their reach. AI can help read literature, generate hypotheses, and plan protocols, yet the execution of those protocols at the bench still requires a human operator. Vision-Language-Action (VLA) models provide one possible interface between written protocols and robot execution, but existing policies are trained mostly on household and tabletop demonstrations and rarely encounter the instruments, transparent liquids, or fixed protocol workflows found in scientific laboratories. Closing this gap requires both laboratory-specific supervision and a unified learning framework that can accommodate the diverse robot embodiments used to execute experimental protocols. We therefore identify data and embodiment as central bottlenecks alongside model design. To address the data side, we build RoboGenesis, a simulation-based workflow and data engine that composes configured laboratory workflows from atomic skills, validates and filters rollouts, and exports structured demonstrations across supported robot profiles. On the policy side, we present LabVLA, trained with a two-stage recipe: FAST action token pretraining first makes the Qwen3-VL-4B-Instruct backbone action aware before any continuous control is learned, and flow matching posttraining then attaches a DiT action expert under knowledge insulation. On the LabUtopia benchmark, LabVLA achieves the highest average success rate among all evaluated baselines under both in-distribution and out-of-distribution settings.",
-      "matchedBy": [
-        "arxiv",
-        "data / retrieval",
-        "robotics",
-        "vision/multimodal",
-        "benchmark",
-        "frontier training"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Frontier Training"
-      ]
-    },
-    {
-      "id": "2606.09446",
-      "title": "Leveraging Morphology for Historical Script Metrological Analysis",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.09446",
-      "source": "https://huggingface.co/papers/2606.09446",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "",
-      "matchedBy": [
-        "hugging face daily",
-        "data / retrieval",
-        "benchmark",
-        "language modeling"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2410.03462",
-      "title": "Linear Transformer Topological Masking with Graph Random Features",
-      "authors": "Isaac Reid, Kumar Avinava Dubey, Deepali Jain, William F Whitney, Amr Ahmed, Joshua Ainslie, Alex Bewley, Mithun George Jacob, Aranyak Mehta, David Rendleman, Connor Schenck, Richard E. Turner, René Wagner, Adrian Weller, Krzysztof Marcin Choromanski",
-      "org": "",
-      "published": "ICLR 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2410.03462",
-      "source": "https://paperswithcode.co/paper/2410.03462",
-      "code": "",
-      "project": "",
-      "thumbnail": "https://paperswithcode.co/api/thumbnails/2410_03462_v1.jpg?fit=fit3",
-      "summary": "When training transformers on graph-structured data, incorporating information about the underlying topology is crucial for good performance. Topological masking, a type of relative position encoding, achieves this by upweighting or downweighting attention depending on the relationship between the query and keys in the graph. In this paper, we propose to parameterise topological masks as a learnable function of a weighted adjacency matrix -- a novel, flexible approach which incorporates a strong structural inductive bias. By approximating this mask with graph random features (for which we prove the first known concentration bounds), we show how this can be made fully compatible with linear attention, preserving $\\mathcal{O}(N)$ time and space complexity with respect to the number of input tokens. The fastest previous alternative was $\\mathcal{O}(N \\log N)$ and only suitable for specific graphs. Our efficient masking algorithms provide strong performance gains for image and point cloud data, including with $>30$k nodes.",
-      "matchedBy": [
-        "papers with code",
-        "Key-value cache",
-        "Multi-head attention",
-        "Performer",
-        "Transformer",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2511.09516",
-      "title": "MAP-VLA: Memory-Augmented Prompting for Vision-Language-Action Model in Robotic Manipulation",
-      "authors": "Li, Runhao, Guo, Wenkai, Wu, Zhenyu, Wang, Changyuan, Deng, Haoyuan, Weng, Zhenyu, Tan, Yap-Peng, Wang, Ziwei",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2511.09516",
-      "source": "https://paperswithcode.co/paper/2511.09516",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Pre-trained Vision-Language-Action (VLA) models have achieved remarkable success in improving robustness and generalization for end-to-end robotic manipulation. However, these models struggle with long-horizon tasks due to their lack of memory and reliance solely on immediate sensory inputs. To address this limitation, we propose Memory-Augmented Prompting for Vision-Language-Action model (MAP-VLA), a novel framework that empowers pre-trained VLA models with demonstration-derived memory prompts to augment action generation for long-horizon robotic manipulation tasks. To achieve this, MAP-VLA first constructs a memory library from historical demonstrations, where each memory unit captures information about a specific stage of a task. These memory units are implemented as learnable soft prompts optimized through prompt tuning. Then, during real-time task execution, MAP-VLA retrieves relevant memory through trajectory similarity matching and dynamically integrates it into the VLA model for augmented action generation. Importantly, this prompt tuning and retrieval augmentation approach operates as a plug-and-play module for a frozen VLA model, offering a lightweight and flexible solution to improve task performance. Experimental results show that MAP-VLA delivers up to 7.0% absolute performance gains in the simulation benchmark and 25.0% on real robot evaluations for long-horizon tasks, surpassing the current state-of-the-art methods.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "data / retrieval",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2606.13376",
-      "title": "MoVerse: Real-Time Video World Modeling with Panoramic Gaussian Scaffold",
-      "authors": "Yang Zhou, Ziheng Wang, Yuqin Lu, Haofeng Liu, Jun Liang, Shengfeng He, Jing Li",
-      "org": "",
-      "published": "2026-06-11",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.13376",
-      "source": "https://huggingface.co/papers/2606.13376",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "We present MoVerse, a real-time video world model that creates an interactively navigable scene from a single narrow-field-of-view image. This setting is challenging because the input observes only a small fraction of the environment, while interactive roaming requires a complete surrounding world, persistent geometry, controllable camera motion, and temporally coherent high-fidelity observations. MoVerse addresses this problem by separating world construction from observation rendering. It first expands the input into a gravity-aligned 360$^\\circ$ panorama with topology-aware diffusion, closing the missing field of view before 3D reasoning. It then lifts the panorama into a persistent 3D Gaussian scaffold using panoramic geometry-aware residual prediction, yielding a dense and directly renderable spatial memory. Finally, a Gaussian-conditioned video renderer translates scaffold renderings along user-specified camera trajectories into photorealistic video. To make this renderer practical for interaction, we train a bidirectional diffusion teacher for high-quality conditional rendering and distill it into a causal autoregressive student for bounded-latency streaming. This design combines the controllability and long-range consistency of explicit 3D representations with the perceptual quality of generative video models. MoVerse supports real-time scene roaming at 8~FPS on a single NVIDIA RTX~4090 GPU, demonstrating a practical path toward single-image world creation with interactive video output.",
-      "matchedBy": [
-        "arxiv",
-        "serving",
-        "robotics",
-        "vision/multimodal",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2606.10768",
-      "title": "N-GRPO: Embedding-Level Neighbor Mixing for Enhanced Policy Optimization",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2606.10768",
-      "source": "https://huggingface.co/papers/2606.10768",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "",
-      "matchedBy": [
-        "hugging face daily",
-        "language modeling"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2502.09724",
-      "title": "Navigating the Social Welfare Frontier: Portfolios for Multi-objective Reinforcement Learning",
-      "authors": "Cheol Woo Kim, Jai Moondra, Shresth Verma, Madeleine Pollack, Lingkai Kong, Milind Tambe, Swati Gupta",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2502.09724",
-      "source": "https://paperswithcode.co/paper/2502.09724",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "In many real-world applications of Reinforcement Learning (RL), deployed policies have varied impacts on different stakeholders, creating challenges in reaching consensus on how to effectively aggregate their preferences. Generalized $p$-means form a widely used class of social welfare functions for this purpose, with broad applications in fair resource allocation, AI alignment, and decision-making. This class includes well-known welfare functions such as Egalitarian, Nash, and Utilitarian welfare. However, selecting the appropriate social welfare function is challenging for decision-makers, as the structure and outcomes of optimal policies can be highly sensitive to the choice of $p$. To address this challenge, we study the concept of an $\\alpha$-approximate portfolio in RL, a set of policies that are approximately optimal across the family of generalized $p$-means for all $p \\in [-\\infty, 1]$. We propose algorithms to compute such portfolios and provide theoretical guarantees on the trade-offs among approximation factor, portfolio size, and computational efficiency. Experimental results on synthetic and real-world datasets demonstrate the effectiveness of our approach in summarizing the policy space induced by varying $p$ values, empowering decision-makers to navigate this landscape more effectively.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
         "benchmark",
         "frontier training",
         "language modeling"
