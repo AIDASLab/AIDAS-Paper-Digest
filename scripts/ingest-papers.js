@@ -217,6 +217,15 @@ function normalizeText(value) {
     .trim();
 }
 
+function isDisplayTag(value) {
+  const tag = normalizeText(value);
+  return tag && !/^https?:\/\//i.test(tag);
+}
+
+function cleanDisplayTags(tags) {
+  return [...new Set((tags || []).map(normalizeText).filter(isDisplayTag))];
+}
+
 function stripHtml(value) {
   return normalizeText(String(value || "").replace(/<[^>]+>/g, " "));
 }
@@ -280,7 +289,7 @@ function categoriesForText(text) {
 
 function categoryTextFor(paper) {
   const categoryTags = new Set(CATEGORIES.map((category) => category.toLowerCase()));
-  const matchedBy = (paper.matchedBy || []).filter((tag) => !categoryTags.has(String(tag).toLowerCase()));
+  const matchedBy = cleanDisplayTags(paper.matchedBy).filter((tag) => !categoryTags.has(String(tag).toLowerCase()));
   return [
     paper.title,
     paper.summary,
@@ -296,7 +305,7 @@ function categoriesForPaper(paper) {
   const current = paper.category || paper.categories?.[0] || "";
   const text = categoryTextFor(paper);
   const categoryTags = new Set(CATEGORIES.map((category) => category.toLowerCase()));
-  const matchedBy = (paper.matchedBy || []).filter((tag) => !categoryTags.has(String(tag).toLowerCase()));
+  const matchedBy = cleanDisplayTags(paper.matchedBy).filter((tag) => !categoryTags.has(String(tag).toLowerCase()));
   const titleAndTags = [paper.title, ...matchedBy].join(" ").toLowerCase();
   const inferred = categoriesForText(text).filter((category) => {
     if (category !== "Benchmark") return true;
@@ -318,7 +327,7 @@ function classifyPaper(paper) {
   const categories = categoriesForPaper(paper);
   paper.category = categories[0];
   paper.categories = categories;
-  paper.matchedBy = [...new Set([...(paper.matchedBy || []), ...categories.map((category) => category.toLowerCase())])].slice(0, 7);
+  paper.matchedBy = cleanDisplayTags([...(paper.matchedBy || []), ...categories.map((category) => category.toLowerCase())]).slice(0, 7);
   return paper;
 }
 
@@ -340,7 +349,7 @@ function normalizePaper(paper, sourceName) {
     project: paper.project || "",
     thumbnail: "",
     summary: normalizeText(paper.summary || paper.abstract),
-    matchedBy: paper.matchedBy || [sourceName],
+    matchedBy: cleanDisplayTags(paper.matchedBy || [sourceName]),
     sources: [...new Set([...(paper.sources || []), sourceName])],
   });
   return normalized;
@@ -364,7 +373,7 @@ function mergePapers(existing, incoming) {
         ...Object.fromEntries(Object.entries(normalized).filter(([, value]) => value !== "" && value != null)),
         score: Math.max(prev.score || 0, normalized.score || 0),
         categories: [...new Set([...(prev.categories || []), ...(normalized.categories || [])])],
-        matchedBy: [...new Set([...(prev.matchedBy || []), ...(normalized.matchedBy || [])])].slice(0, 5),
+        matchedBy: cleanDisplayTags([...(prev.matchedBy || []), ...(normalized.matchedBy || [])]).slice(0, 5),
         sources: [...new Set([...(prev.sources || []), ...(normalized.sources || [])])],
       }),
     );
@@ -483,6 +492,23 @@ async function ingestArxiv() {
   return papers.filter(Boolean);
 }
 
+async function fetchArxivByIds(ids) {
+  const papers = [];
+  const uniqueIds = [...new Set(ids)].filter(Boolean);
+  for (let index = 0; index < uniqueIds.length; index += 50) {
+    const chunk = uniqueIds.slice(index, index + 50);
+    const url = `https://export.arxiv.org/api/query?id_list=${encodeURIComponent(chunk.join(","))}&max_results=${chunk.length}`;
+    try {
+      const xml = await fetchText(url);
+      papers.push(...parseArxivEntries(xml));
+      await sleep(350);
+    } catch (error) {
+      console.warn(`[arxiv ids] ${error.message}`);
+    }
+  }
+  return papers.filter(Boolean);
+}
+
 async function ingestHfDaily() {
   const today = new Date().toISOString().slice(0, 10);
   const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
@@ -547,6 +573,21 @@ async function ingestHfDaily() {
       const html = await fetchText(url);
       parseHfPapers(html, url);
       await sleep(150);
+    }
+    const arxivDetails = await fetchArxivByIds([...byId.keys()]);
+    for (const detail of arxivDetails) {
+      const existing = byId.get(detail.id);
+      if (!existing) continue;
+      byId.set(
+        detail.id,
+        classifyPaper({
+          ...existing,
+          authors: existing.authors || detail.authors,
+          published: existing.published || detail.published,
+          summary: existing.summary || detail.summary,
+          matchedBy: cleanDisplayTags([...(existing.matchedBy || []), "hugging face daily"]),
+        }),
+      );
     }
     return [...byId.values()].filter(Boolean);
   } catch (error) {

@@ -666,6 +666,12 @@ main {
   -webkit-line-clamp: 2;
 }
 
+.summary strong {
+  margin-right: 6px;
+  color: #0f172a;
+  font-weight: 800;
+}
+
 .tag-row,
 .action-row {
   display: flex;

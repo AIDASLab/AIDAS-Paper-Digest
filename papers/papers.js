@@ -239,6 +239,12 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+function displayTags(paper) {
+  return (paper.matchedBy || [])
+    .map((tag) => String(tag || "").trim())
+    .filter((tag) => tag && !/^https?:\/\//i.test(tag));
+}
+
 function formatFeedbackDate(value) {
   const date = value ? new Date(value) : null;
   if (!date || Number.isNaN(date.getTime())) return "";
@@ -661,6 +667,7 @@ function renderPapers() {
       const categoryPills = categoriesFor(paper)
         .map((category) => `<span class="category-pill">${category}</span>`)
         .join("");
+      const summary = paper.summary || "TLDR pending.";
       const votes = voteCount(paper.id);
       const voted = state.voted.has(paper.id);
       const comments = state.comments.get(paper.id) || [];
@@ -687,9 +694,9 @@ function renderPapers() {
               <span>${paper.published || ""}</span>
               <span>${paper.authors || ""}</span>
             </div>
-            <p class="summary">${paper.summary || ""}</p>
+            <p class="summary"><strong>TLDR</strong> ${escapeHtml(summary)}</p>
             <div class="tag-row">
-              ${(paper.matchedBy || []).map((tag) => `<span class="tag">${tag}</span>`).join("")}
+              ${displayTags(paper).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
             </div>
             <div class="card-footer">
               <div class="action-row">
