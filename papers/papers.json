@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-14T15:21:37.742Z",
+  "generatedAt": "2026-06-15T02:32:18.471Z",
   "sourceStats": {
     "seed": 180,
     "paperswithcode": 540,
-    "arxiv": 100,
-    "huggingface": 44,
+    "arxiv": 175,
+    "huggingface": 7,
     "twitterSignals": 0,
     "total": 180
   },
@@ -129,12 +129,12 @@
     {
       "id": "2606.13392",
       "title": "MiniMax Sparse Attention",
-      "authors": "Xunhao Lai, Weiqi Xu, Yufeng Yang, Qiaorui Chen, Yang Xu, Lunbin Zeng, Xiaolong Li, Haohai Sun, Haichao Zhu, Vito Zhang, Pengyu Zhao",
+      "authors": "Xunhao Lai, Weiqi Xu, Yufeng Yang, Qiaorui Chen, Yang Xu, Lunbin Zeng, Xiaolong Li, Haohai Sun, Haichao Zhu, Vito Zhang, Jinkai Hu, Jiayao Li, Rui Gao, Zekun Li, Songquan Zhu, Jingkai Zhou, Pengyu Zhao",
       "org": "MiniMax",
       "published": "2026-06-11",
       "score": 95,
-      "paper": "https://arxiv.org/abs/2606.13392",
-      "source": "https://huggingface.co/papers/2606.13392",
+      "paper": "https://arxiv.org/abs/2606.13392v2",
+      "source": "https://arxiv.org/abs/2606.13392v2",
       "code": "https://github.com/MiniMax-AI/MSA",
       "project": "",
       "thumbnail": "",
@@ -1227,12 +1227,12 @@
       "org": "",
       "published": "2026-06-11",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2606.13657v1",
-      "source": "https://arxiv.org/abs/2606.13657v1",
+      "paper": "https://arxiv.org/abs/2606.13657",
+      "source": "https://huggingface.co/papers/2606.13657",
       "code": "",
       "project": "",
       "thumbnail": "",
-      "summary": "On-policy distillation (\\textsc{OPD}) has recently become a prominent post-training recipe as it combines two desirable ingredients: on-policy student trajectories and dense teacher supervision, yet how this hybrid changes a model's parameters remains unclear. Across several language and vision-language model pairs and use cases, our analysis yields two main findings. On sparsity, \\textsc{OPD}-style updates are small and coordinate-sparse. They are distributed across layers and are usually FFN-heavy. This sparse structure is operationally useful: training only the discovered subnetwork recovers nearly the same performance as full \\textsc{OPD}. However, the sparsity-inducing SGD optimizer underperforms AdamW in our optimizer ablation, likely because dense teacher supervision preserves heterogeneous coordinate-wise gradient scales where AdamW's adaptive scaling remains useful. On geometry, the updates are numerically full-rank but spectrally concentrated; they lie mostly away from the principal singular subspaces of the source weights and fall disproportionately on coordinates where the source weights are close to zero. These findings suggest that dense teacher supervision does not turn \\textsc{OPD} into ordinary dense parameter rewriting; instead, \\textsc{OPD} retains important geometric signatures of on-policy post-training.",
+      "summary": "On-policy distillation (\\textsc{OPD}) has recently become a prominent post-training recipe by combining two desirable ingredients: on-policy student trajectories and dense teacher supervision. However, how this hybrid changes a model's parameters remains unclear. Across several language and vision-language model pairs and \\textsc{OPD} use cases, our analysis yields two main findings. On sparsity, \\textsc{OPD} updates are small and coordinate-sparse. They are distributed across layers, with the largest relative movement usually appearing in FFN modules. This sparse structure is operationally useful: training only the discovered subnetwork nearly recovers full-training performance. The sparse support does not remove the need for adaptive optimization: SGD, previously reported to be competitive in \\textsc{RLVR}, underperforms AdamW in our \\textsc{OPD} optimizer ablation, suggesting that dense teacher supervision preserves useful momentum structure and heterogeneous second-moment scales. On geometry, the updates are numerically full-rank but spectrally concentrated; they lie mostly away from the principal singular subspaces of the source weights and fall disproportionately on coordinates where the source weights are close to zero. These findings suggest that dense teacher supervision does not turn \\textsc{OPD} into ordinary dense parameter rewriting; instead, \\textsc{OPD} retains important geometric signatures of on-policy post-training.",
       "matchedBy": [
         "post-training",
         "OPD geometry",
@@ -1242,7 +1242,8 @@
       ],
       "sources": [
         "seed",
-        "arxiv"
+        "arxiv",
+        "huggingface"
       ],
       "category": "Language Modeling",
       "categories": [
@@ -1317,8 +1318,8 @@
       "org": "Goodfire",
       "published": "2026-06-10",
       "score": 77,
-      "paper": "https://arxiv.org/abs/2606.12360v1",
-      "source": "https://arxiv.org/abs/2606.12360v1",
+      "paper": "https://arxiv.org/abs/2606.12360v2",
+      "source": "https://arxiv.org/abs/2606.12360v2",
       "code": "",
       "project": "",
       "thumbnail": "",
@@ -4136,6 +4137,37 @@
       ]
     },
     {
+      "id": "2503.10742",
+      "title": "Keyframe-oriented Vision Token Pruning: Enhancing Efficiency of Large Vision Language Models on Long-Form Video Processing",
+      "authors": "Yudong Liu, Jingwei Sun, Yueqian Lin, Jianyi Zhang, Jingyang Zhang, Ming Yin, Qinsi Wang, Hai Li, Yiran Chen",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2503.10742",
+      "source": "https://paperswithcode.co/paper/2503.10742",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "summary": "Vision language models (VLMs) demonstrate strong capabilities in jointly processing visual and textual data. However, they often incur substantial computational overhead due to redundant visual information, particularly in long-form video scenarios. Existing approaches predominantly focus on either vision token pruning, which may overlook spatio-temporal dependencies, or keyframe selection, which identifies informative frames but discards others, thus disrupting contextual continuity. In this work, we propose KVTP (Keyframe-oriented Vision Token Pruning), a novel framework that overcomes the drawbacks of token pruning and keyframe selection. By adaptively assigning pruning rates based on frame relevance to the query, KVTP effectively retains essential contextual information while significantly reducing redundant computation. To thoroughly evaluate the long-form video understanding capacities of VLMs, we curated and reorganized subsets from VideoMME, EgoSchema, and NextQA into a unified benchmark named SparseKV-QA that highlights real-world scenarios with sparse but crucial events. Our experiments with VLMs of various scales show that KVTP can reduce token usage by 80% without compromising spatiotemporal and contextual consistency, significantly cutting computation while maintaining the performance. These results demonstrate our approach's effectiveness in efficient long-video processing, facilitating more scalable VLM deployment.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Question Answering",
+        "Video classification",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2506.16640",
       "title": "Long-Context Generalization with Sparse Attention",
       "authors": "Pavlo Vasylenko, Hugo Pitorro, Andre Martins, Marcos Vinicius Treviso",
@@ -5350,35 +5382,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2503.05919",
-      "title": "From Style to Facts: Mapping the Boundaries of Knowledge Injection with Finetuning",
-      "authors": "Eric Zhao, Pranjal Awasthi, Nika Haghtalab",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2503.05919",
-      "source": "https://paperswithcode.co/paper/2503.05919",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "summary": "Finetuning provides a scalable and cost-effective means of customizing language models for specific tasks or response styles, with greater reliability than prompting or in-context learning. In contrast, the conventional wisdom is that injecting knowledge via finetuning results in brittle performance and poor generalization. We argue that the dichotomy of \"task customization\" (e.g., instruction tuning) and \"knowledge injection\" (e.g., teaching new facts) is a distinction without a difference. We instead identify concrete factors that explain the heterogeneous effectiveness observed with finetuning. To this end, we conduct a large-scale experimental study of finetuning the frontier Gemini v1.5 model family on a spectrum of datasets that are artificially engineered to interpolate between the strengths and failure modes of finetuning. Our findings indicate that question-answer training data formats provide much stronger knowledge generalization than document/article-style training data, numerical information can be harder for finetuning to retain than categorical information, and models struggle to apply finetuned knowledge during multi-step reasoning even when trained on similar examples---all factors that render ``knowledge injection'' to be especially difficult, even after controlling for considerations like data augmentation and information volume. On the other hand, our findings also indicate that it is not fundamentally more difficult to finetune information about a real-world event than information about writing style.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "benchmark",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     }
   ]
