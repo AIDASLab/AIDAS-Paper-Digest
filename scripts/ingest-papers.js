@@ -221,6 +221,14 @@ function stripHtml(value) {
   return normalizeText(String(value || "").replace(/<[^>]+>/g, " "));
 }
 
+function decodeHtml(value) {
+  return decodeXml(value)
+    .replace(/&nbsp;/g, " ")
+    .replace(/&mu;/g, "μ")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)));
+}
+
 function decodeXml(value) {
   return String(value || "")
     .replace(/&amp;/g, "&")
@@ -254,7 +262,10 @@ function categoriesForText(text) {
     ["Serving", ["kv cache", "kv-cache", "pagedattention", "speculative decoding", "quantization", "compression"]],
     ["Data / Retrieval", ["graphrag", "knowledge graph", "ontology", "vector database"]],
     ["Robotics", ["robotics", "embodied", "physical ai", "manipulation", "navigation", "vla"]],
-    ["Vision/Multimodal", ["multimodal", "gaussian splatting", "point cloud", "text-to-video", "text-to-image"]],
+    [
+      "Vision/Multimodal",
+      ["multimodal", "mllm", "vlm", "video", "image", "visual", "3d", "4d", "gaussian splatting", "point cloud", "text-to-video", "text-to-image"],
+    ],
     ["Benchmark", ["benchmark", "leaderboard", "testbed"]],
     ["Frontier Training", ["technical report", "frontier", "foundation model", "omnimodal", "native multimodal"]],
     ["Language Modeling", ["language model", "reasoning", "post-training", "autoregressive", "diffusion language"]],
@@ -473,27 +484,74 @@ async function ingestArxiv() {
 }
 
 async function ingestHfDaily() {
-  try {
-    const html = await fetchText("https://huggingface.co/papers");
-    const matches = [...html.matchAll(/href="\/papers\/(\d{4}\.\d{4,6})"[\s\S]{0,500}?>([^<]+)<\/a>/g)];
-    return matches
-      .map((match) =>
+  const today = new Date().toISOString().slice(0, 10);
+  const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  const configuredDates = (process.env.HF_PAPER_DATES || "")
+    .split(",")
+    .map((date) => date.trim())
+    .filter(Boolean);
+  const urls = [
+    ...configuredDates.map((date) => `https://huggingface.co/papers/date/${date}`),
+    `https://huggingface.co/papers/date/${today}`,
+    `https://huggingface.co/papers/date/${yesterday}`,
+    "https://huggingface.co/papers",
+  ];
+  const byId = new Map();
+
+  function parseHfPapers(html, sourceUrl) {
+    const titleMatches = [
+      ...html.matchAll(/<h3[^>]*>[\s\S]*?<a\s+href="\/papers\/(\d{4}\.\d{4,6})"[^>]*>([\s\S]*?)<\/a>[\s\S]*?<\/h3>/g),
+    ];
+    const linkMatches = [...html.matchAll(/href="\/papers\/(\d{4}\.\d{4,6})"/g)];
+    for (const match of titleMatches) {
+      const id = match[1];
+      const title = stripHtml(decodeHtml(match[2]));
+      if (!title || byId.has(id)) continue;
+      byId.set(
+        id,
         normalizePaper(
           {
-            id: match[1],
-            title: stripHtml(match[2]),
-            score: 62,
-            paper: `https://arxiv.org/abs/${match[1]}`,
-            source: `https://huggingface.co/papers/${match[1]}`,
-            matchedBy: ["hugging face daily"],
+            id,
+            title,
+            score: 78,
+            paper: `https://arxiv.org/abs/${id}`,
+            source: `https://huggingface.co/papers/${id}`,
+            matchedBy: ["hugging face daily", sourceUrl],
           },
           "huggingface",
         ),
-      )
-      .filter(Boolean);
+      );
+    }
+    for (const match of linkMatches) {
+      const id = match[1];
+      if (byId.has(id)) continue;
+      byId.set(
+        id,
+        normalizePaper(
+          {
+            id,
+            title: `arXiv:${id}`,
+            score: 78,
+            paper: `https://arxiv.org/abs/${id}`,
+            source: `https://huggingface.co/papers/${id}`,
+            matchedBy: ["hugging face daily", sourceUrl],
+          },
+          "huggingface",
+        ),
+      );
+    }
+  }
+
+  try {
+    for (const url of [...new Set(urls)]) {
+      const html = await fetchText(url);
+      parseHfPapers(html, url);
+      await sleep(150);
+    }
+    return [...byId.values()].filter(Boolean);
   } catch (error) {
     console.warn(`[huggingface] ${error.message}`);
-    return [];
+    return [...byId.values()].filter(Boolean);
   }
 }
 
