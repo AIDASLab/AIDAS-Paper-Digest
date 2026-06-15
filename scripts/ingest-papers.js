@@ -348,6 +348,7 @@ function normalizePaper(paper, sourceName) {
     code: paper.code || "",
     project: paper.project || "",
     thumbnail: "",
+    firstSeenAt: paper.firstSeenAt || "",
     summary: normalizeText(paper.summary || paper.abstract),
     matchedBy: cleanDisplayTags(paper.matchedBy || [sourceName]),
     sources: [...new Set([...(paper.sources || []), sourceName])],
@@ -678,6 +679,8 @@ function xAuthorizationHeader(url) {
 async function main() {
   const existing = await readJson(OUT_FILE, { papers: [] });
   const seed = Array.isArray(existing) ? existing : existing.papers || [];
+  const generatedAt = new Date().toISOString();
+  const seedIds = new Set(seed.map((paper) => stableId(paper)));
   const [pwc, arxiv, hf, twitter] = await Promise.all([
     ingestPwc(),
     ingestArxiv(),
@@ -687,6 +690,7 @@ async function main() {
 
   let papers = mergePapers(seed, [...pwc, ...arxiv, ...hf]);
   for (const paper of papers) {
+    if (!paper.firstSeenAt && !seedIds.has(stableId(paper))) paper.firstSeenAt = generatedAt;
     const boost = twitter.boosts.get(stableId(paper)) || 0;
     paper.score = Math.min(100, Math.round((paper.score || 50) + boost));
     if (boost) paper.matchedBy = [...new Set(["x signal", ...(paper.matchedBy || [])])].slice(0, 5);
@@ -699,7 +703,7 @@ async function main() {
     .slice(0, Number(process.env.MAX_PAPERS || 180));
 
   const payload = {
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     sourceStats: {
       seed: seed.length,
       paperswithcode: pwc.length,

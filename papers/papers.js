@@ -1,4 +1,5 @@
 const categories = [
+  "Added Today",
   "All",
   "Benchmark",
   "Data / Retrieval",
@@ -65,6 +66,26 @@ function categoryFor(paper) {
 function categoriesFor(paper) {
   const values = paper.categories?.length ? paper.categories : [categoryFor(paper)];
   return [...new Set(values)].filter(Boolean);
+}
+
+function parseAddedDate(paper) {
+  const value = paper.firstSeenAt || paper.addedAt || "";
+  const time = value ? new Date(value).getTime() : 0;
+  return Number.isNaN(time) ? 0 : time;
+}
+
+function isSameLocalDay(a, b) {
+  return (
+    a.getFullYear() === b.getFullYear() &&
+    a.getMonth() === b.getMonth() &&
+    a.getDate() === b.getDate()
+  );
+}
+
+function isAddedToday(paper) {
+  const addedAt = parseAddedDate(paper);
+  if (!addedAt) return false;
+  return isSameLocalDay(new Date(addedAt), new Date());
 }
 
 function paperUrl(paper) {
@@ -529,7 +550,10 @@ async function toggleVote(paperId) {
 
 function matchesPaper(paper) {
   const categories = categoriesFor(paper);
-  const categoryMatch = state.category === "All" || categories.includes(state.category);
+  const categoryMatch =
+    state.category === "All" ||
+    (state.category === "Added Today" && isAddedToday(paper)) ||
+    categories.includes(state.category);
   const newestMatch = isWithinNewestWindow(paper);
   const haystack = [
     paper.id,
@@ -572,7 +596,7 @@ function comparePapers(a, b) {
     );
   }
   if (state.sort === "newest") {
-    return parseDate(b) - parseDate(a) || (b.score || 0) - (a.score || 0);
+    return parseAddedDate(b) - parseAddedDate(a) || parseDate(b) - parseDate(a) || (b.score || 0) - (a.score || 0);
   }
   if (state.sort === "comments") {
     return (
@@ -597,7 +621,9 @@ function renderTabs() {
   categoryTabs.innerHTML = categories
     .map((category) => {
       const count =
-        category === "All"
+        category === "Added Today"
+          ? state.papers.filter(isAddedToday).length
+          : category === "All"
           ? state.papers.length
           : state.papers.filter((paper) => categoriesFor(paper).includes(category)).length;
       return `
