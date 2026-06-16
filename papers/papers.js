@@ -13,6 +13,9 @@ const categories = [
 const PAGE_SIZE = 20;
 const COMMENTS_PAGE_SIZE = 10;
 const FEEDBACK_PAGE_SIZE = 10;
+const MAX_LOCAL_FEEDBACK = 1000;
+const MAX_LOCAL_COMMENTS_PER_PAPER = 1000;
+const MAX_REMOTE_FEEDBACK = 1000;
 
 const state = {
   category: "All",
@@ -175,7 +178,7 @@ function loadLocalFeedback() {
 }
 
 function saveLocalFeedback() {
-  localStorage.setItem(localFeedbackKey(), JSON.stringify(state.feedback.slice(0, 20)));
+  localStorage.setItem(localFeedbackKey(), JSON.stringify(state.feedback.slice(0, MAX_LOCAL_FEEDBACK)));
 }
 
 function localCommentsKey() {
@@ -282,7 +285,7 @@ async function loadFeedback() {
     .from("feedback_posts")
     .select("id,message,voter_name,created_at")
     .order("created_at", { ascending: false })
-    .limit(20);
+    .limit(MAX_REMOTE_FEEDBACK);
   if (error) {
     console.warn("Unable to load feedback", error);
     return;
@@ -330,7 +333,7 @@ async function postComment(paperId, message) {
     created_at: new Date().toISOString(),
   };
   const current = state.comments.get(paperId) || [];
-  state.comments.set(paperId, [item, ...current].slice(0, 20));
+  state.comments.set(paperId, [item, ...current].slice(0, MAX_LOCAL_COMMENTS_PER_PAPER));
   state.commentCounts.set(paperId, commentCount(paperId) + 1);
   state.commentPages.set(paperId, 1);
   renderPapers();
@@ -423,7 +426,7 @@ async function postFeedback(message) {
     created_at: new Date().toISOString(),
   };
   state.feedbackPage = 1;
-  state.feedback = [item, ...state.feedback].slice(0, 20);
+  state.feedback = [item, ...state.feedback].slice(0, MAX_LOCAL_FEEDBACK);
   renderFeedback();
   feedbackInput.value = "";
 
