@@ -3,7 +3,10 @@ name: Ingest papers
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    # 09:17 KST primary. Avoid minute 0 because GitHub can delay/drop hourly cron bursts.
+    - cron: "17 0 * * *"
+    # 10:47 KST backup. If the primary run is dropped, this usually becomes the daily updater.
+    - cron: "47 1 * * *"
 
 permissions:
   contents: write
