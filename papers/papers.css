@@ -437,6 +437,17 @@ main {
   min-height: 200px;
 }
 
+.x-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  align-items: start;
+  gap: 12px;
+}
+
+.x-wall .twitter-timeline {
+  display: block;
+}
+
 .feed-empty,
 .feed-empty-card {
   margin: 0;

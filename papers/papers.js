@@ -444,19 +444,19 @@ function loadFeed() {
     feedList.innerHTML = `<div class="feed-empty-card"><p>No X accounts configured. Set <code>xAccounts</code> or <code>xTimeline</code> in <code>papers/supabase-config.js</code>.</p></div>`;
     return;
   }
-  if (!state.xHandle || !accounts.includes(state.xHandle)) state.xHandle = accounts[0];
 
+  // Show every account's native timeline together as a wall (no per-account switching).
   feedUpdated.textContent = "live from X";
   feedList.innerHTML = `
-    <div class="x-accounts">
+    <div class="x-wall">
       ${accounts
-        .map((handle) => `<button class="x-chip${handle === state.xHandle ? " is-active" : ""}" type="button" data-x-handle="${escapeHtml(handle)}">@${escapeHtml(handle)}</button>`)
+        .map(
+          (handle) => `
+            <a class="twitter-timeline" data-height="640" data-theme="light" data-chrome="nofooter transparent" data-dnt="true" href="https://twitter.com/${encodeURIComponent(handle)}?ref_src=aidas">@${escapeHtml(handle)}</a>`,
+        )
         .join("")}
-    </div>
-    <div class="x-embed">
-      <a class="twitter-timeline" data-height="1000" data-theme="light" data-chrome="noheader nofooter transparent" data-dnt="true" href="https://twitter.com/${encodeURIComponent(state.xHandle)}">Posts by @${escapeHtml(state.xHandle)}</a>
     </div>`;
-  loadXWidgets(feedList.querySelector(".x-embed"));
+  loadXWidgets(feedList.querySelector(".x-wall"));
 }
 
 async function loadFeedback() {
