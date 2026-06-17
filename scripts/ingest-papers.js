@@ -699,8 +699,11 @@ async function main() {
   papers = papers
     .map((paper) => classifyPaper(paper))
     .filter((paper) => categoriesOf(paper).some((category) => CATEGORIES.includes(category)))
-    .sort((a, b) => (b.score || 0) - (a.score || 0) || a.title.localeCompare(b.title))
-    .slice(0, Number(process.env.MAX_PAPERS || 180));
+    .sort((a, b) => (b.score || 0) - (a.score || 0) || a.title.localeCompare(b.title));
+
+  // MAX_PAPERS <= 0 (or unset) keeps every paper; a positive value caps the list.
+  const maxPapers = Number(process.env.MAX_PAPERS || 0);
+  if (maxPapers > 0) papers = papers.slice(0, maxPapers);
 
   const payload = {
     generatedAt,

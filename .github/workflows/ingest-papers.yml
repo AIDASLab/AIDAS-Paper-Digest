@@ -3,10 +3,10 @@ name: Ingest papers
 on:
   workflow_dispatch:
   schedule:
-    # 09:17 KST primary. Avoid minute 0 because GitHub can delay/drop hourly cron bursts.
-    - cron: "17 0 * * *"
-    # 10:47 KST backup. If the primary run is dropped, this usually becomes the daily updater.
-    - cron: "47 1 * * *"
+    # 08:11 KST primary (23:11 UTC). Avoid minute 0 because GitHub can delay/drop hourly cron bursts.
+    - cron: "11 23 * * *"
+    # 08:41 KST backup (23:41 UTC). If the primary run is dropped, this becomes the daily updater.
+    - cron: "41 23 * * *"
 
 permissions:
   contents: write
@@ -31,7 +31,8 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-          MAX_PAPERS: "180"
+          # MAX_PAPERS unset = no cap. Set to a positive number to re-enable a limit.
+          MAX_PAPERS: "0"
         run: node scripts/ingest-papers.js
 
       - name: Commit updated digest

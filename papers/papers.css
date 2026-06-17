@@ -60,6 +60,31 @@ input {
   font: inherit;
 }
 
+.tab,
+.feedback-nav,
+.vote-button,
+.comment-toggle,
+.action-row a,
+.save-button {
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.tab:hover {
+  border-color: rgba(37, 99, 235, 0.42);
+}
+
 .topbar {
   position: sticky;
   top: 0;
@@ -133,6 +158,33 @@ main {
   color: #475569;
   font-size: clamp(16px, 1.5vw, 19px);
   line-height: 1.6;
+}
+
+.hero-stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 5px 12px;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 720;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.hero-stats:empty {
+  display: none;
+}
+
+.hero-stats::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 3px rgba(15, 159, 110, 0.18);
 }
 
 .board-shell {

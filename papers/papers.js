@@ -37,9 +37,11 @@ const state = {
   voted: new Set(),
   feedback: [],
   feedbackPage: 1,
+  generatedAt: "",
 };
 
 const aidasGate = document.querySelector("#aidasGate");
+const heroStats = document.querySelector("#heroStats");
 const categoryTabs = document.querySelector("#categoryTabs");
 const feedbackBoard = document.querySelector("#feedbackBoard");
 const feedbackClose = document.querySelector("#feedbackClose");
@@ -807,9 +809,29 @@ function renderPapers() {
   renderPagination(visible.length);
 }
 
+function renderHeroStats() {
+  if (!heroStats) return;
+  const total = state.papers.length;
+  if (!total) {
+    heroStats.textContent = "";
+    return;
+  }
+  const today = state.papers.filter(isAddedToday).length;
+  const parts = [`${total} papers`];
+  if (today) parts.push(`${today} added today`);
+  if (state.generatedAt) {
+    const updated = new Date(state.generatedAt);
+    if (!Number.isNaN(updated.getTime())) {
+      parts.push(`updated ${updated.toISOString().slice(0, 10)}`);
+    }
+  }
+  heroStats.textContent = parts.join("  ·  ");
+}
+
 function render() {
   updateMemberPanel();
   setView(state.view);
+  renderHeroStats();
   renderTabs();
   renderPapers();
 }
@@ -819,6 +841,7 @@ async function loadPapers() {
   const response = await fetch("./papers.json", { cache: "no-store" });
   if (!response.ok) throw new Error(`Unable to load papers.json (${response.status})`);
   const data = await response.json();
+  state.generatedAt = Array.isArray(data) ? "" : data.generatedAt || "";
   state.papers = (Array.isArray(data) ? data : data.papers || []).map((paper) => ({
     ...paper,
     category: categoryFor(paper),
