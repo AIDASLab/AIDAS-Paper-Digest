@@ -74,47 +74,53 @@ function categoriesFor(paper) {
   return [...new Set(values)].filter(Boolean);
 }
 
-// Each research area gets a deterministic cover: a two-tone gradient, a glyph, and an
-// accent colour. This gives every card a strong visual identity without depending on
-// fragile external images.
+// Per-area accent colour, used for the coloured dot on topic pills and the tint of the
+// thumbnail fallback. Keeps a light, editorial feel — no heavy gradient covers.
 const CATEGORY_STYLE = {
-  "Language Modeling": { c1: "#2563eb", c2: "#1e40af", glyph: "💬" },
-  "Vision/Multimodal": { c1: "#7c3aed", c2: "#5b21b6", glyph: "🖼️" },
-  "Benchmark": { c1: "#b7791f", c2: "#92600f", glyph: "📊" },
-  "Data / Retrieval": { c1: "#0f9f6e", c2: "#0a6b4a", glyph: "🔎" },
-  "Frontier Training": { c1: "#db2777", c2: "#9d174d", glyph: "🏋️" },
-  "Robotics": { c1: "#0891b2", c2: "#0e5f74", glyph: "🤖" },
-  "Serving": { c1: "#475569", c2: "#1e293b", glyph: "⚙️" },
+  "Language Modeling": { color: "#2563eb" },
+  "Vision/Multimodal": { color: "#7c3aed" },
+  "Benchmark": { color: "#b7791f" },
+  "Data / Retrieval": { color: "#0f9f6e" },
+  "Frontier Training": { color: "#db2777" },
+  "Robotics": { color: "#0891b2" },
+  "Serving": { color: "#475569" },
 };
-const DEFAULT_STYLE = { c1: "#334155", c2: "#0f172a", glyph: "📄" };
+const DEFAULT_STYLE = { color: "#64748b" };
 
 function styleFor(paper) {
   const primary = categoriesFor(paper).find((category) => CATEGORY_STYLE[category]);
   return CATEGORY_STYLE[primary] || DEFAULT_STYLE;
 }
 
-function isImageUrl(value) {
-  return typeof value === "string" && /^https?:\/\//i.test(value);
+function hasThumb(paper) {
+  return typeof paper.thumbnail === "string" && paper.thumbnail.trim().length > 0;
 }
 
-function coverFor(paper, saved) {
+function thumbFor(paper) {
   const style = styleFor(paper);
-  const score = Number(paper.score) || 0;
-  const img = isImageUrl(paper.thumbnail)
-    ? `<img class="cover-img" src="${paper.thumbnail}" alt="" loading="lazy" decoding="async" onerror="this.remove()" />`
-    : "";
+  if (hasThumb(paper)) {
+    return `
+      <span class="row-thumb" style="--accent:${style.color}">
+        <img src="${escapeHtml(paper.thumbnail)}" alt="" loading="lazy" decoding="async"
+             onerror="this.closest('.row-thumb').classList.add('is-fallback')" />
+        <span class="thumb-fallback" aria-hidden="true">${escapeHtml((paper.title || "?").trim().charAt(0).toUpperCase())}</span>
+      </span>
+    `;
+  }
   return `
-    <div class="paper-cover" data-cat="${escapeHtml(categoryFor(paper))}" style="--c1:${style.c1};--c2:${style.c2}">
-      ${img}
-      <span class="cover-glyph" aria-hidden="true">${style.glyph}</span>
-      ${score ? `<span class="cover-score" title="Hot score">${score}</span>` : ""}
-      <button class="save-button" type="button" data-save="${paper.id}" aria-pressed="${saved}" aria-label="${saved ? "Unsave" : "Save"} ${escapeHtml(paper.title)}">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16Z"></path>
-        </svg>
-      </button>
-    </div>
+    <span class="row-thumb is-fallback" style="--accent:${style.color}">
+      <span class="thumb-fallback" aria-hidden="true">${escapeHtml((paper.title || "?").trim().charAt(0).toUpperCase())}</span>
+    </span>
   `;
+}
+
+function pillsFor(paper) {
+  return categoriesFor(paper)
+    .map((category) => {
+      const color = (CATEGORY_STYLE[category] || DEFAULT_STYLE).color;
+      return `<span class="category-pill" style="--accent:${color}">${escapeHtml(category)}</span>`;
+    })
+    .join("");
 }
 
 function parseAddedDate(paper) {
@@ -732,21 +738,13 @@ function resetPage() {
 
 function renderTabs() {
   categoryTabs.innerHTML = categories
-    .map((category) => {
-      const count =
-        category === "Added Today"
-          ? state.papers.filter(isAddedToday).length
-          : category === "Saved"
-          ? state.saved.size
-          : category === "All"
-          ? state.papers.length
-          : state.papers.filter((paper) => categoriesFor(paper).includes(category)).length;
-      return `
+    .map(
+      (category) => `
         <button class="tab" type="button" aria-pressed="${state.category === category}" data-category="${category}">
-          ${category} · ${count}
+          ${category}
         </button>
-      `;
-    })
+      `,
+    )
     .join("");
 }
 
@@ -805,9 +803,6 @@ function renderPapers() {
       const codeLink = paper.code
         ? `<a href="${paper.code}" target="_blank" rel="noopener noreferrer">Code</a>`
         : "";
-      const categoryPills = categoriesFor(paper)
-        .map((category) => `<span class="category-pill">${category}</span>`)
-        .join("");
       const summary = paper.summary || "TLDR pending.";
       const votes = voteCount(paper.id);
       const voted = state.voted.has(paper.id);
@@ -818,39 +813,38 @@ function renderPapers() {
       const commentPageCount = Math.max(1, Math.ceil(comments.length / COMMENTS_PAGE_SIZE));
       const commentStart = (commentPage - 1) * COMMENTS_PAGE_SIZE;
       const visibleComments = comments.slice(commentStart, commentStart + COMMENTS_PAGE_SIZE);
+      const score = Number(paper.score) || 0;
+      const byline = [paper.authors, paper.org, paper.published]
+        .filter(Boolean)
+        .map((part) => `<span>${escapeHtml(part)}</span>`)
+        .join('<i aria-hidden="true">·</i>');
       return `
-        <article class="paper-card${saved ? " is-saved" : ""}">
-          ${coverFor(paper, saved)}
-          <div class="paper-body">
-            <div class="card-head">
-              <div class="category-row">${categoryPills}</div>
-            </div>
+        <article class="paper-row${saved ? " is-saved" : ""}">
+          <a class="row-thumb-link" href="${paperUrl(paper)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(paper.title)}">
+            ${thumbFor(paper)}
+          </a>
+          <div class="row-main">
             <h3><a href="${paperUrl(paper)}" target="_blank" rel="noopener noreferrer">${paper.title}</a></h3>
-            <div class="meta">
-              ${paper.org ? `<span>${paper.org}</span>` : ""}
-              <span>${paper.published || ""}</span>
-              <span>${paper.authors || ""}</span>
-            </div>
-            <p class="summary"><strong>TLDR</strong> ${escapeHtml(summary)}</p>
-            <div class="tag-row">
+            <div class="byline">${byline}</div>
+            <p class="summary">${escapeHtml(summary)}</p>
+            <div class="pill-row">
+              ${pillsFor(paper)}
               ${displayTags(paper).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
             </div>
-            <div class="card-footer">
-              <div class="action-row">
-                <button class="vote-button" type="button" data-vote="${paper.id}" aria-pressed="${voted}" title="AIDAS member vote">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3m0 11V10l4-8a3 3 0 0 1 3 3v4h5a3 3 0 0 1 3 3l-1 7a3 3 0 0 1-3 3H7Z"></path>
-                  </svg>
-                  <span>Upvote</span>
-                  <strong>${votes}</strong>
-                </button>
-                <button class="comment-toggle" type="button" data-comments="${paper.id}" aria-expanded="${commentsOpen}">
-                  Comments <strong>${commentTotal}</strong>
-                </button>
-                <a href="${sourceUrl(paper)}" target="_blank" rel="noopener noreferrer">Source</a>
-                ${projectLink}
-                ${codeLink}
-              </div>
+            <div class="action-row">
+              <button class="vote-button" type="button" data-vote="${paper.id}" aria-pressed="${voted}" title="AIDAS member vote">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3m0 11V10l4-8a3 3 0 0 1 3 3v4h5a3 3 0 0 1 3 3l-1 7a3 3 0 0 1-3 3H7Z"></path>
+                </svg>
+                <span>Upvote</span>
+                <strong>${votes}</strong>
+              </button>
+              <button class="comment-toggle" type="button" data-comments="${paper.id}" aria-expanded="${commentsOpen}">
+                Comments <strong>${commentTotal}</strong>
+              </button>
+              <a href="${sourceUrl(paper)}" target="_blank" rel="noopener noreferrer">Source</a>
+              ${projectLink}
+              ${codeLink}
             </div>
             ${
               commentsOpen
@@ -907,6 +901,14 @@ function renderPapers() {
                 `
                 : ""
             }
+          </div>
+          <div class="row-meta">
+            <button class="save-button" type="button" data-save="${paper.id}" aria-pressed="${saved}" aria-label="${saved ? "Unsave" : "Save"} ${escapeHtml(paper.title)}">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16Z"></path>
+              </svg>
+            </button>
+            ${score ? `<div class="score-metric" title="Hot signal score"><strong>${score}</strong><span>Hot</span></div>` : ""}
           </div>
         </article>
       `;

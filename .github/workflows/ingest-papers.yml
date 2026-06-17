@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install poppler (PDF thumbnails)
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
       - name: Generate paper digest
         env:
           X_USER_ID: ${{ secrets.X_USER_ID }}
@@ -35,17 +38,23 @@ jobs:
           MAX_PAPERS: "0"
         run: node scripts/ingest-papers.js
 
+      - name: Render paper thumbnails
+        env:
+          # Cap new thumbnails rendered per run so CI stays fast and arXiv is not hammered.
+          THUMB_LIMIT: "80"
+        run: node scripts/render-thumbnails.js
+
       - name: Commit updated digest
         run: |
-          if git diff --quiet -- papers/papers.json papers/twitter-feed.json; then
+          git add papers/papers.json papers/thumbs
+          if [ -f papers/twitter-feed.json ]; then
+            git add papers/twitter-feed.json
+          fi
+          if git diff --cached --quiet; then
             echo "No digest changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add papers/papers.json
-          if [ -f papers/twitter-feed.json ]; then
-            git add papers/twitter-feed.json
-          fi
           git commit -m "Update paper digest"
           git push
