@@ -96,22 +96,40 @@ function hasThumb(paper) {
   return typeof paper.thumbnail === "string" && paper.thumbnail.trim().length > 0;
 }
 
-function thumbFor(paper) {
-  const style = styleFor(paper);
-  if (hasThumb(paper)) {
-    return `
-      <span class="row-thumb" style="--accent:${style.color}">
-        <img src="${escapeHtml(paper.thumbnail)}" alt="" loading="lazy" decoding="async"
-             onerror="this.closest('.row-thumb').classList.add('is-fallback')" />
-        <span class="thumb-fallback" aria-hidden="true">${escapeHtml((paper.title || "?").trim().charAt(0).toUpperCase())}</span>
-      </span>
-    `;
-  }
+// Every paper gets a thumbnail: the real rendered PDF first page when we have it,
+// otherwise a designed "title card" (category label + serif title on the area's accent
+// gradient) so the board never shows a bare placeholder.
+function thumbCard(paper) {
+  const category = categoriesFor(paper)[0] || "Paper";
+  const title = (paper.title || "Untitled").trim();
   return `
-    <span class="row-thumb is-fallback" style="--accent:${style.color}">
-      <span class="thumb-fallback" aria-hidden="true">${escapeHtml((paper.title || "?").trim().charAt(0).toUpperCase())}</span>
+    <span class="thumb-card" aria-hidden="true">
+      <span class="thumb-card-cat">${escapeHtml(category)}</span>
+      <span class="thumb-card-title">${escapeHtml(title)}</span>
     </span>
   `;
+}
+
+function thumbFor(paper) {
+  const style = styleFor(paper);
+  const img = hasThumb(paper)
+    ? `<img src="${escapeHtml(paper.thumbnail)}" alt="" loading="lazy" decoding="async"
+           onerror="this.closest('.row-thumb').classList.add('is-fallback')" />`
+    : "";
+  return `
+    <span class="row-thumb${hasThumb(paper) ? "" : " is-fallback"}" style="--accent:${style.color}">
+      ${img}
+      ${thumbCard(paper)}
+    </span>
+  `;
+}
+
+function formatAuthors(authors, max = 3) {
+  const raw = String(authors || "").trim();
+  if (!raw) return "";
+  const parts = raw.split(/\s*,\s*/).filter(Boolean);
+  if (parts.length <= max + 1) return raw;
+  return `${parts.slice(0, max).join(", ")}, …`;
 }
 
 function pillsFor(paper) {
@@ -738,13 +756,15 @@ function resetPage() {
 
 function renderTabs() {
   categoryTabs.innerHTML = categories
-    .map(
-      (category) => `
+    .map((category) => {
+      // Only the "All" tab carries a count (the total paper number).
+      const badge = category === "All" ? `<span class="tab-count">${state.papers.length}</span>` : "";
+      return `
         <button class="tab" type="button" aria-pressed="${state.category === category}" data-category="${category}">
-          ${category}
+          <span>${category}</span>${badge}
         </button>
-      `,
-    )
+      `;
+    })
     .join("");
 }
 
@@ -814,7 +834,7 @@ function renderPapers() {
       const commentStart = (commentPage - 1) * COMMENTS_PAGE_SIZE;
       const visibleComments = comments.slice(commentStart, commentStart + COMMENTS_PAGE_SIZE);
       const score = Number(paper.score) || 0;
-      const byline = [paper.authors, paper.org, paper.published]
+      const byline = [formatAuthors(paper.authors), paper.org, paper.published]
         .filter(Boolean)
         .map((part) => `<span>${escapeHtml(part)}</span>`)
         .join('<i aria-hidden="true">·</i>');
