@@ -439,8 +439,8 @@ function renderFeed() {
     return;
   }
 
-  // Most-liked + reposted first, then paginate.
-  const sorted = [...state.feed].sort((a, b) => feedEngagement(b) - feedEngagement(a));
+  // Newest first, then paginate.
+  const sorted = [...state.feed].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
   const totalPages = Math.max(1, Math.ceil(sorted.length / FEED_PAGE_SIZE));
   state.feedPage = Math.min(Math.max(1, state.feedPage), totalPages);
   const start = (state.feedPage - 1) * FEED_PAGE_SIZE;
