@@ -597,6 +597,69 @@ async function ingestHfDaily() {
   }
 }
 
+function parseAlphaxivDate(value) {
+  const match = String(value || "").match(/(\d{1,2})\s+([A-Za-z]{3})[a-z]*\s+(\d{4})/);
+  if (!match) return "";
+  const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+  const month = months.indexOf(match[2].toLowerCase().slice(0, 3));
+  if (month < 0) return "";
+  return `${match[3]}-${String(month + 1).padStart(2, "0")}-${String(match[1]).padStart(2, "0")}`;
+}
+
+// alphaXiv has no public API, but its homepage server-renders the "Hot" trending list as
+// plain HTML cards (<a href="/abs/ID">title</a> + date + org + summary). We parse that to
+// surface trending papers — including alphaXiv-native ones (e.g. GLM-5.2) that have no arXiv
+// id and would otherwise never reach the board. Best-effort: any parse failure just yields [].
+function parseAlphaxiv(html) {
+  const out = [];
+  const seen = new Set();
+  const re = /href="\/abs\/([^"#?]+)"[^>]*>([\s\S]*?)<\/a>/g;
+  let match;
+  let rank = 0;
+  while ((match = re.exec(html))) {
+    const id = match[1].replace(/v\d+$/, "");
+    const title = normalizeText(stripHtml(match[2]));
+    if (!title || title.length < 5 || seen.has(id)) continue;
+    seen.add(id);
+
+    const window = html.slice(match.index, match.index + 1600);
+    const date = (window.match(/whitespace-nowrap text-text">([^<]{3,30})</) || [])[1] || "";
+    const org = normalizeText(stripHtml((window.match(/text-subtext[^"]*">([\s\S]*?)<\/span>/) || [])[1] || ""));
+    const summary = normalizeText(stripHtml((window.match(/line-clamp-3[^"]*">([\s\S]*?)<\/p>/) || [])[1] || ""));
+    const isArxiv = /^\d{4}\.\d{4,5}$/.test(id);
+
+    const paper = normalizePaper(
+      {
+        id,
+        title,
+        org,
+        published: parseAlphaxivDate(date),
+        summary,
+        score: Math.max(72, 96 - rank),
+        source: `https://www.alphaxiv.org/abs/${id}`,
+        paper: isArxiv ? "" : `https://www.alphaxiv.org/abs/${id}`,
+        matchedBy: ["alphaxiv hot"],
+      },
+      "alphaxiv",
+    );
+    if (paper) out.push(paper);
+    rank += 1;
+  }
+  return out;
+}
+
+async function ingestAlphaxiv() {
+  try {
+    const html = await fetchText("https://www.alphaxiv.org/");
+    const papers = parseAlphaxiv(html);
+    console.log(`[alphaxiv] parsed ${papers.length} trending papers`);
+    return papers;
+  } catch (error) {
+    console.warn(`[alphaxiv] ${error.message}`);
+    return [];
+  }
+}
+
 async function ingestTwitterSignals() {
   const userId = process.env.X_USER_ID;
   if (!userId) return { signals: [], boosts: new Map() };
@@ -681,14 +744,15 @@ async function main() {
   const seed = Array.isArray(existing) ? existing : existing.papers || [];
   const generatedAt = new Date().toISOString();
   const seedIds = new Set(seed.map((paper) => stableId(paper)));
-  const [pwc, arxiv, hf, twitter] = await Promise.all([
+  const [pwc, arxiv, hf, alphaxiv, twitter] = await Promise.all([
     ingestPwc(),
     ingestArxiv(),
     ingestHfDaily(),
+    ingestAlphaxiv(),
     ingestTwitterSignals(),
   ]);
 
-  let papers = mergePapers(seed, [...pwc, ...arxiv, ...hf]);
+  let papers = mergePapers(seed, [...pwc, ...arxiv, ...hf, ...alphaxiv]);
   for (const paper of papers) {
     if (!paper.firstSeenAt && !seedIds.has(stableId(paper))) paper.firstSeenAt = generatedAt;
     const boost = twitter.boosts.get(stableId(paper)) || 0;
@@ -712,6 +776,7 @@ async function main() {
       paperswithcode: pwc.length,
       arxiv: arxiv.length,
       huggingface: hf.length,
+      alphaxiv: alphaxiv.length,
       twitterSignals: twitter.signals.length,
       total: papers.length,
     },

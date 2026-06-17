@@ -384,72 +384,59 @@ function compactNumber(value) {
   return String(n);
 }
 
-async function loadFeed() {
-  if (state.feedLoaded) {
-    renderFeed();
+// Accounts seen in the owner's "For you" feed — suggested seeds for a public X List.
+const X_SUGGESTED_ACCOUNTS = [
+  "kevin_y_wu",
+  "notmahi",
+  "chris_j_paxton",
+  "litian_liang",
+  "gabriberton",
+  "vai_viswanathan",
+  "plastic_gear",
+  "lukas_m_ziegler",
+  "minchoi",
+  "googlegemma",
+  "tzedonn",
+];
+
+function loadXWidgets(target) {
+  if (window.twttr && window.twttr.widgets) {
+    window.twttr.widgets.load(target);
     return;
   }
-  state.feedLoaded = true;
-  feedList.innerHTML = `<p class="feed-empty">Loading feed…</p>`;
-  try {
-    const response = await fetch("./twitter-feed.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(String(response.status));
-    const data = await response.json();
-    state.feed = Array.isArray(data) ? data : data.signals || [];
-    state.feedGeneratedAt = Array.isArray(data) ? "" : data.generatedAt || "";
-  } catch (error) {
-    state.feed = [];
-    state.feedGeneratedAt = "";
-  }
-  renderFeed();
+  if (document.getElementById("x-wjs")) return;
+  const script = document.createElement("script");
+  script.id = "x-wjs";
+  script.async = true;
+  script.src = "https://platform.twitter.com/widgets.js";
+  script.onload = () => window.twttr && window.twttr.widgets.load(target);
+  document.head.appendChild(script);
 }
 
-function renderFeed() {
-  feedUpdated.textContent = state.feedGeneratedAt
-    ? `updated ${formatFeedTime(state.feedGeneratedAt)}`
-    : "";
+// The X Feed tab renders X's official embedded timeline widget (native cards, images,
+// video). X does not expose the personal "For you" feed to any third party, so this points
+// at a configured public List or profile (supabaseConfig.xTimeline).
+function loadFeed() {
+  const url = String(supabaseConfig.xTimeline || "").trim();
 
-  if (!state.feed.length) {
+  if (!url) {
+    feedUpdated.textContent = "not configured";
     feedList.innerHTML = `
       <div class="feed-empty-card">
-        <p><strong>No X feed yet.</strong></p>
-        <p>Connect an X account by adding the API secrets in repository settings, then run the
-        <em>Ingest papers</em> action. The home timeline is then refreshed with the daily job.</p>
-        <p class="feed-empty-hint">See <code>docs/twitter-x-ingest-setup.md</code>.</p>
+        <p><strong>Connect your X feed (native embed).</strong></p>
+        <p>X doesn't expose the personal “For you” feed to other sites, so create a
+        <em>public</em> X List of the accounts you want, then paste its URL into
+        <code>papers/supabase-config.js</code> (the <code>xTimeline</code> field). The list
+        then renders right here — natively, with images and video.</p>
+        <p class="feed-empty-hint">Suggested from your feed: ${X_SUGGESTED_ACCOUNTS.map((handle) => `@${handle}`).join(", ")}.</p>
+        <p class="feed-empty-hint">Steps in <code>docs/twitter-x-ingest-setup.md</code>.</p>
       </div>`;
     return;
   }
 
-  feedList.innerHTML = state.feed
-    .map((item) => {
-      const handle = escapeHtml(item.author || "@x");
-      const metrics = item.metrics || {};
-      const links = (item.urls || [])
-        .filter((url) => !/\/\/(t\.co|x\.com|twitter\.com)\//i.test(url))
-        .slice(0, 3)
-        .map((url) => `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url.replace(/^https?:\/\/(www\.)?/, "").slice(0, 42))}</a>`)
-        .join("");
-      const arxiv = (item.arxivIds || [])
-        .slice(0, 3)
-        .map((id) => `<span class="feed-tag">arXiv:${escapeHtml(id)}</span>`)
-        .join("");
-      return `
-        <article class="feed-item">
-          <div class="feed-item-head">
-            <a class="feed-handle" href="https://x.com/${encodeURIComponent(String(item.author || "").replace(/^@/, ""))}" target="_blank" rel="noopener noreferrer">${handle}</a>
-            <a class="feed-time" href="${tweetUrl(item)}" target="_blank" rel="noopener noreferrer">${escapeHtml(formatFeedTime(item.createdAt))}</a>
-          </div>
-          <p class="feed-text">${escapeHtml(item.text || "")}</p>
-          ${links || arxiv ? `<div class="feed-links">${arxiv}${links}</div>` : ""}
-          <div class="feed-metrics">
-            <span title="Replies">💬 ${compactNumber(metrics.reply_count)}</span>
-            <span title="Reposts">🔁 ${compactNumber(metrics.retweet_count)}</span>
-            <span title="Likes">❤ ${compactNumber(metrics.like_count)}</span>
-            <a href="${tweetUrl(item)}" target="_blank" rel="noopener noreferrer">Open ↗</a>
-          </div>
-        </article>`;
-    })
-    .join("");
+  feedUpdated.textContent = "live from X";
+  feedList.innerHTML = `<a class="twitter-timeline" data-height="1000" data-theme="light" data-chrome="noheader nofooter transparent" data-dnt="true" href="${escapeHtml(url)}">Posts from X</a>`;
+  loadXWidgets(feedList);
 }
 
 async function loadFeedback() {

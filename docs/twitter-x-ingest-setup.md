@@ -1,6 +1,29 @@
-# X/Twitter ingest setup
+# X/Twitter setup
 
-Use official X API user-context auth. Do not scrape browser cookies or reuse a logged-in browser session.
+There are two independent pieces: the **X Feed tab** (what you see) and the optional
+**ingest signals** (used to nudge paper ranking).
+
+## X Feed tab — native embedded timeline
+
+The "X Feed" tab embeds X's official timeline widget, so posts render natively (images,
+video, avatars, badges). X does **not** expose the personal "For you" feed to any third
+party, so point the tab at a **public X List** you control:
+
+1. On X: create a List, add the accounts you want, and set it to **Public**.
+   Suggested seeds from the current feed: `@kevin_y_wu`, `@notmahi`, `@chris_j_paxton`,
+   `@litian_liang`, `@gabriberton`, `@vai_viswanathan`, `@plastic_gear`,
+   `@lukas_m_ziegler`, `@minchoi`, `@googlegemma`, `@tzedonn`.
+2. Copy the list URL, e.g. `https://twitter.com/<you>/lists/<id>`.
+3. Paste it into `papers/supabase-config.js` → `xTimeline`.
+
+A profile (`https://twitter.com/<handle>`) or search URL works too. Until `xTimeline` is set,
+the tab shows setup instructions.
+
+## Optional ingest signals — X API user-context auth
+
+This part is only for ranking signals (boosting papers linked from tweets), not the feed
+display. Use official X API user-context auth. Do not scrape browser cookies or reuse a
+logged-in browser session.
 
 ## Recommended: OAuth 1.0a read-only user token
 

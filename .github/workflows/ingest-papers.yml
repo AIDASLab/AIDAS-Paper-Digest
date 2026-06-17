@@ -41,7 +41,7 @@ jobs:
       - name: Render paper thumbnails
         env:
           # Cap new thumbnails rendered per run so CI stays fast and arXiv is not hammered.
-          THUMB_LIMIT: "80"
+          THUMB_LIMIT: "120"
         run: node scripts/render-thumbnails.js
 
       - name: Commit updated digest
