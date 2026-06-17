@@ -402,6 +402,41 @@ main {
   gap: 10px;
 }
 
+.x-accounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.x-chip {
+  padding: 5px 11px;
+  color: #334155;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 720;
+  transition:
+    color 0.14s ease,
+    background-color 0.14s ease,
+    border-color 0.14s ease;
+}
+
+.x-chip:hover {
+  border-color: rgba(79, 70, 229, 0.4);
+}
+
+.x-chip.is-active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  border-color: transparent;
+}
+
+.x-embed {
+  min-height: 200px;
+}
+
 .feed-empty,
 .feed-empty-card {
   margin: 0;

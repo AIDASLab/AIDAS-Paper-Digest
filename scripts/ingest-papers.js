@@ -230,6 +230,19 @@ function stripHtml(value) {
   return normalizeText(String(value || "").replace(/<[^>]+>/g, " "));
 }
 
+// Defensive author cleanup: if a value still contains raw author XML (e.g. leaked
+// <name>..</name><arxiv:affiliation>..), pull the names out; otherwise just strip tags.
+function sanitizeAuthors(value) {
+  const raw = Array.isArray(value) ? value.join(", ") : String(value || "");
+  if (/<name>/i.test(raw)) {
+    const names = [...raw.matchAll(/<name>([\s\S]*?)<\/name>/gi)]
+      .map((match) => decodeXml(match[1]).trim())
+      .filter((name) => name && name !== ":");
+    if (names.length) return names.join(", ");
+  }
+  return stripHtml(raw);
+}
+
 function decodeHtml(value) {
   return decodeXml(value)
     .replace(/&nbsp;/g, " ")
@@ -339,7 +352,7 @@ function normalizePaper(paper, sourceName) {
   const normalized = classifyPaper({
     id: arxivId || String(id),
     title,
-    authors: Array.isArray(paper.authors) ? paper.authors.join(", ") : normalizeText(paper.authors),
+    authors: sanitizeAuthors(paper.authors),
     org: normalizeText(paper.org),
     published: normalizeText(paper.published),
     score: Number.isFinite(Number(paper.score)) ? Number(paper.score) : 50,
@@ -461,8 +474,12 @@ function parseArxivEntries(xml) {
       {
         id,
         title: get("title"),
-        authors: [...entry.matchAll(/<author>\s*<name>([\s\S]*?)<\/name>\s*<\/author>/g)]
-          .map((match) => decodeXml(match[1]))
+        // Capture each author's <name> independently. The old regex required
+        // </name></author> to be adjacent, which fails when arXiv adds
+        // <arxiv:affiliation> and made the whole author block leak as one string.
+        authors: [...entry.matchAll(/<author>[\s\S]*?<name>([\s\S]*?)<\/name>/g)]
+          .map((match) => decodeXml(match[1]).trim())
+          .filter((name) => name && name !== ":")
           .join(", "),
         published: get("published").slice(0, 10),
         score: 58,

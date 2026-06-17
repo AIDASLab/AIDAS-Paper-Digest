@@ -42,6 +42,7 @@ const state = {
   feed: [],
   feedGeneratedAt: "",
   feedLoaded: false,
+  xHandle: null,
 };
 
 const aidasGate = document.querySelector("#aidasGate");
@@ -133,11 +134,16 @@ function thumbFor(paper) {
 }
 
 function formatAuthors(authors, max = 3) {
-  const raw = String(authors || "").trim();
+  // Strip any stray markup (some arXiv author fields leak XML) and collapse whitespace.
+  const raw = String(authors || "")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
   if (!raw) return "";
   const parts = raw.split(/\s*,\s*/).filter(Boolean);
-  if (parts.length <= max + 1) return raw;
-  return `${parts.slice(0, max).join(", ")}, …`;
+  if (parts.length > max + 1) return `${parts.slice(0, max).join(", ")}, …`;
+  if (raw.length > 120) return `${raw.slice(0, 117).replace(/\s+\S*$/, "")} …`;
+  return raw;
 }
 
 function pillsFor(paper) {
@@ -413,30 +419,44 @@ function loadXWidgets(target) {
   document.head.appendChild(script);
 }
 
-// The X Feed tab renders X's official embedded timeline widget (native cards, images,
-// video). X does not expose the personal "For you" feed to any third party, so this points
-// at a configured public List or profile (supabaseConfig.xTimeline).
-function loadFeed() {
-  const url = String(supabaseConfig.xTimeline || "").trim();
+function xAccounts() {
+  const configured = supabaseConfig.xAccounts;
+  return Array.isArray(configured) && configured.length ? configured : X_SUGGESTED_ACCOUNTS;
+}
 
-  if (!url) {
-    feedUpdated.textContent = "not configured";
-    feedList.innerHTML = `
-      <div class="feed-empty-card">
-        <p><strong>Connect your X feed (native embed).</strong></p>
-        <p>X doesn't expose the personal “For you” feed to other sites, so create a
-        <em>public</em> X List of the accounts you want, then paste its URL into
-        <code>papers/supabase-config.js</code> (the <code>xTimeline</code> field). The list
-        then renders right here — natively, with images and video.</p>
-        <p class="feed-empty-hint">Suggested from your feed: ${X_SUGGESTED_ACCOUNTS.map((handle) => `@${handle}`).join(", ")}.</p>
-        <p class="feed-empty-hint">Steps in <code>docs/twitter-x-ingest-setup.md</code>.</p>
-      </div>`;
+// The X Feed tab renders X's official embedded timeline widget (native cards, images,
+// video). X does not expose the personal "For you" feed to any third party. So: if a public
+// List/profile URL is configured (supabaseConfig.xTimeline) we embed that; otherwise we show
+// the curated accounts as native profile timelines with a chip switcher — no setup needed.
+function loadFeed() {
+  const listUrl = String(supabaseConfig.xTimeline || "").trim();
+
+  if (listUrl) {
+    feedUpdated.textContent = "live from X";
+    feedList.innerHTML = `<a class="twitter-timeline" data-height="1000" data-theme="light" data-chrome="noheader nofooter transparent" data-dnt="true" href="${escapeHtml(listUrl)}">Posts from X</a>`;
+    loadXWidgets(feedList);
     return;
   }
 
+  const accounts = xAccounts();
+  if (!accounts.length) {
+    feedUpdated.textContent = "";
+    feedList.innerHTML = `<div class="feed-empty-card"><p>No X accounts configured. Set <code>xAccounts</code> or <code>xTimeline</code> in <code>papers/supabase-config.js</code>.</p></div>`;
+    return;
+  }
+  if (!state.xHandle || !accounts.includes(state.xHandle)) state.xHandle = accounts[0];
+
   feedUpdated.textContent = "live from X";
-  feedList.innerHTML = `<a class="twitter-timeline" data-height="1000" data-theme="light" data-chrome="noheader nofooter transparent" data-dnt="true" href="${escapeHtml(url)}">Posts from X</a>`;
-  loadXWidgets(feedList);
+  feedList.innerHTML = `
+    <div class="x-accounts">
+      ${accounts
+        .map((handle) => `<button class="x-chip${handle === state.xHandle ? " is-active" : ""}" type="button" data-x-handle="${escapeHtml(handle)}">@${escapeHtml(handle)}</button>`)
+        .join("")}
+    </div>
+    <div class="x-embed">
+      <a class="twitter-timeline" data-height="1000" data-theme="light" data-chrome="noheader nofooter transparent" data-dnt="true" href="https://twitter.com/${encodeURIComponent(state.xHandle)}">Posts by @${escapeHtml(state.xHandle)}</a>
+    </div>`;
+  loadXWidgets(feedList.querySelector(".x-embed"));
 }
 
 async function loadFeedback() {
@@ -1172,6 +1192,13 @@ feedOpen.addEventListener("click", () => {
 
 feedClose.addEventListener("click", () => {
   setView("papers");
+});
+
+feedList.addEventListener("click", (event) => {
+  const chip = event.target.closest("[data-x-handle]");
+  if (!chip) return;
+  state.xHandle = chip.dataset.xHandle;
+  loadFeed();
 });
 
 feedbackForm.addEventListener("submit", (event) => {
