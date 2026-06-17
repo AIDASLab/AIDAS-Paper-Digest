@@ -524,9 +524,9 @@ main {
 
 .paper-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   align-items: start;
-  gap: 8px;
+  gap: 14px;
   margin-top: 10px;
 }
 
@@ -599,14 +599,14 @@ main {
 .paper-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
   align-self: start;
-  gap: 8px;
-  padding: 13px;
+  overflow: hidden;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.98)),
     var(--surface);
   border: 1px solid rgba(216, 224, 234, 0.92);
-  border-radius: var(--radius);
+  border-radius: 14px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
   transition:
     border-color 0.16s ease,
@@ -614,9 +614,67 @@ main {
     transform 0.16s ease;
 }
 
+.paper-card.is-saved {
+  border-color: rgba(183, 121, 31, 0.55);
+  box-shadow: 0 8px 24px rgba(183, 121, 31, 0.12);
+}
+
+/* Category cover */
+.paper-cover {
+  position: relative;
+  height: 96px;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 120% at 85% -10%, rgba(255, 255, 255, 0.28), transparent 55%),
+    linear-gradient(135deg, var(--c1, #334155), var(--c2, #0f172a));
+}
+
+.cover-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.96;
+}
+
+.cover-glyph {
+  position: absolute;
+  left: 14px;
+  bottom: 6px;
+  font-size: 40px;
+  line-height: 1;
+  filter: drop-shadow(0 3px 6px rgba(15, 23, 42, 0.35));
+  opacity: 0.96;
+}
+
+.cover-img ~ .cover-glyph {
+  display: none;
+}
+
+.cover-score {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  display: inline-flex;
+  align-items: center;
+  min-width: 30px;
+  height: 24px;
+  padding: 0 9px;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 820;
+  letter-spacing: 0.2px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.18);
+}
+
 .paper-body {
   display: grid;
   align-content: start;
+  padding: 13px;
+  gap: 5px;
   min-width: 0;
   gap: 5px;
 }
@@ -661,16 +719,27 @@ main {
 }
 
 .save-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: inline-grid;
-  width: 30px;
-  height: 30px;
-  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
   place-items: center;
-  color: var(--muted);
-  background: var(--surface-2);
-  border: 1px solid transparent;
-  border-radius: var(--radius);
+  color: #1e293b;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.18);
+  transition:
+    transform 0.14s ease,
+    color 0.14s ease,
+    background-color 0.14s ease;
+}
+
+.save-button:hover {
+  transform: translateY(-1px);
 }
 
 .save-button svg {
@@ -683,8 +752,13 @@ main {
 }
 
 .save-button[aria-pressed="true"] {
-  color: var(--amber);
-  background: rgba(183, 121, 31, 0.12);
+  color: #fff;
+  background: var(--amber);
+  border-color: var(--amber);
+}
+
+.save-button[aria-pressed="true"] svg {
+  fill: currentColor;
 }
 
 .paper-card h3 {
@@ -1117,9 +1191,8 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .paper-card {
-    grid-template-columns: 86px minmax(0, 1fr);
-    padding: 8px;
+  .paper-cover {
+    height: 84px;
   }
 
   .paper-card h3 {

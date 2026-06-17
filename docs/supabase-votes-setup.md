@@ -33,7 +33,18 @@ create table if not exists paper_comments (
   voter_name text not null,
   created_at timestamptz not null default now()
 );
+
+create table if not exists paper_saves (
+  paper_id text not null,
+  voter_name text not null,
+  created_at timestamptz not null default now(),
+  primary key (paper_id, voter_name)
+);
 ```
+
+> `paper_saves` powers per-member bookmarks (the "Saved" tab). Until this table and
+> its policies exist, bookmarks still work but are cached in the browser only
+> (per member, no cross-device sync).
 
 ## 2. Enable simple anonymous policies
 
@@ -128,6 +139,29 @@ with check (
 drop policy if exists "delete paper comments" on paper_comments;
 create policy "delete paper comments"
 on paper_comments for delete
+to anon, authenticated
+using (true);
+
+alter table paper_saves enable row level security;
+
+drop policy if exists "read saves" on paper_saves;
+create policy "read saves"
+on paper_saves for select
+to anon, authenticated
+using (true);
+
+drop policy if exists "insert saves" on paper_saves;
+create policy "insert saves"
+on paper_saves for insert
+to anon, authenticated
+with check (
+  length(paper_id) > 0
+  and length(voter_name) between 1 and 80
+);
+
+drop policy if exists "delete saves" on paper_saves;
+create policy "delete saves"
+on paper_saves for delete
 to anon, authenticated
 using (true);
 ```

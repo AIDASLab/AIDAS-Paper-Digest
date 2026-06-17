@@ -1,5 +1,6 @@
 const categories = [
   "Added Today",
+  "Saved",
   "All",
   "Benchmark",
   "Data / Retrieval",
@@ -22,7 +23,7 @@ const state = {
   newest: "all",
   page: 1,
   query: "",
-  saved: new Set(JSON.parse(localStorage.getItem("paper-board-saved") || "[]")),
+  saved: new Set(),
   papers: [],
   sort: "aidas",
   supabase: null,
@@ -73,6 +74,49 @@ function categoriesFor(paper) {
   return [...new Set(values)].filter(Boolean);
 }
 
+// Each research area gets a deterministic cover: a two-tone gradient, a glyph, and an
+// accent colour. This gives every card a strong visual identity without depending on
+// fragile external images.
+const CATEGORY_STYLE = {
+  "Language Modeling": { c1: "#2563eb", c2: "#1e40af", glyph: "💬" },
+  "Vision/Multimodal": { c1: "#7c3aed", c2: "#5b21b6", glyph: "🖼️" },
+  "Benchmark": { c1: "#b7791f", c2: "#92600f", glyph: "📊" },
+  "Data / Retrieval": { c1: "#0f9f6e", c2: "#0a6b4a", glyph: "🔎" },
+  "Frontier Training": { c1: "#db2777", c2: "#9d174d", glyph: "🏋️" },
+  "Robotics": { c1: "#0891b2", c2: "#0e5f74", glyph: "🤖" },
+  "Serving": { c1: "#475569", c2: "#1e293b", glyph: "⚙️" },
+};
+const DEFAULT_STYLE = { c1: "#334155", c2: "#0f172a", glyph: "📄" };
+
+function styleFor(paper) {
+  const primary = categoriesFor(paper).find((category) => CATEGORY_STYLE[category]);
+  return CATEGORY_STYLE[primary] || DEFAULT_STYLE;
+}
+
+function isImageUrl(value) {
+  return typeof value === "string" && /^https?:\/\//i.test(value);
+}
+
+function coverFor(paper, saved) {
+  const style = styleFor(paper);
+  const score = Number(paper.score) || 0;
+  const img = isImageUrl(paper.thumbnail)
+    ? `<img class="cover-img" src="${paper.thumbnail}" alt="" loading="lazy" decoding="async" onerror="this.remove()" />`
+    : "";
+  return `
+    <div class="paper-cover" data-cat="${escapeHtml(categoryFor(paper))}" style="--c1:${style.c1};--c2:${style.c2}">
+      ${img}
+      <span class="cover-glyph" aria-hidden="true">${style.glyph}</span>
+      ${score ? `<span class="cover-score" title="Hot score">${score}</span>` : ""}
+      <button class="save-button" type="button" data-save="${paper.id}" aria-pressed="${saved}" aria-label="${saved ? "Unsave" : "Save"} ${escapeHtml(paper.title)}">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16Z"></path>
+        </svg>
+      </button>
+    </div>
+  `;
+}
+
 function parseAddedDate(paper) {
   const value = paper.firstSeenAt || paper.addedAt || "";
   const time = value ? new Date(value).getTime() : 0;
@@ -104,8 +148,16 @@ function sourceUrl(paper) {
   return paper.source || paperUrl(paper);
 }
 
-function saveState() {
-  localStorage.setItem("paper-board-saved", JSON.stringify([...state.saved]));
+function localSaveKey() {
+  return `aidas-paper-saved:${state.voterName || "guest"}`;
+}
+
+function loadLocalSaves() {
+  state.saved = new Set(JSON.parse(localStorage.getItem(localSaveKey()) || "[]"));
+}
+
+function saveLocalSaves() {
+  localStorage.setItem(localSaveKey(), JSON.stringify([...state.saved]));
 }
 
 function initSupabase() {
@@ -553,11 +605,67 @@ async function toggleVote(paperId) {
   }
 }
 
+async function loadSaves() {
+  // Always seed from this member's local cache so bookmarks survive offline / before
+  // the Supabase table exists, then overlay the remote set as the cross-device source.
+  loadLocalSaves();
+  if (!state.supabase || !state.voterName) return;
+
+  const { data, error } = await state.supabase
+    .from("paper_saves")
+    .select("paper_id")
+    .eq("voter_name", state.voterName);
+  if (error) {
+    // Table/policies not ready or offline: keep the local cache as-is.
+    console.warn("Unable to load AIDAS saves (kept locally)", error);
+    return;
+  }
+
+  const remote = new Set((data || []).map((row) => row.paper_id));
+  if (remote.size === 0 && state.saved.size > 0) {
+    // Remote is empty but this member has local bookmarks (e.g. saved before the
+    // table existed). Keep them and push them up rather than wiping them.
+    const rows = [...state.saved].map((paperId) => ({ paper_id: paperId, voter_name: state.voterName }));
+    const { error: pushError } = await state.supabase.from("paper_saves").insert(rows);
+    if (pushError) console.warn("Unable to back up local saves", pushError);
+    return;
+  }
+
+  state.saved = remote;
+  saveLocalSaves();
+}
+
+async function toggleSave(paperId) {
+  if (!requireAccess()) return;
+  const hasSave = state.saved.has(paperId);
+
+  if (hasSave) {
+    state.saved.delete(paperId);
+  } else {
+    state.saved.add(paperId);
+  }
+  saveLocalSaves();
+  renderTabs();
+  renderPapers();
+
+  if (!state.supabase) return;
+
+  const request = hasSave
+    ? state.supabase.from("paper_saves").delete().eq("paper_id", paperId).eq("voter_name", state.voterName)
+    : state.supabase.from("paper_saves").insert({ paper_id: paperId, voter_name: state.voterName });
+  const { error } = await request;
+  if (error) {
+    // Keep the optimistic local state; the localStorage cache already persisted it.
+    console.warn("Unable to sync AIDAS save (kept locally)", error);
+  }
+}
+
 function matchesPaper(paper) {
   const categories = categoriesFor(paper);
   const categoryMatch =
     state.category === "All" ||
     (state.category === "Added Today" && isAddedToday(paper)) ||
+    (state.category === "Saved" && state.saved.has(paper.id)) ||
     categories.includes(state.category);
   const newestMatch = isWithinNewestWindow(paper);
   const haystack = [
@@ -628,6 +736,8 @@ function renderTabs() {
       const count =
         category === "Added Today"
           ? state.papers.filter(isAddedToday).length
+          : category === "Saved"
+          ? state.saved.size
           : category === "All"
           ? state.papers.length
           : state.papers.filter((paper) => categoriesFor(paper).includes(category)).length;
@@ -709,15 +819,11 @@ function renderPapers() {
       const commentStart = (commentPage - 1) * COMMENTS_PAGE_SIZE;
       const visibleComments = comments.slice(commentStart, commentStart + COMMENTS_PAGE_SIZE);
       return `
-        <article class="paper-card">
+        <article class="paper-card${saved ? " is-saved" : ""}">
+          ${coverFor(paper, saved)}
           <div class="paper-body">
             <div class="card-head">
               <div class="category-row">${categoryPills}</div>
-              <button class="save-button" type="button" data-save="${paper.id}" aria-pressed="${saved}" aria-label="${saved ? "Unsave" : "Save"} ${paper.title}">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16Z"></path>
-                </svg>
-              </button>
             </div>
             <h3><a href="${paperUrl(paper)}" target="_blank" rel="noopener noreferrer">${paper.title}</a></h3>
             <div class="meta">
@@ -848,6 +954,7 @@ async function loadPapers() {
     categories: categoriesFor(paper),
   }));
   await loadVotes();
+  await loadSaves();
   await loadComments();
   await loadFeedback();
   render();
@@ -902,14 +1009,7 @@ paperGrid.addEventListener("click", (event) => {
 
   const button = event.target.closest("[data-save]");
   if (!button) return;
-  const id = button.dataset.save;
-  if (state.saved.has(id)) {
-    state.saved.delete(id);
-  } else {
-    state.saved.add(id);
-  }
-  saveState();
-  renderPapers();
+  toggleSave(button.dataset.save);
 });
 
 paperGrid.addEventListener("submit", (event) => {
@@ -1002,6 +1102,7 @@ gateForm.addEventListener("submit", async (event) => {
   gateError.textContent = "";
   setGateVisible(false);
   await loadVotes();
+  await loadSaves();
   await loadComments();
   await loadFeedback();
   updateMemberPanel();
