@@ -95,11 +95,26 @@
             <button id="aidasChangeName" type="button">Change</button>
           </div>
 
+          <button class="feedback-nav" id="feedOpen" type="button">X Feed</button>
           <button class="feedback-nav" id="feedbackOpen" type="button">Feedback Board</button>
         </aside>
 
         <section class="paper-grid" id="paperGrid" aria-live="polite"></section>
         <nav class="pagination" id="pagination" aria-label="Paper pages"></nav>
+
+        <section class="feed-board" id="feedBoard" aria-label="X home feed" hidden>
+          <div class="feedback-board-head">
+            <div>
+              <p class="eyebrow">From X</p>
+              <h2>Home Feed</h2>
+            </div>
+            <div class="feedback-board-actions">
+              <span class="feed-updated" id="feedUpdated"></span>
+              <button id="feedClose" type="button">Back to papers</button>
+            </div>
+          </div>
+          <div class="feed-list" id="feedList" aria-live="polite"></div>
+        </section>
 
         <section class="feedback-board" id="feedbackBoard" aria-label="Feedback board" hidden>
           <div class="feedback-board-head">

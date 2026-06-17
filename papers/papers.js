@@ -39,6 +39,9 @@ const state = {
   feedback: [],
   feedbackPage: 1,
   generatedAt: "",
+  feed: [],
+  feedGeneratedAt: "",
+  feedLoaded: false,
 };
 
 const aidasGate = document.querySelector("#aidasGate");
@@ -51,6 +54,11 @@ const feedbackInput = document.querySelector("#feedbackInput");
 const feedbackList = document.querySelector("#feedbackList");
 const feedbackOpen = document.querySelector("#feedbackOpen");
 const feedbackRefresh = document.querySelector("#feedbackRefresh");
+const feedBoard = document.querySelector("#feedBoard");
+const feedList = document.querySelector("#feedList");
+const feedOpen = document.querySelector("#feedOpen");
+const feedClose = document.querySelector("#feedClose");
+const feedUpdated = document.querySelector("#feedUpdated");
 const gateError = document.querySelector("#gateError");
 const gateForm = document.querySelector("#gateForm");
 const gateName = document.querySelector("#gateName");
@@ -205,11 +213,16 @@ function updateMemberPanel() {
 function setView(view) {
   state.view = view;
   const isFeedback = view === "feedback";
+  const isFeed = view === "feed";
+  const isPapers = !isFeedback && !isFeed;
   feedbackBoard.hidden = !isFeedback;
-  paperGrid.hidden = isFeedback;
-  pagination.hidden = isFeedback;
+  feedBoard.hidden = !isFeed;
+  paperGrid.hidden = !isPapers;
+  pagination.hidden = !isPapers;
   feedbackOpen.setAttribute("aria-pressed", String(isFeedback));
+  feedOpen.setAttribute("aria-pressed", String(isFeed));
   if (isFeedback) loadFeedback();
+  if (isFeed) loadFeed();
 }
 
 function requireAccess() {
@@ -351,6 +364,92 @@ function formatFeedbackDate(value) {
   const date = value ? new Date(value) : null;
   if (!date || Number.isNaN(date.getTime())) return "";
   return date.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+
+function formatFeedTime(value) {
+  const date = value ? new Date(value) : null;
+  if (!date || Number.isNaN(date.getTime())) return "";
+  return date.toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+}
+
+function tweetUrl(item) {
+  const handle = String(item.author || "").replace(/^@/, "");
+  if (handle && item.id) return `https://x.com/${encodeURIComponent(handle)}/status/${encodeURIComponent(item.id)}`;
+  return item.urls?.[0] || "https://x.com";
+}
+
+function compactNumber(value) {
+  const n = Number(value) || 0;
+  if (n >= 1000) return `${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}k`;
+  return String(n);
+}
+
+async function loadFeed() {
+  if (state.feedLoaded) {
+    renderFeed();
+    return;
+  }
+  state.feedLoaded = true;
+  feedList.innerHTML = `<p class="feed-empty">Loading feed…</p>`;
+  try {
+    const response = await fetch("./twitter-feed.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(String(response.status));
+    const data = await response.json();
+    state.feed = Array.isArray(data) ? data : data.signals || [];
+    state.feedGeneratedAt = Array.isArray(data) ? "" : data.generatedAt || "";
+  } catch (error) {
+    state.feed = [];
+    state.feedGeneratedAt = "";
+  }
+  renderFeed();
+}
+
+function renderFeed() {
+  feedUpdated.textContent = state.feedGeneratedAt
+    ? `updated ${formatFeedTime(state.feedGeneratedAt)}`
+    : "";
+
+  if (!state.feed.length) {
+    feedList.innerHTML = `
+      <div class="feed-empty-card">
+        <p><strong>No X feed yet.</strong></p>
+        <p>Connect an X account by adding the API secrets in repository settings, then run the
+        <em>Ingest papers</em> action. The home timeline is then refreshed with the daily job.</p>
+        <p class="feed-empty-hint">See <code>docs/twitter-x-ingest-setup.md</code>.</p>
+      </div>`;
+    return;
+  }
+
+  feedList.innerHTML = state.feed
+    .map((item) => {
+      const handle = escapeHtml(item.author || "@x");
+      const metrics = item.metrics || {};
+      const links = (item.urls || [])
+        .filter((url) => !/\/\/(t\.co|x\.com|twitter\.com)\//i.test(url))
+        .slice(0, 3)
+        .map((url) => `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url.replace(/^https?:\/\/(www\.)?/, "").slice(0, 42))}</a>`)
+        .join("");
+      const arxiv = (item.arxivIds || [])
+        .slice(0, 3)
+        .map((id) => `<span class="feed-tag">arXiv:${escapeHtml(id)}</span>`)
+        .join("");
+      return `
+        <article class="feed-item">
+          <div class="feed-item-head">
+            <a class="feed-handle" href="https://x.com/${encodeURIComponent(String(item.author || "").replace(/^@/, ""))}" target="_blank" rel="noopener noreferrer">${handle}</a>
+            <a class="feed-time" href="${tweetUrl(item)}" target="_blank" rel="noopener noreferrer">${escapeHtml(formatFeedTime(item.createdAt))}</a>
+          </div>
+          <p class="feed-text">${escapeHtml(item.text || "")}</p>
+          ${links || arxiv ? `<div class="feed-links">${arxiv}${links}</div>` : ""}
+          <div class="feed-metrics">
+            <span title="Replies">💬 ${compactNumber(metrics.reply_count)}</span>
+            <span title="Reposts">🔁 ${compactNumber(metrics.retweet_count)}</span>
+            <span title="Likes">❤ ${compactNumber(metrics.like_count)}</span>
+            <a href="${tweetUrl(item)}" target="_blank" rel="noopener noreferrer">Open ↗</a>
+          </div>
+        </article>`;
+    })
+    .join("");
 }
 
 async function loadFeedback() {
@@ -1077,6 +1176,14 @@ feedbackOpen.addEventListener("click", () => {
 });
 
 feedbackClose.addEventListener("click", () => {
+  setView("papers");
+});
+
+feedOpen.addEventListener("click", () => {
+  setView("feed");
+});
+
+feedClose.addEventListener("click", () => {
   setView("papers");
 });
 

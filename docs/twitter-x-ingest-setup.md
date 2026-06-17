@@ -21,7 +21,13 @@ The ingest script calls:
 GET https://api.x.com/2/users/:id/timelines/reverse_chronological
 ```
 
-It stores only sanitized feed metadata in `papers/twitter-feed.json` and uses arXiv links found in tweets as ranking signals for `papers/papers.json`.
+It stores sanitized feed metadata in `papers/twitter-feed.json`, which is shown in the
+**X Feed** tab of the board (your home timeline), and also uses arXiv links found in tweets
+as ranking signals for `papers/papers.json`.
+
+> The feed is refreshed by the daily ingest job (not live), and `papers/twitter-feed.json`
+> is committed to this public repository — so the captured timeline is publicly readable.
+> The `reverse_chronological` home-timeline endpoint also requires an X API tier that grants it.
 
 ## OAuth 2 alternative
 

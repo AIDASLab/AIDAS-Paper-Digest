@@ -377,15 +377,144 @@ main {
   box-shadow: 0 6px 16px rgba(79, 70, 229, 0.28);
 }
 
-.feedback-board {
+.feedback-board,
+.feed-board {
   display: grid;
   grid-column: 2;
   gap: 12px;
   margin-top: 10px;
 }
 
-.feedback-board[hidden] {
+.feedback-board[hidden],
+.feed-board[hidden] {
   display: none;
+}
+
+/* X home feed */
+.feed-updated {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 720;
+}
+
+.feed-list {
+  display: grid;
+  gap: 10px;
+}
+
+.feed-empty,
+.feed-empty-card {
+  margin: 0;
+  padding: 18px;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.feed-empty-card p {
+  margin: 0 0 8px;
+}
+
+.feed-empty-card strong {
+  color: var(--ink);
+}
+
+.feed-empty-hint code {
+  padding: 1px 6px;
+  background: var(--surface-2);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.feed-item {
+  display: grid;
+  gap: 8px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  transition:
+    border-color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.feed-item:hover {
+  border-color: rgba(79, 70, 229, 0.35);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+}
+
+.feed-item-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.feed-handle {
+  font-weight: 800;
+  font-size: 14px;
+  background: linear-gradient(90deg, var(--grad-a), var(--grad-b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.feed-time {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.feed-text {
+  margin: 0;
+  color: #2b3442;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.feed-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.feed-links a {
+  padding: 3px 9px;
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.07);
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 680;
+}
+
+.feed-tag {
+  padding: 3px 9px;
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.18);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 760;
+}
+
+.feed-metrics {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.feed-metrics a {
+  margin-left: auto;
+  color: var(--blue);
 }
 
 .feedback-board-head {
