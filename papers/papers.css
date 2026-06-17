@@ -650,6 +650,47 @@ main {
   color: var(--blue);
 }
 
+.feed-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 720;
+}
+
+.feed-pager > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feed-pager button {
+  min-height: 30px;
+  padding: 0 12px;
+  color: #1e293b;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 720;
+}
+
+.feed-pager button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.feed-pager strong {
+  color: #334155;
+}
+
 .feedback-board-head {
   display: flex;
   align-items: center;

@@ -14,6 +14,7 @@ const categories = [
 const PAGE_SIZE = 20;
 const COMMENTS_PAGE_SIZE = 10;
 const FEEDBACK_PAGE_SIZE = 10;
+const FEED_PAGE_SIZE = 8;
 const MAX_LOCAL_FEEDBACK = 1000;
 const MAX_LOCAL_COMMENTS_PER_PAPER = 1000;
 const MAX_REMOTE_FEEDBACK = 1000;
@@ -42,6 +43,7 @@ const state = {
   feed: [],
   feedGeneratedAt: "",
   feedLoaded: false,
+  feedPage: 1,
   xHandle: null,
 };
 
@@ -418,6 +420,11 @@ async function loadFeed() {
   renderFeed();
 }
 
+function feedEngagement(post) {
+  const metrics = post.metrics || {};
+  return (Number(metrics.like_count) || 0) + (Number(metrics.retweet_count) || 0);
+}
+
 function renderFeed() {
   feedUpdated.textContent = state.feedGeneratedAt ? `updated ${formatFeedTime(state.feedGeneratedAt)} ago` : "";
 
@@ -432,7 +439,14 @@ function renderFeed() {
     return;
   }
 
-  feedList.innerHTML = state.feed
+  // Most-liked + reposted first, then paginate.
+  const sorted = [...state.feed].sort((a, b) => feedEngagement(b) - feedEngagement(a));
+  const totalPages = Math.max(1, Math.ceil(sorted.length / FEED_PAGE_SIZE));
+  state.feedPage = Math.min(Math.max(1, state.feedPage), totalPages);
+  const start = (state.feedPage - 1) * FEED_PAGE_SIZE;
+  const pageItems = sorted.slice(start, start + FEED_PAGE_SIZE);
+
+  const cards = pageItems
     .map((post) => {
       const media = (post.media || []).slice(0, 4);
       const mediaHtml = media.length
@@ -472,6 +486,21 @@ function renderFeed() {
         </article>`;
     })
     .join("");
+
+  const pager =
+    sorted.length > FEED_PAGE_SIZE
+      ? `
+        <div class="feed-pager">
+          <span>${start + 1}–${start + pageItems.length} of ${sorted.length}</span>
+          <div>
+            <button type="button" data-feed-page="${state.feedPage - 1}" ${state.feedPage === 1 ? "disabled" : ""}>Prev</button>
+            <strong>${state.feedPage} / ${totalPages}</strong>
+            <button type="button" data-feed-page="${state.feedPage + 1}" ${state.feedPage === totalPages ? "disabled" : ""}>Next</button>
+          </div>
+        </div>`
+      : "";
+
+  feedList.innerHTML = cards + pager;
 }
 
 async function loadFeedback() {
@@ -1211,7 +1240,16 @@ feedClose.addEventListener("click", () => {
 
 feedRefresh.addEventListener("click", () => {
   state.feedLoaded = false;
+  state.feedPage = 1;
   loadFeed();
+});
+
+feedList.addEventListener("click", (event) => {
+  const pageButton = event.target.closest("[data-feed-page]");
+  if (!pageButton || pageButton.disabled) return;
+  state.feedPage = Number(pageButton.dataset.feedPage);
+  renderFeed();
+  feedBoard.scrollIntoView({ block: "start", behavior: "smooth" });
 });
 
 feedbackForm.addEventListener("submit", (event) => {
