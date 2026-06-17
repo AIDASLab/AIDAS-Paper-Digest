@@ -3,14 +3,9 @@ window.AIDAS_SUPABASE_CONFIG = {
   anonKey: "sb_publishable_5F-zk-9tXGQDT9rL7D4rWQ_aZGS_6-G",
   sharedPassword: "aidas12!@",
 
-  // X (Twitter) "X Feed" tab — renders X's official embedded timeline (native cards,
-  // images, video). X does NOT expose the personal "For you" feed to other sites.
-  //
-  // By default the tab shows the accounts in `xAccounts` as native profile timelines with a
-  // chip switcher (no setup needed). To instead show one merged feed, make a PUBLIC X List
-  // and put its URL in `xTimeline` (it overrides xAccounts). Example:
-  //   xTimeline: "https://twitter.com/Jakekim_ai/lists/1234567890123456789",
-  xTimeline: "",
+  // X (Twitter) "X Feed" tab. The daily job (scripts/ingest-xfeed.js) pulls recent posts
+  // from these accounts via X's public syndication endpoint into papers/twitter-feed.json,
+  // which the tab renders as native-style cards. Edit this list to change who appears.
   xAccounts: [
     // AI paper / news aggregators
     "_akhaliq",

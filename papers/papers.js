@@ -59,6 +59,7 @@ const feedBoard = document.querySelector("#feedBoard");
 const feedList = document.querySelector("#feedList");
 const feedOpen = document.querySelector("#feedOpen");
 const feedClose = document.querySelector("#feedClose");
+const feedRefresh = document.querySelector("#feedRefresh");
 const feedUpdated = document.querySelector("#feedUpdated");
 const gateError = document.querySelector("#gateError");
 const gateForm = document.querySelector("#gateForm");
@@ -375,13 +376,11 @@ function formatFeedbackDate(value) {
 function formatFeedTime(value) {
   const date = value ? new Date(value) : null;
   if (!date || Number.isNaN(date.getTime())) return "";
-  return date.toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
-}
-
-function tweetUrl(item) {
-  const handle = String(item.author || "").replace(/^@/, "");
-  if (handle && item.id) return `https://x.com/${encodeURIComponent(handle)}/status/${encodeURIComponent(item.id)}`;
-  return item.urls?.[0] || "https://x.com";
+  const diff = Date.now() - date.getTime();
+  const hours = Math.floor(diff / 3600000);
+  if (hours < 1) return `${Math.max(1, Math.floor(diff / 60000))}m`;
+  if (hours < 24) return `${hours}h`;
+  return date.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
 function compactNumber(value) {
@@ -390,73 +389,89 @@ function compactNumber(value) {
   return String(n);
 }
 
-// Accounts seen in the owner's "For you" feed — suggested seeds for a public X List.
-const X_SUGGESTED_ACCOUNTS = [
-  "kevin_y_wu",
-  "notmahi",
-  "chris_j_paxton",
-  "litian_liang",
-  "gabriberton",
-  "vai_viswanathan",
-  "plastic_gear",
-  "lukas_m_ziegler",
-  "minchoi",
-  "googlegemma",
-  "tzedonn",
-];
-
-function loadXWidgets(target) {
-  if (window.twttr && window.twttr.widgets) {
-    window.twttr.widgets.load(target);
-    return;
-  }
-  if (document.getElementById("x-wjs")) return;
-  const script = document.createElement("script");
-  script.id = "x-wjs";
-  script.async = true;
-  script.src = "https://platform.twitter.com/widgets.js";
-  script.onload = () => window.twttr && window.twttr.widgets.load(target);
-  document.head.appendChild(script);
+function linkifyTweet(text) {
+  return escapeHtml(text)
+    .replace(/(https?:\/\/[^\s]+)/g, (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url.replace(/^https?:\/\/(www\.)?/, "")}</a>`)
+    .replace(/(^|\s)@(\w{1,15})/g, `$1<a href="https://x.com/$2" target="_blank" rel="noopener noreferrer">@$2</a>`)
+    .replace(/(^|\s)#(\w+)/g, `$1<a href="https://x.com/hashtag/$2" target="_blank" rel="noopener noreferrer">#$2</a>`)
+    .replace(/\n/g, "<br>");
 }
 
-function xAccounts() {
-  const configured = supabaseConfig.xAccounts;
-  return Array.isArray(configured) && configured.length ? configured : X_SUGGESTED_ACCOUNTS;
+// The X Feed tab renders a merged, chronological feed of the configured accounts' recent
+// posts. X blocks third-party embedded timelines, so the daily ingest pulls posts via X's
+// public syndication endpoint into papers/twitter-feed.json, which we render as cards here.
+async function loadFeed() {
+  if (!state.feedLoaded) {
+    feedList.innerHTML = `<p class="feed-empty">Loading feed…</p>`;
+    try {
+      const response = await fetch("./twitter-feed.json", { cache: "no-store" });
+      if (!response.ok) throw new Error(String(response.status));
+      const data = await response.json();
+      state.feed = Array.isArray(data) ? data : data.signals || [];
+      state.feedGeneratedAt = Array.isArray(data) ? "" : data.generatedAt || "";
+    } catch (error) {
+      state.feed = [];
+      state.feedGeneratedAt = "";
+    }
+    state.feedLoaded = true;
+  }
+  renderFeed();
 }
 
-// The X Feed tab renders X's official embedded timeline widget (native cards, images,
-// video). X does not expose the personal "For you" feed to any third party. So: if a public
-// List/profile URL is configured (supabaseConfig.xTimeline) we embed that; otherwise we show
-// the curated accounts as native profile timelines with a chip switcher — no setup needed.
-function loadFeed() {
-  const listUrl = String(supabaseConfig.xTimeline || "").trim();
+function renderFeed() {
+  feedUpdated.textContent = state.feedGeneratedAt ? `updated ${formatFeedTime(state.feedGeneratedAt)} ago` : "";
 
-  if (listUrl) {
-    feedUpdated.textContent = "live from X";
-    feedList.innerHTML = `<a class="twitter-timeline" data-height="1000" data-theme="light" data-chrome="noheader nofooter transparent" data-dnt="true" href="${escapeHtml(listUrl)}">Posts from X</a>`;
-    loadXWidgets(feedList);
+  if (!state.feed.length) {
+    feedList.innerHTML = `
+      <div class="feed-empty-card">
+        <p><strong>No posts yet.</strong></p>
+        <p>The daily job pulls recent posts from the configured X accounts into
+        <code>papers/twitter-feed.json</code>. Run the <em>Ingest papers</em> action once to
+        populate it, or edit the accounts in <code>papers/supabase-config.js</code>.</p>
+      </div>`;
     return;
   }
 
-  const accounts = xAccounts();
-  if (!accounts.length) {
-    feedUpdated.textContent = "";
-    feedList.innerHTML = `<div class="feed-empty-card"><p>No X accounts configured. Set <code>xAccounts</code> or <code>xTimeline</code> in <code>papers/supabase-config.js</code>.</p></div>`;
-    return;
-  }
-
-  // Show every account's native timeline together as a wall (no per-account switching).
-  feedUpdated.textContent = "live from X";
-  feedList.innerHTML = `
-    <div class="x-wall">
-      ${accounts
-        .map(
-          (handle) => `
-            <a class="twitter-timeline" data-height="640" data-theme="light" data-chrome="nofooter transparent" data-dnt="true" href="https://twitter.com/${encodeURIComponent(handle)}?ref_src=aidas">@${escapeHtml(handle)}</a>`,
-        )
-        .join("")}
-    </div>`;
-  loadXWidgets(feedList.querySelector(".x-wall"));
+  feedList.innerHTML = state.feed
+    .map((post) => {
+      const media = (post.media || []).slice(0, 4);
+      const mediaHtml = media.length
+        ? `<a class="feed-media${media.length > 1 ? " is-grid" : ""}" href="${escapeHtml(post.permalink)}" target="_blank" rel="noopener noreferrer">
+            ${media
+              .map(
+                (m) => `<span class="feed-media-item">
+                  <img src="${escapeHtml(m.image)}" alt="" loading="lazy" decoding="async" onerror="this.closest('.feed-media-item').remove()" />
+                  ${m.type && m.type !== "photo" ? `<span class="feed-play" aria-hidden="true">▶</span>` : ""}
+                </span>`,
+              )
+              .join("")}
+          </a>`
+        : "";
+      const avatar = post.avatar
+        ? `<img class="feed-avatar" src="${escapeHtml(post.avatar)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'" />`
+        : `<span class="feed-avatar feed-avatar-blank" aria-hidden="true">${escapeHtml((post.name || "?").charAt(0))}</span>`;
+      const metrics = post.metrics || {};
+      return `
+        <article class="feed-item">
+          <div class="feed-item-top">
+            <a href="https://x.com/${escapeHtml(String(post.handle || ""))}" target="_blank" rel="noopener noreferrer">${avatar}</a>
+            <div class="feed-id">
+              <span class="feed-name">${escapeHtml(post.name || post.handle || "")}${post.verified ? `<svg class="feed-verified" viewBox="0 0 24 24" aria-label="Verified"><path d="M22.25 12l-2.4-2.75.33-3.64-3.56-.81-1.86-3.15L12 1.42 8.24 1.65 6.38 4.8l-3.56.81.33 3.64L.75 12l2.4 2.75-.33 3.65 3.56.81 1.86 3.15L12 22.58l3.76-1.42 1.86-3.15 3.56-.81-.33-3.65L22.25 12z"></path></svg>` : ""}</span>
+              <a class="feed-handle" href="https://x.com/${escapeHtml(String(post.handle || ""))}" target="_blank" rel="noopener noreferrer">@${escapeHtml(post.handle || "")}</a>
+            </div>
+            <a class="feed-time" href="${escapeHtml(post.permalink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(formatFeedTime(post.createdAt))}</a>
+          </div>
+          ${post.text ? `<p class="feed-text">${linkifyTweet(post.text)}</p>` : ""}
+          ${mediaHtml}
+          <div class="feed-metrics">
+            <span title="Replies">💬 ${compactNumber(metrics.reply_count)}</span>
+            <span title="Reposts">🔁 ${compactNumber(metrics.retweet_count)}</span>
+            <span title="Likes">❤ ${compactNumber(metrics.like_count)}</span>
+            <a href="${escapeHtml(post.permalink)}" target="_blank" rel="noopener noreferrer">Open ↗</a>
+          </div>
+        </article>`;
+    })
+    .join("");
 }
 
 async function loadFeedback() {
@@ -1194,10 +1209,8 @@ feedClose.addEventListener("click", () => {
   setView("papers");
 });
 
-feedList.addEventListener("click", (event) => {
-  const chip = event.target.closest("[data-x-handle]");
-  if (!chip) return;
-  state.xHandle = chip.dataset.xHandle;
+feedRefresh.addEventListener("click", () => {
+  state.feedLoaded = false;
   loadFeed();
 });
 

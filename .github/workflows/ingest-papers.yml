@@ -44,6 +44,12 @@ jobs:
           THUMB_LIMIT: "120"
         run: node scripts/render-thumbnails.js
 
+      - name: Build X feed
+        env:
+          # Pace requests to X's syndication endpoint to avoid 429s.
+          XFEED_DELAY: "2500"
+        run: node scripts/ingest-xfeed.js
+
       - name: Commit updated digest
         run: |
           git add papers/papers.json papers/thumbs

@@ -492,35 +492,122 @@ main {
   box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
 }
 
-.feed-item-head {
+.feed-item-top {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
   gap: 10px;
 }
 
-.feed-handle {
+.feed-avatar {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--surface-2);
+}
+
+.feed-avatar-blank {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
   font-weight: 800;
+}
+
+.feed-id {
+  display: grid;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.feed-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--ink);
   font-size: 14px;
-  background: linear-gradient(90deg, var(--grad-a), var(--grad-b));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.feed-verified {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  fill: #1d9bf0;
+}
+
+.feed-handle {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .feed-time {
+  margin-left: auto;
+  align-self: flex-start;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 12.5px;
   white-space: nowrap;
 }
 
 .feed-text {
   margin: 0;
-  color: #2b3442;
-  font-size: 14px;
+  color: #1f2937;
+  font-size: 14.5px;
   line-height: 1.5;
-  white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+
+.feed-text a {
+  color: var(--blue);
+}
+
+.feed-text a:hover {
+  text-decoration: underline;
+}
+
+.feed-media {
+  display: grid;
+  gap: 3px;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+
+.feed-media.is-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.feed-media-item {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  background: var(--surface-2);
+}
+
+.feed-media.is-grid .feed-media-item {
+  aspect-ratio: 1 / 1;
+}
+
+.feed-media-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feed-play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 26px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(15, 23, 42, 0.18);
 }
 
 .feed-links {

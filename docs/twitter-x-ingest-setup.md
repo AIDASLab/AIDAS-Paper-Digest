@@ -3,21 +3,20 @@
 There are two independent pieces: the **X Feed tab** (what you see) and the optional
 **ingest signals** (used to nudge paper ranking).
 
-## X Feed tab — native embedded timeline
+## X Feed tab — merged feed of curated accounts
 
-The "X Feed" tab embeds X's official timeline widget, so posts render natively (images,
-video, avatars, badges). X does **not** expose the personal "For you" feed to any third
-party, so point the tab at a **public X List** you control:
+X blocks third-party **embedded timelines** (they render blank on outside sites), and the
+personal "For you" feed is not exposed by any API. So the board builds its own feed:
 
-1. On X: create a List, add the accounts you want, and set it to **Public**.
-   Suggested seeds from the current feed: `@kevin_y_wu`, `@notmahi`, `@chris_j_paxton`,
-   `@litian_liang`, `@gabriberton`, `@vai_viswanathan`, `@plastic_gear`,
-   `@lukas_m_ziegler`, `@minchoi`, `@googlegemma`, `@tzedonn`.
-2. Copy the list URL, e.g. `https://twitter.com/<you>/lists/<id>`.
-3. Paste it into `papers/supabase-config.js` → `xTimeline`.
+- `scripts/ingest-xfeed.js` (a step in the daily workflow) fetches recent posts for each
+  account in `papers/supabase-config.js` → `xAccounts` using X's public **syndication**
+  endpoint (`syndication.twitter.com/srv/timeline-profile/screen-name/<handle>`), merges and
+  sorts them, and writes `papers/twitter-feed.json`.
+- The "X Feed" tab renders that file as native-style cards (avatar, verified badge, text,
+  images/video, metrics, link to the post). No API key, no login.
 
-A profile (`https://twitter.com/<handle>`) or search URL works too. Until `xTimeline` is set,
-the tab shows setup instructions.
+To change which accounts appear, edit `xAccounts`. The syndication endpoint rate-limits
+bursts, so coverage is best-effort and accounts earlier in the list are most reliable.
 
 ## Optional ingest signals — X API user-context auth
 
