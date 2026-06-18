@@ -11,6 +11,11 @@ on:
 permissions:
   contents: write
 
+# Serialize the primary + backup cron runs so they don't race on push.
+concurrency:
+  group: ingest-papers
+  cancel-in-progress: false
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
@@ -63,4 +68,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update paper digest"
-          git push
+          # The primary + backup crons can overlap. If a concurrent run pushed first,
+          # rebase our commit on top (keeping our freshly generated files) and retry. A
+          # lost push race is harmless (the other run already updated), so never fail on it.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Push rejected; rebasing onto origin/main (attempt $attempt)."
+            git fetch origin main || true
+            git rebase -X theirs origin/main || git rebase --abort || true
+          done
+          echo "Remote already updated by a concurrent run; skipping push."
