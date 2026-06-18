@@ -1,68 +1,108 @@
 {
-  "generatedAt": "2026-06-17T04:29:55.648Z",
+  "generatedAt": "2026-06-18T02:10:15.570Z",
   "signals": [
     {
-      "id": "2066969642774720961",
+      "id": "2067346920230838387",
       "handle": "OpenAI",
       "name": "OpenAI",
       "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
       "verified": true,
-      "text": "Deployment Simulation works best with representative production data, which external evaluators often can’t access.\nIn a companion post for our Alignment blog, we also explore the public WildChat dataset and find that, while less precise, it still provides a useful signal about",
-      "createdAt": "Tue Jun 16 19:42:19 +0000 2026",
-      "permalink": "https://twitter.com/OpenAI/status/2066969642774720961",
+      "text": "LifeSciBench is a foundation for more realistic evaluation, targeted improvements, and continued partnership with the life sciences community—helping the field measure progress, identify gaps, and improve AI together for the benefit of everyone.",
+      "createdAt": "Wed Jun 17 20:41:29 +0000 2026",
+      "permalink": "https://twitter.com/OpenAI/status/2067346920230838387",
       "media": [],
       "metrics": {
-        "like_count": 112,
+        "like_count": 140,
         "retweet_count": 4,
+        "reply_count": 8
+      },
+      "urls": []
+    },
+    {
+      "id": "2067346918746030496",
+      "handle": "OpenAI",
+      "name": "OpenAI",
+      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+      "verified": true,
+      "text": "Benchmarks often test biological knowledge or narrow skills. The tasks in LifeSciBench test whether models can reason from evidence, work with scientific artifacts, handle uncertainty, and make useful decisions under real-world constraints.\nGPT‑Rosalind scores above GPT‑5.5",
+      "createdAt": "Wed Jun 17 20:41:29 +0000 2026",
+      "permalink": "https://twitter.com/OpenAI/status/2067346918746030496",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HLCtHtpbkAAxIIC.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 172,
+        "retweet_count": 7,
+        "reply_count": 3
+      },
+      "urls": []
+    },
+    {
+      "id": "2067346916929937827",
+      "handle": "OpenAI",
+      "name": "OpenAI",
+      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+      "verified": true,
+      "text": "Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.\nDeveloped with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research",
+      "createdAt": "Wed Jun 17 20:41:29 +0000 2026",
+      "permalink": "https://twitter.com/OpenAI/status/2067346916929937827",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HLCs-hgaUAAuUAP.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 1767,
+        "retweet_count": 174,
+        "reply_count": 130
+      },
+      "urls": []
+    },
+    {
+      "id": "2067268161611739213",
+      "handle": "omarsar0",
+      "name": "elvis",
+      "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_normal.jpg",
+      "verified": true,
+      "text": "Offload tasks to AI, but don't forget to keep learning.\nI find this /teach skill super useful to learn *anything*.\nGreat for beginners or advanced learners.",
+      "createdAt": "Wed Jun 17 15:28:32 +0000 2026",
+      "permalink": "https://twitter.com/omarsar0/status/2067268161611739213",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2067265768786407424/img/C5MOsFE-as4HZLPY.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 48,
+        "retweet_count": 10,
         "reply_count": 7
       },
       "urls": []
     },
     {
-      "id": "2066969640727969845",
-      "handle": "OpenAI",
-      "name": "OpenAI",
-      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
-      "verified": true,
-      "text": "Simulated deployments also reduced evaluation awareness to levels close to real production traffic.\nWe extended the method to agentic deployments with stateful tools, showing that tool simulators can produce realistic trajectories when given sufficient context and capabilities.",
-      "createdAt": "Tue Jun 16 19:42:19 +0000 2026",
-      "permalink": "https://twitter.com/OpenAI/status/2066969640727969845",
+      "id": "2067188693694136664",
+      "handle": "GoogleDeepMind",
+      "name": "Google DeepMind",
+      "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+      "verified": false,
+      "text": "We’re working with @SciTechgovuk, @mhclg and @i_dot_ai on a new AI housing application planning prototype. 🏡\nBy cutting down the time spent on repetitive tasks, it could help planning officers focus their attention on complex projects and reduce processing times by up to 50%.",
+      "createdAt": "Wed Jun 17 10:12:45 +0000 2026",
+      "permalink": "https://twitter.com/GoogleDeepMind/status/2067188693694136664",
       "media": [
         {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HK9ZY7PbUAAjP-8.jpg"
-        },
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HK9ZY7UbQAARkJB.png"
+          "type": "animated_gif",
+          "image": "https://pbs.twimg.com/tweet_video_thumb/HLAg9jMWYAAlnqs.jpg"
         }
       ],
       "metrics": {
-        "like_count": 124,
-        "retweet_count": 4,
-        "reply_count": 11
-      },
-      "urls": []
-    },
-    {
-      "id": "2066969639041855852",
-      "handle": "OpenAI",
-      "name": "OpenAI",
-      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
-      "verified": true,
-      "text": "Across 20 behavior categories and three GPT-5-series Thinking deployments, simulated and observed rates were strongly correlated.\nThe method outperformed challenging-prompt and previous-deployment baselines at predicting whether rates would rise or fall—and by how much.",
-      "createdAt": "Tue Jun 16 19:42:19 +0000 2026",
-      "permalink": "https://twitter.com/OpenAI/status/2066969639041855852",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HK9Y-GSaMAAmtg1.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 80,
-        "retweet_count": 2,
-        "reply_count": 3
+        "like_count": 243,
+        "retweet_count": 36,
+        "reply_count": 32
       },
       "urls": []
     },
@@ -77,9 +117,9 @@
       "permalink": "https://twitter.com/AnthropicAI/status/2066969542010806561",
       "media": [],
       "metrics": {
-        "like_count": 152,
-        "retweet_count": 13,
-        "reply_count": 59
+        "like_count": 222,
+        "retweet_count": 18,
+        "reply_count": 86
       },
       "urls": [
         "https://www.anthropic.com/research/claude-code-expertise"
@@ -101,9 +141,9 @@
         }
       ],
       "metrics": {
-        "like_count": 196,
-        "retweet_count": 19,
-        "reply_count": 25
+        "like_count": 433,
+        "retweet_count": 29,
+        "reply_count": 38
       },
       "urls": []
     },
@@ -123,9 +163,9 @@
         }
       ],
       "metrics": {
-        "like_count": 131,
-        "retweet_count": 6,
-        "reply_count": 12
+        "like_count": 177,
+        "retweet_count": 7,
+        "reply_count": 13
       },
       "urls": []
     },
@@ -145,157 +185,9 @@
         }
       ],
       "metrics": {
-        "like_count": 198,
-        "retweet_count": 10,
-        "reply_count": 10
-      },
-      "urls": []
-    },
-    {
-      "id": "2066907211255652800",
-      "handle": "omarsar0",
-      "name": "elvis",
-      "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_normal.jpg",
-      "verified": true,
-      "text": "Got a chance to try out @mattpocockuk /teach skill.\nIt's similar to my /learn skill.\nYou can try the skill with Hermes Agent right now in our academy. I will keep the lab FREE for now.\nIt's amazing to learn with AI agents.\nGo try it!",
-      "createdAt": "Tue Jun 16 15:34:15 +0000 2026",
-      "permalink": "https://twitter.com/omarsar0/status/2066907211255652800",
-      "media": [
-        {
-          "type": "video",
-          "image": "https://pbs.twimg.com/amplify_video_thumb/2066905903006203904/img/UKxviUbjJLyn-SAQ.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 60,
-        "retweet_count": 7,
-        "reply_count": 5
-      },
-      "urls": []
-    },
-    {
-      "id": "2066870215070322786",
-      "handle": "Alibaba_Qwen",
-      "name": "Qwen",
-      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
-      "verified": true,
-      "text": "Qwen-Robot Suite，enable AI from chatbot to physical action in the real world.\nMore demos, please visit our blog:qwen.ai/blog?id=qwen-r…",
-      "createdAt": "Tue Jun 16 13:07:14 +0000 2026",
-      "permalink": "https://twitter.com/Alibaba_Qwen/status/2066870215070322786",
-      "media": [
-        {
-          "type": "video",
-          "image": "https://pbs.twimg.com/amplify_video_thumb/2066867383156043776/img/s9L5rt_klDg3CB_z.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 78,
-        "retweet_count": 9,
-        "reply_count": 4
-      },
-      "urls": [
-        "https://qwen.ai/blog?id=qwen-robotsuite"
-      ]
-    },
-    {
-      "id": "2066870210716647591",
-      "handle": "Alibaba_Qwen",
-      "name": "Qwen",
-      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
-      "verified": true,
-      "text": "By treating natural language as a universal action interface，Qwen-RobotWorld bridges the gap  between general video generation models and domain-specific embodied models — this converts end-effector poses, steering commands, and navigation waypoints into a single interface,",
-      "createdAt": "Tue Jun 16 13:07:13 +0000 2026",
-      "permalink": "https://twitter.com/Alibaba_Qwen/status/2066870210716647591",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HK7808ebcAAnM_s.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 50,
-        "retweet_count": 2,
-        "reply_count": 1
-      },
-      "urls": []
-    },
-    {
-      "id": "2066870205780013354",
-      "handle": "Alibaba_Qwen",
-      "name": "Qwen",
-      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
-      "verified": true,
-      "text": "Qwen-RobotManip is a generalizable Vision-Language-Action (VLA) foundation model built upon Qwen-VL. It introduces a unified alignment framework across the representation, motion, and behavioral dimensions of manipulation, making large-scale multi-source training coherent rather",
-      "createdAt": "Tue Jun 16 13:07:12 +0000 2026",
-      "permalink": "https://twitter.com/Alibaba_Qwen/status/2066870205780013354",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HK78BoLbsAACQ7b.jpg"
-        },
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HK78DOTaMAASfnL.png"
-        }
-      ],
-      "metrics": {
-        "like_count": 71,
-        "retweet_count": 4,
-        "reply_count": 1
-      },
-      "urls": []
-    },
-    {
-      "id": "2065465361583964296",
-      "handle": "allen_ai",
-      "name": "Ai2",
-      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
-      "verified": false,
-      "text": "If you find yourself asking \"how does this model checkpoint differ from the last, and where did it improve/regress?\", that's what olmo-eval is for.\nWe're releasing it openly so the community can build on it.\n💻 Code: github.com/allenai/olmo-e…\n📝 Blog: allenai.org/blog/olmo-eval",
-      "createdAt": "Fri Jun 12 16:04:51 +0000 2026",
-      "permalink": "https://twitter.com/allen_ai/status/2065465361583964296",
-      "media": [],
-      "metrics": {
-        "like_count": 9,
-        "retweet_count": 1,
-        "reply_count": 0
-      },
-      "urls": [
-        "https://github.com/allenai/olmo-eval",
-        "https://allenai.org/blog/olmo-eval"
-      ]
-    },
-    {
-      "id": "2065465360485163218",
-      "handle": "allen_ai",
-      "name": "Ai2",
-      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
-      "verified": false,
-      "text": "After training a model with a new intervention, olmo-eval lets you line two model checkpoints up question by question—holding everything else fixed.\nThe comparison view makes it easier to see real gains &amp; regressions.",
-      "createdAt": "Fri Jun 12 16:04:51 +0000 2026",
-      "permalink": "https://twitter.com/allen_ai/status/2065465360485163218",
-      "media": [],
-      "metrics": {
-        "like_count": 7,
-        "retweet_count": 0,
-        "reply_count": 1
-      },
-      "urls": []
-    },
-    {
-      "id": "2065465359419748768",
-      "handle": "allen_ai",
-      "name": "Ai2",
-      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
-      "verified": false,
-      "text": "In olmo-eval, every component is swappable: the model being evaluated, its tools, LLM-as-a-judge graders, &amp; more. You can change one without touching the rest.\nBenchmark results land in a uniform schema, so checkpoints stay comparable across a long project.",
-      "createdAt": "Fri Jun 12 16:04:50 +0000 2026",
-      "permalink": "https://twitter.com/allen_ai/status/2065465359419748768",
-      "media": [],
-      "metrics": {
-        "like_count": 4,
-        "retweet_count": 0,
-        "reply_count": 1
+        "like_count": 262,
+        "retweet_count": 13,
+        "reply_count": 13
       },
       "urls": []
     },
@@ -315,9 +207,9 @@
         }
       ],
       "metrics": {
-        "like_count": 499,
-        "retweet_count": 77,
-        "reply_count": 60
+        "like_count": 504,
+        "retweet_count": 83,
+        "reply_count": 62
       },
       "urls": []
     },
@@ -337,8 +229,8 @@
         }
       ],
       "metrics": {
-        "like_count": 272,
-        "retweet_count": 20,
+        "like_count": 276,
+        "retweet_count": 23,
         "reply_count": 12
       },
       "urls": [
@@ -361,55 +253,93 @@
         }
       ],
       "metrics": {
-        "like_count": 440,
-        "retweet_count": 26,
+        "like_count": 445,
+        "retweet_count": 29,
         "reply_count": 8
       },
       "urls": []
     },
     {
-      "id": "2065093482088169719",
-      "handle": "GoogleDeepMind",
-      "name": "Google DeepMind",
-      "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+      "id": "2064580527831826874",
+      "handle": "RLWRLD_ai",
+      "name": "RLWRLD",
+      "avatar": "https://pbs.twimg.com/profile_images/1986301746256486403/QC-YDYLD_normal.jpg",
       "verified": false,
-      "text": "We’re teaming up @Palmeiras, the first football club to meaningfully build upon TacticAI: our AI system that can help simulate field scenarios and predict open play dynamics up to 8 seconds in advance. ⚽",
-      "createdAt": "Thu Jun 11 15:27:08 +0000 2026",
-      "permalink": "https://twitter.com/GoogleDeepMind/status/2065093482088169719",
+      "text": "Robotics Night is coming to Seoul 🇰🇷🤖\nPresenting at #ICML2026? Deep into robotics AI? Come spend an evening with fellow researchers at RLWRLD's Seoul research lab on July 8: live RLDX-1 demos on real robot hands, drinks, and casual talk with the people building the model. 👇🏻",
+      "createdAt": "Wed Jun 10 05:28:50 +0000 2026",
+      "permalink": "https://twitter.com/RLWRLD_ai/status/2064580527831826874",
       "media": [
         {
-          "type": "animated_gif",
-          "image": "https://pbs.twimg.com/tweet_video_thumb/HKiut0FXwAAvbI7.jpg"
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HKbcLu7aYAAY0hw.jpg"
         }
       ],
       "metrics": {
-        "like_count": 3292,
-        "retweet_count": 374,
-        "reply_count": 115
+        "like_count": 9,
+        "retweet_count": 2,
+        "reply_count": 1
       },
       "urls": []
     },
     {
-      "id": "2062521325076299981",
-      "handle": "NVIDIAAI",
-      "name": "NVIDIA AI",
-      "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
+      "id": "2064327864535916827",
+      "handle": "RLWRLD_ai",
+      "name": "RLWRLD",
+      "avatar": "https://pbs.twimg.com/profile_images/1986301746256486403/QC-YDYLD_normal.jpg",
+      "verified": false,
+      "text": "Benchmark for Dexterity\ndexbench.org",
+      "createdAt": "Tue Jun 09 12:44:50 +0000 2026",
+      "permalink": "https://twitter.com/RLWRLD_ai/status/2064327864535916827",
+      "media": [],
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0
+      },
+      "urls": [
+        "https://dexbench.org/"
+      ]
+    },
+    {
+      "id": "2064323898385310062",
+      "handle": "RLWRLD_ai",
+      "name": "RLWRLD",
+      "avatar": "https://pbs.twimg.com/profile_images/1986301746256486403/QC-YDYLD_normal.jpg",
+      "verified": false,
+      "text": "We're thrilled to share that Robotics &amp; Automation News has covered our collaboration with @nvidia , @NVIDIARobotics to co-develop next-generation industry standards for humanoid robot dexterity.\nWhat we're building together\n1) DexBench: an open benchmark built from real",
+      "createdAt": "Tue Jun 09 12:29:05 +0000 2026",
+      "permalink": "https://twitter.com/RLWRLD_ai/status/2064323898385310062",
+      "media": [],
+      "metrics": {
+        "like_count": 24,
+        "retweet_count": 3,
+        "reply_count": 1
+      },
+      "urls": []
+    },
+    {
+      "id": "2063315568502165844",
+      "handle": "TheHumanoidHub",
+      "name": "The Humanoid Hub",
+      "avatar": "https://pbs.twimg.com/profile_images/1682127970251718656/9j1n6iKy_normal.jpg",
       "verified": true,
-      "text": "Today we're shipping Nemotron 3 Ultra.\nA 550B MoE frontier-intelligence open model built for long-running agents.\nIt delivers 5x faster inference and lowers the cost of complex agentic tasks by up to 30% versus other open frontier models.",
-      "createdAt": "Thu Jun 04 13:06:18 +0000 2026",
-      "permalink": "https://twitter.com/NVIDIAAI/status/2062521325076299981",
+      "text": "Another quietly loaded week in humanoids\nthehumanoidhub.com/articles/newsl…",
+      "createdAt": "Sat Jun 06 17:42:20 +0000 2026",
+      "permalink": "https://twitter.com/TheHumanoidHub/status/2063315568502165844",
       "media": [
         {
-          "type": "video",
-          "image": "https://pbs.twimg.com/media/HJ-MNtoWMAELAyt.png"
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HKJdwr-bwAA8pOP.jpg"
         }
       ],
       "metrics": {
-        "like_count": 3496,
-        "retweet_count": 464,
-        "reply_count": 199
+        "like_count": 80,
+        "retweet_count": 5,
+        "reply_count": 6
       },
-      "urls": []
+      "urls": [
+        "https://thehumanoidhub.com/articles/newsletter-0007"
+      ]
     },
     {
       "id": "2062249312839434452",
@@ -427,122 +357,147 @@
         }
       ],
       "metrics": {
-        "like_count": 13508,
-        "retweet_count": 1123,
-        "reply_count": 1391
+        "like_count": 13527,
+        "retweet_count": 1125,
+        "reply_count": 1401
       },
       "urls": []
     },
     {
-      "id": "2062247238143996275",
-      "handle": "drfeifei",
-      "name": "Fei-Fei Li",
-      "avatar": "https://pbs.twimg.com/profile_images/841385099799085056/R1iX4QGX_normal.jpg",
+      "id": "2062216498215870656",
+      "handle": "physical_int",
+      "name": "Physical Intelligence",
+      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
       "verified": true,
-      "text": "x.com/i/article/2062…",
-      "createdAt": "Wed Jun 03 18:57:10 +0000 2026",
-      "permalink": "https://twitter.com/drfeifei/status/2062247238143996275",
+      "text": "π0.5 driving autonomous anastomosis!",
+      "createdAt": "Wed Jun 03 16:55:01 +0000 2026",
+      "permalink": "https://twitter.com/physical_int/status/2062216498215870656",
       "media": [],
       "metrics": {
-        "like_count": 4571,
-        "retweet_count": 962,
-        "reply_count": 168
+        "like_count": 170,
+        "retweet_count": 14,
+        "reply_count": 2
       },
       "urls": []
     },
     {
-      "id": "2061506641120641494",
-      "handle": "Alibaba_Qwen",
-      "name": "Qwen",
-      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
+      "id": "2055359839371772356",
+      "handle": "ericjang11",
+      "name": "Eric Jang",
+      "avatar": "https://pbs.twimg.com/profile_images/1494315926455394308/La_saDZ8_normal.jpg",
       "verified": true,
-      "text": "👏👏 Introducing Qwen3.7-Plus — a multimodal agent model that unifies vision and language into one versatile agent foundation.\n✅ Multimodal interactive hybrid agent: unified GUI &amp; CLI operation across visual and text tasks\n✅ Versatile coding agent &amp; productivity assistant with",
-      "createdAt": "Mon Jun 01 17:54:18 +0000 2026",
-      "permalink": "https://twitter.com/Alibaba_Qwen/status/2061506641120641494",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HJvxXDCbsAAUdpK.jpg"
-        }
-      ],
+      "text": "For the last few months I've been working on a from-scratch implementation of AlphaGo, a 2016 AI breakthrough that inspired me to get into deep learning. My casual understanding of AlphaGo was \"search-augmented deep neural networks trained with self-play\", but I wanted to go",
+      "createdAt": "Fri May 15 18:49:07 +0000 2026",
+      "permalink": "https://twitter.com/ericjang11/status/2055359839371772356",
+      "media": [],
       "metrics": {
-        "like_count": 3961,
-        "retweet_count": 460,
-        "reply_count": 276
+        "like_count": 2438,
+        "retweet_count": 183,
+        "reply_count": 49
       },
       "urls": []
     },
     {
-      "id": "2052403904139169940",
-      "handle": "allen_ai",
-      "name": "Ai2",
-      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "id": "2052428006690615720",
+      "handle": "RLWRLD_ai",
+      "name": "RLWRLD",
+      "avatar": "https://pbs.twimg.com/profile_images/1986301746256486403/QC-YDYLD_normal.jpg",
       "verified": false,
-      "text": "Today we’re bringing new NSF OMAI compute online with NVIDIA Blackwell Ultra-powered systems, turning a $152M national investment from @NSF &amp; @NVIDIA into a foundation for truly open AI research. 🧵",
-      "createdAt": "Thu May 07 15:03:17 +0000 2026",
-      "permalink": "https://twitter.com/allen_ai/status/2052403904139169940",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HHuad5gX0Ac-nxg.jpg"
-        },
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HHuadgtXEAIjgwh.jpg"
-        },
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HHuadt4WMAIOk7y.jpg"
-        }
-      ],
+      "text": "Today, RLWRLD unveils RLDX-1 — our proprietary Robotics Foundation Model.\nAcross all 8 public benchmarks, RLDX-1 outperforms leading SOTA models including #NVIDIA #GR00T and Physical Intelligence #π0 — delivering state-of-the-art performance among open robotics foundation",
+      "createdAt": "Thu May 07 16:39:03 +0000 2026",
+      "permalink": "https://twitter.com/RLWRLD_ai/status/2052428006690615720",
+      "media": [],
       "metrics": {
-        "like_count": 129,
-        "retweet_count": 21,
-        "reply_count": 6
+        "like_count": 49,
+        "retweet_count": 14,
+        "reply_count": 0
       },
       "urls": []
     },
     {
-      "id": "2049886895530967534",
-      "handle": "AndrewYNg",
-      "name": "Andrew Ng",
-      "avatar": "https://pbs.twimg.com/profile_images/733174243714682880/oyG30NEH_normal.jpg",
+      "id": "2044855690414694567",
+      "handle": "chelseabfinn",
+      "name": "Chelsea Finn",
+      "avatar": "https://pbs.twimg.com/profile_images/1531702062487965698/a6iO2pRx_normal.jpg",
       "verified": true,
-      "text": "How we prompt AI is very different in 2026 than 2022 when ChatGPT came out.\nI'm teaching a new course, AI Prompting for Everyone, to help you become an AI power user — whatever your current skill level.\nIt covers skills that apply across ChatGPT, Gemini, Claude, and other AI",
-      "createdAt": "Thu Apr 30 16:21:35 +0000 2026",
-      "permalink": "https://twitter.com/AndrewYNg/status/2049886895530967534",
+      "text": "LLM post-training used to mean fine-tuning to a downstream task\nRobotics has been stuck in this setting, needing task-specific fine-tuning for best performance\nπ07 changes this: It works out of the box &amp; outperforms fine-tuned specialists\nDetails: pi.website/pi07",
+      "createdAt": "Thu Apr 16 19:09:22 +0000 2026",
+      "permalink": "https://twitter.com/chelseabfinn/status/2044855690414694567",
       "media": [
         {
           "type": "video",
-          "image": "https://pbs.twimg.com/amplify_video_thumb/2049886560490053635/img/plsg0OWgBfaqmdc2.jpg"
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2044844970260185088/img/2P1eLRt4Grc-_t2r.jpg"
         }
       ],
       "metrics": {
-        "like_count": 4837,
-        "retweet_count": 928,
-        "reply_count": 297
+        "like_count": 577,
+        "retweet_count": 61,
+        "reply_count": 20
+      },
+      "urls": [
+        "http://pi.website/pi07"
+      ]
+    },
+    {
+      "id": "2044842475060351116",
+      "handle": "physical_int",
+      "name": "Physical Intelligence",
+      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
+      "verified": true,
+      "text": "To find out more, check out our blog post, videos, and full-length research paper: pi.website/pi07",
+      "createdAt": "Thu Apr 16 18:16:52 +0000 2026",
+      "permalink": "https://twitter.com/physical_int/status/2044842475060351116",
+      "media": [],
+      "metrics": {
+        "like_count": 62,
+        "retweet_count": 4,
+        "reply_count": 2
+      },
+      "urls": [
+        "https://pi.website/pi07"
+      ]
+    },
+    {
+      "id": "2044842449412202748",
+      "handle": "physical_int",
+      "name": "Physical Intelligence",
+      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
+      "verified": true,
+      "text": "We are still discovering what π0.7 can do. It's fun to play with and the results so far have been quite surprising!",
+      "createdAt": "Thu Apr 16 18:16:45 +0000 2026",
+      "permalink": "https://twitter.com/physical_int/status/2044842449412202748",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2044842330495266816/img/JTm38mAiYrjYW23k.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 89,
+        "retweet_count": 4,
+        "reply_count": 2
       },
       "urls": []
     },
     {
-      "id": "2048440764368347611",
-      "handle": "deepseek_ai",
-      "name": "DeepSeek",
-      "avatar": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_normal.jpg",
+      "id": "2044842265982665022",
+      "handle": "physical_int",
+      "name": "Physical Intelligence",
+      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
       "verified": true,
-      "text": "🔥DeepSeek Input Cache Price Drop!\nEffective immediately, the price for input cache hits across the ENTIRE DeepSeek API series is reduced to just 1/10th of the original price! Build more efficiently for less.\n📌Reminder: The DeepSeek-V4-Pro 75% OFF promotion is still active",
-      "createdAt": "Sun Apr 26 16:35:11 +0000 2026",
-      "permalink": "https://twitter.com/deepseek_ai/status/2048440764368347611",
+      "text": "π0.7 handles diverse prompts that don't just say what to do, but also how to do it, including rich language and multimodal information, such as visual subgoal images. At test time, these images can be produced by a lightweight world model.",
+      "createdAt": "Thu Apr 16 18:16:02 +0000 2026",
+      "permalink": "https://twitter.com/physical_int/status/2044842265982665022",
       "media": [
         {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HG2Fzg4bUAAXN5S.jpg"
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2044842189193420800/img/S7Sgz8fJh-jTLz_s.jpg"
         }
       ],
       "metrics": {
-        "like_count": 8296,
-        "retweet_count": 771,
-        "reply_count": 512
+        "like_count": 103,
+        "retweet_count": 3,
+        "reply_count": 3
       },
       "urls": []
     },
@@ -562,8 +517,8 @@
         }
       ],
       "metrics": {
-        "like_count": 508,
-        "retweet_count": 69,
+        "like_count": 510,
+        "retweet_count": 70,
         "reply_count": 68
       },
       "urls": []
@@ -584,172 +539,158 @@
         }
       ],
       "metrics": {
-        "like_count": 9064,
-        "retweet_count": 1150,
-        "reply_count": 569
+        "like_count": 9067,
+        "retweet_count": 1154,
+        "reply_count": 570
       },
       "urls": []
     },
     {
-      "id": "2040423398824698310",
-      "handle": "rasbt",
-      "name": "Sebastian Raschka",
-      "avatar": "https://pbs.twimg.com/profile_images/1661187442043486209/a3E4t1eV_normal.jpg",
+      "id": "1986482482460725755",
+      "handle": "TheHumanoidHub",
+      "name": "The Humanoid Hub",
+      "avatar": "https://pbs.twimg.com/profile_images/1682127970251718656/9j1n6iKy_normal.jpg",
       "verified": true,
-      "text": "Components of a coding agent: a little write-up on the building blocks behind coding agents, from repo context and tool use to memory and delegation.\nLink: magazine.sebastianraschka.com/p/components-o…",
-      "createdAt": "Sat Apr 04 13:37:02 +0000 2026",
-      "permalink": "https://twitter.com/rasbt/status/2040423398824698310",
+      "text": "XPENG's next-gen IRON robot effectively crossed the uncanny valley, leading many to believe it was a human in a suit.\nIn a follow-up event to prove it was a robot, He Xiaopeng had its leg skin cut open in front of a live audience. The robot then walked off the stage.",
+      "createdAt": "Thu Nov 06 17:15:05 +0000 2025",
+      "permalink": "https://twitter.com/TheHumanoidHub/status/1986482482460725755",
       "media": [
         {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HFEI2mzXUAE2CHZ.jpg"
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/1986482033531756548/img/XcZTfyFPP3fim1_B.jpg"
         }
       ],
       "metrics": {
-        "like_count": 1252,
-        "retweet_count": 209,
-        "reply_count": 57
+        "like_count": 10781,
+        "retweet_count": 1772,
+        "reply_count": 1227
       },
-      "urls": [
-        "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent"
-      ]
+      "urls": []
     },
     {
-      "id": "2036841736702767135",
-      "handle": "hardmaru",
-      "name": "hardmaru",
-      "avatar": "https://pbs.twimg.com/profile_images/1678402467078234113/XN5Oy2UP_normal.jpg",
+      "id": "1980306611408457999",
+      "handle": "robotsdigest",
+      "name": "Robots Digest 🤖",
+      "avatar": "https://pbs.twimg.com/profile_images/1960300063454081024/y9QhWj-e_normal.jpg",
       "verified": true,
-      "text": "I’m incredibly proud of The AI Scientist team for this milestone publication in @Nature. We started this project to explore if foundation models could execute the entire research lifecycle. Seeing this work validated at this level is a special moment. I truly believe AI will",
-      "createdAt": "Wed Mar 25 16:24:47 +0000 2026",
-      "permalink": "https://twitter.com/hardmaru/status/2036841736702767135",
+      "text": "Robot Learning: A Tutorial was not enough\n@ben_burtenshaw has curated a robotics course to lower the barrier to entry into frontier robotics.",
+      "createdAt": "Mon Oct 20 16:14:23 +0000 2025",
+      "permalink": "https://twitter.com/robotsdigest/status/1980306611408457999",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/G3t2XJSXIAMY4qC.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 1025,
+        "retweet_count": 146,
+        "reply_count": 10
+      },
+      "urls": []
+    },
+    {
+      "id": "1979221259276673184",
+      "handle": "robotsdigest",
+      "name": "Robots Digest 🤖",
+      "avatar": "https://pbs.twimg.com/profile_images/1960300063454081024/y9QhWj-e_normal.jpg",
+      "verified": true,
+      "text": "Build a whole working humanoid at home.\nOpenArm:\nopen sourced CAD, firmware, control stack and all that's required.\nWith teleop, force feedback and real-time gravity compensation so you can move it by hand.",
+      "createdAt": "Fri Oct 17 16:21:35 +0000 2025",
+      "permalink": "https://twitter.com/robotsdigest/status/1979221259276673184",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/1979220721214578688/img/qhmxrIGLdlOYIFqE.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 397,
+        "retweet_count": 55,
+        "reply_count": 5
+      },
+      "urls": []
+    },
+    {
+      "id": "1976673749572481222",
+      "handle": "xiao_ted",
+      "name": "Ted Xiao",
+      "avatar": "https://pbs.twimg.com/profile_images/1604438813149138952/ZFxh6pdd_normal.jpg",
+      "verified": true,
+      "text": "Fundamental spatial and temporal understanding is the bedrock upon which robots will learn motor control.\nThese types of Embodied Reasoning capabilities enable policy learning but also inference abilities like image or video conditioning.\nWe just released a new SOTA ER model!",
+      "createdAt": "Fri Oct 10 15:38:41 +0000 2025",
+      "permalink": "https://twitter.com/xiao_ted/status/1976673749572481222",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/1976673490297368576/img/jAG2Wi13_ooOQf4m.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 309,
+        "retweet_count": 43,
+        "reply_count": 10
+      },
+      "urls": []
+    },
+    {
+      "id": "1975956438750302559",
+      "handle": "robotsdigest",
+      "name": "Robots Digest 🤖",
+      "avatar": "https://pbs.twimg.com/profile_images/1960300063454081024/y9QhWj-e_normal.jpg",
+      "verified": true,
+      "text": "Google just gave their robot the ability to Google things mid-task. Gemini Robotics 1.5 can now search the web, reason through multi-step plans, and figure shit out on the fly",
+      "createdAt": "Wed Oct 08 16:08:21 +0000 2025",
+      "permalink": "https://twitter.com/robotsdigest/status/1975956438750302559",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/1975955394804477954/img/zl4aGeG4zQDiNJGG.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 405,
+        "retweet_count": 58,
+        "reply_count": 8
+      },
+      "urls": []
+    },
+    {
+      "id": "1975589441847886091",
+      "handle": "robotsdigest",
+      "name": "Robots Digest 🤖",
+      "avatar": "https://pbs.twimg.com/profile_images/1960300063454081024/y9QhWj-e_normal.jpg",
+      "verified": true,
+      "text": "blog in which ai lead of @1x_tech shares their insights on how and why robotics is the endgame.",
+      "createdAt": "Tue Oct 07 15:50:02 +0000 2025",
+      "permalink": "https://twitter.com/robotsdigest/status/1975589441847886091",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/G2qz2ohXkAAv8YB.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 442,
+        "retweet_count": 53,
+        "reply_count": 8
+      },
+      "urls": []
+    },
+    {
+      "id": "1973426729952956652",
+      "handle": "pabbeel",
+      "name": "Pieter Abbeel",
+      "avatar": "https://pbs.twimg.com/profile_images/1305267627/61089_706033241563_202809_38806847_7322449_n_normal.jpg",
+      "verified": true,
+      "text": "Very excited to start sharing some of the work we have been doing at Amazon FAR.  In this work we present OmniRetarget, which can generate high-quality interaction-preserving data from human motions for learning complex humanoid skills.\nHigh-quality re-targeting really helps",
+      "createdAt": "Wed Oct 01 16:36:11 +0000 2025",
+      "permalink": "https://twitter.com/pabbeel/status/1973426729952956652",
       "media": [],
       "metrics": {
-        "like_count": 1169,
-        "retweet_count": 155,
-        "reply_count": 76
-      },
-      "urls": []
-    },
-    {
-      "id": "1989611270241218867",
-      "handle": "giffmana",
-      "name": "Lucas Beyer (bl16)",
-      "avatar": "https://pbs.twimg.com/profile_images/378800000845687873/37bba4f807fe3a2c644a252f8191338d_normal.jpeg",
-      "verified": true,
-      "text": "I would like to, for no reason at all, remind my dear Googlers of the yearly training they get about insider trading.",
-      "createdAt": "Sat Nov 15 08:27:46 +0000 2025",
-      "permalink": "https://twitter.com/giffmana/status/1989611270241218867",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/G5yE58CXAAAiC8t.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 8363,
-        "retweet_count": 114,
-        "reply_count": 78
-      },
-      "urls": []
-    },
-    {
-      "id": "1977828314871218378",
-      "handle": "jackclarkSF",
-      "name": "Jack Clark",
-      "avatar": "https://pbs.twimg.com/profile_images/726446881547517952/ULhSTKxN_normal.jpg",
-      "verified": true,
-      "text": "Technological Optimism and Appropriate Fear - an essay where I grapple with how I feel about the continued steady march towards powerful AI systems. The world will bend around AI akin to how a black hole pulls and bends everything around itself.",
-      "createdAt": "Mon Oct 13 20:06:31 +0000 2025",
-      "permalink": "https://twitter.com/jackclarkSF/status/1977828314871218378",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/G3Kn9cBbwAA8xPX.png"
-        }
-      ],
-      "metrics": {
-        "like_count": 3089,
-        "retweet_count": 489,
-        "reply_count": 214
-      },
-      "urls": []
-    },
-    {
-      "id": "1970620746155393441",
-      "handle": "giffmana",
-      "name": "Lucas Beyer (bl16)",
-      "avatar": "https://pbs.twimg.com/profile_images/378800000845687873/37bba4f807fe3a2c644a252f8191338d_normal.jpeg",
-      "verified": true,
-      "text": "Did you know that when they say stuff like \"The A18 uses TSMC's 3nm process\" or \"announced the 2nm node\"\nThe 3nm, 2nm actually doesn't mean anything?! It's just like a version number. They make it up. Literally nothing measures 2nm or 3nm.\nI certainly didn't know.",
-      "createdAt": "Tue Sep 23 22:46:12 +0000 2025",
-      "permalink": "https://twitter.com/giffmana/status/1970620746155393441",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/G1kNH8OXwAAGCG3.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 8786,
-        "retweet_count": 521,
-        "reply_count": 333
-      },
-      "urls": []
-    },
-    {
-      "id": "1968027077820682598",
-      "handle": "drfeifei",
-      "name": "Fei-Fei Li",
-      "avatar": "https://pbs.twimg.com/profile_images/841385099799085056/R1iX4QGX_normal.jpg",
-      "verified": true,
-      "text": "This is an insanely large world created using our 3D world generation model. It blew my mind!",
-      "createdAt": "Tue Sep 16 18:59:54 +0000 2025",
-      "permalink": "https://twitter.com/drfeifei/status/1968027077820682598",
-      "media": [],
-      "metrics": {
-        "like_count": 4167,
-        "retweet_count": 414,
-        "reply_count": 130
-      },
-      "urls": []
-    },
-    {
-      "id": "1966875930674286935",
-      "handle": "rasbt",
-      "name": "Sebastian Raschka",
-      "avatar": "https://pbs.twimg.com/profile_images/1661187442043486209/a3E4t1eV_normal.jpg",
-      "verified": true,
-      "text": "When I started LLMs-from-scratch I just hoped it might help a few people learn.\nJust saw the GitHub the repo has now been forked 10k times!\nMore than the stars, the best part is seeing thousands of people actually use and build on the code ☺️",
-      "createdAt": "Sat Sep 13 14:45:39 +0000 2025",
-      "permalink": "https://twitter.com/rasbt/status/1966875930674286935",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/G0u_O8AWIAAXatc.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 4954,
-        "retweet_count": 445,
-        "reply_count": 57
-      },
-      "urls": []
-    },
-    {
-      "id": "1965808738058866898",
-      "handle": "jackclarkSF",
-      "name": "Jack Clark",
-      "avatar": "https://pbs.twimg.com/profile_images/726446881547517952/ULhSTKxN_normal.jpg",
-      "verified": true,
-      "text": "People leaving regular companies: Time for a change! Excited for my next chapter!\nPeople leaving AI companies: I have gazed into the endless night and there are shapes out there. We must be kind to one another. I am moving on to study philosophy.",
-      "createdAt": "Wed Sep 10 16:05:00 +0000 2025",
-      "permalink": "https://twitter.com/jackclarkSF/status/1965808738058866898",
-      "media": [],
-      "metrics": {
-        "like_count": 11536,
-        "retweet_count": 923,
-        "reply_count": 136
+        "like_count": 344,
+        "retweet_count": 42,
+        "reply_count": 21
       },
       "urls": []
     },
@@ -769,50 +710,30 @@
         }
       ],
       "metrics": {
-        "like_count": 7064,
+        "like_count": 7065,
         "retweet_count": 668,
         "reply_count": 130
       },
       "urls": []
     },
     {
-      "id": "1944056316424577525",
-      "handle": "rasbt",
-      "name": "Sebastian Raschka",
-      "avatar": "https://pbs.twimg.com/profile_images/1661187442043486209/a3E4t1eV_normal.jpg",
-      "verified": true,
-      "text": "Kimi K2 is basically DeepSeek V3 but with fewer heads and more experts:",
-      "createdAt": "Sat Jul 12 15:28:39 +0000 2025",
-      "permalink": "https://twitter.com/rasbt/status/1944056316424577525",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/Gvqs56pXIAEVI73.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 4700,
-        "retweet_count": 513,
-        "reply_count": 82
-      },
-      "urls": []
-    },
-    {
-      "id": "1938299990922674352",
-      "handle": "giffmana",
-      "name": "Lucas Beyer (bl16)",
-      "avatar": "https://pbs.twimg.com/profile_images/378800000845687873/37bba4f807fe3a2c644a252f8191338d_normal.jpeg",
-      "verified": true,
-      "text": "hey all, couple quick notes:\n1) yes, we will be joining Meta.\n2) no, we did not get 100M sign-on, that's fake news.\nExcited about what's ahead though, will share more in due time!\ncc @__kolesnikov__ and @XiaohuaZhai.",
-      "createdAt": "Thu Jun 26 18:15:04 +0000 2025",
-      "permalink": "https://twitter.com/giffmana/status/1938299990922674352",
+      "id": "1942931808422875640",
+      "handle": "RussTedrake",
+      "name": "Russ Tedrake",
+      "avatar": "https://pbs.twimg.com/profile_images/1544726682355077120/-ApHldEt_normal.jpg",
+      "verified": false,
+      "text": "TRI's latest Large Behavior Model (LBM) paper landed on arxiv last night! Check out our project website: toyotaresearchinstitute.github.io/lbm1/\nOne of our main goals for this paper was to put out a very careful and thorough study on the topic to help people understand the state of the",
+      "createdAt": "Wed Jul 09 13:00:15 +0000 2025",
+      "permalink": "https://twitter.com/RussTedrake/status/1942931808422875640",
       "media": [],
       "metrics": {
-        "like_count": 4058,
-        "retweet_count": 108,
-        "reply_count": 368
+        "like_count": 488,
+        "retweet_count": 105,
+        "reply_count": 8
       },
-      "urls": []
+      "urls": [
+        "https://toyotaresearchinstitute.github.io/lbm1/"
+      ]
     },
     {
       "id": "1923817691455873420",
@@ -830,7 +751,7 @@
         }
       ],
       "metrics": {
-        "like_count": 5570,
+        "like_count": 5571,
         "retweet_count": 1040,
         "reply_count": 225
       },
@@ -852,11 +773,30 @@
         }
       ],
       "metrics": {
-        "like_count": 3133,
+        "like_count": 3132,
         "retweet_count": 48,
         "reply_count": 68
       },
       "urls": []
+    },
+    {
+      "id": "1921623448251408477",
+      "handle": "RussTedrake",
+      "name": "Russ Tedrake",
+      "avatar": "https://pbs.twimg.com/profile_images/1544726682355077120/-ApHldEt_normal.jpg",
+      "verified": false,
+      "text": "Very proud of Nicholas, who recently shared scalable-real2sim.github.io (for physics-quality assets from a small amount of interaction with a robot) and is now following up with his work on scene-level generation.",
+      "createdAt": "Sun May 11 17:48:26 +0000 2025",
+      "permalink": "https://twitter.com/RussTedrake/status/1921623448251408477",
+      "media": [],
+      "metrics": {
+        "like_count": 69,
+        "retweet_count": 7,
+        "reply_count": 1
+      },
+      "urls": [
+        "https://scalable-real2sim.github.io/"
+      ]
     },
     {
       "id": "1908598456144531660",
@@ -874,26 +814,70 @@
         }
       ],
       "metrics": {
-        "like_count": 12750,
+        "like_count": 12749,
         "retweet_count": 2369,
         "reply_count": 822
       },
       "urls": []
     },
     {
-      "id": "1906210479695126886",
-      "handle": "sama",
-      "name": "Sam Altman",
-      "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
-      "verified": true,
-      "text": "can yall please chill on generating images this is insane our team needs sleep",
-      "createdAt": "Sun Mar 30 05:02:48 +0000 2025",
-      "permalink": "https://twitter.com/sama/status/1906210479695126886",
+      "id": "1907520183167758422",
+      "handle": "RussTedrake",
+      "name": "Russ Tedrake",
+      "avatar": "https://pbs.twimg.com/profile_images/1544726682355077120/-ApHldEt_normal.jpg",
+      "verified": false,
+      "text": "This work really sharpened my thinking about sim+real cotraining.",
+      "createdAt": "Wed Apr 02 19:47:06 +0000 2025",
+      "permalink": "https://twitter.com/RussTedrake/status/1907520183167758422",
       "media": [],
       "metrics": {
-        "like_count": 119928,
-        "retweet_count": 5773,
-        "reply_count": 6411
+        "like_count": 56,
+        "retweet_count": 3,
+        "reply_count": 3
+      },
+      "urls": []
+    },
+    {
+      "id": "1899973165880950992",
+      "handle": "pabbeel",
+      "name": "Pieter Abbeel",
+      "avatar": "https://pbs.twimg.com/profile_images/1305267627/61089_706033241563_202809_38806847_7322449_n_normal.jpg",
+      "verified": true,
+      "text": "Founders who were PhD or post-doc in my lab at Berkeley, **largely funded by NSF / DoD grants**, start-up, market cap (collected by OpenAI Deep Research)",
+      "createdAt": "Wed Mar 12 23:57:57 +0000 2025",
+      "permalink": "https://twitter.com/pabbeel/status/1899973165880950992",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/Gl4On-6W0AE594L.png"
+        }
+      ],
+      "metrics": {
+        "like_count": 4752,
+        "retweet_count": 479,
+        "reply_count": 119
+      },
+      "urls": []
+    },
+    {
+      "id": "1899843068356084193",
+      "handle": "xiao_ted",
+      "name": "Ted Xiao",
+      "avatar": "https://pbs.twimg.com/profile_images/1604438813149138952/ZFxh6pdd_normal.jpg",
+      "verified": true,
+      "text": "📢 First contact between a frontier model and robots!\nGemini Robotics is a SOTA generalist Vision-Language-Action model bringing frontier model intelligence to the physical world. It's an extremely capable model enabling dexterous, steerable, and general robot control. 🧵⬇️",
+      "createdAt": "Wed Mar 12 15:20:59 +0000 2025",
+      "permalink": "https://twitter.com/xiao_ted/status/1899843068356084193",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/ext_tw_video_thumb/1899839896124284928/pu/img/dCP7eyMcO5Idms1f.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 1477,
+        "retweet_count": 195,
+        "reply_count": 27
       },
       "urls": []
     },
@@ -908,47 +892,13 @@
       "permalink": "https://twitter.com/MistralAI/status/1897694143180112096",
       "media": [],
       "metrics": {
-        "like_count": 10891,
-        "retweet_count": 1455,
+        "like_count": 10885,
+        "retweet_count": 1456,
         "reply_count": 452
       },
       "urls": [
         "https://mistral.ai/news/mistral-ocr"
       ]
-    },
-    {
-      "id": "1894099637218545984",
-      "handle": "karpathy",
-      "name": "Andrej Karpathy",
-      "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_normal.jpg",
-      "verified": true,
-      "text": "Agency &gt; Intelligence\nI had this intuitively wrong for decades, I think due to a pervasive cultural veneration of intelligence, various entertainment/media, obsession with IQ etc. Agency is significantly more powerful and significantly more scarce. Are you hiring for agency? Are",
-      "createdAt": "Mon Feb 24 18:58:38 +0000 2025",
-      "permalink": "https://twitter.com/karpathy/status/1894099637218545984",
-      "media": [],
-      "metrics": {
-        "like_count": 49743,
-        "retweet_count": 9302,
-        "reply_count": 1948
-      },
-      "urls": []
-    },
-    {
-      "id": "1892786555494019098",
-      "handle": "deepseek_ai",
-      "name": "DeepSeek",
-      "avatar": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_normal.jpg",
-      "verified": true,
-      "text": "🚀 Day 0: Warming up for #OpenSourceWeek!\nWe're a tiny team @deepseek_ai exploring AGI. Starting next week, we'll be open-sourcing 5 repos, sharing our small but sincere progress with full transparency.\nThese humble building blocks in our online service have been documented,",
-      "createdAt": "Fri Feb 21 04:00:55 +0000 2025",
-      "permalink": "https://twitter.com/deepseek_ai/status/1892786555494019098",
-      "media": [],
-      "metrics": {
-        "like_count": 20444,
-        "retweet_count": 2604,
-        "reply_count": 1382
-      },
-      "urls": []
     },
     {
       "id": "1891705029083512934",
@@ -973,23 +923,6 @@
       "urls": []
     },
     {
-      "id": "1889059531625464090",
-      "handle": "sama",
-      "name": "Sam Altman",
-      "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
-      "verified": true,
-      "text": "no thank you but we will buy twitter for $9.74 billion if you want",
-      "createdAt": "Mon Feb 10 21:11:04 +0000 2025",
-      "permalink": "https://twitter.com/sama/status/1889059531625464090",
-      "media": [],
-      "metrics": {
-        "like_count": 220128,
-        "retweet_count": 17156,
-        "reply_count": 11587
-      },
-      "urls": []
-    },
-    {
       "id": "1887517520040448510",
       "handle": "MistralAI",
       "name": "Mistral AI",
@@ -1005,26 +938,31 @@
         }
       ],
       "metrics": {
-        "like_count": 12316,
-        "retweet_count": 1919,
+        "like_count": 12313,
+        "retweet_count": 1917,
         "reply_count": 611
       },
       "urls": []
     },
     {
-      "id": "1886192184808149383",
-      "handle": "karpathy",
-      "name": "Andrej Karpathy",
-      "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_normal.jpg",
+      "id": "1886679733460721875",
+      "handle": "TheHumanoidHub",
+      "name": "The Humanoid Hub",
+      "avatar": "https://pbs.twimg.com/profile_images/1682127970251718656/9j1n6iKy_normal.jpg",
       "verified": true,
-      "text": "There's a new kind of coding I call \"vibe coding\", where you fully give in to the vibes, embrace exponentials, and forget that the code even exists. It's possible because the LLMs (e.g. Cursor Composer w Sonnet) are getting too good. Also I just talk to Composer with SuperWhisper",
-      "createdAt": "Sun Feb 02 23:17:15 +0000 2025",
-      "permalink": "https://twitter.com/karpathy/status/1886192184808149383",
-      "media": [],
+      "text": "CMU researchers, in collaboration with NVIDIA, present ASAP, a two-stage framework for humanoid robot agility.\nIt pre-trains motion policies on human data, then refines them with real-world corrections using a delta action model, which adjusts for simulation mismatches.",
+      "createdAt": "Tue Feb 04 07:34:35 +0000 2025",
+      "permalink": "https://twitter.com/TheHumanoidHub/status/1886679733460721875",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/ext_tw_video_thumb/1886678917207220225/pu/img/fLYwVp0zwLK6G6Ta.jpg"
+        }
+      ],
       "metrics": {
-        "like_count": 34091,
-        "retweet_count": 3644,
-        "reply_count": 1470
+        "like_count": 6918,
+        "retweet_count": 1097,
+        "reply_count": 244
       },
       "urls": []
     },
@@ -1044,7 +982,7 @@
         }
       ],
       "metrics": {
-        "like_count": 7513,
+        "like_count": 7512,
         "retweet_count": 752,
         "reply_count": 46
       },
@@ -1066,67 +1004,57 @@
         }
       ],
       "metrics": {
-        "like_count": 6740,
+        "like_count": 6739,
         "retweet_count": 259,
         "reply_count": 349
       },
       "urls": []
     },
     {
-      "id": "1884103376868368589",
-      "handle": "deepseek_ai",
-      "name": "DeepSeek",
-      "avatar": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_normal.jpg",
+      "id": "1882475284315971998",
+      "handle": "chelseabfinn",
+      "name": "Chelsea Finn",
+      "avatar": "https://pbs.twimg.com/profile_images/1531702062487965698/a6iO2pRx_normal.jpg",
       "verified": true,
-      "text": "To prevent any potential harm, we reiterate that @deepseek_ai is our sole official account on Twitter/X.\nAny accounts:\n- representing us\n- using identical avatars\n- using similar names\nare impersonations.\nPlease stay vigilant to avoid being misled!",
-      "createdAt": "Tue Jan 28 04:57:04 +0000 2025",
-      "permalink": "https://twitter.com/deepseek_ai/status/1884103376868368589",
-      "media": [],
+      "text": "Disappointed with your ICLR paper being rejected?\nTen years ago today, Sergey and I finished training some of the first end-to-end neutral nets for robot control 🤖\nWe submitted the paper to RSS on January 23, 2015.\nIt was rejected for being \"incremental\" and \"unlikely to have",
+      "createdAt": "Thu Jan 23 17:07:37 +0000 2025",
+      "permalink": "https://twitter.com/chelseabfinn/status/1882475284315971998",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/ext_tw_video_thumb/1882473935373303808/pu/img/4J7j_wYOoLfOshS0.jpg"
+        }
+      ],
       "metrics": {
-        "like_count": 74754,
-        "retweet_count": 5969,
-        "reply_count": 3909
+        "like_count": 1655,
+        "retweet_count": 152,
+        "reply_count": 30
       },
       "urls": []
     },
     {
-      "id": "1881318130334814301",
-      "handle": "deepseek_ai",
-      "name": "DeepSeek",
-      "avatar": "https://pbs.twimg.com/profile_images/1717417613775757312/Uk1zNOj4_normal.jpg",
+      "id": "1878692765758005454",
+      "handle": "ericjang11",
+      "name": "Eric Jang",
+      "avatar": "https://pbs.twimg.com/profile_images/1494315926455394308/La_saDZ8_normal.jpg",
       "verified": true,
-      "text": "🚀 DeepSeek-R1 is here!\n⚡ Performance on par with OpenAI-o1\n📖 Fully open-source model &amp; technical report\n🏆 MIT licensed: Distill &amp; commercialize freely!\n🌐 Website &amp; API are live now! Try DeepThink at chat.deepseek.com today!\n🐋 1/n",
-      "createdAt": "Mon Jan 20 12:29:30 +0000 2025",
-      "permalink": "https://twitter.com/deepseek_ai/status/1881318130334814301",
+      "text": "The opening sentence goes so hard. This paper was 10 years ahead of its time.",
+      "createdAt": "Mon Jan 13 06:37:14 +0000 2025",
+      "permalink": "https://twitter.com/ericjang11/status/1878692765758005454",
       "media": [
         {
           "type": "photo",
-          "image": "https://pbs.twimg.com/media/GhvI3AoaAAAw-4z.png"
+          "image": "https://pbs.twimg.com/media/GhJ03W8bgAAhrup.jpg"
+        },
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/GhJ1F2XbYAA5h8t.png"
         }
       ],
       "metrics": {
-        "like_count": 35483,
-        "retweet_count": 6792,
-        "reply_count": 1955
-      },
-      "urls": [
-        "http://chat.deepseek.com"
-      ]
-    },
-    {
-      "id": "1862598063275061484",
-      "handle": "ylecun",
-      "name": "Yann LeCun",
-      "avatar": "https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg",
-      "verified": true,
-      "text": "I do not write posts on X.\nI tweet links to posts on other platforms.\nI like and retweet (occasionally)\nI comment on friends' tweets (rarely)\nFollow me on...⬇️⬇️⬇️",
-      "createdAt": "Fri Nov 29 20:42:38 +0000 2024",
-      "permalink": "https://twitter.com/ylecun/status/1862598063275061484",
-      "media": [],
-      "metrics": {
-        "like_count": 1864,
-        "retweet_count": 114,
-        "reply_count": 945
+        "like_count": 5036,
+        "retweet_count": 363,
+        "reply_count": 34
       },
       "urls": []
     },
@@ -1146,11 +1074,76 @@
         }
       ],
       "metrics": {
-        "like_count": 6897,
-        "retweet_count": 966,
+        "like_count": 6900,
+        "retweet_count": 965,
         "reply_count": 64
       },
       "urls": []
+    },
+    {
+      "id": "1852043351366996449",
+      "handle": "chelseabfinn",
+      "name": "Chelsea Finn",
+      "avatar": "https://pbs.twimg.com/profile_images/1531702062487965698/a6iO2pRx_normal.jpg",
+      "verified": true,
+      "text": "Very happy to start sharing our work at Pi 🤖❤️\n- a 3B pre-trained generalist model trained on 8+ robot platforms\n- a post-training recipe that allows robots to do dexterous, long-horizon tasks\nphysicalintelligence.company/blog/pi0\nWhat's exciting isn't laundry, but the recipe- a short 🧵",
+      "createdAt": "Thu Oct 31 17:41:58 +0000 2024",
+      "permalink": "https://twitter.com/chelseabfinn/status/1852043351366996449",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/ext_tw_video_thumb/1852041499464339456/pu/img/CVcwJX9QpZApwvkj.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 1921,
+        "retweet_count": 253,
+        "reply_count": 53
+      },
+      "urls": [
+        "https://www.physicalintelligence.company/blog/pi0"
+      ]
+    },
+    {
+      "id": "1846809477976412567",
+      "handle": "TheHumanoidHub",
+      "name": "The Humanoid Hub",
+      "avatar": "https://pbs.twimg.com/profile_images/1682127970251718656/9j1n6iKy_normal.jpg",
+      "verified": true,
+      "text": "Optimus can climb stairs now!",
+      "createdAt": "Thu Oct 17 07:04:26 +0000 2024",
+      "permalink": "https://twitter.com/TheHumanoidHub/status/1846809477976412567",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/ext_tw_video_thumb/1846808878992052227/pu/img/4boIyiGrbbooc6Fl.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 6697,
+        "retweet_count": 572,
+        "reply_count": 190
+      },
+      "urls": []
+    },
+    {
+      "id": "1846712392161325351",
+      "handle": "RussTedrake",
+      "name": "Russ Tedrake",
+      "avatar": "https://pbs.twimg.com/profile_images/1544726682355077120/-ApHldEt_normal.jpg",
+      "verified": false,
+      "text": "I'm super excited to start a great new collaboration with the fantastic team at Boston Dynamics.  Scott Kuindersma and I chatted with Evan Ackerman about it earlier today.\nspectrum.ieee.org/boston-dynamic…",
+      "createdAt": "Thu Oct 17 00:38:39 +0000 2024",
+      "permalink": "https://twitter.com/RussTedrake/status/1846712392161325351",
+      "media": [],
+      "metrics": {
+        "like_count": 417,
+        "retweet_count": 41,
+        "reply_count": 9
+      },
+      "urls": [
+        "https://spectrum.ieee.org/boston-dynamics-toyota-research"
+      ]
     },
     {
       "id": "1844746338396770616",
@@ -1210,7 +1203,7 @@
       ],
       "metrics": {
         "like_count": 6927,
-        "retweet_count": 1400,
+        "retweet_count": 1398,
         "reply_count": 151
       },
       "urls": [
@@ -1218,79 +1211,21 @@
       ]
     },
     {
-      "id": "1816425693380481249",
-      "handle": "ylecun",
-      "name": "Yann LeCun",
-      "avatar": "https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg",
+      "id": "1760591701410799682",
+      "handle": "xiao_ted",
+      "name": "Ted Xiao",
+      "avatar": "https://pbs.twimg.com/profile_images/1604438813149138952/ZFxh6pdd_normal.jpg",
       "verified": true,
-      "text": "You know @elonmusk, I really feel sorry for you and your family to have been infected by a mind virus.\nBut the best defense against a mind virus is intelligence, knowledge, and science.\nFighting a mind virus by promoting other mental pathogens, like Trumpism, conspiracy",
-      "createdAt": "Thu Jul 25 10:50:07 +0000 2024",
-      "permalink": "https://twitter.com/ylecun/status/1816425693380481249",
+      "text": "There will be 3-4 massive news coming out in the next weeks that will rock the robotics + AI space.\nAdjust your timelines, it will be a crazy 2024 📈",
+      "createdAt": "Thu Feb 22 09:05:46 +0000 2024",
+      "permalink": "https://twitter.com/xiao_ted/status/1760591701410799682",
       "media": [],
       "metrics": {
-        "like_count": 15584,
-        "retweet_count": 1561,
-        "reply_count": 2141
+        "like_count": 1457,
+        "retweet_count": 217,
+        "reply_count": 88
       },
       "urls": []
-    },
-    {
-      "id": "1813263734707790301",
-      "handle": "karpathy",
-      "name": "Andrej Karpathy",
-      "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_normal.jpg",
-      "verified": true,
-      "text": "⚡️ Excited to share that I am starting an AI+Education company called Eureka Labs.\nThe announcement:\n---\nWe are Eureka Labs and we are building a new kind of school that is AI native.\nHow can we approach an ideal experience for learning something new? For example, in the case",
-      "createdAt": "Tue Jul 16 17:25:37 +0000 2024",
-      "permalink": "https://twitter.com/karpathy/status/1813263734707790301",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/GSn-7tKbIAM8J7W.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 27640,
-        "retweet_count": 3597,
-        "reply_count": 1510
-      },
-      "urls": []
-    },
-    {
-      "id": "1797270661192155427",
-      "handle": "ylecun",
-      "name": "Yann LeCun",
-      "avatar": "https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg",
-      "verified": true,
-      "text": "My opinion of @elonmusk\nI like his cars (I own a 2015 S, and 2023 S), his rockets, his solar energy systems, and his satellite communication system.\nI also like his positions on open source and patents.\nBut I very much disagree with him on a number of issues.\nI disagree with",
-      "createdAt": "Sun Jun 02 14:14:51 +0000 2024",
-      "permalink": "https://twitter.com/ylecun/status/1797270661192155427",
-      "media": [],
-      "metrics": {
-        "like_count": 16728,
-        "retweet_count": 1845,
-        "reply_count": 2546
-      },
-      "urls": []
-    },
-    {
-      "id": "1795219718837616775",
-      "handle": "ylecun",
-      "name": "Yann LeCun",
-      "avatar": "https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg",
-      "verified": true,
-      "text": "@elonmusk @bneiluj @how_many_roads_ Over 80 technical papers published since January 2022.\nWhat about you?\nscholar.google.com/citations?hl=e…",
-      "createdAt": "Mon May 27 22:25:09 +0000 2024",
-      "permalink": "https://twitter.com/ylecun/status/1795219718837616775",
-      "media": [],
-      "metrics": {
-        "like_count": 16428,
-        "retweet_count": 740,
-        "reply_count": 462
-      },
-      "urls": [
-        "https://scholar.google.com/citations?hl=en&user=WLN3QrAAAAAJ&view_op=list_works&sortby=pubdate"
-      ]
     },
     {
       "id": "1733150512395038967",
@@ -1303,76 +1238,30 @@
       "permalink": "https://twitter.com/MistralAI/status/1733150512395038967",
       "media": [],
       "metrics": {
-        "like_count": 9799,
+        "like_count": 9798,
         "retweet_count": 1510,
-        "reply_count": 534
+        "reply_count": 533
       },
       "urls": [
         "http://2Fopentracker.i2p.rocks"
       ]
     },
     {
-      "id": "1726345564059832609",
-      "handle": "sama",
-      "name": "Sam Altman",
-      "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
+      "id": "1724273920524890467",
+      "handle": "xiao_ted",
+      "name": "Ted Xiao",
+      "avatar": "https://pbs.twimg.com/profile_images/1604438813149138952/ZFxh6pdd_normal.jpg",
       "verified": true,
-      "text": "first and last time i ever wear one of these",
-      "createdAt": "Sun Nov 19 21:03:51 +0000 2023",
-      "permalink": "https://twitter.com/sama/status/1726345564059832609",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/F_U2I1abgAA7_G5.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 92167,
-        "retweet_count": 5602,
-        "reply_count": 3438
-      },
-      "urls": []
-    },
-    {
-      "id": "1725631621511184771",
-      "handle": "sama",
-      "name": "Sam Altman",
-      "avatar": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg",
-      "verified": true,
-      "text": "i loved my time at openai. it was transformative for me personally, and hopefully the world a little bit. most of all i loved working with such talented people.\nwill have more to say about what’s next later.\n🫡",
-      "createdAt": "Fri Nov 17 21:46:53 +0000 2023",
-      "permalink": "https://twitter.com/sama/status/1725631621511184771",
+      "text": "Both MSFT and OpenAI have won massively from capital injections, but Microsoft Research (MSR) has been majorly screwed over.\nWorld-class researchers trained and hired for innovative fundamental research — now relegated to “ChatGPT for X” papers because leadership literally does",
+      "createdAt": "Tue Nov 14 03:51:52 +0000 2023",
+      "permalink": "https://twitter.com/xiao_ted/status/1724273920524890467",
       "media": [],
       "metrics": {
-        "like_count": 89379,
-        "retweet_count": 8686,
-        "reply_count": 6081
+        "like_count": 662,
+        "retweet_count": 44,
+        "reply_count": 24
       },
       "urls": []
-    },
-    {
-      "id": "1721916013732876415",
-      "handle": "drfeifei",
-      "name": "Fei-Fei Li",
-      "avatar": "https://pbs.twimg.com/profile_images/841385099799085056/R1iX4QGX_normal.jpg",
-      "verified": true,
-      "text": "After 3+ years, today is the day that my book “The Worlds I See” gets to see the world itself. It is a science memoir of the intertwining histories of me becoming an #AI scientist, and the making of the modern AI itself. All versions are now on Amazon a.co/d/fYKf74L 1/",
-      "createdAt": "Tue Nov 07 15:42:23 +0000 2023",
-      "permalink": "https://twitter.com/drfeifei/status/1721916013732876415",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/F-V5aRiaoAAdB_q.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 3534,
-        "retweet_count": 587,
-        "reply_count": 440
-      },
-      "urls": [
-        "https://a.co/d/fYKf74L"
-      ]
     },
     {
       "id": "1689320807288467456",
@@ -1419,23 +1308,6 @@
       "urls": []
     },
     {
-      "id": "1683440560869380096",
-      "handle": "hardmaru",
-      "name": "hardmaru",
-      "avatar": "https://pbs.twimg.com/profile_images/1678402467078234113/XN5Oy2UP_normal.jpg",
-      "verified": true,
-      "text": "This design is better than “𝕏”.",
-      "createdAt": "Mon Jul 24 11:34:41 +0000 2023",
-      "permalink": "https://twitter.com/hardmaru/status/1683440560869380096",
-      "media": [],
-      "metrics": {
-        "like_count": 93298,
-        "retweet_count": 9467,
-        "reply_count": 198
-      },
-      "urls": []
-    },
-    {
       "id": "1667054632613433346",
       "handle": "_akhaliq",
       "name": "AK",
@@ -1451,7 +1323,7 @@
         }
       ],
       "metrics": {
-        "like_count": 17464,
+        "like_count": 17463,
         "retweet_count": 2060,
         "reply_count": 142
       },
@@ -1473,8 +1345,8 @@
         }
       ],
       "metrics": {
-        "like_count": 68385,
-        "retweet_count": 3602,
+        "like_count": 68386,
+        "retweet_count": 3601,
         "reply_count": 171
       },
       "urls": []
@@ -1495,7 +1367,7 @@
         }
       ],
       "metrics": {
-        "like_count": 20693,
+        "like_count": 20692,
         "retweet_count": 5434,
         "reply_count": 310
       },
@@ -1528,52 +1400,6 @@
       ]
     },
     {
-      "id": "1651605660382134274",
-      "handle": "AndrewYNg",
-      "name": "Andrew Ng",
-      "avatar": "https://pbs.twimg.com/profile_images/733174243714682880/oyG30NEH_normal.jpg",
-      "verified": true,
-      "text": "1/ Thrilled to announce: Our new course ChatGPT Prompt Engineering for Developers, created together with @OpenAI, is available now for free! Access it here: deeplearning.ai/short-courses/…",
-      "createdAt": "Thu Apr 27 15:14:09 +0000 2023",
-      "permalink": "https://twitter.com/AndrewYNg/status/1651605660382134274",
-      "media": [
-        {
-          "type": "video",
-          "image": "https://pbs.twimg.com/ext_tw_video_thumb/1651603342022553600/pu/img/3ZcBCgwS54XV8RvI.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 16975,
-        "retweet_count": 4389,
-        "reply_count": 493
-      },
-      "urls": [
-        "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"
-      ]
-    },
-    {
-      "id": "1640530905361178624",
-      "handle": "drfeifei",
-      "name": "Fei-Fei Li",
-      "avatar": "https://pbs.twimg.com/profile_images/841385099799085056/R1iX4QGX_normal.jpg",
-      "verified": true,
-      "text": "Who is talking about #AI? And who should be included in this global conversation? Heading to eastern Taiwan to meet with a (large) group of mostly rural and aboriginal high schoolers to have a dialogue with them about #AI and more importantly, the future they should be part of.",
-      "createdAt": "Tue Mar 28 01:47:02 +0000 2023",
-      "permalink": "https://twitter.com/drfeifei/status/1640530905361178624",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/FsRWJhIaMAESFhJ.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 2874,
-        "retweet_count": 163,
-        "reply_count": 92
-      },
-      "urls": []
-    },
-    {
       "id": "1623114401418211330",
       "handle": "arankomatsuzaki",
       "name": "Aran Komatsuzaki",
@@ -1584,47 +1410,11 @@
       "permalink": "https://twitter.com/arankomatsuzaki/status/1623114401418211330",
       "media": [],
       "metrics": {
-        "like_count": 16645,
-        "retweet_count": 1544,
+        "like_count": 16644,
+        "retweet_count": 1543,
         "reply_count": 195
       },
       "urls": []
-    },
-    {
-      "id": "1617979122625712128",
-      "handle": "karpathy",
-      "name": "Andrej Karpathy",
-      "avatar": "https://pbs.twimg.com/profile_images/1296667294148382721/9Pr6XrPB_normal.jpg",
-      "verified": true,
-      "text": "The hottest new programming language is English",
-      "createdAt": "Tue Jan 24 20:14:18 +0000 2023",
-      "permalink": "https://twitter.com/karpathy/status/1617979122625712128",
-      "media": [],
-      "metrics": {
-        "like_count": 73180,
-        "retweet_count": 8966,
-        "reply_count": 2292
-      },
-      "urls": []
-    },
-    {
-      "id": "1608133663937495041",
-      "handle": "rasbt",
-      "name": "Sebastian Raschka",
-      "avatar": "https://pbs.twimg.com/profile_images/1661187442043486209/a3E4t1eV_normal.jpg",
-      "verified": true,
-      "text": "Looks like the first open source equivalent of ChatGPT has arrived: github.com/lucidrains/PaL…\nI.e., an implementation of RLHF (Reinforcement Learning with Human Feedback) on top of Google’s 540 billion parameter PaLM architecture",
-      "createdAt": "Wed Dec 28 16:11:57 +0000 2022",
-      "permalink": "https://twitter.com/rasbt/status/1608133663937495041",
-      "media": [],
-      "metrics": {
-        "like_count": 5537,
-        "retweet_count": 1033,
-        "reply_count": 80
-      },
-      "urls": [
-        "https://github.com/lucidrains/PaLM-rlhf-pytorch"
-      ]
     },
     {
       "id": "1575495462894723072",
@@ -1642,34 +1432,273 @@
         }
       ],
       "metrics": {
-        "like_count": 7474,
+        "like_count": 7473,
         "retweet_count": 1732,
         "reply_count": 808
       },
       "urls": []
     },
     {
-      "id": "1570152923233144832",
-      "handle": "giffmana",
-      "name": "Lucas Beyer (bl16)",
-      "avatar": "https://pbs.twimg.com/profile_images/378800000845687873/37bba4f807fe3a2c644a252f8191338d_normal.jpeg",
+      "id": "1553455109006303232",
+      "handle": "TheTuringPost",
+      "name": "Turing Post",
+      "avatar": "https://pbs.twimg.com/profile_images/2052479476605333508/_-CG4lvC_normal.jpg",
       "verified": true,
-      "text": "My Transformer tutorial slides are now available at lucasb.eyer.be/transformer\nI'll append recordings to this thread as I get them.\nIf you want to use some of the slides for your lecture, you may, as long as you credit me.\nIf you'd like me to give the lecture: maybe; e-mail me.",
-      "createdAt": "Wed Sep 14 20:50:03 +0000 2022",
-      "permalink": "https://twitter.com/giffmana/status/1570152923233144832",
+      "text": "CS109A Data Science course materials @Harvard are free and open for everyone!\n1. Lecture notes\n2. R code, Python notebooks\n3. Lab material\n4. Advanced sections\nLearn here: harvard-iacs.github.io/2019-CS109A/pa…",
+      "createdAt": "Sat Jul 30 18:58:54 +0000 2022",
+      "permalink": "https://twitter.com/TheTuringPost/status/1553455109006303232",
       "media": [
         {
           "type": "photo",
-          "image": "https://pbs.twimg.com/media/FcpNt8iWYAEYFg7.jpg"
+          "image": "https://pbs.twimg.com/media/FY77ME4WQAIXucs.png"
         }
       ],
       "metrics": {
-        "like_count": 3415,
-        "retweet_count": 573,
-        "reply_count": 71
+        "like_count": 2447,
+        "retweet_count": 797,
+        "reply_count": 30
       },
       "urls": [
-        "http://lucasb.eyer.be/transformer"
+        "https://harvard-iacs.github.io/2019-CS109A/pages/materials.html"
+      ]
+    },
+    {
+      "id": "1545788341550997504",
+      "handle": "TheTuringPost",
+      "name": "Turing Post",
+      "avatar": "https://pbs.twimg.com/profile_images/2052479476605333508/_-CG4lvC_normal.jpg",
+      "verified": true,
+      "text": "CS109A Data Science course materials @Harvard are free and open for everyone!\n1. Lecture notes\n2. R code, Python notebooks\n3. Lab material\n4. Advanced sections\nLearn here: harvard-iacs.github.io/2019-CS109A/pa…",
+      "createdAt": "Sat Jul 09 15:13:54 +0000 2022",
+      "permalink": "https://twitter.com/TheTuringPost/status/1545788341550997504",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/FXO-TbuWQAAMfX1.png"
+        }
+      ],
+      "metrics": {
+        "like_count": 3078,
+        "retweet_count": 956,
+        "reply_count": 35
+      },
+      "urls": [
+        "https://harvard-iacs.github.io/2019-CS109A/pages/materials.html"
+      ]
+    },
+    {
+      "id": "1523660456061116416",
+      "handle": "huggingface",
+      "name": "Hugging Face",
+      "avatar": "https://pbs.twimg.com/profile_images/1991559933473497089/mbrRS49P_normal.jpg",
+      "verified": true,
+      "text": "🤗🚀 huggingface.co/blog/series-c",
+      "createdAt": "Mon May 09 13:45:35 +0000 2022",
+      "permalink": "https://twitter.com/huggingface/status/1523660456061116416",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/FSUgMy4XIAI6xCG.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 2166,
+        "retweet_count": 218,
+        "reply_count": 84
+      },
+      "urls": [
+        "https://huggingface.co/blog/series-c"
+      ]
+    },
+    {
+      "id": "1429539892292317184",
+      "handle": "ericjang11",
+      "name": "Eric Jang",
+      "avatar": "https://pbs.twimg.com/profile_images/1494315926455394308/La_saDZ8_normal.jpg",
+      "verified": true,
+      "text": "Looking forward to getting vaccinated every 4 nanoseconds",
+      "createdAt": "Sun Aug 22 20:24:04 +0000 2021",
+      "permalink": "https://twitter.com/ericjang11/status/1429539892292317184",
+      "media": [],
+      "metrics": {
+        "like_count": 6567,
+        "retweet_count": 577,
+        "reply_count": 41
+      },
+      "urls": []
+    },
+    {
+      "id": "1383597721391493120",
+      "handle": "svlevine",
+      "name": "Sergey Levine",
+      "avatar": "https://pbs.twimg.com/profile_images/990434811662680064/BKCbJypl_normal.jpg",
+      "verified": true,
+      "text": "Final set of CS182 Deep Learning lectures now added to the course playlist: youtube.com/playlist?list=…\nGANs (Lec 19), adv. examples (20), and meta-learning (21)!\nMore materials on the course website: cs182sp21.github.io",
+      "createdAt": "Sun Apr 18 01:46:17 +0000 2021",
+      "permalink": "https://twitter.com/svlevine/status/1383597721391493120",
+      "media": [],
+      "metrics": {
+        "like_count": 1273,
+        "retweet_count": 269,
+        "reply_count": 5
+      },
+      "urls": [
+        "https://youtube.com/playlist?list=PL_iWQOsE6TfVmKkQHucjPAoRtIJYt8a5A",
+        "https://cs182sp21.github.io/"
+      ]
+    },
+    {
+      "id": "1382476875839115264",
+      "handle": "ericjang11",
+      "name": "Eric Jang",
+      "avatar": "https://pbs.twimg.com/profile_images/1494315926455394308/La_saDZ8_normal.jpg",
+      "verified": true,
+      "text": "pain",
+      "createdAt": "Wed Apr 14 23:32:27 +0000 2021",
+      "permalink": "https://twitter.com/ericjang11/status/1382476875839115264",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/Ey-LYsGVEAMaKHQ.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 4504,
+        "retweet_count": 140,
+        "reply_count": 59
+      },
+      "urls": []
+    },
+    {
+      "id": "1374450544475992064",
+      "handle": "pabbeel",
+      "name": "Pieter Abbeel",
+      "avatar": "https://pbs.twimg.com/profile_images/1305267627/61089_706033241563_202809_38806847_7322449_n_normal.jpg",
+      "verified": true,
+      "text": "Very excited to share the launch of my new podcast, The Robot Brains.  The first episode was just released.  My first guest is brilliant AI researcher, educator, and Director of AI and Autopilot Vision at Tesla @karpathy!\ntherobotbrains.ai",
+      "createdAt": "Tue Mar 23 19:58:40 +0000 2021",
+      "permalink": "https://twitter.com/pabbeel/status/1374450544475992064",
+      "media": [
+        {
+          "type": "animated_gif",
+          "image": "https://pbs.twimg.com/tweet_video_thumb/ExMG-f6UYBE8FUw.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 1394,
+        "retweet_count": 274,
+        "reply_count": 35
+      },
+      "urls": [
+        "https://www.therobotbrains.ai/"
+      ]
+    },
+    {
+      "id": "1370876669192331265",
+      "handle": "svlevine",
+      "name": "Sergey Levine",
+      "avatar": "https://pbs.twimg.com/profile_images/990434811662680064/BKCbJypl_normal.jpg",
+      "verified": true,
+      "text": "I'm releasing all the lectures (so far) for my deep learning class, CS182! This is an introductory deep learning course (advanced undergraduate + graduate) covering a broad range of deep learning topics.\nWebsite: cs182sp21.github.io\nPlaylist: youtube.com/playlist?list=…\n🧵-&gt;",
+      "createdAt": "Sat Mar 13 23:17:22 +0000 2021",
+      "permalink": "https://twitter.com/svlevine/status/1370876669192331265",
+      "media": [],
+      "metrics": {
+        "like_count": 4144,
+        "retweet_count": 981,
+        "reply_count": 36
+      },
+      "urls": [
+        "https://cs182sp21.github.io/",
+        "https://youtube.com/playlist?list=PL_iWQOsE6TfVmKkQHucjPAoRtIJYt8a5A"
+      ]
+    },
+    {
+      "id": "1315099981083107328",
+      "handle": "svlevine",
+      "name": "Sergey Levine",
+      "avatar": "https://pbs.twimg.com/profile_images/990434811662680064/BKCbJypl_normal.jpg",
+      "verified": true,
+      "text": "My deep RL course (CS285) now has fall 2020 lectures online, here: youtube.com/playlist?list=…\nWe'll update this each week with the latest lectures. Hopefully these lectures are helpful! We tried to update material from past years, and recorded it in a more online-friendly format.",
+      "createdAt": "Sun Oct 11 01:20:43 +0000 2020",
+      "permalink": "https://twitter.com/svlevine/status/1315099981083107328",
+      "media": [],
+      "metrics": {
+        "like_count": 3290,
+        "retweet_count": 798,
+        "reply_count": 28
+      },
+      "urls": [
+        "https://www.youtube.com/playlist?list=PL_iWQOsE6TfURIIhCrlt-wj9ByIVpbfGc"
+      ]
+    },
+    {
+      "id": "1232386995843788800",
+      "handle": "chelseabfinn",
+      "name": "Chelsea Finn",
+      "avatar": "https://pbs.twimg.com/profile_images/1531702062487965698/a6iO2pRx_normal.jpg",
+      "verified": true,
+      "text": "Want to learn about meta-learning? Lecture videos for CS330 are now online!\nyoutube.com/playlist?list=…\nTopics incl. MTL, few-shot learning, Bayesian meta-learning, lifelong learning, meta-RL &amp; more:\ncs330.stanford.edu\n+ 3 guest lectures from Kate Rakelly, @svlevine, @jeffclune",
+      "createdAt": "Tue Feb 25 19:28:51 +0000 2020",
+      "permalink": "https://twitter.com/chelseabfinn/status/1232386995843788800",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/ERpQ7M0VUAA-FL6.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 2538,
+        "retweet_count": 658,
+        "reply_count": 30
+      },
+      "urls": [
+        "http://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5",
+        "http://cs330.stanford.edu"
+      ]
+    },
+    {
+      "id": "1178420131078107136",
+      "handle": "svlevine",
+      "name": "Sergey Levine",
+      "avatar": "https://pbs.twimg.com/profile_images/990434811662680064/BKCbJypl_normal.jpg",
+      "verified": true,
+      "text": "Want to learn deep RL? My deep RL course now has a permanent course number (CS285) and is being offered this semester:\nrail.eecs.berkeley.edu/deeprlcourse/\nLecture videos here (so far, we've gotten through most of model-free RL, model-based RL coming up next): youtube.com/playlist?list=…",
+      "createdAt": "Sun Sep 29 21:23:47 +0000 2019",
+      "permalink": "https://twitter.com/svlevine/status/1178420131078107136",
+      "media": [],
+      "metrics": {
+        "like_count": 1920,
+        "retweet_count": 453,
+        "reply_count": 14
+      },
+      "urls": [
+        "http://rail.eecs.berkeley.edu/deeprlcourse/",
+        "https://www.youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A"
+      ]
+    },
+    {
+      "id": "1097235864290131968",
+      "handle": "pabbeel",
+      "name": "Pieter Abbeel",
+      "avatar": "https://pbs.twimg.com/profile_images/1305267627/61089_706033241563_202809_38806847_7322449_n_normal.jpg",
+      "verified": true,
+      "text": "Thrilled to be teaching a new course on Deep Unsupervised Learning with @peterxichen (ImprovedGAN, InfoGAN, PixelCNN++, VLAE, PixelSNAIL, Flow++), @hojonathanho (Flow++, GAIL), @aravind7694 (Flow++).\nFollow along here:\nsites.google.com/view/berkeley-…\nLecture vids go up once captioned",
+      "createdAt": "Sun Feb 17 20:46:30 +0000 2019",
+      "permalink": "https://twitter.com/pabbeel/status/1097235864290131968",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/DzoqHYjV4AAn7et.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 1702,
+        "retweet_count": 506,
+        "reply_count": 17
+      },
+      "urls": [
+        "https://sites.google.com/view/berkeley-cs294-158-sp19/home"
       ]
     }
   ]
