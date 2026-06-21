@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T01:52:33.886Z",
+  "generatedAt": "2026-06-21T02:15:52.760Z",
   "signals": [
     {
       "id": "2068365523977462265",
@@ -17,8 +17,25 @@
         }
       ],
       "metrics": {
-        "like_count": 113,
+        "like_count": 116,
         "retweet_count": 14,
+        "reply_count": 16
+      },
+      "urls": []
+    },
+    {
+      "id": "2068357417277219306",
+      "handle": "minchoi",
+      "name": "Min Choi",
+      "avatar": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+      "verified": true,
+      "text": "It's been only about 79 hours since Grok Imagine 1.5 dropped\nAnd people can't stop creating insane videos with it.\n10 wild examples:",
+      "createdAt": "Sat Jun 20 15:36:51 +0000 2026",
+      "permalink": "https://twitter.com/minchoi/status/2068357417277219306",
+      "media": [],
+      "metrics": {
+        "like_count": 108,
+        "retweet_count": 8,
         "reply_count": 16
       },
       "urls": []
@@ -28,6 +45,23 @@
       "handle": "RLWRLD_ai",
       "name": "RLWRLD",
       "avatar": "https://pbs.twimg.com/profile_images/1986301746256486403/QC-YDYLD_normal.jpg",
+      "verified": false,
+      "text": "We just launched All Hands Up! — an open platform that goes beyond spec sheets to share real-world operational data on 10+ dexterous robotic hands. Because the question everyone keeps asking — \"which robotic hands actually perform in the real world?\" — deserves a real answer.",
+      "createdAt": "Fri Jun 19 05:00:38 +0000 2026",
+      "permalink": "https://twitter.com/RLWRLD_ai/status/2067834920706387993",
+      "media": [],
+      "metrics": {
+        "like_count": 123,
+        "retweet_count": 26,
+        "reply_count": 5
+      },
+      "urls": []
+    },
+    {
+      "id": "2067188693694136664",
+      "handle": "GoogleDeepMind",
+      "name": "Google DeepMind",
+      "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
       "verified": false,
       "text": "We just launched All Hands Up! — an open platform that goes beyond spec sheets to share real-world operational data on 10+ dexterous robotic hands. Because the question everyone keeps asking — \"which robotic hands actually perform in the real world?\" — deserves a real answer.",
       "createdAt": "Fri Jun 19 05:00:38 +0000 2026",
@@ -95,7 +129,7 @@
         }
       ],
       "metrics": {
-        "like_count": 230,
+        "like_count": 231,
         "retweet_count": 8,
         "reply_count": 20
       },
@@ -188,6 +222,28 @@
       "urls": []
     },
     {
+      "id": "2067678257353527609",
+      "handle": "physical_int",
+      "name": "Physical Intelligence",
+      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
+      "verified": true,
+      "text": "We found that the key to make this work is self-consistency: the model is trained to be self-consistent between a forward and inverse model (i.e., actions predicted with inverse dynamics lead to states consistent with ID input), consistent across different cameras, and consistent",
+      "createdAt": "Thu Jun 18 18:38:06 +0000 2026",
+      "permalink": "https://twitter.com/physical_int/status/2067678257353527609",
+      "media": [
+        {
+          "type": "animated_gif",
+          "image": "https://pbs.twimg.com/tweet_video_thumb/HLHcIjybQAAG3PP.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 23,
+        "retweet_count": 0,
+        "reply_count": 1
+      },
+      "urls": []
+    },
+    {
       "id": "2067656171998064652",
       "handle": "allen_ai",
       "name": "Ai2",
@@ -261,7 +317,7 @@
       "permalink": "https://twitter.com/AnthropicAI/status/2067651700757086553",
       "media": [],
       "metrics": {
-        "like_count": 241,
+        "like_count": 244,
         "retweet_count": 17,
         "reply_count": 24
       },
@@ -278,7 +334,7 @@
       "permalink": "https://twitter.com/AnthropicAI/status/2067651699486200091",
       "media": [],
       "metrics": {
-        "like_count": 2117,
+        "like_count": 2119,
         "retweet_count": 172,
         "reply_count": 290
       },
@@ -302,8 +358,8 @@
         }
       ],
       "metrics": {
-        "like_count": 296,
-        "retweet_count": 56,
+        "like_count": 337,
+        "retweet_count": 64,
         "reply_count": 10
       },
       "urls": []
@@ -324,8 +380,8 @@
         }
       ],
       "metrics": {
-        "like_count": 61,
-        "retweet_count": 7,
+        "like_count": 72,
+        "retweet_count": 9,
         "reply_count": 0
       },
       "urls": []
@@ -470,31 +526,14 @@
       "urls": []
     },
     {
-      "id": "2067188693694136664",
-      "handle": "GoogleDeepMind",
-      "name": "Google DeepMind",
-      "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
-      "verified": false,
-      "text": "We just launched All Hands Up! — an open platform that goes beyond spec sheets to share real-world operational data on 10+ dexterous robotic hands. Because the question everyone keeps asking — \"which robotic hands actually perform in the real world?\" — deserves a real answer.",
-      "createdAt": "Fri Jun 19 05:00:38 +0000 2026",
-      "permalink": "https://twitter.com/RLWRLD_ai/status/2067834920706387993",
-      "media": [],
-      "metrics": {
-        "like_count": 122,
-        "retweet_count": 26,
-        "reply_count": 5
-      },
-      "urls": []
-    },
-    {
-      "id": "2067678265620496611",
-      "handle": "physical_int",
-      "name": "Physical Intelligence",
-      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
+      "id": "2066969542010806561",
+      "handle": "AnthropicAI",
+      "name": "Anthropic",
+      "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
       "verified": true,
-      "text": "Joint work with the NVIDIA Cosmos team.\nPaper: arxiv.org/abs/2606.18610\nWebsite: weichengtseng.github.io/sc3-eval/",
-      "createdAt": "Thu Jun 18 18:38:08 +0000 2026",
-      "permalink": "https://twitter.com/physical_int/status/2067678265620496611",
+      "text": "These and other measures will allow us to track consequential shifts in the nature of work as they happen—we'll incorporate some of them into the Anthropic Economic Index going forward.\nRead the full report: anthropic.com/research/claud…",
+      "createdAt": "Tue Jun 16 19:41:55 +0000 2026",
+      "permalink": "https://twitter.com/AnthropicAI/status/2066969542010806561",
       "media": [],
       "metrics": {
         "like_count": 266,
@@ -502,31 +541,8 @@
         "reply_count": 103
       },
       "urls": [
-        "https://arxiv.org/abs/2606.18610",
-        "https://weichengtseng.github.io/sc3-eval/"
+        "https://www.anthropic.com/research/claude-code-expertise"
       ]
-    },
-    {
-      "id": "2067678263301087561",
-      "handle": "physical_int",
-      "name": "Physical Intelligence",
-      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
-      "verified": true,
-      "text": "Domain experts—as judged by the questions they ask and vocabulary they use about a subject—are more likely to see success.\nBut the gap between intermediate and expert users is quite modest, suggesting that proficiency in a domain is sufficient to code successfully within it.",
-      "createdAt": "Tue Jun 16 19:41:55 +0000 2026",
-      "permalink": "https://twitter.com/AnthropicAI/status/2066969540412780644",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HK9Yl8mbAAA3Ul1.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 433,
-        "retweet_count": 29,
-        "reply_count": 38
-      },
-      "urls": []
     },
     {
       "id": "2066969538193920307",
@@ -655,9 +671,9 @@
       "permalink": "https://twitter.com/elonmusk/status/2066538446781382800",
       "media": [],
       "metrics": {
-        "like_count": 58406,
-        "retweet_count": 12165,
-        "reply_count": 10196
+        "like_count": 59906,
+        "retweet_count": 12886,
+        "reply_count": 11086
       },
       "urls": []
     },
@@ -684,50 +700,6 @@
       "urls": []
     },
     {
-      "id": "2067678260243447981",
-      "handle": "physical_int",
-      "name": "Physical Intelligence",
-      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
-      "verified": true,
-      "text": "Favorite finding: physical failures transfer. A policy that fumbles a grasp in the real world fumbles it in the world model too.",
-      "createdAt": "Thu Jun 18 18:38:07 +0000 2026",
-      "permalink": "https://twitter.com/physical_int/status/2067678260243447981",
-      "media": [
-        {
-          "type": "animated_gif",
-          "image": "https://pbs.twimg.com/tweet_video_thumb/HLHdNmEbAAA5KmM.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 19,
-        "retweet_count": 1,
-        "reply_count": 2
-      },
-      "urls": []
-    },
-    {
-      "id": "2067678257353527609",
-      "handle": "physical_int",
-      "name": "Physical Intelligence",
-      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
-      "verified": true,
-      "text": "We found that the key to make this work is self-consistency: the model is trained to be self-consistent between a forward and inverse model (i.e., actions predicted with inverse dynamics lead to states consistent with ID input), consistent across different cameras, and consistent",
-      "createdAt": "Thu Jun 18 18:38:06 +0000 2026",
-      "permalink": "https://twitter.com/physical_int/status/2067678257353527609",
-      "media": [
-        {
-          "type": "animated_gif",
-          "image": "https://pbs.twimg.com/tweet_video_thumb/HLHcIjybQAAG3PP.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 23,
-        "retweet_count": 0,
-        "reply_count": 1
-      },
-      "urls": []
-    },
-    {
       "id": "2064753780831236346",
       "handle": "bodonoghue85",
       "name": "Brendan O'Donoghue",
@@ -743,7 +715,7 @@
         }
       ],
       "metrics": {
-        "like_count": 140,
+        "like_count": 139,
         "retweet_count": 28,
         "reply_count": 7
       },
@@ -824,7 +796,7 @@
       ],
       "metrics": {
         "like_count": 291,
-        "retweet_count": 32,
+        "retweet_count": 33,
         "reply_count": 3
       },
       "urls": []
