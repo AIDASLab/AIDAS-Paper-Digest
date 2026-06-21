@@ -13,8 +13,9 @@ const vm = require("vm");
 const ROOT = path.resolve(__dirname, "..");
 const CONFIG_FILE = path.join(ROOT, "papers", "supabase-config.js");
 const OUT_FILE = path.join(ROOT, "papers", "twitter-feed.json");
-const MAX_ITEMS = Number(process.env.XFEED_MAX || 80);
-const PER_ACCOUNT = Number(process.env.XFEED_PER_ACCOUNT || 4);
+const MAX_ITEMS = Number(process.env.XFEED_MAX || 120);
+const PER_ACCOUNT = Number(process.env.XFEED_PER_ACCOUNT || 3);
+const MAX_AGE_DAYS = Number(process.env.XFEED_MAX_AGE_DAYS || 30);
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
 
@@ -99,9 +100,27 @@ async function fetchAccount(handle) {
         .map((url) => url.expanded_url)
         .filter((value) => value && !/\/\/(t\.co|twitter\.com|x\.com)\//i.test(value)),
     });
-    if (items.length >= PER_ACCOUNT) break;
   }
-  return items;
+  // Syndication returns pinned/old posts mixed in and not always newest-first, so sort by
+  // date and keep only the most recent few (and drop anything older than the cutoff so
+  // stale/cached timelines don't inject years-old tweets).
+  const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
+  return items
+    .filter((item) => {
+      const t = new Date(item.createdAt).getTime();
+      return Number.isFinite(t) && t >= cutoff;
+    })
+    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .slice(0, PER_ACCOUNT);
+}
+
+async function readExisting() {
+  try {
+    const data = JSON.parse(await fs.readFile(OUT_FILE, "utf8"));
+    return Array.isArray(data) ? data : data.signals || [];
+  } catch {
+    return [];
+  }
 }
 
 async function main() {
@@ -111,23 +130,56 @@ async function main() {
     return;
   }
 
-  const all = [];
-  for (const handle of accounts) {
+  // X's syndication endpoint rate-limits to ~20 accounts per IP per run, so we can't pull all
+  // of them every time. Instead: rotate the starting account each day so every account cycles
+  // through over a few runs, and merge with the previous feed. Posts older than the cutoff age
+  // out, so the merged feed stays current while covering the whole account list over time.
+  const offset =
+    (process.env.XFEED_OFFSET !== undefined
+      ? Number(process.env.XFEED_OFFSET)
+      : Math.floor(Date.now() / 86400000)) %
+      accounts.length || 0;
+  const ordered = [...accounts.slice(offset), ...accounts.slice(0, offset)];
+
+  const fresh = [];
+  let okCount = 0;
+  let consecutive429 = 0;
+  for (const handle of ordered) {
     try {
       const items = await fetchAccount(handle);
-      all.push(...items);
+      fresh.push(...items);
+      okCount += 1;
+      consecutive429 = 0;
       console.log(`[xfeed] ${handle}: ${items.length}`);
     } catch (error) {
+      if (/429/.test(error.message)) consecutive429 += 1;
       console.warn(`[xfeed] ${handle}: ${error.message}`);
+      // Once the IP is firmly throttled, stop early — the rest will only 429 too.
+      if (consecutive429 >= 8) {
+        console.warn("[xfeed] stopping early after repeated 429s");
+        break;
+      }
     }
     await sleep(Number(process.env.XFEED_DELAY || 1500));
   }
 
-  all.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
-  const signals = all.slice(0, MAX_ITEMS);
+  // Merge fresh posts over the previous feed, dedup by tweet id, drop stale, newest first.
+  const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
+  const previous = await readExisting();
+  const byId = new Map();
+  for (const post of [...previous, ...fresh]) {
+    if (!post || !post.id) continue;
+    const t = new Date(post.createdAt).getTime();
+    if (!Number.isFinite(t) || t < cutoff) continue;
+    byId.set(post.id, post); // fresh wins (processed last)
+  }
+  const signals = [...byId.values()]
+    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .slice(0, MAX_ITEMS);
 
   await fs.writeFile(OUT_FILE, JSON.stringify({ generatedAt: new Date().toISOString(), signals }, null, 2) + "\n");
-  console.log(`[xfeed] wrote ${signals.length} posts from ${accounts.length} accounts`);
+  const accountsInFeed = new Set(signals.map((post) => (post.handle || "").toLowerCase())).size;
+  console.log(`[xfeed] refreshed ${okCount}/${accounts.length} accounts; feed has ${signals.length} posts from ${accountsInFeed} accounts`);
 }
 
 main().catch((error) => {
