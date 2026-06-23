@@ -13,11 +13,8 @@ const categories = [
 
 const PAGE_SIZE = 20;
 const COMMENTS_PAGE_SIZE = 10;
-const FEEDBACK_PAGE_SIZE = 10;
 const FEED_PAGE_SIZE = 8;
-const MAX_LOCAL_FEEDBACK = 1000;
 const MAX_LOCAL_COMMENTS_PER_PAPER = 1000;
-const MAX_REMOTE_FEEDBACK = 1000;
 
 const state = {
   category: "All",
@@ -37,8 +34,6 @@ const state = {
   openComments: new Set(),
   voteCounts: new Map(),
   voted: new Set(),
-  feedback: [],
-  feedbackPage: 1,
   generatedAt: "",
   feed: [],
   feedGeneratedAt: "",
@@ -50,13 +45,6 @@ const state = {
 const aidasGate = document.querySelector("#aidasGate");
 const heroStats = document.querySelector("#heroStats");
 const categoryTabs = document.querySelector("#categoryTabs");
-const feedbackBoard = document.querySelector("#feedbackBoard");
-const feedbackClose = document.querySelector("#feedbackClose");
-const feedbackForm = document.querySelector("#feedbackForm");
-const feedbackInput = document.querySelector("#feedbackInput");
-const feedbackList = document.querySelector("#feedbackList");
-const feedbackOpen = document.querySelector("#feedbackOpen");
-const feedbackRefresh = document.querySelector("#feedbackRefresh");
 const feedBoard = document.querySelector("#feedBoard");
 const feedList = document.querySelector("#feedList");
 const feedOpen = document.querySelector("#feedOpen");
@@ -221,16 +209,12 @@ function updateMemberPanel() {
 
 function setView(view) {
   state.view = view;
-  const isFeedback = view === "feedback";
   const isFeed = view === "feed";
-  const isPapers = !isFeedback && !isFeed;
-  feedbackBoard.hidden = !isFeedback;
+  const isPapers = !isFeed;
   feedBoard.hidden = !isFeed;
   paperGrid.hidden = !isPapers;
   pagination.hidden = !isPapers;
-  feedbackOpen.setAttribute("aria-pressed", String(isFeedback));
   feedOpen.setAttribute("aria-pressed", String(isFeed));
-  if (isFeedback) loadFeedback();
   if (isFeed) loadFeed();
 }
 
@@ -269,18 +253,6 @@ function saveLocalVotes() {
   localStorage.setItem(localVoteKey(), JSON.stringify([...state.voted]));
 }
 
-function localFeedbackKey() {
-  return "aidas-paper-feedback";
-}
-
-function loadLocalFeedback() {
-  state.feedback = JSON.parse(localStorage.getItem(localFeedbackKey()) || "[]");
-}
-
-function saveLocalFeedback() {
-  localStorage.setItem(localFeedbackKey(), JSON.stringify(state.feedback.slice(0, MAX_LOCAL_FEEDBACK)));
-}
-
 function localCommentsKey() {
   return "aidas-paper-comments";
 }
@@ -305,53 +277,6 @@ function saveLocalComments() {
 
 function isOwnItem(item) {
   return state.unlocked && state.voterName && (item.voter_name || item.name) === state.voterName;
-}
-
-function renderFeedback() {
-  if (!state.feedback.length) {
-    feedbackList.innerHTML = `<p class="feedback-empty">No feedback yet.</p>`;
-    return;
-  }
-  const totalPages = Math.max(1, Math.ceil(state.feedback.length / FEEDBACK_PAGE_SIZE));
-  state.feedbackPage = Math.min(Math.max(1, state.feedbackPage), totalPages);
-  const start = (state.feedbackPage - 1) * FEEDBACK_PAGE_SIZE;
-  const visibleFeedback = state.feedback.slice(start, start + FEEDBACK_PAGE_SIZE);
-  feedbackList.innerHTML =
-    visibleFeedback
-    .map(
-      (item) => `
-        <article class="feedback-item">
-          <p>${escapeHtml(item.message)}</p>
-          <div>
-            <strong>${escapeHtml(item.voter_name || item.name || "AIDAS")}</strong>
-            <span>${formatFeedbackDate(item.created_at)}</span>
-          </div>
-          ${
-            isOwnItem(item)
-              ? `
-                <div class="item-actions">
-                  <button type="button" data-edit-feedback="${item.id}">Edit</button>
-                  <button type="button" data-delete-feedback="${item.id}">Delete</button>
-                </div>
-              `
-              : ""
-          }
-        </article>
-      `,
-    )
-      .join("") +
-    (state.feedback.length > FEEDBACK_PAGE_SIZE
-      ? `
-        <div class="feedback-pager">
-          <span>${start + 1}-${Math.min(start + FEEDBACK_PAGE_SIZE, state.feedback.length)} of ${state.feedback.length}</span>
-          <div>
-            <button type="button" data-feedback-page="${state.feedbackPage - 1}" ${state.feedbackPage === 1 ? "disabled" : ""}>Prev</button>
-            <strong>${state.feedbackPage} / ${totalPages}</strong>
-            <button type="button" data-feedback-page="${state.feedbackPage + 1}" ${state.feedbackPage === totalPages ? "disabled" : ""}>Next</button>
-          </div>
-        </div>
-      `
-      : "");
 }
 
 function escapeHtml(value) {
@@ -503,25 +428,6 @@ function renderFeed() {
   feedList.innerHTML = cards + pager;
 }
 
-async function loadFeedback() {
-  if (!state.supabase) {
-    loadLocalFeedback();
-    renderFeedback();
-    return;
-  }
-  const { data, error } = await state.supabase
-    .from("feedback_posts")
-    .select("id,message,voter_name,created_at")
-    .order("created_at", { ascending: false })
-    .limit(MAX_REMOTE_FEEDBACK);
-  if (error) {
-    console.warn("Unable to load feedback", error);
-    return;
-  }
-  state.feedback = data || [];
-  renderFeedback();
-}
-
 async function loadComments() {
   if (!state.supabase) {
     loadLocalComments();
@@ -640,91 +546,6 @@ async function deleteComment(paperId, commentId) {
   }
   await loadComments();
   renderPapers();
-}
-
-async function postFeedback(message) {
-  if (!requireAccess()) return;
-  const trimmed = message.trim();
-  if (!trimmed) return;
-
-  const item = {
-    id: `${Date.now()}`,
-    message: trimmed,
-    voter_name: state.voterName,
-    created_at: new Date().toISOString(),
-  };
-  state.feedbackPage = 1;
-  state.feedback = [item, ...state.feedback].slice(0, MAX_LOCAL_FEEDBACK);
-  renderFeedback();
-  feedbackInput.value = "";
-
-  if (!state.supabase) {
-    saveLocalFeedback();
-    return;
-  }
-
-  const { data, error } = await state.supabase
-    .from("feedback_posts")
-    .insert({ message: trimmed, voter_name: state.voterName });
-  if (error) {
-    console.warn("Unable to post feedback", error);
-    await loadFeedback();
-  }
-}
-
-async function editFeedback(feedbackId) {
-  if (!requireAccess()) return;
-  const feedback = state.feedback.find((item) => String(item.id) === String(feedbackId));
-  if (!feedback || !isOwnItem(feedback)) return;
-  const next = window.prompt("Edit feedback", feedback.message);
-  if (next === null) return;
-  const trimmed = next.trim();
-  if (!trimmed) return;
-
-  feedback.message = trimmed;
-  renderFeedback();
-
-  if (!state.supabase) {
-    saveLocalFeedback();
-    return;
-  }
-
-  const { error } = await state.supabase
-    .from("feedback_posts")
-    .update({ message: trimmed })
-    .eq("id", feedbackId)
-    .eq("voter_name", state.voterName);
-  if (error) {
-    console.warn("Unable to edit feedback", error);
-    window.alert("Could not edit feedback. Check Supabase update policy.");
-  }
-  await loadFeedback();
-}
-
-async function deleteFeedback(feedbackId) {
-  if (!requireAccess()) return;
-  const feedback = state.feedback.find((item) => String(item.id) === String(feedbackId));
-  if (!feedback || !isOwnItem(feedback)) return;
-  if (!window.confirm("Delete this feedback?")) return;
-
-  state.feedback = state.feedback.filter((item) => String(item.id) !== String(feedbackId));
-  renderFeedback();
-
-  if (!state.supabase) {
-    saveLocalFeedback();
-    return;
-  }
-
-  const { error } = await state.supabase
-    .from("feedback_posts")
-    .delete()
-    .eq("id", feedbackId)
-    .eq("voter_name", state.voterName);
-  if (error) {
-    console.warn("Unable to delete feedback", error);
-    window.alert("Could not delete feedback. Check Supabase delete policy.");
-  }
-  await loadFeedback();
 }
 
 async function loadVotes() {
@@ -920,7 +741,7 @@ function renderTabs() {
 
 function renderPagination(totalItems) {
   const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
-  if (totalItems <= PAGE_SIZE || state.view === "feedback") {
+  if (totalItems <= PAGE_SIZE || state.view !== "papers") {
     pagination.hidden = true;
     pagination.innerHTML = "";
     return;
@@ -1128,7 +949,6 @@ async function loadPapers() {
   await loadVotes();
   await loadSaves();
   await loadComments();
-  await loadFeedback();
   render();
 }
 
@@ -1222,14 +1042,6 @@ pagination.addEventListener("click", (event) => {
   document.querySelector("#board")?.scrollIntoView({ block: "start", behavior: "smooth" });
 });
 
-feedbackOpen.addEventListener("click", () => {
-  setView("feedback");
-});
-
-feedbackClose.addEventListener("click", () => {
-  setView("papers");
-});
-
 feedOpen.addEventListener("click", () => {
   setView("feed");
 });
@@ -1252,35 +1064,6 @@ feedList.addEventListener("click", (event) => {
   feedBoard.scrollIntoView({ block: "start", behavior: "smooth" });
 });
 
-feedbackForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  postFeedback(feedbackInput.value);
-});
-
-feedbackRefresh.addEventListener("click", () => {
-  loadFeedback();
-});
-
-feedbackList.addEventListener("click", (event) => {
-  const pageButton = event.target.closest("[data-feedback-page]");
-  if (pageButton && !pageButton.disabled) {
-    state.feedbackPage = Number(pageButton.dataset.feedbackPage);
-    renderFeedback();
-    return;
-  }
-
-  const editButton = event.target.closest("[data-edit-feedback]");
-  if (editButton) {
-    editFeedback(editButton.dataset.editFeedback);
-    return;
-  }
-
-  const deleteButton = event.target.closest("[data-delete-feedback]");
-  if (deleteButton) {
-    deleteFeedback(deleteButton.dataset.deleteFeedback);
-  }
-});
-
 gateForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   const password = gatePassword.value;
@@ -1298,7 +1081,6 @@ gateForm.addEventListener("submit", async (event) => {
   await loadVotes();
   await loadSaves();
   await loadComments();
-  await loadFeedback();
   updateMemberPanel();
   renderPapers();
 });
@@ -1312,7 +1094,6 @@ aidasChangeName.addEventListener("click", () => {
 state.supabase = initSupabase();
 if (!state.unlocked || !state.voterName) setGateVisible(true);
 updateMemberPanel();
-loadFeedback();
 
 loadPapers().catch((error) => {
   categoryTabs.innerHTML = "";

@@ -19,13 +19,6 @@ select paper_id, count(*)::int as votes
 from paper_votes
 group by paper_id;
 
-create table if not exists feedback_posts (
-  id uuid primary key default gen_random_uuid(),
-  message text not null,
-  voter_name text not null,
-  created_at timestamptz not null default now()
-);
-
 create table if not exists paper_comments (
   id uuid primary key default gen_random_uuid(),
   paper_id text not null,
@@ -71,39 +64,6 @@ with check (
 drop policy if exists "delete votes" on paper_votes;
 create policy "delete votes"
 on paper_votes for delete
-to anon, authenticated
-using (true);
-
-alter table feedback_posts enable row level security;
-
-drop policy if exists "read feedback" on feedback_posts;
-create policy "read feedback"
-on feedback_posts for select
-to anon, authenticated
-using (true);
-
-drop policy if exists "insert feedback" on feedback_posts;
-create policy "insert feedback"
-on feedback_posts for insert
-to anon, authenticated
-with check (
-  length(message) between 1 and 500
-  and length(voter_name) between 1 and 80
-);
-
-drop policy if exists "update feedback" on feedback_posts;
-create policy "update feedback"
-on feedback_posts for update
-to anon, authenticated
-using (true)
-with check (
-  length(message) between 1 and 500
-  and length(voter_name) between 1 and 80
-);
-
-drop policy if exists "delete feedback" on feedback_posts;
-create policy "delete feedback"
-on feedback_posts for delete
 to anon, authenticated
 using (true);
 

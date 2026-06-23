@@ -96,7 +96,6 @@
           </div>
 
           <button class="feedback-nav" id="feedOpen" type="button">X Feed</button>
-          <button class="feedback-nav" id="feedbackOpen" type="button">Feedback Board</button>
         </aside>
 
         <section class="paper-grid" id="paperGrid" aria-live="polite"></section>
@@ -115,30 +114,6 @@
             </div>
           </div>
           <div class="feed-list" id="feedList" aria-live="polite"></div>
-        </section>
-
-        <section class="feedback-board" id="feedbackBoard" aria-label="Feedback board" hidden>
-          <div class="feedback-board-head">
-            <div>
-              <p class="eyebrow">AIDAS board</p>
-              <h2>Feedback</h2>
-            </div>
-            <div class="feedback-board-actions">
-              <button id="feedbackRefresh" type="button">Refresh</button>
-              <button id="feedbackClose" type="button">Back to papers</button>
-            </div>
-          </div>
-          <form id="feedbackForm" class="feedback-form">
-            <textarea
-              id="feedbackInput"
-              rows="4"
-              maxlength="500"
-              placeholder="Leave feedback..."
-              aria-label="Feedback message"
-            ></textarea>
-            <button type="submit">Post feedback</button>
-          </form>
-          <div class="feedback-list" id="feedbackList" aria-live="polite"></div>
         </section>
       </div>
     </main>
