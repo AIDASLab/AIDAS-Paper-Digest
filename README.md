@@ -4,13 +4,13 @@
 
 **An auto-updating board of high-signal AI research papers — with a live X feed of AI accounts.**
 
-[![Open the site](https://img.shields.io/badge/%F0%9F%9A%80_Open_the_board-2563eb?style=for-the-badge)](https://kim-jake.github.io/AIDAS-Paper-Digest/)
+[![Open the site](https://img.shields.io/badge/%F0%9F%9A%80_Open_the_board-2563eb?style=for-the-badge)](https://aidaslab.github.io/AIDAS-Paper-Digest/)
 
 `Papers with Code` · `arXiv` · `Hugging Face` · `alphaXiv` — refreshed every morning, no paper cap.
 
 </div>
 
-> **Live:** https://kim-jake.github.io/AIDAS-Paper-Digest/
+> **Live:** https://aidaslab.github.io/AIDAS-Paper-Digest/
 > Hosted on GitHub Pages. After transferring the repo, the URL becomes `https://<owner>.github.io/AIDAS-Paper-Digest/`.
 
 ---
