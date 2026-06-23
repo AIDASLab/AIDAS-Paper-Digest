@@ -23,7 +23,7 @@ const state = {
   query: "",
   saved: new Set(),
   papers: [],
-  sort: "aidas",
+  sort: "newest",
   supabase: null,
   unlocked: localStorage.getItem("aidas-paper-access") === "ok",
   view: "papers",

@@ -16,6 +16,22 @@ A static, auto-updating board of high-signal AI research papers for AIDAS, with 
 - **X Feed tab** — a merged, newest-first feed of curated AI / LLM / robotics accounts, rendered as native-style cards (avatar, verified badge, text, images/video, metrics), paginated 8 per page. Built from X's public syndication endpoint (no API key); edit the account list in `papers/supabase-config.js` → `xAccounts`.
 - **Name-only access** — visitors just enter a display name (no password); it labels their votes/comments/bookmarks.
 
+## Sources
+
+Papers are pulled and merged from:
+
+| Source | Where | Used for |
+|--------|-------|----------|
+| Papers with Code | `https://paperswithcode.co/api/v1` | papers by topic query + code/task tags |
+| arXiv | `https://export.arxiv.org/api` | newest papers in cs.CL/LG/AI/CV/DC/IR/RO |
+| Hugging Face Daily Papers | `https://huggingface.co/papers` | trending daily papers |
+| alphaXiv | `https://www.alphaxiv.org` (Hot trending) | trending incl. non-arXiv reports (e.g. GLM-5.2) |
+| arXiv PDFs | `https://arxiv.org/pdf/<id>` | first-page thumbnails |
+
+The **X Feed** is built from X's public syndication endpoint
+(`https://syndication.twitter.com/srv/timeline-profile/screen-name/<handle>`) for the accounts
+in `papers/supabase-config.js` → `xAccounts` — no API key required.
+
 ## Layout
 
 | Path | What it is |
