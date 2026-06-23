@@ -1,6 +1,7 @@
 window.AIDAS_SUPABASE_CONFIG = {
-  url: "https://lcitqvajzdmewiwcmlek.supabase.co",
-  anonKey: "sb_publishable_5F-zk-9tXGQDT9rL7D4rWQ_aZGS_6-G",
+  url: "https://tisenowyxvkirsxznmjr.supabase.co",
+  anonKey: "sb_publishable_YFmH44cOriAjQM4RRWt-Gg_4NTtimQD",
+  // Soft gate shared with lab members (visible in page JS — not real security).
   sharedPassword: "aidas12!@",
 
   // X (Twitter) "X Feed" tab. The daily job (scripts/ingest-xfeed.js) pulls recent posts
