@@ -54,7 +54,6 @@ const feedUpdated = document.querySelector("#feedUpdated");
 const gateError = document.querySelector("#gateError");
 const gateForm = document.querySelector("#gateForm");
 const gateName = document.querySelector("#gateName");
-const gatePassword = document.querySelector("#gatePassword");
 const newestSelect = document.querySelector("#newestSelect");
 const pagination = document.querySelector("#pagination");
 const paperGrid = document.querySelector("#paperGrid");
@@ -199,7 +198,7 @@ function setGateVisible(visible) {
   document.body.classList.toggle("is-locked", visible);
   if (visible) {
     gateName.value = state.voterName;
-    gatePassword.focus();
+    gateName.focus();
   }
 }
 
@@ -1066,10 +1065,9 @@ feedList.addEventListener("click", (event) => {
 
 gateForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const password = gatePassword.value;
   const name = gateName.value.trim();
-  if (password !== supabaseConfig.sharedPassword || !name) {
-    gateError.textContent = "Check password and name.";
+  if (!name) {
+    gateError.textContent = "Please enter your name.";
     return;
   }
   state.unlocked = true;
@@ -1086,7 +1084,6 @@ gateForm.addEventListener("submit", async (event) => {
 });
 
 aidasChangeName.addEventListener("click", () => {
-  gatePassword.value = "";
   gateError.textContent = "";
   setGateVisible(true);
 });
