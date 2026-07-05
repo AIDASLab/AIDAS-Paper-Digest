@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-05T00:12:12.799Z",
+  "generatedAt": "2026-07-05T01:20:57.551Z",
   "sourceStats": {
-    "seed": 3748,
+    "seed": 3797,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 27,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 3797
+    "total": 3819
   },
   "papers": [
     {
@@ -19879,6 +19879,36 @@
       ]
     },
     {
+      "id": "2412.11520",
+      "title": "EditSplat: Multi-View Fusion and Attention-Guided Optimization for View-Consistent 3D Scene Editing with 3D Gaussian Splatting",
+      "authors": "Dong In Lee, Hyeongcheol Park, Jiyoung Seo, Eunbyung Park, Hyunje Park, Ha Dam Baek, Sangheon Shin, Sangmin Kim, Sangpil Kim",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 71,
+      "paper": "https://arxiv.org/abs/2412.11520",
+      "source": "https://paperswithcode.co/paper/2412.11520",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.11520.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Recent advancements in 3D editing have highlighted the potential of text-driven methods in real-time, user-friendly AR/VR applications. However, current methods rely on 2D diffusion models without adequately considering multi-view information, resulting in multi-view inconsistency. While 3D Gaussian Splatting (3DGS) significantly improves rendering quality and speed, its 3D editing process encounters difficulties with inefficient optimization, as pre-trained Gaussians retain excessive source information, hindering optimization. To address these limitations, we propose EditSplat, a novel 3D editing framework that integrates Multi-view Fusion Guidance (MFG) and Attention-Guided Trimming (AGT). Our MFG ensures multi-view consistency by incorporating essential multi-view information into the diffusion process, leveraging classifier-free guidance from the text-to-image diffusion model and the geometric properties of 3DGS. Additionally, our AGT leverages the explicit representation of 3DGS to selectively prune and optimize 3D Gaussians, enhancing optimization efficiency and enabling precise, semantically rich local edits. Through extensive qualitative and quantitative evaluations, EditSplat achieves superior multi-view consistency and editing quality over existing methods, significantly enhancing overall efficiency.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Adam",
+        "Classifier-free guidance",
+        "CLIP",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2410.08201",
       "title": "Efficient Dictionary Learning with Switch Sparse Autoencoders",
       "authors": "Anish Mudide, Joshua Engels, Eric J Michaud, Max Tegmark, Christian Schroeder de Witt",
@@ -21139,6 +21169,39 @@
       ]
     },
     {
+      "id": "2509.12594",
+      "title": "The Better You Learn, the Smarter You Prune: Towards Efficient Vision-Language-Action Models Via Differentiable Token Pruning",
+      "authors": "Jiang, Titong, Jiang, Xuefeng, Ma, Yuan, Wen, Xin, Li, Bailin, Zhan, Kun, Jia, Peng, Liu, Yahui, Sun, Sheng, Lang, Xianpeng",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 68,
+      "paper": "https://arxiv.org/abs/2509.12594",
+      "source": "https://paperswithcode.co/paper/2509.12594",
+      "code": "",
+      "project": "https://liauto-research",
+      "thumbnail": "./thumbs/2509.12594.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "We present LightVLA, a simple yet effective differentiable token pruning framework for vision-language-action (VLA) models. While VLA models have shown impressive capability in executing real-world robotic tasks, their deployment on resource-constrained platforms is often bottlenecked by the heavy attention-based computation over large sets of visual tokens. LightVLA addresses this challenge through adaptive, performance-driven pruning of visual tokens: it generates dynamic queries to evaluate visual token importance, and adopts Gumbel softmax to enable differentiable token selection. Through fine-tuning, LightVLA learns to preserve the most informative visual tokens while pruning tokens which do not contribute to task execution, thereby improving efficiency and performance simultaneously. Notably, LightVLA requires no heuristic “magic numbers” and introduces no additional trainable parameters, making it compatible with modern inference frameworks. Experimental results demonstrate that LightVLA outperforms different VLA models and existing token pruning methods across diverse tasks on the LIBERO benchmark, achieving higher success rates with substantially reduced computational overhead. Specifically, LightVLA reduces FLOPs and latency by 59.1% and 38.2% respectively, with a 2.9% improvement in task success rate. Meanwhile, we also investigate the training-aware token pruning method LightVLA* with additional trainable parameters, which also achieves satisfactory performance. Our work reveals that as VLA pursues optimal performance, it spontaneously learns to prune tokens from a performance-driven perspective. To the best of our knowledge, LightVLA is the first work to apply adaptive visual token pruning to VLA tasks with the collateral goals of efficiency and performance, marking a significant step toward more efficient, powerful and practical real-time robotic systems. Project site: https://liauto-research.github.io/LightVLA.",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "LLaMa",
+        "LoRa",
+        "PEFT",
+        "serving",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2503.01006",
       "title": "Underdamped Diffusion Bridges with Applications to Sampling",
       "authors": "Denis Blessing, Julius Berner, Lorenz Richter, Gerhard Neumann",
@@ -21858,6 +21921,36 @@
       ]
     },
     {
+      "id": "2503.04314",
+      "title": "S2Gaussian: Sparse-View Super-Resolution 3D Gaussian Splatting",
+      "authors": "Yecong Wan, Mingwen Shao, Yuanshuo Cheng, Wangmeng Zuo",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 67,
+      "paper": "https://arxiv.org/abs/2503.04314",
+      "source": "https://paperswithcode.co/paper/2503.04314",
+      "code": "",
+      "project": "https://jeasco",
+      "thumbnail": "./thumbs/2503.04314.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "In this paper, we aim ambitiously for a realistic yet challenging problem, namely, how to reconstruct high-quality 3D scenes from sparse low-resolution views that simultaneously suffer from deficient perspectives and contents. Whereas existing methods only deal with either sparse views or low-resolution observations, they fail to handle such hybrid and complicated scenarios. To this end, we propose a novel Sparse-view Super-resolution 3D Gaussian Splatting framework, dubbed S2Gaussian, that can reconstruct structure-accurate and detail-faithful 3D scenes with only sparse and low-resolution views. The S2Gaussian operates in a two-stage fashion. In the first stage, we initially optimize a low-resolution Gaussian representation with depth regularization and densify it to initialize the high-resolution Gaussians through a tailored Gaussian Shuffle operation. In the second stage, we refine the high-resolution Gaussians with the super-resolved images generated from both original sparse views and pseudo-views rendered by the low-resolution Gaussians. In which a customized blur-free inconsistency modeling scheme and a 3D robust optimization strategy are elaborately designed to mitigate multi-view inconsistency and eliminate erroneous updates caused by imperfect supervision. Extensive experiments demonstrate superior results and in particular establishing new state-of-the-art performances with more consistent geometry and finer details. Project Page https://jeasco.github.io/S2Gaussian/.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "DUSt3R",
+        "Gaussian splatting",
+        "Residual Block",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2412.06206",
       "title": "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
       "authors": "Nan Zhang, Prafulla Kumar Choubey, Alexander Fabbri, Gabriel Bernadett-Shapiro, Rui Zhang, Prasenjit Mitra, Caiming Xiong, Chien-Sheng Wu",
@@ -21885,39 +21978,6 @@
       "categories": [
         "Data / Retrieval",
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2509.12594",
-      "title": "The Better You Learn, the Smarter You Prune: Towards Efficient Vision-Language-Action Models Via Differentiable Token Pruning",
-      "authors": "Jiang, Titong, Jiang, Xuefeng, Ma, Yuan, Wen, Xin, Li, Bailin, Zhan, Kun, Jia, Peng, Liu, Yahui, Sun, Sheng, Lang, Xianpeng",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 67,
-      "paper": "https://arxiv.org/abs/2509.12594",
-      "source": "https://paperswithcode.co/paper/2509.12594",
-      "code": "",
-      "project": "https://liauto-research",
-      "thumbnail": "./thumbs/2509.12594.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "We present LightVLA, a simple yet effective differentiable token pruning framework for vision-language-action (VLA) models. While VLA models have shown impressive capability in executing real-world robotic tasks, their deployment on resource-constrained platforms is often bottlenecked by the heavy attention-based computation over large sets of visual tokens. LightVLA addresses this challenge through adaptive, performance-driven pruning of visual tokens: it generates dynamic queries to evaluate visual token importance, and adopts Gumbel softmax to enable differentiable token selection. Through fine-tuning, LightVLA learns to preserve the most informative visual tokens while pruning tokens which do not contribute to task execution, thereby improving efficiency and performance simultaneously. Notably, LightVLA requires no heuristic “magic numbers” and introduces no additional trainable parameters, making it compatible with modern inference frameworks. Experimental results demonstrate that LightVLA outperforms different VLA models and existing token pruning methods across diverse tasks on the LIBERO benchmark, achieving higher success rates with substantially reduced computational overhead. Specifically, LightVLA reduces FLOPs and latency by 59.1% and 38.2% respectively, with a 2.9% improvement in task success rate. Meanwhile, we also investigate the training-aware token pruning method LightVLA* with additional trainable parameters, which also achieves satisfactory performance. Our work reveals that as VLA pursues optimal performance, it spontaneously learns to prune tokens from a performance-driven perspective. To the best of our knowledge, LightVLA is the first work to apply adaptive visual token pruning to VLA tasks with the collateral goals of efficiency and performance, marking a significant step toward more efficient, powerful and practical real-time robotic systems. Project site: https://liauto-research.github.io/LightVLA.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "LLaMa",
-        "LoRa",
-        "PEFT",
-        "serving",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving",
-      "categories": [
-        "Serving",
-        "Robotics",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -23169,6 +23229,34 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2410.24204",
+      "title": "GeoSplatting: Towards Geometry Guided Gaussian Splatting for Physically-based Inverse Rendering",
+      "authors": "Kai Ye, Chong Gao, Guanbin Li, Wenzheng Chen, Baoquan Chen",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2410.24204",
+      "source": "https://paperswithcode.co/paper/2410.24204",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2410.24204.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Recent 3D Gaussian Splatting (3DGS) representations have demonstrated remarkable performance in novel view synthesis; further, material-lighting disentanglement on 3DGS warrants relighting capabilities and its adaptability to broader applications. While the general approach to the latter operation lies in integrating differentiable physically-based rendering (PBR) techniques to jointly recover BRDF materials and environment lighting, achieving a precise disentanglement remains an inherently difficult task due to the challenge of accurately modeling light transport. Existing approaches typically approximate Gaussian points' normals, which constitute an implicit geometric constraint. However, they usually suffer from inaccuracies in normal estimation that subsequently degrade light transport, resulting in noisy material decomposition and flawed relighting results. To address this, we propose GeoSplatting, a novel approach that augments 3DGS with explicit geometry guidance for precise light transport modeling. By differentiably constructing a surface-grounded 3DGS from an optimizable mesh, our approach leverages well-defined mesh normals and the opaque mesh surface, and additionally facilitates the use of mesh-based ray tracing techniques for efficient, occlusion-aware light transport calculations. This enhancement ensures precise material decomposition while preserving the efficiency and high-quality rendering capabilities of 3DGS. Comprehensive evaluations across diverse datasets demonstrate the effectiveness of GeoSplatting, highlighting its superior efficiency and state-of-the-art inverse rendering performance.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -24526,6 +24614,34 @@
       ]
     },
     {
+      "id": "2411.15582",
+      "title": "EMD: Explicit Motion Modeling for High-Quality Street Gaussian Splatting",
+      "authors": "Xiaobao Wei, Qingpo Wuwu, Zhongyu Zhao, Zhuangzhe Wu, Nan Huang, Ming Lu, Ningning Ma, Shanghang Zhang",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2411.15582",
+      "source": "https://paperswithcode.co/paper/2411.15582",
+      "code": "",
+      "project": "https://qingpowuwu",
+      "thumbnail": "./thumbs/2411.15582.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Photorealistic reconstruction of street scenes is essential for developing real-world simulators in autonomous driving. While recent methods based on 3D/4D Gaussian Splatting (GS) have demonstrated promising results, they still encounter challenges in complex street scenes due to the unpredictable motion of dynamic objects. Current methods typically decompose street scenes into static and dynamic objects, learning the Gaussians in either a supervised manner (e.g., w/ 3D bounding-box) or a self-supervised manner (e.g., w/o 3D bounding-box). However, these approaches do not effectively model the motions of dynamic objects (e.g., the motion speed of pedestrians is clearly different from that of vehicles), resulting in suboptimal scene decomposition. To address this, we propose Explicit Motion Decomposition (EMD), which models the motions of dynamic objects by introducing learnable motion embeddings to the Gaussians, enhancing the decomposition in street scenes. The proposed plug-and-play EMD module compensates for the lack of motion modeling in self-supervised street Gaussian splatting methods. We also introduce tailored training strategies to extend EMD to supervised approaches. Comprehensive experiments demonstrate the effectiveness of our method, achieving state-of-the-art novel view synthesis performance in self-supervised settings. The code is available at: https://qingpowuwu.github.io/emd",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2510.05174",
       "title": "Emergent Coordination in Multi-Agent Language Models",
       "authors": "Christoph Riedl",
@@ -25455,6 +25571,35 @@
       ]
     },
     {
+      "id": "2506.01379",
+      "title": "RadarSplat: Radar Gaussian Splatting for High-Fidelity Data Synthesis and 3D Reconstruction of Autonomous Driving Scenes",
+      "authors": "Pou-Chun Kung, Skanda Harisha, Ram Vasudevan, Aline Eid, Katherine A. Skinner",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2506.01379",
+      "source": "https://paperswithcode.co/paper/2506.01379",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.01379.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "High-fidelity 3D scene reconstruction plays a crucial role in autonomous driving by enabling novel data generation from existing datasets. This allows simulating safety-critical scenarios and augmenting training datasets without incurring further data collection costs. While recent advances in radiance fields have demonstrated promising results in 3D reconstruction and sensor data synthesis using cameras and LiDAR, their potential for radar remains largely unexplored. Radar is crucial for autonomous driving due to its robustness in adverse weather conditions like rain, fog, and snow, where optical sensors often struggle. Although the state-of-the-art radar-based neural representation shows promise for 3D driving scene reconstruction, it performs poorly in scenarios with significant radar noise, including receiver saturation and multipath reflection. Moreover, it is limited to synthesizing preprocessed, noise-excluded radar images, failing to address realistic radar data synthesis. To address these limitations, this paper proposes RadarSplat, which integrates Gaussian Splatting with novel radar noise modeling to enable realistic radar data synthesis and enhanced 3D reconstruction. Compared to the state-of-the-art, RadarSplat achieves superior radar image synthesis (+3.4 PSNR / 2.6x SSIM) and improved geometric reconstruction (-40% RMSE / 1.5x Accuracy), demonstrating its effectiveness in generating high-fidelity radar data and scene reconstruction.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "3D understanding",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2503.09186",
       "title": "Rethinking Bimanual Robotic Manipulation: Learning with Decoupled Interaction Framework",
       "authors": "Jian-Jian Jiang, Xiao-Ming Wu, Yi-Xiang He, Ling-An Zeng, Yi-Lin Wei, Dandan Zhang, Wei-Shi Zheng",
@@ -25881,6 +26026,39 @@
       ]
     },
     {
+      "id": "2505.19911",
+      "title": "Attention! You Vision Language Model Could Be Maliciously Manipulated",
+      "authors": "Xiaosen Wang, Shaokang Wang, Zhijin Ge, Yuyang Luo, Shudong Zhang",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2505.19911",
+      "source": "https://paperswithcode.co/paper/2505.19911",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.19911.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Large Vision-Language Models (VLMs) have achieved remarkable success in understanding complex real-world scenarios and supporting data-driven decision-making processes. However, VLMs exhibit significant vulnerability against adversarial examples, either text or image, which can lead to various adversarial outcomes, e.g., jailbreaking, hijacking, and hallucination, etc. In this work, we empirically and theoretically demonstrate that VLMs are particularly susceptible to image-based adversarial examples, where imperceptible perturbations can precisely manipulate each output token. To this end, we propose a novel attack called Vision-language model Manipulation Attack (VMA), which integrates first-order and second-order momentum optimization techniques with a differentiable transformation mechanism to effectively optimize the adversarial perturbation. Notably, VMA can be a double-edged sword: it can be leveraged to implement various attacks, such as jailbreaking, hijacking, privacy breaches, Denial-of-Service, and the generation of sponge examples, etc, while simultaneously enabling the injection of watermarks for copyright protection. Extensive empirical evaluations substantiate the efficacy and generalizability of VMA across diverse scenarios and datasets.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Watermarking",
+        "vision/multimodal",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2506.06975",
       "title": "Auditing Black-Box LLM APIs with a Rank-Based Uniformity Test",
       "authors": "Xiaoyuan Zhu, Yaowen Ye, Tianyi Alex Qiu, Hanlin Zhu, Sijun Tan, Ajraf Mannan, Jonathan Michala, Raluca Ada Popa, Willie Neiswanger",
@@ -25973,6 +26151,39 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2602.09657",
+      "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
+      "authors": "Xiaolou Sun, Wufei Si, Wenhui Ni, Yuntian Li, Dongming Wu, Fei Xie, Runwei Guan, He-Yang Xu, Henghui Ding, Yuan Wu, Yutao Yue, Yongming Huang, Hui Xiong",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2602.09657",
+      "source": "https://paperswithcode.co/paper/2602.09657",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.09657.jpg",
+      "firstSeenAt": "2026-06-23T01:33:39.075Z",
+      "summary": "Vision-language navigation (VLN) requires intelligent agents to navigate environments by interpreting linguistic instructions alongside visual observations, serving as a cornerstone task in Embodied AI. Current VLN research for unmanned aerial vehicles (UAVs) relies on detailed, pre-specified instructions to guide the UAV along predetermined routes. However, real-world outdoor exploration typically occurs in unknown environments where detailed navigation instructions are unavailable. Instead, only coarse-grained positional or directional guidance can be provided, requiring UAVs to autonomously navigate through continuous planning and obstacle avoidance. To bridge this gap, we propose AutoFly, an end-to-end Vision-Language-Action (VLA) model for autonomous UAV navigation. AutoFly incorporates a pseudo-depth encoder that derives depth-aware features from RGB inputs to enhance spatial reasoning, coupled with a progressive two-stage training strategy that effectively aligns visual, depth, and linguistic representations with action policies. Moreover, existing VLN datasets have fundamental limitations for real-world autonomous navigation, stemming from their heavy reliance on explicit instruction-following over autonomous decision-making and insufficient real-world data. To address these issues, we construct a novel autonomous navigation dataset that shifts the paradigm from instruction-following to autonomous behavior modeling through: (1) trajectory collection emphasizing continuous obstacle avoidance, autonomous planning, and recognition workflows; (2) comprehensive real-world data integration. Experimental results demonstrate that AutoFly achieves a 3.9\\% higher success rate compared to state-of-the-art VLA baselines, with consistent performance across simulated and real environments.",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "LLaVa",
+        "Vision Transformer",
+        "robotics",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Language Modeling",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -26688,6 +26899,34 @@
       "categories": [
         "Language Modeling",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2503.00881",
+      "title": "Evolving High-Quality Rendering and Reconstruction in a Unified Framework with Contribution-Adaptive Regularization",
+      "authors": "You Shen, Zhipeng Zhang, Xinyang Li, Yansong Qu, Yu Lin, Shengchuan Zhang, Liujuan Cao",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2503.00881",
+      "source": "https://paperswithcode.co/paper/2503.00881",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.00881.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Representing 3D scenes from multiview images is a core challenge in computer vision and graphics, which requires both precise rendering and accurate reconstruction. Recently, 3D Gaussian Splatting (3DGS) has garnered significant attention for its high-quality rendering and fast inference speed. Yet, due to the unstructured and irregular nature of Gaussian point clouds, ensuring accurate geometry reconstruction remains difficult. Existing methods primarily focus on geometry regularization, with common approaches including primitive-based and dual-model frameworks. However, the former suffers from inherent conflicts between rendering and reconstruction, while the latter is computationally and storage-intensive. To address these challenges, we propose CarGS, a unified model leveraging Contribution adaptive regularization to achieve simultaneous, high-quality rendering and surface reconstruction. The essence of our framework is learning adaptive contribution for Gaussian primitives by squeezing the knowledge from geometry regularization into a compact MLP. Additionally, we introduce a geometry-guided densification strategy with clues from both normals and Signed Distance Fields (SDF) to improve the capability of capturing high-frequency details. Our design improves the mutual learning of the two tasks, meanwhile its unified structure doesn't require separate models as in dual-model based approaches, guaranteeing efficiency. Extensive experiments demonstrate CarGS's ability to achieve state-of-the-art (SOTA) results in both rendering fidelity and reconstruction accuracy while maintaining real-time speed and minimal storage size.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -27465,6 +27704,38 @@
       ]
     },
     {
+      "id": "2503.02009",
+      "title": "Morpheus: Text-Driven 3D Gaussian Splat Shape and Color Stylization",
+      "authors": "Jamie Wynn, Zawar Qureshi, Jakub Powierza, Jamie Watson, Mohamed Sayed",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2503.02009",
+      "source": "https://paperswithcode.co/paper/2503.02009",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.02009.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Exploring real-world spaces using novel-view synthesis is fun, and reimagining those worlds in a different style adds another layer of excitement. Stylized worlds can also be used for downstream tasks where there is limited training data and a need to expand a model's training distribution. Most current novel-view synthesis stylization techniques lack the ability to convincingly change geometry. This is because any geometry change requires increased style strength which is often capped for stylization stability and consistency. In this work, we propose a new autoregressive 3D Gaussian Splatting stylization method. As part of this method, we contribute a new RGBD diffusion model that allows for strength control over appearance and shape stylization. To ensure consistency across stylized frames, we use a combination of novel depth-guided cross attention, feature injection, and a Warp ControlNet conditioned on composite frames for guiding the stylization of new frames. We validate our method via extensive qualitative results, quantitative experiments, and a user study.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Depth Anything",
+        "Gaussian splatting",
+        "Stable Diffusion",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2505.20925",
       "title": "Multi-objective Large Language Model Alignment with Hierarchical Experts",
       "authors": "Zhuo Li, Guodong DU, Weiyang Guo, Yigeng Zhou, Xiucheng Li, Wenya Wang, Fangming Liu, Yequan Wang, Deheng Ye, Min Zhang, Jing Li",
@@ -28070,6 +28341,35 @@
       "category": "Serving",
       "categories": [
         "Serving"
+      ]
+    },
+    {
+      "id": "2503.14198",
+      "title": "RoGSplat: Learning Robust Generalizable Human Gaussian Splatting from Sparse Multi-View Images",
+      "authors": "Junjin Xiao, Qing Zhang, Yonewei Nie, Lei Zhu, Wei-Shi Zheng",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2503.14198",
+      "source": "https://paperswithcode.co/paper/2503.14198",
+      "code": "https://github.com/iSEE-Laboratory/RoGSplat",
+      "project": "",
+      "thumbnail": "./thumbs/2503.14198.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "This paper presents RoGSplat, a novel approach for synthesizing high-fidelity novel views of unseen human from sparse multi-view images, while requiring no cumbersome per-subject optimization. Unlike previous methods that typically struggle with sparse views with few overlappings and are less effective in reconstructing complex human geometry, the proposed method enables robust reconstruction in such challenging conditions. Our key idea is to lift SMPL vertices to dense and reliable 3D prior points representing accurate human body geometry, and then regress human Gaussian parameters based on the points. To account for possible misalignment between SMPL model and images, we propose to predict image-aligned 3D prior points by leveraging both pixel-level features and voxel-level features, from which we regress the coarse Gaussians. To enhance the ability to capture high-frequency details, we further render depth maps from the coarse 3D Gaussians to help regress fine-grained pixel-wise Gaussians. Experiments on several benchmark datasets demonstrate that our method outperforms state-of-the-art methods in novel view synthesis and cross-dataset generalization. Our code is available at https://github.com/iSEE-Laboratory/RoGSplat.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Depth Anything",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -29027,39 +29327,6 @@
       ]
     },
     {
-      "id": "2505.19911",
-      "title": "Attention! You Vision Language Model Could Be Maliciously Manipulated",
-      "authors": "Xiaosen Wang, Shaokang Wang, Zhijin Ge, Yuyang Luo, Shudong Zhang",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2505.19911",
-      "source": "https://paperswithcode.co/paper/2505.19911",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.19911.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Large Vision-Language Models (VLMs) have achieved remarkable success in understanding complex real-world scenarios and supporting data-driven decision-making processes. However, VLMs exhibit significant vulnerability against adversarial examples, either text or image, which can lead to various adversarial outcomes, e.g., jailbreaking, hijacking, and hallucination, etc. In this work, we empirically and theoretically demonstrate that VLMs are particularly susceptible to image-based adversarial examples, where imperceptible perturbations can precisely manipulate each output token. To this end, we propose a novel attack called Vision-language model Manipulation Attack (VMA), which integrates first-order and second-order momentum optimization techniques with a differentiable transformation mechanism to effectively optimize the adversarial perturbation. Notably, VMA can be a double-edged sword: it can be leveraged to implement various attacks, such as jailbreaking, hijacking, privacy breaches, Denial-of-Service, and the generation of sponge examples, etc, while simultaneously enabling the injection of watermarks for copyright protection. Extensive empirical evaluations substantiate the efficacy and generalizability of VMA across diverse scenarios and datasets.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "Watermarking",
-        "vision/multimodal",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling",
-        "Robotics"
-      ]
-    },
-    {
       "id": "2505.08627",
       "title": "Augmented Reality for RObots (ARRO): Pointing Visuomotor Policies towards Visual Robustness",
       "authors": "Mirjalili, Reihaneh, Jülg, Tobias Thomas, Walter, Florian, Burgard, Wolfram",
@@ -29089,39 +29356,6 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2602.09657",
-      "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
-      "authors": "Xiaolou Sun, Wufei Si, Wenhui Ni, Yuntian Li, Dongming Wu, Fei Xie, Runwei Guan, He-Yang Xu, Henghui Ding, Yuan Wu, Yutao Yue, Yongming Huang, Hui Xiong",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2602.09657",
-      "source": "https://paperswithcode.co/paper/2602.09657",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2602.09657.jpg",
-      "firstSeenAt": "2026-06-23T01:33:39.075Z",
-      "summary": "Vision-language navigation (VLN) requires intelligent agents to navigate environments by interpreting linguistic instructions alongside visual observations, serving as a cornerstone task in Embodied AI. Current VLN research for unmanned aerial vehicles (UAVs) relies on detailed, pre-specified instructions to guide the UAV along predetermined routes. However, real-world outdoor exploration typically occurs in unknown environments where detailed navigation instructions are unavailable. Instead, only coarse-grained positional or directional guidance can be provided, requiring UAVs to autonomously navigate through continuous planning and obstacle avoidance. To bridge this gap, we propose AutoFly, an end-to-end Vision-Language-Action (VLA) model for autonomous UAV navigation. AutoFly incorporates a pseudo-depth encoder that derives depth-aware features from RGB inputs to enhance spatial reasoning, coupled with a progressive two-stage training strategy that effectively aligns visual, depth, and linguistic representations with action policies. Moreover, existing VLN datasets have fundamental limitations for real-world autonomous navigation, stemming from their heavy reliance on explicit instruction-following over autonomous decision-making and insufficient real-world data. To address these issues, we construct a novel autonomous navigation dataset that shifts the paradigm from instruction-following to autonomous behavior modeling through: (1) trajectory collection emphasizing continuous obstacle avoidance, autonomous planning, and recognition workflows; (2) comprehensive real-world data integration. Experimental results demonstrate that AutoFly achieves a 3.9\\% higher success rate compared to state-of-the-art VLA baselines, with consistent performance across simulated and real environments.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "LLaVa",
-        "Vision Transformer",
-        "robotics",
-        "language modeling",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Language Modeling",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -29392,6 +29626,39 @@
       "categories": [
         "Serving",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2508.05254",
+      "title": "CF3: Compact and Fast 3D Feature Fields",
+      "authors": "Hyunjoon Lee, Joonkyu Min, Jaesik Park",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2508.05254",
+      "source": "https://paperswithcode.co/paper/2508.05254",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2508.05254.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "3D Gaussian Splatting (3DGS) has begun incorporating rich information from 2D foundation models. However, most approaches rely on a bottom-up optimization process that treats raw 2D features as ground truth, incurring increased computational costs. We propose a top-down pipeline for constructing compact and fast 3D feature fields, namely, CF3. We first perform a fast weighted fusion of multi-view 2D features with pre-trained Gaussians. This approach enables training a per-Gaussian autoencoder directly on the lifted features, instead of training autoencoders in the 2D domain. As a result, the autoencoder better aligns with the inference-time feature distribution, achieving high compression fidelity and storage efficiency. Finally, we introduce an adaptive sparsification method that prunes and merges Gaussians, constructing an efficient representation while maintaining details. Our approach achieves a competitive 3D feature field while using as little as 5% of the Gaussians compared to Feature-3DGS.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "CLIP",
+        "Gaussian splatting",
+        "Segment Anything (SAM)",
+        "serving",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Vision/Multimodal",
+        "Frontier Training"
       ]
     },
     {
@@ -29886,6 +30153,35 @@
         "Robotics",
         "Vision/Multimodal",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2411.04844",
+      "title": "Discretized Gaussian Representation for Tomographic Reconstruction",
+      "authors": "Shaokai Wu, Yuxiang Lu, Yapan Guo, Wei Ji, Suizhi Huang, Fengyu Yang, Shalayiding Sirejiding, Qichen He, Jing Tong, Yanbiao Ji, Yue Ding, Hongtao Lu",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2411.04844",
+      "source": "https://paperswithcode.co/paper/2411.04844",
+      "code": "https://github.com/wskingdom/DGR",
+      "project": "",
+      "thumbnail": "./thumbs/2411.04844.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Computed Tomography (CT) enables detailed cross-sectional imaging but continues to face challenges in balancing reconstruction quality and computational efficiency. While deep learning-based methods have significantly improved image quality and noise reduction, they typically require large-scale training data and intensive computation. Recent advances in scene reconstruction, such as Neural Radiance Fields and 3D Gaussian Splatting, offer alternative perspectives but are not well-suited for direct volumetric CT reconstruction. In this work, we propose Discretized Gaussian Representation (DGR), a novel framework that reconstructs the 3D volume directly using a set of discretized Gaussian functions in an end-to-end manner. To further enhance efficiency, we introduce Fast Volume Reconstruction, a highly parallelized technique that aggregates Gaussian contributions into the voxel grid with minimal overhead. Extensive experiments on both real-world and synthetic datasets demonstrate that DGR achieves superior reconstruction quality and runtime performance across various CT reconstruction scenarios. Our code is publicly available at https://github.com/wskingdom/DGR.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "U-Net",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -30631,6 +30927,39 @@
       ]
     },
     {
+      "id": "2603.15169",
+      "title": "ForceVLA2: Unleashing Hybrid Force-Position Control with Force Awareness for Contact-Rich Manipulation",
+      "authors": "Yang Li, Zhaxizhuoma Zhaxizhuoma, Hongru Jiang, Junjie Xia, Hongquan Zhang, Jinda Du, Yunsong Zhou, Jia Zeng, Ce Hao, Jieji Ren, Qiaojun Yu, Cewu Lu, Yu Qiao, Jiangmiao Pang",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2603.15169",
+      "source": "https://paperswithcode.co/paper/2603.15169",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.15169.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Embodied intelligence for contact-rich manipulation has predominantly relied on position control, while explicit awareness and regulation of interaction forces remain under-explored, limiting stability, precision, and robustness in real-world tasks. We propose ForceVLA2, an end-to-end vision-language-action framework that equips robots with hybrid force-position control and explicit force awareness. ForceVLA2 introduces force-based prompts into the VLM expert to construct force-aware task concepts across stages, and employs a Cross-Scale Mixture-of-Experts (MoE) in the action expert to adaptively fuse these concepts with real-time interaction forces for closed-loop hybrid force-position regulation. To support learning and evaluation, we construct ForceVLA2-Dataset, containing 1,000 trajectories over 5 contact-rich tasks, including wiping, pressing, and assembling, with multi-view images, task prompts, proprioceptive state, and force signals. Extensive experiments show that ForceVLA2 substantially improves success rates and reliability in contact-rich manipulation, outperforming pi0 and pi0.5 by 48.0% and 35.0%, respectively, across the 5 tasks, and mitigating common failure modes such as arm overload and unstable contact, thereby actively advancing force-aware interactive physical intelligence in VLAs.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Robotics",
+        "Diffusion Policy",
+        "Flow matching",
+        "robotics",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2506.18960",
       "title": "FORTE: Tactile Force and Slip Sensing on Compliant Fingers for Delicate Manipulation",
       "authors": "Shang, Siqi, Seo, Mingyo, Zhu, Yuke, Chin, Lillian",
@@ -30808,6 +31137,39 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2512.16811",
+      "title": "GeoPredict: Leveraging Predictive Kinematics and 3D Gaussian Geometry for Precise VLA Manipulation",
+      "authors": "Jingjing Qian, Boyao Han, Chen Shi, Lei Xiao, Long Yang, Shaoshuai Shi, Li Jiang",
+      "org": "",
+      "published": "CVPR 2026 Spotlight",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2512.16811",
+      "source": "https://paperswithcode.co/paper/2512.16811",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.16811.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Vision-Language-Action (VLA) models achieve strong generalization in robotic manipulation but remain largely reactive and 2D-centric, making them unreliable in tasks that require precise 3D reasoning. We propose GeoPredict, a geometry-aware VLA framework that augments a continuous-action policy with predictive kinematic and geometric priors. GeoPredict introduces a trajectory-level module that encodes motion history and predicts multi-step 3D keypoint trajectories of robot arms, and a predictive 3D Gaussian geometry module that forecasts workspace geometry with track-guided refinement along future keypoint trajectories. These predictive modules serve exclusively as training-time supervision through depth-based rendering, while inference requires only lightweight additional query tokens without invoking any 3D decoding. Experiments on RoboCasa Human-50, LIBERO, and real-world manipulation tasks show that GeoPredict consistently outperforms strong VLA baselines, especially in geometry-intensive and spatially demanding scenarios.",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "Diffusion Policy",
+        "Flow matching",
+        "Gaussian splatting",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -31084,6 +31446,34 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2504.16606",
+      "title": "HUG: Hierarchical Urban Gaussian Splatting with Block-Based Reconstruction for Large-Scale Aerial Scenes",
+      "authors": "Mai Su, Zhongtao Wang, Huishan Au, Yilong Li, Xizhe Cao, Chengwei Pan, Yisong Chen, Guoping Wang",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2504.16606",
+      "source": "https://paperswithcode.co/paper/2504.16606",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2504.16606.jpg",
+      "firstSeenAt": "2026-06-25T00:21:13.185Z",
+      "summary": "3DGS is an emerging and increasingly popular technology in the field of novel view synthesis. Its highly realistic rendering quality and real-time rendering capabilities make it promising for various applications. However, when applied to large-scale aerial urban scenes, 3DGS methods suffer from issues such as excessive memory consumption, slow training times, prolonged partitioning processes, and significant degradation in rendering quality due to the increased data volume. To tackle these challenges, we introduce HUG, a novel approach that enhances data partitioning and reconstruction quality by leveraging a hierarchical neural Gaussian representation. We first propose a visibility-based data partitioning method that is simple yet highly efficient, significantly outperforming existing methods in speed. Then, we introduce a novel hierarchical weighted training approach, combined with other optimization strategies, to substantially improve reconstruction quality. Our method achieves state-of-the-art results on one synthetic dataset and four real-world datasets.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -33348,6 +33738,34 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2507.15602",
+      "title": "SurfaceSplat: Connecting Surface Reconstruction and Gaussian Splatting",
+      "authors": "Zihui Gao, Jia-Wang Bian, Guosheng Lin, Hao Chen, Chunhua Shen",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2507.15602",
+      "source": "https://paperswithcode.co/paper/2507.15602",
+      "code": "https://github.com/aim-uofa/SurfaceSplat",
+      "project": "",
+      "thumbnail": "./thumbs/2507.15602.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Surface reconstruction and novel view rendering from sparse-view images are challenging. Signed Distance Function (SDF)-based methods struggle with fine details, while 3D Gaussian Splatting (3DGS)-based approaches lack global geometry coherence. We propose a novel hybrid method that combines both strengths: SDF captures coarse geometry to enhance 3DGS-based rendering, while newly rendered images from 3DGS refine SDF details for accurate surface reconstruction. As a result, our method surpasses state-of-the-art approaches in surface reconstruction and novel view synthesis on DTU and MobileBrick datasets. Code will be released at https://github.com/aim-uofa/SurfaceSplat.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -37818,6 +38236,39 @@
       ]
     },
     {
+      "id": "2510.02732",
+      "title": "From Tokens to Nodes: Semantic-Guided Motion Control for Dynamic 3D Gaussian Splatting",
+      "authors": "Jianing Chen, Zehao Li, Yujun Cai, Hao Jiang, Shuqin Gao, Honglong Zhao, Tianlu Mao, Yucheng Zhang",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2510.02732",
+      "source": "https://paperswithcode.co/paper/2510.02732",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.02732.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Dynamic 3D reconstruction from monocular videos remains difficult due to the ambiguity inferring 3D motion from limited views and computational demands of modeling temporally varying scenes. While recent sparse control methods alleviate computation by reducing millions of Gaussians to thousands of control points, they suffer from a critical limitation: they allocate points purely by geometry, leading to static redundancy and dynamic insufficiency. We propose a motion-adaptive framework that aligns control density with motion complexity. Leveraging semantic and motion priors from vision foundation models, we establish patch-token-node correspondences and apply motion-adaptive compression to concentrate control points in dynamic regions while suppressing redundancy in static backgrounds. Our approach achieves flexible representational density adaptation through iterative voxelization and motion tendency scoring, directly addressing the fundamental mismatch between control point allocation and motion complexity. To capture temporal evolution, we introduce spline-based trajectory parameterization initialized by 2D tracklets, replacing MLP-based deformation fields to achieve smoother motion representation and more stable optimization. Extensive experiments demonstrate significant improvements in reconstruction quality and efficiency over existing state-of-the-art methods.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "3D understanding",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "serving",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2506.14135",
       "title": "GAF: Gaussian Action Field As a 4D Representation for Dynamic World Modeling in Robotic Manipulation",
       "authors": "Chai, Ying, Deng, Litao, Shao, Ruizhi, Zhang, Jiajun, Lv, Kangchen, Xing, Liangjun, Li, Xiang, Zhang, Hongwen, Liu, Yebin",
@@ -38294,34 +38745,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2504.16606",
-      "title": "HUG: Hierarchical Urban Gaussian Splatting with Block-Based Reconstruction for Large-Scale Aerial Scenes",
-      "authors": "Mai Su, Zhongtao Wang, Huishan Au, Yilong Li, Xizhe Cao, Chengwei Pan, Yisong Chen, Guoping Wang",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2504.16606",
-      "source": "https://paperswithcode.co/paper/2504.16606",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2504.16606.jpg",
-      "firstSeenAt": "2026-06-25T00:21:13.185Z",
-      "summary": "3DGS is an emerging and increasingly popular technology in the field of novel view synthesis. Its highly realistic rendering quality and real-time rendering capabilities make it promising for various applications. However, when applied to large-scale aerial urban scenes, 3DGS methods suffer from issues such as excessive memory consumption, slow training times, prolonged partitioning processes, and significant degradation in rendering quality due to the increased data volume. To tackle these challenges, we introduce HUG, a novel approach that enhances data partitioning and reconstruction quality by leveraging a hierarchical neural Gaussian representation. We first propose a visibility-based data partitioning method that is simple yet highly efficient, significantly outperforming existing methods in speed. Then, we introduce a novel hierarchical weighted training approach, combined with other optimization strategies, to substantially improve reconstruction quality. Our method achieves state-of-the-art results on one synthetic dataset and four real-world datasets.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Gaussian splatting",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
       ]
     },
     {
@@ -38816,6 +39239,36 @@
       ]
     },
     {
+      "id": "2504.07949",
+      "title": "InteractAvatar: Modeling Hand-Face Interaction in Photorealistic Avatars with Deformable Gaussians",
+      "authors": "Kefan Chen, Sreyas Mohan, Justin Theiss, Sergiu Oprea, Srinath Sridhar, Aayush Prakash",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2504.07949",
+      "source": "https://paperswithcode.co/paper/2504.07949",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2504.07949.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "With the rising interest from the community in digital avatars coupled with the importance of expressions and gestures in communication, modeling natural avatar behavior remains an important challenge across many industries such as teleconferencing, gaming, and AR/VR. Human hands are the primary tool for interacting with the environment and essential for realistic human behavior modeling, yet existing 3D hand and head avatar models often overlook the crucial aspect of hand-body interactions, such as between hand and face. We present InteractAvatar, the first model to faithfully capture the photorealistic appearance of dynamic hand and non-rigid hand-face interactions. Our novel Dynamic Gaussian Hand model, combining template model and 3D Gaussian Splatting as well as a dynamic refinement module, captures pose-dependent change, e.g. the fine wrinkles and complex shadows that occur during articulation. Importantly, our hand-face interaction module models the subtle geometry and appearance dynamics that underlie common gestures.Through experiments of novel view synthesis, self reenactment and cross-identity reenactment, we demonstrate that InteractAvatar can reconstruct hand and hand-face interactions from multi-view videos with high-fidelity details and be animated with novel poses.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2411.16750",
       "title": "Iris: Integrating Language into Diffusion-based Monocular Depth Estimation",
       "authors": "Ziyao Zeng, Jingcheng Ni, Daniel Wang, Patrick Rim, Younjoon Chung, Fengyu Yang, Byung-Woo Hong, Alex Wong",
@@ -39249,6 +39702,36 @@
         "Language Modeling",
         "Vision/Multimodal",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2404.16323",
+      "title": "LeanGaussian: Breaking Pixel or Point Cloud Correspondence in Modeling 3D Gaussians",
+      "authors": "Jiamin Wu, Kenkun Liu, Han Gao, Xiaoke Jiang, Yuan Yao, Lei Zhang",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2404.16323",
+      "source": "https://paperswithcode.co/paper/2404.16323",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2404.16323.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Rencently, Gaussian splatting has demonstrated significant success in novel view synthesis. Current methods often regress Gaussians with pixel or point cloud correspondence, linking each Gaussian with a pixel or a 3D point. This leads to the redundancy of Gaussians being used to overfit the correspondence rather than the objects represented by the 3D Gaussians themselves, consequently wasting resources and lacking accurate geometries or textures.In this paper, we introduce LeanGaussian, a novel approach that treats each query in deformable Transformer as one 3D Gaussian ellipsoid, breaking the pixel or point cloud correspondence constraints. We leverage deformable decoder to iteratively refine the Gaussians layer-by-layer with the image features as keys and values.Notably, the center of each 3D Gaussian is defined as 3D reference points, which are then projected onto the image for deformable attention in 2D space.On both the ShapeNet SRN dataset (category level) and the Google Scanned Objects dataset (open-category level, trained with the Objaverse dataset), our approach, outperforms prior methods by approximately 6.1%, achieving a PSNR of 25.44 and 22.36, respectively. Additionally, our method achieves a 3D reconstruction speed of 7.2 FPS and rendering speed 500 FPS.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "3D understanding",
+        "Deformable Attention",
+        "DETR",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -41478,6 +41961,38 @@
       ]
     },
     {
+      "id": "2506.14786",
+      "title": "PIPE: Physics-Informed Position Encoding for Alignment of Satellite Images and Time Series",
+      "authors": "Haobo Li, Eunseo Jung, Zixin CHEN, Zhaowei Wang, Yueya WANG, Huamin Qu, Alexis Lau",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2506.14786",
+      "source": "https://paperswithcode.co/paper/2506.14786",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.14786.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Multimodal time series forecasting is foundational in various fields, such as utilizing satellite imagery and numerical data for predicting typhoons in climate science. However, existing multimodal approaches primarily focus on utilizing text data to help time series forecasting, leaving the visual data in existing time series datasets untouched. Furthermore, it is challenging for models to effectively capture the physical information embedded in visual data, such as satellite imagery's temporal and geospatial context, which extends beyond images themselves. To address this gap, we propose physics-informed positional encoding (PIPE), a lightweight method that embeds physical information into vision language models (VLMs). PIPE introduces two key innovations: (1) a physics-informed positional indexing scheme for mapping physics to positional IDs, and (2) a variant-frequency positional encoding mechanism for encoding frequency information of physical variables and sequential order of tokens within the embedding space. By preserving both the physical information and sequential order information, PIPE significantly improves multimodal alignment and forecasting accuracy. Through the experiments on the most representative and the largest open-sourced satellite image dataset, PIPE achieves state-of-the-art performance in both deep learning forecasting and climate domain methods, demonstrating superiority across benchmarks, including a 12% improvement in typhoon intensity forecasting over prior works.Our code is provided in the supplementary material.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Remote Sensing",
+        "Time-series forecasting",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2503.18324",
       "title": "Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control",
       "authors": "Basim Azam, Naveed Akhtar",
@@ -41864,6 +42379,36 @@
         "Robotics",
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2508.18788",
+      "title": "PseudoMapTrainer: Learning Online Mapping without HD Maps",
+      "authors": "Christian Löwens, Thorben Funke, Jingchao Xie, Alexandru Paul Condurache",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2508.18788",
+      "source": "https://paperswithcode.co/paper/2508.18788",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2508.18788.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Online mapping models show remarkable results in predicting vectorized maps from multi-view camera images only. However, all existing approaches still rely on ground-truth high-definition maps during training, which are expensive to obtain and often not geographically diverse enough for reliable generalization. In this work, we propose PseudoMapTrainer, a novel approach to online mapping that uses pseudo-labels generated from unlabeled sensor data. We derive those pseudo-labels by reconstructing the road surface from multi-camera imagery using Gaussian splatting and semantics of a pre-trained 2D segmentation network. In addition, we introduce a mask-aware assignment algorithm and loss function to handle partially masked pseudo-labels, allowing for the first time the training of online mapping models without any ground-truth maps. Furthermore, our pseudo-labels can be effectively used to pre-train an online model in a semi-supervised manner to leverage large-scale unlabeled crowdsourced data. The code is available at github.com/boschresearch/PseudoMapTrainer.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "DETR",
+        "Gaussian splatting",
+        "Residual Block",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -45211,6 +45756,34 @@
       ]
     },
     {
+      "id": "2510.03312",
+      "title": "Universal Beta Splatting",
+      "authors": "Rong Liu, Zhongpai Gao, Benjamin Planche, Meida Chen, Van Nguyen Nguyen, Meng Zheng, Anwesa Choudhuri, Terrence Chen, Yue Wang, Andrew Feng, Ziyan Wu",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2510.03312",
+      "source": "https://paperswithcode.co/paper/2510.03312",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.03312.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "We introduce Universal Beta Splatting (UBS), a unified framework that generalizes 3D Gaussian Splatting to N-dimensional anisotropic Beta kernels for explicit radiance field rendering. Unlike fixed Gaussian primitives, Beta kernels enable controllable dependency modeling across spatial, angular, and temporal dimensions within a single representation. Our unified approach captures complex light transport effects, handles anisotropic view-dependent appearance, and models scene dynamics without requiring auxiliary networks or specific color encodings. UBS maintains backward compatibility by approximating to Gaussian Splatting as a special case, guaranteeing plug-in usability and lower performance bounds. The learned Beta parameters naturally decompose scene properties into interpretable without explicit supervision: spatial (surface vs. texture), angular (diffuse vs. specular), and temporal (static vs. dynamic). Our CUDA-accelerated implementation achieves real-time rendering while consistently outperforming existing methods across static, view-dependent, and dynamic benchmarks, establishing Beta kernels as a scalable universal primitive for radiance field rendering.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2510.03252",
       "title": "Universal Multi-Domain Translation via Diffusion Routers",
       "authors": "Duc Kieu, Kien Do, Tuan Hoang, Thao Minh Le, Tung Kieu, Dang Nguyen, Thin Nguyen",
@@ -45459,6 +46032,36 @@
       "categories": [
         "Robotics",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2602.11638",
+      "title": "Variation-aware Flexible 3D Gaussian Editing",
+      "authors": "Hao Qin, Yukai Sun, Meng Wang, Ming Kong, Mengxu Lu, Qiang Zhu",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2602.11638",
+      "source": "https://paperswithcode.co/paper/2602.11638",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.11638.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Indirect editing methods for 3D Gaussian Splatting (3DGS) have recently witnessed significant advancements. These approaches operate by first applying edits in the rendered 2D space and subsequently projecting the modifications back into 3D. *However, this paradigm inevitably introduces cross-view inconsistencies and constrains both the flexibility and efficiency of the editing process*. To address these challenges, we present **VF-Editor**, which enables native editing of Gaussian primitives by predicting attribute variations in a feedforward manner. To accurately and efficiently estimate these variations, we design a novel variation predictor distilled from 2D editing knowledge. The predictor encodes the input to generate a variation field and employs two learnable, parallel decoding functions to iteratively infer attribute changes for each 3D Gaussian. Thanks to its unified design, VF-Editor can seamlessly distill editing knowledge from diverse 2D editors and strategies into a single predictor, allowing for flexible and effective knowledge transfer into the 3D domain. Extensive experiments on both public and private datasets reveal the inherent limitations of indirect editing pipelines and validate the effectiveness and flexibility of our approach.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "CLIP",
+        "Few-shot prompting",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -60168,38 +60771,6 @@
       ]
     },
     {
-      "id": "2506.14786",
-      "title": "PIPE: Physics-Informed Position Encoding for Alignment of Satellite Images and Time Series",
-      "authors": "Haobo Li, Eunseo Jung, Zixin CHEN, Zhaowei Wang, Yueya WANG, Huamin Qu, Alexis Lau",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2506.14786",
-      "source": "https://paperswithcode.co/paper/2506.14786",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2506.14786.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Multimodal time series forecasting is foundational in various fields, such as utilizing satellite imagery and numerical data for predicting typhoons in climate science. However, existing multimodal approaches primarily focus on utilizing text data to help time series forecasting, leaving the visual data in existing time series datasets untouched. Furthermore, it is challenging for models to effectively capture the physical information embedded in visual data, such as satellite imagery's temporal and geospatial context, which extends beyond images themselves. To address this gap, we propose physics-informed positional encoding (PIPE), a lightweight method that embeds physical information into vision language models (VLMs). PIPE introduces two key innovations: (1) a physics-informed positional indexing scheme for mapping physics to positional IDs, and (2) a variant-frequency positional encoding mechanism for encoding frequency information of physical variables and sequential order of tokens within the embedding space. By preserving both the physical information and sequential order information, PIPE significantly improves multimodal alignment and forecasting accuracy. Through the experiments on the most representative and the largest open-sourced satellite image dataset, PIPE achieves state-of-the-art performance in both deep learning forecasting and climate domain methods, demonstrating superiority across benchmarks, including a 12% improvement in typhoon intensity forecasting over prior works.Our code is provided in the supplementary material.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "Remote Sensing",
-        "Time-series forecasting",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2509.13938",
       "title": "Plug-and-Play PDE Optimization for 3D Gaussian Splatting: Toward High-Quality Rendering and Reconstruction",
       "authors": "Yifan Mo, Youcheng Cai, Ligang Liu",
@@ -61776,6 +62347,35 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2506.09063",
+      "title": "Reconstructing Heterogeneous Biomolecules via Hierarchical Gaussian Mixtures and Part Discovery",
+      "authors": "Shayan Shekarforoush, David Lindell, Marcus Brubaker, David Fleet",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2506.09063",
+      "source": "https://paperswithcode.co/paper/2506.09063",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.09063.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Cryo-EM is a transformational paradigm in molecular biology where computational methods are used to infer 3D molecular structure at atomic resolution from extremely noisy 2D electron microscope images. At the forefront of research is how to model the structure when the imaged particles exhibit non-rigid conformational flexibility and compositional variation where parts are sometimes missing. We introduce a novel 3D reconstruction framework with a hierarchical Gaussian mixture model, inspired in part by Gaussian Splatting for 4D scene reconstruction. In particular, the structure of the model is grounded in an initial process that infers a part-based segmentation of the particle, providing essential inductive bias in order to handle both conformational and compositional variability. The framework, called CryoSPIRE, is shown to reveal biologically meaningful structures on complex experimental datasets, and establishes a new state-of-the-art on CryoBench, a benchmark for cryo-EM heterogeneity methods.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "3D understanding",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -66595,6 +67195,36 @@
       ]
     },
     {
+      "id": "2603.09673",
+      "title": "VarSplat: Uncertainty-aware 3D Gaussian Splatting for Robust RGB-D SLAM",
+      "authors": "Anh Thuan Tran, Jana Kosecka",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.09673",
+      "source": "https://paperswithcode.co/paper/2603.09673",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.09673.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "Simultaneous Localization and Mapping (SLAM) with 3D Gaussian Splatting (3DGS) enables fast, differentiable rendering and high-fidelity reconstruction across diverse real-world scenes. However, existing 3DGS-SLAM approaches handle measurement reliability implicitly, making pose estimation and global alignment susceptible to drift in low-texture regions, transparent surfaces, or areas with complex reflectance properties. To this end, we introduce VarSplat, an uncertainty-aware 3DGS-SLAM system that explicitly learns per-splat appearance variance. By using the law of total variance with alpha compositing, we then render differentiable per-pixel uncertainty map via efficient, single-pass rasterization. This map guides tracking, submap registration, and loop detection toward focusing on reliable regions and contributes to more stable optimization. Experimental results on Replica (synthetic) and TUM-RGBD, ScanNet, and ScanNet++ (real-world) show that VarSplat improves robustness and achieves competitive or superior tracking, mapping, and novel view synthesis rendering compared to existing studies for dense RGB-D SLAM.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Pose Estimation",
+        "Gaussian splatting",
+        "SLAM",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2510.05688",
       "title": "vAttention: Verified Sparse Attention via Sampling",
       "authors": "Aditya Desai, Kumar Krishna Agrawal, Shuo Yang, Alejandro Cuadron, Luis Gaspar Schroeder, Matei Zaharia, Joseph E. Gonzalez, Ion Stoica",
@@ -67274,6 +67904,36 @@
         "Serving",
         "Frontier Training",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2603.08809",
+      "title": "Where, What, Why: Toward Explainable 3D-GS Watermarking",
+      "authors": "Mingshu Cai, Jiajun Li, Osamu Yoshie, Yuya Ieiri, Yixuan Li",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.08809",
+      "source": "https://paperswithcode.co/paper/2603.08809",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.08809.jpg",
+      "firstSeenAt": "2026-07-05T01:20:57.551Z",
+      "summary": "As 3D Gaussian Splatting becomes the de facto representation for interactive 3D assets, robust yet imperceptible watermarking is critical. We present a representation-native framework that separates where to write from how to preserve quality. A Trio-Experts module operates directly on Gaussian primitives to derive priors for carrier selection, while a Safety and Budget Aware Gate (SBAG) allocates Gaussians to watermark carriers--optimized for bit resilience under perturbation and bitrate budgets--and to visual compensators that are insulated from watermark loss. To maintain fidelity, we introduce a channel-wise group mask that controls gradient propagation for carriers and compensators, thereby limiting Gaussian parameter updates, repairing local artifacts, and preserving high-frequency details without increasing runtime. Our design yields view-consistent watermark persistence and strong robustness against common image distortions such as compression and noise, while achieving a favorable robustness-quality trade-off compared with prior methods. In addition, the decoupled finetuning provides per-Gaussian attributions that reveal where the message is carried and why those carriers are selected, enabling auditable explainability. Compared with state-of-the-art methods, our approach achieves a PSNR improvement of +0.83 dB and a bit-accuracy gain of +1.24%.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Watermarking",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving"
       ]
     },
     {
