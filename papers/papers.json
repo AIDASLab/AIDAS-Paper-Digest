@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-05T01:20:57.551Z",
+  "generatedAt": "2026-07-06T00:15:37.130Z",
   "sourceStats": {
-    "seed": 3797,
+    "seed": 3819,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 27,
@@ -216,6 +216,36 @@
       ]
     },
     {
+      "id": "2607.01232",
+      "title": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
+      "authors": "Zijian Zhang, Rizhen Hu, Athanasios Glentis, Dawei Li, Chung-Yiu Yau, Hongzhou Lin, Mingyi Hong",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 96,
+      "paper": "https://arxiv.org/abs/2607.01232",
+      "source": "https://www.alphaxiv.org/abs/2607.01232",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.01232.jpg",
+      "firstSeenAt": "2026-07-03T00:18:27.939Z",
+      "summary": "Reinforcement learning (RL) has become a central component of post-training large language models (LLMs), yet little is understood about how RL adaptation is distributed across transformer layers. Existing approaches typically update all model parameters uniformly, implicitly assuming that every layer contributes similarly to the gains obtained during RL post-training. In this work, we challenge this assumption through a systematic layer-wise study of RL training. Surprisingly, we find that training a single transformer layer can recover most of the gains achieved by full-parameter RL training, and in some cases even surpass it. To quantify this phenomenon, we introduce the quantity layer contribution, which measures the fraction of full RL improvement recovered by training a layer in isolation. Across seven models spanning two model families (Qwen3, Qwen2.5), three RL algorithms (GRPO, GiGPO, Dr. GRPO), and multiple task domains including mathematical reasoning, code generation, and agentic decision-making, we observe a remarkably stable pattern: RL gains are highly concentrated in a small subset of, and in many cases even a single, transformer layers. More strikingly, the same structural pattern consistently emerges: high-contribution layers concentrate in the middle of the transformer stack, while layers near the input and output ends contribute substantially less. The resulting layer rankings remain strongly correlated across datasets, tasks, model families, and RL algorithms.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "frontier training",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2606.18208",
       "title": "Looped World Models",
       "authors": "Hongyuan Adam Lu, Z. L. Victor Wei, Qun Zhang, Jinrui Zeng, Bowen Cao, Lingwei Meng, Mocheng Li, Zezhong Wang, Haonan Yin, Naifu Xue, Minyu Chen, Cenyuan Zhang, Zefan Zhang, Hao Wei, Jiawei Zhou, Haoran Xu, Hao Yang, Ronglai Zuo, Tongda Xu, Yonghao Li, Jian Chen, Hebin Wang, Zeyu Gao, Yang Li, Wei Zhao, Qimin Zhong, Siqi Liu, Yumeng Zhang, Leyan Cui, Zhangyu Wang, Wai Lam",
@@ -370,6 +400,32 @@
       ]
     },
     {
+      "id": "2607.01693",
+      "title": "A Mathematical Introduction to Diffusion Models",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 95,
+      "paper": "https://arxiv.org/abs/2607.01693",
+      "source": "https://www.alphaxiv.org/abs/2607.01693",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.01693.jpg",
+      "firstSeenAt": "2026-07-05T00:12:12.799Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.25331",
       "title": "Improved Large Language Diffusion Models",
       "authors": "Shen Nie, Qiyang Min, Shaoxuan Xu, Zihao Huang, Yuxuan Song, Yong Shan, Yankai Lin, Wayne Xin Zhao, Chongxuan Li, Ji-Rong Wen",
@@ -423,36 +479,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.01232",
-      "title": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
-      "authors": "Zijian Zhang, Rizhen Hu, Athanasios Glentis, Dawei Li, Chung-Yiu Yau, Hongzhou Lin, Mingyi Hong",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 95,
-      "paper": "https://arxiv.org/abs/2607.01232",
-      "source": "https://www.alphaxiv.org/abs/2607.01232",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.01232.jpg",
-      "firstSeenAt": "2026-07-03T00:18:27.939Z",
-      "summary": "Reinforcement learning (RL) has become a central component of post-training large language models (LLMs), yet little is understood about how RL adaptation is distributed across transformer layers. Existing approaches typically update all model parameters uniformly, implicitly assuming that every layer contributes similarly to the gains obtained during RL post-training. In this work, we challenge this assumption through a systematic layer-wise study of RL training. Surprisingly, we find that training a single transformer layer can recover most of the gains achieved by full-parameter RL training, and in some cases even surpass it. To quantify this phenomenon, we introduce the quantity layer contribution, which measures the fraction of full RL improvement recovered by training a layer in isolation. Across seven models spanning two model families (Qwen3, Qwen2.5), three RL algorithms (GRPO, GiGPO, Dr. GRPO), and multiple task domains including mathematical reasoning, code generation, and agentic decision-making, we observe a remarkably stable pattern: RL gains are highly concentrated in a small subset of, and in many cases even a single, transformer layers. More strikingly, the same structural pattern consistently emerges: high-contribution layers concentrate in the middle of the transformer stack, while layers near the input and output ends contribute substantially less. The resulting layer rankings remain strongly correlated across datasets, tasks, model families, and RL algorithms.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "frontier training",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -973,32 +999,6 @@
       ]
     },
     {
-      "id": "2607.01693",
-      "title": "A Mathematical Introduction to Diffusion Models",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 93,
-      "paper": "https://arxiv.org/abs/2607.01693",
-      "source": "https://www.alphaxiv.org/abs/2607.01693",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.01693.jpg",
-      "firstSeenAt": "2026-07-05T00:12:12.799Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2026.accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction",
       "title": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction",
       "authors": "",
@@ -1259,6 +1259,38 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2607.02512",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+      "authors": "Wentao Zhang, Liliana Hotsko, Woojeong Kim, Pengyu Nie, Stuart Shieber, Yuntian Deng",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 93,
+      "paper": "https://arxiv.org/abs/2607.02512",
+      "source": "https://www.alphaxiv.org/abs/2607.02512",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.02512.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
+      "summary": "Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose fuzzy-function programming: compiling such a function from a natural-language specification into a compact, locally-executable neural artifact. We instantiate this paradigm with Program-as-Weights (PAW), in which a 4B compiler trained on FuzzyBench, a 10M-example dataset we release, emits parameter-efficient adapters for a frozen, lightweight interpreter. A 0.6B Qwen3 interpreter executing PAW programs matches the performance of direct prompting of Qwen3-32B, while using roughly one fiftieth of the inference memory and running at 30 tokens/s on a MacBook M3. PAW reframes the foundation model from a per-input problem solver into a tool builder: invoked once per function definition, it produces a small reusable artifact whose subsequent calls per function application are cheap and offline.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "frontier training",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -1657,6 +1689,38 @@
       ]
     },
     {
+      "id": "2607.01224",
+      "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
+      "authors": "Shengguang Wu, Hao Zhu, Yuhui Zhang, Xiaohan Wang, Serena Yeung-Levy",
+      "org": "",
+      "published": "2026-07-01",
+      "score": 91,
+      "paper": "https://arxiv.org/abs/2607.01224",
+      "source": "https://www.alphaxiv.org/abs/2607.01224",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.01224.jpg",
+      "firstSeenAt": "2026-07-03T00:18:27.939Z",
+      "summary": "Memory expertise is a learned skill: knowing what to encode, when to retrieve, and how to organize knowledge--a capacity known in cognitive science as metamemory. We bring this perspective to LLMs by treating memory management as a trainable skill. We promote file-system operations to first-class memory actions alongside task actions, letting the model itself decide how to manage its memory. This memory skill improves along two axes: the structure that supports it (prompts, file schemas, action vocabulary), and the proficiency of the model exercising it. Both axes resist manual optimization: episodes in long-horizon tasks run for thousands of steps, and a single memory mistake can hide long before it surfaces, making human review of full trajectories impractical. We introduce AutoMem, a framework that automates both axes. In the first loop, a strong LLM reviews complete agent trajectories and iteratively revises the memory structure that shapes how the agent interacts with its memory files. In the second loop, the agent's own good memory decisions are identified from many episodes and used as training signal to sharpen the model's memory proficiency directly. Across three procedurally generated long-horizon games (Crafter, MiniHack, and NetHack), optimizing memory alone--without modifying the model's task-action behavior--improved the base agent's performance ~2x-4x, bringing a 32B open-weight model competitive with frontier systems such as Claude Opus 4.5 and Gemini 3.1 Pro Thinking. Our results show that memory management is an independently learnable skill, and a high-leverage objective yielding large gains on long-horizon tasks.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "language modeling",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.13361",
       "title": "Can I Buy Your KV Cache?",
       "authors": "Luoyuan Zhang",
@@ -2036,38 +2100,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.02512",
-      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
-      "authors": "Wentao Zhang, Liliana Hotsko, Woojeong Kim, Pengyu Nie, Stuart Shieber, Yuntian Deng",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 90,
-      "paper": "https://arxiv.org/abs/2607.02512",
-      "source": "https://www.alphaxiv.org/abs/2607.02512",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.02512.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose fuzzy-function programming: compiling such a function from a natural-language specification into a compact, locally-executable neural artifact. We instantiate this paradigm with Program-as-Weights (PAW), in which a 4B compiler trained on FuzzyBench, a 10M-example dataset we release, emits parameter-efficient adapters for a frozen, lightweight interpreter. A 0.6B Qwen3 interpreter executing PAW programs matches the performance of direct prompting of Qwen3-32B, while using roughly one fiftieth of the inference memory and running at 30 tokens/s on a MacBook M3. PAW reframes the foundation model from a per-input problem solver into a tool builder: invoked once per function definition, it produces a small reusable artifact whose subsequent calls per function application are cheap and offline.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "frontier training",
-        "hugging face daily",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -2464,38 +2496,6 @@
       ]
     },
     {
-      "id": "2607.01224",
-      "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
-      "authors": "Shengguang Wu, Hao Zhu, Yuhui Zhang, Xiaohan Wang, Serena Yeung-Levy",
-      "org": "",
-      "published": "2026-07-01",
-      "score": 88,
-      "paper": "https://arxiv.org/abs/2607.01224",
-      "source": "https://www.alphaxiv.org/abs/2607.01224",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.01224.jpg",
-      "firstSeenAt": "2026-07-03T00:18:27.939Z",
-      "summary": "Memory expertise is a learned skill: knowing what to encode, when to retrieve, and how to organize knowledge--a capacity known in cognitive science as metamemory. We bring this perspective to LLMs by treating memory management as a trainable skill. We promote file-system operations to first-class memory actions alongside task actions, letting the model itself decide how to manage its memory. This memory skill improves along two axes: the structure that supports it (prompts, file schemas, action vocabulary), and the proficiency of the model exercising it. Both axes resist manual optimization: episodes in long-horizon tasks run for thousands of steps, and a single memory mistake can hide long before it surfaces, making human review of full trajectories impractical. We introduce AutoMem, a framework that automates both axes. In the first loop, a strong LLM reviews complete agent trajectories and iteratively revises the memory structure that shapes how the agent interacts with its memory files. In the second loop, the agent's own good memory decisions are identified from many episodes and used as training signal to sharpen the model's memory proficiency directly. Across three procedurally generated long-horizon games (Crafter, MiniHack, and NetHack), optimizing memory alone--without modifying the model's task-action behavior--improved the base agent's performance ~2x-4x, bringing a 32B open-weight model competitive with frontier systems such as Claude Opus 4.5 and Gemini 3.1 Pro Thinking. Our results show that memory management is an independently learnable skill, and a high-leverage objective yielding large gains on long-horizon tasks.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "language modeling",
-        "hugging face daily",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2604.26176",
       "title": "CacheRAG: A Semantic Caching System for RAG in Knowledge Graph Question Answering",
       "authors": "Yushi Sun, Lei Chen",
@@ -2629,6 +2629,32 @@
       "project": "",
       "thumbnail": "./thumbs/2606.23664.jpg",
       "firstSeenAt": "2026-06-24T00:10:37.469Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.01120",
+      "title": "Next-Generation Agentic Reinforcement Learning Systems Enable Self-Evolving Agents",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 88,
+      "paper": "https://arxiv.org/abs/2607.01120",
+      "source": "https://www.alphaxiv.org/abs/2607.01120",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.01120.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -2931,32 +2957,6 @@
       ]
     },
     {
-      "id": "2607.01120",
-      "title": "Next-Generation Agentic Reinforcement Learning Systems Enable Self-Evolving Agents",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 87,
-      "paper": "https://arxiv.org/abs/2607.01120",
-      "source": "https://www.alphaxiv.org/abs/2607.01120",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.01120.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2606.19419",
       "title": "Playful Agentic Robot Learning",
       "authors": "Junyi Zhang, Jiaxin Ge, Hanjun Yoo, Letian Fu, Zihan Yang, Yaowei Liu, Raj Saravanan, Shaofeng Yin, Justin Yu, Dantong Niu, Zirui Wang, Roei Herzig, Ken Goldberg, Yutong Bai, David M. Chan, Ion Stoica, Angjoo Kanazawa, Jiahui Lei, Haiwen Feng, Trevor Darrell",
@@ -3014,6 +3014,34 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.02375",
+      "title": "Representation Distribution Matching for One-Step Visual Generation",
+      "authors": "Lan Feng, Wuyang Li, Eloi Zablocki, Matthieu Cord, Alexandre Alahi",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 87,
+      "paper": "https://arxiv.org/abs/2607.02375",
+      "source": "https://www.alphaxiv.org/abs/2607.02375",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.02375.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
+      "summary": "We elucidate the design space of Representation Distribution Matching (RDM), our name for the paradigm that trains a one-step image generator by matching generated and reference feature distributions under frozen pretrained encoders. We identify two design axes, how the distributions are compared and the representations they are compared in, and controlled studies along them yield three findings. First, the classical MMD, which could not train convincing generators a decade ago, becomes a strong and scalable objective once estimated right. Second, the generated batch is then the operative variable, with an optimum above 2048, far beyond customary batch sizes. Third, any single representation can be gamed, driven below the real score while images stay visibly fake, so we match against a balanced battery of encoders and evaluate with SW_r14, a Sliced-Wasserstein distance over 14 encoders that is independent of the training loss and resists gaming. Combining the preferred choices yields improved RDM (iRDM): it sets the one-step state of the art on ImageNet at SW_r14 1.30, corroborated by PickScore, a human-preference proxy our objective never optimizes, which prefers it over the prior best one-step generator on 71.2% of matched samples. The same recipe post-trains the four-step FLUX.2 [klein] into a one-step generator, surpassing the four-step version on GenEval, 0.826 to 0.794, and on PickScore, 22.76 to 22.58, in 90 H200 GPU-hours. Project page: https://alan-lanfeng.github.io/rdm/.",
+      "matchedBy": [
+        "hugging face daily",
+        "vision/multimodal",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -3349,6 +3377,71 @@
       "categories": [
         "Serving",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.02517",
+      "title": "WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory",
+      "authors": "Hanlin Wang, Hao Ouyang, Qiuyu Wang, Wen Wang, Qingyan Bai, Ka Leong Cheng, Yue Yu, Yixuan Li, Yihao Meng, Zichen Liu, Yanhong Zeng, Yujun Shen, Qifeng Chen",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 86,
+      "paper": "https://arxiv.org/abs/2607.02517",
+      "source": "https://www.alphaxiv.org/abs/2607.02517",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.02517.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
+      "summary": "We present WorldDirector, a highly controllable video world model framework designed for persistent dynamic object memory and unrestricted viewpoint exploration. Unlike existing world models that entangle physical dynamics with pixel rendering and rely on continuous visual observation to sustain motion, our framework explicitly decouples semantic motion orchestration from visual generation. By leveraging an LLM to coordinate 3D trajectories with camera movements and subsequently employing these orchestrated trajectories as control signals for video generation, our approach ensures strict physical logic and appearance stability, successfully preserving the exact visual identities of dynamic entities even when they re-enter the scene after prolonged periods out of view. Experimental results demonstrate that our method supports the synthesis of complex and extended events with unprecedented controllability and persistent dynamic object memory. Project Page: https://worlddirector.github.io/",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "frontier training",
+        "language modeling",
+        "hugging face daily"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.01763",
+      "title": "Denser ≠ \\neq  = Better: Limits of On-Policy Self-Distillation for Continual Post-Training",
+      "authors": "Meng Wang, Haohan Zhao, Wenzhuo Liu, Lu Yang, Geng Liu, Haiyang Guo, Guo-Sen Xie, Gaofeng Meng, Hongbin Liu, Fei Zhu",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2607.01763",
+      "source": "https://www.alphaxiv.org/abs/2607.01763",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.01763.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
+      "summary": "Continual post-training enables foundation models to acquire new knowledge while preserving existing capabilities. Recent work suggests that on-policy learning can mitigate forgetting, with on-policy self-distillation emerging as a particularly attractive approach. In this work, we revisit this optimistic view through self-distillation policy optimization (SDPO). Our experiments show that SDPO can accelerate in-domain specialization when teacher signals are stable and well aligned, but it struggles to generalize to out-of-distribution scenarios. In continual post-training, SDPO exhibits stronger forgetting and can even collapse, whereas on-policy reinforcement learning methods such as GRPO adapt more conservatively and better preserve prior capabilities. Further analyses reveal that denser self-distillation induces larger drift in both parameter space and response space, and can amplify high-frequency formatting artifacts through a self-reinforcing teacher--student loop. These findings suggest that on-policy data alone is insufficient for continual learning. Dense self-distillation can accelerate specialization when teacher targets are stable and token-level supervision is reliable, but it should not be treated as a default stabilizer for continual post-training. Our code is available at https://github.com/Moenupa/SDPO-CL.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "frontier training",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -3802,6 +3895,32 @@
       ]
     },
     {
+      "id": "2607.02234",
+      "title": "Purified OPSD: On-Policy Self-Distillation Without Losing How to Think",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 84,
+      "paper": "https://arxiv.org/abs/2607.02234",
+      "source": "https://www.alphaxiv.org/abs/2607.02234",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.02234.jpg",
+      "firstSeenAt": "2026-07-05T00:12:12.799Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2604.02996",
       "title": "Rendering Multi-Human and Multi-Object with 3D Gaussian Splatting",
       "authors": "Wang, Weiquan, Xiao, Jun, Shao, Feifei, Yang, Yi, Zhuang, Yueting, Chen, Long",
@@ -4107,6 +4226,38 @@
       ]
     },
     {
+      "id": "2607.02466",
+      "title": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
+      "authors": "Junhao Shi, Siyin Wang, Xiaopeng Yu, Li Ji, Jingjing Gong, Xipeng Qiu",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 83,
+      "paper": "https://arxiv.org/abs/2607.02466",
+      "source": "https://www.alphaxiv.org/abs/2607.02466",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.02466.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
+      "summary": "Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations -- triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the latter requires language supervision. Building on this Decomposition Hypothesis, we propose Task-Agnostic Pretraining (TAP), a two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data -- including discarded off-task trajectories and autonomous robot play -- via a self-supervised Inverse Dynamics objective. A lightweight second stage then grounds these priors in language using minimal expert data. On the SIMPLER benchmark, TAP matches models trained on over 1M expert trajectories while using orders of magnitude less labeled data, yielding a 10% absolute gain over standard behavior cloning. On a real-world WidowX platform, TAP retains 25% success under camera perturbations where internet-scale baselines collapse to 0%, demonstrating that task-agnostic pretraining produces robust, transferable physical representations and offers a scalable path forward for Embodied AI.",
+      "matchedBy": [
+        "arxiv",
+        "robotics",
+        "frontier training",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2606.13473",
       "title": "MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling",
       "authors": "Jiacheng Chen, Xinyu Zhang, Shunkai Zhang, Yanmohan Wang, Lin Li, Tiancheng Qin, Qin Wang, Zhengmao Zhu, Tianle Li, Jingyang Li, Zehan Li, Binyang Jiang, Jin Zhu, Han Ding, Fei Yu, Chenyu Du, Zijian Song, Jiayuan Song, Zhi Zhang, Yunan Huang, Weiyu Cheng, Pengyu Zhao, Yu Cheng",
@@ -4256,39 +4407,6 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2607.02517",
-      "title": "WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory",
-      "authors": "Hanlin Wang, Hao Ouyang, Qiuyu Wang, Wen Wang, Qingyan Bai, Ka Leong Cheng, Yue Yu, Yixuan Li, Yihao Meng, Zichen Liu, Yanhong Zeng, Yujun Shen, Qifeng Chen",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 83,
-      "paper": "https://arxiv.org/abs/2607.02517",
-      "source": "https://www.alphaxiv.org/abs/2607.02517",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.02517.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "We present WorldDirector, a highly controllable video world model framework designed for persistent dynamic object memory and unrestricted viewpoint exploration. Unlike existing world models that entangle physical dynamics with pixel rendering and rely on continuous visual observation to sustain motion, our framework explicitly decouples semantic motion orchestration from visual generation. By leveraging an LLM to coordinate 3D trajectories with camera movements and subsequently employing these orchestrated trajectories as control signals for video generation, our approach ensures strict physical logic and appearance stability, successfully preserving the exact visual identities of dynamic entities even when they re-enter the scene after prolonged periods out of view. Experimental results demonstrate that our method supports the synthesis of complex and extended events with unprecedented controllability and persistent dynamic object memory. Project Page: https://worlddirector.github.io/",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "frontier training",
-        "language modeling",
-        "hugging face daily"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training",
-        "Language Modeling"
       ]
     },
     {
@@ -4475,6 +4593,36 @@
       ]
     },
     {
+      "id": "2607.01179",
+      "title": "QuasiMoTTo: Quasi-Monte Carlo Test-Time Scaling",
+      "authors": "Michael Y. Li, Anthony Zhan, Kanishk Gandhi, Noah D. Goodman, Emily B. Fox",
+      "org": "",
+      "published": "2026-07-01",
+      "score": 82,
+      "paper": "https://arxiv.org/abs/2607.01179",
+      "source": "https://www.alphaxiv.org/abs/2607.01179",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.01179.jpg",
+      "firstSeenAt": "2026-07-03T00:18:27.939Z",
+      "summary": "Scaling inference compute, by generating many parallel attempts per problem, is a costly but reliable lever for improving language model capabilities. By default these attempts are generated independently, wasting inference compute on redundant solutions. This waste seems unavoidable. After all, independence is what makes parallel sampling trivial to scale. However, this tradeoff is not fundamental: there is a rich design space of samplers that generate correlated but exact samples entirely in parallel. We explore this design space as an avenue for improving sample efficiency in scaling inference compute and reinforcement learning (RL). Concretely, we introduce QuasiMoTTo, which uses correlated samples as a drop-in replacement for i.i.d. samples. To generate these samples, QuasiMoTTo uses a reparameterization of autoregressive sampling as inverse-CDF sampling and draws the underlying uniforms with quasi-Monte Carlo (QMC); because QMC spreads the uniforms out more evenly than i.i.d., the resulting samples cover the output space with far less redundancy. Even though the batch is correlated, each sample is marginally distributed according to the language model, so we can use the batch for policy-gradient training. Our empirical analysis focuses on understanding how efficiently QuasiMoTTo can turn compute into performance. To evaluate correlated samplers, whose dependence breaks standard pass@k estimators, we first develop an unbiased bootstrap estimator. Across four reasoning benchmarks, QuasiMoTTo matches i.i.d. pass@k accuracy with 25-47% fewer samples. Strikingly, QuasiMoTTo often saturates an upper bound on pass@k that holds for any marginal-preserving sampler. We also apply QuasiMoTTo to policy-gradient RL (GRPO) where it matches i.i.d. performance with 50% fewer training steps. These gains come from higher coverage, which yields a stronger learning signal per batch.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "serving",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
       "id": "2411.19548",
       "title": "ReconDreamer: Crafting World Models for Driving Scene Reconstruction via Online Restoration",
       "authors": "Chaojun Ni, Guosheng Zhao, Xiaofeng Wang, Zheng Zhu, Wenkang Qin, Guan Huang, Chen Liu, Yuyin Chen, Yida Wang, Xueyang Zhang, Yifei Zhan, Kun Zhan, Peng Jia, Xianpeng Lang, Xingang Wang, Wenjun Mei",
@@ -4497,34 +4645,6 @@
       ],
       "sources": [
         "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2607.02375",
-      "title": "Representation Distribution Matching for One-Step Visual Generation",
-      "authors": "Lan Feng, Wuyang Li, Eloi Zablocki, Matthieu Cord, Alexandre Alahi",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 82,
-      "paper": "https://arxiv.org/abs/2607.02375",
-      "source": "https://www.alphaxiv.org/abs/2607.02375",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.02375.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "We elucidate the design space of Representation Distribution Matching (RDM), our name for the paradigm that trains a one-step image generator by matching generated and reference feature distributions under frozen pretrained encoders. We identify two design axes, how the distributions are compared and the representations they are compared in, and controlled studies along them yield three findings. First, the classical MMD, which could not train convincing generators a decade ago, becomes a strong and scalable objective once estimated right. Second, the generated batch is then the operative variable, with an optimum above 2048, far beyond customary batch sizes. Third, any single representation can be gamed, driven below the real score while images stay visibly fake, so we match against a balanced battery of encoders and evaluate with SW_r14, a Sliced-Wasserstein distance over 14 encoders that is independent of the training loss and resists gaming. Combining the preferred choices yields improved RDM (iRDM): it sets the one-step state of the art on ImageNet at SW_r14 1.30, corroborated by PickScore, a human-preference proxy our objective never optimizes, which prefers it over the prior best one-step generator on 71.2% of matched samples. The same recipe post-trains the four-step FLUX.2 [klein] into a one-step generator, surpassing the four-step version on GenEval, 0.826 to 0.794, and on PickScore, 22.76 to 22.58, in 90 H200 GPU-hours. Project page: https://alan-lanfeng.github.io/rdm/.",
-      "matchedBy": [
-        "hugging face daily",
-        "vision/multimodal",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "huggingface",
-        "alphaxiv"
       ],
       "category": "Vision/Multimodal",
       "categories": [
@@ -5001,6 +5121,37 @@
       ]
     },
     {
+      "id": "2607.02515",
+      "title": "PointDiT: Pixel-Space Diffusion for Monocular Geometry Estimation",
+      "authors": "Haofei Xu, Rundi Wu, Philipp Henzler, Nikolai Kalischek, Michael Oechsle, Fabian Manhardt, Marc Pollefeys, Andreas Geiger, Federico Tombari, Michael Niemeyer",
+      "org": "",
+      "published": "2026-07-02",
+      "score": 80,
+      "paper": "https://arxiv.org/abs/2607.02515",
+      "source": "https://www.alphaxiv.org/abs/2607.02515",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.02515.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
+      "summary": "State-of-the-art single-image 3D reconstruction methods often rely on complex hybrid architectures and loss functions, or compress geometry into latent spaces in order to leverage pre-trained latent diffusion models. In this work, we show that such architectural overhead and intricate loss formulations are unnecessary. We introduce a minimalist pixel-space Diffusion Transformer, built on a plain ViT, that operates directly on raw 3D point map patches and is conditioned on image tokens from a pre-trained DINOv3. Unlike existing latent diffusion approaches, we train our diffusion backbone entirely from scratch, eliminating the need for point map tokenizers. Despite its simplicity, our approach surpasses complex latent-based diffusion models while remaining significantly simpler than hybrid alternatives. Notably, it produces sharper geometric structure and is more robust in highly ambiguous regions, such as transparent objects.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "frontier training",
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2606.30853",
       "title": "Rethinking quantum information in gravity and fields",
       "authors": "",
@@ -5317,14 +5468,42 @@
       ]
     },
     {
+      "id": "2607.01233",
+      "title": "Measuring the Gap Between Human and LLM Research Ideas",
+      "authors": "Ziyu Chen, Yilun Zhao, Arman Cohan",
+      "org": "",
+      "published": "2026-07-01",
+      "score": 79,
+      "paper": "https://arxiv.org/abs/2607.01233",
+      "source": "https://www.alphaxiv.org/abs/2607.01233",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.01233.jpg",
+      "firstSeenAt": "2026-07-03T00:18:27.939Z",
+      "summary": "LLMs are increasingly used to brainstorm research ideas, but existing evaluations mostly judge individual ideas by novelty, feasibility, or expert preference. We instead ask: how far are current LLM-generated ideas from human researchers? To characterize this gap, we build a large-scale evaluation framework for ideation from high-quality human research papers. For each paper, we reverse-engineer a small set of closely related prior works that likely inspired its core idea. LLMs are then prompted to generate a new idea from the set of paper titles and summaries. We introduce a two-axis research-taste taxonomy to profile each idea by its opportunity pattern and research paradigm, and use it to quantify the divergence between human and LLM ideas. Across idea sets generated by different LLMs, we observe a consistent distributional gap: LLM ideas are disproportionately concentrated around bridge-like opportunities and synthesis methods, whereas the human paper reference distribution spreads more broadly across ways of framing gaps and constructing contributions. This result suggests that strong LLMs can produce a range of reasonable ideas, but that range remains narrower than, and systematically shifted relative to, human research taste.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.01775",
       "title": "Set Diffusion: Interpolating Token Orderings Between Autoregression and Diffusion for Fast and Flexible Decoding",
       "authors": "Marianne Arriola, Volodymyr Kuleshov",
       "org": "",
       "published": "2026-07-02",
       "score": 79,
-      "paper": "https://arxiv.org/abs/2607.01775",
-      "source": "https://www.alphaxiv.org/abs/2607.01775",
+      "paper": "https://arxiv.org/abs/2607.01775v1",
+      "source": "https://arxiv.org/abs/2607.01775v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.01775.jpg",
@@ -8310,36 +8489,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.01763",
-      "title": "Denser neq Better: Limits of On-Policy Self-Distillation for Continual Post-Training",
-      "authors": "Meng Wang, Haohan Zhao, Wenzhuo Liu, Lu Yang, Geng Liu, Haiyang Guo, Guo-Sen Xie, Gaofeng Meng, Hongbin Liu, Fei Zhu",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.01763",
-      "source": "https://huggingface.co/papers/2607.01763",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.01763.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "Continual post-training enables foundation models to acquire new knowledge while preserving existing capabilities. Recent work suggests that on-policy learning can mitigate forgetting, with on-policy self-distillation emerging as a particularly attractive approach. In this work, we revisit this optimistic view through self-distillation policy optimization (SDPO). Our experiments show that SDPO can accelerate in-domain specialization when teacher signals are stable and well aligned, but it struggles to generalize to out-of-distribution scenarios. In continual post-training, SDPO exhibits stronger forgetting and can even collapse, whereas on-policy reinforcement learning methods such as GRPO adapt more conservatively and better preserve prior capabilities. Further analyses reveal that denser self-distillation induces larger drift in both parameter space and response space, and can amplify high-frequency formatting artifacts through a self-reinforcing teacher--student loop. These findings suggest that on-policy data alone is insufficient for continual learning. Dense self-distillation can accelerate specialization when teacher targets are stable and token-level supervision is reliable, but it should not be treated as a default stabilizer for continual post-training. Our code is available at https://github.com/Moenupa/SDPO-CL.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "frontier training",
-        "hugging face daily"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -11349,36 +11498,6 @@
       "categories": [
         "Language Modeling",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2607.02466",
-      "title": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
-      "authors": "Junhao Shi, Siyin Wang, Xiaopeng Yu, Li Ji, Jingjing Gong, Xipeng Qiu",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.02466",
-      "source": "https://huggingface.co/papers/2607.02466",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.02466.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations -- triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the latter requires language supervision. Building on this Decomposition Hypothesis, we propose Task-Agnostic Pretraining (TAP), a two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data -- including discarded off-task trajectories and autonomous robot play -- via a self-supervised Inverse Dynamics objective. A lightweight second stage then grounds these priors in language using minimal expert data. On the SIMPLER benchmark, TAP matches models trained on over 1M expert trajectories while using orders of magnitude less labeled data, yielding a 10% absolute gain over standard behavior cloning. On a real-world WidowX platform, TAP retains 25% success under camera perturbations where internet-scale baselines collapse to 0%, demonstrating that task-agnostic pretraining produces robust, transferable physical representations and offers a scalable path forward for Embodied AI.",
-      "matchedBy": [
-        "arxiv",
-        "robotics",
-        "frontier training",
-        "hugging face daily"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Frontier Training"
       ]
     },
     {
@@ -19116,32 +19235,6 @@
       ]
     },
     {
-      "id": "2607.02234",
-      "title": "Purified OPSD: On-Policy Self-Distillation Without Losing How to Think",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 77,
-      "paper": "https://arxiv.org/abs/2607.02234",
-      "source": "https://www.alphaxiv.org/abs/2607.02234",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.02234.jpg",
-      "firstSeenAt": "2026-07-05T00:12:12.799Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2606.27374",
       "title": "World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays",
       "authors": "Manish Kumar Govind, Dominick Reilly, Smit Patel, Hieu Le, Srijan Das",
@@ -19503,6 +19596,38 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "2511.00091",
+      "title": "Self-Improving Vision-Language-Action Models with Data Generation via Residual RL",
+      "authors": "Wenli Xiao, Haotian Lin, Andy Peng, Haoru Xue, Tairan He, Zhengyi Luo, Yuqi Xie, Fengyuan Hu, Linxi Fan, Guanya Shi, Yuke Zhu",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 73,
+      "paper": "https://arxiv.org/abs/2511.00091",
+      "source": "https://paperswithcode.co/paper/2511.00091",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2511.00091.jpg",
+      "firstSeenAt": "2026-06-23T01:33:39.075Z",
+      "summary": "Supervised fine-tuning (SFT) has become the de facto post-training strategy for large vision-language-action (VLA) models, but its reliance on costly human demonstrations limits scalability and generalization. We propose Probe, Learn, Distill (PLD), a plug-and-play framework that improves VLAs through residual reinforcement learning and distribution-aware data collection. In Stage 1 (specialist acquisition), we freeze the VLA backbone and train lightweight residual actors via off-policy RL. These specialists take over in states where the base policy fails, thereby probing failure regions of the generalist. In Stage 2 (data collection), we employ a hybrid rollout scheme that biases residual interventions toward states frequently visited by the base policy, aligning collected trajectories with the generalist’s deployment distribution while capturing recovery behaviors. In Stage 3 (fine-tuning), these curated trajectories are distilled back into the generalist with standard SFT, applicable to both flow-matching and autoregressive heads. We evaluate PLD across diverse settings: it achieves a near-saturated 99% task success rate on the LIBERO benchmark, delivers over 50% performance gains in SimplerEnv, and demonstrates practicality on real-world Franka arm manipulation tasks. We further provide ablations showing that residual policy probing and distribution-aware replay are key to collecting deployment-aligned data that improves VLAs’ capabilities on both seen and unseen tasks. Our results demonstrate that RL-generated, policy-aligned data can surpass teleoperation-only demonstrations, offering a scalable path toward self-improving VLA models.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Robotics",
+        "Diffusion Policy",
+        "Few-shot prompting",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
         "Robotics"
       ]
     },
@@ -20063,6 +20188,37 @@
       ]
     },
     {
+      "id": "2506.12723",
+      "title": "SP-VLA: A Joint Model Scheduling and Token Pruning Approach for VLA Model Acceleration",
+      "authors": "Ye Li, Yuan Meng, Zewen Sun, Kangye Ji, Chen Tang, Jiajun Fan, Xinzhu Ma, Shu-Tao Xia, Zhi Wang, Wenwu Zhu",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 71,
+      "paper": "https://arxiv.org/abs/2506.12723",
+      "source": "https://paperswithcode.co/paper/2506.12723",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.12723.jpg",
+      "firstSeenAt": "2026-06-23T01:33:39.075Z",
+      "summary": "Vision-Language-Action (VLA) models have attracted increasing attention for their strong control capabilities. However, their high computational cost and low execution frequency hinder their suitability for real-time tasks such as robotic manipulation and autonomous navigation. Existing VLA acceleration methods primarily focus on structural optimization, overlooking the fact that these models operate in sequential decision-making environments. As a result, temporal redundancy in sequential action generation and spatial redundancy in visual input remain unaddressed. To this end, we propose SP-VLA, a unified framework that accelerates VLA models by jointly scheduling models and pruning tokens. Specifically, we design an action-aware model scheduling mechanism that reduces temporal redundancy by dynamically switching between VLA model and a lightweight generator. Inspired by the human motion pattern of focusing on key decision points while relying on intuition for other actions, we categorize VLA actions into deliberative and intuitive, assigning the former to the VLA model and the latter to the lightweight generator, enabling frequency-adaptive execution through collaborative model scheduling. To address spatial redundancy, we further develop a spatio-semantic dual-aware token pruning method. Tokens are classified into spatial and semantic types and pruned based on their dual-aware importance to accelerate VLA inference. These two mechanisms work jointly to guide the VLA in focusing on critical actions and salient visual information, achieving effective acceleration while maintaining high accuracy. Extensive experiments show that our method achieves 1.5$\\times$ lossless acceleration in LIBERO and 2.4$\\times$ in SimplerEnv, with up to 6\\% average performance gain. Inference frequency and latency improve by 2.2$\\times$ in SimplerEnv and 1.4$\\times$ in LIBERO.",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "robotics",
+        "serving",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Serving",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2411.16721",
       "title": "Steering Away from Harm: An Adaptive Approach to Defending Vision Language Model Against Jailbreaks",
       "authors": "Han Wang, Gang Wang, Huan Zhang",
@@ -20294,56 +20450,26 @@
       ]
     },
     {
-      "id": "2511.00091",
-      "title": "Self-Improving Vision-Language-Action Models with Data Generation via Residual RL",
-      "authors": "Wenli Xiao, Haotian Lin, Andy Peng, Haoru Xue, Tairan He, Zhengyi Luo, Yuqi Xie, Fengyuan Hu, Linxi Fan, Guanya Shi, Yuke Zhu",
+      "id": "2505.07395",
+      "title": "ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning",
+      "authors": "Hongyin Zhang, Zifeng Zhuang, Han Zhao, Pengxiang Ding, Hongchao Lu, Donglin Wang",
       "org": "",
-      "published": "ICLR 2026",
+      "published": "ICML 2025",
       "score": 70,
-      "paper": "https://arxiv.org/abs/2511.00091",
-      "source": "https://paperswithcode.co/paper/2511.00091",
+      "paper": "https://arxiv.org/abs/2505.07395",
+      "source": "https://paperswithcode.co/paper/2505.07395",
       "code": "",
       "project": "",
-      "thumbnail": "./thumbs/2511.00091.jpg",
-      "firstSeenAt": "2026-06-23T01:33:39.075Z",
-      "summary": "Supervised fine-tuning (SFT) has become the de facto post-training strategy for large vision-language-action (VLA) models, but its reliance on costly human demonstrations limits scalability and generalization. We propose Probe, Learn, Distill (PLD), a plug-and-play framework that improves VLAs through residual reinforcement learning and distribution-aware data collection. In Stage 1 (specialist acquisition), we freeze the VLA backbone and train lightweight residual actors via off-policy RL. These specialists take over in states where the base policy fails, thereby probing failure regions of the generalist. In Stage 2 (data collection), we employ a hybrid rollout scheme that biases residual interventions toward states frequently visited by the base policy, aligning collected trajectories with the generalist’s deployment distribution while capturing recovery behaviors. In Stage 3 (fine-tuning), these curated trajectories are distilled back into the generalist with standard SFT, applicable to both flow-matching and autoregressive heads. We evaluate PLD across diverse settings: it achieves a near-saturated 99% task success rate on the LIBERO benchmark, delivers over 50% performance gains in SimplerEnv, and demonstrates practicality on real-world Franka arm manipulation tasks. We further provide ablations showing that residual policy probing and distribution-aware replay are key to collecting deployment-aligned data that improves VLAs’ capabilities on both seen and unseen tasks. Our results demonstrate that RL-generated, policy-aligned data can surpass teleoperation-only demonstrations, offering a scalable path toward self-improving VLA models.",
+      "thumbnail": "./thumbs/2505.07395.jpg",
+      "firstSeenAt": "2026-06-21T02:02:50.434Z",
+      "summary": "Vision-Language-Action (VLA) models have shown great potential in general robotic decision-making tasks via imitation learning. However, the variable quality of training data often constrains the performance of these models. On the other hand, offline Reinforcement Learning (RL) excels at learning robust policy models from mixed-quality data. In this paper, we introduce Reinforced robot GPT (ReinboT), a novel end-to-end VLA model that integrates the RL principle of maximizing cumulative reward. ReinboT achieves a deeper understanding of the data quality distribution by predicting dense returns that capture the nuances of manipulation tasks. The dense return prediction capability enables the robot to generate more robust decision-making actions, oriented towards maximizing future benefits. Extensive experiments show that ReinboT achieves state-of-the-art performance on the CALVIN mixed-quality dataset and exhibits superior few-shot learning and out-of-distribution generalization capabilities in real-world tasks.",
       "matchedBy": [
         "papers with code",
         "Reinforcement Learning",
         "Robotics",
-        "Diffusion Policy",
-        "Few-shot prompting",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2506.12723",
-      "title": "SP-VLA: A Joint Model Scheduling and Token Pruning Approach for VLA Model Acceleration",
-      "authors": "Ye Li, Yuan Meng, Zewen Sun, Kangye Ji, Chen Tang, Jiajun Fan, Xinzhu Ma, Shu-Tao Xia, Zhi Wang, Wenwu Zhu",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 70,
-      "paper": "https://arxiv.org/abs/2506.12723",
-      "source": "https://paperswithcode.co/paper/2506.12723",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2506.12723.jpg",
-      "firstSeenAt": "2026-06-23T01:33:39.075Z",
-      "summary": "Vision-Language-Action (VLA) models have attracted increasing attention for their strong control capabilities. However, their high computational cost and low execution frequency hinder their suitability for real-time tasks such as robotic manipulation and autonomous navigation. Existing VLA acceleration methods primarily focus on structural optimization, overlooking the fact that these models operate in sequential decision-making environments. As a result, temporal redundancy in sequential action generation and spatial redundancy in visual input remain unaddressed. To this end, we propose SP-VLA, a unified framework that accelerates VLA models by jointly scheduling models and pruning tokens. Specifically, we design an action-aware model scheduling mechanism that reduces temporal redundancy by dynamically switching between VLA model and a lightweight generator. Inspired by the human motion pattern of focusing on key decision points while relying on intuition for other actions, we categorize VLA actions into deliberative and intuitive, assigning the former to the VLA model and the latter to the lightweight generator, enabling frequency-adaptive execution through collaborative model scheduling. To address spatial redundancy, we further develop a spatio-semantic dual-aware token pruning method. Tokens are classified into spatial and semantic types and pruned based on their dual-aware importance to accelerate VLA inference. These two mechanisms work jointly to guide the VLA in focusing on critical actions and salient visual information, achieving effective acceleration while maintaining high accuracy. Extensive experiments show that our method achieves 1.5$\\times$ lossless acceleration in LIBERO and 2.4$\\times$ in SimplerEnv, with up to 6\\% average performance gain. Inference frequency and latency improve by 2.2$\\times$ in SimplerEnv and 1.4$\\times$ in LIBERO.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
+        "ACT",
+        "CLIP",
         "robotics",
-        "serving",
         "vision/multimodal"
       ],
       "sources": [
@@ -20352,8 +20478,8 @@
       "category": "Robotics",
       "categories": [
         "Robotics",
-        "Serving",
-        "Vision/Multimodal"
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -20727,39 +20853,6 @@
       ]
     },
     {
-      "id": "2505.07395",
-      "title": "ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning",
-      "authors": "Hongyin Zhang, Zifeng Zhuang, Han Zhao, Pengxiang Ding, Hongchao Lu, Donglin Wang",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 69,
-      "paper": "https://arxiv.org/abs/2505.07395",
-      "source": "https://paperswithcode.co/paper/2505.07395",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.07395.jpg",
-      "firstSeenAt": "2026-06-21T02:02:50.434Z",
-      "summary": "Vision-Language-Action (VLA) models have shown great potential in general robotic decision-making tasks via imitation learning. However, the variable quality of training data often constrains the performance of these models. On the other hand, offline Reinforcement Learning (RL) excels at learning robust policy models from mixed-quality data. In this paper, we introduce Reinforced robot GPT (ReinboT), a novel end-to-end VLA model that integrates the RL principle of maximizing cumulative reward. ReinboT achieves a deeper understanding of the data quality distribution by predicting dense returns that capture the nuances of manipulation tasks. The dense return prediction capability enables the robot to generate more robust decision-making actions, oriented towards maximizing future benefits. Extensive experiments show that ReinboT achieves state-of-the-art performance on the CALVIN mixed-quality dataset and exhibits superior few-shot learning and out-of-distribution generalization capabilities in real-world tasks.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "Robotics",
-        "ACT",
-        "CLIP",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2405.05905",
       "title": "Truthful Aggregation of LLMs with an Application to Online Advertising",
       "authors": "Ermis Soumalias, Michael Curry, Sven Seuken",
@@ -21009,6 +21102,39 @@
       "categories": [
         "Serving",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2505.15660",
+      "title": "Exploring the Limits of Vision-Language-Action Manipulations in Cross-task Generalization",
+      "authors": "Jiaming Zhou, Ke Ye, Jiayi Liu, Teli Ma, Zifan Wang, Ronghe QIU, Kun-Yu Lin, Zhilin Zhao, Junwei Liang",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 68,
+      "paper": "https://arxiv.org/abs/2505.15660",
+      "source": "https://paperswithcode.co/paper/2505.15660",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.15660.jpg",
+      "firstSeenAt": "2026-06-22T00:21:43.543Z",
+      "summary": "The generalization capabilities of vision-language-action (VLA) models to unseen tasks are crucial to achieving general-purpose robotic manipulation in open-world settings.However, the cross-task generalization capabilities of existing VLA models remain significantly underexplored.To address this gap, we introduce **AGNOSTOS**, a novel simulation benchmark designed to rigorously evaluate cross-task zero-shot generalization in manipulation. AGNOSTOS comprises 23 unseen manipulation tasks for test—distinct from common training task distributions—and incorporates two levels of generalization difficulty to assess robustness. Our systematic evaluation reveals that current VLA models, despite being trained on diverse datasets, struggle to generalize effectively to these unseen tasks. To overcome this limitation, we propose **Cross-Task In-Context Manipulation (X-ICM)**, a method that conditions large language models (LLMs) on in-context demonstrations from seen tasks to predict action sequences for unseen tasks.Additionally, we introduce a **dynamics-guided sample selection** strategy that identifies relevant demonstrations by capturing cross-task dynamics. On AGNOSTOS, X-ICM significantly improves cross-task zero-shot generalization performance over leading VLAs, achieving improvements of 6.0\\% over $\\pi_0$ and 7.9\\% over VoxPoser.We believe AGNOSTOS and X-ICM will serve as valuable tools for advancing general-purpose robotic manipulation.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Robotics",
+        "ACT",
+        "Chain-of-Thought (CoT)",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics",
+        "Frontier Training"
       ]
     },
     {
@@ -21475,39 +21601,6 @@
         "Frontier Training",
         "Vision/Multimodal",
         "Serving"
-      ]
-    },
-    {
-      "id": "2505.15660",
-      "title": "Exploring the Limits of Vision-Language-Action Manipulations in Cross-task Generalization",
-      "authors": "Jiaming Zhou, Ke Ye, Jiayi Liu, Teli Ma, Zifan Wang, Ronghe QIU, Kun-Yu Lin, Zhilin Zhao, Junwei Liang",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 67,
-      "paper": "https://arxiv.org/abs/2505.15660",
-      "source": "https://paperswithcode.co/paper/2505.15660",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.15660.jpg",
-      "firstSeenAt": "2026-06-22T00:21:43.543Z",
-      "summary": "The generalization capabilities of vision-language-action (VLA) models to unseen tasks are crucial to achieving general-purpose robotic manipulation in open-world settings.However, the cross-task generalization capabilities of existing VLA models remain significantly underexplored.To address this gap, we introduce **AGNOSTOS**, a novel simulation benchmark designed to rigorously evaluate cross-task zero-shot generalization in manipulation. AGNOSTOS comprises 23 unseen manipulation tasks for test—distinct from common training task distributions—and incorporates two levels of generalization difficulty to assess robustness. Our systematic evaluation reveals that current VLA models, despite being trained on diverse datasets, struggle to generalize effectively to these unseen tasks. To overcome this limitation, we propose **Cross-Task In-Context Manipulation (X-ICM)**, a method that conditions large language models (LLMs) on in-context demonstrations from seen tasks to predict action sequences for unseen tasks.Additionally, we introduce a **dynamics-guided sample selection** strategy that identifies relevant demonstrations by capturing cross-task dynamics. On AGNOSTOS, X-ICM significantly improves cross-task zero-shot generalization performance over leading VLAs, achieving improvements of 6.0\\% over $\\pi_0$ and 7.9\\% over VoxPoser.We believe AGNOSTOS and X-ICM will serve as valuable tools for advancing general-purpose robotic manipulation.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Robotics",
-        "ACT",
-        "Chain-of-Thought (CoT)",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Robotics",
-        "Frontier Training"
       ]
     },
     {
@@ -24670,6 +24763,38 @@
       ]
     },
     {
+      "id": "2506.08822",
+      "title": "FreqPolicy: Efficient Flow-based Visuomotor Policy via Frequency Consistency",
+      "authors": "Yifei Su, Ning Liu, Dong Chen, Zhen Zhao, Kun Wu, Meng Li, Zhiyuan Xu, Zhengping Che, Jian Tang",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2506.08822",
+      "source": "https://paperswithcode.co/paper/2506.08822",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.08822.jpg",
+      "firstSeenAt": "2026-06-19T02:21:25.841Z",
+      "summary": "Generative modeling-based visuomotor policies have been widely adopted in robotic manipulation attributed to their ability to model multimodal action distributions. However, the high inference cost of multi-step sampling limits their applicability in real-time robotic systems. To address this issue, existing approaches accelerate the sampling process in generative modeling-based visuomotor policies by adapting acceleration techniques originally developed for image generation, such as Consistency Models and Consistency-FM. Despite this progress, a major distinction remains: image generation typically involves producing independent samples without temporal dependencies, whereas robotic manipulation involves generating time-series action trajectories that require continuity and temporal coherence. To effectively exploit temporal information in robotic manipulation, we propose FreqPolicy, a novel approach that first imposes frequency consistency constraints on flow-based visuomotor policies. Our work enables the action model to capture temporal structure effectively while supporting efficient, high-quality one-step action generation. Inspired by advances in time-series forecasting and speech processing, we introduce a frequency consistency constraint objective that enforces alignment of frequency-domain action features across different timesteps along the flow, thereby promoting convergence of one-step action generation toward the target distribution. In addition, we design an adaptive consistency loss to capture structural temporal variations inherent in robotic manipulation tasks. We assess FreqPolicy on $53$ tasks across $3$ simulation benchmarks, proving its superiority over existing one-step action generators.We further integrate FreqPolicy into the vision-language-action (VLA) model and achieve acceleration without performance degradation on the $40$ tasks of Libero. Besides, we show efficiency and effectiveness in real-world robotic scenarios with an inference frequency $93.5~\\mathrm {Hz}$. The code will be publicly available.",
+      "matchedBy": [
+        "papers with code",
+        "Image generation",
+        "Robotics",
+        "Time-series forecasting",
+        "ACT",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2412.13047",
       "title": "Gaussian Splatting for Efficient Satellite Image Photogrammetry",
       "authors": "Luca Savant Aira, Gabriele Facciolo, Thibaud Ehret",
@@ -27025,38 +27150,6 @@
         "Serving",
         "Language Modeling",
         "Data / Retrieval"
-      ]
-    },
-    {
-      "id": "2506.08822",
-      "title": "FreqPolicy: Efficient Flow-based Visuomotor Policy via Frequency Consistency",
-      "authors": "Yifei Su, Ning Liu, Dong Chen, Zhen Zhao, Kun Wu, Meng Li, Zhiyuan Xu, Zhengping Che, Jian Tang",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 63,
-      "paper": "https://arxiv.org/abs/2506.08822",
-      "source": "https://paperswithcode.co/paper/2506.08822",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2506.08822.jpg",
-      "firstSeenAt": "2026-06-19T02:21:25.841Z",
-      "summary": "Generative modeling-based visuomotor policies have been widely adopted in robotic manipulation attributed to their ability to model multimodal action distributions. However, the high inference cost of multi-step sampling limits their applicability in real-time robotic systems. To address this issue, existing approaches accelerate the sampling process in generative modeling-based visuomotor policies by adapting acceleration techniques originally developed for image generation, such as Consistency Models and Consistency-FM. Despite this progress, a major distinction remains: image generation typically involves producing independent samples without temporal dependencies, whereas robotic manipulation involves generating time-series action trajectories that require continuity and temporal coherence. To effectively exploit temporal information in robotic manipulation, we propose FreqPolicy, a novel approach that first imposes frequency consistency constraints on flow-based visuomotor policies. Our work enables the action model to capture temporal structure effectively while supporting efficient, high-quality one-step action generation. Inspired by advances in time-series forecasting and speech processing, we introduce a frequency consistency constraint objective that enforces alignment of frequency-domain action features across different timesteps along the flow, thereby promoting convergence of one-step action generation toward the target distribution. In addition, we design an adaptive consistency loss to capture structural temporal variations inherent in robotic manipulation tasks. We assess FreqPolicy on $53$ tasks across $3$ simulation benchmarks, proving its superiority over existing one-step action generators.We further integrate FreqPolicy into the vision-language-action (VLA) model and achieve acceleration without performance degradation on the $40$ tasks of Libero. Besides, we show efficiency and effectiveness in real-world robotic scenarios with an inference frequency $93.5~\\mathrm {Hz}$. The code will be publicly available.",
-      "matchedBy": [
-        "papers with code",
-        "Image generation",
-        "Robotics",
-        "Time-series forecasting",
-        "ACT",
-        "vision/multimodal",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics"
       ]
     },
     {
@@ -34348,6 +34441,35 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2603.19682",
+      "title": "3D Gaussian Splatting with Self-Constrained Priors for High Fidelity Surface Reconstruction",
+      "authors": "Takeshi Noda, Yu-Shen Liu, Zhizhong Han",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2603.19682",
+      "source": "https://paperswithcode.co/paper/2603.19682",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.19682.jpg",
+      "firstSeenAt": "2026-06-20T00:19:02.193Z",
+      "summary": "Rendering 3D surfaces has been revolutionized within the modeling of radiance fields through either 3DGS or NeRF. Although 3DGS has shown advantages over NeRF in terms of rendering quality or speed, there is still room for improvement in recovering high fidelity surfaces through 3DGS. To resolve this issue, we propose a self-constrained prior to constraining the movement of 3D Gaussians, aiming for more accurate depth rendering. Our self-constrained prior is a TSDF grid fused by the rendered depth during the learning of 3D Gaussians. The prior measures a band on both sides of the estimated surface for imposing more specific constraints on the right 3D Gaussians, such as removing 3D Gaussians outside the band, encouraging larger opacity for Gaussians near the center of the band or smaller opacity for Gaussians near the boundary of the band. We regularly update the prior by fusing more recent depth images which are usually more accurate, and progressively narrow the band to tighten the constraint on Gaussian movements. We justify our idea and report our superiority over the state-of-the-art methods in evaluations on widely used benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "NeRF",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
         "Vision/Multimodal"
       ]
     },
@@ -46655,35 +46777,6 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2603.19682",
-      "title": "3D Gaussian Splatting with Self-Constrained Priors for High Fidelity Surface Reconstruction",
-      "authors": "Takeshi Noda, Yu-Shen Liu, Zhizhong Han",
-      "org": "",
-      "published": "CVPR 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2603.19682",
-      "source": "https://paperswithcode.co/paper/2603.19682",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2603.19682.jpg",
-      "firstSeenAt": "2026-06-20T00:19:02.193Z",
-      "summary": "Rendering 3D surfaces has been revolutionized within the modeling of radiance fields through either 3DGS or NeRF. Although 3DGS has shown advantages over NeRF in terms of rendering quality or speed, there is still room for improvement in recovering high fidelity surfaces through 3DGS. To resolve this issue, we propose a self-constrained prior to constraining the movement of 3D Gaussians, aiming for more accurate depth rendering. Our self-constrained prior is a TSDF grid fused by the rendered depth during the learning of 3D Gaussians. The prior measures a band on both sides of the estimated surface for imposing more specific constraints on the right 3D Gaussians, such as removing 3D Gaussians outside the band, encouraging larger opacity for Gaussians near the center of the band or smaller opacity for Gaussians near the boundary of the band. We regularly update the prior by fusing more recent depth images which are usually more accurate, and progressively narrow the band to tighten the constraint on Gaussian movements. We justify our idea and report our superiority over the state-of-the-art methods in evaluations on widely used benchmarks.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Gaussian splatting",
-        "NeRF",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
       ]
     },
     {
@@ -90619,32 +90712,6 @@
       ]
     },
     {
-      "id": "2607.01233",
-      "title": "Measuring the Gap Between Human and LLM Research Ideas",
-      "authors": "Ziyu Chen, Yilun Zhao, Arman Cohan",
-      "org": "",
-      "published": "2026-07-01",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.01233v1",
-      "source": "https://arxiv.org/abs/2607.01233v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.01233.jpg",
-      "firstSeenAt": "2026-07-03T00:18:27.939Z",
-      "summary": "LLMs are increasingly used to brainstorm research ideas, but existing evaluations mostly judge individual ideas by novelty, feasibility, or expert preference. We instead ask: how far are current LLM-generated ideas from human researchers? To characterize this gap, we build a large-scale evaluation framework for ideation from high-quality human research papers. For each paper, we reverse-engineer a small set of closely related prior works that likely inspired its core idea. LLMs are then prompted to generate a new idea from the set of paper titles and summaries. We introduce a two-axis research-taste taxonomy to profile each idea by its opportunity pattern and research paradigm, and use it to quantify the divergence between human and LLM ideas. Across idea sets generated by different LLMs, we observe a consistent distributional gap: LLM ideas are disproportionately concentrated around bridge-like opportunities and synthesis methods, whereas the human paper reference distribution spreads more broadly across ways of framing gaps and constructing contributions. This result suggests that strong LLMs can produce a range of reasonable ideas, but that range remains narrower than, and systematically shifted relative to, human research taste.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2606.28116",
       "title": "Mechanism-Driven Monitors for Preemptive Detection of LLM Training Instability",
       "authors": "Ruixuan Huang, Yipei Wang, Wenyi Fang, Hantao Huang, Yifan Huang, Ansheng You, Zhenxing Zhang, Shuai Wang, Fan Wu, Yang Zheng",
@@ -95431,34 +95498,6 @@
       ]
     },
     {
-      "id": "2607.02515",
-      "title": "PointDiT: Pixel-Space Diffusion for Monocular Geometry Estimation",
-      "authors": "Haofei Xu, Rundi Wu, Philipp Henzler, Nikolai Kalischek, Michael Oechsle, Fabian Manhardt, Marc Pollefeys, Andreas Geiger, Federico Tombari, Michael Niemeyer",
-      "org": "",
-      "published": "2026-07-02",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.02515v1",
-      "source": "https://arxiv.org/abs/2607.02515v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.02515.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "State-of-the-art single-image 3D reconstruction methods often rely on complex hybrid architectures and loss functions, or compress geometry into latent spaces in order to leverage pre-trained latent diffusion models. In this work, we show that such architectural overhead and intricate loss formulations are unnecessary. We introduce a minimalist pixel-space Diffusion Transformer, built on a plain ViT, that operates directly on raw 3D point map patches and is conditioned on image tokens from a pre-trained DINOv3. Unlike existing latent diffusion approaches, we train our diffusion backbone entirely from scratch, eliminating the need for point map tokenizers. Despite its simplicity, our approach surpasses complex latent-based diffusion models while remaining significantly simpler than hybrid alternatives. Notably, it produces sharper geometric structure and is more robust in highly ambiguous regions, such as transparent objects.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2606.32036",
       "title": "PointSplat: Compact Gaussian Splatting via Human-Centric Prediction",
       "authors": "Yujie Guo, Yudong Jin, Lingteng Qiu, Zehong Shen, Zhen Xu, Jing Zhang, Xianchao Shen, Hujun Bao, Sida Peng, Xiaowei Zhou",
@@ -96664,34 +96703,6 @@
       "thumbnail": "./thumbs/2606.25519.jpg",
       "firstSeenAt": "2026-06-25T01:36:06.247Z",
       "summary": "Quantization is widely used to reduce the inference cost of large language models, but its effect on reasoning models is not fully captured by final-answer accuracy or per-token latency. We show that low-bit post-training quantization can introduce a hidden test-time compute cost: quantized reasoning models often generate longer chains of thought even when they still answer correctly. Across mathematical reasoning, code generation, scientific question answering, and agentic tool-use benchmarks, we find that INT4/INT3 quantization can preserve accuracy but increase reasoning-token usage, offsetting the expected per-token speedup. To measure this effect, we introduce the CoT Token Inflation Ratio, which compares reasoning length between quantized and full-precision models averaged across all evaluation benchmarks. We further show that token inflation is accompanied by behavioral changes in the reasoning trace, including more intermediate steps and greater semantic repetition. These changes translate into measurable end-to-end real-world serving penalties. Finally, we evaluate mitigation strategies and find that prompting and decoding-time sampling offer inconsistent accuracy-length trade-offs, while quantization-aware training shows more promise in reducing both accuracy degradation and token inflation. Our results suggest that reasoning-token usage should be reported alongside accuracy when evaluating quantized reasoning models.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "serving"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Serving"
-      ]
-    },
-    {
-      "id": "2607.01179",
-      "title": "QuasiMoTTo: Quasi-Monte Carlo Test-Time Scaling",
-      "authors": "Michael Y. Li, Anthony Zhan, Kanishk Gandhi, Noah D. Goodman, Emily B. Fox",
-      "org": "",
-      "published": "2026-07-01",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.01179v1",
-      "source": "https://arxiv.org/abs/2607.01179v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.01179.jpg",
-      "firstSeenAt": "2026-07-03T00:18:27.939Z",
-      "summary": "Scaling inference compute, by generating many parallel attempts per problem, is a costly but reliable lever for improving language model capabilities. By default these attempts are generated independently, wasting inference compute on redundant solutions. This waste seems unavoidable. After all, independence is what makes parallel sampling trivial to scale. However, this tradeoff is not fundamental: there is a rich design space of samplers that generate correlated but exact samples entirely in parallel. We explore this design space as an avenue for improving sample efficiency in scaling inference compute and reinforcement learning (RL). Concretely, we introduce QuasiMoTTo, which uses correlated samples as a drop-in replacement for i.i.d. samples. To generate these samples, QuasiMoTTo uses a reparameterization of autoregressive sampling as inverse-CDF sampling and draws the underlying uniforms with quasi-Monte Carlo (QMC); because QMC spreads the uniforms out more evenly than i.i.d., the resulting samples cover the output space with far less redundancy. Even though the batch is correlated, each sample is marginally distributed according to the language model, so we can use the batch for policy-gradient training. Our empirical analysis focuses on understanding how efficiently QuasiMoTTo can turn compute into performance. To evaluate correlated samplers, whose dependence breaks standard pass@k estimators, we first develop an unbiased bootstrap estimator. Across four reasoning benchmarks, QuasiMoTTo matches i.i.d. pass@k accuracy with 25-47% fewer samples. Strikingly, QuasiMoTTo often saturates an upper bound on pass@k that holds for any marginal-preserving sampler. We also apply QuasiMoTTo to policy-gradient RL (GRPO) where it matches i.i.d. performance with 50% fewer training steps. These gains come from higher coverage, which yields a stronger learning signal per batch.",
       "matchedBy": [
         "arxiv",
         "language modeling",
