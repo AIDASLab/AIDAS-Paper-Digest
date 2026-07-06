@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T00:15:37.130Z",
+  "generatedAt": "2026-07-06T01:20:16.462Z",
   "sourceStats": {
     "seed": 3819,
     "paperswithcode": 540,
@@ -28808,6 +28808,38 @@
       ]
     },
     {
+      "id": "2603.01063",
+      "title": "Unleashing VLA Potentials in Autonomous Driving via Explicit Learning from Failures",
+      "authors": "Yuechen Luo, Fang Li, Qimao Chen, Shaoqing Xu, Jiaxin Liu, Ziying Song, Zhi-xin Yang, Fuxi Wen",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2603.01063",
+      "source": "https://paperswithcode.co/paper/2603.01063",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.01063.jpg",
+      "firstSeenAt": "2026-06-23T01:33:39.075Z",
+      "summary": "Vision-Language-Action (VLA) models for autonomous driving often hit a performance plateau during Reinforcement Learning (RL) optimization. This stagnation arises from exploration capabilities constrained by previous Supervised Fine-Tuning (SFT), leading to \"persistent failures\" in long-tail scenarios. In these critical situations, all explored actions yield a zero-value driving score. This information-sparse reward signals a failure, yet fails to identify its root cause--whether it is due to incorrect planning, flawed reasoning, or poor trajectory execution. To address this limitation, we propose **VLA** with **E**xplicit **L**earning from **F**ailures (**ELF-VLA**), a framework that augments RL with structured diagnostic feedback. Instead of relying on a vague scalar reward, our method produces detailed, interpretable reports that identify the specific failure mode. The VLA policy then leverages this explicit feedback to generate a **Feedback-Guided Refinement**. By injecting these corrected, high-reward samples back into the RL training batch, our approach provides a targeted gradient, which enables the policy to solve critical scenarios that unguided exploration cannot. Extensive experiments demonstrate that our method unlocks the latent capabilities of VLA models, achieving state-of-the-art (SOTA) performance on the public Navsim benchmark for overall PDMS, EPDMS score and high-level planning accuracy.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Robotics",
+        "Fine-tuning",
+        "GRPO",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2411.10446",
       "title": "VeriGraph: Scene Graphs for Execution Verifiable Robot Planning",
       "authors": "Ekpo, Daniel, Levy, Mara, Suri, Saksham, Huynh, Chuong, Swaminathan, Archana, Shrivastava, Abhinav",
@@ -34193,38 +34225,6 @@
       ],
       "category": "Robotics",
       "categories": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2603.01063",
-      "title": "Unleashing VLA Potentials in Autonomous Driving via Explicit Learning from Failures",
-      "authors": "Yuechen Luo, Fang Li, Qimao Chen, Shaoqing Xu, Jiaxin Liu, Ziying Song, Zhi-xin Yang, Fuxi Wen",
-      "org": "",
-      "published": "CVPR 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2603.01063",
-      "source": "https://paperswithcode.co/paper/2603.01063",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2603.01063.jpg",
-      "firstSeenAt": "2026-06-23T01:33:39.075Z",
-      "summary": "Vision-Language-Action (VLA) models for autonomous driving often hit a performance plateau during Reinforcement Learning (RL) optimization. This stagnation arises from exploration capabilities constrained by previous Supervised Fine-Tuning (SFT), leading to \"persistent failures\" in long-tail scenarios. In these critical situations, all explored actions yield a zero-value driving score. This information-sparse reward signals a failure, yet fails to identify its root cause--whether it is due to incorrect planning, flawed reasoning, or poor trajectory execution. To address this limitation, we propose **VLA** with **E**xplicit **L**earning from **F**ailures (**ELF-VLA**), a framework that augments RL with structured diagnostic feedback. Instead of relying on a vague scalar reward, our method produces detailed, interpretable reports that identify the specific failure mode. The VLA policy then leverages this explicit feedback to generate a **Feedback-Guided Refinement**. By injecting these corrected, high-reward samples back into the RL training batch, our approach provides a targeted gradient, which enables the policy to solve critical scenarios that unguided exploration cannot. Extensive experiments demonstrate that our method unlocks the latent capabilities of VLA models, achieving state-of-the-art (SOTA) performance on the public Navsim benchmark for overall PDMS, EPDMS score and high-level planning accuracy.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "Robotics",
-        "Fine-tuning",
-        "GRPO",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
         "Robotics"
       ]
     },
