@@ -1,6 +1,208 @@
 {
-  "generatedAt": "2026-07-06T01:26:47.853Z",
+  "generatedAt": "2026-07-07T00:27:55.624Z",
   "signals": [
+    {
+      "id": "2074276775673160066",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "Peer review is part of what makes ICML possible.\nThis year, at least 8 Ai2ers are contributing as area chairs or technical reviewers, including ICML-recognized Gold and Silver reviewers.",
+      "createdAt": "Mon Jul 06 23:38:16 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2074276775673160066",
+      "media": [],
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0
+      },
+      "urls": []
+    },
+    {
+      "id": "2074264122330612223",
+      "handle": "omarsar0",
+      "name": "elvis",
+      "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_normal.jpg",
+      "verified": true,
+      "text": "Must-read research by Anthropic.\nHere is the simple explanation and why this is a big deal.\nWe suspect LLMs perform \"internal reasoning\". But little is known or do good methods exist to understand it.\nAnthropic claims that J-Space (which differs from chain-of-thought or",
+      "createdAt": "Mon Jul 06 22:47:59 +0000 2026",
+      "permalink": "https://twitter.com/omarsar0/status/2074264122330612223",
+      "media": [],
+      "metrics": {
+        "like_count": 59,
+        "retweet_count": 11,
+        "reply_count": 4
+      },
+      "urls": []
+    },
+    {
+      "id": "2074234883103162408",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "We're at #ICML2026 with papers &amp; talks across the conference. Come say hello and learn about our latest research!",
+      "createdAt": "Mon Jul 06 20:51:48 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2074234883103162408",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HMkpoOnWwAA4AWi.jpg"
+        },
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HMkpoN9XwAEvJY-.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 9,
+        "retweet_count": 1,
+        "reply_count": 1
+      },
+      "urls": []
+    },
+    {
+      "id": "2074185390060110138",
+      "handle": "AnthropicAI",
+      "name": "Anthropic",
+      "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+      "verified": true,
+      "text": "We also partnered with Neuronpedia to create an interactive demo of our methods on open-weights models.\nTry it here: neuronpedia.org/jlens",
+      "createdAt": "Mon Jul 06 17:35:08 +0000 2026",
+      "permalink": "https://twitter.com/AnthropicAI/status/2074185390060110138",
+      "media": [],
+      "metrics": {
+        "like_count": 625,
+        "retweet_count": 37,
+        "reply_count": 23
+      },
+      "urls": [
+        "http://neuronpedia.org/jlens"
+      ]
+    },
+    {
+      "id": "2074185387577094398",
+      "handle": "AnthropicAI",
+      "name": "Anthropic",
+      "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+      "verified": true,
+      "text": "The J-space lets us read, audit, and shape what Claude is actively thinking about—useful tools for keeping models trustworthy as they grow more capable. And it suggests surprising parallels between language models and our own minds.\nRead the full paper: transformer-circuits.pub/2026/workspace…",
+      "createdAt": "Mon Jul 06 17:35:07 +0000 2026",
+      "permalink": "https://twitter.com/AnthropicAI/status/2074185387577094398",
+      "media": [],
+      "metrics": {
+        "like_count": 491,
+        "retweet_count": 31,
+        "reply_count": 12
+      },
+      "urls": [
+        "http://transformer-circuits.pub/2026/workspace/index.html"
+      ]
+    },
+    {
+      "id": "2074185384792109380",
+      "handle": "AnthropicAI",
+      "name": "Anthropic",
+      "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+      "verified": true,
+      "text": "We invited experts in neuroscience, philosophy, and interpretability to share their perspectives on our work.\nRead their commentary here: www-cdn.anthropic.com/files/4zrzovbb…",
+      "createdAt": "Mon Jul 06 17:35:06 +0000 2026",
+      "permalink": "https://twitter.com/AnthropicAI/status/2074185384792109380",
+      "media": [],
+      "metrics": {
+        "like_count": 456,
+        "retweet_count": 25,
+        "reply_count": 8
+      },
+      "urls": [
+        "https://www-cdn.anthropic.com/files/4zrzovbb/website/cc4be2488d65e54a6ed06492f8968398ddc18ebe.pdf"
+      ]
+    },
+    {
+      "id": "2074161438432915880",
+      "handle": "TheHumanoidHub",
+      "name": "The Humanoid Hub",
+      "avatar": "https://pbs.twimg.com/profile_images/1682127970251718656/9j1n6iKy_normal.jpg",
+      "verified": true,
+      "text": "We went to Wuji's Shenzhen office to get a grip on their dexterous hand design. Each finger joint is driven directly by a tiny motor paired with a worm gear that redirects the axis of rotation.\nWe spoke with a senior team member there to get more insights. @dolylupec @XRoboHub",
+      "createdAt": "Mon Jul 06 15:59:57 +0000 2026",
+      "permalink": "https://twitter.com/TheHumanoidHub/status/2074161438432915880",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2074157154681151488/img/ebWta0dlay6KOE8s.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 51,
+        "retweet_count": 8,
+        "reply_count": 2
+      },
+      "urls": []
+    },
+    {
+      "id": "2074157282477154597",
+      "handle": "GoogleDeepMind",
+      "name": "Google DeepMind",
+      "avatar": "https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg",
+      "verified": false,
+      "text": "As @Apptronik expands their Robot Park facility, our research partnership means real-world data collected by the latest Apollo 2 humanoid platform will help train and advance Gemini Robotics. 🤖\nFind out more → goo.gle/4vOPwpO",
+      "createdAt": "Mon Jul 06 15:43:26 +0000 2026",
+      "permalink": "https://twitter.com/GoogleDeepMind/status/2074157282477154597",
+      "media": [
+        {
+          "type": "animated_gif",
+          "image": "https://pbs.twimg.com/tweet_video_thumb/HMji9aeW0AAfKJi.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 456,
+        "retweet_count": 68,
+        "reply_count": 56
+      },
+      "urls": [
+        "https://goo.gle/4vOPwpO"
+      ]
+    },
+    {
+      "id": "2074142834903707948",
+      "handle": "RLWRLD_ai",
+      "name": "RLWRLD",
+      "avatar": "https://pbs.twimg.com/profile_images/1986301746256486403/QC-YDYLD_normal.jpg",
+      "verified": false,
+      "text": "RLWRLD is at #ICML2026 in Seoul 🇰🇷 and 3 of our papers are on the floor this week. Drop by the posters and say hi to the authors 👇🏻\nVaLR: Vision-aligned Latent Reasoning for Multi-modal Large Language Model — Byungwoo Jeon et al.\n: Vision-aligned latent tokens injected before",
+      "createdAt": "Mon Jul 06 14:46:02 +0000 2026",
+      "permalink": "https://twitter.com/RLWRLD_ai/status/2074142834903707948",
+      "media": [],
+      "metrics": {
+        "like_count": 4,
+        "retweet_count": 1,
+        "reply_count": 0
+      },
+      "urls": []
+    },
+    {
+      "id": "2073976629659898364",
+      "handle": "minchoi",
+      "name": "Min Choi",
+      "avatar": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+      "verified": true,
+      "text": "AI is getting ridiculous...\nA 20-year-old student in China reportedly built an AI speed radar with Claude.\n9 days. Old camera. $20 in API calls.\nThen allegedly sold it to a city district for $317K.",
+      "createdAt": "Mon Jul 06 03:45:35 +0000 2026",
+      "permalink": "https://twitter.com/minchoi/status/2073976629659898364",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2073975536955621376/img/_QzV4oQBDuXNtfBq.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 3807,
+        "retweet_count": 211,
+        "reply_count": 250
+      },
+      "urls": []
+    },
     {
       "id": "2073850909684293780",
       "handle": "omarsar0",
@@ -78,9 +280,9 @@
         }
       ],
       "metrics": {
-        "like_count": 381605,
-        "retweet_count": 31095,
-        "reply_count": 20076
+        "like_count": 396526,
+        "retweet_count": 32781,
+        "reply_count": 22007
       },
       "urls": []
     },
@@ -195,7 +397,7 @@
         }
       ],
       "metrics": {
-        "like_count": 205,
+        "like_count": 208,
         "retweet_count": 29,
         "reply_count": 22
       },
@@ -289,9 +491,9 @@
       "permalink": "https://twitter.com/OpenAI/status/2072004836674167294",
       "media": [],
       "metrics": {
-        "like_count": 4464,
-        "retweet_count": 406,
-        "reply_count": 344
+        "like_count": 4483,
+        "retweet_count": 409,
+        "reply_count": 355
       },
       "urls": [
         "https://openai.com/index/introducing-genebench-pro/"
@@ -612,9 +814,9 @@
       "permalink": "https://twitter.com/OpenAI/status/2070555280052826429",
       "media": [],
       "metrics": {
-        "like_count": 2890,
+        "like_count": 2895,
         "retweet_count": 99,
-        "reply_count": 100
+        "reply_count": 101
       },
       "urls": []
     },
@@ -634,7 +836,7 @@
         }
       ],
       "metrics": {
-        "like_count": 3342,
+        "like_count": 3353,
         "retweet_count": 212,
         "reply_count": 104
       },
@@ -1035,7 +1237,7 @@
         }
       ],
       "metrics": {
-        "like_count": 292,
+        "like_count": 293,
         "retweet_count": 34,
         "reply_count": 21
       },
@@ -1057,7 +1259,7 @@
         }
       ],
       "metrics": {
-        "like_count": 100,
+        "like_count": 101,
         "retweet_count": 6,
         "reply_count": 4
       },
@@ -1285,9 +1487,9 @@
       "permalink": "https://twitter.com/hardmaru/status/2068884466056225025",
       "media": [],
       "metrics": {
-        "like_count": 2646,
-        "retweet_count": 341,
-        "reply_count": 180
+        "like_count": 2651,
+        "retweet_count": 342,
+        "reply_count": 181
       },
       "urls": []
     },
@@ -2090,30 +2292,6 @@
         "reply_count": 3
       },
       "urls": []
-    },
-    {
-      "id": "2063315568502165844",
-      "handle": "TheHumanoidHub",
-      "name": "The Humanoid Hub",
-      "avatar": "https://pbs.twimg.com/profile_images/1682127970251718656/9j1n6iKy_normal.jpg",
-      "verified": true,
-      "text": "Another quietly loaded week in humanoids\nthehumanoidhub.com/articles/newsl…",
-      "createdAt": "Sat Jun 06 17:42:20 +0000 2026",
-      "permalink": "https://twitter.com/TheHumanoidHub/status/2063315568502165844",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HKJdwr-bwAA8pOP.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 84,
-        "retweet_count": 5,
-        "reply_count": 8
-      },
-      "urls": [
-        "https://thehumanoidhub.com/articles/newsletter-0007"
-      ]
     }
   ]
 }
