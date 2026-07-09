@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-09T00:20:08.850Z",
+  "generatedAt": "2026-07-09T01:13:17.210Z",
   "sourceStats": {
-    "seed": 4304,
+    "seed": 4401,
     "paperswithcode": 540,
     "arxiv": 175,
-    "huggingface": 39,
+    "huggingface": 41,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 4401
+    "total": 4403
   },
   "papers": [
     {
@@ -3046,6 +3046,39 @@
       ]
     },
     {
+      "id": "2505.23705",
+      "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
+      "authors": "Danny Driess, Jost Springenberg, Brian Ichter, LILI YU, Adrian Li-Bell, Karl Pertsch, Allen Ren, Homer Walke, Quan Vuong, Lucy Xiaoyang Shi, Sergey Levine",
+      "org": "",
+      "published": "NeurIPS 2025 Spotlight",
+      "score": 88,
+      "paper": "https://arxiv.org/abs/2505.23705",
+      "source": "https://paperswithcode.co/paper/2505.23705",
+      "code": "",
+      "project": "https://how-to-vla",
+      "thumbnail": "./thumbs/2505.23705.jpg",
+      "firstSeenAt": "",
+      "summary": "Vision-language-action (VLA) models provide a powerful approach to training control policies for physical systems, such as robots, by combining end-to-end learning with transfer of semantic knowledge from web-scale vision-language model (VLM) training. However, the constraints of real-time control are often at odds with the design of VLMs: the most powerful VLMs have tens or hundreds of billions of parameters, presenting an obstacle to real-time inference, and operate on discrete tokens rather than the continuous-valued outputs that are required for controlling robots. To address this challenge, recent VLA models have used specialized modules for efficient continuous control, such as action experts or continuous output heads, which typically require adding new untrained parameters to the pretrained VLM backbone. While these modules improve real-time and control capabilities, it remains an open question whether they preserve or degrade the semantic knowledge contained in the pretrained VLM, and what effect they have on the VLA training dynamics. In this paper, we study this question in the context of VLAs that include a continuous diffusion or flow matching action expert, showing that naively including such experts significantly harms both training speed and knowledge transfer. We provide an extensive analysis of various design choices, their impact on performance and knowledge transfer, and propose a technique for insulating the VLM backbone during VLA training that mitigates this issue. Videos are available at https://how-to-vla.github.io/ (anonymous website).",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Robotics",
+        "serving",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2606.27295",
       "title": "LA4VLA: Learning to Act without Seeing via Language-Action Pretraining",
       "authors": "Tao Lin, Yuxin Du, Yiran Mao, Zewei Ye, Yilei Zhong, Bing Cheng, Yiming Wang, Jiting Liu, Yang Tian, Junchi Yan, Feiran Wu, Zenan Meng, Hu Wei, Yuqian Fu, Gen Li, Bo Zhao",
@@ -3437,39 +3470,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2505.23705",
-      "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
-      "authors": "Danny Driess, Jost Springenberg, Brian Ichter, LILI YU, Adrian Li-Bell, Karl Pertsch, Allen Ren, Homer Walke, Quan Vuong, Lucy Xiaoyang Shi, Sergey Levine",
-      "org": "",
-      "published": "NeurIPS 2025 Spotlight",
-      "score": 87,
-      "paper": "https://arxiv.org/abs/2505.23705",
-      "source": "https://paperswithcode.co/paper/2505.23705",
-      "code": "",
-      "project": "https://how-to-vla",
-      "thumbnail": "./thumbs/2505.23705.jpg",
-      "firstSeenAt": "",
-      "summary": "Vision-language-action (VLA) models provide a powerful approach to training control policies for physical systems, such as robots, by combining end-to-end learning with transfer of semantic knowledge from web-scale vision-language model (VLM) training. However, the constraints of real-time control are often at odds with the design of VLMs: the most powerful VLMs have tens or hundreds of billions of parameters, presenting an obstacle to real-time inference, and operate on discrete tokens rather than the continuous-valued outputs that are required for controlling robots. To address this challenge, recent VLA models have used specialized modules for efficient continuous control, such as action experts or continuous output heads, which typically require adding new untrained parameters to the pretrained VLM backbone. While these modules improve real-time and control capabilities, it remains an open question whether they preserve or degrade the semantic knowledge contained in the pretrained VLM, and what effect they have on the VLA training dynamics. In this paper, we study this question in the context of VLAs that include a continuous diffusion or flow matching action expert, showing that naively including such experts significantly harms both training speed and knowledge transfer. We provide an extensive analysis of various design choices, their impact on performance and knowledge transfer, and propose a technique for insulating the VLM backbone during VLA training that mitigates this issue. Videos are available at https://how-to-vla.github.io/ (anonymous website).",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "Robotics",
-        "serving",
-        "vision/multimodal",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics",
-        "Frontier Training"
       ]
     },
     {
@@ -6194,7 +6194,7 @@
       "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
       "authors": "Shiyuan Feng, Huan-ang Gao, Haohan Chi, Hanlin Wu, Zhilong Zhang, Zheng Jiang, Bingxiang He, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou",
       "org": "",
-      "published": "2026-07-06",
+      "published": "2026-07-08",
       "score": 79,
       "paper": "https://arxiv.org/abs/2607.05394",
       "source": "https://www.alphaxiv.org/abs/2607.05394",
@@ -9207,6 +9207,34 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2606.32020",
+      "title": "Cross-Space Distillation: Teaching One-Step Students with Modern Diffusion Teachers",
+      "authors": "Anh Nguyen, Ngan Nguyen, Duc Vu, Trung Dao, Viet Nguyen, Quan Dao, Kien Nguyen, Chi Tran, Phong Nguyen, Khoi Nguyen, Cuong Pham, Dimitris Metaxas, Vishal M. Patel, Anh Tran",
+      "org": "",
+      "published": "2026-06-30",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2606.32020",
+      "source": "https://huggingface.co/papers/2606.32020",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.32020.jpg",
+      "firstSeenAt": "2026-07-09T01:13:17.210Z",
+      "summary": "Modern one-step diffusion models achieve impressive quality through distribution-based timestep distillation. Yet, they rely on a critical assumption: Teacher and Student must inhabit the same latent space. This Shared-Space constraint prevents knowledge transfer from modern high-capacity Teachers (e.g., SD 3.5 and Flux) into compact, deployment-friendly Students such as SD 1.5, whose latent resolution and VAE parameterization differ from the Teacher. We formalize this overlooked regime as Cross-Space Distillation, where Teacher and Student differ in both latent resolution and VAE space. To enable distillation under this mismatch, we introduce the Bridge, a lightweight latent interface that maps Student latents into the Teacher space without modifying the Student backbone. Bridge combines a frozen Student VAE decoder as a spatial prior with a compact learnable projector, and is trained with latent reconstruction and attention fidelity objectives for stable Teacher-space alignment. Across diverse modern Teachers, Bridge enables substantial gains for compact one-step Students; for example, it improves SD 1.5 from 5.4 to 9.4 HPSv3 while preserving one-step inference, low latency, and broad ecosystem compatibility. These results show that heterogeneous large Teachers can be distilled into efficient, deployable backbones through a lightweight latent-space interface.",
+      "matchedBy": [
+        "hugging face daily",
+        "language modeling",
+        "serving"
+      ],
+      "sources": [
+        "huggingface"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
         "Language Modeling"
       ]
     },
@@ -12661,6 +12689,37 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2606.28070",
+      "title": "JD Oxygen AI Item Center (Oxygen AIIC) V1: An Industrial-Scale LLM/VLM-Centric Solution for Item Understanding, Management, and Applications",
+      "authors": "Oxygen AIIC, Chan Long, Chao Liu, Chaofan Chen, Chaohui Dong, Chunyuan Guo, Danping Liu, Debin Liu, Deping Xiang, Fulai Xu, Guangyue Liu, Hao Li, Huichun Hu, Jian Yang, Jianan Wang, Jianbo Zhao, Jiaoyang Li, Jiaxing Wang, Jinglong Li, Jinjin Guo, Jun Fang, Jun Liu, Kai Zhou, Li Wang, Lili Gao, Liying Chen, Luning Yang, Mengdi Zhou, Pengzhang Liu, Qi Lv, Qianyun Wang, Qixia Jiang, Ruyue Li, Shimu Liang, Shuxing Wang, Sijie Zhang, Siqi Li, Tianhao Gao, Wang Ke, Weihu Huang, Wencan Lai, Wenjie Zhang, Xiaohui Zhang, Xiaojing Dong, Ya Liu, Yifeng Zhang, Yixiang Wang, Yongtai Zhang, Yongyi Liao, Zhaoru Chen, Zhen Chen, Zhiyong Ma, Zhiyuan Liu, Zhongwei Liu, Ziyan Xing",
+      "org": "",
+      "published": "2026-06-26",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2606.28070",
+      "source": "https://huggingface.co/papers/2606.28070",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.28070.jpg",
+      "firstSeenAt": "2026-07-09T01:13:17.210Z",
+      "summary": "JD$.$com, one of the world's largest e-commerce platforms, serves over 700 million active users and millions of merchants, with a catalog of tens of billions of SKUs. At this scale, high-quality, structured item knowledge underpins a better consumer experience, lower management costs, and higher operational efficiency-yet producing and serving it poses three industrial-scale challenges: fast-emerging concepts, high-quality knowledge production for massive SKUs, and diverse downstream requirements. To address these challenges, we present the JD Oxygen AI Item Center (Oxygen AIIC), an industrial-scale platform built on LLMs/VLMs for item-knowledge production and service. Oxygen AIIC is built around four core pillars: (i) ontology engineering driven by efficient human-AI collaboration, which supports the dynamic evolution and agile expansion of an ontology with millions of entries; (ii) a \"Semantic Search then Discrimination\"(S2D) knowledge identification architecture that, combined with throughput improvement strategies, enables scalable, extensible, and high-throughput AI Item Library production for tens of billions of SKUs; (iii) self-evolving item-understanding LLMs/VLMs that improve in a stable and controllable manner, enabling knowledge production with 94.2% precision and 82.8% recall; and (iv) a unified item tunnel that serves as the data and service hub. Oxygen AIIC now covers tens of thousands of JD categories and processes hundreds of millions of item updates per day on Huawei Ascend NPUs. It has accumulated hundreds of billions of item-knowledge assets. Deployed across core business scenarios-including search, recommendation, operations, category planning-Oxygen AIIC has delivered measurable gains at scale. Search-traffic coverage reaches 80.4%, item-information quality issues drop by 37%, the automated fill rate of core attributes during item listing exceeds 80%.",
+      "matchedBy": [
+        "hugging face daily",
+        "frontier training",
+        "vision/multimodal",
+        "serving",
+        "data / retrieval"
+      ],
+      "sources": [
+        "huggingface"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Serving",
+        "Data / Retrieval"
       ]
     },
     {
@@ -25847,6 +25906,36 @@
       ]
     },
     {
+      "id": "2505.17863",
+      "title": "The emergence of sparse attention: impact of data distribution and benefits of repetition",
+      "authors": "Nicolas Zucchet, Francesco D&#x27;Angelo, Andrew Lampinen, Stephanie Chan",
+      "org": "",
+      "published": "NeurIPS 2025 Oral",
+      "score": 66,
+      "paper": "https://arxiv.org/abs/2505.17863",
+      "source": "https://paperswithcode.co/paper/2505.17863",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.17863.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Emergence is a fascinating property of large language models and neural networks more broadly: as models scale and train for longer, they sometimes develop new abilities in sudden ways. Despite initial studies, we still lack a comprehensive understanding of how and when these abilities emerge. To address this gap, we study the emergence over training of sparse attention, a critical and frequently observed attention pattern in Transformers. By combining theoretical analysis of a toy model with empirical observations on small Transformers trained on a linear regression variant, we uncover the mechanics driving sparse attention emergence and reveal that emergence timing follows power laws based on task structure, architecture, and optimizer choice. We additionally find that repetition can greatly speed up emergence. Finally, we confirm these results on a well-studied in-context associative recall task. Our findings provide a simple, theoretically grounded framework for understanding how data distributions and model design influence the learning dynamics behind one form of emergence.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "frontier training",
+        "language modeling",
+        "Few-shot prompting"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2503.14853",
       "title": "Unlocking the Capabilities of Large Vision-Language Models for Generalizable and Explainable Deepfake Detection",
       "authors": "Peipeng Yu, Jianwei Fei, Hui Gao, Xuan Feng, Zhihua Xia, Chip Hong Chang",
@@ -27229,36 +27318,6 @@
         "Layer Normalization",
         "frontier training",
         "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2505.17863",
-      "title": "The emergence of sparse attention: impact of data distribution and benefits of repetition",
-      "authors": "Nicolas Zucchet, Francesco D&#x27;Angelo, Andrew Lampinen, Stephanie Chan",
-      "org": "",
-      "published": "NeurIPS 2025 Oral",
-      "score": 65,
-      "paper": "https://arxiv.org/abs/2505.17863",
-      "source": "https://paperswithcode.co/paper/2505.17863",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.17863.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Emergence is a fascinating property of large language models and neural networks more broadly: as models scale and train for longer, they sometimes develop new abilities in sudden ways. Despite initial studies, we still lack a comprehensive understanding of how and when these abilities emerge. To address this gap, we study the emergence over training of sparse attention, a critical and frequently observed attention pattern in Transformers. By combining theoretical analysis of a toy model with empirical observations on small Transformers trained on a linear regression variant, we uncover the mechanics driving sparse attention emergence and reveal that emergence timing follows power laws based on task structure, architecture, and optimizer choice. We additionally find that repetition can greatly speed up emergence. Finally, we confirm these results on a well-studied in-context associative recall task. Our findings provide a simple, theoretically grounded framework for understanding how data distributions and model design influence the learning dynamics behind one form of emergence.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "frontier training",
-        "language modeling",
-        "Few-shot prompting"
       ],
       "sources": [
         "paperswithcode"
@@ -30051,6 +30110,38 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2412.12722",
+      "title": "Defending LVLMs Against Vision Attacks Through Partial-Perception Supervision",
+      "authors": "Qi Zhou, Dongxia Wang, Tianlin Li, Yun Lin, Yang Liu, Jin Song Dong, Qing Guo",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2412.12722",
+      "source": "https://paperswithcode.co/paper/2412.12722",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.12722.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Recent studies have raised significant concerns regarding the vulnerability of Large Vision Language Models (LVLMs) to maliciously injected or perturbed input images, which can mislead their responses. Existing defense methods show that such vision attacks are sensitive to image modifications especially cropping, using majority voting across responses of modified images as corrected responses. However, these modifications often result in partial images and distort the semantics, which reduces response quality on clean images after voting. Instead of directly using responses from partial images for voting, we investigate using them to supervise (guide) the LVLM's responses to the original images at inference time. We propose a black-box, training-free method called **DPS (Defense through Partial-Perception Supervision)**. In this approach, the model is prompted using the responses generated by a model that perceives only a partial image. With DPS, the model can adjust its response based on partial image understanding when under attack, while confidently maintaining its original response for clean input. Empirical experiments show our method outperforms the baseline, cutting the average attack success rate by 76.3\\% across six datasets on three popular models.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Gemini 1.5",
+        "GPT-4",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -33595,38 +33686,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2412.12722",
-      "title": "Defending LVLMs Against Vision Attacks Through Partial-Perception Supervision",
-      "authors": "Qi Zhou, Dongxia Wang, Tianlin Li, Yun Lin, Yang Liu, Jin Song Dong, Qing Guo",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2412.12722",
-      "source": "https://paperswithcode.co/paper/2412.12722",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2412.12722.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Recent studies have raised significant concerns regarding the vulnerability of Large Vision Language Models (LVLMs) to maliciously injected or perturbed input images, which can mislead their responses. Existing defense methods show that such vision attacks are sensitive to image modifications especially cropping, using majority voting across responses of modified images as corrected responses. However, these modifications often result in partial images and distort the semantics, which reduces response quality on clean images after voting. Instead of directly using responses from partial images for voting, we investigate using them to supervise (guide) the LVLM's responses to the original images at inference time. We propose a black-box, training-free method called **DPS (Defense through Partial-Perception Supervision)**. In this approach, the model is prompted using the responses generated by a model that perceives only a partial image. With DPS, the model can adjust its response based on partial image understanding when under attack, while confidently maintaining its original response for clean input. Empirical experiments show our method outperforms the baseline, cutting the average attack success rate by 76.3\\% across six datasets on three popular models.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "Gemini 1.5",
-        "GPT-4",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
       ]
     },
     {
@@ -75880,7 +75939,10 @@
       "summary": "Various forms of sparse attention have been explored to mitigate the quadratic computational and memory cost of the attention mechanism in transformers. We study sparse transformers not through a lens of efficiency but rather in terms of learnability and generalization. Empirically studying a range of attention mechanisms, we find that input-dependent sparse attention models appear to converge faster and generalize better than standard attention models, while input-agnostic sparse attention models show no such benefits -- a phenomenon that is robust across architectural and optimization hyperparameter choices. This can be interpreted as demonstrating that concentrating a model's \"semantic focus\" with respect to the tokens currently being considered (in the form of input-dependent sparse attention) accelerates learning. We develop a theoretical characterization of the conditions that explain this behavior. We establish a connection between the stability of the standard softmax and the loss function's Lipschitz properties, then show how sparsity affects the stability of the softmax and the subsequent convergence and generalization guarantees resulting from the attention mechanism. This allows us to theoretically establish that input-agnostic sparse attention does not provide any benefits. We also characterize conditions when semantic focus (input-dependent sparse attention) can provide improved guarantees, and we validate that these conditions are in fact met in our empirical evaluations.",
       "matchedBy": [
         "papers with code",
-        "language modeling"
+        "language modeling",
+        "Softmax",
+        "Sparse attention",
+        "Transformer"
       ],
       "sources": [
         "paperswithcode"
