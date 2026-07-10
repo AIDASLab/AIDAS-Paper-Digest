@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-10T00:17:44.292Z",
+  "generatedAt": "2026-07-10T01:13:14.745Z",
   "sourceStats": {
-    "seed": 4403,
+    "seed": 4560,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 17,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 4560
+    "total": 4597
   },
   "papers": [
     {
@@ -25314,6 +25314,33 @@
       ]
     },
     {
+      "id": "2408.11809",
+      "title": "Informed, Constrained, Aligned: A Field Analysis on Degeneracy-Aware Point Cloud Registration in the Wild (I)",
+      "authors": "Tuna, Turcan, Nubert, Julian, Pfreundschuh, Patrick, Cadena, Cesar, Khattak, Shehryar, Hutter, Marco",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 67,
+      "paper": "https://arxiv.org/abs/2408.11809",
+      "source": "https://paperswithcode.co/paper/2408.11809",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2408.11809.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "The iterative closest point registration algorithm has been a preferred method for light detection and ranging LiDAR-based robot localization for nearly a decade. However, even in modern simultaneous localization and mapping (SLAM) solutions, ICP can degrade and become unreliable in geometrically ill-conditioned environments. In response, this work investigates and compares new and existing degeneracy mitigation methods for robust LiDAR-based localization and analyzes the efficacy of these approaches in degenerate environments for the first time in the literature at this scale. Specifically, this work investigates i) the effect of using active or passive degeneracy mitigation methods for the problem of ill-conditioned ICP in LiDAR degenerate environments and ii) the evaluation of truncated singular value decomposition (TSVD), inequality constraints (Ineq. Con.), and linear/nonlinear Tikhonov regularization for the application of degenerate point cloud registration for the first time. Furthermore, a sensitivity analysis for the least-squares minimization step of the ICP problem is carried out to better understand how each method affects the optimization and what to expect from each method. The results of the analysis are validated through multiple real-world robotic field and simulated experiments. The analysis demonstrates that active optimization degeneracy mitigation is necessary and advantageous in the absence of reliable external estimate assistance for LiDAR-SLAM.",
+      "matchedBy": [
+        "papers with code",
+        "SLAM",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2411.19235",
       "title": "InstanceGaussian: Appearance-Semantic Joint Gaussian Representation for 3D Instance-Level Perception",
       "authors": "Haijie Li, Yanmin Wu, Jiarui Meng, Qiankun Gao, Zhiyao Zhang, Ronggang Wang, Jian Zhang",
@@ -28624,6 +28651,38 @@
       ]
     },
     {
+      "id": "2506.23575",
+      "title": "Event-based Tiny Object Detection: A Benchmark Dataset and Baseline",
+      "authors": "Nuo Chen, Chao Xiao, Yimian Dai, Shiman He, Miao Li, Wei An",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2506.23575",
+      "source": "https://paperswithcode.co/paper/2506.23575",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.23575.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Small object detection (SOD) in anti-UAV task is a challenging problem due to the small size of UAVs and complex backgrounds. Traditional frame-based cameras struggle to detect small objects in complex environments due to their low frame rates, limited dynamic range, and data redundancy. Event cameras, with microsecond temporal resolution and high dynamic range, provide a more effective solution for SOD. However, existing event-based object detection datasets are limited in scale, feature large targets size, and lack diverse backgrounds, making them unsuitable for SOD benchmarks. In this paper, we introduce a Event-based Small object detection (EVSOD) dataset (namely EV-UAV), the first large-scale, highly diverse benchmark for anti-UAV tasks. It includes 147 sequences with over 2.3 million event-level annotations, featuring extremely small targets (averaging 6.8 x 5.4 pixels) and diverse scenarios such as urban clutter and extreme lighting conditions. Furthermore, based on the observation that small moving targets form continuous curves in spatiotemporal event point clouds, we propose Event based Sparse Segmentation Network (EV-SpSegNet), a novel baseline for event segmentation in point cloud space, along with a Spatiotemporal Correlation (STC) loss that leverages motion continuity to guide the network in retaining target events. Extensive experiments on the EV-UAV dataset demonstrate the superiority of our method and provide a benchmark for future research in EVSOD.",
+      "matchedBy": [
+        "papers with code",
+        "Object Detection",
+        "Deformable Attention",
+        "Faster R-CNN",
+        "RPN",
+        "vision/multimodal",
+        "benchmark"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Benchmark"
+      ]
+    },
+    {
       "id": "2506.08822",
       "title": "FreqPolicy: Efficient Flow-based Visuomotor Policy via Frequency Consistency",
       "authors": "Yifei Su, Ning Liu, Dong Chen, Zhen Zhao, Kun Wu, Meng Li, Zhiyuan Xu, Zhengping Che, Jian Tang",
@@ -28844,6 +28903,66 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2505.01938",
+      "title": "HybridGS: High-Efficiency Gaussian Splatting Data Compression using Dual-Channel Sparse Representation and Point Cloud Encoder",
+      "authors": "Qi Yang, Le Yang, Geert Van der Auwera, Zhu Li",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2505.01938",
+      "source": "https://paperswithcode.co/paper/2505.01938",
+      "code": "https://github.com/Qi-Yangsjtu/HybridGS",
+      "project": "",
+      "thumbnail": "./thumbs/2505.01938.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Most existing 3D Gaussian Splatting (3DGS) compression schemes focus on producing compact 3DGS representation via implicit data embedding. They have long encoding and decoding times and highly customized data format, making it difficult for widespread deployment. This paper presents a new 3DGS compression framework called HybridGS, which takes advantage of both compact generation and standardized point cloud data encoding. HybridGS first generates compact and explicit 3DGS data. A dual-channel sparse representation is introduced to supervise the primitive position and feature bit depth. It then utilizes a canonical point cloud encoder to carry out further data compression and form standard output bitstreams. A simple and effective rate control scheme is proposed to pivot the interpretable data compression scheme. HybridGS does not include any modules aimed at improving 3DGS quality during generation. But experiment results show that it still provides comparable reconstruction performance against state-of-the-art methods, with evidently faster encoding and decoding speed. The code is publicly available at https://github.com/Qi-Yangsjtu/HybridGS .",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Embedding",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving"
+      ]
+    },
+    {
+      "id": "2412.12849",
+      "title": "HyperGS: Hyperspectral 3D Gaussian Splatting",
+      "authors": "Christopher Thirgood, Oscar Mendez, Erin Ling, Jon Storey, Simon Hadfield",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2412.12849",
+      "source": "https://paperswithcode.co/paper/2412.12849",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.12849.jpg",
+      "firstSeenAt": "2026-06-25T00:21:13.185Z",
+      "summary": "We introduce HyperGS, a novel framework for Hyperspectral Novel View Synthesis (HNVS), based on a new latent 3D Gaussian Splatting (3DGS) technique. Our approach enables simultaneous spatial and spectral renderings by encoding material properties from multi-view 3D hyperspectral datasets. HyperGS reconstructs high-fidelity views from arbitrary perspectives with improved accuracy and speed, outperforming currently existing methods. To address the challenges of high-dimensional data, we perform view synthesis in a learned latent space, incorporating a pixel-wise adaptive density function and a pruning technique for increased training stability and efficiency. Additionally, we introduce the first HNVS benchmark, implementing a number of new baselines based on recent SOTA RGB-NVS techniques, alongside the small number of prior works on HNVS. We demonstrate HyperGS's robustness through extensive evaluation of real and simulated hyperspectral scenes with a 14dB accuracy improvement upon previously published models.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "DUSt3R",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
         "Vision/Multimodal"
       ]
     },
@@ -30585,6 +30704,34 @@
       ]
     },
     {
+      "id": "2509.24661",
+      "title": "CEDex: Cross-Embodiment Dexterous Grasp Generation at Scale from Human-Like Contact Representations",
+      "authors": "Wu, Zhiyuan, Potamias, Rolandos Alexandros, Zhang, Xuyang, Zhang, Zhongqun, Deng, Jiankang, Luo, Shan",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2509.24661",
+      "source": "https://paperswithcode.co/paper/2509.24661",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.24661.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Cross-embodiment dexterous grasp synthesis refers to adaptively generating and optimizing grasps for various robotic hands with different morphologies. This capability is crucial for achieving versatile robotic manipulation in diverse environments and requires substantial amounts of reliable and diverse grasp data for effective model training and robust generalization. However, existing approaches either rely on physics-based optimization that lacks human-like kinematic understanding or require extensive manual data collection processes that are limited to anthropomorphic structures. In this paper, we propose CEDex, a novel cross-embodiment dexterous grasp synthesis method at scale that bridges human grasping kinematics and robot kinematics by aligning robot kinematic models with generated human-like contact representations. Given an object's point cloud and an arbitrary robotic hand model, CEDex first generates human-like contact representations using a Conditional Variational Auto-encoder pretrained on human contact data. It then performs kinematic human contact alignment through topological merging to consolidate multiple human hand parts into unified robot components, followed by a signed distance field-based grasp optimization with physics-aware constraints. Using CEDex, we construct the largest cross-embodiment grasp dataset to date, comprising 500K objects across four gripper types with 20M total grasps. Extensive experiments show that CEDex outperforms state-of-the-art approaches and our dataset benefits cross-embodiment grasp learning with high-quality diverse grasps.",
+      "matchedBy": [
+        "papers with code",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2510.04542",
       "title": "Code World Models for General Game Playing",
       "authors": "Wolfgang Lehrach, Daniel Hennes, Miguel Lazaro-Gredilla, Xinghua Lou, Carter Wendelken, Zun Li, Antoine Dedieu, Marc Lanctot, Atil Iscen, John Schultz, Marcus Chiam, Ian Gemp, Piotr Zielinski, Satinder Singh, Kevin Patrick Murphy",
@@ -31508,35 +31655,6 @@
       ]
     },
     {
-      "id": "2412.12849",
-      "title": "HyperGS: Hyperspectral 3D Gaussian Splatting",
-      "authors": "Christopher Thirgood, Oscar Mendez, Erin Ling, Jon Storey, Simon Hadfield",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 63,
-      "paper": "https://arxiv.org/abs/2412.12849",
-      "source": "https://paperswithcode.co/paper/2412.12849",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2412.12849.jpg",
-      "firstSeenAt": "2026-06-25T00:21:13.185Z",
-      "summary": "We introduce HyperGS, a novel framework for Hyperspectral Novel View Synthesis (HNVS), based on a new latent 3D Gaussian Splatting (3DGS) technique. Our approach enables simultaneous spatial and spectral renderings by encoding material properties from multi-view 3D hyperspectral datasets. HyperGS reconstructs high-fidelity views from arbitrary perspectives with improved accuracy and speed, outperforming currently existing methods. To address the challenges of high-dimensional data, we perform view synthesis in a learned latent space, incorporating a pixel-wise adaptive density function and a pruning technique for increased training stability and efficiency. Additionally, we introduce the first HNVS benchmark, implementing a number of new baselines based on recent SOTA RGB-NVS techniques, alongside the small number of prior works on HNVS. We demonstrate HyperGS's robustness through extensive evaluation of real and simulated hyperspectral scenes with a 14dB accuracy improvement upon previously published models.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "DUSt3R",
-        "Gaussian splatting",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
-      ]
-    },
-    {
       "id": "2503.07087",
       "title": "iManip: Skill-Incremental Learning for Robotic Manipulation",
       "authors": "Zexin Zheng, Jia-Feng Cai, Xiao-Ming Wu, Yi-Lin Wei, Yu-Ming Tang, Ancong Wu, Wei-Shi Zheng",
@@ -32226,6 +32344,39 @@
       ],
       "category": "Data / Retrieval",
       "categories": [
+        "Data / Retrieval",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2411.16253",
+      "title": "Open-Vocabulary Octree-Graph for 3D Scene Understanding",
+      "authors": "Zhigang Wang, Yifei Su, Chenhui Li, Dong Wang, Yan Huang, Xuelong Li, Bin Zhao",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2411.16253",
+      "source": "https://paperswithcode.co/paper/2411.16253",
+      "code": "https://github.com/yifeisu/OV-Octree-Graph",
+      "project": "",
+      "thumbnail": "./thumbs/2411.16253.jpg",
+      "firstSeenAt": "2026-06-22T00:21:43.543Z",
+      "summary": "Open-vocabulary 3D scene understanding is indispensable for embodied agents. Recent works leverage pretrained vision-language models (VLMs) for object segmentation and project them to point clouds to build 3D maps. Despite progress, a point cloud is a set of unordered coordinates that requires substantial storage space and can not directly convey occupancy information or spatial relation, making existing methods inefficient for downstream tasks, e.g., path planning and complex text-based object retrieval. To address these issues, we propose Octree-Graph, a novel scene representation for open-vocabulary 3D scene understanding. Specifically, a Chronological Group-wise Segment Merging (CGSM) strategy and an Instance Feature Aggregation (IFA) algorithm are first designed to get 3D instances and corresponding semantic features. Subsequently, an adaptive-octree structure is developed that stores semantics and depicts the occupancy of an object adjustably according to its shape. Finally, the Octree-Graph is constructed where each adaptive-octree acts as a graph node, and edges describe the spatial relations among nodes. Extensive experiments on various tasks are conducted on several widely-used datasets, demonstrating the versatility and effectiveness of our method. Code is available at https://github.com/yifeisu/OV-Octree-Graph.",
+      "matchedBy": [
+        "papers with code",
+        "3D understanding",
+        "Image Understanding",
+        "Language Modeling",
+        "vision/multimodal",
+        "data / retrieval",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
         "Data / Retrieval",
         "Language Modeling"
       ]
@@ -35016,6 +35167,34 @@
       ]
     },
     {
+      "id": "2503.08305",
+      "title": "ELECTRA: A Cartesian Network for 3D Charge Density Prediction with Floating Orbitals",
+      "authors": "Jonas Elsborg, Luca Thiede, Alan Aspuru-Guzik, Tejs Vegge, Arghya Bhowmik",
+      "org": "",
+      "published": "NeurIPS 2025 Spotlight",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2503.08305",
+      "source": "https://paperswithcode.co/paper/2503.08305",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.08305.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "We present the Electronic Tensor Reconstruction Algorithm (ELECTRA) - an equivariant model for predicting electronic charge densities using floating orbitals. Floating orbitals are a long-standing concept in the quantum chemistry community that promises more compact and accurate representations by placing orbitals freely in space, as opposed to centering all orbitals at the position of atoms. Finding the ideal placement of these orbitals requires extensive domain knowledge, though, which thus far has prevented widespread adoption. We solve this in a data-driven manner by training a Cartesian tensor network to predict the orbital positions along with orbital coefficients. This is made possible through a symmetry-breaking mechanism that is used to learn position displacements with lower symmetry than the input molecule while preserving the rotation equivariance of the charge density itself. Inspired by recent successes of Gaussian Splatting in representing densities in space, we are using Gaussian orbitals and predicting their weights and covariance matrices. Our method achieves a state-of-the-art balance between computational efficiency and predictive accuracy on established benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2411.18825",
       "title": "ELEMENTAL: Interactive Learning from Demonstrations and Vision-Language Models for Reward Design in Robotics",
       "authors": "Letian Chen, Nina Marie Moorman, Matthew Craig Gombolay",
@@ -37106,39 +37285,6 @@
       ]
     },
     {
-      "id": "2411.16253",
-      "title": "Open-Vocabulary Octree-Graph for 3D Scene Understanding",
-      "authors": "Zhigang Wang, Yifei Su, Chenhui Li, Dong Wang, Yan Huang, Xuelong Li, Bin Zhao",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2411.16253",
-      "source": "https://paperswithcode.co/paper/2411.16253",
-      "code": "https://github.com/yifeisu/OV-Octree-Graph",
-      "project": "",
-      "thumbnail": "./thumbs/2411.16253.jpg",
-      "firstSeenAt": "2026-06-22T00:21:43.543Z",
-      "summary": "Open-vocabulary 3D scene understanding is indispensable for embodied agents. Recent works leverage pretrained vision-language models (VLMs) for object segmentation and project them to point clouds to build 3D maps. Despite progress, a point cloud is a set of unordered coordinates that requires substantial storage space and can not directly convey occupancy information or spatial relation, making existing methods inefficient for downstream tasks, e.g., path planning and complex text-based object retrieval. To address these issues, we propose Octree-Graph, a novel scene representation for open-vocabulary 3D scene understanding. Specifically, a Chronological Group-wise Segment Merging (CGSM) strategy and an Instance Feature Aggregation (IFA) algorithm are first designed to get 3D instances and corresponding semantic features. Subsequently, an adaptive-octree structure is developed that stores semantics and depicts the occupancy of an object adjustably according to its shape. Finally, the Octree-Graph is constructed where each adaptive-octree acts as a graph node, and edges describe the spatial relations among nodes. Extensive experiments on various tasks are conducted on several widely-used datasets, demonstrating the versatility and effectiveness of our method. Code is available at https://github.com/yifeisu/OV-Octree-Graph.",
-      "matchedBy": [
-        "papers with code",
-        "3D understanding",
-        "Image Understanding",
-        "Language Modeling",
-        "vision/multimodal",
-        "data / retrieval",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Data / Retrieval",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2510.03662",
       "title": "Operationalizing Data Minimization for Privacy-Preserving LLM Prompting",
       "authors": "Jijie Zhou, Niloofar Mireshghallah, Tianshi Li",
@@ -37165,6 +37311,38 @@
       "categories": [
         "Frontier Training",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2505.13499",
+      "title": "Optimal Control for Transformer Architectures: Enhancing Generalization, Robustness and Efficiency",
+      "authors": "Kelvin Kan, Xingjian Li, Benjamin Zhang, Tuhin Sahai, Stanley Osher, Markos Katsoulakis",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2505.13499",
+      "source": "https://paperswithcode.co/paper/2505.13499",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.13499.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "We study Transformers through the perspective of optimal control theory, using tools from continuous-time formulations to derive actionable insights into training and architecture design. This framework improves the performance of existing Transformer models while providing desirable theoretical guarantees, including generalization and robustness.Our framework is designed to be plug-and-play, enabling seamless integration with established Transformer models and requiring only slight changes to the implementation. We conduct seven extensive experiments on tasks motivated by text generation, sentiment analysis, image classification, and point cloud classification. Experimental results show that the framework improves the test performance of the baselines, while being more parameter-efficient. On character-level text generation with nanoGPT, our framework achieves a 46\\% reduction in final test loss while using 42\\% fewer parameters. On GPT-2, our framework achieves a 5.6\\% reduction in final test loss, demonstrating scalability to larger models. To the best of our knowledge, this is the first work that applies optimal control theory to both the training and architecture of Transformers. It offers a new foundation for systematic, theory-driven improvements and moves beyond costly trial-and-error approaches.",
+      "matchedBy": [
+        "papers with code",
+        "Image Classification",
+        "BERT",
+        "Few-shot prompting",
+        "GPT",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
       ]
     },
     {
@@ -38462,6 +38640,64 @@
       ]
     },
     {
+      "id": "2512.14180",
+      "title": "Spherical Voronoi: Directional Appearance as a Differentiable Partition of the Sphere",
+      "authors": "Francesco Di Sario, Daniel Rebain, Dor Verbin, Marco Grangetto, Andrea Tagliasacchi",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2512.14180",
+      "source": "https://paperswithcode.co/paper/2512.14180",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.14180.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Radiance field methods (e.g. 3D Gaussian Splatting) have emerged as a powerful paradigm for novel view synthesis, yet their appearance modeling often relies on Spherical Harmonics (SH), which impose fundamental limitations. SH struggle with high-frequency signals, exhibit Gibbs ringing artifacts, and fail to capture specular reflections---a key component of realistic rendering. Although alternatives like spherical Gaussians offer improvements, they add significant optimization complexity. We propose Spherical Voronoi (SV) as a unified framework for appearance representation in 3D Gaussian Splatting. SV partitions the directional domain into learnable regions with smooth boundaries, providing an intuitive and stable parameterization for view-dependent effects. For diffuse appearance, SV achieves competitive results while keeping optimization simpler than existing alternatives. For reflections---where SH fail---we leverage SV as learnable reflection probes, taking reflected directions as input following principles from classical graphics. This formulation attains state-of-the-art results on synthetic and real-world datasets, demonstrating that SV offers a principled, efficient, and general solution for appearance modeling in explicit 3D representations.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2412.12540",
+      "title": "Stiefel Flow Matching for Moment-Constrained Structure Elucidation",
+      "authors": "Austin Henry Cheng, Alston Lo, Kin Long Kelvin Lee, Santiago Miret, Alan Aspuru-Guzik",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2412.12540",
+      "source": "https://paperswithcode.co/paper/2412.12540",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.12540.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Molecular structure elucidation is a fundamental step in understanding chemical phenomena, with applications in identifying molecules in natural products, lab syntheses, forensic samples, and the interstellar medium. We consider the task of predicting a molecule's all-atom 3D structure given only its molecular formula and moments of inertia, motivated by the ability of rotational spectroscopy to measure these moments. While existing generative models can conditionally sample 3D structures with approximately correct moments, this soft conditioning fails to leverage the many digits of precision afforded by experimental rotational spectroscopy. To address this, we first show that the space of $n$-atom point clouds with a fixed set of moments of inertia is embedded in the Stiefel manifold $\\mathrm{St}(n, 4)$. We then propose Stiefel Flow Matching as a generative model for elucidating 3D structure under exact moment constraints. Additionally, we learn simpler and shorter flows by finding approximate solutions for equivariant optimal transport on the Stiefel manifold. Empirically, enforcing exact moment constraints allows Stiefel Flow Matching to achieve higher success rates and faster sampling than Euclidean diffusion models, even on high-dimensional manifolds corresponding to large molecules in the GEOM dataset.",
+      "matchedBy": [
+        "papers with code",
+        "Diffusion",
+        "Flow matching",
+        "Key-value cache",
+        "Multi-head attention",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2503.19136",
       "title": "Stochastic Poisson Surface Reconstruction with One Solve using Geometric Gaussian Processes",
       "authors": "Sidhanth Holalkere, David Bindel, Silvia Sellán, Alexander Terenin",
@@ -39122,6 +39358,38 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2505.16969",
+      "title": "3D Equivariant Visuomotor Policy Learning via Spherical Projection",
+      "authors": "Boce Hu, Dian Wang, David Klee, Heng Tian, Xupeng Zhu, Haojie Huang, Robert Platt, Robin Walters",
+      "org": "",
+      "published": "NeurIPS 2025 Spotlight",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2505.16969",
+      "source": "https://paperswithcode.co/paper/2505.16969",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.16969.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Equivariant models have recently been shown to improve the data efficiency of diffusion policy by a significant margin. However, prior work that explored this direction focused primarily on point cloud inputs generated by multiple cameras fixed in the workspace. This type of point cloud input is not compatible with the now-common setting where the primary input modality is an eye-in-hand RGB camera like a GoPro. This paper closes this gap by incorporating into the diffusion policy model a process that projects features from the 2D RGB camera image onto a sphere. This enables us to reason about symmetries in $\\mathrm{SO}(3)$ without explicitly reconstructing a point cloud. We perform extensive experiments in both simulation and the real world that demonstrate that our method consistently outperforms strong baselines in terms of both performance and sample efficiency. Our work is the first $\\mathrm{SO}(3)$-equivariant policy learning framework for robotic manipulation that works using only monocular RGB inputs.",
+      "matchedBy": [
+        "papers with code",
+        "ACT",
+        "Diffusion Policy",
+        "Key-value cache",
+        "Multi-head attention",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
       ]
     },
     {
@@ -40483,6 +40751,33 @@
         "Robotics",
         "Vision/Multimodal",
         "Benchmark"
+      ]
+    },
+    {
+      "id": "2510.22313",
+      "title": "Breaking the Static Assumption: A Dynamic-Aware LIO Framework Via Spatio-Temporal Normal Analysis",
+      "authors": "Chen, Zhiqiang, Le Gentil, Cedric, Lin, Fuling, Lu, Minghao, Qiao, Qiyuan, Xu, Bowen, Qi, Yuhua, Lu, Peng",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2510.22313",
+      "source": "https://paperswithcode.co/paper/2510.22313",
+      "code": "https://github.com/thisparticle/btsa}",
+      "project": "",
+      "thumbnail": "./thumbs/2510.22313.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "This paper addresses the challenge of Lidar-Inertial Odometry (LIO) in dynamic environments, where conventional methods often fail due to their static-world assumptions. Traditional LIO algorithms perform poorly when dynamic objects dominate the scenes, particularly in geometrically sparse environments. Current approaches to dynamic LIO face a fundamental challenge: accurate localization requires a reliable identification of static features, yet distinguishing dynamic objects necessitates precise pose estimation. Our solution breaks this circular dependency by integrating dynamic awareness directly into the point cloud registration process. We introduce a novel dynamic-aware iterative closest point algorithm that leverages spatio-temporal normal analysis, complemented by an efficient spatial consistency verification method to enhance static map construction. Experimental evaluations demonstrate significant performance improvements over state-of-the-art LIO systems in challenging dynamic environments with limited geometric structure. The code and dataset are available at url{https://github.com/thisparticle/btsa}.",
+      "matchedBy": [
+        "papers with code",
+        "Pose Estimation",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -43048,6 +43343,35 @@
       ]
     },
     {
+      "id": "2409.14723",
+      "title": "ERPoT: Effective and Reliable Pose Tracking for Mobile Robots Using Lightweight Polygon Maps",
+      "authors": "Gao, Haiming, Qiu, Qibo, Liu, Hongyan, Liang, Dingkun, Wang, Chaoqun, Zhang, Xuebo",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2409.14723",
+      "source": "https://paperswithcode.co/paper/2409.14723",
+      "code": "https://github.com/ghm0819/ERPoT,",
+      "project": "https://youtu",
+      "thumbnail": "./thumbs/2409.14723.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "This paper presents an effective and reliable pose tracking solution, termed ERPoT, for mobile robots operating in large-scale outdoor and challenging indoor environments, underpinned by an innovative prior polygon map. Especially, to overcome the challenge that arises as the map size grows with the expansion of the environment, the novel form of a prior map composed of multiple polygons is proposed. Benefiting from the use of polygons to concisely and accurately depict environmental occupancy, the prior polygon map achieves longterm reliable pose tracking while ensuring a compact form. More importantly, pose tracking is carried out under pure LiDAR mode, and the dense 3D point cloud is transformed into a sparse 2D scan through ground removal and obstacle selection. On this basis, a novel cost function for pose estimation through point-polygon matching is introduced, encompassing two distinct constraint forms: point-to-vertex and point-to-edge. In this study, our primary focus lies on two crucial aspects: lightweight and compact prior map construction, as well as effective and reliable robot pose tracking. Both aspects serve as the foundational pillars for future navigation across diverse mobile platforms equipped with different LiDAR sensors in varied environments. Comparative experiments based on the publicly available datasets and our self-recorded datasets are conducted, and evaluation results show the superior performance of ERPoT on reliability, prior map size, pose estimation error, and runtime over the other six approaches. The corresponding code can be accessed at https://github.com/ghm0819/ERPoT, and the supplementary video is at https://youtu.be/6XdcXyUrLKw.",
+      "matchedBy": [
+        "papers with code",
+        "Pose Estimation",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2410.03779",
       "title": "EvoMesh: Adaptive Physical Simulation with Hierarchical Graph Evolutions",
       "authors": "Huayu Deng, Xiangming Zhu, Yunbo Wang, Xiaokang Yang",
@@ -43516,6 +43840,36 @@
       ]
     },
     {
+      "id": "2510.09537",
+      "title": "FLOWING: Implicit Neural Flows for Structure-Preserving Morphing",
+      "authors": "Arthur Bizzi, Matias Grynberg Portnoy, Vitor Pereira Matias, Daniel Perazzo, João Paulo Silva do Monte Lima, Luiz Velho, Nuno Gonçalves, João Pereira, Guilherme Schardong, Tiago Novello",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2510.09537",
+      "source": "https://paperswithcode.co/paper/2510.09537",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.09537.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Morphing is a long-standing problem in vision and computer graphics, requiring a time-dependent warping for feature alignment and a blending for smooth interpolation. Recently, multilayer perceptrons (MLPs) have been explored as implicit neural representations (INRs) for modeling such deformations, due to their meshlessness and differentiability; however, extracting coherent and accurate morphings from standard MLPs typically relies on costly regularizations, often leading to unstable training and impeding the effective alignment and interpolation between features. To overcome these limitations, we propose FLOWING (FLOW morphING), a framework that reframes warping as the construction of a differential vector flow, naturally ensuring continuity, invertibility, and temporal coherence.By design, FLOWING encodes structural flow propertiesdirectly into the network architectures, avoiding costly regularizations. This flow-centric approach yields principled and stable transformations that are smooth, reversible, and temporally coherent by construction, enabling accurate, structure-preserving morphing of both 2D images and 3D shapes.Extensive experiments across a range of applications—including face and image morphing, as well as Gaussian Splatting morphing—show that FLOWING achieves state-of-the-art morphing quality with substantially faster convergence. Code and pretrained models will be released.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Feedforward Network",
+        "Gaussian splatting",
+        "Residual Block",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2602.03203",
       "title": "ForesightKV: Optimizing KV Cache Eviction for Reasoning Models by Learning Long-Term Contribution",
       "authors": "Zican Dong, Peiyu Liu, Junyi Li, Zhipeng Chen, Han Peng, Shuo Wang, Xin Zhao",
@@ -43783,6 +44137,38 @@
       ]
     },
     {
+      "id": "2505.19306",
+      "title": "From Single Images to Motion Policies via Video-Generation Environment Representations",
+      "authors": "William Zhi, Ziyong Ma, Tianyi Zhang, Matthew Johnson-Roberson",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2505.19306",
+      "source": "https://paperswithcode.co/paper/2505.19306",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.19306.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Autonomous robots typically need to construct representations of their surroundings and adapt their motions to the geometry of their environment. Here, we tackle the problem of constructing a policy model for collision-free motion generation, consistent with the environment, from a single input RGB image. Extracting 3D structures from a single image often involves monocular depth estimation. Developments in depth estimation have given rise to large pre-trained models such as \\emph{DepthAnything}. However, using outputs of these models for downstream motion generation is challenging due to frustum-shaped errors that arise. Instead, we propose a framework known as Video-Generation Environment Representation (VGER), which leverages the advances of large-scale video generation models to generate a moving camera video conditioned on the input image. Frames of this video, which form a multiview dataset, are then input into a pre-trained 3D foundation model to produce a dense point cloud. We then introduce a multi-scale noise approach to train an implicit representation of the environment structure and build a motion generation model that complies with the geometry of the representation. We extensively evaluate VGER over a diverse set of indoor and outdoor environments. We demonstrate its ability to produce smooth motions that account for the captured geometry of a scene, all from a single RGB input image.",
+      "matchedBy": [
+        "papers with code",
+        "Depth estimation",
+        "Motion Generation",
+        "Video generation",
+        "Depth Anything",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2601.07462",
       "title": "From Sketch to Fresco: Efficient Diffusion Transformer with Progressive Resolution",
       "authors": "Shikang Zheng, Guantao Chen, Landis He, Jiacheng Liu, Yuqi Lin, Chang Zou, Linfeng Zhang",
@@ -43846,6 +44232,35 @@
         "Vision/Multimodal",
         "Serving",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2605.07607",
+      "title": "FS-I2P: A Hierarchical Focus–Sweep Registration Network with Dynamically Allocated Depth",
+      "authors": "Zhixin Cheng, Yujia Chen, Xujing Tao, Bohao Liao, Xiaotian Yin, Baoqun Yin, Tianzhu Zhang",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2605.07607",
+      "source": "https://paperswithcode.co/paper/2605.07607",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.07607.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Image-to-point cloud registration is often challenged by viewpoint changes, cross-modal discrepancies, and repetitive textures, which induce scale ambiguity and consequently lead to erroneous correspondences. Recent detection-free methods alleviate this issue by leveraging multi-scale features and transformer-based interactions. However, they still suffer from attention drift across layers and intra-scale inconsistencies, hindering precise registration. Inspired by complex scene observation, we propose a ``Focus--Sweep'' paradigm and develop a Hierarchical Mamba Interaction Module within an SSM-based framework to enhance multi-level cross-modal feature association. In addition, we introduce a Dynamic Layer Allocation Strategy that adaptively determines the iteration depth to better exploit geometric constraints and improve matching robustness. Extensive experiments and ablations on two benchmarks, RGB-D Scenes V2 and 7-Scenes, demonstrate that our approach achieves state-of-the-art performance.",
+      "matchedBy": [
+        "papers with code",
+        "Mamba",
+        "State Space Models",
+        "Transformer",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -44241,6 +44656,37 @@
       "categories": [
         "Vision/Multimodal",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2510.08512",
+      "title": "Have We Scene It All? Scene Graph-Aware Deep Point Cloud Compression",
+      "authors": "Stathoulopoulos, Nikolaos, Kanellakis, Christoforos, Nikolakopoulos, George",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2510.08512",
+      "source": "https://paperswithcode.co/paper/2510.08512",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.08512.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Efficient transmission of 3D point cloud data is critical for advanced perception in centralized and decentralized multi-agent robotic systems, especially nowadays with the growing reliance on edge and cloud-based processing. However, the large and complex nature of point clouds creates challenges under bandwidth constraints and intermittent connectivity, often degrading system performance. We propose a deep compression framework based on semantic scene graphs. The method decomposes point clouds into semantically coherent patches and encodes them into compact latent representations with semantic-aware encoders conditioned by Feature-wise Linear Modulation (FiLM). A folding-based decoder, guided by latent features and graph node attributes, enables structurally accurate reconstruction. Experiments on the SemanticKITTI and nuScenes datasets show that the framework achieves state-of-the-art compression rates, reducing data size by up to 98% while preserving both structural and semantic fidelity. In addition, it supports downstream applications such as multi-robot pose graph optimization and map merging, achieving trajectory accuracy and map alignment comparable to those obtained with raw LiDAR scans.",
+      "matchedBy": [
+        "papers with code",
+        "Key-value cache",
+        "Multi-head attention",
+        "Transformer",
+        "serving",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -48086,6 +48532,32 @@
       ]
     },
     {
+      "id": "2504.03369",
+      "title": "Point Cloud-Based Grasping for Soft Hand Exoskeleton",
+      "authors": "Hu, Chen, Tricomi, Enrica, Rho, Eojin, Kim, Daekyum, Masia, Lorenzo, Luo, Shan, Gionfrida, Letizia",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2504.03369",
+      "source": "https://paperswithcode.co/paper/2504.03369",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2504.03369.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Grasping is a fundamental skill for interacting with and manipulating objects in the environment. However, this ability can be challenging for individuals with hand impairments. Soft hand exoskeletons designed to assist grasping can enhance or restore essential hand functions, yet controlling these soft exoskeletons to support users effectively remains difficult due to the complexity of understanding the environment. This study presents a vision-based predictive control framework that leverages contextual awareness from depth perception to predict the grasping target and determine the next control state for activation. Unlike data-driven approaches that require extensive labelled datasets and struggle with generalizability, our method is grounded in geometric modelling, enabling robust adaptation across diverse grasping scenarios. The Grasping Ability Score (GAS) was used to evaluate performance, with our system achieving a state-of-the-art GAS of 91 ± 2% across 15 objects and healthy participants, demonstrating its effectiveness across different object types. The proposed approach maintained reconstruction success for unseen objects, underscoring its enhanced generalizability compared to learning-based models.",
+      "matchedBy": [
+        "papers with code",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2406.02300",
       "title": "Point-Level Topological Representation Learning on Point Clouds",
       "authors": "Vincent Peter Grande, Michael T Schaub",
@@ -50674,6 +51146,36 @@
       ]
     },
     {
+      "id": "2509.16552",
+      "title": "ST-GS: Vision-Based 3D Semantic Occupancy Prediction with Spatial-Temporal Gaussian Splatting",
+      "authors": "Yan, Xiaoyang, Pei, Muleilan, Shen, Shaojie",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2509.16552",
+      "source": "https://paperswithcode.co/paper/2509.16552",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.16552.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "3D occupancy prediction is critical for comprehensive scene understanding in vision-centric autonomous driving. Recent advances have explored utilizing 3D semantic Gaussians to model occupancy while reducing computational overhead, but they remain constrained by insufficient multi-view spatial interaction and limited multi-frame temporal consistency. To overcome these issues, in this paper, we propose a novel Spatial-Temporal Gaussian Splatting (ST-GS) framework to enhance both spatial and temporal modeling in existing Gaussian-based pipelines. Specifically, we develop a guidance-informed spatial aggregation strategy within a dual-mode attention mechanism to strengthen spatial interaction in Gaussian representations. Furthermore, we introduce a geometry-aware temporal fusion scheme that effectively leverages historical context to improve temporal continuity in scene completion. Extensive experiments on the large-scale nuScenes occupancy prediction benchmark showcase that our proposed approach not only achieves state-of-the-art performance but also delivers markedly better temporal consistency compared to existing Gaussian-based methods.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "Mamba-2",
+        "Residual Block",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2602.08245",
       "title": "STEP: Warm-Started Visuomotor Policies with Spatiotemporal Consistency Prediction",
       "authors": "Jinhao Li, Yuxuan Cong, Yingqiao Wang, Hao Xia, Shan Huang, Yijia Zhang, Ningyi Xu, Guohao Dai",
@@ -51501,6 +52003,36 @@
       ]
     },
     {
+      "id": "2503.12343",
+      "title": "TopoGaussian: Inferring Internal Topology Structures from Visual Clues",
+      "authors": "Xiaoyu Xiong, Changyu Hu, Chunru Lin, Pingchuan Ma, Chuang Gan, Tao Du",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2503.12343",
+      "source": "https://paperswithcode.co/paper/2503.12343",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.12343.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "We present TopoGaussian, a holistic, particle-based pipeline for inferring the interior structure of an opaque object from easily accessible photos and videos as input. Traditional mesh-based approaches require tedious and error-prone mesh filling and fixing process, while typically output rough boundary surface. Our pipeline combines Gaussian Splatting with a novel, versatile particle-based differentiable simulator that simultaneously accommodates constitutive model, actuator, and collision, without interference with mesh. Based on the gradients from this simulator, we provide flexible choice of topology representation for optimization, including particle, neural implicit surface, and quadratic surface. The resultant pipeline takes easily accessible photos and videos as input and outputs the topology that matches the physical characteristics of the input. We demonstrate the efficacy of our pipeline on a synthetic dataset and four real-world tasks with 3D-printed prototypes. Compared with existing mesh-based method, our pipeline is 5.26x faster on average with improved shape quality. These results highlight the potential of our pipeline in 3D vision, soft robotics, and manufacturing applications.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2509.14630",
       "title": "Toward Embodiment Equivariant Vision-Language-Action Policy",
       "authors": "Chen, Anzhe, Yang, Yifei, Zhu, Zhenjie, Xu, Kechun, Zhou, Zhongxiang, Xiong, Rong, Wang, Yue",
@@ -51962,6 +52494,35 @@
         "3D generation",
         "3D understanding",
         "Medical Imaging",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2510.12768",
+      "title": "Uncertainty Matters in Dynamic Gaussian Splatting for Monocular 4D Reconstruction",
+      "authors": "Fengzhi Guo, Chih-Chuan Hsu, Sihao Ding, Cheng Zhang",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2510.12768",
+      "source": "https://paperswithcode.co/paper/2510.12768",
+      "code": "",
+      "project": "https://tamu-visual-ai",
+      "thumbnail": "./thumbs/2510.12768.jpg",
+      "firstSeenAt": "2026-07-03T01:14:35.460Z",
+      "summary": "Reconstructing dynamic 3D scenes from monocular input is fundamentally under-constrained, with ambiguities arising from occlusion and extreme novel views. While dynamic Gaussian Splatting offers an efficient representation, vanilla models optimize all Gaussian primitives uniformly, ignoring whether they are well or poorly observed. This limitation leads to motion drifts under occlusion and degraded synthesis when extrapolating to unseen views. We argue that uncertainty matters: Gaussians with recurring observations across views and time act as reliable anchors to guide motion, whereas those with limited visibility are treated as less reliable. To this end, we introduce USplat4D, a novel Uncertainty-aware dynamic Gaussian Splatting framework that propagates reliable motion cues to enhance 4D reconstruction. Our approach estimates time-varying per-Gaussian uncertainty and leverages it to construct a spatio-temporal graph for uncertainty-aware optimization. Experiments on diverse real and synthetic datasets show that explicitly modeling uncertainty consistently improves dynamic Gaussian Splatting models, yielding more stable geometry under occlusion and high-quality synthesis at extreme viewpoints. Project page: https://tamu-visual-ai.github.io/usplat4d/.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Depth Anything",
         "Gaussian splatting",
         "vision/multimodal"
       ],
@@ -54254,6 +54815,36 @@
       ]
     },
     {
+      "id": "2603.22070",
+      "title": "Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning",
+      "authors": "Xingyu Zhu, Liang Yi, Shuo Wang, Wenbo Zhu, Yongliang Wu, Beier Zhu, Hanwang Zhang",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.22070",
+      "source": "https://paperswithcode.co/paper/2603.22070",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.22070.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Large multimodal 3D vision-language models show strong generalization across diverse 3D tasks, but their performance still degrades under domain shifts. This has motivated recent studies on test-time adaptation (TTA), which enables models to adapt online using test-time data. Among existing TTA methods, cache-based mechanisms are widely adopted to leverage previously observed samples for online prediction refinement. However, they store limited historical information, leading to progressive information loss as the test stream evolves. In addition, their prediction logits are fused heuristically, making adaptation unstable. To address these limitations, we propose BayesMM, a multimodal Bayesian distribution learning framework for test-time point cloud analysis. BayesMM models textual priors and streaming visual features of each class as Gaussian distributions. Textual parameters are derived from semantic prompts, while visual parameters are updated online with arriving samples. The two modalities are fused via Bayesian model averaging, which automatically adjusts their contributions based on posterior evidence. This yields a unified prediction that adapts to evolving test-time data without training. Extensive experiments on multiple point cloud benchmarks demonstrate that BayesMM maintains robustness under distributional shifts, yielding over 4 percent average improvement.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2509.24886",
       "title": "Adaptive Canonicalization with Application to Invariant Anisotropic Geometric Networks",
       "authors": "Ya-Wei Eileen Lin, Ron Levie",
@@ -54273,6 +54864,35 @@
         "Cutout",
         "GCN",
         "Residual Block",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "pwc-96382",
+      "title": "Adaptive-Cloud: Dynamic Computation Control for 3D Object Detection from LIDAR Point Clouds",
+      "authors": "Mohammad, Mir Sayeed, Kamal, Uday, Mukhopadhyay, Saibal",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei1i_342",
+      "source": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei1i_342",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "In this work, we introduce an adaptive hierarchical framework for efficient 3D object detection from point cloud data, designed to dynamically balance computational efficiency and detection performance. Our approach employs a shared feature extractor and multiple detector backbones of varying widths, enabling selective activation of models based on the complexity of the input scene. A novel feature gating mechanism dynamically determines the most relevant features for reduced-width backbones, while a surrogate loss prediction module ranks models in real-time, ensuring optimal backbone selection with minimal overhead. This adaptive strategy reduces computational costs by 41.4% while maintaining a negligible 2.44% reduction in detection accuracy across a range of real-world driving scenes (urban, highway, residential, campus, person) from the KITTI dataset. By addressing runtime adaptability—a critical gap in existing 3D detection frameworks—our method provides a significant improvement for deploying high-performance detection models in resource-constrained environments.",
+      "matchedBy": [
+        "papers with code",
+        "3D object detection",
+        "3D understanding",
+        "Depth estimation",
         "vision/multimodal"
       ],
       "sources": [
@@ -54722,6 +55342,36 @@
       "summary": "Extrinsic calibration for LiDAR and camera using sparse point clouds can significantly reduce cost and improve efficiency. However, most target-based methods are designed for dense point clouds and are less effective in sparse scenarios, while targetless methods primarily rely on environmental features. To address this limitation, a LiDAR–camera extrinsic calibration method for sparse point clouds is proposed in this paper. First, the proposed method extracts the complete checkerboard image via line-segment direction clustering and midpoint-to-normal projection. Second, a constructed theoretical checkerboard boundary point cloud is aligned to the scanned boundary point cloud using a proposed dimension-reduced, global-search and local-refinement (DGL) method. Third, coarse calibration is derived from the centroids of the checkerboard in images and aligned point clouds, followed by refinement through joint optimization of reprojection error and normal consistency error. Finally, experiments on the simulated dataset yield translation and rotation errors below 0.015 m and 0.3°, respectively. On a self-collected dataset, the method achieves an mIoU of 90.9% between the checkerboard region reprojected from point clouds and its image counterpart, outperforming state-of-the-art methods under sparse point cloud conditions.",
       "matchedBy": [
         "papers with code",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2604.07053",
+      "title": "AnchorSplat: Feed-Forward 3D Gaussian Splatting With 3D Geometric Priors",
+      "authors": "Xiaoxue Zhang, Xiaoxu Zheng, Yixuan Yin, Tiao Zhao, Kaihua Tang, Michael Bi Mi, Zhan Xu, Dave Zhenyu Chen",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2604.07053",
+      "source": "https://paperswithcode.co/paper/2604.07053",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.07053.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Recent feed-forward Gaussian reconstruction models adopt a pixel-aligned formulation that maps each 2D pixel to a 3D Gaussian, entangling Gaussian representations tightly with the input images. In this paper, we propose AnchorSplat, a novel feed-forward 3DGS framework for scene-level reconstruction that represents the scene directly in 3D space. AnchorSplat introduces an anchor-aligned Gaussian representation guided by 3D geometric priors (e.g., sparse point clouds, voxels, or RGB-D point clouds), enabling a more geometry-aware renderable 3D Gaussians that is independent of image resolution and number of views. This design substantially reduces the number of required Gaussians, improving computational efficiency while enhancing reconstruction fidelity. Beyond the anchor-aligned design, we utilize a Gaussian Refiner to adjust the intermediate Gaussians via merely a few forward passes. Experiments on the ScanNet++ v2 NVS benchmark demonstrate the SOTA performance, outperforming previous methods with more view-consistent and substantially fewer Gaussian primitives.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "AdamW",
+        "DUSt3R",
+        "Gaussian splatting",
         "vision/multimodal"
       ],
       "sources": [
@@ -55794,6 +56444,38 @@
       ]
     },
     {
+      "id": "2509.19142",
+      "title": "BiGraspFormer: End-To-End Bimanual Grasp Transformer",
+      "authors": "Kim, Kangmin, Back, Seunghyeok, Lee, Geonhyup, Lee, Sangbeom, Noh, Sangjun, Lee, Kyoobin",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2509.19142",
+      "source": "https://paperswithcode.co/paper/2509.19142",
+      "code": "",
+      "project": "https://sites",
+      "thumbnail": "./thumbs/2509.19142.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Bimanual grasping is essential for robots to handle large and complex objects. However, existing methods either focus solely on single-arm grasping or employ separate grasp generation and bimanual evaluation stages, leading to coordination problems including collision risks and unbalanced force distribution. To address these limitations, we propose BiGraspFormer, a unified end-to-end transformer framework that directly generates coordinated bimanual grasps from object point clouds. Our key idea is the Single-Guided Bimanual (SGB) strategy, which first generates diverse single grasp candidates using a transformer decoder, then leverages their learned features through specialized attention mechanisms to jointly predict bimanual poses and quality scores. This conditioning strategy reduces the complexity of the 12-DoF search space while ensuring coordinated bimanual manipulation. Comprehensive simulation experiments and real-world validation demonstrate that BiGraspFormer consistently outperforms existing methods while maintaining efficient inference speed (<0.05s), confirming the effectiveness of our framework. Code and supplementary materials are available at https://sites.google.com/bigraspformer",
+      "matchedBy": [
+        "papers with code",
+        "DETR",
+        "Transformer",
+        "serving",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2405.06003",
       "title": "Binary Hypothesis Testing for Softmax Models and Leverage Score Models",
       "authors": "Yuzhou Gu, Zhao Song, Junze Yin",
@@ -56514,6 +57196,34 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
+      ]
+    },
+    {
+      "id": "2412.03059",
+      "title": "CLAP: Unsupervised 3D Representation Learning for Fusion 3D Perception via Curvature Sampling and Prototype Learning",
+      "authors": "Runjian Chen, Hang Zhang, Avinash Ravichandran, Hyoungseob Park, Wenqi Shao, Alex Wong, Ping Luo",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2412.03059",
+      "source": "https://paperswithcode.co/paper/2412.03059",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.03059.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Unsupervised 3D representation learning reduces the burden of labeling multimodal 3D data for fusion perception tasks. Among different pre-training paradigms, differentiable-rendering-based methods have shown most promise. However, existing works separately conduct pre-training for each modalities due to computational costs of processing large point clouds with images. As such, mutual benefit of high-level semantics (from image) and 3D structure (from point cloud) has not been exploited. To address this gap, we propose a joint unsupervised differentiable-rendering-based pre-training method for images and point clouds, termed CLAP, short for Curvature sampLing and leArnable Prototype. Specifically, our method overcomes the computational hurdle by Curvature Sampling to select the more informative points/pixels for pre-training. To uncover the performance benefits brought by their complementarity, we propose to use learnable prototypes to represent parts of the 3D scenes in a common feature space and an Expectation-Maximization training scheme to associate embeddings of each modality to prototypes. We further propose a swapping prediction loss that explores their interplay through prototypes along with a Gram Matrix Regularization term to maintain training stability. Experiments on NuScenes and Waymo datasets show that CLAP achieves up to 100% more performance gain as compared to previous SOTA pre-training methods. Codes and models will be released.",
+      "matchedBy": [
+        "papers with code",
+        "Embedding",
+        "Pre-training",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -57682,6 +58392,36 @@
       ]
     },
     {
+      "id": "2603.21936",
+      "title": "Cross-Instance Gaussian Splatting Registration via Geometry-Aware Feature-Guided Alignment",
+      "authors": "Roy Amoyal, Oren Freifeld, Chaim Baskin",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.21936",
+      "source": "https://paperswithcode.co/paper/2603.21936",
+      "code": "",
+      "project": "https://bgu-cs-vil",
+      "thumbnail": "./thumbs/2603.21936.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "We present Gaussian Splatting Alignment (GSA), a novel method for aligning two independent 3D Gaussian Splatting (3DGS) models via a similarity transformation (rotation, translation, and scale), even when they are of different objects in the same category (e.g., different cars). In contrast, existing methods can only align 3DGS models of the same object (e.g., the same car) and often must be given true scale as input, while we estimate it successfully. GSA leverages viewpoint-guided spherical map features to obtain robust correspondences and introduces a two-step optimization framework that aligns 3DGS models while keeping them fixed. First, we apply an iterative feature-guided absolute orientation solver as our coarse registration, which is robust to poor initialization (e.g., 180deg misalignment or a 10x scale gap). Next, we use a fine registration step that enforces multi-view feature consistency, inspired by inverse radiance-field formulations. The first step already achieves state-of-the-art performance, and the second further improves results. In the same-object case, GSA outperforms prior works, often by a large margin, even when the other methods are given the true scale. In the harder case of different objects in the same category, GSA vastly surpasses them, providing the first effective solution for category-level 3DGS registration and unlocking new applications. Project webpage: https://bgu-cs-vil.github.io/GSA-project",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "CLIP",
+        "DINO",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2509.21107",
       "title": "Cross-Modal Instructions for Robot Motion Generation",
       "authors": "Baron, William, Dong, Xiaoxiang, Johnson-Roberson, Matthew, Zhi, Weiming",
@@ -58111,6 +58851,39 @@
         "Vision/Multimodal",
         "Frontier Training",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2507.17085",
+      "title": "Deformable Cluster Manipulation Via Whole-Arm Policy Learning",
+      "authors": "Jacob, Jayadeep, Zhang, Wenzheng, Warren, Houston, Borges, Paulo Vinicius Koerich, Ramos, Fabio, Bandyopadhyay, Tirthankar",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2507.17085",
+      "source": "https://paperswithcode.co/paper/2507.17085",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2507.17085.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Manipulating clusters of deformable objects presents a substantial challenge with widespread applicability, but requires contact-rich whole-arm interactions. A potential solution must address the limited capacity for realistic model synthesis, high uncertainty in perception, and the lack of efficient spatial abstractions, among others. We propose a novel framework for learning model-free policies integrating two modalities: 3D point clouds and proprioceptive touch indicators, emphasising manipulation with full body contact awareness, going beyond traditional end-effector modes. Our reinforcement learning framework leverages a distributional state representation, aided by kernel mean embeddings, to achieve improved training efficiency and real-time inference. Furthermore, we propose a novel context-agnostic occlusion heuristic to clear deformables from a target region for exposure tasks. We deploy the framework in a power line clearance scenario and observe that the agent generates creative strategies leveraging multiple arm links for de-occlusion. Finally, we perform zero-shot sim-to-real policy transfer, allowing the arm to clear real branches with unknown occlusion patterns, unseen topology, and uncertain dynamics.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Embedding",
+        "PPO",
+        "vision/multimodal",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
       ]
     },
     {
@@ -59651,6 +60424,33 @@
       ]
     },
     {
+      "id": "2606.12189",
+      "title": "DynaTok: Token-Based 4D Reconstruction from Partial Point Clouds",
+      "authors": "Weirong Chen, Keisuke Tateno, Hidenobu Matsuki, Michael Niemeyer, Daniel Cremers, Federico Tombari",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2606.12189",
+      "source": "https://paperswithcode.co/paper/2606.12189",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.12189.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "We address 4D reconstruction from partial point cloud sequences, where depth-sensor observations are incomplete, unordered, and lack explicit temporal correspondences. This geometry-only setting is challenging due to missing observations and ambiguous dynamics. While recent progress has largely relied on image-based methods, existing point-based approaches typically focus on single objects, assume relatively complete inputs, or require explicit correspondences. To address these limitations, we propose DynaTok, a point-based framework for correspondence-free 4D reconstruction from partial point cloud sequences without images. DynaTok encodes frames into compact latent tokens, aggregates incomplete observations over time with a Transformer-based spatiotemporal encoder, and decouples geometry and motion through residual tokens in a unified model. A flow-matching decoder then reconstructs complete, temporally consistent 4D point-cloud sequences conditioned on the latent tokens. Experiments on object- and scene-level benchmarks demonstrate improved reconstruction quality and temporal coherence from partial point cloud observations.",
+      "matchedBy": [
+        "papers with code",
+        "Transformer",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "pwc-97528",
       "title": "DyRef: Dynamic Reflection Framework Via Graph-Based Complexity for Robotic Planning",
       "authors": "Zhang, Jiatao, Liang, QingMiao, Hu, Tuocheng, Song, Yufan, Song, Wei, Zhu, Shiqiang",
@@ -59933,6 +60733,38 @@
       ],
       "category": "Robotics",
       "categories": [
+        "Robotics"
+      ]
+    },
+    {
+      "id": "2603.23227",
+      "title": "Efficient Hybrid SE(3)-Equivariant Visuomotor Flow Policy via Spherical Harmonics for Robot Manipulation",
+      "authors": "Qinglun Zhang, Shen Cheng, Tian Dan, Haoqiang Fan, Guanghui Liu, Shuaicheng Liu",
+      "org": "",
+      "published": "CVPR 2026 Spotlight",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.23227",
+      "source": "https://paperswithcode.co/paper/2603.23227",
+      "code": "https://github.com/zql-kk/E3Flow",
+      "project": "",
+      "thumbnail": "./thumbs/2603.23227.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "While existing equivariant methods enhance data efficiency, they suffer from high computational intensity, reliance on single-modality inputs, and instability when combined with fast-sampling methods. In this work, we propose E3Flow, a novel framework that addresses the critical limitations of equivariant diffusion policies. E3Flow overcomes these challenges, successfully unifying efficient rectified flow with stable, multi-modal equivariant learning for the first time. Our framework is built upon spherical harmonic representations to ensure rigorous SO(3) equivariance. We introduce a novel invariant Feature Enhancement Module (FEM) that dynamically fuses hybrid visual modalities (point clouds and images), injecting rich visual cues into the spherical harmonic features. We evaluate E3Flow on 8 manipulation tasks from the MimicGen and further conduct 4 real-world experiments to validate its effectiveness in physical environments. Simulation results show that E3Flow achieves a 3.12% improvement in average success rate over the state-of-the-art Spherical Diffusion Policy (SDP) while simultaneously delivering a 7x inference speedup. E3Flow thus demonstrates a new and highly effective trade-off between performance, efficiency, and data efficiency for robotic policy learning. Code: https://github.com/zql-kk/E3Flow.",
+      "matchedBy": [
+        "papers with code",
+        "Speech Enhancement",
+        "ACT",
+        "Diffusion",
+        "Diffusion Policy",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
         "Robotics"
       ]
     },
@@ -61260,6 +62092,34 @@
       ]
     },
     {
+      "id": "2603.23891",
+      "title": "FilterGS: Traversal-Free Parallel Filtering and Adaptive Shrinking for Large-Scale LoD 3D Gaussian Splatting",
+      "authors": "Yixian Wang, Haolin Yu, Jiadong Tang, Yu Gao, Xihan Wang, Yufeng Yue, Yi Yang",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.23891",
+      "source": "https://paperswithcode.co/paper/2603.23891",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.23891.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "3D Gaussian Splatting has revolutionized neural rendering with real-time performance. However, scaling this approach to large scenes using Level-of-Detail methods faces critical challenges: inefficient serial traversal consuming over 60% of rendering time, and redundant Gaussian-tile pairs that incur unnecessary processing overhead. To address these limitations, we propose FilterGS, featuring a parallel filtering mechanism with two complementary filters that enable efficient selection without tree traversal, coupled with a scene-adaptive Gaussian shrinkage strategy that minimizes redundancy through opacity-based scaling. Extensive experiments demonstrate that FilterGS achieves state-of-the-art rendering speeds while maintaining competitive visual quality across multiple large-scale datasets.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2603.26127",
       "title": "Finding Distributed Object-Centric Properties in Self-Supervised Transformers",
       "authors": "Samyak Rawlekar, Amitabh Swain, Yujun Cai, Yiwei Wang, Ming-Hsuan Yang, Narendra Ahuja",
@@ -62523,6 +63383,37 @@
       ]
     },
     {
+      "id": "2603.20611",
+      "title": "GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction",
+      "authors": "Di Kong, Yikai Wang, Wenjie Guo, Yifan Bu, Boya Zhang, Yuexin Duan, Xiawei Yue, Wenbiao Du, Yiman Zhong, Yuwen Chen, Cheng Ma",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.20611",
+      "source": "https://paperswithcode.co/paper/2603.20611",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.20611.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Slice-based volumetric imaging is widely applied and it demands representations that compress aggressively while preserving internal structure for analysis. This paper introduces GaussianPile, unifying 3D Gaussian splatting with an imaging system-aware focus model to address this challenge. Our new method introduces three key innovations: (i) a slice-aware piling strategy that positions anisotropic 3D Gaussians to model through-slice contributions, (ii) a differentiable projection operator that encodes the finite-thickness point spread function of the imaging acquisition system, and (iii) a compact encoding and joint optimization pipeline that simultaneously reconstructs and compresses the Gaussian sets. Our CUDA-based design retains the compression and real-time rendering efficiency of Gaussian primitives while preserving high-frequency internal volumetric detail. Experiments on microscopy and ultrasound datasets demonstrate that our method reduces storage and reconstruction cost, sustains diagnostic fidelity, and enables fast 2D visualization, along with 3D voxelization. In practice, it delivers high-quality results in as few as 3 minutes--up to 11xfaster than NeRF-based approaches--and achieves consistent 16xcompression over the original voxel grids, offering a practical path to deployable compression and exploration of slice-based volumetric datasets.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "NeRF",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving"
+      ]
+    },
+    {
       "id": "2509.22615",
       "title": "GaussianVision: Vision-Language Alignment from Compressed Image Representations using 2D Gaussian Splatting",
       "authors": "Yasmine Omri, Connor Ding, Tsachy Weissman, Thierry Tambe",
@@ -63368,7 +64259,8 @@
         "papers with code",
         "3D generation",
         "vision/multimodal",
-        "robotics"
+        "robotics",
+        "Feedforward Network"
       ],
       "sources": [
         "paperswithcode"
@@ -63439,6 +64331,35 @@
         "Vision/Multimodal",
         "Frontier Training",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2604.24487",
+      "title": "Guiding Vector Field Generation Via Score-Based Diffusion Model",
+      "authors": "Chen, Zirui, Guo, Shiliang, Zhao, Shiyu",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2604.24487",
+      "source": "https://paperswithcode.co/paper/2604.24487",
+      "code": "https://github.com/czr-gif/Guiding-Vector-Field-Generation-via-Score-based-Diffusion-Model",
+      "project": "",
+      "thumbnail": "./thumbs/2604.24487.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Guiding Vector Fields (GVFs) are a powerful tool for robotic path following. However, classical methods assume smooth, ordered curves and fail when paths are unordered, multi-branch, or generated by probabilistic models. We propose a unified framework, termed the Score-Induced Guiding Vector Field (SGVF), which leverages score-based generative modeling to construct vector fields directly from data distributions. SGVF learns tangent fields from point clouds with unit-norm, orthogonality, and directional-consistency losses, ensuring geometric fidelity and control feasibility. This approach removes the reliance on ad-hoc path segmentation and enables guidance along complex topologies such as branching and pseudo-manifolds. The study establishes a correspondence between score vanishing in diffusion models and GVF singularities and highlights representational capacity near sharp path curvatures. Experiments on robotic navigation in planar environments demonstrate that SGVF achieves reliable path following in scenarios where classical GVFs fail, underscoring its potential as a bridge between generative modeling and geometric control. Code and experiment video are available at https://github.com/czr-gif/Guiding-Vector-Field-Generation-via-Score-based-Diffusion-Model.",
+      "matchedBy": [
+        "papers with code",
+        "Diffusion",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
       ]
     },
     {
@@ -67419,7 +68340,8 @@
         "papers with code",
         "3D generation",
         "vision/multimodal",
-        "robotics"
+        "robotics",
+        "DUSt3R"
       ],
       "sources": [
         "paperswithcode"
@@ -69285,6 +70207,36 @@
       ]
     },
     {
+      "id": "pwc-96318",
+      "title": "OctHilNet: Hilbert-Guided Hierarchical Geometry Codec for Octree-Structured LiDAR Point Clouds",
+      "authors": "Feng, Mingjian, Cui, Mingyue, Zhong, Yuyang, Shu, Chunjie, Liu, Han, Hu, Daosong, Huang, Kai",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei1i_273",
+      "source": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei1i_273",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "High-quality LiDAR point cloud (LPC) compression is essential for the storage and transmission of 3D data. The octree-structured entropy codec has emerged as the predominant method; however, previous methods do not fully utilize spatial contextual information, due to the loss of local features caused by uneven scanning density. To address this problem, we propose OctHilNet, a novel Hilbert-guided hierarchical framework for LPC compression that introduces the polarized octree for efficient node organization and the serialize-driven entropy model to strengthen the continuity of node contexts. Specifically, to counteract the inherent density imbalance, OctHilNet first transforms points into polar coordinates and applies a non-linear rebalancing to the radial distance. Then, we introduce the Hilbert space-filling curve to mitigate the impact of the decoupling between sequential adjacency and geometric proximity in octree node sequences. Finally, to better capture fine-grained spatial correlations, we propose LocAtten and NeighbConv modules in a hierarchical Transformer, which jointly strengthen local dependencies overlooked by standard self-attention. Compared to the previous state-of-the-art works, our method achieves 45.1%-50.1% and 51.9%-53.9% BD-Rate gains on the LPC benchmark SemanticKITTI and MPEG-specified Ford datasets, respectively. In particular, our OctHilNet allows for extension to downstream tasks (i.e., vehicle detection and semantic segmentation), further demonstrating the practicality of the method.",
+      "matchedBy": [
+        "papers with code",
+        "Image segmentation",
+        "Transformer",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving"
+      ]
+    },
+    {
       "id": "pwc-97602",
       "title": "Offline Reinforced Finetuning for Chunk-Based VLA Via Real-World RL Policy Distillation with Vision-Guided Copilot",
       "authors": "Wu, Yihao, Yu, Zhenjun, Yin, Shun, Tan, Junbo, Wang, Zhihao, Wang, Xueqian",
@@ -70145,6 +71097,37 @@
       ]
     },
     {
+      "id": "pwc-96184",
+      "title": "PDLNet: Learning Point Cloud Distortion for Unsupervised Cross-Domain Point Cloud Segmentation in Adverse Weather",
+      "authors": "Dong, Shuhua, Li, Minxian, Zhang, Haofeng",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei1i_133",
+      "source": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei1i_133",
+      "code": "https://github.com/JerryD233/PDLNet",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Existing point cloud semantic segmentation models are usually trained and evaluated using data collected under clear weather conditions. Under adverse weather conditions such as rain, snow and fog, point clouds are usually distorted and significant degradation of existing model performance occurs. Many domain adaptation methods try to address this issue by simulating adverse weather or using data augmentation techniques during training. However, they cannot accurately model the actual distortion in the target domain. By analyzing the visualization and statistical information of the target domain data and referring to existing studies, we categorize the distortion of point cloud data into position distortion, intensity distortion, and quantity distortion. To address these distortions of the target domain data, we propose a Point Distortion Learning Network (PDLNet) to integrate the Point Distortion Learning (PDL) module to learn the feature distortion of target domain data due to the adverse weather. Moreover, we also integrate the Cross-domain Feature Association (CFA) module to assist the model learn domain-invariant feature representations to improve the model's adaptability to the target domain. In addition, PDLNet introduces the Point Semantic Knowledge Distillation (PSKD) module, which ensures that only the target domain data is used efficiently in the inference phase while preserving the learned cross-domain knowledge. To further improve the model performance, we also iteratively optimize the model by introducing the curriculum learning module. Our approach establishes a new state-of-the-art level by achieving 40.6% mIoU and 27.7% mIoU in the SemanticKITTI-to-SemanticSTF and SynLiDAR-to-SemanticSTF benchmarks, respectively. Source code will be released at https://github.com/JerryD233/PDLNet.",
+      "matchedBy": [
+        "papers with code",
+        "3D semantic segmentation",
+        "Image segmentation",
+        "Knowledge Distillation",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving"
+      ]
+    },
+    {
       "id": "2512.06662",
       "title": "Personalized Image Descriptions from Attention Sequences",
       "authors": "Ruoyu Xue, Hieu Le, Jingyi Xu, Sounak Mondal, Abe Leite, Gregory Zelinsky, Minh Hoai, Dimitris Samaras",
@@ -70693,6 +71676,36 @@
         "Pose Estimation",
         "Gaussian splatting",
         "VGGT",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2603.23324",
+      "title": "Pose-Free Omnidirectional Gaussian Splatting for 360-Degree Videos with Consistent Depth Priors",
+      "authors": "Chuanqing Zhuang, Xin Lu, Zehui Deng, Zhengda Lu, Yiqun Wang, Junqi Diao, Jun Xiao",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.23324",
+      "source": "https://paperswithcode.co/paper/2603.23324",
+      "code": "https://github.com/zcq15/PFGS360",
+      "project": "",
+      "thumbnail": "./thumbs/2603.23324.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Omnidirectional 3D Gaussian Splatting with panoramas is a key technique for 3D scene representation, and existing methods typically rely on slow SfM to provide camera poses and sparse points priors. In this work, we propose a pose-free omnidirectional 3DGS method, named PFGS360, that reconstructs 3D Gaussians from unposed omnidirectional videos. To achieve accurate camera pose estimation, we first construct a spherical consistency-aware pose estimation module, which recovers poses by establishing consistent 2D-3D correspondences between the reconstructed Gaussians and the unposed images using Gaussians' internal depth priors. Besides, to enhance the fidelity of novel view synthesis, we introduce a depth-inlier-aware densification module to extract depth inliers and Gaussian outliers with consistent monocular depth priors, enabling efficient Gaussian densification and achieving photorealistic novel view synthesis. The experiments show significant outperformance over existing pose-free and pose-aware 3DGS methods on both real-world and synthetic 360-degree videos. Code is available at https://github.com/zcq15/PFGS360.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Pose Estimation",
+        "DUSt3R",
+        "Gaussian splatting",
         "vision/multimodal"
       ],
       "sources": [
@@ -71998,6 +73011,34 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2507.09383",
+      "title": "Real-Time Adaptive Motion Planning Via Point Cloud-Guided, Energy-Based Diffusion and Potential Fields",
+      "authors": "Teshome, Wondmgezahu, Behzad, Kian, Camps, Octavia I., Everett, Michael, Siami, Milad, Sznaier, Mario",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2507.09383",
+      "source": "https://paperswithcode.co/paper/2507.09383",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2507.09383.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Motivated by the problem of pursuit-evasion, we present a motion planning framework that combines energy-based diffusion models with artificial potential fields for robust real time trajectory generation in complex environments. Our approach processes obstacle information directly from point clouds, enabling efficient planning without requiring complete geometric representations. The framework employs classifier-free guidance training and integrates local potential fields during sampling to enhance obstacle avoidance. In dynamic scenarios, the system generates initial trajectories using the diffusion model and continuously refines them through potential field-based adaptation, demonstrating effective performance in pursuit-evasion scenarios with partial pursuer observability.",
+      "matchedBy": [
+        "papers with code",
+        "Classifier-free guidance",
+        "Diffusion",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -74197,7 +75238,8 @@
       "matchedBy": [
         "papers with code",
         "3D generation",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Image Inpainting"
       ],
       "sources": [
         "paperswithcode"
@@ -75551,6 +76593,35 @@
       ]
     },
     {
+      "id": "2511.19854",
+      "title": "STAvatar: Soft Binding and Temporal Density Control for Monocular 3D Head Avatars Reconstruction",
+      "authors": "Jiankuo Zhao, Xiangyu Zhu, Zidu Wang, Zhen Lei",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2511.19854",
+      "source": "https://paperswithcode.co/paper/2511.19854",
+      "code": "https://github.com/JiankuoZhao/STAvatar",
+      "project": "",
+      "thumbnail": "./thumbs/2511.19854.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Reconstructing high-fidelity and animatable 3D head avatars from monocular videos remains a challenging yet essential task. Existing methods based on 3D Gaussian Splatting typically bind Gaussians to mesh triangles and model deformations solely via Linear Blend Skinning, which results in rigid motion and limited expressiveness. Moreover, they lack specialized strategies to handle frequently occluded regions (e.g., mouth interiors, eyelids). To address these limitations, we propose STAvatar, which consists of two key components: (1) a UV-Adaptive Soft Binding framework that leverages both image-based and geometric priors to learn per-Gaussian feature offsets within the UV space. This UV representation supports dynamic resampling, ensuring full compatibility with Adaptive Density Control (ADC) and enhanced adaptability to shape and textural variations. (2) a Temporal ADC strategy, which first clusters structurally similar frames to facilitate more targeted computation of the densification criterion. It further introduces a novel fused perceptual error as clone criterion to jointly capture geometric and textural discrepancies, encouraging densification in regions requiring finer details. Extensive experiments on four benchmark datasets demonstrate that STAvatar achieves state-of-the-art reconstruction performance, especially in capturing fine-grained details and reconstructing frequently occluded regions. Our project is available at https://github.com/JiankuoZhao/STAvatar.git.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Motion Generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2411.05114",
       "title": "STEM: A Soft Tactile Electromagnetic Actuator for Multimodal Haptic Feedback in Virtual Environments",
       "authors": "Mun, Heeju, Jeong, Seung Mo, Lim, Sein, Jung, Seunggyeom, Kyung, Ki-Uk",
@@ -75605,6 +76676,34 @@
         "Language Modeling",
         "Serving",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2603.23637",
+      "title": "Stochastic Ray Tracing for the Reconstruction of 3D Gaussian Splatting",
+      "authors": "Peiyu Xu, Shuang Zhao, Xin Sun, Krishna Mullia, Raymond Fei, Iliyan Georgiev",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.23637",
+      "source": "https://paperswithcode.co/paper/2603.23637",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.23637.jpg",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Ray-tracing-based 3D Gaussian splatting (3DGS) enjoys the generality of supporting non-pinhole camera models and relightable formulations. However, they are usually lacking in performance, partially due to the need for depth-based sorting of all intersecting Gaussians along the traced rays.In this paper, we introduce a sorting-free differentiable stochastic formulation for ray-traced 3DGS, enabling efficient reconstruction and rendering of both standard and relightable 3DGS scenes.For standard 3DGS, our method offers performance comparable to rasterization-based 3DGS and outperforms sorting-based ray tracing.For relightable 3DGS, our technique provides higher-quality reconstructions and renderings thanks to the accurate shadow and shading computation provided by fully ray-traced shadow and light rays.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -75797,7 +76896,8 @@
       "matchedBy": [
         "papers with code",
         "vision/multimodal",
-        "robotics"
+        "robotics",
+        "Diffusion"
       ],
       "sources": [
         "paperswithcode"
@@ -76100,6 +77200,35 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "pwc-96457",
+      "title": "TacFlex: Multi-Mode Tactile Imprints Simulation for Visuotactile Sensors with Coating Patterns",
+      "authors": "Zhang, Chaofan, Cui, Shaowei, Hu, Jingyi, Jiang, Tianyu, Zhang, Tiandong, Wang, Rui, Wang, Shuo",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei1i_420",
+      "source": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei1i_420",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-10T01:13:14.745Z",
+      "summary": "Visuotactile sensors can provide rich contact information for robots. However, how to build a high-fidelity visuotactile simulator that supports multi-mode tactile imprints and various sensor configurations remains a challenging problem. In this paper, we present TacFlex, a flexible simulator for visuotactile sensors, which physically simulates the elastomer deformation using Finite Element Methods, and focuses on linking the deformed elastomer mesh to diverse tactile imprints, including tactile images with arbitrary coating patterns and tactile 3D point clouds. We further propose a ray tracing-based rectification method to deal with multi-medium refraction effects to make the simulated tactile images more realistic. Extensive experiments are conducted to show the effectiveness of TacFlex on various sensors. Furthermore, we explore the Sim2Real performance of different tactile imprints provided by TacFlex in tactile perception and manipulation tasks, such as cylindrical object pose estimation and peg-in-hole. The perception/policy models trained in simulation are successfully deployed in real world. Finally, we discuss TacFlex's potential in robot learning.",
+      "matchedBy": [
+        "papers with code",
+        "Pose Estimation",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
       ]
     },
     {
@@ -78037,35 +79166,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2510.12768",
-      "title": "Uncertainty Matters in Dynamic Gaussian Splatting for Monocular 4D Reconstruction",
-      "authors": "Fengzhi Guo, Chih-Chuan Hsu, Sihao Ding, Cheng Zhang",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2510.12768",
-      "source": "https://paperswithcode.co/paper/2510.12768",
-      "code": "",
-      "project": "https://tamu-visual-ai",
-      "thumbnail": "./thumbs/2510.12768.jpg",
-      "firstSeenAt": "2026-07-03T01:14:35.460Z",
-      "summary": "Reconstructing dynamic 3D scenes from monocular input is fundamentally under-constrained, with ambiguities arising from occlusion and extreme novel views. While dynamic Gaussian Splatting offers an efficient representation, vanilla models optimize all Gaussian primitives uniformly, ignoring whether they are well or poorly observed. This limitation leads to motion drifts under occlusion and degraded synthesis when extrapolating to unseen views. We argue that uncertainty matters: Gaussians with recurring observations across views and time act as reliable anchors to guide motion, whereas those with limited visibility are treated as less reliable. To this end, we introduce USplat4D, a novel Uncertainty-aware dynamic Gaussian Splatting framework that propagates reliable motion cues to enhance 4D reconstruction. Our approach estimates time-varying per-Gaussian uncertainty and leverages it to construct a spatio-temporal graph for uncertainty-aware optimization. Experiments on diverse real and synthetic datasets show that explicitly modeling uncertainty consistently improves dynamic Gaussian Splatting models, yielding more stable geometry under occlusion and high-quality synthesis at extreme viewpoints. Project page: https://tamu-visual-ai.github.io/usplat4d/.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Depth Anything",
-        "Gaussian splatting",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
       ]
     },
     {
@@ -124823,7 +125923,7 @@
       "source": "https://arxiv.org/abs/2607.07423v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07423.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "We prove that, in the realizable PAC setting, the sample complexity of exact-trace learning for full autoregressive Chain-of-Thought traces is upper bounded by the standard multiclass rate of the local next-token class, where this rate is governed by the Daniely--Shalev-Shwartz dimension. Under exact-trace loss, one wrong action makes the whole trace incorrect; nevertheless, for every stopping rule $\\mathtt{halt}$ and every pointwise $\\mathtt{halt}$-halting local class $\\mathrm{H}$, $n_{\\mathrm{PAC}}^{\\varepsilon,δ}(\\operatorname{Roll}_{\\mathtt{halt}}(\\mathrm{H}))=O((\\operatorname{DSdim}(\\mathrm{H})+\\log(1/δ))/\\varepsilon)$, with no dependence on rollout length. The dependence on $\\operatorname{DSdim}(\\mathrm{H})$ is worst-case optimal, since one-step stopping recovers ordinary multiclass learning of $\\mathrm{H}$. The proof introduces parity dimension, a rollout-stable refinement of DS dimension based on even pseudo-cubes. It controls one-inclusion density via a low-coordinate spanning theorem on finite restrictions and, unlike DS dimension itself, does not increase under autoregressive rollout. We also show why this detour is necessary: DS dimension can increase under rollout.",
       "matchedBy": [
@@ -124875,7 +125975,7 @@
       "source": "https://arxiv.org/abs/2607.06640v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.06640.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "A learned world model is usually judged by how faithfully it reconstructs its observations or predicts reward, as though quality were something the model simply has or lacks. But what a task actually needs from a model is narrower: the few predictive coordinates its queries depend on, which we call the closure. We show that how much of that closure a latent comes to represent is set not by the model's capacity or its observations but by the dimensionality of the objective it is trained against, and we measure this directly on a DreamerV3 stack in a controlled environment with known ground-truth closure. An aligned scalar value signal -- the objective at the heart of value equivalence -- installs only a one-dimensional projection of a closure that needs several dimensions: read through a single linear probe, the recoverable structure rises from R^2=0.10 to 0.76 as the scalar is replaced by the full objective. Sweeping the objective's dimensionality from one to four installs exactly that many predictive directions through an auxiliary head, and the same staircase appears -- at attenuated magnitude but the same rank -- through the model's own value head, so the dissociation is dimensional rather than an artifact of head form. Capacity-matched comparisons and in-situ pressure checks rule out the obvious alternatives. The law governs a regime, and we measure its boundary: on a companion closed-loop task whose structure is observable frame by frame, reconstruction installs that structure and the scalar objective suffices -- the objective decides what a latent represents exactly where cheaper training signals cannot already recover it. Value equivalence is thus not all-or-nothing but dimensional: the familiar single-reward objective is its rank-one corner, and a model installs as much of a task's structure as the objective it is asked to predict.",
       "matchedBy": [
@@ -125394,7 +126494,7 @@
       "source": "https://arxiv.org/abs/2607.07548v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07548.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Large language model based search agents increasingly adopt multi-agent architectures in which a main agent decomposes a complex question into sub-queries and dispatches them to parallel sub-agents. However, existing systems instantiate all roles from a single model of identical scale, leaving open how model capacity should be distributed across roles. We factorize hierarchical search into three roles: a delegation role responsible for task decomposition, an execution role responsible for retrieval and evidence extraction, and an answer generation role held fixed as a confound control. We then conduct controlled capacity sweeps along the delegation and execution axes on five multi-hop QA benchmarks. The experiments yield three findings. First, role factorization consistently outperforms a single-agent baseline, improving exact match from 4.5 to 8.6 points across six model scales. Second, capacity sensitivity is asymmetric: scaling the delegation backbone improves EM by ~11 points, whereas scaling the execution sub-agent moves EM by only ~2.6 points, identifying decomposition as the capability bottleneck. Third, a 1.7B-parameter executor trained via quality-filtered trajectory distillation matches a frontier sub-agent in accuracy while consuming 37% fewer sub-agent tokens, advancing the Pareto frontier. These results suggest a concrete recipe for building hierarchical search agents: concentrate capacity at delegation and downsize execution without sacrificing accuracy. Our code is available at https://github.com/QinnanCai0115/role-factorized-search.",
       "matchedBy": [
@@ -125952,7 +127052,7 @@
       "source": "https://arxiv.org/abs/2607.07287v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07287.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Dexterous manipulation in everyday environments requires both anticipation and reaction: a robot must predict how contact should evolve while rapidly correcting local errors caused by slip, misalignment, unstable grasping, or force mismatch. Vision and language provide semantic and geometric guidance, but they cannot reliably reveal hidden contact states such as force, slip, and contact stability. Although tactile sensing exposes these physical cues, most existing policies treat touch as a low-frequency observation stream within a monolithic action model, coupling slow task reasoning, action generation, and fast contact feedback in a single loop. We introduce TouchWorld, a predictive-and-reactive tactile foundation model for dexterous manipulation. TouchWorld uses a hierarchical policy that separates vision-language subtask planning, tactile world-model prediction, visuo-tactile goal-conditioned action generation, and high-frequency tactile residual refinement. A High-Level Planning Layer produces executable subtasks and predicts tactile subgoals; a Visuo-Tactile Goal-Conditioned Policy generates nominal action chunks; and a Tactile-Conditioned Refinement Policy performs online residual correction using recent tactile and proprioceptive feedback. By using touch as both a predictive contact reference and a fast feedback signal, TouchWorld preserves the semantic generalization of vision-language-action policies while improving local contact adaptation. Across six long-horizon and contact-rich dexterous manipulation tasks, TouchWorld achieves 65.0% success in the clean setting and 53.7% success under human perturbations, outperforming the strongest baseline by 15.7 and 18.5 percentage points, respectively.",
       "matchedBy": [
@@ -126096,7 +127196,7 @@
       "source": "https://arxiv.org/abs/2607.07177v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07177.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Background: Automated 3D segmentation of muscles and adipose tissue from CT is vital for body composition analysis, but multi-source data heterogeneity and high CPU memory demands hinder clinical deployment. Methods: We propose a coarse-to-fine hierarchical framework to segment ten tissue structures. Efficiency is optimized using Dynamic Spacing and Anisotropic Patching, a Group Inference mechanism for low-memory sliding-window processing, and Topology-Aware Asymmetric Resampling for fast post-processing. Results: The framework was trained on 1,558 CT volumes from seven public and two private datasets, and evaluated on an independent test cohort (N=105), per-structure Dice coefficients ranged from 0.924 to 0.982. Eight major structures met the +-10% relative error clinical acceptance limit. On a 12-core CPU workstation, the GPU-free pipeline averaged 44.5 seconds per volume with 4.73 GB peak memory. Conclusion: This framework balances accuracy and efficiency, enabling robust, large-scale body composition analysis on standard CPU workstations.",
       "matchedBy": [
@@ -126530,7 +127630,7 @@
       "source": "https://arxiv.org/abs/2607.07038v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07038.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Medical image segmentation models can achieve strong benchmark performance while remaining sensitive to scanner, protocol, and institutional variation. These context shifts alter image appearance without changing the underlying lesion, allowing models to exploit nuisance cues that Dice and HD95 fail to expose. We present TRACE-Seg3D, a counterfactual context auditing framework for robust 3D medical image segmentation. TRACE-Seg3D preserves lesion-relevant evidence and systematically varies imaging context to quantify prediction stability under controlled context shifts. The framework pairs each segmentation with audit evidence for context sensitivity and anatomical plausibility, enabling case-level reliability assessment beyond overlap-based evaluation. Experiments on BraTS and UTSW glioma segmentation benchmarks demonstrate competitive in-distribution and cross-domain performance. TRACE-Seg3D also exposes context-sensitive failure modes missed by conventional metrics. These results establish counterfactual context auditing as a practical route toward transparent and reliable 3D medical image segmentation under distribution shift. Our code is available at https://github.com/danleneurocom/Counterfactual-Representation-Network.",
       "matchedBy": [
@@ -126834,7 +127934,7 @@
       "source": "https://arxiv.org/abs/2607.07117v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07117.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "In text-to-image in-context learning (T2I-ICL), a model has to infer a latent compositional pattern from fewshot demonstrations for generating a query image. Recent studies show that state-of-the-art multimodal large language models struggle with this setting, particularly due to limited compositional reasoning and sensitivity to prompt construction. In this work, we propose a Tree-of-Thoughts (ToT) reasoning framework for T2I-ICL that introduces a multi-stage reasoning and selection layer that generates, evaluates, and selects among multiple candidate hypotheses before constructing the final prompt for image synthesis. By exploring alternative reasoning branches and selecting a coherent interpretation, the proposed approach mitigates prompt ambiguity and compositional errors. We implement the proposed approach in a complete ToT-T2IICL inference pipeline and evaluate it on the CoBSAT benchmark. Both qualitative and quantitative results show that structured multi-branch reasoning leads to more consistent and semantically aligned image generation compared to baseline and Chain-of-Thought prompting strategies, without any additional training or fine-tuning.",
       "matchedBy": [
@@ -126862,7 +127962,7 @@
       "source": "https://arxiv.org/abs/2607.06763v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.06763.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Speculative decoding greatly increases the interactivity of autoregressive language models by trading off computation for extra tokens generated in a single forward pass. Factorized draft models are especially efficient because they predict future-token marginals in parallel, but their independence assumption causes acceptance rates to degrade sharply as the speculative budget grows. We analyze this limitation and introduce Weaver, a lightweight autoregressive adapter that constructs proposal trees from the top-K marginals of a factorized drafter. Weaver restores conditional dependencies between proposed tokens while avoiding a full-vocabulary projection. To support fast verification for models with Gated Delta Net layers, we derive a rollback-free tree-verification algorithm and implement optimized CUDA kernels in SGLang. By combining these model and systems contributions we achieve a 4.37-fold speedup over autoregressive decoding, and outperform a highly optimized DFlash baseline by 24.7%.",
       "matchedBy": [
@@ -127794,7 +128894,7 @@
       "source": "https://arxiv.org/abs/2607.07277v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07277.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Harmful online communication often contains slang, coded terms, abbreviations, and community-specific expressions, which make messages difficult to interpret. This paper presents an exploratory study of interpretation difficulty in Discord chats related to cybercrime. We construct reference interpretations of purposefully selected difficult messages, which were reviewed by an expert. We then use them to evaluate human and large language model (LLM) interpretations under different context conditions. The results show that local context alone is often insufficient for humans, while external knowledge and extended conversational context substantially improve human interpretation. For LLMs, local context also improves interpretation, and the larger model performs better. We further conduct a qualitative error analysis and propose a preliminary classification of factors that make harmful chats difficult to interpret. These findings suggest that harmful-content analysis should treat interpretation as an evidence-integration problem, rather than as message-level classification alone.",
       "matchedBy": [
@@ -128508,7 +129608,7 @@
       "source": "https://arxiv.org/abs/2607.07196v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07196.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Across robotics, World Models (WMs) are increasingly used to evaluate action policies by simulating the consequences of actions in an imagined world, and returning a success or safety verdict. Yet a verdict is only as trustworthy as the WM that produced it, and the WM itself needs to be certified. In video-generation WMs, fidelity metrics such as Fréchet Video Distance (FVD) reward visual realism, but ignore whether the world responds correctly to the policy's actions, including those unseen in training. Classical simulation-based validation assumes a trusted simulator evaluating an untrusted policy, whereas generative WMs are themselves unverified learned artifacts. Hence, we argue that any WM used as a test oracle must first be accredited before its verdicts can serve as evidence. Building on credibility practices from safety-critical simulation, including Verification, Validation & Accreditation (VV&A), Safety of the Intended Functionality (SOTIF), and scenario-based testing standards, we define an admissibility ladder (L0-L4) that a WM must climb before its closed-loop verdicts are accepted as assurance evidence. Our framework is embodiment-agnostic, and is instantiated in autonomous driving (AD), where assurance methods for traditional simulation are most mature. Applied to two driving WMs, the lower rungs reveal a reversal: the model that ranks higher on visual generation quality (L0) ranks lower on action-following (L1-L2), so visual fidelity does not predict the action-robustness a closed-loop verdict depends on.",
       "matchedBy": [
@@ -128620,7 +129720,7 @@
       "source": "https://arxiv.org/abs/2607.07416v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07416.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Semi-supervised 3D medical image segmentation reduces the need for dense voxel-level annotations by exploiting unlabeled volumes. Although existing methods such as consistency regularization, pseudo-labeling, and co-training improve prediction-level robustness, they often provide insufficient feature-space organization for anatomically complex structures, especially small organs and ambiguous boundary regions with large intra-class variations. To address this issue, we propose Variation-Conditioned Distributional Proxy Learning (VCDP), a plug-and-play training-only regularization module for semi-supervised 3D medical image segmentation. VCDP represents each class with a learnable Gaussian distribution for shared class semantics and multiple variation prototypes for fine-grained intra-class patterns. A unified variation-conditioned compatibility score is further formulated to fuse distributional similarity and soft variation aggregation, guiding voxel embeddings to align with both global organ identity and local anatomical variations. VCDP is attached to decoder features during training and removed during inference, introducing no additional inference cost. Experiments on multi-organ segmentation benchmarks show that VCDP improves most evaluated baselines, particularly for small, ambiguous, and highly variable organs. Our anonymous code is released at https://anonymous.4open.science/r/VCDP_code-41ED.",
       "matchedBy": [
@@ -129012,7 +130112,7 @@
       "source": "https://arxiv.org/abs/2607.06706v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.06706.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Vision Language Action (VLA) models unify visual perception, natural-language understanding, and action generation within a single foundation model, allowing a robot to follow instructions such as fold the towel or fly to the red building directly from camera images. Because VLAs inherit world knowledge from internet-scale pre-training, they have become the dominant framework for learning-based manipulation, with bimanual coordination serving as the most demanding testbed: two arms with 7 degrees of freedom each must move in concert to fold, assemble, and reorient objects. Unmanned aerial robotics faces a structurally similar challenge: a drone must coordinate thrust, attitude, and increasingly gripper commands from visual observations under strict latency and payload constraints. This review covers 183 contributions spanning 2017-2026 and organized along seven dimensions: VLA architectures, training recipes, action representations, bimanual coordination (2022-2026), unmanned aerial vehicle (UAV) navigation and control (2017-2026), language grounding, and cross-cutting concerns including memory and world models. We show that the coordination strategies, training recipes, and action representations developed for bimanual VLAs transfer to unmanned aerial systems and identify fourteen research directions across both domains.",
       "matchedBy": [
@@ -129584,7 +130684,7 @@
       "source": "https://arxiv.org/abs/2607.07046v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07046.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Large language models (LLMs) are widely used in intelligent services due to their remarkable capability in generative tasks. Typically, LLM-based services process the inference requests of the users in a centralized data center. Unfortunately, such centralized execution has limitations for end-users, such as increased response latency with communication overhead and privacy leakage risk. To alleviate the aforementioned limitations, there have been increasing pushes to execute LLM inference locally on user-end devices. However, the limited resources of a single edge device impose restrictions on achievable accuracy of LLMs. To overcome the issue, we first propose to leverage multiple user-end devices available at the edge for LLM inference, enabling the execution of larger models. Specifically, we propose Voltron, a novel on-device LLM inference framework that elastically utilizes multiple user-end devices for LLM inference execution while adapting to diverse real-world edge environments. In our evaluation, Voltron achieves up to 16.5% higher accuracy than state-of-the-art LLMs that can be executed on a single edge device, satisfying user QoS requirements.",
       "matchedBy": [
@@ -130026,7 +131126,7 @@
       "source": "https://arxiv.org/abs/2607.06799v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.06799.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Evaluating uncertainty in AI-generated SQL queries requires estimating whether a query is correct, where correct means it executes to the same result as a human-written reference. We study which signals predict correctness on hard multi-table text-to-SQL, using AUROC to measure how well each ranks correct queries above incorrect ones. On BIRD and Spider, black-box signals such as string, structural, and execution self-consistency, a schema-relevance score, and query executability all fall between about 0.61 and 0.68 AUROC, with string self-consistency strongest at 0.675; white-box log-probability is similar (0.67). The signals that move past this ceiling are verification-based: an LLM judge scores from 0.72 (GPT-4o-mini) to 0.78 (Claude). Judges from different providers make different errors, so a two-provider ensemble reaches 0.82 AUROC with a well-calibrated probability (expected calibration error 0.03) and supports useful abstention frontiers (for example, answering 27% of questions at 24% selective risk) where self-consistency offers no valid low-risk subset. The pattern holds across two benchmarks, two generators, and two judge providers. We also ask whether a verifier can be trained. Fine-tuned verifiers, both encoder and generative, reach about 0.77 to 0.79 AUROC in-distribution but fall to about 0.66 on unseen schemas; scaling to 7B, adding schema diversity, distilling a strong judge's rationales, and cross-benchmark training all fail to close that gap. Cross-schema transfer appears to track model scale and reasoning rather than fine-tuning. In practice, correctness uncertainty for text-to-SQL lives in reasoning-based signals: a fine-tuned verifier is a good in-domain tool, but a verifier that generalizes across schemas currently means a large frozen reasoning model.",
       "matchedBy": [
@@ -130136,7 +131236,7 @@
       "source": "https://arxiv.org/abs/2607.06765v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.06765.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Conversational Recommender Systems (CRSs) are interactive systems that use multi-turn natural language dialogue to understand evolving user preferences and provide personalized recommendations. To achieve this goal, CRSs rely on preference elicitation strategies to actively gather informative preference cues from users; however, the timing and selection of these strategies during a conversation remain largely unexplored. While many existing studies emphasize eliciting explicit item attributes and tend to adopt relatively static elicitation strategies, the use of item-based preference elicitation and how it varies across different dialogue stages remains less explored. In this work, we conduct a systematic investigation of preference elicitation strategies from a stage-aware perspective. We provide empirical evidence that optimal preference elicitation strategies are stage-dependent and context-sensitive: attribute-based inquiries are effective in early stages, while item-based strategies become superior as preferences refine. To support this paradigm, we introduce InPE, a dataset enriched with fine-grained annotations for elicitation necessity and strategy selection. With this dataset, we propose COPE (COnversational Preference Elicitation via Mixture of Experts), a novel architecture for strategy modeling. Extensive offline evaluation on our dataset indicates that context-aware preference elicitation strategies are beneficial for conversational recommendation. In addition, the analysis of the predicted strategies uncovers consistent stage-wise tendencies in dialogue progression, providing empirical evidence of common interaction patterns in conversational recommendation systems. Our dataset is available at https://github.com/juanfacabian/InPE.",
       "matchedBy": [
@@ -130464,7 +131564,7 @@
       "source": "https://arxiv.org/abs/2607.07395v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.07395.jpg",
       "firstSeenAt": "2026-07-10T00:17:44.292Z",
       "summary": "Reliable confidence estimation remains a key limitation of test-time adaptation in vision-language models (VLMs), where prompt tuning improves zero-shot accuracy but often degrades calibration due to entropy-driven overconfidence. Prior approaches mitigate this using LLM-derived class attributes and contrastive regularization, yet treat attributes independently, ignoring their relational structure. We propose ARGTCA, which represents (class, attribute) pairs as nodes in a Symbolic Attribute Graph and trains a Graph Attention Network (GAT) using contrastive objectives to produce structurally informed embeddings that capture inter-attribute dependencies. We introduce two attribute selection strategies: ARGTCA-DIV for intra-class diversity and ARGTCA-DISC for inter-class discrimination. Experiments across nine benchmarks show that ARGTCA-DIV reduces average Expected Calibration Error (ECE) by approximately ~37% over baselines, while ARGTCA-DISC consistently performs as the second-best variant, reducing average ECE by approximately ~17% over baselines. These results suggest that modeling symbolic attribute interactions provides a principled approach for reliable test-time adaptation in VLMs.",
       "matchedBy": [
