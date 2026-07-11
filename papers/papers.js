@@ -724,14 +724,20 @@ function resetPage() {
   state.page = 1;
 }
 
+function countPapersForCategory(category) {
+  if (category === "All") return state.papers.length;
+  if (category === "Added Today") return state.papers.filter(isAddedToday).length;
+  if (category === "Saved") return state.papers.filter((paper) => state.saved.has(paper.id)).length;
+  return state.papers.filter((paper) => categoriesFor(paper).includes(category)).length;
+}
+
 function renderTabs() {
   categoryTabs.innerHTML = categories
     .map((category) => {
-      // Only the "All" tab carries a count (the total paper number).
-      const badge = category === "All" ? `<span class="tab-count">${state.papers.length}</span>` : "";
+      const count = countPapersForCategory(category);
       return `
         <button class="tab" type="button" aria-pressed="${state.category === category}" data-category="${category}">
-          <span>${category}</span>${badge}
+          <span>${category}</span><span class="tab-count">${count}</span>
         </button>
       `;
     })
