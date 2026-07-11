@@ -11,7 +11,8 @@ const categories = [
   "Vision/Multimodal",
 ];
 
-const PAGE_SIZE = 20;
+const DEFAULT_PAGE_SIZE = 20;
+const PAGE_SIZE_OPTIONS = [10, 20, 50, 100];
 const COMMENTS_PAGE_SIZE = 10;
 const FEED_PAGE_SIZE = 8;
 const MAX_LOCAL_COMMENTS_PER_PAPER = 1000;
@@ -20,6 +21,7 @@ const state = {
   category: "All",
   newest: "all",
   page: 1,
+  pageSize: DEFAULT_PAGE_SIZE,
   query: "",
   saved: new Set(),
   papers: [],
@@ -73,6 +75,10 @@ function categoriesFor(paper) {
   return [...new Set(values)].filter(Boolean);
 }
 
+function categoryLabel(category) {
+  return category === "Vision/Multimodal" ? "Vision / Multimodal" : category;
+}
+
 // Per-area accent colour, used for the coloured dot on topic pills and the tint of the
 // thumbnail fallback. Keeps a light, editorial feel — no heavy gradient covers.
 const CATEGORY_STYLE = {
@@ -95,16 +101,25 @@ function hasThumb(paper) {
   return typeof paper.thumbnail === "string" && paper.thumbnail.trim().length > 0;
 }
 
+function venueFor(paper) {
+  const venue = String(paper.venue || "").trim();
+  if (venue) return venue;
+  const published = String(paper.published || "").trim();
+  return /^\d{4}-\d{2}-\d{2}$/.test(published) ? "" : published;
+}
+
 // Every paper gets a thumbnail: the real rendered PDF first page when we have it,
 // otherwise a designed "title card" (category label + serif title on the area's accent
 // gradient) so the board never shows a bare placeholder.
 function thumbCard(paper) {
   const category = categoriesFor(paper)[0] || "Paper";
   const title = (paper.title || "Untitled").trim();
+  const venue = venueFor(paper);
   return `
     <span class="thumb-card" aria-hidden="true">
-      <span class="thumb-card-cat">${escapeHtml(category)}</span>
+      <span class="thumb-card-cat">${escapeHtml(categoryLabel(category))}</span>
       <span class="thumb-card-title">${escapeHtml(title)}</span>
+      ${venue ? `<span class="thumb-card-venue">${escapeHtml(venue)}</span>` : ""}
     </span>
   `;
 }
@@ -140,7 +155,8 @@ function pillsFor(paper) {
   return categoriesFor(paper)
     .map((category) => {
       const color = (CATEGORY_STYLE[category] || DEFAULT_STYLE).color;
-      return `<span class="category-pill" style="--accent:${color}">${escapeHtml(category)}</span>`;
+      const label = categoryLabel(category);
+      return `<button class="category-pill" type="button" data-filter-category="${escapeHtml(category)}" style="--accent:${color}" aria-label="Show ${escapeHtml(label)} papers">${escapeHtml(label)}</button>`;
     })
     .join("");
 }
@@ -735,9 +751,10 @@ function renderTabs() {
   categoryTabs.innerHTML = categories
     .map((category) => {
       const count = countPapersForCategory(category);
+      const label = categoryLabel(category);
       return `
-        <button class="tab" type="button" aria-pressed="${state.category === category}" data-category="${category}">
-          <span>${category}</span><span class="tab-count">${count}</span>
+        <button class="tab" type="button" aria-pressed="${state.category === category}" data-category="${escapeHtml(category)}">
+          <span>${escapeHtml(label)}</span><span class="tab-count">${count}</span>
         </button>
       `;
     })
@@ -745,8 +762,8 @@ function renderTabs() {
 }
 
 function renderPagination(totalItems) {
-  const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
-  if (totalItems <= PAGE_SIZE || state.view !== "papers") {
+  const totalPages = Math.max(1, Math.ceil(totalItems / state.pageSize));
+  if (!totalItems || state.view !== "papers") {
     pagination.hidden = true;
     pagination.innerHTML = "";
     return;
@@ -754,8 +771,8 @@ function renderPagination(totalItems) {
 
   pagination.hidden = false;
   const current = Math.min(state.page, totalPages);
-  const start = (current - 1) * PAGE_SIZE + 1;
-  const end = Math.min(current * PAGE_SIZE, totalItems);
+  const start = (current - 1) * state.pageSize + 1;
+  const end = Math.min(current * state.pageSize, totalItems);
   const pages = Array.from({ length: totalPages }, (_, index) => index + 1).filter(
     (page) => page === 1 || page === totalPages || Math.abs(page - current) <= 1,
   );
@@ -774,15 +791,21 @@ function renderPagination(totalItems) {
       ${pageButtons}
       <button type="button" data-page="${current + 1}" ${current === totalPages ? "disabled" : ""}>Next</button>
     </div>
+    <label class="page-size-field">
+      <span>Per page</span>
+      <select data-page-size aria-label="Papers per page">
+        ${PAGE_SIZE_OPTIONS.map((size) => `<option value="${size}" ${size === state.pageSize ? "selected" : ""}>${size}</option>`).join("")}
+      </select>
+    </label>
   `;
 }
 
 function renderPapers() {
   const visible = state.papers.filter(matchesPaper).sort(comparePapers);
-  const totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(visible.length / state.pageSize));
   state.page = Math.min(Math.max(1, state.page), totalPages);
-  const pageStart = (state.page - 1) * PAGE_SIZE;
-  const pageItems = visible.slice(pageStart, pageStart + PAGE_SIZE);
+  const pageStart = (state.page - 1) * state.pageSize;
+  const pageItems = visible.slice(pageStart, pageStart + state.pageSize);
 
   if (!visible.length) {
     paperGrid.innerHTML = `<div class="empty">No papers match this filter.</div>`;
@@ -967,6 +990,16 @@ categoryTabs.addEventListener("click", (event) => {
 });
 
 paperGrid.addEventListener("click", (event) => {
+  const categoryButton = event.target.closest("[data-filter-category]");
+  if (categoryButton) {
+    state.category = categoryButton.dataset.filterCategory;
+    state.view = "papers";
+    resetPage();
+    render();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
   const editCommentButton = event.target.closest("[data-edit-comment]");
   if (editCommentButton) {
     editComment(editCommentButton.dataset.paperId, editCommentButton.dataset.editComment);
@@ -1018,6 +1051,29 @@ paperGrid.addEventListener("submit", (event) => {
   postComment(paperId, textarea.value);
 });
 
+paperGrid.addEventListener("pointermove", (event) => {
+  if (event.pointerType === "touch" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const link = event.target.closest(".row-thumb-link");
+  if (!link) return;
+  const thumb = link.querySelector(".row-thumb");
+  if (!thumb) return;
+
+  const bounds = thumb.getBoundingClientRect();
+  const x = Math.max(-1, Math.min(1, ((event.clientX - bounds.left) / bounds.width) * 2 - 1));
+  const y = Math.max(-1, Math.min(1, ((event.clientY - bounds.top) / bounds.height) * 2 - 1));
+  thumb.style.setProperty("--tilt-x", `${(-y * 7).toFixed(2)}deg`);
+  thumb.style.setProperty("--tilt-y", `${(x * 9).toFixed(2)}deg`);
+});
+
+paperGrid.addEventListener("pointerout", (event) => {
+  const link = event.target.closest(".row-thumb-link");
+  if (!link || link.contains(event.relatedTarget)) return;
+  const thumb = link.querySelector(".row-thumb");
+  if (!thumb) return;
+  thumb.style.removeProperty("--tilt-x");
+  thumb.style.removeProperty("--tilt-y");
+});
+
 searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
   resetPage();
@@ -1044,7 +1100,17 @@ pagination.addEventListener("click", (event) => {
   if (!button || button.disabled) return;
   state.page = Number(button.dataset.page);
   renderPapers();
-  document.querySelector("#board")?.scrollIntoView({ block: "start", behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+pagination.addEventListener("change", (event) => {
+  const select = event.target.closest("[data-page-size]");
+  if (!select) return;
+  const pageSize = Number(select.value);
+  if (!PAGE_SIZE_OPTIONS.includes(pageSize)) return;
+  state.pageSize = pageSize;
+  resetPage();
+  renderPapers();
 });
 
 feedOpen.addEventListener("click", () => {
