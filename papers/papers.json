@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-12T00:09:06.044Z",
+  "generatedAt": "2026-07-12T01:11:19.758Z",
   "sourceStats": {
-    "seed": 4888,
+    "seed": 4922,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 23,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 4922
+    "total": 4932
   },
   "papers": [
     {
@@ -29641,7 +29641,8 @@
         "papers with code",
         "Language Modeling",
         "language modeling",
-        "frontier training"
+        "frontier training",
+        "Large language model (LLM)"
       ],
       "sources": [
         "paperswithcode"
@@ -35003,6 +35004,35 @@
       ]
     },
     {
+      "id": "2602.24273",
+      "title": "A Minimal Agent for Automated Theorem Proving",
+      "authors": "Borja Requena, Austin Letson, Krystian Nowakowski, Izan Beltran Ferreiro, Leopoldo Sarra",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2602.24273",
+      "source": "https://paperswithcode.co/paper/2602.24273",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.24273.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "We propose a minimal agentic baseline that enables systematic comparison across different AI-based theorem prover architectures. This design implements the core features shared among state-of-the-art systems: iterative proof refinement, library search and context management. We evaluate this agentic approach using qualitatively different benchmarks and compare various frontier language models and design choices. Our results show competitive performance compared to state-of-the-art approaches, while using a significantly simpler architecture and a fraction of their cost. Additionally, we demonstrate consistent advantages of an iterative approach over multiple single-shot generations, especially in terms of sample efficiency and cost effectiveness. The implementation is released open-source as a candidate reference for future research and as an accessible prover for the community.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2503.01238",
       "title": "A Taxonomy for Evaluating Generalist Robot Manipulation Policies",
       "authors": "Gao, Jensen, Belkhale, Suneel, Dasari, Sudeep, Balakrishna, Ashwin, Shah, Dhruv, Sadigh, Dorsa",
@@ -36073,6 +36103,36 @@
         "Language Modeling",
         "Serving",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2507.00647",
+      "title": "Cooperative Sheaf Neural Networks",
+      "authors": "André Ribeiro, Ana Luiza Tenorio, Juan Belieni, Amauri H Souza, Diego Mesquita",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2507.00647",
+      "source": "https://paperswithcode.co/paper/2507.00647",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2507.00647.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "Sheaf neural networks (SNNs) leverage cellular sheaves to induce flexible diffusion processes on graphs, generalizing the diffusion mechanism of classical graph neural networks. While SNNs have been shown to cope well with heterophilic tasks and alleviate oversmoothing, we show that there is further room for improving sheaf diffusion. More specifically, we argue that SNNs do not allow nodes to independently choose how they cooperate with their neighbors, i.e., whether they convey and/or gather information to/from their neighbors. To address this issue, we first introduce the notion of cellular sheaves over directed graphs and characterize their in- and out-degree Laplacians. We then leverage our construction to propose Cooperative Sheaf Neural Network (CSNN). Additionally, we formally characterize its receptive field and prove that it allows nodes to selectively attend (listen) to arbitrarily far nodes while ignoring all others in their path, which is key to alleviating oversquashing. Our results on synthetic data empirically substantiate our claims, showing that CSNN can handle long-range interactions while avoiding oversquashing. We also show that CSNN performs strongly in heterophilic node classification and long-range graph classification benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "Graph Classification",
+        "Graph Machine Learning",
+        "Node Classification",
+        "Diffusion",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -38101,6 +38161,39 @@
       "categories": [
         "Language Modeling",
         "Data / Retrieval"
+      ]
+    },
+    {
+      "id": "2512.23128",
+      "title": "It's a TRAP! Task-Redirecting Agent Persuasion Benchmark for Web Agents",
+      "authors": "Karolina Korgul, Yushi Yang, Arkadiusz Drohomirecki, Piotr Blaszczyk, Will Howard, Lukas Aichberger, Chris Russell, Philip Torr, Adam Mahdi, Adel Bibi",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2512.23128",
+      "source": "https://paperswithcode.co/paper/2512.23128",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.23128.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "Web-based agents powered by large language models are increasingly used for tasks such as email management or professional networking. Their reliance on dynamic web content, however, makes them vulnerable to prompt injection attacks: adversarial instructions hidden in interface elements that persuade the agent to divert from its original task. We introduce the Task-Redirecting Agent Persuasion Benchmark (TRAP), a benchmark for studying how persuasion techniques misguide autonomous web agents on realistic tasks. Across six frontier models, agents are susceptible to prompt injection in 25\\% of tasks on average (13\\% for GPT-5 to 43\\% for DeepSeek-R1), with small interface or contextual changes often doubling success rates and revealing systemic, psychologically driven vulnerabilities in web-based agents. We also provide a modular social-engineering injection framework with controlled experiments on high-fidelity website clones, allowing for further benchmark expansion.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "DeepSeek-R1",
+        "GPT-5",
+        "Large language model (LLM)",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Benchmark"
       ]
     },
     {
@@ -40161,6 +40254,38 @@
       "categories": [
         "Language Modeling",
         "Serving"
+      ]
+    },
+    {
+      "id": "2510.20886",
+      "title": "Shoot First, Ask Questions Later? Building Rational Agents that Explore and Act Like People",
+      "authors": "Gabriel Grand, Valerio Pepe, Joshua B. Tenenbaum, Jacob Andreas",
+      "org": "",
+      "published": "ICLR 2026 Oral",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2510.20886",
+      "source": "https://paperswithcode.co/paper/2510.20886",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.20886.jpg",
+      "firstSeenAt": "2026-06-25T00:21:13.185Z",
+      "summary": "Many emerging applications of AI—from scientific discovery to medical diagnosis—require agents to seek information strategically: forming hypotheses, asking targeted questions, and making decisions under uncertainty. In high-stakes settings with limited resources, do language models (LMs) behave like rational agents? Drawing on insights from human cognition, we develop methods to evaluate and enhance agentic information-seeking. First, we introduce a decision-oriented dialogue task called Collaborative Battleship, in which a Captain must balance exploration (asking questions) and action (taking shots), while a Spotter must supply accurate, contextually-grounded answers. Compared to human players (N=42), we find that many LM agents struggle to ask informative questions, produce accurate answers, and identify high-utility actions. To address these gaps, we develop novel Monte Carlo inference strategies for LMs inspired by Bayesian Experimental Design (BED). For Spotter agents, our approach boosts accuracy by up to 14.7% absolute over LM-only baselines; for Captain agents, it raises expected information gain (EIG) by up to 0.227 bits (94.2% of the achievable noise ceiling). Combined, these components yield sharper targeting (+0.303–0.374 F1), and enable weaker LMs, such as Llama-4-Scout, to outperform both humans (8% → 82% win rate) and frontier models (0% → 67% win rate vs. GPT-5) at ≈1% of GPT-5's cost. We replicate these findings on Guess Who?, where our methods significantly boost accuracy (+28.3–42.4 p.p.), demonstrating their general applicability for building information-seeking agents.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Chain-of-Thought (CoT)",
+        "Direct Preference Optimization (DPO)",
+        "Gemini 2.5",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -54150,38 +54275,6 @@
       ]
     },
     {
-      "id": "2510.20886",
-      "title": "Shoot First, Ask Questions Later? Building Rational Agents that Explore and Act Like People",
-      "authors": "Gabriel Grand, Valerio Pepe, Joshua B. Tenenbaum, Jacob Andreas",
-      "org": "",
-      "published": "ICLR 2026 Oral",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2510.20886",
-      "source": "https://paperswithcode.co/paper/2510.20886",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2510.20886.jpg",
-      "firstSeenAt": "2026-06-25T00:21:13.185Z",
-      "summary": "Many emerging applications of AI—from scientific discovery to medical diagnosis—require agents to seek information strategically: forming hypotheses, asking targeted questions, and making decisions under uncertainty. In high-stakes settings with limited resources, do language models (LMs) behave like rational agents? Drawing on insights from human cognition, we develop methods to evaluate and enhance agentic information-seeking. First, we introduce a decision-oriented dialogue task called Collaborative Battleship, in which a Captain must balance exploration (asking questions) and action (taking shots), while a Spotter must supply accurate, contextually-grounded answers. Compared to human players (N=42), we find that many LM agents struggle to ask informative questions, produce accurate answers, and identify high-utility actions. To address these gaps, we develop novel Monte Carlo inference strategies for LMs inspired by Bayesian Experimental Design (BED). For Spotter agents, our approach boosts accuracy by up to 14.7% absolute over LM-only baselines; for Captain agents, it raises expected information gain (EIG) by up to 0.227 bits (94.2% of the achievable noise ceiling). Combined, these components yield sharper targeting (+0.303–0.374 F1), and enable weaker LMs, such as Llama-4-Scout, to outperform both humans (8% → 82% win rate) and frontier models (0% → 67% win rate vs. GPT-5) at ≈1% of GPT-5's cost. We replicate these findings on Guess Who?, where our methods significantly boost accuracy (+28.3–42.4 p.p.), demonstrating their general applicability for building information-seeking agents.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Chain-of-Thought (CoT)",
-        "Direct Preference Optimization (DPO)",
-        "Gemini 2.5",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2509.17877",
       "title": "Sight Over Site: Perception-Aware Reinforcement Learning for Efficient Robotic Inspection",
       "authors": "Kuhlmann, Richard, Wolfram, Jakob, Sun, Boyang, Xing, Jiaxu, Scaramuzza, Davide, Pollefeys, Marc, Cadena, Cesar",
@@ -56779,6 +56872,37 @@
       ]
     },
     {
+      "id": "2606.02020",
+      "title": "Unveiling the Entropy Dynamics of Chain-of-Thought Reasoning",
+      "authors": "Ting Xu, Xu He, Yupu Lu, Jiankai Sun, Dong Li, Wai Lam, Jianye HAO",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2606.02020",
+      "source": "https://paperswithcode.co/paper/2606.02020",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.02020.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "This paper investigates the entropy dynamics of Chain-of-Thought (CoT) and uncovers a consistent two-phase structure: an ***Uncertainty Region*** of exploration transitioning sharply to a ***Confidence Region*** of convergence. We demonstrate that the Confidence Region possesses two critical properties: 1) ***High Reliability***—answers in confidence region become highly accurate and stable, and 2) ***High Redundancy***—models generate unnecessary tokens long after reaching the correct answer. These properties unlock more efficient and reliable inference strategies: 1) ***Early Exit*** leverages reliability and redundancy to terminate computation safely when returns diminish, and 2) ***Test-Time Scaling*** uses the Confidence Region signal to prioritize converged trajectories. To operationalize these insights, we formulate Confidence Region detection as a sequential change-point detection problem, being the first to apply classical change-point methods to monitor CoT reasoning. Using the Cumulative Sum (CUSUM) algorithm, a statistically optimal change-point detector, we develop a training-free framework for real-time inference control. Experiments show our approach establishes a superior Pareto-frontier for early exit. CUSUM achieves 63.06% accuracy with 11.1% token reduction, outperforming DEER and Dynasor by 3.28% and 4.36% in accuracy respectively. For test-time scaling, CUSUM-weighted voting consistently outperforms self-consistency.",
+      "matchedBy": [
+        "papers with code",
+        "Reasoning",
+        "Chain-of-Thought (CoT)",
+        "Test-time scaling",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2509.22228",
       "title": "UrbanFeel：A Comprehensive Benchmark for Temporal and Perceptual Understanding of City Scenes through Human Perspective",
       "authors": "Jun He, Yi Lin, Zilong Huang, Jiacong Yin, Junyan Ye, Yuchuan Zhou, Weijia Li, Xiang Zhang",
@@ -57592,6 +57716,37 @@
       ]
     },
     {
+      "id": "2602.08367",
+      "title": "WorldTravel: A Realistic Multimodal Travel-Planning Benchmark with Tightly Coupled Constraints",
+      "authors": "Zexuan Wang, Chenghao Yang, Yingqi Que, Zhoufutu Wen, Zaiyuan Wang, Jiashuo Liu, Zhixin Yao, Zhenzhu Yang, Huaqing Yuan, Yiwen Wang, Zhengxuan Jiang, Shengjie Fang, Zhenhe Wu, Zhaohui Wang, JinCheng Ren, Yuzhen Li, Yang Yang, Jiaheng Liu, Jian Yang, Ge Zhang, Wenhao Huang",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2602.08367",
+      "source": "https://paperswithcode.co/paper/2602.08367",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.08367.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "Real-world autonomous planning requires coordinating tightly coupled constraints where a single decision dictates the feasibility of all subsequent actions. However, existing benchmarks predominantly feature loosely coupled constraints solvable through local greedy decisions and rely on idealized data, failing to capture constraint acquisition from realistic web interfaces. We introduce $\\textbf{WorldTravel}$, a benchmark comprising 150 real-world travel scenarios across 5 cities, requiring agents to satisfy an average of 15+ interdependent temporal and logical constraints. To evaluate realistic deployment settings, we further develop $\\textbf{WorldTravel-Webscape}$, a multi-modal environment with over 2,000 rendered webpages that preserve layout-dependent and information-dense travel interfaces, requiring agents to recover executable constraints from rendered web interfaces. Evaluating 10 frontier models reveals a severe performance collapse: GPT-5.2 achieves only 28.0\\% feasibility in text-only settings, dropping to 3.4\\% in multi-modal environments. We observe substantial degradation in planning feasibility when agents must recover executable constraints from rendered webpages, alongside a Planning Horizon threshold at approximately 10 constraints where reasoning reliability collapses. These findings suggest that realistic constraint acquisition and long-horizon planning remain complementary bottlenecks for current agents.",
+      "matchedBy": [
+        "papers with code",
+        "GPT-5",
+        "language modeling",
+        "vision/multimodal",
+        "benchmark"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal",
+        "Benchmark"
+      ]
+    },
+    {
       "id": "2511.04671",
       "title": "X-Diffusion: Training Diffusion Policies on Cross-Embodiment Human Demonstrations",
       "authors": "Pace, Maximus, Dan, Prithwish, Ning, Chuanruo, Bhardwaj, Atiksh, Du, Moyun, Duan, Edward, Ma, Wei-Chiu, Kedia, Kushal",
@@ -57651,6 +57806,39 @@
       "categories": [
         "Vision/Multimodal",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2512.21329",
+      "title": "Your Reasoning Benchmark May Not Test Reasoning: Revealing Perception Bottleneck in Abstract Reasoning Benchmarks",
+      "authors": "Xinhe Wang, Jin Huang, Xingjian Zhang, Tianhao Wang, Jiaqi W. Ma",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2512.21329",
+      "source": "https://paperswithcode.co/paper/2512.21329",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.21329.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "Reasoning benchmarks such as the Abstraction and Reasoning Corpus (ARC) and ARC-AGI are widely used to assess progress in artificial intelligence and are often interpreted as probes of core, so-called “fluid” reasoning abilities. Despite their apparent simplicity for humans, these tasks remain challenging for frontier vision-language models (VLMs), a gap commonly attributed to deficiencies in machine reasoning. We challenge this interpretation and hypothesize that the gap arises primarily from limitations in visual perception rather than from shortcomings in inductive reasoning.To verify this hypothesis, we introduce a two-stage experimental pipeline that explicitly separates perception and reasoning. In the perception stage, each image is independently converted into a natural-language description, while in the reasoning stage a model induces and applies rules using these descriptions. This design prevents leakage of cross-image inductive signals and isolates reasoning from perception bottlenecks. Across three ARC-style datasets, Mini-ARC, ACRE, and Bongard-LOGO, we show that the perception capability is the dominant factor underlying the observed performance gap by comparing the two-stage pipeline with against standard end-to-end one-stage evaluation. Manual inspection of reasoning traces in the VLM outputs further reveals that approximately 80 percent of model failures stem from perception errors. Together, these results demonstrate that ARC-style benchmarks conflate perceptual and reasoning challenges and that observed performance gaps may overstate deficiencies in machine reasoning. Our findings underscore the need for evaluation protocols that disentangle perception from reasoning when assessing progress in machine intelligence.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Reasoning",
+        "vision/multimodal",
+        "language modeling",
+        "benchmark"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Benchmark"
       ]
     },
     {
@@ -60408,6 +60596,33 @@
       "category": "Serving",
       "categories": [
         "Serving"
+      ]
+    },
+    {
+      "id": "2509.21780",
+      "title": "Beyond Accuracy and Complexity: The Effective Information Criterion for Structurally Stable Symbolic Regression",
+      "authors": "Zihan Yu, Guanren Wang, Jingtao Ding, Huandong Wang, Yong Li",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2509.21780",
+      "source": "https://paperswithcode.co/paper/2509.21780",
+      "code": "https://github.com/tsinghua-fib-lab/EIC",
+      "project": "",
+      "thumbnail": "./thumbs/2509.21780.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "Symbolic regression (SR) traditionally balances accuracy and complexity, implicitly assuming that simpler formulas are structurally more rational. We argue that this assumption is insufficient: existing algorithms often exploit this metric to discover accurate and compact but structurally irrational formulas that are numerically ill-conditioned and physically inexplicable. Inspired by the structural stability of real physical laws, we propose the Effective Information Criterion (EIC) to quantify formula rationality. EIC models formulas as information channels and measures the amplification of inherent rounding noise during recursive calculation, effectively distinguishing physically plausible structures from pathological ones without relying on ground truth. Our analysis reveals a stark structural stability gap between human-derived equations and SR-discovered results. By integrating EIC into SR workflows, we provide explicit structural guidance: for heuristic search, EIC steers algorithms toward stable regions to yield superior Pareto frontiers; for generative models, EIC-based filtering improves pre-training sample efficiency by 2–4 times and boosts generalization $R^2$ by 22.4\\%. Finally, an extensive study with 108 human experts shows that EIC aligns with human preferences in 70\\% of cases, validating structural stability as a critical prerequisite for human-perceived interpretability. We release our code at https://github.com/tsinghua-fib-lab/EIC",
+      "matchedBy": [
+        "papers with code",
+        "Pre-training",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
       ]
     },
     {
@@ -71017,6 +71232,36 @@
       ]
     },
     {
+      "id": "2606.02453",
+      "title": "Initialization is Half the Battle: Generating Diverse Images from a Guidance Potential Posterior",
+      "authors": "Xiang Li, Dianbo Liu, Kenji Kawaguchi",
+      "org": "",
+      "published": "ICML 2026 Spotlight",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2606.02453",
+      "source": "https://paperswithcode.co/paper/2606.02453",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.02453.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "Despite the remarkable fidelity of generative models, they frequently suffer from mode collapse. Existing strategies for enhancing diversity predominantly focus on intervening during the generation trajectory. We identify a critical oversight that the standard Gaussian initialization often causes trajectories to collapse into dominant modes because it is agnostic to the guidance potential landscape. In this work, we formulate selecting the initial noise from a *guidance potential posterior*, which effectively re-weights the prior towards diversity-rich regions. To sample from this distribution efficiently, we introduce *Diversity-inducing Initialization* (DivIn), which leverages Langevin dynamics to actively navigate the initialization landscape, steering initial noise away from collapsing regions while anchoring them to the valid data manifold. Our method serves as an inference-time diversity enhancement compatible with both diffusion and flow matching models. Extensive experiments show that DivIn exhibits a superior performance in both class-to-image and text-to-image scenarios. Furthermore, we highlight that as DivIn is orthogonal to trajectory-based methods, combining them significantly expands the diversity-quality Pareto frontier beyond what either achieves in isolation.",
+      "matchedBy": [
+        "papers with code",
+        "Diffusion",
+        "Flow matching",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2602.03472",
       "title": "Inlier-Centric Post-Training Quantization for Object Detection Models",
       "authors": "Minsu Kim, Dongyeun Lee, Jaemyung Yu, Jiwan Hur, Giseop Kim, Junmo Kim",
@@ -81304,6 +81549,39 @@
       ]
     },
     {
+      "id": "2606.07684",
+      "title": "Semantic Cache Distillation: Efficient State Transfer via Reuse and Selective Patching",
+      "authors": "Qianli Ma, Zhiqing Tang, Hanshuai Cui, Zhi Yao, Weijia Jia",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2606.07684",
+      "source": "https://paperswithcode.co/paper/2606.07684",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.07684.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "Disaggregated serving alleviates memory bottlenecks in Large Language Model (LLM) inference but creates a severe communication bottleneck: transmitting high-dimensional Key-Value (KV) caches often dominates time-to-first-token (TTFT). Moreover, reusing caches across heterogeneous models (e.g., base and fine-tuned variants) causes semantic misalignment that accumulates over layers, degrading generation quality. We propose Semantic Cache Distillation (SCD), a loss-constrained framework that replaces raw KV transmission with compact semantic codes. SCD addresses these challenges via two mechanisms: (1) Reuse, which reconstructs most layers from low-rank subspaces to minimize transfer cost, and (2) Patch, which predicts normalized inputs at sparse transition layers to truncate error propagation. Empirically, SCD delivers up to 2.65 $\\times$ TTFT speedup over the oracle consumer prefill and dominates quantization and selective recomputation baselines on the quality--latency Pareto frontier in bandwidth-constrained regimes, while keeping generation quality within 5\\% F1 of the oracle.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Large language model (LLM)",
+        "Prefill",
+        "Quantization",
+        "serving",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2604.26262",
       "title": "Semantic Foam: Unifying Spatial and Semantic Scene Decomposition",
       "authors": "Amr Sharafeldin, Aryan Mikaeili, Thomas Walker, Shrisudhan Govindarajan, Daniel Rebain, Kwang Moo Yi, Andrea Tagliasacchi",
@@ -86713,6 +86991,38 @@
         "Vision/Multimodal",
         "Data / Retrieval",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2604.15188",
+      "title": "VisPCO: Visual Token Pruning Configuration Optimization via Budget-Aware Pareto-Frontier Learning for Vision-Language Models",
+      "authors": "Huawei Ji, Yuanhao Sun, Yuan Jin, Cheng Deng, Jiaxin Ding, Luoyi Fu, Xinbing Wang",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2604.15188",
+      "source": "https://paperswithcode.co/paper/2604.15188",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.15188.jpg",
+      "firstSeenAt": "2026-07-12T01:11:19.758Z",
+      "summary": "Visual token pruning methods effectively mitigate the quadratic computational growth caused by processing high-resolution images and video frames in vision-language models (VLMs). However, existing approaches rely on predefined pruning configurations without determining whether they achieve computation-performance optimality. In this work, we introduce , a novel framework that formulates visual token pruning as a Pareto configuration optimization problem to automatically identify optimal configurations. Our approach employs continuous relaxation and straight-through estimators to enable gradient-based search, solved via the Augmented Lagrangian method. Extensive experiments across 8 visual benchmarks demonstrate that effectively approximates the empirical Pareto frontier obtained through grid search and generalizes well across various pruning methods and VLM architectures. Furthermore, through learnable kernel functions, we investigate layer-wise pruning patterns and reveal that multi-step progressive pruning captures VLMs’ hierarchical compression structure, achieving superior accuracy-efficiency trade-offs compared to single-layer approaches.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "vision/multimodal",
+        "frontier training",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Serving"
       ]
     },
     {
