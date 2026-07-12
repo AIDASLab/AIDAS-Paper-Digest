@@ -10,8 +10,7 @@
 
 </div>
 
-> **Live:** https://aidaslab.github.io/AIDAS-Paper-Digest/
-> Hosted on GitHub Pages. After transferring the repo, the URL becomes `https://<owner>.github.io/AIDAS-Paper-Digest/`.
+> **Live:** https://aidaslab.github.io/AIDAS-Paper-Digest/ — hosted on GitHub Pages (`AIDASLab/AIDAS-Paper-Digest`).
 
 ---
 
