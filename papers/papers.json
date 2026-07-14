@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-14T00:05:40.935Z",
+  "generatedAt": "2026-07-14T01:00:36.699Z",
   "sourceStats": {
-    "seed": 5128,
+    "seed": 5180,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 14,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 5180
+    "total": 5188
   },
   "papers": [
     {
@@ -25393,6 +25393,39 @@
       ]
     },
     {
+      "id": "2505.07395",
+      "title": "ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning",
+      "authors": "Hongyin Zhang, Zifeng Zhuang, Han Zhao, Pengxiang Ding, Hongchao Lu, Donglin Wang",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 71,
+      "paper": "https://arxiv.org/abs/2505.07395",
+      "source": "https://paperswithcode.co/paper/2505.07395",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.07395.jpg",
+      "firstSeenAt": "2026-06-21T02:02:50.434Z",
+      "summary": "Vision-Language-Action (VLA) models have shown great potential in general robotic decision-making tasks via imitation learning. However, the variable quality of training data often constrains the performance of these models. On the other hand, offline Reinforcement Learning (RL) excels at learning robust policy models from mixed-quality data. In this paper, we introduce Reinforced robot GPT (ReinboT), a novel end-to-end VLA model that integrates the RL principle of maximizing cumulative reward. ReinboT achieves a deeper understanding of the data quality distribution by predicting dense returns that capture the nuances of manipulation tasks. The dense return prediction capability enables the robot to generate more robust decision-making actions, oriented towards maximizing future benefits. Extensive experiments show that ReinboT achieves state-of-the-art performance on the CALVIN mixed-quality dataset and exhibits superior few-shot learning and out-of-distribution generalization capabilities in real-world tasks.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Robotics",
+        "ACT",
+        "CLIP",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2506.12723",
       "title": "SP-VLA: A Joint Model Scheduling and Token Pruning Approach for VLA Model Acceleration",
       "authors": "Ye Li, Yuan Meng, Zewen Sun, Kangye Ji, Chen Tang, Jiajun Fan, Xinzhu Ma, Shu-Tao Xia, Zhi Wang, Wenwu Zhu",
@@ -25720,39 +25753,6 @@
       "category": "Serving",
       "categories": [
         "Serving"
-      ]
-    },
-    {
-      "id": "2505.07395",
-      "title": "ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning",
-      "authors": "Hongyin Zhang, Zifeng Zhuang, Han Zhao, Pengxiang Ding, Hongchao Lu, Donglin Wang",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 70,
-      "paper": "https://arxiv.org/abs/2505.07395",
-      "source": "https://paperswithcode.co/paper/2505.07395",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.07395.jpg",
-      "firstSeenAt": "2026-06-21T02:02:50.434Z",
-      "summary": "Vision-Language-Action (VLA) models have shown great potential in general robotic decision-making tasks via imitation learning. However, the variable quality of training data often constrains the performance of these models. On the other hand, offline Reinforcement Learning (RL) excels at learning robust policy models from mixed-quality data. In this paper, we introduce Reinforced robot GPT (ReinboT), a novel end-to-end VLA model that integrates the RL principle of maximizing cumulative reward. ReinboT achieves a deeper understanding of the data quality distribution by predicting dense returns that capture the nuances of manipulation tasks. The dense return prediction capability enables the robot to generate more robust decision-making actions, oriented towards maximizing future benefits. Extensive experiments show that ReinboT achieves state-of-the-art performance on the CALVIN mixed-quality dataset and exhibits superior few-shot learning and out-of-distribution generalization capabilities in real-world tasks.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "Robotics",
-        "ACT",
-        "CLIP",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Language Modeling"
       ]
     },
     {
@@ -32339,6 +32339,38 @@
       ]
     },
     {
+      "id": "2509.22643",
+      "title": "VLA-Reasoner: Empowering Vision-Language-Action Models with Reasoning Via Online Monte Carlo Tree Search",
+      "authors": "Guo, Wenkai, Lu, Guanxing, Deng, Haoyuan, Wu, Zhenyu, Tang, Yansong, Wang, Ziwei",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2509.22643",
+      "source": "https://paperswithcode.co/paper/2509.22643",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.22643.jpg",
+      "firstSeenAt": "2026-06-22T02:07:22.829Z",
+      "summary": "",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "Diffusion Policy",
+        "LLaMa",
+        "MuZero",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2504.13561",
       "title": "WeatherGen: A Unified Diverse Weather Generator for LiDAR Point Clouds via Spider Mamba Diffusion",
       "authors": "Yang Wu, Yun Zhu, Kaihua Zhang, Jianjun Qian, Jin Xie, Jian Yang",
@@ -36056,38 +36088,6 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2509.22643",
-      "title": "VLA-Reasoner: Empowering Vision-Language-Action Models with Reasoning Via Online Monte Carlo Tree Search",
-      "authors": "Guo, Wenkai, Lu, Guanxing, Deng, Haoyuan, Wu, Zhenyu, Tang, Yansong, Wang, Ziwei",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 63,
-      "paper": "https://arxiv.org/abs/2509.22643",
-      "source": "https://paperswithcode.co/paper/2509.22643",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2509.22643.jpg",
-      "firstSeenAt": "2026-06-22T02:07:22.829Z",
-      "summary": "",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "Diffusion Policy",
-        "LLaMa",
-        "MuZero",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Robotics"
       ]
     },
     {
@@ -42190,6 +42190,38 @@
       ]
     },
     {
+      "id": "2601.04052",
+      "title": "Stable Language Guidance for Vision–Language–Action Models",
+      "authors": "Zhihao Zhan, Yuhao Chen, Jiaying Zhou, Qinhan Lyu, Hao Liu, Keze Wang, Liang Lin, Guangrun Wang",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2601.04052",
+      "source": "https://paperswithcode.co/paper/2601.04052",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2601.04052.jpg",
+      "firstSeenAt": "2026-07-14T01:00:36.699Z",
+      "summary": "Vision-Language-Action (VLA) models have demonstrated impressive capabilities in generalized robotic control; however, they remain notoriously brittle to linguistic perturbations. We identify a critical \"modality collapse” phenomenon where strong visual priors overwhelm sparse linguistic signals, causing agents to overfit to specific instruction phrasings while ignoring the underlying semantic intent. To address this, we propose Residual Semantic Steering (RSS), a probabilistic framework that disentangles physical affordance from semantic execution. RSS introduces two theoretical innovations: (1) Monte Carlo Syntactic Integration, which approximates the true semantic posterior via dense, LLM-driven distributional expansion, and (2) Residual Affordance Steering, a dual-stream decoding mechanism that explicitly isolates the causal influence of language by subtracting the visual affordance prior. Theoretical analysis suggests that RSS effectively maximizes the mutual information between action and intent while suppressing visual distractors. Empirical results across diverse manipulation benchmarks demonstrate that RSS achieves state-of-the-art robustness, maintaining performance even under adversarial linguistic perturbations.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Robotics",
+        "robotics",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2412.12540",
       "title": "Stiefel Flow Matching for Moment-Constrained Structure Elucidation",
       "authors": "Austin Henry Cheng, Alston Lo, Kin Long Kelvin Lee, Santiago Miret, Alan Aspuru-Guzik",
@@ -43184,6 +43216,38 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2505.13150",
+      "title": "Zero-Shot Adaptation of Behavioral Foundation Models to Unseen Dynamics",
+      "authors": "Maksim Bobrin, Ilya Zisman, Alexander Nikulin, Vladislav Kurenkov, Dmitry V. Dylov",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2505.13150",
+      "source": "https://paperswithcode.co/paper/2505.13150",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.13150.jpg",
+      "firstSeenAt": "2026-07-14T01:00:36.699Z",
+      "summary": "Behavioral Foundation Models (BFMs) proved successful in producing near-optimal policies for arbitrary tasks in a zero-shot manner, requiring no test-time retraining or task-specific fine-tuning. Among the most promising BFMs are the ones that estimate the successor measure learned in an unsupervised way from task-agnostic offline data. However, these methods fail to react to changes in the dynamics, making them inefficient under partial observability or when the transition function changes. This hinders the applicability of BFMs in a real-world setting, e.g., in robotics, where the dynamics can unexpectedly change at test time. In this work, we demonstrate that Forward–Backward (FB) representation, one of the methods from the BFM family, cannot produce reasonable policies under distinct dynamics, leading to an interference among the latent policy representations. To address this, we propose an FB model with a transformer-based belief estimator, which greatly facilitates zero-shot adaptation. Additionally, we show that partitioning the policy encoding space into dynamics-specific clusters, aligned with the context-embedding directions, yields additional gain in performance. Those traits allow our method to respond to the dynamics mismatches observed during training and to generalize to unseen ones. Empirically, in the changing dynamics setting, our approach achieves up to a 2x higher zero-shot returns compared to the baselines for both discrete and continuous tasks.",
+      "matchedBy": [
+        "papers with code",
+        "Embedding",
+        "Fine-tuning",
+        "Key-value cache",
+        "Multi-head attention",
+        "robotics",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training"
       ]
     },
     {
@@ -44630,7 +44694,8 @@
         "papers with code",
         "Robotics",
         "vision/multimodal",
-        "robotics"
+        "robotics",
+        "VLA"
       ],
       "sources": [
         "paperswithcode"
@@ -46992,7 +47057,8 @@
         "papers with code",
         "Diffusion Policy",
         "Stable Diffusion",
-        "robotics"
+        "robotics",
+        "Diffusion"
       ],
       "sources": [
         "paperswithcode"
@@ -51784,6 +51850,35 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2601.11143",
+      "title": "Learning Quadrupedal Locomotion for a Heavy Hydraulic Robot Using an Actuator Model",
+      "authors": "Lee, Minho, Kim, Hyeonseok, Kim, Jin Tak, Park, Sangshin, Lee, Jeong Hyun, Cho, Jungsan, Hwangbo, Jemin",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2601.11143",
+      "source": "https://paperswithcode.co/paper/2601.11143",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2601.11143.jpg",
+      "firstSeenAt": "2026-07-14T01:00:36.699Z",
+      "summary": "The simulation-to-reality (sim-to-real) transfer of large-scale hydraulic robots presents a significant challenge in robotics because of the inherent slow control response and complex fluid dynamics. The complex dynamics result from the multiple interconnected cylinder structure and the difference in fluid rates of the cylinders. These characteristics complicate detailed simulation for all joints, making it unsuitable for reinforcement learning (RL) applications. In this work, we propose an analytical actuator model driven by hydraulic dynamics to represent the complicated actuators. The model predicts joint torques for all 12 actuators in under 1 microsecond, allowing rapid processing in RL environments. We compare our model with neural network-based actuator models and demonstrate the advantages of our model in data-limited scenarios. The locomotion policy trained in RL with our model is deployed on a hydraulic quadruped robot, which is over 300 kg. This work is the first demonstration of a successful transfer of stable and robust command-tracking locomotion with RL on a heavy hydraulic quadruped robot, demonstrating advanced sim-to-real transferability.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "robotics",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
         "Language Modeling"
       ]
     },
@@ -56972,7 +57067,8 @@
         "papers with code",
         "Language Modeling",
         "frontier training",
-        "language modeling"
+        "language modeling",
+        "Flash Attention"
       ],
       "sources": [
         "paperswithcode"
@@ -57074,6 +57170,36 @@
         "Robotics",
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2603.01045",
+      "title": "SILO-BENCH: A Scalable Environment for Evaluating Distributed Coordination in Multi-Agent LLM Systems",
+      "authors": "Yuzhe Zhang, Feiran Liu, Yi Shan, Xinyi Huang, Xin Yang, Yueqi Zhu, Xuxin Cheng, Cao Liu, Ke Zeng, Terry Jingchen Zhang, Wenyuan Jiang",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2603.01045",
+      "source": "https://paperswithcode.co/paper/2603.01045",
+      "code": "https://github.com/jwyjohn/acl26-silo-bench",
+      "project": "",
+      "thumbnail": "./thumbs/2603.01045.jpg",
+      "firstSeenAt": "2026-07-14T01:00:36.699Z",
+      "summary": "Large language models are increasingly deployed in multi-agent systems to overcome context limitations by distributing information across agents. However, whether LLM-based agents can reliably coordinate when each observes only a fragment of the global problem remains unclear. Existing benchmarks often prescribe agent roles or interaction patterns, conflating coordination ability with role-based priors. We introduce SILO-BENCH, a role-free benchmark for evaluating free-form collaboration under information silos. The benchmark comprises 30 algorithmic tasks with exact ground-truth answers, organized into 3 complexity levels based on optimal communication complexity: aggregation, mesh, and global shuffle. To systematically probe coordination capabilities, we instantiate 54 configurations by varying 3 communication protocols, 6 agent scales and 3 frontier LLMs, conducting 1,620 experiments. We evaluate agent behavior along three dimensions: Success Rate, Token Consumption, and Communication Density. Our experiments reveal a fundamental Communication-Reasoning Gap: agents communicate actively, yet fail to translate interaction into effective distributed computation. Performance collapses as complexity increases, with Level-III tasks achieving zero success beyond 50 agents. These findings demonstrate that current LLMs cannot escape information silos through coordination alone. SILO-BENCH provides a foundation for tracking progress toward genuinely collaborative multi-agent systems. The code is available at https://github.com/jwyjohn/acl26-silo-bench.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "LLaMa",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -65906,7 +66032,8 @@
         "papers with code",
         "Reinforcement Learning",
         "language modeling",
-        "robotics"
+        "robotics",
+        "Continual learning"
       ],
       "sources": [
         "paperswithcode"
@@ -69123,14 +69250,17 @@
       "matchedBy": [
         "papers with code",
         "Reinforcement Learning",
-        "robotics"
+        "robotics",
+        "Agent Skills",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
       "category": "Robotics",
       "categories": [
-        "Robotics"
+        "Robotics",
+        "Language Modeling"
       ]
     },
     {
@@ -73406,6 +73536,38 @@
       ]
     },
     {
+      "id": "2512.00592",
+      "title": "HAVEN: Hierarchical Adversary-Aware Visibility-Enabled Navigation with Cover Utilization Using Deep Transformer Q-Networks",
+      "authors": "Chauhan, Mihir, Conover, Damon, Bera, Aniket",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2512.00592",
+      "source": "https://paperswithcode.co/paper/2512.00592",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.00592.jpg",
+      "firstSeenAt": "2026-07-14T01:00:36.699Z",
+      "summary": "Autonomous navigation in partially observable environments requires agents to reason beyond immediate sensor input, exploit occlusion, and ensure safety while progressing toward a goal. These challenges arise in many robotics domains, from urban driving and warehouse automation to defense and surveillance. Classical path planning approaches and memory-less reinforcement learning often fail under limited fields-of-view (FoVs) and occlusions, committing to unsafe or inefficient maneuvers. We propose a hierarchical navigation framework that integrates a Deep Transformer Q-Network (DTQN) as a high-level subgoal selector with a modular low-level controller for waypoint execution. The DTQN consumes short histories of task-aware features, encoding odometry, goal direction, obstacle proximity, and visibility cues, and outputs Q-values to rank candidate subgoals. Visibility-aware candidate generation introduces masking and exposure penalties, rewarding the use of cover and anticipatory safety. A low-level potential field controller then tracks the selected subgoal, ensuring smooth short-horizon obstacle avoidance. We validate our approach in 2D simulation and extend it directly to a 3D Unity–ROS environment by projecting point-cloud perception into the same feature schema, enabling transfer without architectural changes. Results show consistent improvements over classical planners and RL baselines in success rate, safety margins, and time-to-goal, with ablations confirming the value of temporal memory and visibility-aware candidate design. These findings highlight a generalizable framework for safe navigation under uncertainty, with broad relevance across robotic platforms.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Transformer",
+        "robotics",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2511.13175",
       "title": "HDW-SR: High-Frequency Guided Diffusion Model based on Wavelet Decomposition for Image Super-Resolution",
       "authors": "Chao Yang, Boqian Zhang, Jinghao Xu, Guang Jiang",
@@ -74599,7 +74761,8 @@
       "summary": "This article presents an impact-aware manipulation framework for logistics, where growing e-commerce demands have increased the need for faster and more flexible package handling solutions. The proposed framework addresses swiftly grabbing and placing objects in depalletizing tasks with dual-arm robotic systems. Impact-aware robotics leverages intentional collisions to achieve dynamic interactions and has the potential to be faster and more energy efficient than classical quasi-static approaches. The generation of desired impacts brings multiple challenges encompassing robust motion generation, managing impacts with objects, enforcing hardware and safety constraints, contact state sensing, and simulation of contact behavior. To tackle these challenges, we developed within the EU-funded Impact-Aware Manipulation (I.AM.) project an integrated solution exploiting nonsmooth mechanics for impact modeling, dynamical systems for motion generation, QP-based control for constraint enforcement, internal state sensing without external force transducers, and batch-capable impact simulation. This article highlights the benefits of the proposed approach in terms of speed (a 29% decrease in average task time) and energy efficiency (a 35% decrease) through a systematic comparison between classical grabbing and impact-aware swift grabbing and tossing. In summary, our article underscores the transformative potential of impact-aware technologies in revolutionizing robotic logistics operations.",
       "matchedBy": [
         "papers with code",
-        "robotics"
+        "robotics",
+        "Motion Generation"
       ],
       "sources": [
         "paperswithcode"
@@ -75088,6 +75251,35 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2604.15717",
+      "title": "Into the Gray Zone: Domain Contexts Can Blur LLM Safety Boundaries",
+      "authors": "Ki Sen Hung, Xi Yang, Chang Liu, Haoran Li, Kejiang Chen, Changxuan Fan, Tsun On Kwok, Weiming Zhang, Xiaomeng Li, Yangqiu Song",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2604.15717",
+      "source": "https://paperswithcode.co/paper/2604.15717",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.15717.jpg",
+      "firstSeenAt": "2026-07-14T01:00:36.699Z",
+      "summary": "A central goal of LLM alignment is to balance helpfulness with harmlessness, yet these objectives conflict when the same knowledge serves both legitimate and malicious purposes. This tension is amplified by context-sensitive alignment: we observe that domain-specific contexts (e.g., chemistry) selectively relax defenses for domain-relevant harmful knowledge, while safety-research contexts (e.g., jailbreak studies) trigger broader relaxation spanning all harm categories. To systematically exploit this vulnerability, we propose Jargon, a framework combining safety-research contexts with multi-turn adversarial interactions that achieves attack success rates exceeding 93% across seven frontier models, including GPT-5.2, Claude-4.5, and Gemini-3, substantially outperforming existing methods. Activation space analysis reveals that Jargon queries occupy an intermediate region between benign and harmful inputs, a gray zone where refusal decisions become unreliable. To mitigate this vulnerability, we design a policy-guided safeguard that steers models toward helpful yet harmless responses, and internalize this capability through alignment fine-tuning, reducing attack success rates while preserving helpfulness.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "LoRa",
+        "PEFT",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
       ]
     },
     {
@@ -75580,6 +75772,39 @@
       ],
       "category": "Vision/Multimodal",
       "categories": [
+        "Vision/Multimodal",
+        "Serving"
+      ]
+    },
+    {
+      "id": "2603.13450",
+      "title": "LADR: Locality-Aware Dynamic Rescue for Efficient Text-to-Image Generation with Diffusion Large Language Models",
+      "authors": "Chenglin Wang, Yucheng Zhou, Shuang Chen, Tao Wang, Kai Zhang",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2603.13450",
+      "source": "https://paperswithcode.co/paper/2603.13450",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.13450.jpg",
+      "firstSeenAt": "2026-07-14T01:00:36.699Z",
+      "summary": "Discrete Diffusion Language Models have emerged as a compelling paradigm for unified multimodal generation, yet their deployment is hindered by high inference latency arising from iterative decoding. Existing acceleration strategies often require expensive re-training or fail to leverage the 2D spatial redundancy inherent in visual data. To address this, we propose Locality-Aware Dynamic Rescue (LADR), a training-free method that expedites inference by exploiting the spatial Markov property of images. LADR prioritizes the recovery of tokens at the “generation frontier”, regions spatially adjacent to observed pixels, thereby maximizing information gain. Specifically, our method integrates morphological neighbor identification to locate candidate tokens, employs a risk-bounded filtering mechanism to prevent error propagation, and utilizes manifold-consistent inverse scheduling to align the diffusion trajectory with the accelerated mask density. Extensive experiments on four text-to-image generation benchmarks demonstrate that our LADR achieves an approximate 4 \\times speedup over standard baselines. Remarkably, it maintains or even enhances generative fidelity, particularly in spatial reasoning tasks, offering a state-of-the-art trade-off between efficiency and quality.",
+      "matchedBy": [
+        "papers with code",
+        "Image generation",
+        "Language Modeling",
+        "Knowledge Distillation",
+        "language modeling",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
         "Vision/Multimodal",
         "Serving"
       ]
@@ -81242,7 +81467,8 @@
         "papers with code",
         "Language Modeling",
         "language modeling",
-        "frontier training"
+        "frontier training",
+        "Few-shot prompting"
       ],
       "sources": [
         "paperswithcode"
@@ -81399,6 +81625,35 @@
         "Vision/Multimodal",
         "Robotics",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2606.07300",
+      "title": "Phun-Bench: Evaluating LLMs on Phonological Understanding in Chinese",
+      "authors": "Xing Yue, Yongliang Shen, Weiming Lu",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2606.07300",
+      "source": "https://paperswithcode.co/paper/2606.07300",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.07300.jpg",
+      "firstSeenAt": "2026-07-14T01:00:36.699Z",
+      "summary": "Language is a vehicle for thought, intricately tied to sounds, symbols, and meaning. However, most large language model (LLM) research focuses on meaning (semantics) and symbols (spelling) while largely overlooking sounds. Existing benchmarks on LLMs’ phonological abilities are either solvable through rote memorization or intertwined with other abilities, making them inadequate to measure LLMs’ genuine ability in *phonological understanding*. Here, we present Phun-Bench, a purpose-built Chinese benchmark with diverse tasks and settings across three dimensions (Homophony, Rhyme, and Phonetic Similarity), designed to systematically evaluate LLMs’ phonological understanding. Our results show that while LLMs excel at recalling correct pronunciations, they generally struggle to leverage phonological knowledge in the flexible and intuitive way that human speakers do. Moreover, through detailed analyses, we propose a hypothesis regarding the underlying mechanism of LLMs’ phonological understanding and “perception”, highlighting an underexplored frontier for future research.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -84959,7 +85214,8 @@
         "papers with code",
         "robotics",
         "vision/multimodal",
-        "frontier training"
+        "frontier training",
+        "VLA"
       ],
       "sources": [
         "paperswithcode"
@@ -86970,7 +87226,8 @@
         "papers with code",
         "Image segmentation",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "GAN"
       ],
       "sources": [
         "paperswithcode"
