@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-17T00:11:16.913Z",
+  "generatedAt": "2026-07-17T01:08:27.655Z",
   "sourceStats": {
-    "seed": 5586,
+    "seed": 5688,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 24,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 5688
+    "total": 5690
   },
   "papers": [
     {
@@ -14615,6 +14615,33 @@
       ]
     },
     {
+      "id": "2502.00604",
+      "title": "Gradient Alignment in Physics-informed Neural Networks: A Second-Order Optimization Perspective",
+      "authors": "Sifan Wang, Ananyae bhartari, Bowen Li, Paris Perdikaris",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2502.00604",
+      "source": "https://paperswithcode.co/paper/2502.00604",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2502.00604.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
+      "summary": "Physics-informed neural networks (PINNs) have shown significant promise in computational science and engineering, yet they often face optimization challenges and limited accuracy. In this work, we identify directional gradient conflicts during PINN training as a critical bottleneck. We introduce a novel gradient alignment score to systematically diagnose this issue through both theoretical analysis and empirical experiments.Building on these insights, we show that (quasi) second-order optimization methods inherently mitigate gradient conflicts, thereby consistently outperforming the widely used Adam optimizer. Among them, we highlight the effectiveness of SOAP \\cite{vyas2024soap} by establishing its connection to Newton’s method.Empirically, SOAP achieves state-of-the-art results on 10 challenging PDE benchmarks, including the first successful application of PINNs to turbulent flows at Reynolds numbers up to 10,000. It yields 2–10x accuracy improvements over existing methods while maintaining computational scalability, advancing the frontier of neural PDE solvers for real-world, multi-scale physical systems.",
+      "matchedBy": [
+        "papers with code",
+        "frontier training",
+        "Adam"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2607.00924",
       "title": "Graph-Native Reinforcement Learning Enables Traceable Scientific Hypothesis Generation through Conceptual Recombination",
       "authors": "Subhadeep Pal, Shashwat Sourav, Tirthankar Ghosal, Markus J. Buehler",
@@ -26587,32 +26614,6 @@
       ]
     },
     {
-      "id": "2502.00604",
-      "title": "Gradient Alignment in Physics-informed Neural Networks: A Second-Order Optimization Perspective",
-      "authors": "Sifan Wang, Ananyae bhartari, Bowen Li, Paris Perdikaris",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 77,
-      "paper": "https://arxiv.org/abs/2502.00604",
-      "source": "https://paperswithcode.co/paper/2502.00604",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2502.00604.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "Physics-informed neural networks (PINNs) have shown significant promise in computational science and engineering, yet they often face optimization challenges and limited accuracy. In this work, we identify directional gradient conflicts during PINN training as a critical bottleneck. We introduce a novel gradient alignment score to systematically diagnose this issue through both theoretical analysis and empirical experiments.Building on these insights, we show that (quasi) second-order optimization methods inherently mitigate gradient conflicts, thereby consistently outperforming the widely used Adam optimizer. Among them, we highlight the effectiveness of SOAP \\cite{vyas2024soap} by establishing its connection to Newton’s method.Empirically, SOAP achieves state-of-the-art results on 10 challenging PDE benchmarks, including the first successful application of PINNs to turbulent flows at Reynolds numbers up to 10,000. It yields 2–10x accuracy improvements over existing methods while maintaining computational scalability, advancing the frontier of neural PDE solvers for real-world, multi-scale physical systems.",
-      "matchedBy": [
-        "papers with code",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2606.22832",
       "title": "Linear optical Bell state measurement for rotation-symmetric cat codes",
       "authors": "",
@@ -28726,6 +28727,38 @@
       ]
     },
     {
+      "id": "2411.15268",
+      "title": "ICT: Image-Object Cross-Level Trusted Intervention for Mitigating Object Hallucination in Large Vision-Language Models",
+      "authors": "Junzhe Chen, Tianshu Zhang, Shiyu Huang, Yuwei Niu, Linfeng Zhang, Lijie Wen, Xuming Hu",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 68,
+      "paper": "https://arxiv.org/abs/2411.15268",
+      "source": "https://paperswithcode.co/paper/2411.15268",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2411.15268.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Despite the recent breakthroughs achieved by Large Vision Language Models (LVLMs) in understanding and responding to complex visual-textual contexts, their inherent hallucination tendencies limit their practical application in real-world scenarios that demand high levels of precision. Existing methods typically either fine-tune the LVLMs using additional data, which incurs extra costs in manual annotation and computational resources or perform comparisons at the decoding stage, which may eliminate useful language priors for reasoning while introducing inference time overhead. Therefore, we propose ICT, a lightweight, training-free method that calculates an intervention direction to shift the model's focus towards different levels of visual information, enhancing its attention to high-level and fine-grained visual details. During the forward pass stage, the intervention is applied to the attention heads that encode the overall image information and the fine-grained object details, effectively mitigating the phenomenon of overly language priors, and thereby alleviating hallucinations. Extensive experiments demonstrate that ICT achieves strong performance with a small amount of data and generalizes well across different datasets and models. Our code will be public.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "CLIP",
+        "Few-shot prompting",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2505.05495",
       "title": "Learning 3D Persistent Embodied World Models",
       "authors": "Siyuan Zhou, Yilun Du, Yuncong Yang, Lei Han, Peihao Chen, Dit-Yan Yeung, Chuang Gan",
@@ -29039,6 +29072,38 @@
         "Serving",
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2406.09179",
+      "title": "Towards Effective Evaluations and Comparisons for LLM Unlearning Methods",
+      "authors": "Qizhou Wang, Bo Han, Puning Yang, Jianing Zhu, Tongliang Liu, Masashi Sugiyama",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 68,
+      "paper": "https://arxiv.org/abs/2406.09179",
+      "source": "https://paperswithcode.co/paper/2406.09179",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2406.09179.jpg",
+      "firstSeenAt": "2026-06-19T02:21:25.841Z",
+      "summary": "The imperative to eliminate undesirable data memorization underscores the significance of machine unlearning for large language models (LLMs). Recent research has introduced a series of promising unlearning methods, notably boosting the practical significance of the field. Nevertheless, adopting a proper evaluation framework to reflect the true unlearning efficacy is also essential yet has not received adequate attention. This paper seeks to improve the evaluation of LLM unlearning by addressing two key challenges---a) the robustness of evaluation metrics and b) the trade-offs between competing goals. The first challenge stems from findings that current metrics are susceptible to various red teaming scenarios. It indicates that they may not reflect the true extent of knowledge retained by LLMs but rather tend to mirror superficial model behaviors, thus prone to attacks. We address this issue by devising and assessing a series of candidate metrics, selecting the most robust ones under various types of attacks. The second challenge arises from the conflicting goals of eliminating unwanted knowledge while retaining those of others. This trade-off between unlearning and retention often fails to conform the Pareto frontier, rendering it subtle to compare the efficacy between methods that excel only in either unlearning or retention. We handle this issue by proposing a calibration method that can restore the original performance on non-targeted data after unlearning, thereby allowing us to focus exclusively on assessing the strength of unlearning. Our evaluation framework notably enhances the effectiveness when assessing and comparing various LLM unlearning methods, further allowing us to benchmark existing works, identify their proper hyper-parameters, and explore new tricks to enhance their practical efficacy.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Direct Preference Optimization (DPO)",
+        "Few-shot prompting",
+        "GPT-3",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
       ]
     },
     {
@@ -29542,38 +29607,6 @@
       ]
     },
     {
-      "id": "2411.15268",
-      "title": "ICT: Image-Object Cross-Level Trusted Intervention for Mitigating Object Hallucination in Large Vision-Language Models",
-      "authors": "Junzhe Chen, Tianshu Zhang, Shiyu Huang, Yuwei Niu, Linfeng Zhang, Lijie Wen, Xuming Hu",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 67,
-      "paper": "https://arxiv.org/abs/2411.15268",
-      "source": "https://paperswithcode.co/paper/2411.15268",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2411.15268.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Despite the recent breakthroughs achieved by Large Vision Language Models (LVLMs) in understanding and responding to complex visual-textual contexts, their inherent hallucination tendencies limit their practical application in real-world scenarios that demand high levels of precision. Existing methods typically either fine-tune the LVLMs using additional data, which incurs extra costs in manual annotation and computational resources or perform comparisons at the decoding stage, which may eliminate useful language priors for reasoning while introducing inference time overhead. Therefore, we propose ICT, a lightweight, training-free method that calculates an intervention direction to shift the model's focus towards different levels of visual information, enhancing its attention to high-level and fine-grained visual details. During the forward pass stage, the intervention is applied to the attention heads that encode the overall image information and the fine-grained object details, effectively mitigating the phenomenon of overly language priors, and thereby alleviating hallucinations. Extensive experiments demonstrate that ICT achieves strong performance with a small amount of data and generalizes well across different datasets and models. Our code will be public.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "CLIP",
-        "Few-shot prompting",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2408.11809",
       "title": "Informed, Constrained, Aligned: A Field Analysis on Degeneracy-Aware Point Cloud Registration in the Wild (I)",
       "authors": "Tuna, Turcan, Nubert, Julian, Pfreundschuh, Patrick, Cadena, Cesar, Khattak, Shehryar, Hutter, Marco",
@@ -30029,38 +30062,6 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2406.09179",
-      "title": "Towards Effective Evaluations and Comparisons for LLM Unlearning Methods",
-      "authors": "Qizhou Wang, Bo Han, Puning Yang, Jianing Zhu, Tongliang Liu, Masashi Sugiyama",
-      "org": "",
-      "published": "ICLR 2025",
-      "score": 67,
-      "paper": "https://arxiv.org/abs/2406.09179",
-      "source": "https://paperswithcode.co/paper/2406.09179",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2406.09179.jpg",
-      "firstSeenAt": "2026-06-19T02:21:25.841Z",
-      "summary": "The imperative to eliminate undesirable data memorization underscores the significance of machine unlearning for large language models (LLMs). Recent research has introduced a series of promising unlearning methods, notably boosting the practical significance of the field. Nevertheless, adopting a proper evaluation framework to reflect the true unlearning efficacy is also essential yet has not received adequate attention. This paper seeks to improve the evaluation of LLM unlearning by addressing two key challenges---a) the robustness of evaluation metrics and b) the trade-offs between competing goals. The first challenge stems from findings that current metrics are susceptible to various red teaming scenarios. It indicates that they may not reflect the true extent of knowledge retained by LLMs but rather tend to mirror superficial model behaviors, thus prone to attacks. We address this issue by devising and assessing a series of candidate metrics, selecting the most robust ones under various types of attacks. The second challenge arises from the conflicting goals of eliminating unwanted knowledge while retaining those of others. This trade-off between unlearning and retention often fails to conform the Pareto frontier, rendering it subtle to compare the efficacy between methods that excel only in either unlearning or retention. We handle this issue by proposing a calibration method that can restore the original performance on non-targeted data after unlearning, thereby allowing us to focus exclusively on assessing the strength of unlearning. Our evaluation framework notably enhances the effectiveness when assessing and comparing various LLM unlearning methods, further allowing us to benchmark existing works, identify their proper hyper-parameters, and explore new tricks to enhance their practical efficacy.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Direct Preference Optimization (DPO)",
-        "Few-shot prompting",
-        "GPT-3",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
-        "Language Modeling"
       ]
     },
     {
@@ -62841,6 +62842,39 @@
       ]
     },
     {
+      "id": "2506.20664",
+      "title": "The Decrypto Benchmark for Multi-Agent Reasoning and Theory of Mind",
+      "authors": "Andrei Lupu, Timon Willi, Jakob Nicolaus Foerster",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2506.20664",
+      "source": "https://paperswithcode.co/paper/2506.20664",
+      "code": "https://github.com/facebookresearch/decrypto",
+      "project": "",
+      "thumbnail": "./thumbs/2506.20664.jpg",
+      "firstSeenAt": "2026-07-17T01:08:27.655Z",
+      "summary": "As Large Language Models (LLMs) gain agentic abilities, they will have to navigate complex multi-agent scenarios, interacting with human users and other agents in cooperative and competitive settings. This will require new reasoning skills, a crucial one being theory of mind (ToM), or the ability to reason about the ``mental'' states of other agents. However, ToM and other multi-agent abilities in LLMs are poorly understood, since existing benchmarks suffer from narrow scope, data leakage, saturation, and lack of interactivity. We thus propose Decrypto, a game-based benchmark for multi-agent reasoning and ToM drawing inspiration from cognitive science, computational pragmatics and multi-agent reinforcement learning. It is designed to be as easy as possible in all other dimensions, eliminating confounding factors common in other benchmarks. To our knowledge, it is also the first platform that isolates ToM evaluation in an interactive setting. We validate the benchmark design through comprehensive empirical evaluations of frontier LLMs, robustness studies, and human-AI cross-play experiments. We find that LLMs lag behind humans and simple word-embedding baselines on key game metrics. We then create variants of two classic cognitive science experiments within Decrypto to evaluate three distinct ToM abilities. Surprisingly, our results show that state-of-the-art reasoning models are significantly worse at those tasks than their older counterparts. This demonstrates that Decrypto addresses a crucial gap in current reasoning and ToM evaluations, and paves the path towards better artificial agents. Code at https://github.com/facebookresearch/decrypto.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Multi-Agent Reinforcement Learning",
+        "Reasoning",
+        "Reinforcement Learning",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Benchmark"
+      ]
+    },
+    {
       "id": "2602.07025",
       "title": "The Geometry of Representational Failures in Vision Language Models",
       "authors": "Daniele Savietto, Declan Iain Campbell, André Panisson, Marco Nurisso, Giovanni Petri, Jonathan D. Cohen, Alan Perotti",
@@ -66396,6 +66430,38 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
+      ]
+    },
+    {
+      "id": "2507.14200",
+      "title": "A Scalable Multi-LLM Collaboration System with Retrieval-based Selection and Exploration-Exploitation-Driven Enhancement",
+      "authors": "Shengji Tang, Jianjian Cao, Weihao Lin, Jiale Hong, Bo Zhang, Shuyue Hu, Lei Bai, Tao Chen, Wanli Ouyang, Peng Ye",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2507.14200",
+      "source": "https://paperswithcode.co/paper/2507.14200",
+      "code": "https://github.com/magent4aci/SMCS",
+      "project": "",
+      "thumbnail": "./thumbs/2507.14200.jpg",
+      "firstSeenAt": "2026-07-17T01:08:27.655Z",
+      "summary": "Existing multi-LLM collaboration systems often encounter scalability challenges when integrating new LLMs and tasks, leading to suboptimal performance. To address this, we propose SMCS, a Scalable Multi-LLM Collaboration System designed to effectively coordinate multiple open-source LLMs. The system consists of two core components: a Retrieval-based Prior Selection (RPS) module, which dynamically selects the most suitable LLMs for each input, and an Exploration–Exploitation-Driven Posterior Enhancement (EPE) module, which fosters response diversity and selects high-quality outputs through a hybrid scoring mechanism. Experiments on eight mainstream benchmarks validate the effectiveness of our system: by integrating fifteen open-source LLMs, SMCS outperforms prevailing closed-source LLMs, e.g., GPT-4.1(**+5.36%**) and GPT-o3-mini(**+5.28%**) across multiple tasks. Remarkably, it even exceeds the average of best results on different datasets with open-source LLMs (**+2.86%**), significantly advancing the empirical performance frontier of open-source collaboration. The code is released at https://github.com/magent4aci/SMCS.",
+      "matchedBy": [
+        "papers with code",
+        "Exploration and Sparse Rewards",
+        "Language Modeling",
+        "Reinforcement Learning",
+        "RAG",
+        "language modeling",
+        "data / retrieval"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
       ]
     },
     {
@@ -70792,6 +70858,38 @@
       "category": "Serving",
       "categories": [
         "Serving",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2606.25548",
+      "title": "Concept Removal for Frontier Image Generative Models",
+      "authors": "Aditya Kumar, Pierre Joly, Adam Dziedzic, Franziska Boenisch",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2606.25548",
+      "source": "https://paperswithcode.co/paper/2606.25548",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.25548.jpg",
+      "firstSeenAt": "2026-06-25T01:36:06.247Z",
+      "summary": "Image generative models are trained on massive, largely uncurated internet-scale datasets that contain undesirable visual concepts. Efficiently removing such concepts from the model generations without degrading the quality of output images remains challenging. We introduce a novel concept removal method for frontier diffusion and image autoregressive models, such as, SD3.5, Flux, and Infinity. Our intervention replaces the internal bottleneck layer present in all these modern models with a transcoder that is trained to replicate the original layer while structuring it into distinct activation features. This in‑place substitution creates an integrated filter through which concept‑specific signals can be selectively disabled while preserving the rest of the model’s behavior. Since the intervention modifies the model backbone rather than attaching an external component, it remains persistent under white‑box access. Empirically, the approach achieves state‑of‑the‑art concept removal performance across modern diffusion and autoregressive models, maintains visual generation quality, provides robustness against adversarial prompts, and supports sequential removal of diverse concepts. This positions our method as a practical approach for concept removal in frontier image generative models.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "frontier training",
+        "language modeling",
+        "papers with code"
+      ],
+      "sources": [
+        "arxiv",
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -111671,36 +111769,6 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
-      ]
-    },
-    {
-      "id": "2606.25548",
-      "title": "Concept Removal for Frontier Image Generative Models",
-      "authors": "Aditya Kumar, Pierre Joly, Adam Dziedzic, Franziska Boenisch",
-      "org": "",
-      "published": "2026-06-24",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2606.25548v1",
-      "source": "https://arxiv.org/abs/2606.25548v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2606.25548.jpg",
-      "firstSeenAt": "2026-06-25T01:36:06.247Z",
-      "summary": "Image generative models are trained on massive, largely uncurated internet-scale datasets that contain undesirable visual concepts. Efficiently removing such concepts from the model generations without degrading the quality of output images remains challenging. We introduce a novel concept removal method for frontier diffusion and image autoregressive models, such as SD3.5, Flux, and Infinity. Our intervention replaces the internal bottleneck layer present in all these modern models with a transcoder that is trained to replicate the original layer while structuring it into distinct activation features. This in-place substitution creates an integrated filter through which concept-specific signals can be selectively disabled while preserving the rest of the model's behavior. Since the intervention modifies the model backbone rather than attaching an external component, it remains persistent under white-box access. Empirically, the approach achieves state-of-the-art concept removal performance across modern diffusion and autoregressive models, maintains visual generation quality, provides robustness against adversarial prompts, and supports sequential removal of diverse concepts. This positions our method as a practical approach for concept removal in frontier image generative models.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training",
-        "Language Modeling"
       ]
     },
     {
