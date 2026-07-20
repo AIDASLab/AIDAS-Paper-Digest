@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T01:08:13.690Z",
+  "generatedAt": "2026-07-20T00:10:09.922Z",
   "sourceStats": {
     "seed": 5974,
     "paperswithcode": 540,
@@ -7,7 +7,7 @@
     "huggingface": 29,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 5974
+    "total": 5995
   },
   "papers": [
     {
@@ -1479,6 +1479,34 @@
         "Frontier Training",
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2607.15161",
+      "title": "On-Policy Delta Distillation",
+      "authors": "Byeongho Heo, Jaehui Hwang, Sangdoo Yun, Dongyoon Han",
+      "org": "",
+      "published": "2026-07-16",
+      "score": 94,
+      "paper": "https://arxiv.org/abs/2607.15161",
+      "source": "https://www.alphaxiv.org/abs/2607.15161",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.15161.jpg",
+      "firstSeenAt": "2026-07-18T00:07:21.496Z",
+      "summary": "On-policy distillation is an alternative post-training method in reinforcement learning that alleviates the constraints imposed by reward models by providing token-level supervision from a teacher model. Although on-policy distillation has been studied and applied across various settings, its fundamental design remains underexplored. In this paper, we introduce a new distillation reward, termed the delta signal, instead of directly imitating the teacher's output distribution. The delta signal is defined as the difference between the teacher model and its base model prior to instruction tuning for reasoning capability. It therefore captures the changes induced by reasoning tuning and provides a more direct signal for transferring reasoning capabilities. Using extensive empirical evidence, we show that the delta signal substantially improves on-policy distillation and refer to the new distillation method as On-Policy Delta Distillation (OPD$^2$). Experiments across mathematics, science, and code-reasoning benchmarks demonstrate that OPD$^2$ consistently outperforms conventional on-policy distillation, enabling reasoning LLMs to achieve strong performance with only a short post-training period. Code will be available at https://github.com/naver-ai/opd2",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -4087,34 +4115,6 @@
       ]
     },
     {
-      "id": "2607.15161",
-      "title": "On-Policy Delta Distillation",
-      "authors": "Byeongho Heo, Jaehui Hwang, Sangdoo Yun, Dongyoon Han",
-      "org": "",
-      "published": "2026-07-16",
-      "score": 89,
-      "paper": "https://arxiv.org/abs/2607.15161",
-      "source": "https://www.alphaxiv.org/abs/2607.15161",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.15161.jpg",
-      "firstSeenAt": "2026-07-18T00:07:21.496Z",
-      "summary": "On-policy distillation is an alternative post-training method in reinforcement learning that alleviates the constraints imposed by reward models by providing token-level supervision from a teacher model. Although on-policy distillation has been studied and applied across various settings, its fundamental design remains underexplored. In this paper, we introduce a new distillation reward, termed the delta signal, instead of directly imitating the teacher's output distribution. The delta signal is defined as the difference between the teacher model and its base model prior to instruction tuning for reasoning capability. It therefore captures the changes induced by reasoning tuning and provides a more direct signal for transferring reasoning capabilities. Using extensive empirical evidence, we show that the delta signal substantially improves on-policy distillation and refer to the new distillation method as On-Policy Delta Distillation (OPD$^2$). Experiments across mathematics, science, and code-reasoning benchmarks demonstrate that OPD$^2$ consistently outperforms conventional on-policy distillation, enabling reasoning LLMs to achieve strong performance with only a short post-training period. Code will be available at https://github.com/naver-ai/opd2",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.09661",
       "title": "PanoWorld: Real-World Panoramic Generation",
       "authors": "Haoyuan Li, Dizhe Zhang, Yuemei Zhou, Xiangkai Zhang, Haoran Feng, Xiaofan Lin, Wenjie Jiang, Bo Du, Ming-Hsuan Yang, Lu Qi",
@@ -4359,6 +4359,38 @@
       "categories": [
         "Language Modeling",
         "Data / Retrieval"
+      ]
+    },
+    {
+      "id": "2607.15207",
+      "title": "BadWAM: When World-Action Models Dream Right but Act Wrong",
+      "authors": "Qi Li, Xingyi Yang, Xinchao Wang",
+      "org": "",
+      "published": "2026-07-16",
+      "score": 88,
+      "paper": "https://arxiv.org/abs/2607.15207",
+      "source": "https://www.alphaxiv.org/abs/2607.15207",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.15207.jpg",
+      "firstSeenAt": "2026-07-18T00:07:21.496Z",
+      "summary": "World-action models (WAMs) are emerging as a promising foundation for embodied control: rather than predicting actions alone, they learn representations that couple action generation with future world prediction. This coupling is often viewed as a source of robustness, interpretability, and safety, as a robot's action can in principle be checked against its imagined future. In this paper, we show that this assumption is fragile. We introduce BadWAM, a unified framework for modeling and evaluating World-Action Drift Attacks: a new class of WAM-specific adversarial attacks that use small visual perturbations to break the alignment between what a WAM imagines and what it executes. BadWAM characterizes this attack surface along two natural criteria: attack strength and stealthiness. When the adversary prioritizes disruption, BadWAM instantiates an action-only adversarial attack, which directly drives the model toward task-failing actions. When the adversary additionally prioritizes stealth, BadWAM instantiates an imagination-preserving adversarial attack, which seeks to induce harmful action shifts while keeping the model's predicted future close to its clean imagination. Together, these two attacks capture a spectrum of WAM-specific failures: from overt action hijacking to stealthier cases where the model appears to imagine a plausible future but executes a desynchronized action. We evaluate BadWAM across different variants of WAMs. Results show that our attacks substantially reduce task success rates under closed-loop execution. For example, our action-only attack reduces the model performance from 96.5% to 43.1% success. The results of our imagination-preserving attack further exposes a WAM-specific vulnerability: moderate future-preserving regularization can maintain strong attack performance while reducing future imagination drift.",
+      "matchedBy": [
+        "arxiv",
+        "robotics",
+        "vision/multimodal",
+        "hugging face daily",
+        "language modeling"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -6940,7 +6972,7 @@
       "published": "2026-07-16",
       "score": 83,
       "paper": "https://arxiv.org/abs/2607.14749",
-      "source": "https://www.alphaxiv.org/abs/2607.14749",
+      "source": "https://huggingface.co/papers/2607.14749",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.14749.jpg",
@@ -7615,38 +7647,6 @@
       ]
     },
     {
-      "id": "2607.15207",
-      "title": "BadWAM: When World-Action Models Dream Right but Act Wrong",
-      "authors": "Qi Li, Xingyi Yang, Xinchao Wang",
-      "org": "",
-      "published": "2026-07-16",
-      "score": 81,
-      "paper": "https://arxiv.org/abs/2607.15207",
-      "source": "https://www.alphaxiv.org/abs/2607.15207",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.15207.jpg",
-      "firstSeenAt": "2026-07-18T00:07:21.496Z",
-      "summary": "World-action models (WAMs) are emerging as a promising foundation for embodied control: rather than predicting actions alone, they learn representations that couple action generation with future world prediction. This coupling is often viewed as a source of robustness, interpretability, and safety, as a robot's action can in principle be checked against its imagined future. In this paper, we show that this assumption is fragile. We introduce BadWAM, a unified framework for modeling and evaluating World-Action Drift Attacks: a new class of WAM-specific adversarial attacks that use small visual perturbations to break the alignment between what a WAM imagines and what it executes. BadWAM characterizes this attack surface along two natural criteria: attack strength and stealthiness. When the adversary prioritizes disruption, BadWAM instantiates an action-only adversarial attack, which directly drives the model toward task-failing actions. When the adversary additionally prioritizes stealth, BadWAM instantiates an imagination-preserving adversarial attack, which seeks to induce harmful action shifts while keeping the model's predicted future close to its clean imagination. Together, these two attacks capture a spectrum of WAM-specific failures: from overt action hijacking to stealthier cases where the model appears to imagine a plausible future but executes a desynchronized action. We evaluate BadWAM across different variants of WAMs. Results show that our attacks substantially reduce task success rates under closed-loop execution. For example, our action-only attack reduces the model performance from 96.5% to 43.1% success. The results of our imagination-preserving attack further exposes a WAM-specific vulnerability: moderate future-preserving regularization can maintain strong attack performance while reducing future imagination drift.",
-      "matchedBy": [
-        "arxiv",
-        "robotics",
-        "vision/multimodal",
-        "hugging face daily",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal"
-      ]
-    },
-    {
       "id": "2607.12463",
       "title": "Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models",
       "authors": "Yubo Wang, Jiarong Liang, Yuxuan Zhang, Xuye Liu, Cong Wei, Yuyu Zhang, Ping Nie, Wenhu Chen",
@@ -8149,6 +8149,38 @@
       ]
     },
     {
+      "id": "2607.14952",
+      "title": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+      "authors": "Changhai Zhou, Kieran Liu, Yuhua Zhou, Qian Qiao, Jun Gao, Harry Zhang, Irvine Lu, Nolan Ho, Lucian Li, Andrew Lei, Cleon Cheng, Steven Chiang, Yihang Zeng, Di Zhang, Rio Yang, Kaijie Chen, Andrew Chen, Pony Ma, Weizhong Zhang, Cheng Jin",
+      "org": "",
+      "published": "2026-07-16",
+      "score": 80,
+      "paper": "https://arxiv.org/abs/2607.14952",
+      "source": "https://www.alphaxiv.org/abs/2607.14952",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.14952.jpg",
+      "firstSeenAt": "2026-07-18T00:07:21.496Z",
+      "summary": "A growing gap separates inference context lengths from RL post-training: inference systems are approaching million-token contexts, while post-training workloads often remain at 256K tokens or below and rely on length generalization at deployment. The gap is especially important for AI agents, whose observations, tool outputs, documents, and prior decisions accumulate over long trajectories. LongStraw is an architecture-aware execution stack for million-token RL post-training under a fixed GPU budget, instantiated with Group Relative Policy Optimization (GRPO). It evaluates the shared prompt without autograd, retains only model-specific state needed by later tokens, and replays short response branches one at a time, reducing the live training graph at the cost of additional replay time. We implement it for the hybrid recurrent and full-attention Qwen3.6-27B and the compressed-attention mixture-of-experts GLM-5.2. On eight H20 GPUs, LongStraw completes grouped Qwen scoring and response backward at 2.1M positions for groups of 2 and 8; increasing the group size adds only 0.21 GB of peak allocated memory, while a separate stress test reaches 4.46M positions. On 32 H20 GPUs, we validate the end-to-end LongStraw execution path for a 2.1M-token prompt across all 78 layers of GLM-5.2. These experiments establish execution capacity rather than complete training correctness because the captured prompt state is detached and some distributed forward and gradient composition paths remain incomplete.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "frontier training",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2510.14827",
       "title": "NeMo-map: Neural Implicit Flow Fields for Spatio-Temporal Motion Mapping",
       "authors": "Yufei Zhu, Shih-Min Yang, Andrey Rudenko",
@@ -8638,6 +8670,38 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.13095",
+      "title": "Full-Pipeline Inference Optimization for MiMo-V2.5 Series: Pushing Hybrid SWA Efficiency to the Limit",
+      "authors": "Xiaomi MiMo Team, Anqi Liu, Aoxin Ma, Bo Chen, Bo Yang, Chen Wang, Chen Zhang, Chengda Tang, Chengwei Wang, Chiheng Lou, Depeng Yan, Fuli Luo, Gang Wang, Hailin Zhang, Jiale Sun, Kang Zhou, Rui Huang, Shaohui Liu, Shen Huang, Shijie Cao, Shuaishuai Fan, Tianling Zhou, Xiangwei Deng, Xueyang Xie, Xuli Wang, Yingchun Lai, Yu Yang, Yuan Zhang, Zhen Tang, Zhonghua Deng, Zihan Jiang",
+      "org": "",
+      "published": "2026-07-14",
+      "score": 79,
+      "paper": "https://arxiv.org/abs/2607.13095",
+      "source": "https://www.alphaxiv.org/abs/2607.13095",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.13095.jpg",
+      "firstSeenAt": "2026-07-16T01:05:01.176Z",
+      "summary": "We present a full-pipeline inference optimization for the MiMo-V2.5 model family, which combines Hybrid Sliding Window Attention (Hybrid SWA), sparse Mixture-of-Experts (MoE), and multimodal encoders. While Hybrid SWA can ideally reduce both attention compute and KVCache storage significantly compared to Full Attention, realizing these gains in production requires substantial engineering effort. We systematically optimize the KVCache system with layerwise prefetch, SWA-aware prefix cache trees, and specialized placement strategies, achieving strict $O(W)$ SWA storage and high cache hit rates. We further build GCache, a high-performance distributed cache infrastructure with RDMA-optimized networking, and develop a KVCache-affinity router to reduce computation while preserving load balancing. We also optimize for multimodal inputs, including GPU image preprocessing, parallel video decoding, and multimodal cache sharing. Together, these optimizations constitute the first large-scale LLM serving system in production that efficiently covers the Hybrid SWA + MoE + multimodal composite architecture.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "vision/multimodal",
+        "serving",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Vision/Multimodal",
+        "Serving"
       ]
     },
     {
@@ -17662,36 +17726,6 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2607.14952",
-      "title": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
-      "authors": "Changhai Zhou, Kieran Liu, Yuhua Zhou, Qian Qiao, Jun Gao, Harry Zhang, Irvine Lu, Nolan Ho, Lucian Li, Andrew Lei, Cleon Cheng, Steven Chiang, Yihang Zeng, Di Zhang, Rio Yang, Kaijie Chen, Andrew Chen, Pony Ma, Weizhong Zhang, Cheng Jin",
-      "org": "",
-      "published": "2026-07-16",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.14952",
-      "source": "https://huggingface.co/papers/2607.14952",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.14952.jpg",
-      "firstSeenAt": "2026-07-18T00:07:21.496Z",
-      "summary": "A growing gap separates inference context lengths from RL post-training: inference systems are approaching million-token contexts, while post-training workloads often remain at 256K tokens or below and rely on length generalization at deployment. The gap is especially important for AI agents, whose observations, tool outputs, documents, and prior decisions accumulate over long trajectories. LongStraw is an architecture-aware execution stack for million-token RL post-training under a fixed GPU budget, instantiated with Group Relative Policy Optimization (GRPO). It evaluates the shared prompt without autograd, retains only model-specific state needed by later tokens, and replays short response branches one at a time, reducing the live training graph at the cost of additional replay time. We implement it for the hybrid recurrent and full-attention Qwen3.6-27B and the compressed-attention mixture-of-experts GLM-5.2. On eight H20 GPUs, LongStraw completes grouped Qwen scoring and response backward at 2.1M positions for groups of 2 and 8; increasing the group size adds only 0.21 GB of peak allocated memory, while a separate stress test reaches 4.46M positions. On 32 H20 GPUs, we validate the end-to-end LongStraw execution path for a 2.1M-token prompt across all 78 layers of GLM-5.2. These experiments establish execution capacity rather than complete training correctness because the captured prompt state is detached and some distributed forward and gradient composition paths remain incomplete.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "frontier training",
-        "hugging face daily"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -27783,7 +27817,8 @@
       "matchedBy": [
         "papers with code",
         "3D generation",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -29085,6 +29120,39 @@
       ]
     },
     {
+      "id": "2412.15182",
+      "title": "STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning",
+      "authors": "Marius Memmel, Jacob Berg, Bingqing Chen, Abhishek Gupta, Jonathan Francis",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 70,
+      "paper": "https://arxiv.org/abs/2412.15182",
+      "source": "https://paperswithcode.co/paper/2412.15182",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.15182.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Robot learning is witnessing a significant increase in the size, diversity, and complexity of pre-collected datasets, mirroring trends in domains such as natural language processing and computer vision. Many robot learning methods treat such datasets as multi-task expert data and learn a multi-task, generalist policy by training broadly across them. Notably, while these generalist policies can improve the average performance across many tasks, the performance of generalist policies on any one task is often suboptimal due to negative transfer between partitions of the data, compared to task-specific specialist policies. In this work, we argue for the paradigm of training policies during deployment given the scenarios they encounter: rather than deploying pre-trained policies to unseen problems in a zero-shot manner, we non-parametrically retrieve and train models directly on relevant data at test time. Furthermore, we show that many robotics tasks share considerable amounts of low-level behaviors and that retrieval at the \"sub\"-trajectory granularity enables significantly improved data utilization, generalization, and robustness in adapting policies to novel problems. In contrast, existing full-trajectory retrieval methods tend to underutilize the data and miss out on shared cross-task content. This work proposes STRAP, a technique for leveraging pre-trained vision foundation models and dynamic time warping to retrieve sub-sequences of trajectories from large training corpora in a robust fashion. STRAP outperforms both prior retrieval algorithms and multi-task learning methods in simulated and real experiments, showing the ability to scale to much larger offline datasets in the real world as well as the ability to learn robust control policies with just a handful of real-world demonstrations.",
+      "matchedBy": [
+        "papers with code",
+        "CLIP",
+        "Diffusion Policy",
+        "DINO",
+        "Key-value cache",
+        "data / retrieval",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Robotics",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2409.14586",
       "title": "Backtracking Improves Generation Safety",
       "authors": "Yiming Zhang, Jianfeng Chi, Hailey Nguyen, Kartikeya Upasani, Daniel M. Bikel, Jason E Weston, Eric Michael Smith",
@@ -29548,6 +29616,38 @@
       ]
     },
     {
+      "id": "2503.11117",
+      "title": "Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering",
+      "authors": "Kaixuan Jiang, Yang Liu, Weixing Chen, Jingzhou Luo, Ziliang Chen, Ling Pan, Guanbin Li, Liang Lin",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 68,
+      "paper": "https://arxiv.org/abs/2503.11117",
+      "source": "https://paperswithcode.co/paper/2503.11117",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.11117.jpg",
+      "firstSeenAt": "2026-06-22T00:21:43.543Z",
+      "summary": "Embodied Question Answering (EQA) is a challenging task in embodied intelligence that requires agents to dynamically explore 3D environments, actively gather visual information, and perform multi-step reasoning to answer questions. However, current EQA approaches suffer from critical limitations in exploration efficiency, dataset design, and evaluation metrics. Moreover, existing datasets often introduce biases or prior knowledge, leading to disembodied reasoning, while frontier-based exploration strategies struggle in cluttered environments and fail to ensure fine-grained exploration of task-relevant areas. To address these challenges, we construct the EXPloration-awaRe Embodied queStion anSwering Benchmark (EXPRESS-Bench), the largest dataset designed specifically to evaluate both exploration and reasoning capabilities. EXPRESS-Bench consists of 777 exploration trajectories and 2,044 question-trajectory pairs. To improve exploration efficiency, we propose Fine-EQA, a hybrid exploration model that integrates frontier-based and goal-oriented navigation to guide agents toward task-relevant regions more effectively. Additionally, we introduce a novel evaluation metric, Exploration-Answer Consistency (EAC), which ensures faithful assessment by measuring the alignment between answer grounding and exploration reliability. Extensive experimental comparisons with state-of-the-art EQA models demonstrate the effectiveness of our EXPRESS-Bench in advancing embodied exploration and question reasoning.",
+      "matchedBy": [
+        "papers with code",
+        "Question Answering",
+        "GPT-4",
+        "robotics",
+        "vision/multimodal",
+        "benchmark"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Benchmark"
+      ]
+    },
+    {
       "id": "2501.03399",
       "title": "Compression of 3D Gaussian Splatting with Optimized Feature Planes and Standard Video Codecs",
       "authors": "Soonbin Lee, Fangwen Shu, Yago Sanchez, Thomas Schierl, Cornelius Hellge",
@@ -29859,6 +29959,38 @@
         "Vision/Multimodal",
         "Language Modeling",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2410.14462",
+      "title": "LUDVIG: Learning-Free Uplifting of 2D Visual Features to Gaussian Splatting Scenes",
+      "authors": "Juliette Marrie, Romain Menegaux, Michael Arbel, Diane Larlus, Julien Mairal",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 68,
+      "paper": "https://arxiv.org/abs/2410.14462",
+      "source": "https://paperswithcode.co/paper/2410.14462",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2410.14462.jpg",
+      "firstSeenAt": "2026-07-13T01:12:03.410Z",
+      "summary": "We address the problem of extending the capabilities of vision foundation models such as DINO, SAM, and CLIP, to 3D tasks. Specifically, we introduce a novel method to uplift 2D image features into Gaussian Splatting representations of 3D scenes. Unlike traditional approaches that rely on minimizing a reconstruction loss, our method employs a simpler and more efficient feature aggregation technique, augmented by a graph diffusion mechanism. Graph diffusion refines 3D features, such as coarse segmentation masks, by leveraging 3D geometry and pairwise similarities induced by DINOv2. Our approach achieves performance comparable to the state of the art on multiple downstream tasks while delivering significant speed-ups. Notably, we obtain competitive segmentation results using only generic DINOv2 features, despite DINOv2 not being trained on millions of annotated segmentation masks like SAM. When applied to CLIP features, our method demonstrates strong performance in open-vocabulary object segmentation tasks, highlighting the versatility of our approach.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "CLIP",
+        "Diffusion",
+        "DINO",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
       ]
     },
     {
@@ -30763,38 +30895,6 @@
       ]
     },
     {
-      "id": "2410.14462",
-      "title": "LUDVIG: Learning-Free Uplifting of 2D Visual Features to Gaussian Splatting Scenes",
-      "authors": "Juliette Marrie, Romain Menegaux, Michael Arbel, Diane Larlus, Julien Mairal",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 67,
-      "paper": "https://arxiv.org/abs/2410.14462",
-      "source": "https://paperswithcode.co/paper/2410.14462",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2410.14462.jpg",
-      "firstSeenAt": "2026-07-13T01:12:03.410Z",
-      "summary": "We address the problem of extending the capabilities of vision foundation models such as DINO, SAM, and CLIP, to 3D tasks. Specifically, we introduce a novel method to uplift 2D image features into Gaussian Splatting representations of 3D scenes. Unlike traditional approaches that rely on minimizing a reconstruction loss, our method employs a simpler and more efficient feature aggregation technique, augmented by a graph diffusion mechanism. Graph diffusion refines 3D features, such as coarse segmentation masks, by leveraging 3D geometry and pairwise similarities induced by DINOv2. Our approach achieves performance comparable to the state of the art on multiple downstream tasks while delivering significant speed-ups. Notably, we obtain competitive segmentation results using only generic DINOv2 features, despite DINOv2 not being trained on millions of annotated segmentation masks like SAM. When applied to CLIP features, our method demonstrates strong performance in open-vocabulary object segmentation tasks, highlighting the versatility of our approach.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "CLIP",
-        "Diffusion",
-        "DINO",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2505.00681",
       "title": "MINERVA: Evaluating Complex Video Reasoning",
       "authors": "Arsha Nagrani, Sachit Menon, Ahmet Iscen, Shyamal Buch, Ramin Mehran, Nilpa Jha, Anja Hauth, Yukun Zhu, Carl Vondrick, Mikhail Sirotenko, Cordelia Schmid, Tobias Weyand",
@@ -31010,6 +31110,39 @@
       ]
     },
     {
+      "id": "2509.15155",
+      "title": "Self-Improving Embodied Foundation Models",
+      "authors": "Seyed Kamyar Seyed Ghasemipour, Ayzaan Wahid, Jonathan Tompson, Pannag R Sanketi, Igor Mordatch",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 67,
+      "paper": "https://arxiv.org/abs/2509.15155",
+      "source": "https://paperswithcode.co/paper/2509.15155",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.15155.jpg",
+      "firstSeenAt": "2026-06-22T02:07:22.829Z",
+      "summary": "Foundation models trained on web-scale data have revolutionized robotics, but their application to low-level control remains largely limited to behavioral cloning. Drawing inspiration from the success of the reinforcement learning stage in fine-tuning large language models, we propose a two-stage post-training approach for robotics. The first stage, Supervised Fine-Tuning (SFT), fine-tunes pretrained foundation models using both: a) behavioral cloning, and b) steps-to-go prediction objectives. In the second stage, Self-Improvement, steps-to-go prediction enables the extraction of a well-shaped reward function and a robust success detector, enabling a fleet of robots to autonomously practice downstream tasks with minimal human supervision. Through extensive experiments on real-world and simulated robot embodiments, our novel post-training recipe unveils significant results on Embodied Foundation Models. First, we demonstrate that the combination of SFT and Self-Improvement is significantly more sample-efficient than scaling imitation data collection for supervised learning, and that it leads to policies with significantly higher success rates. Further ablations highlight that the combination of web-scale pretraining and Self-Improvement is the key to this sample-efficiency. Next, we demonstrate that our proposed combination uniquely unlocks a capability not possible by current methods: autonomously practicing and acquiring novel skills that generalize far beyond the behaviors observed in the imitation learning datasets used during training. These findings highlight the transformative potential of combining pretrained foundation models with online Self-Improvement to enable autonomous skill acquisition in robotics.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Reinforcement Learning",
+        "ACT",
+        "DeepSeek-R1",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2412.06206",
       "title": "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
       "authors": "Nan Zhang, Prafulla Kumar Choubey, Alexander Fabbri, Gabriel Bernadett-Shapiro, Rui Zhang, Prasenjit Mitra, Caiming Xiong, Chien-Sheng Wu",
@@ -31037,6 +31170,38 @@
       "categories": [
         "Data / Retrieval",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2603.04448",
+      "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
+      "authors": "Yuan Liang, Ruobin Zhong, Haoming Xu, Chen Jiang, Yi Zhong, Runnan Fang, Jia-Chen Gu, Shumin Deng, Yunzhi Yao, Mengru Wang, Shuofei Qiao, Xin Xu, Tongtong Wu, Kun Wang, Yang Liu, Zhen Bi, Jungang Lou, Yuchen Eleanor Jiang, Hangcheng Zhu, Gang Yu, Haiwen Hong, Longtao Huang, Hui Xue, Chenxi Wang, Yijun Wang, Zifei Shan, Xi Chen, Zhaopeng Tu, Feiyu Xiong, Xin Xie, Peng Zhang, Zhengke Gui, Lei Liang, Jun Zhou, Chiyu Wu, Jin Shang, Yu Gong, Junyu Lin, Changliang Xu, Hongjie Deng, Wen Zhang, Keyan Ding, Qiang Zhang, Fei Huang, Ningyu Zhang, Jeff Z. Pan, Guilin Qi, Haofen Wang, Huajun Chen",
+      "org": "",
+      "published": "2026-02-26",
+      "score": 67,
+      "paper": "https://arxiv.org/abs/2603.04448",
+      "source": "https://paperswithcode.co/paper/2603.04448",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.04448.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Agent Skills",
+        "ReAct",
+        "Residual Block",
+        "language modeling",
+        "data / retrieval"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
       ]
     },
     {
@@ -31197,38 +31362,6 @@
       ]
     },
     {
-      "id": "2503.11117",
-      "title": "Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering",
-      "authors": "Kaixuan Jiang, Yang Liu, Weixing Chen, Jingzhou Luo, Ziliang Chen, Ling Pan, Guanbin Li, Liang Lin",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 66,
-      "paper": "https://arxiv.org/abs/2503.11117",
-      "source": "https://paperswithcode.co/paper/2503.11117",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2503.11117.jpg",
-      "firstSeenAt": "2026-06-22T00:21:43.543Z",
-      "summary": "Embodied Question Answering (EQA) is a challenging task in embodied intelligence that requires agents to dynamically explore 3D environments, actively gather visual information, and perform multi-step reasoning to answer questions. However, current EQA approaches suffer from critical limitations in exploration efficiency, dataset design, and evaluation metrics. Moreover, existing datasets often introduce biases or prior knowledge, leading to disembodied reasoning, while frontier-based exploration strategies struggle in cluttered environments and fail to ensure fine-grained exploration of task-relevant areas. To address these challenges, we construct the EXPloration-awaRe Embodied queStion anSwering Benchmark (EXPRESS-Bench), the largest dataset designed specifically to evaluate both exploration and reasoning capabilities. EXPRESS-Bench consists of 777 exploration trajectories and 2,044 question-trajectory pairs. To improve exploration efficiency, we propose Fine-EQA, a hybrid exploration model that integrates frontier-based and goal-oriented navigation to guide agents toward task-relevant regions more effectively. Additionally, we introduce a novel evaluation metric, Exploration-Answer Consistency (EAC), which ensures faithful assessment by measuring the alignment between answer grounding and exploration reliability. Extensive experimental comparisons with state-of-the-art EQA models demonstrate the effectiveness of our EXPRESS-Bench in advancing embodied exploration and question reasoning.",
-      "matchedBy": [
-        "papers with code",
-        "Question Answering",
-        "GPT-4",
-        "robotics",
-        "vision/multimodal",
-        "benchmark"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Benchmark"
-      ]
-    },
-    {
       "id": "2510.22510",
       "title": "CANDI: Hybrid Discrete-Continuous Diffusion Models",
       "authors": "Patrick Pynadath, Jiaxin Shi, Ruqi Zhang",
@@ -31314,6 +31447,38 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2505.09603",
+      "title": "DataMIL: Selecting Data for Robot Imitation Learning with Datamodels",
+      "authors": "Shivin Dass, Alaa Khaddaj, Logan Engstrom, Aleksander Madry, Andrew Ilyas, Roberto Martín-Martín",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 66,
+      "paper": "https://arxiv.org/abs/2505.09603",
+      "source": "https://paperswithcode.co/paper/2505.09603",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.09603.jpg",
+      "firstSeenAt": "2026-06-20T00:19:02.193Z",
+      "summary": "Recently, the robotics community has amassed ever larger and more diverse datasets to train generalist policies. However, while these policies achieve strong mean performance across a variety of tasks, they often underperform on individual, specialized tasks and require further tuning on newly acquired task-specific data. Combining task-specific data with carefully curated subsets of large prior datasets via co-training can produce better specialized policies, but selecting data naively may actually harm downstream performance. To address this, we introduce DataMIL, a data selection framework built on the datamodels paradigm that reasons about data selection in an end-to-end manner, using the policy itself to identify which data points will most improve performance. Unlike standard practices that filter data using human notions of quality (e.g., based on semantic or visual similarity), DataMIL directly optimizes data selection for task success, allowing us to select data that improves the policy while dropping data that degrade it. To avoid performing expensive rollouts in the environment during selection, we introduce a surrogate loss function on task-specific data, allowing us to use DataMIL in the real world without degrading performance. We validate our approach on 60+ simulation and real-world manipulation tasks, notably showing successful data selection from the largest open collections of robot datasets (OXE); demonstrating consistent gains in success rates over prior works. Our results underscore the importance of end-to-end, performance-aware data selection for unlocking the potential of large prior datasets in robotics.",
+      "matchedBy": [
+        "papers with code",
+        "robotics",
+        "vision/multimodal",
+        "Reinforcement Learning",
+        "Imitation learning",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Language Modeling",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -31858,38 +32023,6 @@
       ]
     },
     {
-      "id": "2603.04448",
-      "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
-      "authors": "Yuan Liang, Ruobin Zhong, Haoming Xu, Chen Jiang, Yi Zhong, Runnan Fang, Jia-Chen Gu, Shumin Deng, Yunzhi Yao, Mengru Wang, Shuofei Qiao, Xin Xu, Tongtong Wu, Kun Wang, Yang Liu, Zhen Bi, Jungang Lou, Yuchen Eleanor Jiang, Hangcheng Zhu, Gang Yu, Haiwen Hong, Longtao Huang, Hui Xue, Chenxi Wang, Yijun Wang, Zifei Shan, Xi Chen, Zhaopeng Tu, Feiyu Xiong, Xin Xie, Peng Zhang, Zhengke Gui, Lei Liang, Jun Zhou, Chiyu Wu, Jin Shang, Yu Gong, Junyu Lin, Changliang Xu, Hongjie Deng, Wen Zhang, Keyan Ding, Qiang Zhang, Fei Huang, Ningyu Zhang, Jeff Z. Pan, Guilin Qi, Haofen Wang, Huajun Chen",
-      "org": "",
-      "published": "2026-02-26",
-      "score": 66,
-      "paper": "https://arxiv.org/abs/2603.04448",
-      "source": "https://paperswithcode.co/paper/2603.04448",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2603.04448.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
-      "matchedBy": [
-        "papers with code",
-        "Agents",
-        "Agent Skills",
-        "ReAct",
-        "Residual Block",
-        "language modeling",
-        "data / retrieval"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
-      ]
-    },
-    {
       "id": "2406.04328",
       "title": "The Brain's Bitter Lesson: Scaling Speech Decoding With Self-Supervised Learning",
       "authors": "Dulhan Jayalath, Gilad Landau, Brendan Shillingford, Mark Woolrich, Oiwi Parker Jones",
@@ -32106,6 +32239,38 @@
       ]
     },
     {
+      "id": "2506.14198",
+      "title": "AMPLIFY: Actionless Motion Priors for Robot Learning from Videos",
+      "authors": "Collins, Jeremy, Cheng, Lorand, Aneja, Kunal, Wilcox, Albert, Joffe, Benjamin, Garg, Animesh",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2506.14198",
+      "source": "https://paperswithcode.co/paper/2506.14198",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.14198.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Action-labeled data for robotics is scarce and expensive, limiting the generalization of learned policies. In contrast, vast amounts of action-free video data are readily available, but translating these observations into effective policies remains a challenge. We introduce AMPLIFY, a framework that leverages large-scale video data by encoding visual dynamics into compact, discrete motion tokens derived from keypoint trajectories. Our modular approach separates visual motion prediction from action inference, decoupling the challenges of learning what motion defines a task from how robots can perform it. We train a forward dynamics model on abundant action-free videos and an inverse dynamics model on a limited set of action-labeled examples, allowing for independent scaling. Extensive evaluations demonstrate our dynamics model achieves over 2× better point track prediction accuracy compared to the prior state-of-the-art. In downstream policy learning, our dynamics predictions enable a 1.2-2.2× success rate improvement in low-data regimes, a 1.4× average improvement by learning from action-free human videos, and the first generalization to LIBERO tasks with zero in-distribution action data. Beyond robotic control, we find the latent dynamics learned by AMPLIFY to enhance video prediction quality. Our results present a novel paradigm leveraging heterogeneous data sources to build efficient, generalizable world models.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "ACT",
+        "CLIP",
+        "Diffusion Policy",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2503.02358",
       "title": "Are Large Vision Language Models Good Game Players?",
       "authors": "Xinyu Wang, Bohan Zhuang, Qi Wu",
@@ -32223,34 +32388,6 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2505.09603",
-      "title": "DataMIL: Selecting Data for Robot Imitation Learning with Datamodels",
-      "authors": "Shivin Dass, Alaa Khaddaj, Logan Engstrom, Aleksander Madry, Andrew Ilyas, Roberto Martín-Martín",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 65,
-      "paper": "https://arxiv.org/abs/2505.09603",
-      "source": "https://paperswithcode.co/paper/2505.09603",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.09603.jpg",
-      "firstSeenAt": "2026-06-20T00:19:02.193Z",
-      "summary": "Recently, the robotics community has amassed ever larger and more diverse datasets to train generalist policies. However, while these policies achieve strong mean performance across a variety of tasks, they often underperform on individual, specialized tasks and require further tuning on newly acquired task-specific data. Combining task-specific data with carefully curated subsets of large prior datasets via co-training can produce better specialized policies, but selecting data naively may actually harm downstream performance. To address this, we introduce DataMIL, a data selection framework built on the datamodels paradigm that reasons about data selection in an end-to-end manner, using the policy itself to identify which data points will most improve performance. Unlike standard practices that filter data using human notions of quality (e.g., based on semantic or visual similarity), DataMIL directly optimizes data selection for task success, allowing us to select data that improves the policy while dropping data that degrade it. To avoid performing expensive rollouts in the environment during selection, we introduce a surrogate loss function on task-specific data, allowing us to use DataMIL in the real world without degrading performance. We validate our approach on 60+ simulation and real-world manipulation tasks, notably showing successful data selection from the largest open collections of robot datasets (OXE); demonstrating consistent gains in success rates over prior works. Our results underscore the importance of end-to-end, performance-aware data selection for unlocking the potential of large prior datasets in robotics.",
-      "matchedBy": [
-        "papers with code",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -33212,39 +33349,6 @@
       ]
     },
     {
-      "id": "2509.15155",
-      "title": "Self-Improving Embodied Foundation Models",
-      "authors": "Seyed Kamyar Seyed Ghasemipour, Ayzaan Wahid, Jonathan Tompson, Pannag R Sanketi, Igor Mordatch",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 65,
-      "paper": "https://arxiv.org/abs/2509.15155",
-      "source": "https://paperswithcode.co/paper/2509.15155",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2509.15155.jpg",
-      "firstSeenAt": "2026-06-22T02:07:22.829Z",
-      "summary": "Foundation models trained on web-scale data have revolutionized robotics, but their application to low-level control remains largely limited to behavioral cloning. Drawing inspiration from the success of the reinforcement learning stage in fine-tuning large language models, we propose a two-stage post-training approach for robotics. The first stage, Supervised Fine-Tuning (SFT), fine-tunes pretrained foundation models using both: a) behavioral cloning, and b) steps-to-go prediction objectives. In the second stage, Self-Improvement, steps-to-go prediction enables the extraction of a well-shaped reward function and a robust success detector, enabling a fleet of robots to autonomously practice downstream tasks with minimal human supervision. Through extensive experiments on real-world and simulated robot embodiments, our novel post-training recipe unveils significant results on Embodied Foundation Models. First, we demonstrate that the combination of SFT and Self-Improvement is significantly more sample-efficient than scaling imitation data collection for supervised learning, and that it leads to policies with significantly higher success rates. Further ablations highlight that the combination of web-scale pretraining and Self-Improvement is the key to this sample-efficiency. Next, we demonstrate that our proposed combination uniquely unlocks a capability not possible by current methods: autonomously practicing and acquiring novel skills that generalize far beyond the behaviors observed in the imitation learning datasets used during training. These findings highlight the transformative potential of combining pretrained foundation models with online Self-Improvement to enable autonomous skill acquisition in robotics.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Reinforcement Learning",
-        "ACT",
-        "DeepSeek-R1",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Robotics",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2410.08822",
       "title": "SOLD: Slot Object-Centric Latent Dynamics Models for Relational Manipulation Learning from Pixels",
       "authors": "Malte Mosbach, Jan Niklas Ewertz, Angel Villar-Corrales, Sven Behnke",
@@ -33793,26 +33897,26 @@
       ]
     },
     {
-      "id": "2506.14198",
-      "title": "AMPLIFY: Actionless Motion Priors for Robot Learning from Videos",
-      "authors": "Collins, Jeremy, Cheng, Lorand, Aneja, Kunal, Wilcox, Albert, Joffe, Benjamin, Garg, Animesh",
+      "id": "2602.09657",
+      "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
+      "authors": "Xiaolou Sun, Wufei Si, Wenhui Ni, Yuntian Li, Dongming Wu, Fei Xie, Runwei Guan, He-Yang Xu, Henghui Ding, Yuan Wu, Yutao Yue, Yongming Huang, Hui Xiong",
       "org": "",
-      "published": "ICRA 2026",
+      "published": "ICLR 2026",
       "score": 64,
-      "paper": "https://arxiv.org/abs/2506.14198",
-      "source": "https://paperswithcode.co/paper/2506.14198",
+      "paper": "https://arxiv.org/abs/2602.09657",
+      "source": "https://paperswithcode.co/paper/2602.09657",
       "code": "",
       "project": "",
-      "thumbnail": "./thumbs/2506.14198.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Action-labeled data for robotics is scarce and expensive, limiting the generalization of learned policies. In contrast, vast amounts of action-free video data are readily available, but translating these observations into effective policies remains a challenge. We introduce AMPLIFY, a framework that leverages large-scale video data by encoding visual dynamics into compact, discrete motion tokens derived from keypoint trajectories. Our modular approach separates visual motion prediction from action inference, decoupling the challenges of learning what motion defines a task from how robots can perform it. We train a forward dynamics model on abundant action-free videos and an inverse dynamics model on a limited set of action-labeled examples, allowing for independent scaling. Extensive evaluations demonstrate our dynamics model achieves over 2× better point track prediction accuracy compared to the prior state-of-the-art. In downstream policy learning, our dynamics predictions enable a 1.2-2.2× success rate improvement in low-data regimes, a 1.4× average improvement by learning from action-free human videos, and the first generalization to LIBERO tasks with zero in-distribution action data. Beyond robotic control, we find the latent dynamics learned by AMPLIFY to enhance video prediction quality. Our results present a novel paradigm leveraging heterogeneous data sources to build efficient, generalizable world models.",
+      "thumbnail": "./thumbs/2602.09657.jpg",
+      "firstSeenAt": "2026-06-23T01:33:39.075Z",
+      "summary": "Vision-language navigation (VLN) requires intelligent agents to navigate environments by interpreting linguistic instructions alongside visual observations, serving as a cornerstone task in Embodied AI. Current VLN research for unmanned aerial vehicles (UAVs) relies on detailed, pre-specified instructions to guide the UAV along predetermined routes. However, real-world outdoor exploration typically occurs in unknown environments where detailed navigation instructions are unavailable. Instead, only coarse-grained positional or directional guidance can be provided, requiring UAVs to autonomously navigate through continuous planning and obstacle avoidance. To bridge this gap, we propose AutoFly, an end-to-end Vision-Language-Action (VLA) model for autonomous UAV navigation. AutoFly incorporates a pseudo-depth encoder that derives depth-aware features from RGB inputs to enhance spatial reasoning, coupled with a progressive two-stage training strategy that effectively aligns visual, depth, and linguistic representations with action policies. Moreover, existing VLN datasets have fundamental limitations for real-world autonomous navigation, stemming from their heavy reliance on explicit instruction-following over autonomous decision-making and insufficient real-world data. To address these issues, we construct a novel autonomous navigation dataset that shifts the paradigm from instruction-following to autonomous behavior modeling through: (1) trajectory collection emphasizing continuous obstacle avoidance, autonomous planning, and recognition workflows; (2) comprehensive real-world data integration. Experimental results demonstrate that AutoFly achieves a 3.9\\% higher success rate compared to state-of-the-art VLA baselines, with consistent performance across simulated and real environments.",
       "matchedBy": [
         "papers with code",
-        "World Models",
-        "ACT",
-        "CLIP",
-        "Diffusion Policy",
+        "Robotics",
+        "LLaVa",
+        "Vision Transformer",
         "robotics",
+        "language modeling",
         "vision/multimodal"
       ],
       "sources": [
@@ -33821,6 +33925,7 @@
       "category": "Robotics",
       "categories": [
         "Robotics",
+        "Language Modeling",
         "Vision/Multimodal"
       ]
     },
@@ -35272,6 +35377,39 @@
       ]
     },
     {
+      "id": "2505.18947",
+      "title": "OpenHOI: Open-World Hand-Object Interaction Synthesis with Multimodal Large Language Model",
+      "authors": "Zhenhao Zhang, Ye Shi, Lingxiao Yang, Suting Ni, Qi Ye, Jingya Wang",
+      "org": "",
+      "published": "NeurIPS 2025 Oral",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2505.18947",
+      "source": "https://paperswithcode.co/paper/2505.18947",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.18947.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Understanding and synthesizing realistic 3D hand-object interactions (HOI) is critical for applications ranging from immersive AR/VR to dexterous robotics. Existing methods struggle with generalization, performing well on closed-set objects and predefined tasks but failing to handle unseen objects or open-vocabulary instructions. We introduce OpenHOI, the first framework for open-world HOI synthesis, capable of generating long-horizon manipulation sequences for novel objects guided by free-form language commands. Our approach integrates a 3D Multimodal Large Language Model (MLLM) fine-tuned for joint affordance grounding and semantic task decomposition, enabling precise localization of interaction regions (e.g., handles, buttons) and breakdown of complex instructions (e.g., “Find a water bottle and take a sip”) into executable sub-tasks. To synthesize physically plausible interactions, we propose an affordance-driven diffusion model paired with a training-free physics refinement stage that minimizes penetration and optimizes affordance alignment.Evaluations across diverse scenarios demonstrate OpenHOI’s superiority over state-of-the-art methods in generalizing to novel object categories, multi-stage tasks, and complex language instructions.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Classifier-free guidance",
+        "Diffusion",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2502.20853",
       "title": "Oscillation-Reduced MXFP4 Training for Vision Transformers",
       "authors": "Yuxiang Chen, Haocheng Xi, Jun Zhu, Jianfei Chen",
@@ -36627,39 +36765,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2602.09657",
-      "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
-      "authors": "Xiaolou Sun, Wufei Si, Wenhui Ni, Yuntian Li, Dongming Wu, Fei Xie, Runwei Guan, He-Yang Xu, Henghui Ding, Yuan Wu, Yutao Yue, Yongming Huang, Hui Xiong",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 63,
-      "paper": "https://arxiv.org/abs/2602.09657",
-      "source": "https://paperswithcode.co/paper/2602.09657",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2602.09657.jpg",
-      "firstSeenAt": "2026-06-23T01:33:39.075Z",
-      "summary": "Vision-language navigation (VLN) requires intelligent agents to navigate environments by interpreting linguistic instructions alongside visual observations, serving as a cornerstone task in Embodied AI. Current VLN research for unmanned aerial vehicles (UAVs) relies on detailed, pre-specified instructions to guide the UAV along predetermined routes. However, real-world outdoor exploration typically occurs in unknown environments where detailed navigation instructions are unavailable. Instead, only coarse-grained positional or directional guidance can be provided, requiring UAVs to autonomously navigate through continuous planning and obstacle avoidance. To bridge this gap, we propose AutoFly, an end-to-end Vision-Language-Action (VLA) model for autonomous UAV navigation. AutoFly incorporates a pseudo-depth encoder that derives depth-aware features from RGB inputs to enhance spatial reasoning, coupled with a progressive two-stage training strategy that effectively aligns visual, depth, and linguistic representations with action policies. Moreover, existing VLN datasets have fundamental limitations for real-world autonomous navigation, stemming from their heavy reliance on explicit instruction-following over autonomous decision-making and insufficient real-world data. To address these issues, we construct a novel autonomous navigation dataset that shifts the paradigm from instruction-following to autonomous behavior modeling through: (1) trajectory collection emphasizing continuous obstacle avoidance, autonomous planning, and recognition workflows; (2) comprehensive real-world data integration. Experimental results demonstrate that AutoFly achieves a 3.9\\% higher success rate compared to state-of-the-art VLA baselines, with consistent performance across simulated and real environments.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "LLaVa",
-        "Vision Transformer",
-        "robotics",
-        "language modeling",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Language Modeling",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -38855,6 +38960,39 @@
       ]
     },
     {
+      "id": "2410.17422",
+      "title": "Multimodal LLM Guided Exploration and Active Mapping using Fisher Information",
+      "authors": "Wen Jiang, Boshu Lei, Katrina Ashton, Kostas Daniilidis",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2410.17422",
+      "source": "https://paperswithcode.co/paper/2410.17422",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2410.17422.jpg",
+      "firstSeenAt": "2026-07-13T01:12:03.410Z",
+      "summary": "We present an active mapping system that could plan for long-horizon exploration goals and short-term actions with a 3D Gaussian Splatting (3DGS) representation. Existing methods either did not take advantage of recent developments in multimodal Large Language Models (LLM) or did not consider challenges in localization uncertainty which is critical in embodied agents. We propose employing multimodal LLMs for long-horizon planning in conjunction with detailed motion planning using our information-based algorithm. By leveraging high-quality view synthesis from our 3DGS representation, our method employs a multimodal LLM as a zero-shot planner for long-horizon exploration goals from the semantic perspective. We also introduce an uncertainty-aware path proposal and selection algorithm that balances the dual objectives of maximizing the information gain for the environment while minimizing the cost of localization errors. Experiments conducted on the Gibson and Habitat-Matterport 3D datasets demonstrate state-of-the-art results of the proposed method.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Image Understanding",
+        "Language Modeling",
+        "Chain-of-Thought (CoT)",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2507.20200",
       "title": "Neural Shell Texture Splatting: More Details and Fewer Primitives",
       "authors": "Xin Zhang, Anpei Chen, Jincheng Xiong, Pinxuan Dai, Yujun Shen, Weiwei Xu",
@@ -38872,7 +39010,8 @@
         "papers with code",
         "3D generation",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -41750,7 +41889,8 @@
         "papers with code",
         "3D generation",
         "vision/multimodal",
-        "Gaussian splatting"
+        "Gaussian splatting",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -44488,39 +44628,6 @@
       ]
     },
     {
-      "id": "2410.17422",
-      "title": "Multimodal LLM Guided Exploration and Active Mapping using Fisher Information",
-      "authors": "Wen Jiang, Boshu Lei, Katrina Ashton, Kostas Daniilidis",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2410.17422",
-      "source": "https://paperswithcode.co/paper/2410.17422",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2410.17422.jpg",
-      "firstSeenAt": "2026-07-13T01:12:03.410Z",
-      "summary": "We present an active mapping system that could plan for long-horizon exploration goals and short-term actions with a 3D Gaussian Splatting (3DGS) representation. Existing methods either did not take advantage of recent developments in multimodal Large Language Models (LLM) or did not consider challenges in localization uncertainty which is critical in embodied agents. We propose employing multimodal LLMs for long-horizon planning in conjunction with detailed motion planning using our information-based algorithm. By leveraging high-quality view synthesis from our 3DGS representation, our method employs a multimodal LLM as a zero-shot planner for long-horizon exploration goals from the semantic perspective. We also introduce an uncertainty-aware path proposal and selection algorithm that balances the dual objectives of maximizing the information gain for the environment while minimizing the cost of localization errors. Experiments conducted on the Gibson and Habitat-Matterport 3D datasets demonstrate state-of-the-art results of the proposed method.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Image Understanding",
-        "Language Modeling",
-        "Chain-of-Thought (CoT)",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling",
-        "Robotics"
-      ]
-    },
-    {
       "id": "2502.09724",
       "title": "Navigating the Social Welfare Frontier: Portfolios for Multi-objective Reinforcement Learning",
       "authors": "Cheol Woo Kim, Jai Moondra, Shresth Verma, Madeleine Pollack, Lingkai Kong, Milind Tambe, Swati Gupta",
@@ -44872,7 +44979,8 @@
         "papers with code",
         "Language Modeling",
         "frontier training",
-        "language modeling"
+        "language modeling",
+        "GPT"
       ],
       "sources": [
         "paperswithcode"
@@ -53910,6 +54018,38 @@
       ]
     },
     {
+      "id": "2508.17825",
+      "title": "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs",
+      "authors": "Bingkang Shi, Jen-tse Huang, Luo Long, Tianyu Zong, Hongzhu Yi, Yuanxiang Wang, Songlin Hu, Xiaodan Zhang, Zhongjiang Yao",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2508.17825",
+      "source": "https://paperswithcode.co/paper/2508.17825",
+      "code": "https://github.com/BingkangShi/FairGamer",
+      "project": "",
+      "thumbnail": "./thumbs/2508.17825.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Large Language Models (LLMs) have increasingly enhanced or replaced traditional Non-Player Characters (NPCs) in video games. However, these LLM-based NPCs inherit underlying social biases (e.g., race or class), posing fairness risks during in-game interactions. To address the limited exploration of this issue, we introduce FairGamer, the first benchmark to evaluate social biases across three interaction patterns: transaction, cooperation, and competition. FairGamer assesses four bias types, including class, race, age, and nationality, across 12 distinct evaluation tasks using a novel metric, FairMCV. Our evaluation of seven frontier LLMs reveals that: (1) models exhibit biased decision-making, with Grok-4-Fast demonstrating the highest bias (average FairMCV = 76.9%); and (2) larger LLMs display more severe social biases, suggesting that increased model capacity inadvertently amplifies these biases. We release FairGamer at https://github.com/BingkangShi/FairGamer to facilitate future research on NPC fairness.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Reinforcement Learning",
+        "language modeling",
+        "frontier training",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2602.14208",
       "title": "Fast Catch-Up, Late Switching: Optimal Batch Size Scheduling via Functional Scaling Laws",
       "authors": "Jinbo Wang, Binghui Li, Zhanpeng Zhou, Mingze Wang, Yuxuan Sun, Jiaqi Zhang, Xunliang Cai, Lei Wu",
@@ -54760,6 +54900,38 @@
       "categories": [
         "Vision/Multimodal",
         "Serving",
+        "Frontier Training"
+      ]
+    },
+    {
+      "id": "2604.14090",
+      "title": "From Weights to Activations: Is Steering the Next Frontier of Adaptation?",
+      "authors": "Simon Ostermann, Daniil Gurgurov, Tanja Baeumel, Michael A. Hedderich, Sebastian Lapuschkin, Wojciech Samek, Vera Schmitt",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2604.14090",
+      "source": "https://paperswithcode.co/paper/2604.14090",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.14090.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Post-training adaptation of large language models is commonly achieved through parameter updates or input based methods such as fine-tuning, parameter-efficient adaptation, and prompting. In parallel, a growing body of work modifies internal activations at inference time to influence model behavior, an approach known as *steering*. Despite increasing use, steering is rarely analyzed within the same conceptual framework as established adaptation methods.In this work, we argue that steering should be regarded as a form of model adaptation. We introduce a set of functional criteria for adaptation methods and use them to compare steering approaches with classical alternatives. This analysis positions steering as a distinct adaptation paradigm based on targeted interventions in activation space, enabling local and reversible behavioral change without parameter updates. The resulting framing clarifies how steering relates to existing methods, motivating a unified taxonomy for model adaptation.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "BERT",
+        "Direct Preference Optimization (DPO)",
+        "ElMo",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
         "Frontier Training"
       ]
     },
@@ -58391,6 +58563,32 @@
       ]
     },
     {
+      "id": "2506.00838",
+      "title": "Max Entropy Moment Kalman Filter for Polynomial Systems with Arbitrary Noise",
+      "authors": "Sangli Teng, Harry Zhang, David Jin, Ashkan Jasour, Ram Vasudevan, Maani Ghaffari, Luca Carlone",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2506.00838",
+      "source": "https://paperswithcode.co/paper/2506.00838",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.00838.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Designing optimal Bayes filters for nonlinear non-Gaussian systems is a challenging task. The main difficulties are: 1) representing complex beliefs, 2) handling non-Gaussian noise, and 3) marginalizing past states. To address these challenges, we focus on polynomial systems and propose the Max Entropy Moment Kalman Filter (MEM-KF). To address 1), we represent arbitrary beliefs by a Moment-Constrained Max-Entropy Distribution (MED). The MED can asymptotically approximate almost any distribution given an increasing number of moment constraints. To address 2), we model the noise in the process and observation model as MED. To address 3), we propagate the moments through the process model and recover the distribution as MED, thus avoiding symbolic integration, which is generally intractable. All the steps in MEM-KF, including the extraction of a point estimate, can be solved via convex optimization. We showcase the MEM-KF in challenging robotics tasks, such as localization with unknown data association.",
+      "matchedBy": [
+        "papers with code",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
+    },
+    {
       "id": "2512.07514",
       "title": "MeshRipple: Structured Autoregressive Generation of Artist-Meshes",
       "authors": "Junkai Lin, Hang Long, Huipeng Guo, Jielei Zhang, Jiayi Yang, Tianle Guo, Yang Yang, Jianwen Li, Wenxiao ZHANG, Matthias Nießner, Wei Yang",
@@ -59919,6 +60117,37 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2510.15096",
+      "title": "OpenEstimate: Evaluating LLMs on Reasoning Under Uncertainty with Real-World Data",
+      "authors": "Alana Marzoev, Jacob Andreas, Jillian Ross",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2510.15096",
+      "source": "https://paperswithcode.co/paper/2510.15096",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.15096.jpg",
+      "firstSeenAt": "2026-06-25T00:21:13.185Z",
+      "summary": "Real-world settings where language models (LMs) are deployed --- in domains spanning healthcare, finance, and other forms of knowledge work --- require models to grapple with incomplete information and reason under uncertainty. Yet most LM evaluations focus on problems with well-defined answers and success criteria. This gap exists in part because natural problems involving uncertainty are difficult to construct: given that LMs have access to most of the same knowledge as humans, it is non-trivial to design questions for which LMs will struggle to produce correct answers. As a result, LM performance on reasoning under uncertainty remains poorly characterized. To address this gap, we introduce \\textsc{OpenEstimate}, an extensible, multi-domain benchmark for evaluating LMs on probabilistic estimation tasks that require models to synthesize knowledge from pretraining and express predictions as Bayesian priors. We assess these priors for accuracy and calibration. Across six frontier models, we find that LM-elicited priors are worth the equivalent of about five samples from the underlying data distribution, and that posteriors computed using LM priors tend to be more accurate than those computed using a naive prior. At the same time, the relationship between model accuracy and confidence is weak across the board, indicating the value of developing new methods to improve calibration. The \\textsc{OpenEstimate} benchmark thus offers a challenging evaluation for frontier LMs and a platform for developing models that are better at probabilistic estimation and reasoning under uncertainty.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "GPT-4",
+        "Qwen3",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -69001,7 +69230,8 @@
         "papers with code",
         "3D generation",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -70993,6 +71223,33 @@
       ]
     },
     {
+      "id": "2604.14246",
+      "title": "Awakening Dormant Experts:Counterfactual Routing to Mitigate MoE Hallucinations",
+      "authors": "Wentao Hu, Yanbo Zhai, Xiaohui Hu, Mingkuan Zhao, Shanhong yu, Xue Liu, Kaidong Yu, Shuangyong Song, Xuelong Li",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2604.14246",
+      "source": "https://paperswithcode.co/paper/2604.14246",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.14246.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Sparse Mixture-of-Experts (MoE) models have achieved remarkable scalability, yet they remain vulnerable to hallucinations, particularly when processing long-tail knowledge. We identify that this fragility stems from static Top-k routing: routers tend to favor high-frequency patterns over rare factual associations. Consequently, \"specialist experts\" possessing critical long-tail knowledge are often assigned low gating scores and remain \"dormant\"—under-prioritized for specific tokens despite their proven causal importance on other inputs. To address this, we propose Counterfactual Routing (CoR), a training-free inference framework designed to awaken these dormant experts. CoR integrates layer-wise perturbation analysis with the Counterfactual Expert Impact (CEI) metric to dynamically shift computational resources from syntax-dominant to knowledge-intensive layers while maintaining a constant total activation count, effectively retrieving causally decisive experts via virtual ablation. Extensive experiments on TruthfulQA, FACTOR, and TriviaQA demonstrate that CoR improves factual accuracy by 3.1% on average without increasing the inference budget, establishing a superior Pareto frontier compared to static scaling strategies.",
+      "matchedBy": [
+        "papers with code",
+        "RAG",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2602.17134",
       "title": "B$^3$-Seg: Camera-Free, Training-Free 3DGS Segmentation via Analytic EIG and Beta-Bernoulli Bayesian Updates",
       "authors": "Hiromichi Kamata, Samuel Arthur Munro, Fuminori Homma",
@@ -72092,7 +72349,8 @@
       "summary": "We present multipanda_ros2, a novel open-source ROS2 architecture for multi-robot control of Franka Robotics robots. Leveraging ros2_control, this framework provides native ROS 2 interfaces for controlling any number of robots from a single process. Our core contributions address key challenges in real-time torque control, including interaction control and robot-environment modeling. A central focus of this work is sustaining a 1 kHz control frequency, a necessity for real-time control and a minimum frequency required by safety standards. Moreover, we introduce a controllet-feature design pattern that enables controller-switching delays of ≤ 2 ms, facilitating reproducible benchmarking and complex multi-robot interaction scenarios. To bridge the simulation-to-reality (sim2real) gap, we integrate a high-fidelity MuJoCo simulation with quantitative metrics for both kinematic accuracy and dynamic consistency (torques, forces, and control errors). Furthermore, we demonstrate that real-world inertial parameter identification can significantly improve force and torque accuracy, providing a methodology for iterative physics refinement. Our work extends approaches from soft robotics to rigid dual-arm, contact-rich tasks, showcasing a promising method to reduce the sim2real gap and providing a robust, reproducible platform for advanced robotics research.",
       "matchedBy": [
         "papers with code",
-        "robotics"
+        "robotics",
+        "Continuous Control"
       ],
       "sources": [
         "paperswithcode"
@@ -72596,6 +72854,37 @@
       ]
     },
     {
+      "id": "2509.18979",
+      "title": "Category-Level Object Shape and Pose Estimation in Less Than a Millisecond",
+      "authors": "Shaikewitz, Lorenzo, Nguyen, Tim, Carlone, Luca",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2509.18979",
+      "source": "https://paperswithcode.co/paper/2509.18979",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.18979.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Object shape and pose estimation is a foundational robotics problem, supporting tasks from manipulation to scene understanding and navigation. We present a fast local solver for shape and pose estimation which requires only category-level object priors and admits an efficient certificate of global optimality. Given an RGB-D image of an object, we use a learned front-end to detect sparse, category-level semantic keypoints on the target object. We represent the target object's unknown shape using a linear active shape model and pose a maximum a posteriori optimization problem to solve for position, orientation, and shape simultaneously. Expressed in unit quaternions, this problem admits first-order optimality conditions in the form of an eigenvalue problem with eigenvector nonlinearities. Our primary contribution is to solve this problem efficiently with self-consistent field iteration, which only requires computing a 4-by-4 matrix and finding its minimum eigenvalue-vector pair at each iterate. Solving a linear system for the corresponding Lagrange multipliers gives a simple global optimality certificate. One iteration of our solver runs in about 100 microseconds, enabling fast outlier rejection. We test our method on synthetic data and a variety of real-world settings, including two public datasets and a drone tracking scenario.",
+      "matchedBy": [
+        "papers with code",
+        "Pose Estimation",
+        "Mask R-CNN",
+        "RoIAlign",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2511.07619",
       "title": "CAVER: Curious AudioVisual Exploring Robot",
       "authors": "Macesanu, Luca, Folefack, Boueny, Ray, Ruchira, Abbatematteo, Ben, Martín-Martín, Roberto",
@@ -72909,7 +73198,8 @@
         "papers with code",
         "3D generation",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -74823,6 +75113,38 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
+      "id": "2602.02806",
+      "title": "De-Linearizing Agent Traces: Bayesian Inference of Latent Partial Orders for Efficient Execution",
+      "authors": "Dongqing li, Zheqiao Cheng, Geoff Nicholls, Quyu Kong",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2602.02806",
+      "source": "https://paperswithcode.co/paper/2602.02806",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.02806.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "AI agents increasingly execute procedural workflows as sequential action traces, which obscures latent concurrency and induces repeated step-by-step reasoning. We introduce BPOP, a Bayesian framework that infers a latent dependency partial order from noisy linearized traces. BPOP models traces as stochastic linear extensions of an underlying graph and performs efficient MCMC inference via a tractable frontier-softmax likelihood that avoids \\#P-hard marginalization over linear extensions. We evaluate on our open-sourced Cloud-IaC-6, a suite of cloud provisioning tasks with heterogeneous LLM-generated traces, and WFCommons scientific workflows. BPOP recovers dependency structure more accurately than trace-only and process-mining baselines, and the inferred graphs support a compiled executor that prunes irrelevant context, yielding substantial reductions in token usage and execution time.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Language Modeling",
+        "Fast Conformer",
+        "Large language model (LLM)",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
         "Frontier Training"
       ]
     },
@@ -77519,7 +77841,9 @@
       "matchedBy": [
         "papers with code",
         "Vision Transformer",
-        "robotics"
+        "robotics",
+        "Convolution",
+        "RNN"
       ],
       "sources": [
         "paperswithcode"
@@ -83985,6 +84309,36 @@
       ]
     },
     {
+      "id": "2602.18956",
+      "title": "INDUCTION: Finite-Structure Concept Synthesis in First-Order Logic",
+      "authors": "Serafim Batzoglou",
+      "org": "",
+      "published": "ICML 2026 Spotlight",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2602.18956",
+      "source": "https://paperswithcode.co/paper/2602.18956",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.18956.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Induction is the search for a general rule that explains observations. We study logical induction in finite relational worlds: each problem gives small structures over a fixed vocabulary, labels objects belonging to an unknown unary concept, and asks for one first-order formula φ(x) that accounts for those labels across worlds. Finite domains make formulas mechanically checkable by exact evaluation and SMT. We introduce INDUCTION, a benchmark for finite-structure concept synthesis with three regimes: FULLOBS (full observation), where all facts are observed; CI (contrastive induction), where YES/NO worlds require discriminative hypotheses; and EC (existential completion), where validity is defined by world-local completion of unknown facts. We evaluate frontier language models, include symbolic synthesis baselines, and score both validity and formula size. Prompted models show real but incomplete capability, with sharp difficulty gradients and hard structural families. Held-out evaluation shows that compact formulas generalize far better than bloated ones; parsimony separates concept recovery from finite-world fit.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Chain-of-Thought (CoT)",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2604.10164",
       "title": "Inductive Reasoning for Temporal Knowledge Graphs with Emerging Entities",
       "authors": "Ze Zhao, He Yuhui, Lyuwen Wu, Gu Tang, Bin Lu, Xiaoying Gan, Luoyi Fu, Xinbing Wang, Chenghu Zhou",
@@ -84220,6 +84574,36 @@
       ]
     },
     {
+      "id": "2602.00800",
+      "title": "Inner-layer Token Self-modulation as Another Scaling Axis for LLMs",
+      "authors": "Yebin Yang, Huaijin Wu, Jingtao Han, Yu Wang, Xiaohan Qin, Jingzhi Wang, Debing Zhang, Junchi Yan",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2602.00800",
+      "source": "https://paperswithcode.co/paper/2602.00800",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.00800.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "LLMs have traditionally scaled along dense dimensions, where performance is coupled with near-linear increases in computational cost. While MoE decouples capacity from compute, it introduces large memory overhead and hardware efficiency challenges. To overcome these, we propose token-indexed parameters as a novel, orthogonal scaling axis that decouple model capacity from FLOPs. Specifically, we introduce ReToken and MoRT, which augment Transformer layers with modulation vectors retrieved from auxiliary embedding tables. These vectors modulate the backbone via lightweight, element-wise operations, incurring negligible FLOPs overhead. Extensive experiments on both dense and MoE backbones, spanning from 190M to 9.8B parameters, demonstrate that our approach consistently reduces validation loss and significantly improves downstream task performance (e.g., +7.3 on ARC-C, +6.3 on GSM8K). Rigorous isoFLOPs analysis further confirms that MoRT fundamentally shifts the quality–compute Pareto frontier, achieving comparable model quality with 35\\% less compute relative to vanilla MoE architectures, and we validate that token-indexed parameters exhibit a predictable power-law scaling behavior. Moreover, our efficient implementation ensures that the overhead introduced by ReToken and MoRT remains marginal.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Adam",
+        "Embedding",
+        "Key-value cache",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2601.05805",
       "title": "InsSo3D: Inertial Navigation System and 3D Sonar SLAM for Turbid Environment Inspection",
       "authors": "Archieri, Simon, Cinar, Ahmet Fatih, Pan, Shu, Jonatan, Scharff Willners, Grimaldi, Michele, Carlucho, Ignacio, Petillot, Yvan R.",
@@ -84278,6 +84662,38 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2605.12258",
+      "title": "Instruction Lens Score: Your Instruction Contributes a Powerful Object Hallucination Detector for Multimodal Large Language Models",
+      "authors": "Runhe Lai, Xinhua Lu, Yanqi Wu, Jinlun Ye, Weijiang Yu, Ruixuan Wang",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2605.12258",
+      "source": "https://paperswithcode.co/paper/2605.12258",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.12258.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Multimodal large language models (MLLMs) have achieved remarkable progress, yet the object hallucination remains a critical challenge for reliable deployment. In this paper, we present an in-depth analysis of instruction token embeddings and reveal that they implicitly encode visual information while effectively filtering erroneous information introduced by misleading visual embeddings. Building on this insight, we propose the Instruction Lens Score (InsLen), which combines a Calibrated Local Score with a Context Consistency Score that measures context consistency of the object tokens. The proposed approach serves as a plug-and-play object hallucination detector without relying on auxiliary models or additional training. Extensive experiments across multiple benchmarks and diverse MLLM architectures demonstrate that InsLen consistently outperforms existing hallucination detection methods, highlighting its effectiveness and robustness. The code will be publicly available.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "Embedding",
+        "GPT-4",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
       ]
     },
     {
@@ -84755,6 +85171,34 @@
         "Vision/Multimodal",
         "Frontier Training",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2512.03256",
+      "title": "KALIKO: Kalman-Implicit Koopman Operator Learning for Prediction of Nonlinear Dynamical Systems",
+      "authors": "Li, Albert H., Rodriguez, Ivan Dario Jimenez Rodriguez, Burdick, Joel, Yue, Yisong, Ames, Aaron",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2512.03256",
+      "source": "https://paperswithcode.co/paper/2512.03256",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.03256.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Long-horizon dynamical prediction is fundamental in robotics and control, underpinning canonical methods like model predictive control. Yet, many systems and disturbance phenomena are difficult to model due to effects like nonlinearity, chaos, and high-dimensionality. Koopman theory addresses this by modeling the linear evolution of embeddings of the state under an infinite-dimensional linear operator that can be approximated with a suitable finite basis of embedding functions, effectively trading model nonlinearity for representational complexity. However, explicitly computing a good choice of basis is nontrivial, and poor choices may cause inaccurate forecasts or overfitting. To address this, we present Kalman-Implicit Koopman Operator (KALIKO) Learning, a method that leverages the Kalman filter to implicitly learn embeddings corresponding to latent dynamics without requiring an explicit encoder. KALIKO produces interpretable representations consistent with both theory and prior works, yielding high-quality reconstructions and inducing a globally linear latent dynamics. Evaluated on wave data generated by a high-dimensional PDE, KALIKO surpasses several baselines in open-loop prediction and in a demanding closed-loop simulated control task: stabilizing an underactuated manipulator's payload by predicting and compensating for strong wave disturbances.",
+      "matchedBy": [
+        "papers with code",
+        "Embedding",
+        "Vision Transformer",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
       ]
     },
     {
@@ -87307,6 +87751,37 @@
       ]
     },
     {
+      "id": "2410.06678",
+      "title": "M3Bench: Benchmarking Whole-Body Motion Generation for Mobile Manipulation in 3D Scenes",
+      "authors": "Zhang, Zeyu, Yan, Sixu, Han, Muzhi, Wang, Zaijin, Wang, Xinggang, Zhu, Song-Chun, Liu, Hangxin",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2410.06678",
+      "source": "https://paperswithcode.co/paper/2410.06678",
+      "code": "",
+      "project": "https://zeyuzhang",
+      "thumbnail": "./thumbs/2410.06678.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "We propose M3Bench, a new benchmark for whole-body motion generation in mobile manipulation tasks. Given a 3D scene context, M3Bench requires an embodied agent to reason about its configuration, environmental constraints, and task objectives to generate coordinated whole-body motion trajectories for object rearrangement. M3Bench features 30,000 object rearrangement tasks across 119 diverse scenes, providing expert demonstrations generated by our newly developed M3BenchMaker, an automatic data generation tool that produces whole-body motion trajectories from high-level task instructions using only basic scene and robot information. Our benchmark includes various task splits to evaluate generalization across different dimensions and leverages realistic physics simulation for trajectory assessment. Extensive evaluation analysis reveals that state-of-the-art models struggle with coordinating base-arm motion while adhering to environmental and task-specific constraints, underscoring the need for new models to bridge this gap. By releasing M3Bench and M3BenchMaker at https://zeyuzhang.com/papers/m3bench, we aim to advance robotics research toward more adaptive and capable mobile manipulation in diverse, real-world environments.",
+      "matchedBy": [
+        "papers with code",
+        "Motion Generation",
+        "robotics",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2602.14977",
       "title": "MacroGuide: Topological Guidance for Macrocycle Generation",
       "authors": "Alicja Maksymiuk, Alexandre Duplessis, Michael M. Bronstein, Alexander Tong, Fernanda Duarte, Ismail Ilkan Ceylan",
@@ -88487,7 +88962,8 @@
         "papers with code",
         "Diffusion Policy",
         "robotics",
-        "language modeling"
+        "language modeling",
+        "Agent Skills"
       ],
       "sources": [
         "paperswithcode"
@@ -90688,6 +91164,38 @@
       ]
     },
     {
+      "id": "2601.03589",
+      "title": "OLA: Output Language Alignment in Code-Switched LLM Interactions",
+      "authors": "Juhyun Oh, Haneul Yoo, Faiz Ghifari Haznitrama, Alice Oh",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2601.03589",
+      "source": "https://paperswithcode.co/paper/2601.03589",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2601.03589.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Code-switching, alternating between languages within a conversation, is natural for multilingual users, yet poses fundamental challenges for large language models (LLMs). When a user code-switches in their prompt to an LLM, they typically do not specify the expected language of the LLM response, and thus LLMs must infer the output language from contextual and pragmatic cues. We find that current LLMs systematically fail to align with this expectation, responding in undesired languages even when cues are clear to humans. We introduce OLA, a benchmark to evaluate LLMs’ Output Language Alignment in code-switched interactions. OLA focuses on Korean–English code-switching and spans simple intra-sentential mixing to instruction–content mismatches. Even frontier models frequently misinterpret implicit language expectation, exhibiting a systematic bias toward non-English responses. We further show this bias generalizes beyond Korean to Chinese and Indonesian pairs. Models also show instability through mid-response switching and language intrusions. Chain-of-Thought prompting fails to resolve these errors, indicating weak pragmatic reasoning about output language. However, Code-Switching Aware DPO with minimal data (~1K examples) substantially reduces misalignment, suggesting these failures stem from insufficient alignment rather than fundamental limitations. Our results highlight the need to align multilingual LLMs with users’ implicit expectations in real-world code-switched interactions.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Reasoning",
+        "Direct Preference Optimization (DPO)",
+        "RLVR",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2505.11765",
       "title": "OMAC: A Holistic Optimization Framework for LLM-Based Multi-Agent Collaboration",
       "authors": "Shijun Li, Hilaf Hasson, Joydeep Ghosh",
@@ -91197,37 +91705,6 @@
       ]
     },
     {
-      "id": "2510.15096",
-      "title": "OpenEstimate: Evaluating LLMs on Reasoning Under Uncertainty with Real-World Data",
-      "authors": "Alana Marzoev, Jacob Andreas, Jillian Ross",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2510.15096",
-      "source": "https://paperswithcode.co/paper/2510.15096",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2510.15096.jpg",
-      "firstSeenAt": "2026-06-25T00:21:13.185Z",
-      "summary": "Real-world settings where language models (LMs) are deployed --- in domains spanning healthcare, finance, and other forms of knowledge work --- require models to grapple with incomplete information and reason under uncertainty. Yet most LM evaluations focus on problems with well-defined answers and success criteria. This gap exists in part because natural problems involving uncertainty are difficult to construct: given that LMs have access to most of the same knowledge as humans, it is non-trivial to design questions for which LMs will struggle to produce correct answers. As a result, LM performance on reasoning under uncertainty remains poorly characterized. To address this gap, we introduce \\textsc{OpenEstimate}, an extensible, multi-domain benchmark for evaluating LMs on probabilistic estimation tasks that require models to synthesize knowledge from pretraining and express predictions as Bayesian priors. We assess these priors for accuracy and calibration. Across six frontier models, we find that LM-elicited priors are worth the equivalent of about five samples from the underlying data distribution, and that posteriors computed using LM priors tend to be more accurate than those computed using a naive prior. At the same time, the relationship between model accuracy and confidence is weak across the board, indicating the value of developing new methods to improve calibration. The \\textsc{OpenEstimate} benchmark thus offers a challenging evaluation for frontier LMs and a platform for developing models that are better at probabilistic estimation and reasoning under uncertainty.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "GPT-4",
-        "Qwen3",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2603.18623",
       "title": "OpenT2M: No-frill Motion Generation with Open-source, Large-scale, High-quality Data",
       "authors": "Bin Cao, Sipeng Zheng, Hao Luo, Boyuan Li, Jing Liu, Zongqing Lu",
@@ -91731,6 +92208,36 @@
       "categories": [
         "Vision/Multimodal",
         "Serving"
+      ]
+    },
+    {
+      "id": "2510.00236",
+      "title": "Per-example Gradients: a New Frontier for Understanding and Improving Optimizers",
+      "authors": "Vincent Roulet, Atish Agarwala",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2510.00236",
+      "source": "https://paperswithcode.co/paper/2510.00236",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.00236.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "When computing gradients, deep learning training algorithms typically treat the mini-batch as a fundamental unit --- only returning batch-averaged gradients. Computing non-linear statistics of the mini-batch gradient distribution has traditionally been viewed as prohibitively expensive or requiring complex, custom implementations. We challenge this view by demonstrating that sequence-level architectures offer a natural testbed for prototyping algorithms based on per-example gradients. We show that staged programming languages like JAX enable generic manipulations of mini-batch gradient computations. We then build on Dangel et. al. (2019) to derive implementations of specific per-example or per-token operations with negligible computational or memory overhead. Finally, we leverage our findings to re-examine two nonlinear optimization operations. First, we analyze signSGD, showing that the optimal placement of the sign operation is critical to success and can be predicted via a simple signal-to-noise ratio argument. Second, we investigate per-example variations of the Adam preconditioner and find that, contrary to conventional wisdom, optimization is best served when the preconditioner is dominated by the mean squared of the gradient distribution rather than its variance. Overall our work shows that accessible per-example gradient information unlocks new avenues for algorithm analysis and design.",
+      "matchedBy": [
+        "papers with code",
+        "SGD",
+        "T5",
+        "frontier training",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Robotics"
       ]
     },
     {
@@ -93623,7 +94130,8 @@
       "summary": "Origami-inspired robots offer rapid, accessible design and manufacture with diverse functionalities. In particular, origami robots without conventional electronics have the unique advantage of functioning in extreme environments such as ones with high radiation or large magnetic fields. However, the absence of sophisticated control systems limits these robots to simple autonomous behaviors. In our previous studies, we developed a printable, electronics-free, and self-sustained oscillator that generates simple complementary square-wave signals. Our study presents a quadrature oscillation system capable of generating four square-wave signals a quarter-cycle out of phase, enabling four distinct states. Such control signals are important in various engineering and robotics applications, such as orchestrating limb movements in bio-inspired robots. We demonstrate the practicality and value of this oscillation system by designing and constructing an origami crawling robot that utilizes the quadrature oscillator to achieve coordinated locomotion. Together, the oscillator and robot illustrate the potential for more complex control and functions in origami robotics, paving the way for more electronics-free, rapid-design origami robots with advanced autonomous behaviors.",
       "matchedBy": [
         "papers with code",
-        "robotics"
+        "robotics",
+        "Continuous Control"
       ],
       "sources": [
         "paperswithcode"
@@ -95029,6 +95537,36 @@
       ]
     },
     {
+      "id": "2512.15379",
+      "title": "Remotely Detectable Robot Policy Watermarking",
+      "authors": "Michael Amir, Manon Flageat, Amanda Prorok",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2512.15379",
+      "source": "https://paperswithcode.co/paper/2512.15379",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.15379.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "The success of machine learning for real-world robotic systems has created a new form of intellectual property: the trained policy. This raises a critical need for novel methods that verify ownership and detect unauthorized, possibly unsafe misuse. While watermarking is established in other domains, physical policies present a unique challenge: remote detection. Existing methods assume access to the robot’s internal state, but auditors are often limited to external observations (e.g., video footage). This “Physical Observation Gap” means the watermark must be detected from signals that are noisy, asynchronous, and filtered by unknown system dynamics. We formalize this challenge using the concept of a glimpse sequence, and introduce Colored Noise Coherency (CoNoCo), the first watermarking strategy designed for remote detection. CoNoCo embeds a spectral signal into the robot’s motions by leveraging the policy’s inherent stochasticity. To show it does not degrade performance, we prove CoNoCo preserves the marginal action distribution. Our experiments demonstrate strong, robust detection across various remote modalities—including motion capture and side-way/top-down video footage—in both simulated and real-world robot experiments. This work provides a necessary step toward protecting intellectual property in robotics, offering the first method for validating the provenance of physical policies non invasively, using purely remote observations.",
+      "matchedBy": [
+        "papers with code",
+        "PPO",
+        "Watermarking",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2509.25914",
       "title": "ReNF: Rethinking the Design of Neural Long-Term Time Series Forecasters",
       "authors": "Yihang Lu, Xianwei Meng, Enhong Chen",
@@ -95072,7 +95610,8 @@
       "summary": "In many real-world applications of regression, conditional probability estimation, and uncertainty quantification, exploiting symmetries rooted in physics or geometry can dramatically improve generalization and sample efficiency. While geometric deep learning has made empirical advances by incorporating symmetry and geometry priors, less attention has been given to statistical learning guarantees. In this paper, we introduce an equivariant representation learning framework that simultaneously addresses regression, conditional probability estimation, and uncertainty quantification while providing first-of-its-kind non-asymptotic statistical learning guarantees. Grounded in operator and group representation theory, our framework approximates the spectral decomposition of the conditional expectation operator, building representations that are both equivariant and disentangled along independent symmetry quotient groups. Empirical evaluations on synthetic datasets and real-world robotics applications confirm the potential of our approach, matching or outperforming existing equivariant baselines in regression while providing well-calibrated uncertainty estimates.",
       "matchedBy": [
         "papers with code",
-        "robotics"
+        "robotics",
+        "Procedural Generalization"
       ],
       "sources": [
         "paperswithcode"
@@ -98038,6 +98577,34 @@
       ]
     },
     {
+      "id": "2509.19486",
+      "title": "SHARP: Supercomputing for High-Speed Avoidance and Reactive Planning",
+      "authors": "Lachmansingh, Kieran, González, José Ramón, Chisholm, Jacob, Grant, Ryan Eric, Pan, Matthew",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2509.19486",
+      "source": "https://paperswithcode.co/paper/2509.19486",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.19486.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "This paper presents SHARP (Supercomputing for High-speed Avoidance and Reactive Planning), a proof-of- concept study demonstrating how high-performance computing (HPC) can enable millisecond-scale responsiveness in robotic control. While modern robots face increasing demands for reactivity in human–robot shared workspaces, onboard pro- cessors are constrained by size, power, and cost. Offloading to HPC offers massive parallelism for trajectory planning, but its feasibility for real-time robotics remains uncertain due to network latency and jitter. We evaluate SHARP in a stress-test scenario where a 7-DOF manipulator must dodge high-speed foam projectiles. Using a hash-distributed multi-goal A* search implemented with MPI on both local and remote HPC clusters, the system achieves mean planning latencies of 22.9 ms (local) and 30.0 ms (remote, 300 km away), with avoidance success rates of 84% and 88%, respectively. These results show that when round-trip latency remains within the tens-of-milliseconds regime, HPC-side computation is no longer the bottleneck, enabling avoidance well below human reaction times. The SHARP results motivate hybrid control architectures: low-level reflexes remain onboard for safety, while bursty, high-throughput planning tasks are offloaded to HPC for scalability. By reporting per-stage timing and success rates, this study provides a reproducible template for assessing the real-time feasibility of HPC-driven robotics. Collectively, SHARP reframes HPC offloading as a viable pathway toward dependable, reactive robots in dynamic environments.",
+      "matchedBy": [
+        "papers with code",
+        "serving",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2602.02989",
       "title": "SharpTimeGS: Sharp and Stable Dynamic Gaussian Splatting via Lifespan Modulation",
       "authors": "Zhanfeng Liao, Jiajun Zhang, Hanzhang Tu, Zhixi Wang, Yunqi Gao, Hongwen Zhang, Yebin Liu",
@@ -98208,6 +98775,34 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2604.05531",
+      "title": "Simulation-Driven Evolutionary Motion Parameterization for Contact-Rich Granular Scooping with a Soft Conical Robotic Hand",
+      "authors": "Wang, Yongliang, Beltran-Hernandez, Cristian Camilo, Takahashi, Tomoya, Hamaya, Masashi",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2604.05531",
+      "source": "https://paperswithcode.co/paper/2604.05531",
+      "code": "",
+      "project": "https://sites",
+      "thumbnail": "./thumbs/2604.05531.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Tool-based scooping is vital in robot-assisted tasks, enabling interaction with objects of varying sizes, shapes, and material states. Recent studies have shown that flexible, reconfigurable soft robotic end-effectors can adapt their shape to maintain consistent contact with container surfaces during scooping, improving efficiency compared to rigid tools. These soft tools can adjust to varying container sizes and materials without requiring complex sensing or control. However, the inherent compliance and complex deformation behavior of soft robotics introduce significant control complexity that limits practical applications. To address this challenge, this paper presents the development of a physics-based simulation model of a deformable soft conical robotic hand that captures its passive reconfiguration dynamics and enables systematic trajectory optimization for scooping tasks. We propose a novel physics-based simulation approach that accurately models the soft tool’s morphing behavior from flat sheets to adaptive conical structures, combined with an evolutionary strategy framework that automatically optimizes scooping trajectories without manual parameter tuning. We validate the optimized trajectories through both simulation and real-robot experiments. The results demonstrate strong generalization and successfully address a range of challenging tasks previously beyond the reach of existing approaches. Videos of our experiments are available online: https://sites.google.com/view/scoopsh",
+      "matchedBy": [
+        "papers with code",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -100453,7 +101048,9 @@
         "papers with code",
         "Language Modeling",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Large language model (LLM)",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
@@ -100461,7 +101058,8 @@
       "category": "Robotics",
       "categories": [
         "Robotics",
-        "Vision/Multimodal"
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -101766,6 +102364,38 @@
       ]
     },
     {
+      "id": "2606.07520",
+      "title": "TinyJudge: Unverifiable Constraint Alignment via Lightweight Specialist Ensembles",
+      "authors": "Yirong Zeng, Yufei Liu, Xiao Ding, Yutai Hou, Yuxian Wang, Wu Ning, Haonan Song, Dandan Tu, Qixun Zhang, Yuxiang He, Bibo Cai, Ting Liu",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2606.07520",
+      "source": "https://paperswithcode.co/paper/2606.07520",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.07520.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Instruction Following (IF) is a core capability of LLMs, requiring strict adherence to diverse constraints, ranging from verifiable ones (e.g., output length) to unverifiable ones (e.g., tone). Reinforcement learning with verifiable rewards has emerged as a paradigm for IF tasks, leveraging LLM-as-a-judge to assess unverifiable constraints. However, we empirically find that this approach remains a significant bottleneck, suffering from severe reward hacking and higher computational overhead. In this work, we first analyze the generalization capabilities of unverifiable constraints and discover that specific constraints exhibit distinct, high-generalization patterns. Motivated by this, we propose TinyJudge, a framework that employs an ensemble of specialized tiny language models (e.g., 0.6B) to provide rewards for soft constraints. By distilling expertise from frontier models into these tiny models, it achieves high-precision, lightweight evaluation. Extensive evaluations across five benchmarks demonstrate that TinyJudge outperforms the baselines by ~10% in average performance and 12% in reward precision. Crucially, it also achieves a 3× speedup in total training time. Our work provides a scalable and robust path for aligning LLMs with unverifiable human instructions.",
+      "matchedBy": [
+        "papers with code",
+        "Instruction Following",
+        "Language Modeling",
+        "Reinforcement Learning",
+        "GRPO",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "pwc-95856",
       "title": "TinyVPR: Distilling Correct and Confusing Knowledge for Lightweight Visual Place Recognition",
       "authors": "Yang, Zhuochen, Zuo, Runheng, Yang, Xu, Dou, Runjiang, Wang, Zhe, Liu, Liyuan, Yu, Shuangming",
@@ -102120,6 +102750,38 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2606.16111",
+      "title": "Towards Pareto-Optimal Tool-Integrated Agents with Pareto Ranking Policy Optimization",
+      "authors": "Junyi Li, Xiaowei Qian, Yingyi Zhang, Wenlin Zhang, Guojing Li, Sheng Zhang, Xiao Han, Yichao Wang, Xiangyu Zhao",
+      "org": "",
+      "published": "ICML 2026 Spotlight",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2606.16111",
+      "source": "https://paperswithcode.co/paper/2606.16111",
+      "code": "https://github.com/Applied-Machine-Learning-Lab/ICML2026_ParetoPO",
+      "project": "",
+      "thumbnail": "./thumbs/2606.16111.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Recent advances in tool-integrated language agents have significantly improved their ability to solve complex reasoning tasks. However, existing alignment methods predominantly focus on maximizing task accuracy, while overlooking auxiliary objectives such as tool-use efficiency, which are essential for practical deployment. To address this gap, we introduce \\textbf{ParetoPO}, a two-stage multi-objective optimization framework for aligning tool-using large language models (LLMs) under competing objectives. In the first stage, ParetoPO leverages hypervolume-guided dynamic scalarization to adapt reward weights based on global Pareto frontier progress. In the second stage, it replaces scalarized learning signals with Pareto-ranking-based advantage computation, promoting nondominated trajectories through dominance-aware credit assignment. This design enables fine-grained, action-level optimization across multiple conflicting objectives. Experimental results on mathematic reasoning and multi-hop QA tasks show that ParetoPO consistently discovers policies with superior accuracy-efficiency trade-offs compared to static and heuristic baselines. Our code is publicly available at https://github.com/Applied-Machine-Learning-Lab/ICML2026_ParetoPO.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Question Answering",
+        "GRPO",
+        "Large language model (LLM)",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -102905,6 +103567,35 @@
       "categories": [
         "Serving",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2602.14526",
+      "title": "TWISTED-RL: Hierarchical Skilled Agents for Knot-Tying without Human Demonstrations",
+      "authors": "Freund, Guy, Jurgenson, Tom, Sudry, Matan, Karpas, Erez",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2602.14526",
+      "source": "https://paperswithcode.co/paper/2602.14526",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.14526.jpg",
+      "firstSeenAt": "2026-07-20T00:10:09.922Z",
+      "summary": "Robotic knot-tying represents a fundamental chal- lenge in robotics due to the complex interactions between de- formable objects and strict topological constraints. We present TWISTED-RL, a framework that improves upon the previous state-of-the-art in demonstration-free knot-tying (TWISTED), which smartly decomposed a single knot-tying problem into manageable subproblems, each addressed by a specialized agent. Our approach replaces TWISTED’s single-step inverse model that was learned via supervised learning with a multi- step Reinforcement Learning policy conditioned on abstract topological actions rather than goal states. This change allows more delicate topological state transitions while avoiding costly and ineffective data collection protocols, thus enabling better generalization across diverse knot configurations. Experimen- tal results demonstrate that TWISTED-RL manages to solve previously unattainable knots of higher complexity, including commonly used knots such as the Figure-8 and the Overhand. Furthermore, the increase in success rates and drop in planning time establishes TWISTED-RL as the new state-of-the-art in robotic knot-tying without human demonstrations.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
       ]
     },
     {
@@ -129710,36 +130401,6 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
-      ]
-    },
-    {
-      "id": "2607.13095",
-      "title": "Full-Pipeline Inference Optimization for MiMo-V2.5 Series: Pushing Hybrid SWA Efficiency to the Limit",
-      "authors": "Xiaomi MiMo Team, Anqi Liu, Aoxin Ma, Bo Chen, Bo Yang, Chen Wang, Chen Zhang, Chengda Tang, Chengwei Wang, Chiheng Lou, Depeng Yan, Fuli Luo, Gang Wang, Hailin Zhang, Jiale Sun, Kang Zhou, Rui Huang, Shaohui Liu, Shen Huang, Shijie Cao, Shuaishuai Fan, Tianling Zhou, Xiangwei Deng, Xueyang Xie, Xuli Wang, Yingchun Lai, Yu Yang, Yuan Zhang, Zhen Tang, Zhonghua Deng, Zihan Jiang",
-      "org": "",
-      "published": "2026-07-14",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.13095v1",
-      "source": "https://arxiv.org/abs/2607.13095v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.13095.jpg",
-      "firstSeenAt": "2026-07-16T01:05:01.176Z",
-      "summary": "We present a full-pipeline inference optimization for the MiMo-V2.5 model family, which combines Hybrid Sliding Window Attention (Hybrid SWA), sparse Mixture-of-Experts (MoE), and multimodal encoders. While Hybrid SWA can ideally reduce both attention compute and KVCache storage significantly compared to Full Attention, realizing these gains in production requires substantial engineering effort. We systematically optimize the KVCache system with layerwise prefetch, SWA-aware prefix cache trees, and specialized placement strategies, achieving strict $O(W)$ SWA storage and high cache hit rates. We further build GCache, a high-performance distributed cache infrastructure with RDMA-optimized networking, and develop a KVCache-affinity router to reduce computation while preserving load balancing. We also optimize for multimodal inputs, including GPU image preprocessing, parallel video decoding, and multimodal cache sharing. Together, these optimizations constitute the first large-scale LLM serving system in production that efficiently covers the Hybrid SWA + MoE + multimodal composite architecture.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "vision/multimodal",
-        "serving"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
-        "Vision/Multimodal",
-        "Serving"
       ]
     },
     {
