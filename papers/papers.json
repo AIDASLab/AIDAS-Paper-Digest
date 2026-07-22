@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-22T00:04:43.431Z",
+  "generatedAt": "2026-07-22T01:03:46.546Z",
   "sourceStats": {
-    "seed": 6194,
+    "seed": 6343,
     "paperswithcode": 540,
     "arxiv": 150,
-    "huggingface": 34,
+    "huggingface": 35,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 6343
+    "total": 6345
   },
   "papers": [
     {
@@ -21145,6 +21145,32 @@
       ]
     },
     {
+      "id": "2607.16530",
+      "title": "Nonuniformity Principle in Human-AI Coworking",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2607.16530",
+      "source": "https://huggingface.co/papers/2607.16530",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.16530.jpg",
+      "firstSeenAt": "2026-07-22T01:03:46.546Z",
+      "summary": "",
+      "matchedBy": [
+        "hugging face daily",
+        "language modeling"
+      ],
+      "sources": [
+        "huggingface"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.00529",
       "title": "NoPA: Non-Parametric Online 3D Scene Graph Generation",
       "authors": "Qi Xun Yeo, Seungjun Lee, Yan Li, Gim Hee Lee",
@@ -29418,7 +29444,7 @@
       "title": "ExpertPlex: A High-Goodput Disaggregated Serving System for MoE LLMs with Adaptive Persistent Kernels",
       "authors": "Bingyang Wu, Chao Jin, Zili Zhang, Xinming Wei, Yinmin Zhong, Ruidong Zhu, Chengxu Yang, Xin Jin, Yuliang Liu",
       "org": "",
-      "published": "2026-07-20",
+      "published": "2026-07-21",
       "score": 77,
       "paper": "https://arxiv.org/abs/2607.18002",
       "source": "https://www.alphaxiv.org/abs/2607.18002",
@@ -47671,6 +47697,34 @@
       ]
     },
     {
+      "id": "2501.03078",
+      "title": "Qinco2: Vector Compression and Search with Improved Implicit Neural Codebooks",
+      "authors": "Théophane Vallaeys, Matthew J. Muckley, Jakob Verbeek, Matthijs Douze",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2501.03078",
+      "source": "https://paperswithcode.co/paper/2501.03078",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2501.03078.jpg",
+      "firstSeenAt": "2026-07-22T01:03:46.546Z",
+      "summary": "Vector quantization is a fundamental technique for compression and large-scale nearest neighbor search. For high-accuracy operating points, multi-codebook quantization associates data vectors with one element from each of multiple codebooks. An example is residual quantization (RQ), which iteratively quantizes the residual error of previous steps. Dependencies between the different parts of the code are, however, ignored in RQ, which leads to suboptimal rate-distortion performance. Qinco recently addressed this inefficiency by using a neural network to determine the quantization codebook in RQ based on the vector reconstruction from previous steps. In this paper we introduce Qinco2 which extends and improves Qinco with (i) improved vector encoding using codeword pre-selection and beam-search, (ii) a fast approximate decoder leveraging codeword pairs to establish accurate short-lists for search, and (iii) an optimized training procedure and network architecture. We conduct experiments on four datasets to evaluate Qinco2 for vector compression and billion-scale nearest neighbor search. We obtain outstanding results in both settings, improving the state-of-the-art reconstruction MSE by 44% for 16-byte vector compression on BigANN, and search accuracy by 24% with 8-byte encodings on Deep1M.",
+      "matchedBy": [
+        "papers with code",
+        "Quantization",
+        "VQ-VAE",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving"
+      ]
+    },
+    {
       "id": "2603.18202",
       "title": "R2-Dreamer: Redundancy-Reduced World Models without Decoders or Augmentation",
       "authors": "Naoki Morihira, Amal Nahar, Kartik Bharadwaj, Yasuhiro Kato, Akinobu Hayashi, Tatsuya Harada",
@@ -48636,6 +48690,38 @@
         "Robotics",
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2412.04180",
+      "title": "SKIM: Any-bit Quantization Pushing The Limits of Post-Training Quantization",
+      "authors": "Runsheng Bai, Bo Liu, qiang liu",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2412.04180",
+      "source": "https://paperswithcode.co/paper/2412.04180",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.04180.jpg",
+      "firstSeenAt": "2026-06-25T00:21:13.185Z",
+      "summary": "Large Language Models (LLMs) exhibit impressive performance across various tasks, but deploying them for inference poses challenges. Their high resource demands often necessitate complex, costly multi-GPU pipelines, or the use of smaller, less capable models. While quantization offers a promising solution utilizing lower precision for model storage, existing methods frequently experience significant performance drops at lower precision levels. Additionally, they typically provide only a limited set of solutions at specific bit levels, many of which are extensively manually tuned. To address these challenges, we propose a new method called \\textbf{SKIM}: Scaled K-means clustering wIth Mixed precision. Our approach introduces two novel techniques: 1. A \\textit{greedy algorithm} to solve approximately optimal bit allocation across weight channels, and 2. A \\textit{trainable scaling vector} for non-differentiable K-means clustering. These techniques substantially improve the model performance and can be adapted to any given bit. Notably, in terms of perplexity, our method narrows the gap between quantized LLaMA models and their full precision counterparts by around \\textbf{14\\%} on average.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "GPT-4",
+        "LLaMa",
+        "T5",
+        "language modeling",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
       ]
     },
     {
@@ -66705,38 +66791,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2412.04180",
-      "title": "SKIM: Any-bit Quantization Pushing The Limits of Post-Training Quantization",
-      "authors": "Runsheng Bai, Bo Liu, qiang liu",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2412.04180",
-      "source": "https://paperswithcode.co/paper/2412.04180",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2412.04180.jpg",
-      "firstSeenAt": "2026-06-25T00:21:13.185Z",
-      "summary": "Large Language Models (LLMs) exhibit impressive performance across various tasks, but deploying them for inference poses challenges. Their high resource demands often necessitate complex, costly multi-GPU pipelines, or the use of smaller, less capable models. While quantization offers a promising solution utilizing lower precision for model storage, existing methods frequently experience significant performance drops at lower precision levels. Additionally, they typically provide only a limited set of solutions at specific bit levels, many of which are extensively manually tuned. To address these challenges, we propose a new method called \\textbf{SKIM}: Scaled K-means clustering wIth Mixed precision. Our approach introduces two novel techniques: 1. A \\textit{greedy algorithm} to solve approximately optimal bit allocation across weight channels, and 2. A \\textit{trainable scaling vector} for non-differentiable K-means clustering. These techniques substantially improve the model performance and can be adapted to any given bit. Notably, in terms of perplexity, our method narrows the gap between quantized LLaMA models and their full precision counterparts by around \\textbf{14\\%} on average.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "GPT-4",
-        "LLaMa",
-        "T5",
-        "language modeling",
-        "serving"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Serving"
       ]
     },
     {
@@ -107082,7 +107136,8 @@
         "papers with code",
         "serving",
         "Semi-Supervised Image Classification",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Quantization"
       ],
       "sources": [
         "paperswithcode"
@@ -163845,7 +163900,7 @@
       "source": "https://arxiv.org/abs/2607.18153v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18153.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Dynamic object segmentation plays a critical role in many visual applications such as static scene reconstruction from dynamic videos. However, existing optical flow-based methods fail to ensure consistent static/dynamic segmentation along object boundaries, while 3D reconstruction-based approaches are highly sensitive to reconstruction errors. To address these limitations, we present a dynamic object segmentation framework that can generate both precise and complete dynamic masks by integrating multimodal cues including 2D point tracks, 3D reconstruction, and semantic information. We design a network combining Transformer architectures with feature clustering aggregation modules to perform static/dynamic classification of multimodal feature trajectories. It enables the model to adaptively determine which type of feature should dominate based on the characteristics of each scene, while also mitigating the impact of feature degradation. Additionally, we introduce a novel point-query-based SAM post-processing method capable of handling multiple objects within a single mask. Extensive experiments demonstrate that our approach achieves state-of-the-art performance in both dynamic object segmentation and static scene reconstruction tasks.",
       "matchedBy": [
@@ -164007,7 +164062,7 @@
       "source": "https://arxiv.org/abs/2607.16784v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.16784.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "As demand for DNN inference grows, GPU capacity is increasingly oversubscribed, forcing operators to colocate multiple models on the same device in both cloud and edge deployments. Whether colocation succeeds or violates SLOs depends on the temporal overlap of kernels from concurrently executing models -- an effect that existing serving systems either ignore or approximate using aggregate resource profiles that fail to capture temporal dynamics. This paper presents Roomie, a model serving orchestration architecture that predicts and avoids kernel-level interference between colocated DNNs. Roomie decouples offline kernel profiling from online interference prediction. It uses profiling only to extract per-kernel resource configurations, and predicts interference with an occupancy-based analytical model immune to profiler-induced timing distortion. A pairwise greedy heuristic then approximates multi-model interference in polynomial rather than exponential time, and an online placement algorithm then uses these estimates to assign each incoming model to the GPU that minimizes predicted slowdown. Our experimental evaluation compares Roomie against state-of-the-art solutions across both cloud-grade server clusters and embedded edge devices, demonstrating that Roomie reduces SLO violations (i.e., inference latency) by up to 3x, while maintaining comparable, and in many cases superior, goodput relative to existing approaches.",
       "matchedBy": [
@@ -164339,7 +164394,7 @@
       "source": "https://arxiv.org/abs/2607.17951v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17951.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Natural-language control offers a promising interface for unmanned aerial vehicles (UAVs), but directly applying self-hosted computer-use agents (SHCUAs) to UAV control introduces a structural mismatch. SHCUAs are designed for interactive host-side tool use, where delayed agent iterations are often acceptable. UAV control, however, is coupled with continuously changing physical states, strict timing constraints, safety risks, and security accountability. A stale, unauthorized, or tampered agent decision may therefore lead to unsafe or untraceable vehicle behavior. This paper proposes a real-time and security-oriented restructuring of SHCUA-based UAV control. Instead of allowing an SHCUA to directly issue flight commands, we transform its outputs into contract-bound UAV skill invocations with explicit timing, state, authority, fallback, and evidence semantics. Based on this abstraction, we design an architecture that separates semantic reasoning from onboard execution and security/safety enforcement. Slow cloud or edge reasoning is used for mission understanding, while onboard components validate and dispatch only timely, authorized, and state-consistent skills. Security-critical enforcement points can be protected by TEE-style or microcontroller isolation mechanisms without moving the full language agent or high-frequency flight-control loop into trusted components. Prototype evaluation shows that RT-SHCUA maintains bounded task-level responsiveness while supporting degraded handling, trusted admission, and auditable evidence preservation for SHCUA-mediated UAV actions.",
       "matchedBy": [
@@ -165147,7 +165202,7 @@
       "source": "https://arxiv.org/abs/2607.17973v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17973.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Latent world models have emerged as a powerful planning paradigm by learning action-conditioned predictive dynamics and using them as internal simulators to imagine and evaluate candidate action sequences. However, as the planning horizon grows, performance becomes increasingly constrained by proposal quality: a fixed candidate budget must search an exponentially larger action space, making it difficult to expose the world model to high-quality candidate futures for evaluation. In this paper, we introduce a prior-conditioned planner that replaces random proposal initialization with structured guidance. At each planning stage, a goal-conditioned generator predicts the next reachable latent subgoal for a specified duration, which is then used to condition the generation of candidate action sequences. To capture semantic information across temporal scales, we use subgoals of varying durations as priors, balancing fine-grained local control with higher-level long-horizon progress. Then the frozen world model evaluates and refines these subgoal-conditioned proposals before execution. Experiments on PushT and OGBench Cube show that coupling latent subgoal decomposition with prior-conditioned action generation substantially improves long-horizon planning while preserving strong short-horizon performance. To be specific, when the target offset is $150$, it raises PushT success from $12.7\\%$ to $64.7\\%$ and OGBench Cube success from $26.7\\%$ to $67.3\\%$.",
       "matchedBy": [
@@ -165307,7 +165362,7 @@
       "source": "https://arxiv.org/abs/2607.18014v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18014.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Foundation models such as Segment Anything Model 2 (SAM2) have transformed natural-image and video segmentation, and recent work has begun adapting them to medical imaging. These adaptations, however, are largely general-purpose models that treat MRI as one modality among many; large-scale, MRI-specific modelling and benchmarking remain limited, even though MRI's low soft-tissue contrast leaves many boundaries effectively invisible on individual slices. We present SAMRI-3D, a benchmark and method for 3D MRI segmentation with SAM2. The SAMRI-3D benchmark is the largest MRI-only evaluation to date - 10,392 volumes from 34 datasets (27 public, 7 in-house) spanning 12 anatomical domains and 10+ sequences, with explicit seen/unseen splits. Freezing the image encoder and fine-tuning only the lightweight decoder and memory modules raises mean Dice from 0.58 (zero-shot SAM2) to 0.76, surpassing recent SAM-based medical models (SAMed-2 0.69, Medical-SAM2 0.49, SAM-Med3D 0.37) with strong statistical significance. To target invisible boundaries, we introduce Global Volume Tokens (GVT): persistent memory tokens trained with a Truncated Signed Distance Field (TSDF) reconstruction objective that is discarded at inference (zero added cost). This full model, SAMRI-3D, attains the best accuracy (0.78) and lowest variance across all 34 datasets and, uniquely, shows no drop on 8 held-out datasets (0.79 unseen vs. 0.78 seen); per-sequence analysis confirms the TSDF objective helps most where per-slice contrast is weakest. We will release the benchmark, code, and models in this paper.",
       "matchedBy": [
@@ -166107,7 +166162,7 @@
       "source": "https://arxiv.org/abs/2607.18091v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18091.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Structural fidelity is essential to scientific methodology diagrams. To communicate research logic, these diagrams must faithfully render components, directional relations, and textual annotations. Since a single error, such as a reversed arrow or an unreadable equation, can invalidate the entire figure, structural fidelity is inherently conjunctive: correctness on one axis cannot compensate for failure on another. Current open-source models fail to satisfy this criterion. Supervised fine-tuning (SFT) learns plausible layouts but cannot reliably ensure structural correctness, while scalar reward-based post-training obscures which structural dimension has failed. To address this, we introduce SciForma, a framework for the structure faithful generation of scientific methodology diagrams. Specifically, SciForma decomposes diagram quality into three structural axes: Component, Arrow, and Text, guided by a structural inventory. Built on this foundation, we curate SciFormaData-700K for structured training and SciFormaBench-2K for logic-verified evaluation. To close the gap left by SFT, we develop Multi-Dimensional Conjunctive Preference Optimization (M-DPO), which enforces simultaneous correctness across all axes and adaptively routes gradients to the most deficient dimension in post-training. The same structural inventory also enables iterative editing at inference time to correct residual errors. This combination allows SciForma-9B to exceed all open-source baselines and GPT-Image-1.5 on both SciFormaBench-2K and AIBench, bringing open scientific diagram generation close to proprietary-level structural fidelity. Our code and data will be available at: https://github.com/microsoft/SciForma.",
       "matchedBy": [
@@ -168283,7 +168338,7 @@
       "source": "https://arxiv.org/abs/2607.18230v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18230.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Modern vision-language models (VLMs) have significantly improved image generation and editing capabilities, making pixel-level image tampering detection increasingly important yet challenging under cross-model and out-of-distribution shifts. This work studies domain generalization for pixel-level image tampering detection in modern VLMs like ChatGPT, Gemini, Qwen-Image, etc., aiming to learn tampering localization models that remain robust across diverse VLM-generated manipulation distributions. We propose a simple yet effective domain-generalized training framework built on two practical strategies. First, we introduce a balanced minibatch sampling scheme that strategically samples tampered and real images in each minibatch, preventing biased optimization toward either manipulated artifacts or clean-image priors and avoiding training collapse, ensuring that each optimization step receives proper sampled gradient signals. Second, we adopt a simple late-injection strategy, where the detector is first trained on large-scale base data until stable convergence, and then exposed to a small amount of newly selected supporting data from emerging VLM distributions, improving adaptability without overfitting to limited new domains. Together, these components provide a simple yet strong recipe for improving pixel-level tampering localization and OOD robustness across modern VLMs. Despite the conceptual simplicity, our framework outperforms the prior state-of-the-art PIXAR by a large margin of 26.1% and 26.8% relative improvement in average gIoU and cIoU, respectively, across OOD VLMs of GPT-Images-2.0, Gemini-3.1, FLUX.2, and Seedream 4.5. Our code is available at https://github.com/VILA-Lab/PIXAR-DG",
       "matchedBy": [
@@ -169191,7 +169246,7 @@
       "source": "https://arxiv.org/abs/2607.18080v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18080.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Multimodal video misinformation detection is commonly formulated as a holistic video-understanding task, where the entire video and its associated content are processed and judged in a single pass. However, real-world misinformation often exhibits a sparse and compositional evidence structure: a reliable decision may depend on only a few coupled clues, while most video content contributes limited additional information. Exhaustive multimodal reasoning may therefore introduce substantial redundancy and obscure decisive evidence. This motivates decoupling evidence acquisition from verification: first identifying sparse, decision-relevant clues and then judging veracity based on the acquired evidence. Accordingly, we propose SIEVE, a framework for Sparse Interactive Evidence Verification via Extraction in multimodal video misinformation detection. An evidence-seeking agent actively explores the available multimodal evidence and constructs a compact evidence package, which is then used by a verifier to determine veracity. The agent is trained with supervised evidence-seeking trajectories and an evidence-aware reinforcement learning objective that promotes informative evidence acquisition while discouraging unnecessary or invalid interactions. Experiments on multiple video misinformation benchmarks show that SIEVE consistently outperforms the evaluated baselines and supports reliable verification using compact evidence packages. Moreover, the resulting acquisition process provides an explicit and inspectable evidence trail, improving the transparency and groundedness of multimodal misinformation detection.",
       "matchedBy": [
@@ -169585,7 +169640,7 @@
       "source": "https://arxiv.org/abs/2607.18109v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18109.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Understanding human emotions in spoken conversations is a key challenge in affective computing, with applications in empathetic AI, human computer interaction, and mental health monitoring. However, existing datasets vary in scale, emotion distribution, modality alignment, and data partitioning strategies, which can influence reliable cross-dataset generalization and minority-emotion modeling. We introduce SpEmoC a Speaking segment Emotion for Conversations comprising 306,544 raw clips from 3,100 English language movies and TV series. From these, 30,000 high quality, class balanced clips are curated, featuring synchronized visual, audio, and textual modalities annotated for seven emotions through a hybrid pipeline that integrates pretrained models with human validation. SpEmoC uses strict movie- and series-level splits to prevent content overlap between split sets, allowing more reliable evaluation of model generalization. The dataset also maintains a near-balanced distribution across seven emotions, including minority classes such as Fear and Disgust, which supports more balanced learning across categories. Extensive experiments, including in-domain benchmarking, cross-dataset transfer, low-data training, class-imbalance analysis, and modality transfer show that balanced data and careful splitting lead to more stable performance across emotions when models are evaluated on other datasets. These results highlight the importance of dataset design for robust and transferable multimodal emotion recognition.",
       "matchedBy": [
@@ -171765,7 +171820,7 @@
       "source": "https://arxiv.org/abs/2607.17181v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17181.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Serverless multi-model LLM systems multiplex popularity-skewed model catalogs over shared GPU pools, yet typically schedule each request independently. Tool-using agents break this abstraction: a session repeatedly calls an LLM across short tool gaps, carries a long reusable KV prefix, and is judged by session completion time (SCT). Load-only routing can separate a continuation from both its model and KV state, while round-based model multiplexing can delay even a correctly placed continuation until the target model's next slot. Both failures are especially costly for hundred-billion-parameter models: their weights constrain residency, while long-context KV is expensive to reconstruct or move. We present Talaria, a session-aware serverless multi-model serving system that makes session continuity a joint placement-and-admission decision. Its router ranks placements by model residency, KV locality, and instance pressure, while soft reservations account for likely returns in the last serving instance's admission budget. Session-prefill (SP) admits budget-eligible continuations before the active model slot closes. An instance-local substrate keeps HBM addresses stable, preserves host-restorable KV, and stages weights across model switches. On a single TP=8 server, we replay 30 SWE-Bench model-sessions (960 calls) over three models, each with more than 100B total parameters. Against an otherwise identical round scheduler with SP, host-KV restoration, and D2D staging disabled, Talaria cuts p50 SCT from 1000 s to 189 s and p95 from 2296 s to 867 s, speedups of 5.3x and 2.6x.",
       "matchedBy": [
@@ -171875,7 +171930,7 @@
       "source": "https://arxiv.org/abs/2607.16766v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.16766.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Edge inference has emerged as a promising solution for the proliferation of artificial intelligence (AI) services by deploying models at the network edge to circumvent cloud-routing latency. Existing edge inference approaches mainly focused on either cooperative inference to reduce latency or lightweight model design to fit resource-constrained devices. These solutions often address the communication and computation challenges separately, and thus struggle to achieve a balanced trade-off among transmission efficiency, on-device processing cost, and inference accuracy. To bridge this gap, this paper proposes a hybrid-precision task-oriented communication framework for edge inference to holistically balance communication, on-device computation, and utility. In this framework, a binarized front-end is deployed on the edge device to extract and transmit binary features via orthogonal frequency-division multiplexing (OFDM) signals, while a full-precision back-end on the edge server performs the final inference. To ensure model consistency, we introduce an on-device binarization method tailored for split inference and develop an integrated channel-aware transmission scheme featuring subcarrier-based feature calibration. Furthermore, a knowledge distillation (KD)-based training strategy, supported by specialized gradient estimators, is developed to optimize the end-to-end system and inherit semantic knowledge from a full-precision teacher model. Extensive experiments on the large-scale ImageNet dataset demonstrate the superiority of the proposed hybrid system. Our analysis confirms that this design achieves an optimal trade-off among communication efficiency, on-device computational cost, and inference accuracy, outperforming existing edge inference solutions.",
       "matchedBy": [
@@ -171931,7 +171986,7 @@
       "source": "https://arxiv.org/abs/2607.17374v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17374.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Graph Neural Network (GNN) inference on billion-scale graphs is challenging due to the large memory footprint of features and embeddings and high disk I/O costs in out-of-core settings. Existing distributed GNN systems incur high communication times and infrastructure costs, while disk-based GNN systems are primarily tailored to training and experience massive wasted reads during inference on the entire graph. We present Taurus, a single-machine system for GNN inference on graphs that do not fit in RAM, supporting both \\textit{exact} full-graph inference and fanout-sampled inference. To avoid random and repeated feature gathers, Taurus reformulates layer-wise inference as source-centric broadcasts over sequential SSD scans, backed by a pipelined GPU-CPU-SSD hierarchy, topology-aware reordering, pending-message eviction, and a GPU-resident store for high-degree vertices. It further uses non-buffered sequential reads and GPU-backed writes to reduce page-cache pollution, host-memory pressure, and write overheads. On out-of-core graphs with up to $269M$ vertices, $4B$ edges, and $514$ GiB of features, Taurus outperforms the strongest layer-wise baseline, DGI, by $7$-$25\\times$, and vertex-wise baselines by $40$-$140\\times$.",
       "matchedBy": [
@@ -172093,7 +172148,7 @@
       "source": "https://arxiv.org/abs/2607.18075v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18075.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "The Duke Robotics Club presents Oogway and Crush, our AUVs for RoboSub 2026. This year's strategy expands on our previously narrowed scope, targeting all four of RoboSub's design goals for the first time: movement, vision, manipulation, and acoustic tracking. This expansion is based on sustained reliability investment across all three subsystems. Mechanically, Crush gained two additional thrusters and a CFD-optimized case, providing pitch stability. Electrically, we addressed accumulated failure points by repairing unreliable connections and upgraded thruster control hardware. We also redesigned our acoustics system, adding a new custom PCB with higher-order filters, significantly improving pinger detection reliability. On the software side, improvements to state estimation, sonar-based object detection, vision-driven task planning, and IVC enable more capable and coordinated autonomous runs. Paired with investments in our testing infrastructure to maximize our limited pool time, we can now attempt a broader set of tasks while maintaining the reliability our competition strategy demands.",
       "matchedBy": [
@@ -172595,7 +172650,7 @@
       "source": "https://arxiv.org/abs/2607.17074v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17074.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Mixture of Experts (MoE) architectures have emerged as a dominant paradigm for scaling Large Language Models (LLMs). However, MoE inference on conventional hardware is constrained by three fundamental bottlenecks. These encompass the massive memory bandwidth required to fetch non-contiguous expert weights, the non-deterministic scatter-gather traffic generated by input-dependent token routing, and the tail-latency dependency imposed by synchronous expert output aggregation. To address these challenges, we propose ThAME, a three-dimensional (3D) heterogeneous multi-chiplet architecture for MoE inference. ThAME employs Ferroelectric Field-Effect Transistor (FeFET)-based non-volatile and DRAM-based volatile memory chiplets with a co-designed compute mapping strategy that aligns the distinct computational profiles of attention mechanisms and expert routing. Furthermore, we design a specialized Network-on-Chip communication backbone optimized to mitigate the bottlenecks associated with non-deterministic token routing traffic across the combinatorial space of input-dependent MoE traffic patterns. Experimental results demonstrate that ThAME outperforms state-of-the-art counterparts by up to 15.7x in terms of speedup and improves energy efficiency by up to 9.8x.",
       "matchedBy": [
@@ -173109,7 +173164,7 @@
       "source": "https://arxiv.org/abs/2607.18237v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18237.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Human visual similarity judgments are context-dependent. For example, two images may be similar in shape but distinct in color. Existing perceptual similarity metrics, however, collapse these nuances into a single scalar value, offering no mechanism to condition on specific aspects. To bridge this gap, we introduce a large-scale dataset of human similarity judgments over image triplets, where each triplet is annotated across multiple, free-form semantic aspects of similarity. Benchmarking a broad range of frontier vision-language models (VLMs) reveals a considerable performance gap compared to human annotators' consensus. Leveraging our data, we fine-tune a VLM to produce our Text-Prompted Image Perceptual Similarity (TPIPS) metric, capturing multiple senses of visual similarity depending on the specified text prompt. We demonstrate that TPIPS aligns more closely with human perception and generalizes reliably beyond the training distribution. Finally, we show that TPIPS unlocks new capabilities in text-guided retrieval, compositional search, and the fine-grained evaluation of generative models. Our code, data, and trained models are at https://peterwang512.github.io/TPIPS",
       "matchedBy": [
@@ -173139,7 +173194,7 @@
       "source": "https://arxiv.org/abs/2607.17457v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17457.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "The Hypencoder is a recently-proposed retrieval approach that encodes queries as shallow neural networks (\"Q-Nets\") that estimate relevance over pre-computed document embeddings. Inspired by Matryoshka Representation Learning, we show that the Hypencoder can be extended to support multiple sizes of Q-Nets, allowing trade-offs between effectiveness and efficiency when deployed. We find that this \"Matryoshka Hypencoder\" achieves comparable in-domain effectiveness with approximately 7x fewer active parameters in-domain and half as many active parameters out-of-domain, which corresponds to a 1.6-3.4x increase in scoring throughput. This work paves the way for practical deployment of Hypencoders.",
       "matchedBy": [
@@ -174176,7 +174231,7 @@
       "source": "https://arxiv.org/abs/2607.17523v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17523.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Recent advances in world models and video generation have given rise to an emerging reasoning paradigm that leverages video generative models to simulate, predict, and reason about real-world dynamics. We redefine this paradigm as Thinking in Video, where video is not merely an output artifact but a medium for constructing, extending, and verifying causal thought. However, this promise remains unverified: convincing rollouts may reflect memorized appearances rather than causal understanding, while existing metrics separate perceptual fidelity from semantic logic. To evaluate whether video generators support such reasoning, we introduce the Causal-Generative Dual-Judge (CGDJ), auditing World Model Consistency from two perspectives. Explicit Causal Perception tests whether a generator reads a video scenario as a reasoning problem through spatio-temporal flattened visual question answering, while Implicit Generative Perception-Prediction Gap evaluates whether it renders the causal consequence as a consistent future video. Applying CGDJ to representative open- and closed-source generators reveals a clear Perception-Prediction Gap: open-source models produce plausible dynamics despite near-zero explicit causal perception, whereas advanced closed-source systems show stronger but still limited alignment between reasoning and generation. Further analysis exposes audio-visual misalignment, where models verbalize correct causal logic more reliably than they render it, challenging the \"world simulator\" narrative.",
       "matchedBy": [
@@ -174312,7 +174367,7 @@
       "source": "https://arxiv.org/abs/2607.18198v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18198.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Modern generative models typically rely on an adversarial critic, a prescribed noise-to-data path, or an autoregressive factorization. Instead, we show that a proper distributional energy can induce sample-level motion and provide direct regression supervision for a one-step generator. Three-Body Scattering Modeling (TBSM) for generation turns the energy distance into a constant-size per-projectile interaction: each projectile is attracted toward one real source and repelled from one independently generated source. Conditioned on the projectile and its condition, its expectation equals the $2$-Wasserstein gradient-flow velocity of $\\frac12D_E^2(P_θ,Q)$. A batch of $B$ frozen-target events yields $O(B)$ sample-level losses, each using one reference for its condition instead of the minibatch-wide all-pairs field used by methods such as Drifting Models. Tracking this conditional expectation online can reduce field noise. Using scattering in frozen image features, TBSM trains one-step generators on ImageNet-256, achieving FID${}=2.23$ with pixel-space PixelDiT-XL and FID${}=1.63$ with latent-space DiT-XL at NFE${}=1$. We provide a design map relating diffusion-related supervision, Drift-like dynamics, and GAN-like objectives. These results establish tracked scattering as a route to high-dimensional one-step generation. Code: https://github.com/sp12138/TBSM.",
       "matchedBy": [
@@ -174958,7 +175013,7 @@
       "source": "https://arxiv.org/abs/2607.17191v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17191.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Human-like private chat requires more than fluent response generation: a system must preserve persona, relationship, memory, bounded knowledge, medium-specific timing, and a coherent multi-turn arc. We present AnthroDial, a closed-loop framework that formulates anthropomorphic dialogue as a joint problem of system architecture, executable evaluation, and diagnostic alignment. It combines (1) a role-conditioned scheduled dialogue runtime with persona and scenario cards, long-term memory, virtual time, and single-draft message decisions; (2) an executable benchmark with an L0 validity gate, five per-turn dimensions, and five dialogue-level dimensions; and (3) a post-training pipeline that filters 16,436 scheduled-decision examples for SFT and applies GRPO with a cognitive-diagnostic, ZPD-aware reward. The reward maintains Kalman-filtered capability estimates for each behavioral dimension, upweights dimensions with larger capability deficits, and uses rollout scores as task-level ZPD matches to focus optimization on learnable weak skills. On a benchmark with 55 personas, 50 scenarios, 50 persona-scenario bindings, and 100 role-conditioned cases per model, we evaluate 16 systems spanning frontier baselines, open models, thinking/no-think variants, and SFT/RL ablations. The strongest non-trained baseline reaches 32.00% strict ACC, while Qwen3.6-27B-SFT+RL reaches 39.00% strict ACC and a 98.5 overall score. In the 9B no-think setting, SFT and RL improve strict ACC from 0.00% to 13.00% and 18.37%. These results show that anthropomorphic dialogue benefits when generation, evaluation, and reward shaping share the same behavioral dimensions.",
       "matchedBy": [
@@ -175842,7 +175897,7 @@
       "source": "https://arxiv.org/abs/2607.16872v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.16872.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Diffusion large language models (dLLMs) are a promising alternative to autoregressive generation. However, reasoning-oriented post-training for dLLMs remains challenging. Supervised fine-tuning (SFT) for dLLMs requires dense but often off-policy masked states, while reinforcement learning (RL) relies on sparse rewards or value modeling. This paper proposes \\textbf{trace-based on-policy distillation (TOPD)}, a teacher-supervised framework that transfers reasoning ability to a target dLLM without reward estimation. The key idea is to supervise a dLLM on its own denoising trajectory, focusing on the trace-aligned token decisions that form the final response. Specifically, TOPD samples on-policy diffusion trajectories from the target dLLM, obtains teacher token distributions from a teacher model on the corresponding partially denoised states, and updates the target dLLM with a token-level Reverse Kullback-Leibler (Reverse-KL) objective. This design preserves dense teacher supervision while aligning training with the model's own denoising states. On mathematical reasoning benchmarks, TOPD enables SDAR-4B-Chat to match the MATH500 accuracy of its RL-trained counterpart TraDo-4B-Instruct, with gains of +5.7 under static evaluation and +4.5 under dynamic evaluation. Compared with the RL-trained counterpart, TOPD achieves this with 4$\\times$ fewer rollout rounds, corresponding to an estimated 96.0$\\times$ to-accuracy model-compute speedup.",
       "matchedBy": [
@@ -176786,7 +176841,7 @@
       "source": "https://arxiv.org/abs/2607.16973v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.16973.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Retrieval-Augmented Generation (RAG) systems increasingly power enterprise LLM applications, yet the vector retrieval layer introduces two underexplored challenges: (1) trained codebook quantizers may expose corpus statistics during index construction, creating a leakage channel in multi-tenant deployments, and (2) post-hoc filtering for tenant isolation degrades recall on selective queries. We study TurboVec, an open-source vector index built on TurboQuant - a codebook-oblivious scalar quantizer requiring no corpus-dependent training. On the DBpedia OpenAI embeddings benchmark (d=1536, 100K-999K vectors), TurboQuant 4-bit outperforms trained FAISS Product Quantization at the same memory budget by 8.5-8.9 percentage points in Recall@5 across all scales. Compared to HNSW (R@5=0.991) and IVF-PQ (R@5=0.840), TurboQuant occupies a distinct design point: higher recall than IVF-PQ without training, at 4-8x less memory than HNSW. Deployed on Snowpark Container Services, TurboVec achieves 11ms median query latency at 100K vectors versus 707ms for warehouse brute-force scan. Kernel-level allowlist filtering maintains 0.86-0.93 Recall@10 across 10-1000 tenant workloads versus 0.09-0.19 for post-filter baselines. Codebook-oblivious design reduces membership inference accuracy to near-random (50.0%) versus 57.3% for PQ codebooks. Limitations include single dataset evaluation, uncompressed HNSW comparison, and privacy evaluation on synthetic data only.",
       "matchedBy": [
@@ -177164,7 +177219,7 @@
       "source": "https://arxiv.org/abs/2607.17950v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17950.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "In robotic autonomous luggage trolley collection, robots must continuously localize scattered luggage trolleys in cluttered and dynamic environments. This requires the vision system to achieve both high accuracy and real-time performance. However, existing visual perception approaches for luggage trolleys often rely on cascaded multi-model inference, leading to increased inference latency and high deployment costs. To address these limitations, this article presents a unified multi-task collaborative perception network (UMCP) that simultaneously performs luggage trolley detection, keypoint detection and orientation estimation. Based on the YOLOv12 architecture, keypoint features are fused with orientation features and then fed into an orientation feature enhancement module (OFEM), thereby improving orientation estimation accuracy. In addition, circular probability distribution modeling with a Kullback-Leibler (KL) divergence loss is adopted to enhance orientation estimation accuracy further. Experimental results demonstrate that the proposed method achieves competitive overall accuracy while substantially reducing model complexity and computational cost compared with existing methods. A website about this work is available at https://sites.google.com/view/robot-umcp.",
       "matchedBy": [
@@ -177248,7 +177303,7 @@
       "source": "https://arxiv.org/abs/2607.17092v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17092.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "The core objective of short video recommendation is to model users' unobservable true satisfaction with recommended videos. As the dominant industrial framework, end-to-end multi-objective ensemble ranking models are typically trained with multi-dimensional dense user behavioral signals, such as clicks and watch time. However, these behavioral signals are partial, fragmented, and often mutually conflicting user satisfaction proxies, introducing uncertainty and label bias into satisfaction modeling. Conventional deterministic models overlook this uncertainty, which exacerbates satisfaction label bias and results in suboptimal model convergence. Meanwhile, existing uncertainty-aware methods mostly employ uncertainty for post-hoc ranking adjustments rather than leveraging it as a remedy to mitigate the inherent bias within the core optimization pipeline. This paper proposes UAME, an Uncertainty-Aware end-to-end Multi-objective Ensemble ranking framework for short video recommendation. UAME represents the model's prediction as a Gaussian scoring variable, where the mean denotes the predicted satisfaction score and the variance quantifies predictive uncertainty associated with this score. We further design a probabilistic pairwise ranking loss, and construct an uncertainty-aware sample-level weighting scheme to mitigate the bias. We further provide theoretical analysis suggesting that the weighting scheme helps mitigate satisfaction label bias. Extensive offline and online experiments on a large-scale industrial short video platform demonstrate that UAME consistently improves two state-of-the-art paradigms, EMER and EASQ, and better aligns with questionnaire-based user satisfaction. UAME has been deployed in our production short-video recommendation system and continues to deliver stable, statistically significant gains.",
       "matchedBy": [
@@ -177716,7 +177771,7 @@
       "source": "https://arxiv.org/abs/2607.18062v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18062.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "This paper focuses on the problem of Embodied Task Planning, where an agent is required to execute a sequence of atomic actions within an interactive environment to complete a user-specified task. Though a variety of simulators and datasets have previously been built for this task, these efforts are largely isolated, with each using its own observation format, action type, and task domain. This fragmentation complicates comprehensive model evaluation and hinders the scalability of training data. As an effort towards generalizable embodied planning, we propose UniETP, a unified interface integrating four commonly-used simulators (AI2-THOR, VirtualHome, Habitat, BEHAVIOR). UniETP is characterized by both standardization and diversity. On one hand, it formalizes all the simulators into a consistent observation and action space, and builds an evaluation system to support complicated task goal. On the other hand, it enhances task diversity and complexity across dimensions like task logic, instance grounding, and instruction understanding, constructing a new dataset with varied levels of difficulty in an automatic manner. Extensive experiments on the proposed benchmark are conducted to evaluate the embodied planning capabilities of recent models and analyze the performance bottlenecks. Codes and data will be available at https://github.com/woyut/UniETP .",
       "matchedBy": [
@@ -178702,7 +178757,7 @@
       "source": "https://arxiv.org/abs/2607.17914v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17914.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Robust multi-agent coordination relies heavily on inter-agent communication, which is frequently disrupted by physical and environmental constraints in real-world deployments. To maintain operation during these intermittent communication failures, agents can employ internal prediction models to estimate missing shared state information. However, predictors trained with standard reconstruction objectives treat all transitions equally. In a Reinforcement Learning context, this forces the model to waste capacity learning stochastic exploration noise and the outdated dynamics of suboptimal policies. In this paper, we propose a value-aware extension of Multi-Agent Observation Sharing under Communication Dropout (MARO) to patch communication gaps; we refer to this method as Value-Aware MARO. By dynamically weighting the predictor's loss function using advantage estimates derived from the underlying actor-critic architecture, our objective explicitly couples the predictor's learning process to the policy's evolution. This formulation focuses the model's capacity on the intentional, high-return dynamics actively reinforced by the agents. We evaluate our framework on several tasks within the Multi-Agent Particle Environment under varying communication reliability levels. Experimental results demonstrate that our approach maintains performance under declining communication reliability, particularly below 40%. While our method performs comparably in tasks where the baseline already maintains high coordination, our value-aware weighting effectively prevents the performance collapse observed in the standard predictor during high-attrition scenarios. In these environments, our method achieves an average improvement in mean returns of more than 20% and reduces performance variance by a mean of 64.7% compared to the standard unweighted baseline.",
       "matchedBy": [
@@ -179088,7 +179143,7 @@
       "source": "https://arxiv.org/abs/2607.18078v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18078.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Vision-only occupancy prediction requires recovering a semantic 3D occupancy field from calibrated surround-view images, where each view provides observations with ambiguous depth along camera rays. Existing methods have progressed from dense structured representations to sparse Gaussian primitives, improving the efficiency of 3D scene representation. However, Gaussian learning still relies primarily on image domain features, which provide limited explicit geometric information for volumetric reasoning. Our key observation is that effective Gaussian occupancy modeling requires not only sparse primitives, but also richer geometric and semantic learning cues. In this paper, we propose VGOcc, which learns visual and geometric cues from foundation models for Gaussian modeling. VGOcc incorporates these cues into primitive initialization and refinement, yielding a representation termed Visual-Geometric Gaussians tailored to semantic occupancy prediction. Specifically, we propose Visual-Geometric Gaussian Birth to form spatially balanced Gaussian centers from ray depth hypotheses, while visual semantic features initialize primitive attributes. Next, we design Pose-Aware Feature Learning to combine foundation tokens with camera embeddings and calibrated ray information. Features from neighboring views are then aggregated at projected 3D locations for each Gaussian refinement stage. Finally, Gaussian decoder refines birth Gaussians with pose-aware features and renders them into semantic occupancy. Experiments on nuScenes demonstrate that VGOcc achieves state-of-the-art performance in vision-only 3D occupancy prediction. Codes will be available at https://github.com/JHLin42in/VGOcc.",
       "matchedBy": [
@@ -179400,7 +179455,7 @@
       "source": "https://arxiv.org/abs/2607.17810v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17810.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Accurate 3D--2D liver registration, which aligns preoperative 3D models to partial, view-dependent intraoperative surface observations, is critical for AR-guided laparoscopic surgery but remains challenging due to severe occlusion, limited visibility, and the lack of 3D ground-truth supervision. Existing landmark-free approaches perform partial-to-complete geometric alignment, yet robust self-supervision under extreme partial visibility remains difficult. We propose Vis2Reg, a visibility-aware registration framework that explicitly constrains deformation using mask-consistent visible regions. We introduce a visibility-aware self-supervision that derives a visible-domain 3D supervision signal from intraoperative masks, enabled by differentiable point rasterization and mask-guided back-projection. This formulation improves robustness under severe occlusion while maintaining fully self-supervised learning. Vis2Reg combines a robust geometric rigid initialization module with an implicit neural deformation field for stable alignment. Vis2Reg achieves a Dice score of 92.6\\% and a Chamfer Distance of 1.43 mm on real intraoperative datasets, with 111 ms per-frame inference time, demonstrating both accuracy and practical efficiency.",
       "matchedBy": [
@@ -180878,7 +180933,7 @@
       "source": "https://arxiv.org/abs/2607.17017v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17017.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "As scalability becomes increasingly important in recommendation modeling, recent architectures have advanced the modeling of two broad sources of ranking signals along separate paths: non-sequence features, including user, item, context, and cross features; and sequence features from user behavior histories. Wukong and HSTU have emerged as representative scalable backbones for these paths: Wukong scales high-order non-sequence feature-interaction modeling, while HSTU scales long user-behavior sequence modeling. Despite their complementary strengths, practical architectures that combine these two types of feature modeling remain underexplored. We present WHALE, a scalable unified recommendation architecture that jointly models non-sequence and sequence features on top of Wukong and HSTU. Each WHALE layer contains a Wukong module, an HSTU module, and an attention-based fusion module in which Wukong-derived interaction representations query HSTU-derived behavior representations. This design keeps both backbones active throughout the network and enables progressive Wukong-HSTU exchange, allowing high-order feature crosses to repeatedly retrieve fine-grained evidence from long user histories. To make WHALE practical for industrial deployment, we introduce customized Triton kernels and other model-systems co-design techniques to improve training and inference efficiency. On large-scale industrial recommendation data, WHALE achieves consistent gains in offline experiments. Additionally, it delivers positive online gains with a modest serving-throughput trade-off. The method has been deployed in production systems. Overall, WHALE provides a practical example of how these two sources of information can be scalably unified in an industrial recommendation model.",
       "matchedBy": [
@@ -180982,7 +181037,7 @@
       "source": "https://arxiv.org/abs/2607.17060v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17060.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "A Bayes-filtered transformer (BFT) is a transformer trained on sequences that are generated in two steps: first a latent task is drawn from a prior, then observations are drawn conditional on that task. Trained under autoregressive log loss, the BFT's next-token prediction, in the idealized limit, is the Bayesian posterior predictive distribution (PPD) induced by that prior and that conditional law. In practice the trained BFT is only an approximation of this ideal PPD, raising an interpretive question: what prior and posterior over the latent task has the trained BFT actually internalized? Existing work answers this question by comparing the trained BFT's predictions against the predictions of various \"reference\" posteriors, each standing in for a different candidate algorithm or computation the BFT might be implementing. This prediction-space comparison is fragile: different posteriors can share the same posterior-mean predictions. We use predictive Monte Carlo (PMC) as a general interpretability tool for any BFT: using only next-token generation, PMC returns an approximation to the implicit prior and posterior over the latent task, answering the interpretive question directly in latent space. We apply PMC to three stylized task families spanning 0-Markov and 1-Markov exchangeability. The phenomena previously reported in these settings remain visible in latent space. Code is available at https://github.com/afiq-aswadi/bft-pmc",
       "matchedBy": [
@@ -181202,7 +181257,7 @@
       "source": "https://arxiv.org/abs/2607.18040v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18040.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Existing image manipulation localization (IML) methods rely heavily on 2D forensic cues, such as low-level artifacts, noise traces, and semantic inconsistencies in the manipulated image. While effective in many cases, these cues become much less discriminative when manipulated regions are well blended with their surrounding context in appearance. In such cases, a manipulated region may remain locally appearance-consistent, but still violate the geometric structure of the surrounding scene. This limitation motivates us to go beyond purely 2D evidence and introduce geometric reasoning into IML. To this end, we leverage monocular reconstruction to obtain auxiliary geometric cues, including depth and surface normals. However, a key challenge lies in the fact that reconstructed geometry on manipulated images is inherently noisy and cannot be used naively. Rather than treating depth and normals as direct evidence, we estimate their reliability and exploit them selectively for localization. Based on this principle, we design a geometry-aware framework (GFrame) that fuses reliable geometric cues with RGB features and propagates them across scales to improve fine-grained localization. Extensive experiments show that the proposed method achieves excellent performance under limited budget constraints. These results indicate that reliable 3D geometry provides complementary forensic evidence beyond traditional 2D cues for IML. Related code will be released.",
       "matchedBy": [
@@ -182134,7 +182189,7 @@
       "source": "https://arxiv.org/abs/2607.17044v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.17044.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "Multi-step enterprise agent tasks fail in a characteristic way: single-pass inference has no checkpoint between deciding an answer and committing to it. We study one production system (Leni) whose architecture installs such checkpoints: verification loops (execute, observe, compare, correct) staffed by lightweight task-specialized post-trained models. We evaluate the unmodified production configuration on three public benchmarks stressing distinct failure modes: SpreadsheetBench Verified (silent computation error), BullshitBench v2 (premise confabulation), and the GAIA validation split (cascade error over long tool chains). The full system improves over its frontier base model by +11.0 percentage points on SpreadsheetBench (91.25% vs 80.25%, n=400, p<0.001), +7 to +10 percentage points on BullshitBench (98% vs 91%, n=100), and roughly +15 points on GAIA validation (75.2% pass@1, n=165; 83.0% best-of-k). Our central contribution is a decomposition of that uplift: most of it comes from scaffolding, routing, and specialist models rather than from the verification step itself, whose isolated contribution is small (+1.5 points) but concentrated at the top of the score distribution, where it converts otherwise-failing tasks. We instrument the loop end-to-end, yielding an empirical verifier confusion matrix (catch rate about 0.20, fix rate 0.75, no false-alarm regressions) that grounds a compounding-reliability model. Specialist-swap ablations suggest that the loop's value depends on who observes it: replacing the small trained verifier with the generating frontier model eliminates most rescues. A valid-premise control shows zero over-rejections in 100 expert-level questions.",
       "matchedBy": [
@@ -182798,7 +182853,7 @@
       "source": "https://arxiv.org/abs/2607.18154v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18154.jpg",
       "firstSeenAt": "2026-07-22T00:04:43.431Z",
       "summary": "The gap between simulation and reality remains a fundamental challenge in deploying simulation-trained robotic policies in the real world. Real-to-sim methods narrow this gap from the real side, learning transition dynamics from real data to build a more realistic digital world. Learned dynamics models are their dominant instance. Such methods, however, face a partial observability problem: the same observation may branch to different transitions due to unobservable factors. Existing methods assume these factors can be recovered from observation history. However, this may fail whenever observation history is uninformative, such as a sudden contact event with no prior warning. To address this limitation, we propose \\textit{World Translation}, which exploits a complementary strength of simulators and learned dynamics. Simulators are deterministic but physically imperfect, while learned models are accurate but underdetermined under partial observability. Rather than predicting transitions forward from history, we extract the unobservable dynamics information backward from an observed transition, then translate this feature across simulation and reality as an unpaired domain-translation problem that preserves dynamics content while transferring domain style. Experiments across humanoid, quadruped, and manipulator platforms show that our method achieves more accurate dynamics modeling than baselines, with the largest gains when unobservable factors cannot be recovered from observation history. Real-robot deployment on Go2 quadruped confirms improved policy transfer.",
       "matchedBy": [
