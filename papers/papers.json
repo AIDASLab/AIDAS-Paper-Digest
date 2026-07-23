@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-23T00:12:42.402Z",
+  "generatedAt": "2026-07-23T01:08:26.210Z",
   "sourceStats": {
-    "seed": 6345,
+    "seed": 6469,
     "paperswithcode": 540,
-    "arxiv": 125,
-    "huggingface": 24,
+    "arxiv": 100,
+    "huggingface": 25,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 6469
+    "total": 6475
   },
   "papers": [
     {
@@ -23968,6 +23968,32 @@
       ]
     },
     {
+      "id": "2607.20058",
+      "title": "Reading and Steering Representations of Materials-Science Mechanisms in an Open-Weight Language Model",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2607.20058",
+      "source": "https://huggingface.co/papers/2607.20058",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.20058.jpg",
+      "firstSeenAt": "2026-07-23T01:08:26.210Z",
+      "summary": "",
+      "matchedBy": [
+        "hugging face daily",
+        "language modeling"
+      ],
+      "sources": [
+        "huggingface"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.23404",
       "title": "ReasoningLens: Hierarchical Visualization and Diagnostic Auditing for Large Reasoning Models",
       "authors": "Jun Zhang, Jiasheng Zheng, Boxi Cao, Yaojie Lu, Hongyu Lin, Jia Zheng, Xianpei Han, Le Sun",
@@ -30695,6 +30721,39 @@
       ]
     },
     {
+      "id": "2503.18278",
+      "title": "TopV: Compatible Token Pruning with Inference Time Optimization for Fast and Low-Memory Multimodal Vision Language Model",
+      "authors": "Cheng Yang, Yang Sui, Jinqi Xiao, Lingyi Huang, Yu Gong, Chendi Li, Jinghua Yan, Yu Bai, Ponnuswamy Sadayappan, Xia Hu, Bo Yuan",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 75,
+      "paper": "https://arxiv.org/abs/2503.18278",
+      "source": "https://paperswithcode.co/paper/2503.18278",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.18278.jpg",
+      "firstSeenAt": "",
+      "summary": "Vision-Language Models (VLMs) demand substantial computational resources during inference, largely due to the extensive visual input tokens for representing visual information. Previous studies have noted that visual tokens tend to receive less attention than text tokens, suggesting their lower importance during inference and potential for pruning. However, their methods encounter several chal- lenges: reliance on greedy heuristic criteria for token im- portance and incompatibility with FlashAttention and KV cache. To address these issues, we introduce TopV, a com- patible TOken Pruning with inference Time Optimization for fast and low-memory VLM, achieving efficient pruning without additional training or fine-tuning. Instead of re- lying on attention scores, we formulate token pruning as an optimization problem, accurately identifying important visual tokens while remaining compatible with FlashAtten- tion. Additionally, since we only perform this pruning once during the prefilling stage, it effectively reduces KV cache size. Our optimization framework incorporates a visual- aware cost function considering factors such as Feature Similarity, Relative Spatial Distance, and Absolute Central Distance, to measure the importance of each source visual token, enabling effective pruning of low-importance tokens. Extensive experiments demonstrate that our method outperforms previous token pruning methods, validating the effectiveness and efficiency of our approach.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "CLIP",
+        "Flash Attention",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2405.18428",
       "title": "DiG: Scalable and Efficient Diffusion Models with Gated Linear Attention",
       "authors": "Lianghui Zhu, Zilong Huang, Bencheng Liao, Jun Hao Liew, Hanshu Yan, Jiashi Feng, Xinggang Wang",
@@ -30786,39 +30845,6 @@
       "categories": [
         "Language Modeling",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2503.18278",
-      "title": "TopV: Compatible Token Pruning with Inference Time Optimization for Fast and Low-Memory Multimodal Vision Language Model",
-      "authors": "Cheng Yang, Yang Sui, Jinqi Xiao, Lingyi Huang, Yu Gong, Chendi Li, Jinghua Yan, Yu Bai, Ponnuswamy Sadayappan, Xia Hu, Bo Yuan",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 74,
-      "paper": "https://arxiv.org/abs/2503.18278",
-      "source": "https://paperswithcode.co/paper/2503.18278",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2503.18278.jpg",
-      "firstSeenAt": "",
-      "summary": "Vision-Language Models (VLMs) demand substantial computational resources during inference, largely due to the extensive visual input tokens for representing visual information. Previous studies have noted that visual tokens tend to receive less attention than text tokens, suggesting their lower importance during inference and potential for pruning. However, their methods encounter several chal- lenges: reliance on greedy heuristic criteria for token im- portance and incompatibility with FlashAttention and KV cache. To address these issues, we introduce TopV, a com- patible TOken Pruning with inference Time Optimization for fast and low-memory VLM, achieving efficient pruning without additional training or fine-tuning. Instead of re- lying on attention scores, we formulate token pruning as an optimization problem, accurately identifying important visual tokens while remaining compatible with FlashAtten- tion. Additionally, since we only perform this pruning once during the prefilling stage, it effectively reduces KV cache size. Our optimization framework incorporates a visual- aware cost function considering factors such as Feature Similarity, Relative Spatial Distance, and Absolute Central Distance, to measure the importance of each source visual token, enabling effective pruning of low-importance tokens. Extensive experiments demonstrate that our method outperforms previous token pruning methods, validating the effectiveness and efficiency of our approach.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "CLIP",
-        "Flash Attention",
-        "vision/multimodal",
-        "serving"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Serving",
-        "Language Modeling"
       ]
     },
     {
@@ -31440,6 +31466,36 @@
       ]
     },
     {
+      "id": "2506.23075",
+      "title": "CSBrain: A Cross-scale Spatiotemporal Brain Foundation Model for EEG Decoding",
+      "authors": "Yuchen Zhou, Jiamin Wu, Zichen Ren, Zhouheng Yao, Weiheng Lu, Kunyu Peng, Qihao Zheng, Chunfeng Song, Wanli Ouyang, Chao Gou",
+      "org": "",
+      "published": "NeurIPS 2025 Spotlight",
+      "score": 71,
+      "paper": "https://arxiv.org/abs/2506.23075",
+      "source": "https://paperswithcode.co/paper/2506.23075",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.23075.jpg",
+      "firstSeenAt": "",
+      "summary": "Understanding and decoding human brain activity from electroencephalography (EEG) signals is a fundamental problem in neuroscience and artificial intelligence, with applications ranging from cognition and emotion recognition to clinical diagnosis and brain–computer interfaces. While recent EEG foundation models have made progress in generalized brain decoding by leveraging unified architectures and large-scale pretraining, they inherit a scale-agnostic dense modeling paradigm from NLP and vision. This design overlooks an intrinsic property of neural activity—cross-scale spatiotemporal structure. Different EEG task patterns span a broad range of temporal and spatial scales, from brief neural activations to slow-varying rhythms, and from localized cortical activations to large-scale distributed interactions. Ignoring this diversity may lead to suboptimal representations and weakened generalization ability. To address these limitations, we propose CSBrain, a Cross-scale Spatiotemporal Brain foundation model for generalized EEG decoding. CSBrain introduces two key components: (i) Cross-scale Spatiotemporal Tokenization (CST), which aggregates multi-scale features within localized temporal windows and anatomical brain regions into compact scale-aware token representations; and (ii) Structured Sparse Attention (SSA), which models cross-window and cross-region dependencies for diverse decoding tasks, further enriching scale diversities while eliminating the spurious dependencies. CST and SSA are alternately stacked to progressively integrate cross-scale spatiotemporal dependencies. Extensive experiments across 11 representative EEG tasks and 16 datasets demonstrate that CSBrain consistently outperforms both task-specific models and strong foundation baselines. These results establish cross-scale modeling as a key inductive bias for generalized EEG decoding and highlight CSBrain as a robust backbone for future brain–AI research. The code and model will be released.",
+      "matchedBy": [
+        "papers with code",
+        "serving",
+        "data / retrieval",
+        "vision/multimodal",
+        "benchmark",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2410.08201",
       "title": "Efficient Dictionary Learning with Switch Sparse Autoencoders",
       "authors": "Anish Mudide, Joshua Engels, Eric J Michaud, Max Tegmark, Christian Schroeder de Witt",
@@ -31782,36 +31838,6 @@
       ]
     },
     {
-      "id": "2506.23075",
-      "title": "CSBrain: A Cross-scale Spatiotemporal Brain Foundation Model for EEG Decoding",
-      "authors": "Yuchen Zhou, Jiamin Wu, Zichen Ren, Zhouheng Yao, Weiheng Lu, Kunyu Peng, Qihao Zheng, Chunfeng Song, Wanli Ouyang, Chao Gou",
-      "org": "",
-      "published": "NeurIPS 2025 Spotlight",
-      "score": 70,
-      "paper": "https://arxiv.org/abs/2506.23075",
-      "source": "https://paperswithcode.co/paper/2506.23075",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2506.23075.jpg",
-      "firstSeenAt": "",
-      "summary": "Understanding and decoding human brain activity from electroencephalography (EEG) signals is a fundamental problem in neuroscience and artificial intelligence, with applications ranging from cognition and emotion recognition to clinical diagnosis and brain–computer interfaces. While recent EEG foundation models have made progress in generalized brain decoding by leveraging unified architectures and large-scale pretraining, they inherit a scale-agnostic dense modeling paradigm from NLP and vision. This design overlooks an intrinsic property of neural activity—cross-scale spatiotemporal structure. Different EEG task patterns span a broad range of temporal and spatial scales, from brief neural activations to slow-varying rhythms, and from localized cortical activations to large-scale distributed interactions. Ignoring this diversity may lead to suboptimal representations and weakened generalization ability. To address these limitations, we propose CSBrain, a Cross-scale Spatiotemporal Brain foundation model for generalized EEG decoding. CSBrain introduces two key components: (i) Cross-scale Spatiotemporal Tokenization (CST), which aggregates multi-scale features within localized temporal windows and anatomical brain regions into compact scale-aware token representations; and (ii) Structured Sparse Attention (SSA), which models cross-window and cross-region dependencies for diverse decoding tasks, further enriching scale diversities while eliminating the spurious dependencies. CST and SSA are alternately stacked to progressively integrate cross-scale spatiotemporal dependencies. Extensive experiments across 11 representative EEG tasks and 16 datasets demonstrate that CSBrain consistently outperforms both task-specific models and strong foundation baselines. These results establish cross-scale modeling as a key inductive bias for generalized EEG decoding and highlight CSBrain as a robust backbone for future brain–AI research. The code and model will be released.",
-      "matchedBy": [
-        "papers with code",
-        "serving",
-        "data / retrieval",
-        "vision/multimodal",
-        "benchmark",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2503.18402",
       "title": "DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds",
       "authors": "Youyu Chen, Junjun Jiang, Kui Jiang, Xiao Tang, Zhihao Li, Xianming Liu, Yinyu Nie",
@@ -32106,6 +32132,39 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2410.07577",
+      "title": "3D Vision-Language Gaussian Splatting",
+      "authors": "Qucheng Peng, Benjamin Planche, Zhongpai Gao, Meng Zheng, Anwesa Choudhuri, Terrence Chen, Chen Chen, Ziyan Wu",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 69,
+      "paper": "https://arxiv.org/abs/2410.07577",
+      "source": "https://paperswithcode.co/paper/2410.07577",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2410.07577.jpg",
+      "firstSeenAt": "2026-06-25T00:21:13.185Z",
+      "summary": "Recent advancements in 3D reconstruction methods and vision-language models have propelled the development of multi-modal 3D scene understanding, which has vital applications in robotics, autonomous driving, and virtual/augmented reality. However, current multi-modal scene understanding approaches have naively embedded semantic representations into 3D reconstruction methods without striking a balance between visual and language modalities, which leads to unsatisfying semantic rasterization of translucent or reflective objects, as well as over-fitting on color modality. To alleviate these limitations, we propose a solution that adequately handles the distinct visual and semantic modalities, i.e., a 3D vision-language Gaussian splatting model for scene understanding, to put emphasis on the representation learning of language modality. We propose a novel cross-modal rasterizer, using modality fusion along with a smoothed semantic indicator for enhancing semantic rasterization. We also employ a camera-view blending technique to improve semantic consistency between existing and synthesized views, thereby effectively mitigating over-fitting. Extensive experiments demonstrate that our method achieves state-of-the-art performance in open-vocabulary semantic segmentation, surpassing existing methods by a significant margin.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "3D understanding",
+        "Image segmentation",
+        "Image Understanding",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Language Modeling"
       ]
     },
     {
@@ -32512,6 +32571,37 @@
       ]
     },
     {
+      "id": "2501.18993",
+      "title": "Visual Autoregressive Modeling for Image Super-Resolution",
+      "authors": "Yunpeng Qu, Kun Yuan, Jinhua Hao, Kai Zhao, Qizhi Xie, Ming Sun, Chao Zhou",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 69,
+      "paper": "https://arxiv.org/abs/2501.18993",
+      "source": "https://paperswithcode.co/paper/2501.18993",
+      "code": "https://github.com/quyp2000/VARSR}",
+      "project": "",
+      "thumbnail": "./thumbs/2501.18993.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Image Super-Resolution (ISR) has seen significant progress with the introduction of remarkable generative models. However, challenges such as the trade-off issues between fidelity and realism, as well as computational complexity, have also posed limitations on their application. Building upon the tremendous success of autoregressive models in the language domain, we propose \\textbf{VARSR}, a novel visual autoregressive modeling for ISR framework with the form of next-scale prediction. To effectively integrate and preserve semantic information in low-resolution images, we propose using prefix tokens to incorporate the condition. Scale-aligned Rotary Positional Encodings are introduced to capture spatial structures and the diffusion refiner is utilized for modeling quantization residual loss to achieve pixel-level fidelity. Image-based Classifier-free Guidance is proposed to guide the generation of more realistic images. Furthermore, we collect large-scale data and design a training process to obtain robust generative priors. Quantitative and qualitative results show that VARSR is capable of generating high-fidelity and high-realism images with more efficiency than diffusion-based methods. Our codes are released at \\url{https://github.com/quyp2000/VARSR}.",
+      "matchedBy": [
+        "papers with code",
+        "Image super-resolution",
+        "vision/multimodal",
+        "language modeling",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
       "id": "2512.11047",
       "title": "WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control",
       "authors": "Haoran Jiang, Jin Chen, Qingwen Bu, Li Chen, Modi Shi, Yanjie Zhang, Delong Li, Chuanzhe Suo, wang chuang, zhihui peng, Hongyang Li",
@@ -32541,39 +32631,6 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2410.07577",
-      "title": "3D Vision-Language Gaussian Splatting",
-      "authors": "Qucheng Peng, Benjamin Planche, Zhongpai Gao, Meng Zheng, Anwesa Choudhuri, Terrence Chen, Chen Chen, Ziyan Wu",
-      "org": "",
-      "published": "ICLR 2025",
-      "score": 68,
-      "paper": "https://arxiv.org/abs/2410.07577",
-      "source": "https://paperswithcode.co/paper/2410.07577",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2410.07577.jpg",
-      "firstSeenAt": "2026-06-25T00:21:13.185Z",
-      "summary": "Recent advancements in 3D reconstruction methods and vision-language models have propelled the development of multi-modal 3D scene understanding, which has vital applications in robotics, autonomous driving, and virtual/augmented reality. However, current multi-modal scene understanding approaches have naively embedded semantic representations into 3D reconstruction methods without striking a balance between visual and language modalities, which leads to unsatisfying semantic rasterization of translucent or reflective objects, as well as over-fitting on color modality. To alleviate these limitations, we propose a solution that adequately handles the distinct visual and semantic modalities, i.e., a 3D vision-language Gaussian splatting model for scene understanding, to put emphasis on the representation learning of language modality. We propose a novel cross-modal rasterizer, using modality fusion along with a smoothed semantic indicator for enhancing semantic rasterization. We also employ a camera-view blending technique to improve semantic consistency between existing and synthesized views, thereby effectively mitigating over-fitting. Extensive experiments demonstrate that our method achieves state-of-the-art performance in open-vocabulary semantic segmentation, surpassing existing methods by a significant margin.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "3D understanding",
-        "Image segmentation",
-        "Image Understanding",
-        "vision/multimodal",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics",
-        "Language Modeling"
       ]
     },
     {
@@ -33323,37 +33380,6 @@
       ]
     },
     {
-      "id": "2501.18993",
-      "title": "Visual Autoregressive Modeling for Image Super-Resolution",
-      "authors": "Yunpeng Qu, Kun Yuan, Jinhua Hao, Kai Zhao, Qizhi Xie, Ming Sun, Chao Zhou",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 68,
-      "paper": "https://arxiv.org/abs/2501.18993",
-      "source": "https://paperswithcode.co/paper/2501.18993",
-      "code": "https://github.com/quyp2000/VARSR}",
-      "project": "",
-      "thumbnail": "./thumbs/2501.18993.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Image Super-Resolution (ISR) has seen significant progress with the introduction of remarkable generative models. However, challenges such as the trade-off issues between fidelity and realism, as well as computational complexity, have also posed limitations on their application. Building upon the tremendous success of autoregressive models in the language domain, we propose \\textbf{VARSR}, a novel visual autoregressive modeling for ISR framework with the form of next-scale prediction. To effectively integrate and preserve semantic information in low-resolution images, we propose using prefix tokens to incorporate the condition. Scale-aligned Rotary Positional Encodings are introduced to capture spatial structures and the diffusion refiner is utilized for modeling quantization residual loss to achieve pixel-level fidelity. Image-based Classifier-free Guidance is proposed to guide the generation of more realistic images. Furthermore, we collect large-scale data and design a training process to obtain robust generative priors. Quantitative and qualitative results show that VARSR is capable of generating high-fidelity and high-realism images with more efficiency than diffusion-based methods. Our codes are released at \\url{https://github.com/quyp2000/VARSR}.",
-      "matchedBy": [
-        "papers with code",
-        "Image super-resolution",
-        "vision/multimodal",
-        "language modeling",
-        "serving"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling",
-        "Serving"
-      ]
-    },
-    {
       "id": "2506.00613",
       "title": "WorldGym: World Model as An Environment for Policy Evaluation",
       "authors": "Julian Hector Quevedo, Ansh Kumar Sharma, Yixiang Sun, Varad Suryavanshi, Percy Liang, Sherry Yang",
@@ -33730,6 +33756,38 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
+      "id": "2502.17288",
+      "title": "GaussianFlowOcc: Sparse and Weakly Supervised Occupancy Estimation using Gaussian Splatting and Temporal Flow",
+      "authors": "Simon Boeder, Fabian Gigengack, Benjamin Risse",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 67,
+      "paper": "https://arxiv.org/abs/2502.17288",
+      "source": "https://paperswithcode.co/paper/2502.17288",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2502.17288.jpg",
+      "firstSeenAt": "2026-06-29T01:53:28.127Z",
+      "summary": "Occupancy estimation has become a prominent task in 3D computer vision, particularly within the autonomous driving community. In this paper, we present a novel approach to occupancy estimation, termed GaussianFlowOcc, which is inspired by Gaussian Splatting and replaces traditional dense voxel grids with a sparse 3D Gaussian representation. Our efficient model architecture based on a Gaussian Transformer significantly reduces computational and memory requirements by eliminating the need for expensive 3D convolutions used with inefficient voxel-based representations that predominantly represent empty 3D spaces. GaussianFlowOcc effectively captures scene dynamics by estimating temporal flow for each Gaussian during the overall network training process, offering a straightforward solution to a complex problem that is often neglected by existing methods. Moreover, GaussianFlowOcc is designed for scalability, as it employs weak supervision and does not require costly dense 3D voxel annotations based on additional data (e.g., LiDAR). Through extensive experimentation, we demonstrate that GaussianFlowOcc significantly outperforms all previous methods for weakly supervised occupancy estimation on the nuScenes dataset while featuring an inference speed that is 50 times faster than current SOTA.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "CLIP",
+        "DINO",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
         "Frontier Training"
       ]
     },
@@ -34594,38 +34652,6 @@
         "Language Modeling",
         "Frontier Training",
         "Benchmark"
-      ]
-    },
-    {
-      "id": "2502.17288",
-      "title": "GaussianFlowOcc: Sparse and Weakly Supervised Occupancy Estimation using Gaussian Splatting and Temporal Flow",
-      "authors": "Simon Boeder, Fabian Gigengack, Benjamin Risse",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 66,
-      "paper": "https://arxiv.org/abs/2502.17288",
-      "source": "https://paperswithcode.co/paper/2502.17288",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2502.17288.jpg",
-      "firstSeenAt": "2026-06-29T01:53:28.127Z",
-      "summary": "Occupancy estimation has become a prominent task in 3D computer vision, particularly within the autonomous driving community. In this paper, we present a novel approach to occupancy estimation, termed GaussianFlowOcc, which is inspired by Gaussian Splatting and replaces traditional dense voxel grids with a sparse 3D Gaussian representation. Our efficient model architecture based on a Gaussian Transformer significantly reduces computational and memory requirements by eliminating the need for expensive 3D convolutions used with inefficient voxel-based representations that predominantly represent empty 3D spaces. GaussianFlowOcc effectively captures scene dynamics by estimating temporal flow for each Gaussian during the overall network training process, offering a straightforward solution to a complex problem that is often neglected by existing methods. Moreover, GaussianFlowOcc is designed for scalability, as it employs weak supervision and does not require costly dense 3D voxel annotations based on additional data (e.g., LiDAR). Through extensive experimentation, we demonstrate that GaussianFlowOcc significantly outperforms all previous methods for weakly supervised occupancy estimation on the nuScenes dataset while featuring an inference speed that is 50 times faster than current SOTA.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "CLIP",
-        "DINO",
-        "Gaussian splatting",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training"
       ]
     },
     {
@@ -40466,6 +40492,36 @@
       ]
     },
     {
+      "id": "2409.08926",
+      "title": "ClearDepth: Efficient Stereo Perception of Transparent Objects for Robotic Manipulation",
+      "authors": "Bai, Kaixin, Zeng, Huajian, Zhang, Lei, Liu, Yiwen, Xu, Hongli, Chen, Zhaopeng, Zhang, Jianwei",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2409.08926",
+      "source": "https://paperswithcode.co/paper/2409.08926",
+      "code": "",
+      "project": "https://sites",
+      "thumbnail": "./thumbs/2409.08926.jpg",
+      "firstSeenAt": "2026-06-22T00:21:43.543Z",
+      "summary": "Transparent object depth perception remains a major challenge in robotics and logistics due to the limitations of standard 3D sensors in capturing accurate depth on transparent and reflective surfaces. This affects applications relying on depth maps and point clouds, particularly in robotic manipulation. To address this, we propose ClearDepth, a vision transformer-based algorithm for stereo depth recovery of transparent objects, enhanced by a novel feature post-fusion module that refines depth estimation using structural visual features. To mitigate the high costs of stereo dataset collection, we introduce a physically realistic, domain-adaptive Sim2Real framework for efficient data generation. Our method outperforms state-of-the-art stereo matching approaches on transparent depth recovery. Furthermore, in transparent object grasping experiments, ClearDepth improves transparent-scene perception and achieves at least an 18% higher grasp success rate compared to the state-of-the-art methods for transparent object manipulation. Our method demonstrates strong Sim2Real generalization, enabling precise depth perception of transparent objects for robotic applications in the real world. Dataset and project details are available at https://sites.google.com/view/cleardepth-anonymous.",
+      "matchedBy": [
+        "papers with code",
+        "Depth estimation",
+        "Stereo Matching",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2506.13260",
       "title": "COME: Adding Scene-Centric Forecasting Control to Occupancy World Model",
       "authors": "Yining Shi, Kun Jiang, Qiang Meng, Ke Wang, JiaBao Wang, Wenchao Sun, Tuopu Wen, mengmeng yang, diange yang",
@@ -43254,6 +43310,38 @@
       ]
     },
     {
+      "id": "2503.00359",
+      "title": "Solving Instance Detection from an Open-World Perspective",
+      "authors": "Qianqian Shen, Yunhan Zhao, Nahyun Kwon, Jeeeun Kim, Yanan Li, Shu Kong",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2503.00359",
+      "source": "https://paperswithcode.co/paper/2503.00359",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.00359.jpg",
+      "firstSeenAt": "2026-07-07T00:19:32.927Z",
+      "summary": "Instance detection (InsDet) aims to localize specific object instances within a novel scene imagery based on given visual references. Technically, it requires proposal detection to identify all possible object instances, followed by instance-level matching to pinpoint the ones of interest. Its open-world nature supports its broad applications from robotics to AR/VR but also presents significant challenges: methods must generalize to unknown testing data distributions because (1) the testing scene imagery is unseen during training, and (2) there are domain gaps between visual references and detected proposals. Existing methods tackle these challenges by synthesizing diverse training examples or utilizing off-the-shelf foundation models (FMs). However, they only partially capitalize the available open-world information. In contrast, we approach InsDet from an Open-World perspective, introducing our method IDOW. We find that, while pretrained FMs yield high recall in instance detection, they are not specifically optimized for instance-level feature matching. Therefore, we adapt pretrained FMs for improved instance-level matching using open-world data. Our approach incorporates metric learning along with novel data augmentations, which sample distractors as negative examples and synthesize novel-view instances to enrich the visual references. Extensive experiments demonstrate that our method significantly outperforms prior works, achieving >10 AP over previous results on two recently released challenging benchmark datasets in both conventional and novel instance detection settings.",
+      "matchedBy": [
+        "papers with code",
+        "CLIP",
+        "DINO",
+        "Faster R-CNN",
+        "LLaVa",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2409.15298",
       "title": "Sorbet: A Neuromorphic Hardware-Compatible Transformer-Based Spiking Language Model",
       "authors": "Kaiwen Tang, Zhanglu Yan, Weng-Fai Wong",
@@ -44038,7 +44126,8 @@
         "papers with code",
         "Language Modeling",
         "language modeling",
-        "frontier training"
+        "frontier training",
+        "Procedural Generalization"
       ],
       "sources": [
         "paperswithcode"
@@ -44913,36 +45002,6 @@
         "Language Modeling",
         "Vision/Multimodal",
         "Data / Retrieval"
-      ]
-    },
-    {
-      "id": "2409.08926",
-      "title": "ClearDepth: Efficient Stereo Perception of Transparent Objects for Robotic Manipulation",
-      "authors": "Bai, Kaixin, Zeng, Huajian, Zhang, Lei, Liu, Yiwen, Xu, Hongli, Chen, Zhaopeng, Zhang, Jianwei",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2409.08926",
-      "source": "https://paperswithcode.co/paper/2409.08926",
-      "code": "",
-      "project": "https://sites",
-      "thumbnail": "./thumbs/2409.08926.jpg",
-      "firstSeenAt": "2026-06-22T00:21:43.543Z",
-      "summary": "Transparent object depth perception remains a major challenge in robotics and logistics due to the limitations of standard 3D sensors in capturing accurate depth on transparent and reflective surfaces. This affects applications relying on depth maps and point clouds, particularly in robotic manipulation. To address this, we propose ClearDepth, a vision transformer-based algorithm for stereo depth recovery of transparent objects, enhanced by a novel feature post-fusion module that refines depth estimation using structural visual features. To mitigate the high costs of stereo dataset collection, we introduce a physically realistic, domain-adaptive Sim2Real framework for efficient data generation. Our method outperforms state-of-the-art stereo matching approaches on transparent depth recovery. Furthermore, in transparent object grasping experiments, ClearDepth improves transparent-scene perception and achieves at least an 18% higher grasp success rate compared to the state-of-the-art methods for transparent object manipulation. Our method demonstrates strong Sim2Real generalization, enabling precise depth perception of transparent objects for robotic applications in the real world. Dataset and project details are available at https://sites.google.com/view/cleardepth-anonymous.",
-      "matchedBy": [
-        "papers with code",
-        "Depth estimation",
-        "Stereo Matching",
-        "vision/multimodal",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics"
       ]
     },
     {
@@ -47246,6 +47305,36 @@
       ]
     },
     {
+      "id": "2509.15929",
+      "title": "Improving Monte Carlo Tree Search for Symbolic Regression",
+      "authors": "Zhengyao Huang, Daniel Huang, Tiannan Xiao, Dina Ma, Zhenyu Ming, Hao Shi, Yuanhui Wen",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2509.15929",
+      "source": "https://paperswithcode.co/paper/2509.15929",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.15929.jpg",
+      "firstSeenAt": "2026-07-04T01:13:14.705Z",
+      "summary": "Symbolic regression aims to discover concise, interpretable mathematical expressions that satisfy desired objectives, such as fitting data, posing a highly combinatorial optimization problem. While genetic programming has been the dominant approach, recent efforts have explored reinforcement learning methods for improving search efficiency. Monte Carlo Tree Search (MCTS), with its ability to balance exploration and exploitation through guided search, has emerged as a promising technique for symbolic expression discovery. However, its traditional bandit strategies and sequential symbol construction often limit performance. In this work, we propose an improved MCTS framework for symbolic regression that addresses these limitations through two key innovations: (1) an extreme bandit allocation strategy tailored for identifying globally optimal expressions, with finite-time performance guarantees under polynomial reward decay assumptions; and (2) evolution-inspired state-jumping actions such as mutation and crossover, which enable non-local transitions to promising regions of the search space. These state-jumping actions also reshape the reward landscape during the search process, improving both robustness and efficiency. We conduct a thorough numerical study to the impact of these improvements and benchmark our approach against existing symbolic regression methods on a variety of datasets, including both ground-truth and black-box datasets. Our approach achieves competitive performance with state-of-the-art libraries in terms of recovery rate, attains favorable positions on the Pareto frontier of accuracy versus model complexity.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "language modeling",
+        "frontier training",
+        "Monte-Carlo Tree Search"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2503.14359",
       "title": "ImViD: Immersive Volumetric Videos for Enhanced VR Engagement",
       "authors": "Zhengxian Yang, Shi Pan, Shengqi Wang, Haoxiang Wang, Li Lin, Guanjun Li, Zhengqi Wen, Borong Lin, Jianhua Tao, Tao Yu",
@@ -49012,6 +49101,36 @@
       ]
     },
     {
+      "id": "2503.08085",
+      "title": "PRISM: Privacy-Preserving Improved Stochastic Masking for Federated Generative Models",
+      "authors": "Kyeongkook Seo, Dong-Jun Han, Jaejun Yoo",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2503.08085",
+      "source": "https://paperswithcode.co/paper/2503.08085",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.08085.jpg",
+      "firstSeenAt": "2026-06-18T01:40:50.232Z",
+      "summary": "Despite recent advancements in federated learning (FL), the integration of generative models into FL has been limited due to challenges such as high communication costs and unstable training in heterogeneous data environments. To address these issues, we propose PRISM, a FL framework tailored for generative models that ensures (i) stable performance in heterogeneous data distributions and (ii) resource efficiency in terms of communication cost and final model size. The key of our method is to search for an optimal stochastic binary mask for a random network rather than updating the model weights, identifying a sparse subnetwork with high generative performance; i.e., a ``strong lottery ticket''. By communicating binary masks in a stochastic manner, PRISM minimizes communication overhead. This approach, combined with the utilization of maximum mean discrepancy (MMD) loss and a mask-aware dynamic moving average aggregation method (MADA) on the server side, facilitates stable and strong generative capabilities by mitigating local divergence in FL scenarios. Moreover, thanks to its sparsifying characteristic, PRISM yields a lightweight model without extra pruning or quantization, making it ideal for environments such as edge devices. Experiments on MNIST, FMNIST, CelebA, and CIFAR10 demonstrate that PRISM outperforms existing methods, while maintaining privacy with minimal communication costs. PRISM is the first to successfully generate images under challenging non-IID and privacy-preserving FL environments on complex datasets, where previous methods have struggled.",
+      "matchedBy": [
+        "papers with code",
+        "Image Classification",
+        "Stable Diffusion",
+        "serving",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2412.02071",
       "title": "Progress-Aware Video Frame Captioning",
       "authors": "Zihui Xue, Joungbin An, Xitong Yang, Kristen Grauman",
@@ -50285,38 +50404,6 @@
       "categories": [
         "Serving",
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2503.00359",
-      "title": "Solving Instance Detection from an Open-World Perspective",
-      "authors": "Qianqian Shen, Yunhan Zhao, Nahyun Kwon, Jeeeun Kim, Yanan Li, Shu Kong",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2503.00359",
-      "source": "https://paperswithcode.co/paper/2503.00359",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2503.00359.jpg",
-      "firstSeenAt": "2026-07-07T00:19:32.927Z",
-      "summary": "Instance detection (InsDet) aims to localize specific object instances within a novel scene imagery based on given visual references. Technically, it requires proposal detection to identify all possible object instances, followed by instance-level matching to pinpoint the ones of interest. Its open-world nature supports its broad applications from robotics to AR/VR but also presents significant challenges: methods must generalize to unknown testing data distributions because (1) the testing scene imagery is unseen during training, and (2) there are domain gaps between visual references and detected proposals. Existing methods tackle these challenges by synthesizing diverse training examples or utilizing off-the-shelf foundation models (FMs). However, they only partially capitalize the available open-world information. In contrast, we approach InsDet from an Open-World perspective, introducing our method IDOW. We find that, while pretrained FMs yield high recall in instance detection, they are not specifically optimized for instance-level feature matching. Therefore, we adapt pretrained FMs for improved instance-level matching using open-world data. Our approach incorporates metric learning along with novel data augmentations, which sample distractors as negative examples and synthesize novel-view instances to enrich the visual references. Extensive experiments demonstrate that our method significantly outperforms prior works, achieving >10 AP over previous results on two recently released challenging benchmark datasets in both conventional and novel instance detection settings.",
-      "matchedBy": [
-        "papers with code",
-        "CLIP",
-        "DINO",
-        "Faster R-CNN",
-        "LLaVa",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -56272,6 +56359,37 @@
       ]
     },
     {
+      "id": "2606.04032",
+      "title": "Do Transformers Need Three Projections? Systematic Study of QKV Variants",
+      "authors": "Ali Kayyam, Anusha Madan Gopal, M Anthony Lewis",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2606.04032",
+      "source": "https://paperswithcode.co/paper/2606.04032",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.04032.jpg",
+      "firstSeenAt": "2026-07-07T00:19:32.927Z",
+      "summary": "Transformers have become the standard solution for various AI tasks, with the query, key, and value (QKV) attention formulation playing a central role. However, the individual contribution of these three projections and the impact of omitting some remain poorly understood. We systematically evaluate three projection sharing constraints: a) Q-K=V (shared key-value), b) Q=K-V (shared query-key), and c) Q=K=V (single projection). The last two variants produce symmetric attention maps; to address this, we also explore asymmetric attention via 2D positional encodings. Through experiments spanning synthetic tasks, vision (MNIST, CIFAR, TinyImageNet, anomaly), and language modeling (300M and 1.2B parameter models on 10B tokens), we discovered that our transformers perform on par or occasionally better than the QKV transformer. In language modeling, Q-K=V projection sharing achieves 50\\% KV cache reduction with only 3.1% perplexity degradation. Crucially, projection sharing is complementary to head sharing (GQA/MQA): combining Q-K=V with GQA-4 yields 87.5% cache reduction, while Q-K=V + MQA achieves 96.9%—enabling practical on-device inference. We further show that Q--K=V preserves quality because keys and values can share representational space, whereas Q=K-V breaks attention directionality. Our results establish projection sharing as a new optimization axis for memory-efficient transformers, especially for edge deployment.",
+      "matchedBy": [
+        "papers with code",
+        "serving",
+        "vision/multimodal",
+        "language modeling",
+        "Grouped-Query Attention"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2508.12330",
       "title": "DoppDrive: Doppler-Driven Temporal Aggregation for Improved Radar Object Detection",
       "authors": "Yuval Haitman, Oded Bialer",
@@ -60333,35 +60451,6 @@
       ]
     },
     {
-      "id": "2509.15929",
-      "title": "Improving Monte Carlo Tree Search for Symbolic Regression",
-      "authors": "Zhengyao Huang, Daniel Huang, Tiannan Xiao, Dina Ma, Zhenyu Ming, Hao Shi, Yuanhui Wen",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2509.15929",
-      "source": "https://paperswithcode.co/paper/2509.15929",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2509.15929.jpg",
-      "firstSeenAt": "2026-07-04T01:13:14.705Z",
-      "summary": "Symbolic regression aims to discover concise, interpretable mathematical expressions that satisfy desired objectives, such as fitting data, posing a highly combinatorial optimization problem. While genetic programming has been the dominant approach, recent efforts have explored reinforcement learning methods for improving search efficiency. Monte Carlo Tree Search (MCTS), with its ability to balance exploration and exploitation through guided search, has emerged as a promising technique for symbolic expression discovery. However, its traditional bandit strategies and sequential symbol construction often limit performance. In this work, we propose an improved MCTS framework for symbolic regression that addresses these limitations through two key innovations: (1) an extreme bandit allocation strategy tailored for identifying globally optimal expressions, with finite-time performance guarantees under polynomial reward decay assumptions; and (2) evolution-inspired state-jumping actions such as mutation and crossover, which enable non-local transitions to promising regions of the search space. These state-jumping actions also reshape the reward landscape during the search process, improving both robustness and efficiency. We conduct a thorough numerical study to the impact of these improvements and benchmark our approach against existing symbolic regression methods on a variety of datasets, including both ground-truth and black-box datasets. Our approach achieves competitive performance with state-of-the-art libraries in terms of recovery rate, attains favorable positions on the Pareto frontier of accuracy versus model complexity.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2511.22777",
       "title": "Improving Robotic Manipulation Robustness Via NICE Scene Surgery",
       "authors": "Pakdamansavoji, Sajjad, Pourkeshavarz, Mozhgan, Sigal, Adam, Li, Zhiyuan, Yang, Rui Heng, Rasouli, Amir",
@@ -61958,6 +62047,32 @@
       "categories": [
         "Language Modeling",
         "Serving"
+      ]
+    },
+    {
+      "id": "2410.08850",
+      "title": "Learning to Stop: Deep Learning for Mean Field Optimal Stopping",
+      "authors": "Lorenzo Magnino, Yuchen Zhu, Mathieu Lauriere",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2410.08850",
+      "source": "https://paperswithcode.co/paper/2410.08850",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2410.08850.jpg",
+      "firstSeenAt": "2026-07-23T01:08:26.210Z",
+      "summary": "Optimal stopping is a fundamental problem in optimization with applications in risk management, finance, robotics, and machine learning. We extend the standard framework to a multi-agent setting, named multi-agent optimal stopping (MAOS), where agents cooperate to make optimal stopping decisions in a finite-space, discrete-time environment. Since solving MAOS becomes computationally prohibitive as the number of agents is very large, we study the mean-field optimal stopping (MFOS) problem, obtained as the number of agents tends to infinity. We establish that MFOS provides a good approximation to MAOS and prove a dynamic programming principle (DPP) based on mean-field control theory. We then propose two deep learning approaches: one that learns optimal stopping decisions by simulating full trajectories and another that leverages the DPP to compute the value function and to learn the optimal stopping rule using backward induction. Both methods train neural networks to approximate optimal stopping policies. We demonstrate the effectiveness and the scalability of our work through numerical experiments on 6 different problems in spatial dimension up to 300. To the best of our knowledge, this is the first work to formalize and computationally solve MFOS in discrete time and finite space, opening new directions for scalable MAOS methods.",
+      "matchedBy": [
+        "papers with code",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
       ]
     },
     {
@@ -65302,36 +65417,6 @@
         "Vision/Multimodal",
         "Language Modeling",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2503.08085",
-      "title": "PRISM: Privacy-Preserving Improved Stochastic Masking for Federated Generative Models",
-      "authors": "Kyeongkook Seo, Dong-Jun Han, Jaejun Yoo",
-      "org": "",
-      "published": "ICLR 2025",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2503.08085",
-      "source": "https://paperswithcode.co/paper/2503.08085",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2503.08085.jpg",
-      "firstSeenAt": "2026-06-18T01:40:50.232Z",
-      "summary": "Despite recent advancements in federated learning (FL), the integration of generative models into FL has been limited due to challenges such as high communication costs and unstable training in heterogeneous data environments. To address these issues, we propose PRISM, a FL framework tailored for generative models that ensures (i) stable performance in heterogeneous data distributions and (ii) resource efficiency in terms of communication cost and final model size. The key of our method is to search for an optimal stochastic binary mask for a random network rather than updating the model weights, identifying a sparse subnetwork with high generative performance; i.e., a ``strong lottery ticket''. By communicating binary masks in a stochastic manner, PRISM minimizes communication overhead. This approach, combined with the utilization of maximum mean discrepancy (MMD) loss and a mask-aware dynamic moving average aggregation method (MADA) on the server side, facilitates stable and strong generative capabilities by mitigating local divergence in FL scenarios. Moreover, thanks to its sparsifying characteristic, PRISM yields a lightweight model without extra pruning or quantization, making it ideal for environments such as edge devices. Experiments on MNIST, FMNIST, CelebA, and CIFAR10 demonstrate that PRISM outperforms existing methods, while maintaining privacy with minimal communication costs. PRISM is the first to successfully generate images under challenging non-IID and privacy-preserving FL environments on complex datasets, where previous methods have struggled.",
-      "matchedBy": [
-        "papers with code",
-        "Image Classification",
-        "Stable Diffusion",
-        "serving",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving",
-      "categories": [
-        "Serving",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -80225,6 +80310,35 @@
       ]
     },
     {
+      "id": "2509.13574",
+      "title": "Dense-Jump Flow Matching with Non-Uniform Time Scheduling for Robotic Policies: Mitigating Multi-Step Inference Degradation",
+      "authors": "Chen, Zidong, Guo, Zhihao, Wang, Peng, Egbe, ThankGod Itua, Lyu, Yan, Qian, Chenghao",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2509.13574",
+      "source": "https://paperswithcode.co/paper/2509.13574",
+      "code": "https://github.com/DenseJumpFM/DenseJump_FlowMatching}",
+      "project": "",
+      "thumbnail": "./thumbs/2509.13574.jpg",
+      "firstSeenAt": "2026-07-23T01:08:26.210Z",
+      "summary": "Flow matching has emerged as a competitive framework for learning high-quality generative policies in robotics; however, we find that generalisation arises and saturates early along the flow trajectory, in accordance with recent findings in the literature. We further observe that increasing the number of Euler integration steps during inference counter-intuitively and universally degrades policy performance. We attribute this to (i) additional, uniformly spaced integration steps oversample the late-time region, thereby constraining actions towards the training trajectories and reducing generalisation; and (ii) the learned velocity field becoming non-Lipschitz as integration time approaches 1, causing instability. To address these issues, we propose a novel policy that utilises non-uniform time scheduling (e.g., U-shaped) during training, which emphasises both early and late temporal stages to regularise policy training, and a dense-jump integration schedule at inference, which uses a single-step integration to replace the multi-step integration beyond a jump point, to avoid unstable areas around 1. Essentially, our policy is an efficient one-step learner that still pushes forward performance through multi-step integration, yielding up to 23.7% performance gains over state-of-the-art baselines across diverse robotic tasks. Code is anonymously open-sourced at url{https://github.com/DenseJumpFM/DenseJump_FlowMatching}",
+      "matchedBy": [
+        "papers with code",
+        "ACT",
+        "Diffusion Policy",
+        "Flow matching",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
+    },
+    {
       "id": "pwc-96609",
       "title": "Depth Completion by Rescaling Monocular Depth Estimates Via Compressed Sensing",
       "authors": "Zhong, Daoxin, Li, Jun, Thadimari, Yeshas, Chuah, Meng Yee (Michael)",
@@ -81023,7 +81137,8 @@
         "papers with code",
         "Language Modeling",
         "language modeling",
-        "frontier training"
+        "frontier training",
+        "Agent Skills"
       ],
       "sources": [
         "paperswithcode"
@@ -81453,37 +81568,6 @@
       "category": "Frontier Training",
       "categories": [
         "Frontier Training",
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2606.04032",
-      "title": "Do Transformers Need Three Projections? Systematic Study of QKV Variants",
-      "authors": "Ali Kayyam, Anusha Madan Gopal, M Anthony Lewis",
-      "org": "",
-      "published": "ICML 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2606.04032",
-      "source": "https://paperswithcode.co/paper/2606.04032",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2606.04032.jpg",
-      "firstSeenAt": "2026-07-07T00:19:32.927Z",
-      "summary": "Transformers have become the standard solution for various AI tasks, with the query, key, and value (QKV) attention formulation playing a central role. However, the individual contribution of these three projections and the impact of omitting some remain poorly understood. We systematically evaluate three projection sharing constraints: a) Q-K=V (shared key-value), b) Q=K-V (shared query-key), and c) Q=K=V (single projection). The last two variants produce symmetric attention maps; to address this, we also explore asymmetric attention via 2D positional encodings. Through experiments spanning synthetic tasks, vision (MNIST, CIFAR, TinyImageNet, anomaly), and language modeling (300M and 1.2B parameter models on 10B tokens), we discovered that our transformers perform on par or occasionally better than the QKV transformer. In language modeling, Q-K=V projection sharing achieves 50\\% KV cache reduction with only 3.1% perplexity degradation. Crucially, projection sharing is complementary to head sharing (GQA/MQA): combining Q-K=V with GQA-4 yields 87.5% cache reduction, while Q-K=V + MQA achieves 96.9%—enabling practical on-device inference. We further show that Q--K=V preserves quality because keys and values can share representational space, whereas Q=K-V breaks attention directionality. Our results establish projection sharing as a new optimization axis for memory-efficient transformers, especially for edge deployment.",
-      "matchedBy": [
-        "papers with code",
-        "serving",
-        "vision/multimodal",
-        "language modeling",
-        "Grouped-Query Attention"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving",
-      "categories": [
-        "Serving",
-        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -91679,6 +91763,32 @@
       ]
     },
     {
+      "id": "2512.17560",
+      "title": "Learning-Based Safety-Aware Task Scheduling for Efficient Human-Robot Collaboration",
+      "authors": "Faroni, Marco, Spanò, Alessio, Zanchettin, Andrea Maria, Rocco, Paolo",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2512.17560",
+      "source": "https://paperswithcode.co/paper/2512.17560",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.17560.jpg",
+      "firstSeenAt": "2026-07-23T01:08:26.210Z",
+      "summary": "Ensuring human safety in collaborative robotics can compromise efficiency because traditional safety measures increase robot cycle time when human interaction is frequent. This paper proposes a safety-aware approach to mitigate efficiency losses without assuming prior knowledge of safety logic. Using a deep-learning model, the robot learns the relationship between system state and safety-induced speed reductions based on execution data. Our framework does not explicitly predict human motions but directly models the interaction effects on robot speed, simplifying implementation and enhancing generalizability to different safety logics. At runtime, the learned model optimizes task selection to minimize cycle time while adhering to safety requirements. Experiments on a pick-and-packaging scenario demonstrated significant reductions in cycle times.",
+      "matchedBy": [
+        "papers with code",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
+    },
+    {
       "id": "2506.15076",
       "title": "Learning-Time Encoding Shapes Unlearning in LLMs",
       "authors": "Ruihan Wu, Konstantin Garov, Kamalika Chaudhuri",
@@ -97701,6 +97811,37 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2510.09267",
+      "title": "Placeit! a Framework for Learning Robot Object Placement Skills",
+      "authors": "Ferrad, Amina, Huber, Johann, Hélénon, François, Gleyze, Julien, Khoramshahi, Mahdi, Doncieux, Stéphane",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2510.09267",
+      "source": "https://paperswithcode.co/paper/2510.09267",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.09267.jpg",
+      "firstSeenAt": "2026-07-23T01:08:26.210Z",
+      "summary": "Robotics research has made significant strides in learning, yet mastering basic skills like object placement remains a fundamental challenge. A key bottleneck is the acquisition of large-scale, high-quality data, which is often a manual and laborious process. Inspired by Graspit!, a foundational work that used simulation to automatically generate dexterous grasp poses, we introduce Placeit!, an evolutionary-computation framework for generating valid placement positions for rigid objects. Placeit! is highly versatile, supporting tasks from placing objects on tables to stacking and inserting them. Our experiments show that by leveraging quality-diversity optimization, Placeit! significantly outperforms state-of-the-art methods across all scenarios for generating diverse valid poses. A pick&place pipeline built on our framework achieved a 90% success rate over 120 real-world deployments. This work positions Placeit! as a powerful tool for open-environment pick-and-place tasks and as a valuable engine for generating the data needed to train simulation-based foundation models in robotics.",
+      "matchedBy": [
+        "papers with code",
+        "Agent Skills",
+        "robotics",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -105425,6 +105566,39 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2605.07182",
+      "title": "Star Elastic: Many-in-One Reasoning LLMs with Efficient Budget Control",
+      "authors": "Ali Taghibakhshi, Ruisi Cai, Saurav Muralidharan, Sharath Turuvekere Sreenivas, Ameya Sunil Mahabaleshwarkar, Marcin Chochowski, Akhiad Bercovich, Ran Zilberstein, Ran El-Yaniv, Yonatan Geifman, Daniel Korzekwa, Yoshi Suhara, Oluwatobi Olabiyi, Ashwath Aithal, Nima Tajbakhsh, Pavlo Molchanov",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2605.07182",
+      "source": "https://paperswithcode.co/paper/2605.07182",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.07182.jpg",
+      "firstSeenAt": "2026-07-23T01:08:26.210Z",
+      "summary": "Training a family of large language models (LLMs), either from scratch or via iterative compression, is prohibitively expensive and inefficient, requiring separate training runs for each model in the family. In this paper, we introduce Star Elastic, a novel LLM post-training method that adds N nested submodels to a given parent reasoning model using the compute of one run (Nx savings) via a single post-training job. Beyond reducing training costs, Star Elastic also addresses a fundamental limitation in efficient reasoning: the rigidity of static architectures, which forces the allocation of constant resources regardless of token difficulty. By unlocking elastic budget control, Star Elastic enables a novel approach that uses different submodels for each reasoning phase (thinking and answering). Star Elastic supports (1) nesting along the SSM, embedding channel, MoE and FFN axes, (2) learning nested submodels via an end-to-end trainable router, and (3) curriculum-based knowledge distillation. We apply Star Elastic to the NVIDIA Nemotron Nano models; in particular, we demonstrate its effectiveness on hybrid MoE architectures with Nemotron Nano v3 (30B/3.6A), generating 23B (2.8A) and 12B (2.0A) variants with 160B training tokens. For Nemotron Nano v2 (12B), we produce 9B and 6B nested models using only 110B training tokens, achieving a 360x reduction versus training from scratch and a 7x reduction over state-of-the-art compression methods. All nested models match or outperform independently trained baselines of comparable size. Crucially, elastic budget control advances the accuracy--latency Pareto frontier, achieving up to 16% higher accuracy and 1.9x lower latency via dynamic per-phase model selection.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Reasoning",
+        "Chain-of-Thought (CoT)",
+        "Embedding",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Serving"
       ]
     },
     {
@@ -184519,7 +184693,7 @@
       "source": "https://arxiv.org/abs/2607.18541v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.18541.jpg",
       "firstSeenAt": "2026-07-23T00:12:42.402Z",
       "summary": "The ACEAPEX line of work established a lossless LZ77 format whose back-references are absolute output positions, giving parallel, compressed-resident GPU decode with sub-millisecond region seek. What it did not establish is what governs the decode throughput of such a format, or how to improve it. This paper answers both. Through controlled ablations on an NVIDIA H100 we show that decode throughput is governed not by occupancy, compute, address scatter, or launch parallelism, but by work granularity: throughput is a function of the average match length, because a short match leaves most lanes of a cooperating warp idle. A synthetic copy kernel confirms a 3.5x throughput span (212 to 744 GB/s) as average match length grows from 32 to 1024 bytes. Real data sit at the low end (mean match length 6.5 on enwik9, 10.1 on FASTQ). We then show that this mechanism yields a practical, encode-side lever: raising the minimum match length by distance class (6/8/10/12 to 12/16/24/32) improves both compression ratio and decode throughput simultaneously on all eight tested datasets, with no exceptions and no change to the decode kernel. FASTQ decode rises from 142.6 to 178.6 GB/s while ratio improves 1.8%; enwik9 throughput rises 78%. This is not a trade-off: both gains follow from one cause, removing short matches whose far offsets cost more entropy than they save. All figures are bit-perfect (FNV on GPU paths, byte compare on CPU paths) and git-verifiable. Scope is explicit: figures are match-phase, device-resident; entropy and host transfer are outside the timer; seek is read/block-level, not coordinate-level; and we do not claim to exceed the hardware bandwidth ceiling.",
       "matchedBy": [
