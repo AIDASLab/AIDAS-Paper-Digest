@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-24T00:09:46.052Z",
+  "generatedAt": "2026-07-24T01:03:56.919Z",
   "sourceStats": {
-    "seed": 6475,
+    "seed": 6596,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 19,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 6596
+    "total": 6597
   },
   "papers": [
     {
@@ -31830,6 +31830,35 @@
       ]
     },
     {
+      "id": "2503.18402",
+      "title": "DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds",
+      "authors": "Youyu Chen, Junjun Jiang, Kui Jiang, Xiao Tang, Zhihao Li, Xianming Liu, Yinyu Nie",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 72,
+      "paper": "https://arxiv.org/abs/2503.18402",
+      "source": "https://paperswithcode.co/paper/2503.18402",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.18402.jpg",
+      "firstSeenAt": "2026-06-29T01:53:28.127Z",
+      "summary": "3D Gaussian Splatting (3DGS) renders pixels by rasterizing Gaussian primitives, where the rendering resolution and the primitive number, concluded as the optimization complexity, dominate the time cost in primitive optimization. In this paper, we propose DashGaussian, a scheduling scheme over the optimization complexity of 3DGS that strips redundant complexity to accelerate 3DGS optimization. Specifically, we formulate 3DGS optimization as progressively fitting 3DGS to higher levels of frequency components in the training views, and propose a dynamic rendering resolution scheme that largely reduces the optimization complexity based on this formulation. Besides, we argue that a specific rendering resolution should cooperate with a proper primitive number for a better balance between computing redundancy and fitting quality, where we schedule the growth of the primitives to synchronize with the rendering resolution. Extensive experiments show that our method accelerates the optimization of various 3DGS backbones by 45.7% on average while preserving the rendering quality.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "Novel View Synthesis"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2412.11520",
       "title": "EditSplat: Multi-View Fusion and Attention-Guided Optimization for View-Consistent 3D Scene Editing with 3D Gaussian Splatting",
       "authors": "Dong In Lee, Hyeongcheol Park, Jiyoung Seo, Eunbyung Park, Hyunje Park, Ha Dam Baek, Sangheon Shin, Sangmin Kim, Sangpil Kim",
@@ -32415,6 +32444,36 @@
       ]
     },
     {
+      "id": "2412.20522",
+      "title": "MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks",
+      "authors": "Yifei Liu, Zhihang Zhong, Yifan Zhan, Sheng Xu, Xiao Sun",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 71,
+      "paper": "https://arxiv.org/abs/2412.20522",
+      "source": "https://paperswithcode.co/paper/2412.20522",
+      "code": "https://github.com/kaikai23/MaskGaussian",
+      "project": "",
+      "thumbnail": "./thumbs/2412.20522.jpg",
+      "firstSeenAt": "2026-07-24T01:03:56.919Z",
+      "summary": "While 3D Gaussian Splatting (3DGS) has demonstrated remarkable performance in novel view synthesis and real-time rendering, the high memory consumption due to the use of millions of Gaussians limits its practicality. To mitigate this issue, improvements have been made by pruning unnecessary Gaussians, either through a hand-crafted criterion or by using learned masks. However, these methods deterministically remove Gaussians based on a snapshot of the pruning moment, leading to sub-optimized reconstruction performance from a long-term perspective. To address this issue, we introduce MaskGaussian, which models Gaussians as probabilistic entities rather than permanently removing them, and utilize them according to their probability of existence. To achieve this, we propose a masked-rasterization technique that enables unused yet probabilistically existing Gaussians to receive gradients, allowing for dynamic assessment of their contribution to the evolving scene and adjustment of their probability of existence. Hence, the importance of Gaussians iteratively changes and the pruned Gaussians are selected diversely. Extensive experiments demonstrate the superiority of the proposed method in achieving better rendering quality with fewer Gaussians than previous pruning methods, pruning over 60% of Gaussians on average with only a 0.02 PSNR decline. Our code can be found at: https://github.com/kaikai23/MaskGaussian",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Novel View Synthesis",
+        "Gaussian splatting",
+        "Pruning",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2507.06134",
       "title": "OpenAgentSafety: A Comprehensive Framework For Evaluating Real-World AI Agent Safety",
       "authors": "Sanidhya Vijayvargiya, Aditya Bharat Soni, Xuhui Zhou, Zora Zhiruo Wang, Nouha Dziri, Graham Neubig, Maarten Sap",
@@ -32568,34 +32627,6 @@
       "categories": [
         "Language Modeling",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2503.18402",
-      "title": "DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds",
-      "authors": "Youyu Chen, Junjun Jiang, Kui Jiang, Xiao Tang, Zhihao Li, Xianming Liu, Yinyu Nie",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 70,
-      "paper": "https://arxiv.org/abs/2503.18402",
-      "source": "https://paperswithcode.co/paper/2503.18402",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2503.18402.jpg",
-      "firstSeenAt": "2026-06-29T01:53:28.127Z",
-      "summary": "3D Gaussian Splatting (3DGS) renders pixels by rasterizing Gaussian primitives, where the rendering resolution and the primitive number, concluded as the optimization complexity, dominate the time cost in primitive optimization. In this paper, we propose DashGaussian, a scheduling scheme over the optimization complexity of 3DGS that strips redundant complexity to accelerate 3DGS optimization. Specifically, we formulate 3DGS optimization as progressively fitting 3DGS to higher levels of frequency components in the training views, and propose a dynamic rendering resolution scheme that largely reduces the optimization complexity based on this formulation. Besides, we argue that a specific rendering resolution should cooperate with a proper primitive number for a better balance between computing redundancy and fitting quality, where we schedule the growth of the primitives to synchronize with the rendering resolution. Extensive experiments show that our method accelerates the optimization of various 3DGS backbones by 45.7% on average while preserving the rendering quality.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Gaussian splatting",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
       ]
     },
     {
@@ -35732,6 +35763,35 @@
       ]
     },
     {
+      "id": "2504.20378",
+      "title": "Sparse2DGS: Geometry-Prioritized Gaussian Splatting for Surface Reconstruction from Sparse Views",
+      "authors": "Jiang Wu, Rui Li, Yu Zhu, Rong Guo, Jinqiu Sun, Yanning Zhang",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 66,
+      "paper": "https://arxiv.org/abs/2504.20378",
+      "source": "https://paperswithcode.co/paper/2504.20378",
+      "code": "https://github.com/Wuuu3511/Sparse2DGS",
+      "project": "",
+      "thumbnail": "./thumbs/2504.20378.jpg",
+      "firstSeenAt": "2026-07-02T01:35:11.234Z",
+      "summary": "We present a Gaussian Splatting method for surface reconstruction using sparse input views. Previous methods relying on dense views struggle with extremely sparse Structure-from-Motion points for initialization. While learning-based Multi-view Stereo (MVS) provides dense 3D points, directly combining it with Gaussian Splatting leads to suboptimal results due to the ill-posed nature of sparse-view geometric optimization. We propose Sparse2DGS, an MVS-initialized Gaussian Splatting pipeline for complete and accurate reconstruction. Our key insight is to incorporate the geometric-prioritized enhancement schemes, allowing for direct and robust geometric learning under ill-posed conditions. Sparse2DGS outperforms existing methods by notable margins, with 1.13 Chamfer Distance error compared to 2DGS (2.81) on the DTU dataset using 3 views. Meanwhile, our method is 2x faster than NeRF-based fine-tuning approach. Code is available at https://github.com/Wuuu3511/Sparse2DGS.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "Novel View Synthesis"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2406.04328",
       "title": "The Brain's Bitter Lesson: Scaling Speech Decoding With Self-Supervised Learning",
       "authors": "Dulhan Jayalath, Gilad Landau, Brendan Shillingford, Mark Woolrich, Oiwi Parker Jones",
@@ -37152,35 +37212,6 @@
       "categories": [
         "Language Modeling",
         "Robotics",
-        "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2504.20378",
-      "title": "Sparse2DGS: Geometry-Prioritized Gaussian Splatting for Surface Reconstruction from Sparse Views",
-      "authors": "Jiang Wu, Rui Li, Yu Zhu, Rong Guo, Jinqiu Sun, Yanning Zhang",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 65,
-      "paper": "https://arxiv.org/abs/2504.20378",
-      "source": "https://paperswithcode.co/paper/2504.20378",
-      "code": "https://github.com/Wuuu3511/Sparse2DGS",
-      "project": "",
-      "thumbnail": "./thumbs/2504.20378.jpg",
-      "firstSeenAt": "2026-07-02T01:35:11.234Z",
-      "summary": "We present a Gaussian Splatting method for surface reconstruction using sparse input views. Previous methods relying on dense views struggle with extremely sparse Structure-from-Motion points for initialization. While learning-based Multi-view Stereo (MVS) provides dense 3D points, directly combining it with Gaussian Splatting leads to suboptimal results due to the ill-posed nature of sparse-view geometric optimization. We propose Sparse2DGS, an MVS-initialized Gaussian Splatting pipeline for complete and accurate reconstruction. Our key insight is to incorporate the geometric-prioritized enhancement schemes, allowing for direct and robust geometric learning under ill-posed conditions. Sparse2DGS outperforms existing methods by notable margins, with 1.13 Chamfer Distance error compared to 2DGS (2.81) on the DTU dataset using 3 views. Meanwhile, our method is 2x faster than NeRF-based fine-tuning approach. Code is available at https://github.com/Wuuu3511/Sparse2DGS.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Gaussian splatting",
-        "vision/multimodal",
-        "Novel View Synthesis"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
         "Vision/Multimodal"
       ]
     },
@@ -41928,6 +41959,38 @@
       "category": "Serving",
       "categories": [
         "Serving",
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2504.05499",
+      "title": "Few-shot Personalized Scanpath Prediction",
+      "authors": "Ruoyu Xue, Jingyi Xu, Sounak Mondal, Hieu Le, Greg Zelinsky, Minh Hoai, Dimitris Samaras",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2504.05499",
+      "source": "https://paperswithcode.co/paper/2504.05499",
+      "code": "https://github.com/cvlab-stonybrook/few-shot-scanpath",
+      "project": "",
+      "thumbnail": "./thumbs/2504.05499.jpg",
+      "firstSeenAt": "2026-06-23T01:33:39.075Z",
+      "summary": "A personalized model for scanpath prediction provides insights into the visual preferences and attention patterns of individual subjects. However, existing methods for training scanpath prediction models are data-intensive and cannot be effectively personalized to new individuals with only a few available examples. In this paper, we propose few-shot personalized scanpath prediction task (FS-PSP) and a novel method to address it, which aims to predict scanpaths for an unseen subject using minimal support data of that subject's scanpath behavior. The key to our method's adaptability is the Subject-Embedding Network (SE-Net), specifically designed to capture unique, individualized representations for each subject's scanpaths. SE-Net generates subject embeddings that effectively distinguish between subjects while minimizing variability among scanpaths from the same individual. The personalized scanpath prediction model is then conditioned on these subject embeddings to produce accurate, personalized results. Experiments on multiple eye-tracking datasets demonstrate that our method excels in FS-PSP settings and does not require any fine-tuning steps at test time. Code is available at: https://github.com/cvlab-stonybrook/few-shot-scanpath",
+      "matchedBy": [
+        "papers with code",
+        "Deformable Attention",
+        "Residual Block",
+        "ResNet",
+        "Skip connection",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
         "Vision/Multimodal"
       ]
     },
@@ -47241,38 +47304,6 @@
         "Robotics",
         "Vision/Multimodal",
         "Serving"
-      ]
-    },
-    {
-      "id": "2504.05499",
-      "title": "Few-shot Personalized Scanpath Prediction",
-      "authors": "Ruoyu Xue, Jingyi Xu, Sounak Mondal, Hieu Le, Greg Zelinsky, Minh Hoai, Dimitris Samaras",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2504.05499",
-      "source": "https://paperswithcode.co/paper/2504.05499",
-      "code": "https://github.com/cvlab-stonybrook/few-shot-scanpath",
-      "project": "",
-      "thumbnail": "./thumbs/2504.05499.jpg",
-      "firstSeenAt": "2026-06-23T01:33:39.075Z",
-      "summary": "A personalized model for scanpath prediction provides insights into the visual preferences and attention patterns of individual subjects. However, existing methods for training scanpath prediction models are data-intensive and cannot be effectively personalized to new individuals with only a few available examples. In this paper, we propose few-shot personalized scanpath prediction task (FS-PSP) and a novel method to address it, which aims to predict scanpaths for an unseen subject using minimal support data of that subject's scanpath behavior. The key to our method's adaptability is the Subject-Embedding Network (SE-Net), specifically designed to capture unique, individualized representations for each subject's scanpaths. SE-Net generates subject embeddings that effectively distinguish between subjects while minimizing variability among scanpaths from the same individual. The personalized scanpath prediction model is then conditioned on these subject embeddings to produce accurate, personalized results. Experiments on multiple eye-tracking datasets demonstrate that our method excels in FS-PSP settings and does not require any fine-tuning steps at test time. Code is available at: https://github.com/cvlab-stonybrook/few-shot-scanpath",
-      "matchedBy": [
-        "papers with code",
-        "Deformable Attention",
-        "Residual Block",
-        "ResNet",
-        "Skip connection",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal"
       ]
     },
     {
