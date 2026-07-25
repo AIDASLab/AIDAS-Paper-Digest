@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-25T00:14:12.039Z",
+  "generatedAt": "2026-07-25T01:07:08.853Z",
   "sourceStats": {
-    "seed": 6597,
+    "seed": 6739,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 22,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 6739
+    "total": 6752
   },
   "papers": [
     {
@@ -38256,6 +38256,39 @@
       ]
     },
     {
+      "id": "2510.08510",
+      "title": "To Sink or Not to Sink: Visual Information Pathways in Large Vision-Language Models",
+      "authors": "Jiayun Luo, Wan-Cyuan Fan, Lyuyang Wang, Xiangteng He, Tanzila Rahman, Purang Abolmaesumi, Leonid Sigal",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2510.08510",
+      "source": "https://paperswithcode.co/paper/2510.08510",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.08510.jpg",
+      "firstSeenAt": "2026-06-18T01:40:50.232Z",
+      "summary": "Large Vision Language Models (LVLMs) have recently emerged as powerful architectures capable of understanding and reasoning over both visual and textual information. These models typically rely on two key components: a Vision Transformer (ViT) and a Large Language Model (LLM). ViT encodes visual content into a sequence of image tokens and serves as the perceptual front-end -- the eyes of the model. In contrast, the LLM interprets these tokens to perform high-level reasoning, generates responses, and functions as the cognitive core -- the brain of the model. However, it remains unclear which visual tokens contribute most significantly to understanding and reasoning, and how effectively these signals are propagated from ViT to the LLM. While most existing works have focused on identifying attention sinks, low-semantic tokens receiving disproportionately high attention, within the LLM, we shift the focus to the vision encoder by identifying a class of high-norm visual tokens from ViT, referred to as ViT attention sinks -- a problem that has been rarely studied but is indeed very important for LVLMs. Our findings show that these ViT sinks encapsulate high-level semantic concepts from images, allowing the LLM to perform more effective understanding and reasoning. Despite their importance, these sink tokens are often overlooked in existing LVLM architectures. To explore their contribution, we present both qualitative and quantitative analyses of the information embedded in these sink tokens. We also propose both training-free and training-based approaches to better leverage how this information is interpreted by the LLM, and to what extent. By explicitly utilizing these tokens, we demonstrate substantial improvements across a range of LVLMs and visual reasoning tasks, including but not limited to mathematical problem solving, logical inference, and geometric understanding, highlighting the untapped potential of ViT attention sinks in enhancing visual reasoning.",
+      "matchedBy": [
+        "papers with code",
+        "Image Classification",
+        "Image Understanding",
+        "Language Modeling",
+        "CLIP",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2506.05280",
       "title": "Unifying Appearance Codes and Bilateral Grids for Driving Scene Gaussian Splatting",
       "authors": "Nan Wang, Lixing Xiao, Yuantao Chen, Weiqing Xiao, Pierre Merriaux, Lei Lei, Ziyang Yan, Saining Zhang, Shaocong Xu, chongjie Ye, Bohan Li, Zhaoxi Chen, Tianfan Xue, Hao Zhao",
@@ -40009,6 +40042,39 @@
       ]
     },
     {
+      "id": "2505.23725",
+      "title": "MuLoCo: Muon is a Practical Inner Optimizer for DiLoCo",
+      "authors": "Benjamin Thérien, Xiaolong Huang, Aaron Defazio, Irina Rish, Eugene Belilovsky",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2505.23725",
+      "source": "https://paperswithcode.co/paper/2505.23725",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.23725.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "DiLoCo is a powerful framework for training large language models (LLMs), enabling larger optimal batch sizes and increased accelerator utilization under networking constraints. However, DiLoCo's performance has been shown to degrade as the number of workers (K) increases (Charles et al., 2025). In this work, we posit that a related but often overlooked factor in DiLoCo’s behavior is the choice of inner optimizer, which shapes the pseudogradient used by the outer optimizer. Given the recent success of Muon relative to AdamW for data parallel (DP) training, we examine how Muon's normalized optimizer steps can affect the pseudogradient's quality. We find that, relative to AdamW, Muon yields more *directionally correct* pseudogradients as the number of workers ($K$) increases. In our experiments pre-training language models, we conduct extensive hyperparameter tuning across 150M, 416M, 914M, 1.76B, and 3.1B models for DiLoCo, MuLoCo, AdamW DP, and Muon DP. Consistently across all scales, we find that with $K\\geq1$ workers, MuLoCo (Muon inner optimizer DiLoCo) achieves superior performance to DiLoCo in absolute terms and for $K>2$ it outperforms DiLoCo relative to their data parallel baselines, while being compatible with quantization, streaming, and long synchronization intervals. At $K=1$, we find that MuLoCo can even outperform the data-parallel gold standard while having larger critical batch sizes and faster training times as a result.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "AdamW",
+        "Large language model (LLM)",
+        "Muon",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Serving"
+      ]
+    },
+    {
       "id": "2505.20925",
       "title": "Multi-objective Large Language Model Alignment with Hierarchical Experts",
       "authors": "Zhuo Li, Guodong DU, Weiyang Guo, Yigeng Zhou, Xiucheng Li, Wenya Wang, Fangming Liu, Yequan Wang, Deheng Ye, Min Zhang, Jing Li",
@@ -41083,39 +41149,6 @@
       ]
     },
     {
-      "id": "2510.08510",
-      "title": "To Sink or Not to Sink: Visual Information Pathways in Large Vision-Language Models",
-      "authors": "Jiayun Luo, Wan-Cyuan Fan, Lyuyang Wang, Xiangteng He, Tanzila Rahman, Purang Abolmaesumi, Leonid Sigal",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 64,
-      "paper": "https://arxiv.org/abs/2510.08510",
-      "source": "https://paperswithcode.co/paper/2510.08510",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2510.08510.jpg",
-      "firstSeenAt": "2026-06-18T01:40:50.232Z",
-      "summary": "Large Vision Language Models (LVLMs) have recently emerged as powerful architectures capable of understanding and reasoning over both visual and textual information. These models typically rely on two key components: a Vision Transformer (ViT) and a Large Language Model (LLM). ViT encodes visual content into a sequence of image tokens and serves as the perceptual front-end -- the eyes of the model. In contrast, the LLM interprets these tokens to perform high-level reasoning, generates responses, and functions as the cognitive core -- the brain of the model. However, it remains unclear which visual tokens contribute most significantly to understanding and reasoning, and how effectively these signals are propagated from ViT to the LLM. While most existing works have focused on identifying attention sinks, low-semantic tokens receiving disproportionately high attention, within the LLM, we shift the focus to the vision encoder by identifying a class of high-norm visual tokens from ViT, referred to as ViT attention sinks -- a problem that has been rarely studied but is indeed very important for LVLMs. Our findings show that these ViT sinks encapsulate high-level semantic concepts from images, allowing the LLM to perform more effective understanding and reasoning. Despite their importance, these sink tokens are often overlooked in existing LVLM architectures. To explore their contribution, we present both qualitative and quantitative analyses of the information embedded in these sink tokens. We also propose both training-free and training-based approaches to better leverage how this information is interpreted by the LLM, and to what extent. By explicitly utilizing these tokens, we demonstrate substantial improvements across a range of LVLMs and visual reasoning tasks, including but not limited to mathematical problem solving, logical inference, and geometric understanding, highlighting the untapped potential of ViT attention sinks in enhancing visual reasoning.",
-      "matchedBy": [
-        "papers with code",
-        "Image Classification",
-        "Image Understanding",
-        "Language Modeling",
-        "CLIP",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2508.03227",
       "title": "Trace3D: Consistent Segmentation Lifting via Gaussian Instance Tracing",
       "authors": "Hongyu Shen, Junfeng Ni, Yixin Chen, Weishuo Li, Mingtao Pei, Siyuan Huang",
@@ -41454,6 +41487,34 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2403.07320",
+      "title": "Approaching Rate-Distortion Limits in Neural Compression with Lattice Transform Coding",
+      "authors": "Eric Lei, Hamed Hassani, Shirin Saeedi Bidokhti",
+      "org": "",
+      "published": "ICLR 2025 Spotlight",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2403.07320",
+      "source": "https://paperswithcode.co/paper/2403.07320",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2403.07320.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Neural compression has brought tremendous progress in designing lossy compressors with good rate-distortion (RD) performance at low complexity. Thus far, neural compression design involves transforming the source to a latent vector, which is then rounded to integers and entropy coded. While this approach has been shown to be optimal on a few specific sources, we show that it can be highly sub-optimal on synthetic sources whose intrinsic dimensionality is greater than one. With integer rounding in the latent space, the quantization regions induced by neural transformations, remain square-like and fail to match those of optimal vector quantization. We demonstrate that this phenomenon is due to the choice of scalar quantization in the latent space, and not the transform design. By employing lattice quantization instead, we propose Lattice Transform Coding (LTC) and show that it approximately recovers optimal vector quantization at reasonable complexity. On real-world sources, LTC improves upon standard neural compressors. LTC also provides a framework that can integrate structurally (near) optimal information-theoretic designs into lossy compression; examples include block coding, which yields coding gain over optimal one-shot coding and approaches the asymptotically-achievable rate-distortion function, as well as nested lattice quantization for low complexity fixed-rate coding.",
+      "matchedBy": [
+        "papers with code",
+        "Quantization",
+        "VQ-VAE",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving"
       ]
     },
     {
@@ -44167,7 +44228,8 @@
         "papers with code",
         "GCN",
         "VQ-VAE",
-        "serving"
+        "serving",
+        "Graph Classification"
       ],
       "sources": [
         "paperswithcode"
@@ -50021,6 +50083,38 @@
       ]
     },
     {
+      "id": "2507.14915",
+      "title": "Music-Aligned Holistic 3D Dance Generation via Hierarchical Motion Modeling",
+      "authors": "Xiaojie Li, Ronghui Li, Shukai Fang, Shuzhao Xie, Xiaoyang Guo, Jiaqing Zhou, Junkun Peng, Zhi Wang",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2507.14915",
+      "source": "https://paperswithcode.co/paper/2507.14915",
+      "code": "",
+      "project": "https://xjli360",
+      "thumbnail": "./thumbs/2507.14915.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Well-coordinated, music-aligned holistic dance enhances emotional expressiveness and audience engagement. However, generating such dances remains challenging due to the scarcity of holistic 3D dance datasets, the difficulty of achieving cross-modal alignment between music and dance, and the complexity of modeling interdependent motion across the body, hands, and face. To address these challenges, we introduce SoulDance, a high-precision music-dance paired dataset captured via professional motion capture systems, featuring meticulously annotated holistic dance movements. Building on this dataset, we propose SoulNet, a framework designed to generate music-aligned, kinematically coordinated holistic dance sequences. SoulNet consists of three principal components: (1) Hierarchical Residual Vector Quantization, which models complex, fine-grained motion dependencies across the body, hands, and face; (2) Music-Aligned Generative Model, which composes these hierarchical motion units into expressive and coordinated holistic dance; (3) Music-Motion Retrieval Module, a pre-trained cross-modal model that functions as a music-dance alignment prior, ensuring temporal synchronization and semantic coherence between generated dance and input music throughout the generation process. Extensive experiments demonstrate that SoulNet significantly surpasses existing approaches in generating high-quality, music-coordinated, and well-aligned holistic 3D dance sequences. Additional resources are available on our project: https://xjli360.github.io/SoulDance",
+      "matchedBy": [
+        "papers with code",
+        "Motion Generation",
+        "CLIP",
+        "PCA",
+        "Quantization",
+        "serving",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2502.09724",
       "title": "Navigating the Social Welfare Frontier: Portfolios for Multi-objective Reinforcement Learning",
       "authors": "Cheol Woo Kim, Jai Moondra, Shresth Verma, Madeleine Pollack, Lingkai Kong, Milind Tambe, Swati Gupta",
@@ -53926,7 +54020,8 @@
         "papers with code",
         "Language Modeling",
         "serving",
-        "language modeling"
+        "language modeling",
+        "Chain-of-Thought (CoT)"
       ],
       "sources": [
         "paperswithcode"
@@ -59370,6 +59465,38 @@
       ]
     },
     {
+      "id": "2603.06745",
+      "title": "Enhancing Instruction Following of LLMs via Activation Steering with Dynamic Rejection",
+      "authors": "Minjae Kang, Jaehyung Kim",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2603.06745",
+      "source": "https://paperswithcode.co/paper/2603.06745",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.06745.jpg",
+      "firstSeenAt": "2026-06-18T01:40:50.232Z",
+      "summary": "Large Language Models (LLMs), despite advances in instruction tuning, often fail to follow complex user instructions. Activation steering techniques aim to mitigate this by manipulating model internals, but have a potential risk of oversteering, where excessive emphasis on the instruction degrades task accuracy and overall text quality. To address this, we introduce DIRECTER (Dynamic rejection steering), a novel steering method that dynamically modulates steering strength by scaling the KV cache without extra dataset. DIRECTER couples steering with a plausibility-guided decoding loop, which adaptively adjusts steering strength at each step by comparing the steered output distribution to the original. If the steered output is deemed implausible, steering strength is progressively weakened. This strength modulation is guided by a lightweight, one-time attention sensitivity analysis that ranks layers by their influence on model representations. Extensive evaluations show that DIRECTER significantly enhances instruction-following capabilities across diverse benchmarks, improving accuracy by up to 6.5% over baselines without the common trade-offs in generation quality or task fidelity. The proposed dynamic, plausibility-guided control during activation steering further demonstrates its potential as a general mechanism for mitigating oversteering that is compatible with existing baselines.",
+      "matchedBy": [
+        "papers with code",
+        "Instruction Following",
+        "Language Modeling",
+        "Direct Preference Optimization (DPO)",
+        "Few-shot prompting",
+        "language modeling",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
       "id": "2602.10847",
       "title": "Enhancing Multivariate Time Series Forecasting with Global Temporal Retrieval",
       "authors": "Fanpu Cao, Lu Dai, Jindong Han, Hui Xiong",
@@ -64313,6 +64440,39 @@
       ]
     },
     {
+      "id": "2509.21173",
+      "title": "Less Precise Can Be More Reliable: A Systematic Evaluation of Quantization’s Impact on VLMs Beyond Accuracy",
+      "authors": "Aymen Bouguerra, Daniel Alfonso Montoya Vasquez, Alexandra Gomez-Villa, Chokri Mraidha, Fabio Arnez",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2509.21173",
+      "source": "https://paperswithcode.co/paper/2509.21173",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.21173.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Vision-Language Models (VLMs) such as CLIP have revolutionized zero-shot classification and safety-critical tasks, including Out-of-Distribution (OOD) detection. However, their high computational cost hinders efficient real-world deployment. While quantization is a standard solution for efficiency, its broader impact on reliability metrics beyond simple Top-1 accuracy remains critically under-explored. In this study, we conduct a large-scale evaluation of VLM quantization across a comprehensive experimental suite of over 700k evaluation runs with varying configurations. We find that, contrary to the assumption that quantization's noise degrades performance, it can simultaneously improve accuracy, calibration, OOD detection, and robustness to noise, though not to covariate shift or spurious correlations. We leverage these counterintuitive findings to characterize the mechanics of quantization beyond simple regularization: we show that quantization dampens high-rank spectral components, compelling the model to rely more heavily on robust, low-rank features. Ultimately, this spectral filtering effect drives the observed improvements in generalization and noise tolerance, establishing a pathway to deploy faster, more reliable VLMs by utilizing quantization beyond its conventional role.",
+      "matchedBy": [
+        "papers with code",
+        "Anomaly Detection",
+        "Image Understanding",
+        "Language Modeling",
+        "CLIP",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
       "id": "2605.21280",
       "title": "Let EEG Models Learn EEG",
       "authors": "Yifan Wang, Yijia Ma, Wen Li, Chenyu You",
@@ -65496,7 +65656,8 @@
         "papers with code",
         "CLIP",
         "vision/multimodal",
-        "serving"
+        "serving",
+        "k-means clustering"
       ],
       "sources": [
         "paperswithcode"
@@ -66233,7 +66394,8 @@
         "papers with code",
         "serving",
         "vision/multimodal",
-        "language modeling"
+        "language modeling",
+        "Post-training"
       ],
       "sources": [
         "paperswithcode"
@@ -69674,6 +69836,36 @@
       "categories": [
         "Serving",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2404.19248",
+      "title": "Scheduling Weight Transitions for Quantization-Aware Training",
+      "authors": "Junghyup Lee, Jeimin Jeon, Dohyung Kim, Bumsub Ham",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2404.19248",
+      "source": "https://paperswithcode.co/paper/2404.19248",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2404.19248.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Quantization-aware training (QAT) simulates a quantization process during training to lower bit-precision of weights/activations. It learns quantized weights indirectly by updating latent weights, i.e., full-precision inputs to a quantizer, using gradient-based optimizers. We claim that coupling a user-defined learning rate (LR) with these optimizers is sub-optimal for QAT. Quantized weights transit discrete levels of a quantizer, only if corresponding latent weights pass transition points, where the quantizer changes discrete states. This suggests that the changes of quantized weights are affected by both the LR for latent weights and their distributions. It is thus difficult to control the degree of changes for quantized weights by scheduling the LR manually. We conjecture that the degree of parameter changes in QAT is related to the number of quantized weights transiting discrete levels. Based on this, we introduce a transition rate (TR) scheduling technique that controls the number of transitions of quantized weights explicitly. Instead of scheduling a LR for latent weights, we schedule a target TR of quantized weights, and update the latent weights with a novel transition-adaptive LR (TALR), enabling considering the degree of changes for the quantized weights during QAT. Experimental results demonstrate the effectiveness of our approach on standard benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "Batch Normalization",
+        "Cosine Annealing",
+        "Label smoothing",
+        "QAT",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving"
       ]
     },
     {
@@ -84696,6 +84888,38 @@
       ]
     },
     {
+      "id": "2605.28890",
+      "title": "Echoes within the Reasoning: Stealthy and Effective Watermarking via Chain of Thought",
+      "authors": "Jiacheng Lu, Yiming Li, Tao Song, Weijian Wang, Wenjie Qu, Haibing Guan, Jiaheng Zhang",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2605.28890",
+      "source": "https://paperswithcode.co/paper/2605.28890",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.28890.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Large Language Models with Chain-of-Thought reasoning capabilities represent valuable intellectual property, yet existing black-box watermarking methods often trade robustness for reasoning fidelity by perturbing final answers or relying on fragile trigger patterns. We propose BiCoT, a watermarking framework that embeds ownership signals into the internal geometry of reasoning traces by aligning high-saliency structural anchors with a private signature subspace while regularizing ordinary control tokens to preserve semantic capacity. This design couples the watermark with reasoning-relevant representations, making removal difficult without disrupting the features that support coherent reasoning. To enable verification under model theft and representation drift, we introduce Robust Subspace Registration(RSR), a Top-$k$ logprob-based black-box verifier that uses sentinel tokens to calibrate systematic shifts in the output distribution. Experiments show that BiCoT preserves reasoning fidelity across diverse complex reasoning tasks while achieving robust detection under fine-tuning, quantization, model-level perturbations, and adaptive output-level attacks across in-domain and out-of-distribution settings.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Reasoning",
+        "Chain-of-Thought (CoT)",
+        "Fine-tuning",
+        "language modeling",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
       "id": "2602.00780",
       "title": "EcoVLA: Environment-Aware Adaptive Pruning with Interleaved Inference Orchestration for Vision-Language-Action Models",
       "authors": "Yuting Huang, Leilei Ding, Zhipeng Tang, Zenghuan Zhu, Jiajun Deng, Xinrui Lin, Shuo Liu, Haojie Ren, Jianmin Ji, Yanyong Zhang",
@@ -85597,38 +85821,6 @@
       "categories": [
         "Robotics",
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2603.06745",
-      "title": "Enhancing Instruction Following of LLMs via Activation Steering with Dynamic Rejection",
-      "authors": "Minjae Kang, Jaehyung Kim",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2603.06745",
-      "source": "https://paperswithcode.co/paper/2603.06745",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2603.06745.jpg",
-      "firstSeenAt": "2026-06-18T01:40:50.232Z",
-      "summary": "Large Language Models (LLMs), despite advances in instruction tuning, often fail to follow complex user instructions. Activation steering techniques aim to mitigate this by manipulating model internals, but have a potential risk of oversteering, where excessive emphasis on the instruction degrades task accuracy and overall text quality. To address this, we introduce DIRECTER (Dynamic rejection steering), a novel steering method that dynamically modulates steering strength by scaling the KV cache without extra dataset. DIRECTER couples steering with a plausibility-guided decoding loop, which adaptively adjusts steering strength at each step by comparing the steered output distribution to the original. If the steered output is deemed implausible, steering strength is progressively weakened. This strength modulation is guided by a lightweight, one-time attention sensitivity analysis that ranks layers by their influence on model representations. Extensive evaluations show that DIRECTER significantly enhances instruction-following capabilities across diverse benchmarks, improving accuracy by up to 6.5% over baselines without the common trade-offs in generation quality or task fidelity. The proposed dynamic, plausibility-guided control during activation steering further demonstrates its potential as a general mechanism for mitigating oversteering that is compatible with existing baselines.",
-      "matchedBy": [
-        "papers with code",
-        "Instruction Following",
-        "Language Modeling",
-        "Direct Preference Optimization (DPO)",
-        "Few-shot prompting",
-        "language modeling",
-        "serving"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Serving"
       ]
     },
     {
@@ -94492,6 +94684,38 @@
       ]
     },
     {
+      "id": "2602.07547",
+      "title": "Linguistic Properties and Model Scale in Brain Encoding: From Small to Compressed Language Models",
+      "authors": "SUBBA REDDY OOTA, Vijay Rowtula, Satya Sai Srinath Namburi GNVV, Khushbu Pahwa, Anant Khandelwal, Manish Gupta, Tanmoy Chakraborty, Bapi Raju Surampudi",
+      "org": "",
+      "published": "ICML 2026 Spotlight",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2602.07547",
+      "source": "https://paperswithcode.co/paper/2602.07547",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.07547.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Recent work has shown that scaling large language models (LLMs) improves their alignment with human brain activity, yet it remains unclear what drives these gains or which representational properties are responsible. Although larger models often yield better task performance and brain alignment, they are increasingly difficult to analyze mechanistically. This raises a fundamental question: \\emph{what is the minimal model capacity required to capture brain-relevant representations?} To address this question, we systematically investigate how constraining model scale and numerical precision affects brain alignment. We compare full-precision LLMs, small language models (SLMs), and compressed variants (quantized and pruned) by predicting fMRI responses during naturalistic language comprehension. Across model families up to 14B parameters, we find that 3B SLMs achieve brain predictivity indistinguishable from larger LLMs, whereas 1B models degrade substantially, particularly in semantic language regions. Brain alignment is remarkably robust to compression: most quantization and pruning methods preserve neural predictivity, with GPTQ as a consistent exception. Linguistic probing reveals a dissociation between task performance and brain predictivity: compression degrades discourse, syntax, and morphology, yet brain predictivity remains largely unchanged. Overall, brain alignment saturates at modest model scales and is resilient to compression, challenging common assumptions about neural scaling and motivating compact models for brain-aligned language modeling.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "GPT",
+        "Large language model (LLM)",
+        "Probing",
+        "language modeling",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
       "id": "pwc-97382",
       "title": "LIO-HKDT: Fast and Accurate LiDAR-Inertial Odometry with Hash K-D Tree",
       "authors": "Mu, Yuexin, Ren, Ao, Liu, Duo, Wang, Murong, Zhang, Zihao, Lu, Haojie, Tan, Yujuan, Zhong, Kan",
@@ -99446,6 +99670,38 @@
       ]
     },
     {
+      "id": "2605.04738",
+      "title": "OSAQ: Outlier Self-Absorption for Accurate Low-bit LLM Quantization",
+      "authors": "Zhikai Li, Zhen Dong, Xuewen Liu, Jing Zhang, Qingyi Gu",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2605.04738",
+      "source": "https://paperswithcode.co/paper/2605.04738",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.04738.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Large Language Models (LLMs) have demonstrated remarkable capabilities in understanding and generation tasks. However, their massive parameter scale leads to significant resource consumption and latency during inference. Post-training weight-only quantization offers a promising solution by reducing model size and accelerating token generation through alleviating the memory-bound issue. Nevertheless, there are inherent systematic outliers in weights, and although some efforts have attempted to address them, such as scaling and rotation, the performance of low-bit quantization remains far from satisfactory. In this paper, we propose Outlier Self-Absorption Quantization (OSAQ), which performs second-order low-rank derived additive weight suppression for low-bit weight-only LLM quantization. Specifically, we observe that Hessian exhibits low-rank consistency across different inputs, with certain directions persistently lacking strength. Leveraging this property, we construct an additive weight transformation based on the Hessian’s null space, thereby suppressing weight outliers without affecting the task loss. This additive transformation can be absorbed into the weights offline, requiring no inter-layer transformations and introducing no inference overhead. Moreover, the construction is efficiently achieved by a closed-form solution, without resource-intensive training or iterative procedures. Extensive experiments across models of varying scales and tasks are conducted, and the results show that OSAQ effectively suppresses outliers and improves low-bit quantization performance.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Large language model (LLM)",
+        "LLaMa",
+        "Post-training",
+        "serving",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "pwc-96279",
       "title": "Overcoming Imperfect Kinematics in Surgical Robotics through Sim-To-Real Visuomotor Learning",
       "authors": "Yan, Zhaoxuan, Deng, Kaizhong, Hu, Zhaoyang Jacopo, Mylonas, George, Elson, Daniel",
@@ -101160,6 +101416,38 @@
       ]
     },
     {
+      "id": "2506.11087",
+      "title": "Principled SVD-based Delta Compression via Quantization Error Minimization",
+      "authors": "Boya Xiong, Shuo Wang, Weifeng Ge, Guanhua Chen, Yun Chen",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2506.11087",
+      "source": "https://paperswithcode.co/paper/2506.11087",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2506.11087.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Supervised Fine-Tuning (SFT) empowers Large Language Models (LLMs) with exceptional performance on specialized tasks, but it yields dense, high-dimensional delta parameters that pose severe storage and distribution challenges. Singular Value Decomposition (SVD)-based compression offers a compact representation for such delta parameters, but existing methods adopt heuristic quantization without clarifying underlying mechanisms, leading to poor generalizability. In this work, we propose PrinMix, a rigorous SVD-based framework that models quantization as an optimization problem, grounding the design in mathematical mechanisms. We first theoretically derive quantization error and identify a key singular-value-dominated scaling mechanism, which mathematically proves the necessity of mix-precision quantization. We then model the quantization scheme as a 0/1 Integer Linear Programming (ILP) problem, which yields optimal bit-budget-constrained solutions without empirical assumptions. Furthermore, PrinMix integrates a Reconstruction Target Correction (RTC) method to compensate for errors from the $\\mathbf{V}$-then-$\\mathbf{U}$ sequential quantization process. Extensive experiments confirm PrinMix performs well: for 7B LLMs, PrinMix outperforms SOTA Delta-CoMe on challenging benchmarks by 22.3\\% on AIME2024 and 6.1\\% on GQA.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Fine-tuning",
+        "Grouped-Query Attention",
+        "Large language model (LLM)",
+        "language modeling",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
       "id": "pwc-97648",
       "title": "Privacy-Aware LLMs-Assisted Task Planning for Home Robots",
       "authors": "Chen, Zhanjie, Sheng, Weihua",
@@ -101572,7 +101860,8 @@
         "papers with code",
         "Video classification",
         "serving",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Video Understanding"
       ],
       "sources": [
         "paperswithcode"
@@ -104555,6 +104844,38 @@
       ]
     },
     {
+      "id": "2605.14359",
+      "title": "RQ-MoE: Residual Quantization via Mixture of Experts for Efficient Input-Dependent Vector Compression",
+      "authors": "Zhengjia Zhong, Shuyan Ke, Zaizhou Lin, Jiaqi Song, Hongyi Lan, Hui Li",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2605.14359",
+      "source": "https://paperswithcode.co/paper/2605.14359",
+      "code": "https://github.com/KDEGroup/RQ-MoE",
+      "project": "",
+      "thumbnail": "./thumbs/2605.14359.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Vector quantization is a fundamental tool for compressing high-dimensional embeddings, yet existing multi-codebook methods rely on static codebooks that limit expressiveness under heterogeneous data geometry. While recent dynamic quantizers like QINCo adapt codebooks to individual inputs and improve expressiveness, their strict sequential dependencies create decoding bottlenecks. We propose Residual Quantization via Mixture of Experts (RQ-MoE), a framework combining a two-level MoE with dual-stream quantization to enable input-dependent codebook adaptation for efficient vector quantization. RQ-MoE enables dynamic codebook construction and decouples instruction from quantization, facilitating parallel decoding. Theoretically, we show that standard Residual Quantization and QINCo can be recovered as constrained special cases of RQ-MoE, and derive a guideline for setting expert dimensionality in RQ-MoE. Extensive experiments show that RQ-MoE achieves state-of-the-art or on-par performance in reconstruction and retrieval, while it can provide 6×–14× faster decoding than prior vector quantization methods. The implementation is available at https://github.com/KDEGroup/RQ-MoE.",
+      "matchedBy": [
+        "papers with code",
+        "Embedding",
+        "Mixture-of-Experts (MoE)",
+        "Multi-latent attention (MLA)",
+        "Quantization",
+        "serving",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2510.01240",
       "title": "RSAVQ: Riemannian Sensitivity-Aware Vector Quantization for Large Language Models",
       "authors": "Zukang Xu, Xing Hu, Dawei Yang, Qiang Wu",
@@ -105077,6 +105398,34 @@
       "categories": [
         "Robotics",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2602.19241",
+      "title": "Scaling Laws for Precision in High-Dimensional Linear Regression",
+      "authors": "Dechen Zhang, Xuan Tang, Yingyu Liang, Difan Zou",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2602.19241",
+      "source": "https://paperswithcode.co/paper/2602.19241",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.19241.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Low-precision training is critical for optimizing the trade-off between model quality and training costs, necessitating the joint allocation of model size, dataset size, and numerical precision. While empirical scaling laws suggest that quantization impacts effective model and data capacities or acts as an additive error, the theoretical mechanisms governing these effects remain largely unexplored. In this work, we initiate a theoretical study of scaling laws for low-precision training within a high-dimensional sketched linear regression framework. By analyzing multiplicative (signal-dependent) and additive (signal-independent) quantization, we identify a critical dichotomy in their scaling behaviors. Our analysis reveals that in the worst case, while both schemes introduce an additive error and degrade the effective data size, they exhibit distinct effects on effective model size: multiplicative quantization maintains the full-precision model size, whereas additive quantization reduces the effective model size. Numerical experiments validate our theoretical findings. By rigorously characterizing the complex interplay among model scale, dataset size, and quantization error, our work provides a principled theoretical basis for optimizing training protocols under practical hardware constraints.",
+      "matchedBy": [
+        "papers with code",
+        "Quantization",
+        "Scaling laws",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving"
       ]
     },
     {
@@ -107910,6 +108259,39 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2510.26771",
+      "title": "STaMP: Sequence Transformation and Mixed Precision for Low-Precision Activation Quantization",
+      "authors": "Marco Federici, Riccardo Del Chiaro, Boris van Breugel, Paul N. Whatmough, Markus Nagel",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2510.26771",
+      "source": "https://paperswithcode.co/paper/2510.26771",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.26771.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "Quantization is the key method for reducing inference latency, power and memory footprint of generative AI models. However, accuracy often degrades sharply when activations are at low bit widths. Recent work suggests that invertible linear transformations (e.g. rotations) can aid quantization, by reparameterizing feature channels and weights. In this paper, we propose Sequence Transformation and Mixed Precision (STaMP) quantization, a novel strategy that applies linear transformations along the sequence dimension to exploit the strong local correlation in language and visual data. By keeping a small number of tokens in each intermediate activation at higher precision, we can maintain model accuracy at lower (average) activations bit-widths. We evaluate STaMP on recent LVM and LLM architectures, demonstrating that it significantly improves low bit width activation quantization and complements established activation and weight quantization methods including recent feature transformations.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Large language model (LLM)",
+        "Quantization",
+        "serving",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Frontier Training",
+        "Language Modeling"
       ]
     },
     {
@@ -114434,6 +114816,39 @@
         "Serving",
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2601.21198",
+      "title": "ZipMoE: Efficient On-Device MoE Serving via Lossless Compression and Cache-Affinity Scheduling",
+      "authors": "Yuchen Yang, Yaru Zhao, Pu Yang, Shaowei Wang, Zhi-Hua Zhou",
+      "org": "",
+      "published": "ICML 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2601.21198",
+      "source": "https://paperswithcode.co/paper/2601.21198",
+      "code": "https://github.com/npnothard/ZipMoE-ICML26",
+      "project": "",
+      "thumbnail": "./thumbs/2601.21198.jpg",
+      "firstSeenAt": "2026-07-25T01:07:08.853Z",
+      "summary": "While Mixture-of-Experts (MoE) architectures substantially bolster the expressive power of large-language models, their prohibitive memory footprint severely impedes the practical deployment on resource-constrained edge devices, especially when model behavior must be preserved without relying on lossy quantization. In this paper, we present ZipMoE, an efficient and semantically lossless on-device MoE serving system. ZipMoE exploits the synergy between the hardware properties of edge devices and the statistical redundancy inherent to MoE parameters via a caching-scheduling co-design with provable performance guarantee. Fundamentally, our design shifts the paradigm of on-device MoE inference from an I/O-bound bottleneck to a compute-centric workflow that enables efficient parallelization. We implement a prototype of ZipMoE and conduct extensive experiments on representative edge computing platforms using popular open-source MoE models and real-world workloads. Our evaluation reveals that ZipMoE achieves up to 72.77% inference latency reduction and up to $6.76\\times$ higher throughput than the state-of-the-art systems. Our code is available at: https://github.com/npnothard/ZipMoE-ICML26.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Mixture-of-Experts (MoE)",
+        "Multi-latent attention (MLA)",
+        "Quantization",
+        "serving",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Frontier Training",
+        "Language Modeling"
       ]
     },
     {
@@ -185297,7 +185712,7 @@
       "source": "https://arxiv.org/abs/2607.20778v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.20778.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Weather forecasting foundation models (FMs) are increasingly fine-tuned to predict air quality, offering fast global pollution forecasts at lower computational cost than conventional chemical transport models. These FMs are typically trained on reanalysis data and generate forecasts through autoregressive rollout. They do not explicitly represent governing physical or chemical processes. Therefore, high forecast skill does not reveal whether a model has learned physical mechanisms or exploits statistical regularities in its training data. Here, we present the first study of what a FM fine-tuned for atmospheric chemistry has learned by examining Microsoft's Aurora model. We impose controlled chemical perturbations on its forecasts and test them against known photochemical relationships. We then examine the internal representations that generate these forecasts. We find that Aurora captures a first-order ozone response to reactive nitrogen but does not enforce the chemical constraints that a process-based model encodes. It generates chemically inconsistent combinations of related species and relaxes localized emission features such as wildfire plumes toward background. Internally, its representations remain largely organized around the meteorology inherited during pretraining, with little structure specific to chemistry. Using sparse autoencoders, we identify internal components that causally control the chemical forecast but do not map cleanly onto individual atmospheric processes. This work provides a framework for testing whether AI forecasting systems learn atmospheric chemistry from reanalysis data. As these models are increasingly positioned to inform environmental policy decisions, we argue that composition forecasts should also be judged by their internal mechanisms rather than by benchmark skill alone.",
       "matchedBy": [
@@ -185985,7 +186400,7 @@
       "source": "https://arxiv.org/abs/2607.21417v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21417.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Federated prompt tuning (FPT) enables collaborative adaptation of vision--language models (VLMs) using lightweight prompts. Existing methods often address heterogeneity and privacy through a split-prompt design under local differential privacy (DP), combining a shared prompt for global transfer with private prompts for local adaptation. However, a single shared prompt may over-smooth diverse transferable knowledge, weakening the balance between personalization and generalization. Multi-expert prompts (MEPs) can better capture this diversity, but enlarge the communicated space, increasing DP noise and communication cost while making robust expert composition more difficult. We propose FedSEPT, a privacy-preserving Fed}erated Subspace-decomposed Expert Prompt Tuning. Specifically, we employ Subspace-decomposed Expert Modeling (SEM) to parameterize multiple prompt experts with shared low-rank factors, a fixed public basis, and private residuals, thereby confining communication and DP perturbation to a compact factor space while enabling direct server aggregation in a common coordinate system. We further design Instance-aware Expert Fusion (IEF), which adaptively combines semantically complementary experts via on-device routing and performs efficient logit-level fusion using cached expert-specific text features. Extensive experiments on 11 heterogeneous benchmarks show that, under the same privacy constraints, FedSEPT achieves a better trade-off between local adaptation and global generalization than strong baselines.",
       "matchedBy": [
@@ -186419,7 +186834,7 @@
       "source": "https://arxiv.org/abs/2607.21090v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21090.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "We propose a Reinforcement Learning (RL) method to directly optimize the faithfulness of self-explanations - the extent to which a model's generated reasoning accurately reflects its internal decision-making process. While existing work focuses on evaluating faithfulness or using inference-time prompting frameworks to improve an LLM's self-explanation's tractability, these approaches do not provide a mechanism to directly optimize a model's parameters to generate faithful self-explanations. We bridge this gap by modifying existing faithfulness metrics into an RL training objective. We investigate (1) if models can be trained to accurately detect factors that affect their decisions, and (2) whether RL can directly optimize for the disclosure of these factors thereby improving LLM self-explanations' faithfulness. We experiment with two intervention types: random-word insertions and user-bias insertions, using a per-sample reward derived from the Phi-CCT correlation metric. RL fine-tuned Llama3.1-8B and Qwen3-8B show substantial improvements on the Phi-CCT faithfulness metric, with in-distribution scores rising from near-zero to as high as 0.664, and out-of-distribution scores reaching up to 0.691 on held-out tasks such as StrategyQA. Cross-intervention generalization is weaker but more interesting: a priori we would not expect a model trained only on random word insertions to generalize to user-bias phrases, yet Llama3.1-8B shows non-zero transfer in this direction. The reverse direction and Qwen3-8B do not replicate this, indicating model-dependent and setup-dependent effects we cannot yet explain. Lastly we analyze model behavior to rule out reward gaming behaviors that often plague RL training. Ultimately, we show that models can be trained to implicitly identify influential factors and disclose them, offering a scalable path toward reducing unfaithful reasoning in LLMs.",
       "matchedBy": [
@@ -186583,7 +186998,7 @@
       "source": "https://arxiv.org/abs/2607.21071v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21071.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Autonomous biomedical laboratories increasingly rely on visual perception to recognize, localize, and manipulate transparent plasticware, yet high-quality real-world datasets for this setting remain limited. The scarcity of domain-relevant data is particularly restrictive in cluttered multi-object scenes, where mutual occlusion and view-dependent appearance changes remain challenging even for contemporary visual foundation models. Existing transparent-object datasets have advanced segmentation, depth, and pose estimation, but they usually do not evaluate the combined setting of multi-object clutter, occlusion, and calibrated multi-view capture that characterizes real laboratory manipulation scenes. To address this gap, we present TrainsBiolab, a real-world RGB-D dataset of cluttered transparent biomedical objects captured as calibrated multi-view sequences. TrainsBiolab contains 161,315 frames from 98 scenes and 1.03M instance annotations over 15 laboratory object types, including 6D poses, full and visible masks, depth, and per-frame camera calibration. The dataset is organized along three axes that reflect operational difficulty: object category, the total number of objects in a frame, and camera viewpoint. We further define dataset-centric benchmarks for segmentation, depth estimation and completion, and 6D pose estimation, and report a system-level robot manipulation evaluation enabled by the released annotations and calibrations. By focusing on repeated transparent instances, clutter, and multi-view laboratory capture, TrainsBiolab provides a resource for segmentation, depth estimation, 6D pose estimation, and multi-view reasoning in autonomous laboratory manipulation. Project page: https://dualtransparency.github.io/TransBiolab/.",
       "matchedBy": [
@@ -186641,7 +187056,7 @@
       "source": "https://arxiv.org/abs/2607.21513v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21513.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Large language models can make conversational product advisors fluent but opaque. If they hide the logic behind a ranking and the evidence for a recommendation inside natural-language replies, they challenge users' ability to understand, trust, and steer the results. One response is to build transparency into the advisor. We report a formative, moderated think-aloud usability study of one such system: a chatbot for laptop search with constrained natural-language generation, an on-demand ranking explanation, and a comparison feature. Seven participants completed three laptop-search tasks and reported post-task usability measures. We coded their sessions into severity-rated usability problems. Ease and satisfaction during the tasks were high, but two findings stand out. First, transparency by design did not guarantee understanding: several participants valued the ranking explanation in principle, yet it caused the most severe problem. Second, participants valued the effort the advisor saved, but some wanted additional direct-manipulation controls. We contribute a severity-prioritized set of usability problems and design implications for human-centered conversational product advisors.",
       "matchedBy": [
@@ -187913,7 +188328,7 @@
       "source": "https://arxiv.org/abs/2607.21546v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21546.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Multimodal based approaches often outperform single modality approaches in downstream tasks as the different modalities provide complementary information, yet acquiring paired clinical data remains a significant challenge in real world scenarios. While cross-modal knowledge distillation addresses this, existing methods often struggle with large modality gaps and the propagation of noise from uncertain source-domain predictions. To overcome these challenges, we propose UnDA, an anchor-guided framework for unpaired cross-modal distillation. Our approach introduces a backbone-agnostic Alignment Module that extracts semantically structured class tokens via an attention based pooling mechanism. To ensure robust knowledge transfer, we propose Uncertainty-Weighted Optimal Transport (UCT-OT), which dynamically weights feature-level alignment based on prediction confidence, effectively suppressing noisy supervision. Furthermore, a per-class ProtoNCE objective maintains stable prototype memories to enforce global discriminability across unpaired batches. Evaluations on representative segmentation tasks under strictly unpaired settings show consistent improvements in accuracy and boundary precision in the target modality, demonstrating that meaningful structural knowledge can be transferred across heterogeneous data sources without paired datasets.",
       "matchedBy": [
@@ -188795,7 +189210,7 @@
       "source": "https://arxiv.org/abs/2607.21300v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21300.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Machine unlearning has emerged as a tool for removing personal data from trained models to comply with recent AI regulations. To evaluate unlearning effectiveness in multimodal large language models (MLLMs), prior works fine-tune models on fictitious identities, simulating unlearning requests on subsets of these IDs, which are typically uniformly distributed. However, in realistic scenarios, people from different demographic groups may request to be unlearned at different frequencies, potentially altering the model's internal beliefs for these groups and leading to biased behaviors. To fill this gap, we propose FAIRGET, the first Visual Question Answering benchmark that evaluates unlearning under unbalanced, realistic, forget requests. These requests are designed to simulate multiple realistic scenarios, ranging from simple to challenging settings, that lead to biased unlearned models if fairness is not accounted for. Additionally, we propose FAUN, the first unlearning algorithm for MLLMs that forgets unlearning data while preserving model fairness. FAUN exploits a bias-aware activation steering mechanism to unlearn identities while accounting for the unbalanced nature of the forget data. Experiments on FAIRGET and the established FIUBench demonstrate our method's superiority both in unlearning quality and fairness.",
       "matchedBy": [
@@ -189043,7 +189458,7 @@
       "source": "https://arxiv.org/abs/2607.20912v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.20912.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Learning-based manipulation policies usually predict robot actions from sensory observations and leave their execution to a separate low-level controller. In rigid contact, this separation can be problematic: the same motion to a virtual target or compliant motion command can lead to unstable contact, tracking error, excessive loading, or tool damage, depending on the low-level controller. In this paper, we propose a \\textit{Unified Robot Control-Policy Framework} (URF), which connects compliant action prediction with unified impedance-admittance control. Given multimodal observations, URF predicts a virtual target, a stiffness matrix, and an impedance-admittance switch ratio. The switch ratio determines when the controller should behave more like admittance control for accurate motion tracking and when it should move toward impedance control for safer rigid contact. Because demonstration data do not provide ground-truth environment stiffness, we construct switch-ratio labels from measured contact forces and use them to supervise controller-mode prediction. Across box-flipping and line-pressing tasks, URF achieves higher task success rates while reducing failure modes observed with admittance-only execution, including rapid force buildup, large force oscillations, tool breakage, and robot safety stops. These results suggest that contact-aware policies benefit from predicting not only compliant actions but also the controller behavior used to execute them. Project page: https://jiyou384.github.io/urf_project_page/",
       "matchedBy": [
@@ -189931,7 +190346,7 @@
       "source": "https://arxiv.org/abs/2607.21075v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21075.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "We present VibeVoice-ASR-BitNet, a compressed variant of VibeVoice-ASR optimized for real-time inference on edge CPUs. We apply heterogeneous quantization tailored to the computational characteristics of each stage: the VAE acoustic tokenizer uses full-pipeline INT8 quantization (I8_S) with kernel fusion and SIMD optimization, while the autoregressive language model adopts BitNet-style ternary weights (I2_S). To preserve accuracy under aggressive compression, we employ a progressive quantization-aware training strategy. For inference, we implement custom SIMD kernels and fused operators within the ggml framework targeting both ARM and x86 platforms, achieving real-time recognition with RTF < 1 using as few as 3 CPU threads. VibeVoice-ASR-BitNet is 1.6-2.3x faster than Whisper.cpp at comparable model sizes (~1.6 GB), with only modest accuracy degradation compared to the FP16 baseline.",
       "matchedBy": [
@@ -191003,7 +191418,7 @@
       "source": "https://arxiv.org/abs/2607.21400v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21400.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Vision-and-Language Navigation (VLN) enables embodied agents to follow natural-language instructions. However, route-level instructions commonly encode spatial priors, such as orientation, distance, and layout, that are not explicitly available from onboard sensing at deployment in open, GPS-denied environments. Benchmark performance under such interfaces therefore jointly reflects visual navigation ability and the use of route structure explicitly supplied by the task description. As a complementary formulation, we propose Vision-Only Long-Horizon Navigation (VoLN), which shifts route-relevant information from externally supplied instructions and global guidance to locally observable in-scene cues. In VoLN, goal views specify the destination, while route-relevant information is available only through locally observable in-scene cues that the agent must detect, interpret, and select online. We instantiate VoLN for aerial navigation through VoLN-UAV, a 7,210-episode benchmark that combines long-horizon goal-directed flight, continuous 3D motion, large viewpoint changes, and context-dependent beacon selection. We further provide VoLN-MLLM as an initial reference baseline. It aligns self-supervised visual features with a structured semantic space and predicts short-horizon waypoint segments from observation history, goal views, retrieved visual--semantic tokens, and proprioception. On the five-environment Test-Unseen split, it obtains success rates of 7.4%, 4.5%, and 1.8% on Easy, Normal, and Hard episodes, respectively. These results provide an initial evaluation of VoLN and reveal substantial remaining challenges in long-horizon evidence integration, cross-view goal matching, and closed-loop stability. Project page: https://admire-ljb.github.io/VoLN-UAV/",
       "matchedBy": [
@@ -191389,7 +191804,7 @@
       "source": "https://arxiv.org/abs/2607.21023v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21023.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Reliable feedforward underwater 3D reconstruction remains challenging due to severe light attenuation and backscattering, which degrade visual quality and disrupt feature consistency across views, leading to inaccurate multi-view geometry. To address this issue, we propose WAT3R, a feed-forward framework for reconstructing 3D scenes directly from underwater images. By leveraging degradation adaptation as a geometry-constrained process, WAT3R integrates a lightweight neural adaptation module to flexibly account for these underwater imaging effects, thereby improving multi-view reconstruction quality. Implemented in a single forward pass, WAT3R directly and efficiently outputs pixel-aligned 3D point maps and camera poses from underwater videos, allowing a high-quality underwater 3D reconstruction. Experiments conducted on the FLSea, SQUID, and USOD10K datasets show that our method consistently outperforms state-of-the-art approaches on 3D reconstruction tasks, including multi-view/monocular depth estimation and camera pose estimation.",
       "matchedBy": [
@@ -191525,7 +191940,7 @@
       "source": "https://arxiv.org/abs/2607.20638v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.20638.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Large Language Models (LLMs) have demonstrated strong capabilities in code generation and reasoning, yet their ability to perform temporal reasoning over digital waveform data remains largely unexplored. Although reasoning over digital waveforms is a critical bottleneck in design verification, existing benchmarks primarily evaluate hardware description language (HDL) code generation and use waveforms only as supplementary context. This paper presents WaveformQA, an open-source question-answering benchmark for evaluating LLM temporal reasoning over digital waveforms. The benchmark comprises 360 questions with programmatically generated ground truths across eight categories of varying difficulty, including questions targeting multi-signal correlation and event ordering. Waveforms are generated from open-source design implementations, ensuring reproducibility and grounding the benchmark in real hardware behavior. Evaluation of frontier LLMs reveals that while models achieve reasonable accuracy on simple queries, performance degrades due to context window limitations and reasoning difficulties on complex temporal and multi-step questions. In addition, we show that an event-time JSON representation of waveforms improves LLM reasoning accuracy versus the standardized value change dump (VCD) format. The open-source framework supports extending to new question categories and importing new waveform sources, enabling researchers to rapidly prototype temporal reasoning experiments.",
       "matchedBy": [
@@ -192121,7 +192536,7 @@
       "source": "https://arxiv.org/abs/2607.21491v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21491.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Do independently trained language models come to represent the same thing in the same way? We answer for code, extending a recently introduced concept-circuit extraction method to a 2x2 design -- Python and Rust crossed with Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B -- and measuring a complete inventory of grammatical concepts (58 Python, 57 Rust) identically in all four cells: the smallest design that separates what depends on the task, the language, and the model. The answer splits into three parts. What earns dedicated circuitry is set by the task: the models agree on which concepts receive circuits (Spearman $ρ$ = 0.638 for Python, 0.673 for Rust, both p < $10^{-7}$). Where those circuits sit is set by the model: Qwen processes concepts in a late band (~L17-19), DeepSeek at L6-7, for both languages. How circuits grow across layers is also set by the model: Qwen gives its atomic concepts an early spike that DeepSeek does not. \"Are circuits universal?\" thus has no single answer: yes for What, no for Where and How -- universality is a property of representational content, not of computational organisation. None of this structure was fixed in advance. The agreement could have landed anywhere between independence and identity; it lands at $ρ\\approx 0.65$. Rust constructs receive 2-3x more concept-specific circuitry than their Python equivalents, in both models. Both models share neurons between the languages (6/7 and 7/7 paired constructs), DeepSeek 1.94x more than Qwen -- a direction no prior result predicts. And Qwen binds nine keywords of Rust's type-and-trait machinery into one tight neuron cluster (Jaccard 0.535 vs null 0.112, p < 0.001), a semantic dimension invisible in surface syntax. Ablation and linear probes confirm the circuits are functional. All claims are scoped to this 2x2; whether the per-model profile predicts a third model is the designed next test.",
       "matchedBy": [
@@ -192285,7 +192700,7 @@
       "source": "https://arxiv.org/abs/2607.21401v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21401.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "A vision-language AI assistant returns its answer as a stream of generated tokens. Therefore, a safety guard that watches that answer has to keep up with the stream and stop a harmful reply before a user reads it. Recent vision-language guardrails instead generate a chain of thought before they issue a verdict. They believe that step-by-step reasoning yields a safer guard. This design makes the guard heavy and slow, since the model must decode many tokens for harmfulness detection. We pose the question of whether a vision-language guard really needs to reason in order to screen a response. We answer with a guard that has no chain. ResponseGuard reads a harmful verdict from a single pooled representation of the request, the response, and the image in one forward pass. Across a standard multimodal guardrail benchmark, our 2B ResponseGuard outperforms a recent 3B reasoning-based vision-language guard on response harmfulness detection, without any reasoning and at about 150 times lower time cost. On request harmfulness the reasoning guard retains an overall lead, and the remaining gap on both tracks sits on the image-only cells. We observe that the gap may stem from the frozen vision encoders that both designs use rather than from the missing chain. We have also found the reasoning guard directs almost none of its verdict attention to the image. Based on a single-pass detection, ResponseGuard can screen an answer sentence by sentence as it streams and stop a harmful answer before it finishes. For guarding the response of a vision-language model, a calibrated single-pass label may provide a sufficient safety signal. We fully release all source code, trained models, and datasets at https://github.com/ndb796/ResponseGuard.",
       "matchedBy": [
@@ -192451,7 +192866,7 @@
       "source": "https://arxiv.org/abs/2607.20594v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.20594.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "When does a weight-tied looped transformer -- one block applied T times -- implement an actual algorithm? We answer with four findings from controlled populations on group word problems. (1) The budget law: free training installs a linear computation frontier, a mechanism that solves v positions per loop, whose speed is priced by the training contract: v ~ n_train/T_train (exponent 0.98 +/- 0.04, R^2=0.99), exactly unity under T=n training. SGD selects a frontier matching the minimum the contract demands; granting more test-time loops than ever trained rescues late positions at fixed input length, yielding a principled halting rule T* = ceil(n / v-hat). (2) Architecture prior, not expressivity, picks the algorithm: standard-depth transformers learn parallel scans on this family; weight tying flips the selection to the serial frontier, even when positional addressing for a log-depth scan is supplied. At matched depth and parameters, untied models extrapolate worst and fail to learn A5 at all. (3) The walls are not where circuit complexity says: NC1-completeness costs nothing (A5 generalizes fully), while group order does (S5's 120x120 operator deadlocks joint learning) -- and an operator-first curriculum dissolves the wall in every seed. (4) Mechanisms are portable, not mandatable: warm-starting across budget contracts transfers the algorithm in every seed, re-pricing its speed, while imposing seriality through the input schedule fails where free training succeeds. These results are invisible to standard instruments, which provably saturate at the fixed points trained loops converge to. We introduce a head instrument, the convergence-time scaling tau(n,i), validate it causally via damage cones whose slope reproduces v, and show in-distribution head measurements predict out-of-distribution fate where tail metrics do not. Results replicate on the public easy-to-hard benchmark.",
       "matchedBy": [
@@ -193025,7 +193440,7 @@
       "source": "https://arxiv.org/abs/2607.21445v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21445.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Quiz rooms, trivia nights, and quiz shows challenge human knowledge across a wide range of topics, from canonical facts to everyday culture. In this paper, we examine whether large language models (LLMs) can perform competitively in such settings, using quiz-style questions to test them on both common and niche topics. We introduce TriviaRoomQA, a multilingual benchmark designed to evaluate everyday, culturally grounded, and long-tail knowledge across 288 topics. The benchmark contains 3,300 parallel multiple-choice questions in six European languages and additional 5,340 French-only questions for a more fine-grained case study. We evaluate 30 open-weight LLMs from European, Asian, and North American providers, covering models from 7 to 70B parameters. We find that models are strong on knowledge-intensive topics such as history, geography, and mathematics, but substantially weaker on everyday popular-culture topics such as celebrities, music, movies, and news. Moreover, model performance varies across languages even for the same underlying questions, suggesting that access to factual knowledge is not always language-independent. In sum, our dataset and experiments demonstrate an important knowledge gap which is not captured by existing academic-based saturated benchmarks.",
       "matchedBy": [
@@ -193649,7 +194064,7 @@
       "source": "https://arxiv.org/abs/2607.21535v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21535.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "Speculative decoding accelerates autoregressive generation by having a cheap draft propose tokens that a target verifies in parallel. Frontier models increasingly ship a built-in Multi-Token-Prediction (MTP/NEXTN) draft head under the assumption that the draft is negligibly cheap. At million-token context this breaks: an MTP draft head typically runs full attention over the entire KV cache at every draft step, so its read grows linearly with context and comes to dominate the draft cost -- precisely where speculation is most valuable. The effect compounds with draft length (a deep native draft can turn net-negative, slower than no speculation) and sharpens under hybrid/linear-attention targets, where cheaper verification leaves the draft's full-attention read exposed. We apply a StreamingLLM-style sliding window plus attention sink to the draft's attention only (Windowed-MTP), leaving full-attention verification intact. It is training-free, drop-in, and lossless by construction: the full-attention target still decides every accepted token, so windowing changes only which tokens are proposed, never which are accepted. It bounds the draft's KV working set to a constant, dropping ~99% of KV entries at 1M. Across three architecture families (Qwen GDN-MoE 35B/122B and a Mamba2-hybrid NoPE 120B) at 1M context on a single GPU in SGLang, windowing cuts the per-decode-step cost over the shipping native MTP draft by +28% to +44%, an input-invariant margin that widens with context. Since per-token latency is this cost divided by acceptance length, at matched acceptance end-to-end decode latency improves by the same amount, and more where windowing also lifts acceptance, while preserving the target's verified output distribution. Finally, the unread draft KV -- 7.7-11% of total KV at 1M -- is reclaimed via a compact ring buffer at no acceptance or quality cost.",
       "matchedBy": [
@@ -194509,7 +194924,7 @@
       "source": "https://arxiv.org/abs/2607.21025v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2607.21025.jpg",
       "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "In Object Goal Navigation task, existing methods are typically restricted to static and single-floor environments, ignoring cross-floor topologies and dynamic pedestrian, which limits their real-world deployment. To address these limitations, we propose ZONDA, a zero-shot object navigation with dynamic avoidance framework. In particular, ZONDA integrates three core components: (i) Heuristic multi-floor planning: from height-difference traversable maps, enables stair traversal and cross-floor exploration without a platform-specific learned controller; (ii) Multi-view target verification: cross-checks multi-scale observations with a vision-language model, significantly reducing false positives; and (iii) Dynamic pedestrian avoidance: explicitly tracks and predicts moving pedestrians to generate anticipatory behaviors. Evaluated on a real Direct Drive Tech TITA biped robot and extensive simulations on HM3D and MP3D, ZONDA achieves significantly improved results. Moreover, ZONDA can maintain robust navigation on the dynamic benchmark HM3D-DYNA compared to the existing baseline.",
       "matchedBy": [
