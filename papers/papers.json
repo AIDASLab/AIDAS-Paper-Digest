@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-26T00:12:10.609Z",
+  "generatedAt": "2026-07-26T01:11:51.404Z",
   "sourceStats": {
-    "seed": 6752,
+    "seed": 6757,
     "paperswithcode": 540,
-    "arxiv": 175,
+    "arxiv": 0,
     "huggingface": 22,
     "alphaxiv": 20,
     "twitterSignals": 0,
@@ -3743,6 +3743,32 @@
       ]
     },
     {
+      "id": "2607.sigreg-tutorial",
+      "title": "SIGReg from First Principles",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-21",
+      "score": 91,
+      "paper": "https://www.alphaxiv.org/abs/2607.sigreg-tutorial",
+      "source": "https://www.alphaxiv.org/abs/2607.sigreg-tutorial",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "This tutorial reconstructs SIGReg, the anti-collapse regularizer introduced in LeJEPA, from first principles. It walks from characteristic functions and the Epps–Pulley test through trapezoidal quadrature and the Cramér–Wold theorem to the full differentiable loss, using LeWorldModel&#x27;s action-conditioned temporal prediction as the running application. Each reduction step is verified with small runnable experiments, ending with the complete JEPA training loop combining prediction loss and SIGReg.",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.24937",
       "title": "The Hitchhiker's Guide to Agentic AI: From Foundations to Systems",
       "authors": "Haggai Roitman",
@@ -5609,32 +5635,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2607.sigreg-tutorial",
-      "title": "SIGReg from First Principles",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-21",
-      "score": 88,
-      "paper": "https://www.alphaxiv.org/abs/2607.sigreg-tutorial",
-      "source": "https://www.alphaxiv.org/abs/2607.sigreg-tutorial",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "This tutorial reconstructs SIGReg, the anti-collapse regularizer introduced in LeJEPA, from first principles. It walks from characteristic functions and the Epps–Pulley test through trapezoidal quadrature and the Cramér–Wold theorem to the full differentiable loss, using LeWorldModel&#x27;s action-conditioned temporal prediction as the running application. Each reduction step is verified with small runnable experiments, ending with the complete JEPA training loop combining prediction loss and SIGReg.",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
