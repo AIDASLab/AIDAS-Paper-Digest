@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-25T01:07:08.853Z",
+  "generatedAt": "2026-07-26T00:12:10.609Z",
   "sourceStats": {
-    "seed": 6739,
+    "seed": 6752,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 22,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 6752
+    "total": 6757
   },
   "papers": [
     {
@@ -1012,6 +1012,32 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2607.open-weights",
+      "title": "Open Weights and American AI Leadership",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-24",
+      "score": 95,
+      "paper": "https://www.alphaxiv.org/abs/2607.open-weights",
+      "source": "https://www.alphaxiv.org/abs/2607.open-weights",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -3627,6 +3653,38 @@
       ]
     },
     {
+      "id": "2607.21557",
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "authors": "Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 91,
+      "paper": "https://arxiv.org/abs/2607.21557",
+      "source": "https://www.alphaxiv.org/abs/2607.21557",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21557.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "vision/multimodal",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2606.18610",
       "title": "SC3-Eval: Evaluating Robot Foundation Models via Self-Consistent Video Generation",
       "authors": "Wei-Cheng Tseng, Gashon Hussein, Yuzhu Dong, Allen Z. Ren, Lucy X. Shi, XuDong Wang, Sergey Levine, Zhaoshuo Li, Jinwei Gu, Florian Shkurti, Ming-Yu Liu, Quan Vuong",
@@ -4205,6 +4263,34 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.project-pilot",
+      "title": "Project Pilot: Can AI control a drone?",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-24",
+      "score": 90,
+      "paper": "https://www.alphaxiv.org/abs/2607.project-pilot",
+      "source": "https://www.alphaxiv.org/abs/2607.project-pilot",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Anthropic&#x27;s Frontier Red Team, working with Andon Labs, tested whether AI models can autonomously fly a quad-rotor drone through an indoor office to locate and follow a specific person — a locate-and-follow task representative of aerial surveillance. Andon Labs decomposed the mission into five sub-tasks (Reconstruct, Localize, Navigate, Detect, Follow), reproduced each in simulation as the Drone-Bench benchmark, and scored 15 models from three developers against a baseline set by human-AI teams using coding agents. Newer models get successively further on every sub-task, with Claude Fable 5 passing the baseline on all tasks except Reconstruct, whose failure compounds into localization and navigation errors and blocks end-to-end autonomy on the real drone.",
+      "matchedBy": [
+        "alphaxiv hot",
+        "robotics",
+        "frontier training"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training"
       ]
     },
     {
@@ -4795,32 +4881,6 @@
       "project": "",
       "thumbnail": "",
       "firstSeenAt": "2026-06-26T01:29:11.681Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.open-weights",
-      "title": "Open Weights and American AI Leadership",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-24",
-      "score": 89,
-      "paper": "https://www.alphaxiv.org/abs/2607.open-weights",
-      "source": "https://www.alphaxiv.org/abs/2607.open-weights",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -5438,34 +5498,6 @@
       ]
     },
     {
-      "id": "2607.project-pilot",
-      "title": "Project Pilot: Can AI control a drone?",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-24",
-      "score": 88,
-      "paper": "https://www.alphaxiv.org/abs/2607.project-pilot",
-      "source": "https://www.alphaxiv.org/abs/2607.project-pilot",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Anthropic&#x27;s Frontier Red Team, working with Andon Labs, tested whether AI models can autonomously fly a quad-rotor drone through an indoor office to locate and follow a specific person — a locate-and-follow task representative of aerial surveillance. Andon Labs decomposed the mission into five sub-tasks (Reconstruct, Localize, Navigate, Detect, Follow), reproduced each in simulation as the Drone-Bench benchmark, and scored 15 models from three developers against a baseline set by human-AI teams using coding agents. Newer models get successively further on every sub-task, with Claude Fable 5 passing the baseline on all tasks except Reconstruct, whose failure compounds into localization and navigation errors and blocks end-to-end autonomy on the real drone.",
-      "matchedBy": [
-        "alphaxiv hot",
-        "robotics",
-        "frontier training"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2606.17846",
       "title": "Qwen-RobotManip Technical Report: Alignment Unlocks Scale for Robotic Manipulation Foundation Models",
       "authors": "Haoqi Yuan, Zhixuan Liang, Anzhe Chen, Ye Wang, Haoyang Li, Pei Lin, Yiyang Huang, Zixing Lei, Tong Zhang, Jiazhao Zhang, Jie Zhang, Jingyang Fan, Gengze Zhou, Qihang Peng, Chenxu Lv, Xiaoyue Chen, An Yang, Fei Huang, Junyang Lin, Dayiheng Liu, Jingren Zhou, Chenfei Wu, Xiong-Hui Chen",
@@ -5577,6 +5609,32 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2607.sigreg-tutorial",
+      "title": "SIGReg from First Principles",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-21",
+      "score": 88,
+      "paper": "https://www.alphaxiv.org/abs/2607.sigreg-tutorial",
+      "source": "https://www.alphaxiv.org/abs/2607.sigreg-tutorial",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "This tutorial reconstructs SIGReg, the anti-collapse regularizer introduced in LeJEPA, from first principles. It walks from characteristic functions and the Epps–Pulley test through trapezoidal quadrature and the Cramér–Wold theorem to the full differentiable loss, using LeWorldModel&#x27;s action-conditioned temporal prediction as the running application. Each reduction step is verified with small runnable experiments, ending with the complete JEPA training loop combining prediction loss and SIGReg.",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -6101,6 +6159,34 @@
       ]
     },
     {
+      "id": "2607.21576",
+      "title": "Self-Supervised Learning of Structured Dynamics from Videos",
+      "authors": "Lukas Knobel, Andrew Zisserman, Yuki M. Asano",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 87,
+      "paper": "https://arxiv.org/abs/2607.21576",
+      "source": "https://www.alphaxiv.org/abs/2607.21576",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21576.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remained underexplored in representation learning, partly because these factors are tightly coupled in natural videos and difficult to supervise separately. Yet recovering it is important for learning robust motion representations that separate meaningful object dynamics from camera-induced variation. We study whether such structured motion representations can be recovered from frozen features of a pretrained image vision transformer. We propose the Structured Dynamics Model (SDM), which explicitly separates the dominant source of temporal change from residual dynamics through future-feature prediction, rather than representing video change with a single entangled latent or with unstructured, spatially dense transition tokens. Training combines self-supervised learning on real video with weak supervision of scene dynamics on synthetic Kubric data. We evaluate SDM on ProbeMotion, a new evaluation suite spanning synthetic and real videos with camera motion, object motion, and combined dynamics. SDM outperforms backbone baselines using global CLS or average-pooled features, and compares favorably to strongly supervised representations such as VGGT on several probes, despite using substantially weaker supervision. These results suggest that pretrained image models can be readily repurposed into structured video-dynamics representations, providing a useful inductive bias for learning and analyzing latent video dynamics.",
+      "matchedBy": [
+        "hugging face daily",
+        "vision/multimodal",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2606.31693",
       "title": "ShopX: A Foundation Model for Intent-to-Item Fulfillment in Agentic Shopping",
       "authors": "Jiacheng Chen, Tao Zhang, Manxi Lin, Dunxian Huang, Teng Shi, Honghao Fu, Mengyan Li, Xinming Zhang, Chenchi Zhang, Xuan Lu, Xiaoxiong Du, Haibin Chen, Shaolin Ye, Hao Chang, Xiaoqi Li, Shuwen Xiao, Yujin Yuan, Jingxuan Feng, Shaopan Xiong, Huimin Yi, Ju Huang, Qiu Shen, Ying Chen, Junjun Zheng, Xiangheng Kong, Yuning Jiang",
@@ -6279,6 +6365,38 @@
       "categories": [
         "Vision/Multimodal",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2607.21503",
+      "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+      "authors": "Gaurav Dadhich",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 86,
+      "paper": "https://arxiv.org/abs/2607.21503",
+      "source": "https://www.alphaxiv.org/abs/2607.21503",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21503.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, large tool definitions, and ballooning tool outputs. Agents drown in their own accumulating history while paying a token cost that grows every turn, producing missing recalls within and across conversations. The incumbent response treats this as a storage-and-retrieval problem. We argue that framing is too narrow. Actively managing what an agent holds in mind is a lifecycle, not merely a store: it spans deciding what to remember, extracting and structuring it, choosing the right store per data type, consolidating and forgetting while preserving provenance, deciding what is relevant now, anticipating what is needed next, and compacting context to a budget without losing what matters. In serious production this operates not over a single user but across an organizational scope hierarchy. We name this discipline Agentic Context Management (ACM) and decompose it into five primitives: architecting, ingesting, scoping, anticipating, and compacting & consolidation. We then make the economic case: naive context accumulation grows token cost quadratically in conversation length, crude summarization buys linear cost at the price of an accuracy cliff, and only validated compaction achieves linear cost with preserved fidelity. We describe a reference implementation, Maximem Synap, that realizes the five primitives as a multi-tenant service and reports 92% on LongMemEval and 93.2% on LoCoMo under the configuration detailed in Section 6. We close with dimensions existing benchmarks do not yet capture, latency, token efficiency, and context-rot resistance, and the frontier of decision-level and organization-level context the category points toward.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "serving",
+        "data / retrieval",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Serving",
+        "Data / Retrieval"
       ]
     },
     {
@@ -6840,6 +6958,32 @@
       ]
     },
     {
+      "id": "2607.21585",
+      "title": "Expanding Flow Maps",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2607.21585",
+      "source": "https://www.alphaxiv.org/abs/2607.21585",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21585.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2603.19137",
       "title": "GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning",
       "authors": "Yiren Lu, Yi Du, Disheng Liu",
@@ -7182,7 +7326,7 @@
       "published": "2026-07-23",
       "score": 85,
       "paper": "https://arxiv.org/abs/2607.20911",
-      "source": "https://www.alphaxiv.org/abs/2607.20911",
+      "source": "https://huggingface.co/papers/2607.20911",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.20911.jpg",
@@ -7288,6 +7432,36 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2607.21595",
+      "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+      "authors": "Wenhao Li, Xueying Jiang, Quanhao Qian, Deli Zhao, Ran Xu, Shijian Lu, Gongjie Zhang",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 84,
+      "paper": "https://arxiv.org/abs/2607.21595",
+      "source": "https://www.alphaxiv.org/abs/2607.21595",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21595.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial awareness of VLMs by equipping them with both implicit and explicit 3D geometries learned from RGB videos. Our VLM-IE3D introduces Implicit Geometry Tokens (IGTs) that capture high-level geometric priors from input videos, as well as complementary Explicit Geometry Tokens (EGTs) that encode detailed geometric structures from reconstructed 3D attributes. On top of that, VLM-IE3D comes with a 3D-aware adapter that effectively fuses the two types of geometric representations with 2D visual cues. This RGB-only design injects strong 3D inductive biases for fine-grained spatial understanding and reasoning without requiring any additional 3D inputs. Extensive experiments show that VLM-IE3D achieves superior performance consistently across various 3D tasks including 3D video detection, 3D visual grounding, 3D dense captioning, and spatial reasoning. Code and models are available at https://github.com/Vegetebird/VLM-IE3D.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -7889,8 +8063,8 @@
       "org": "",
       "published": "2026-07-23",
       "score": 83,
-      "paper": "https://arxiv.org/abs/2607.21588",
-      "source": "https://www.alphaxiv.org/abs/2607.21588",
+      "paper": "https://arxiv.org/abs/2607.21588v1",
+      "source": "https://arxiv.org/abs/2607.21588v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.21588.jpg",
@@ -7910,6 +8084,34 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2607.21427",
+      "title": "Context-weighted Discrete Flow Matching",
+      "authors": "Daniil Cherniavskii, Daniel Severo, Karen Ullrich",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 83,
+      "paper": "https://arxiv.org/abs/2607.21427",
+      "source": "https://www.alphaxiv.org/abs/2607.21427",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21427.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Discrete flow matching provides a flexible framework for generative modeling on discrete structures. However, the standard factorized training objective exposes the model to targets of varying difficulty, mixing well-conditioned, predictable tokens with ambiguous, high-entropy ones. We empirically demonstrate that the uncertainty over the value of each token is closely related to the density of available context in its neighborhood. Motivated by this observation, we propose a simple modification to the underlying continuous-time Markov chain (CTMC) that incorporates local context information. Our context-weighted sampler improves generation quality with negligible computational overhead, while our scaled cross-entropy loss function reweights the training signal from different tokens and reduces generative perplexity by up to 63% on OpenWebText. Moreover, our approach matches a strong semi-autoregressive block diffusion baseline in quality while retaining the ability to perform generation in any order. These results highlight the role of local context as an important factor in discrete generative modeling and show that simple context-aware modifications can significantly improve both sampling and training efficiency.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -8894,32 +9096,6 @@
       ]
     },
     {
-      "id": "2607.sigreg-tutorial",
-      "title": "SIGReg from First Principles",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-21",
-      "score": 82,
-      "paper": "https://www.alphaxiv.org/abs/2607.sigreg-tutorial",
-      "source": "https://www.alphaxiv.org/abs/2607.sigreg-tutorial",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "This tutorial reconstructs SIGReg, the anti-collapse regularizer introduced in LeJEPA, from first principles. It walks from characteristic functions and the Epps–Pulley test through trapezoidal quadrature and the Cramér–Wold theorem to the full differentiable loss, using LeWorldModel&#x27;s action-conditioned temporal prediction as the running application. Each reduction step is verified with small runnable experiments, ending with the complete JEPA training loop combining prediction loss and SIGReg.",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2606.24253",
       "title": "TuringViT: Making SOTA Vision Transformers Accessible to All",
       "authors": "",
@@ -9248,38 +9424,6 @@
       ]
     },
     {
-      "id": "2607.21557",
-      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-      "authors": "Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 81,
-      "paper": "https://arxiv.org/abs/2607.21557",
-      "source": "https://www.alphaxiv.org/abs/2607.21557",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21557.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "vision/multimodal",
-        "hugging face daily",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Vision/Multimodal"
-      ]
-    },
-    {
       "id": "2607.11762",
       "title": "Operational Concealment of Measurement Incompatibility by Quantum Channels",
       "authors": "",
@@ -9298,6 +9442,34 @@
         "language modeling"
       ],
       "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.21051",
+      "title": "Sample-Efficient Learning from Agent Experience",
+      "authors": "Chenhui Gou, Haoqin Tu, Yunhao Fang, Jianfei Cai, Hamid Rezatofighi",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 81,
+      "paper": "https://arxiv.org/abs/2607.21051",
+      "source": "https://www.alphaxiv.org/abs/2607.21051",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21051.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Real-world agent learning is often constrained by costly environment interactions, such as running time-consuming experiments or obtaining human feedback. In-context learning offers a highly sample-efficient way for agents to learn from their own interaction histories, but its gains disappear once that experience is removed from the context. Separately, context distillation provides a mechanism for internalizing contextual information into model weights. However, applying it to agents' interaction histories without sacrificing environment sample efficiency remains underexplored. We term this problem Experience Distillation and develop an implementation that requires no further environment interaction beyond the collected experience. Experiments on 749 curated software-engineering tasks and six text-adventure games show that it retains at least 64.8\\% of the gains from in-context learning across both domains, whereas direct supervised fine-tuning on the collected experience recovers only 3.8\\%. Compared with classical reinforcement-learning baselines, in-context learning from trial-and-error experience followed by Experience Distillation matches their performance with at least \\(9.6\\times\\) fewer environment samples.",
+      "matchedBy": [
+        "hugging face daily",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "huggingface",
         "alphaxiv"
       ],
       "category": "Language Modeling",
@@ -9517,36 +9689,6 @@
       "categories": [
         "Vision/Multimodal",
         "Frontier Training"
-      ]
-    },
-    {
-      "id": "2607.21595",
-      "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
-      "authors": "Wenhao Li, Xueying Jiang, Quanhao Qian, Deli Zhao, Ran Xu, Shijian Lu, Gongjie Zhang",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 80,
-      "paper": "https://arxiv.org/abs/2607.21595",
-      "source": "https://www.alphaxiv.org/abs/2607.21595",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21595.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial awareness of VLMs by equipping them with both implicit and explicit 3D geometries learned from RGB videos. Our VLM-IE3D introduces Implicit Geometry Tokens (IGTs) that capture high-level geometric priors from input videos, as well as complementary Explicit Geometry Tokens (EGTs) that encode detailed geometric structures from reconstructed 3D attributes. On top of that, VLM-IE3D comes with a 3D-aware adapter that effectively fuses the two types of geometric representations with 2D visual cues. This RGB-only design injects strong 3D inductive biases for fine-grained spatial understanding and reasoning without requiring any additional 3D inputs. Extensive experiments show that VLM-IE3D achieves superior performance consistently across various 3D tasks including 3D video detection, 3D visual grounding, 3D dense captioning, and spatial reasoning. Code and models are available at https://github.com/Vegetebird/VLM-IE3D.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
       ]
     },
     {
@@ -9919,6 +10061,32 @@
       "project": "",
       "thumbnail": "./thumbs/2606.23595.jpg",
       "firstSeenAt": "2026-06-25T00:21:13.185Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.21554",
+      "title": "Strategic Plan for Neutral Atom Quantum Computation",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 80,
+      "paper": "https://arxiv.org/abs/2607.21554",
+      "source": "https://www.alphaxiv.org/abs/2607.21554",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21554.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -16716,32 +16884,6 @@
       ],
       "sources": [
         "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.21585",
-      "title": "Expanding Flow Maps",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.21585",
-      "source": "https://www.alphaxiv.org/abs/2607.21585",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21585.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
       ],
       "category": "Language Modeling",
       "categories": [
@@ -26580,32 +26722,6 @@
       ]
     },
     {
-      "id": "2607.21051",
-      "title": "Sample-Efficient Learning from Agent Experience",
-      "authors": "Chenhui Gou, Haoqin Tu, Yunhao Fang, Jianfei Cai, Hamid Rezatofighi",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.21051",
-      "source": "https://huggingface.co/papers/2607.21051",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21051.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Real-world agent learning is often constrained by costly environment interactions, such as running time-consuming experiments or obtaining human feedback. In-context learning offers a highly sample-efficient way for agents to learn from their own interaction histories, but its gains disappear once that experience is removed from the context. Separately, context distillation provides a mechanism for internalizing contextual information into model weights. However, applying it to agents' interaction histories without sacrificing environment sample efficiency remains underexplored. We term this problem Experience Distillation and develop an implementation that requires no further environment interaction beyond the collected experience. Experiments on 749 curated software-engineering tasks and six text-adventure games show that it retains at least 64.8\\% of the gains from in-context learning across both domains, whereas direct supervised fine-tuning on the collected experience recovers only 3.8\\%. Compared with classical reinforcement-learning baselines, in-context learning from trial-and-error experience followed by Experience Distillation matches their performance with at least \\(9.6\\times\\) fewer environment samples.",
-      "matchedBy": [
-        "hugging face daily",
-        "language modeling"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.19918",
       "title": "Scalable Keyword Spotting via Modular Network Expansion",
       "authors": "",
@@ -27201,32 +27317,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.21576",
-      "title": "Self-Supervised Learning of Structured Dynamics from Videos",
-      "authors": "Lukas Knobel, Andrew Zisserman, Yuki M. Asano",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.21576",
-      "source": "https://huggingface.co/papers/2607.21576",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21576.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remained underexplored in representation learning, partly because these factors are tightly coupled in natural videos and difficult to supervise separately. Yet recovering it is important for learning robust motion representations that separate meaningful object dynamics from camera-induced variation. We study whether such structured motion representations can be recovered from frozen features of a pretrained image vision transformer. We propose the Structured Dynamics Model (SDM), which explicitly separates the dominant source of temporal change from residual dynamics through future-feature prediction, rather than representing video change with a single entangled latent or with unstructured, spatially dense transition tokens. Training combines self-supervised learning on real video with weak supervision of scene dynamics on synthetic Kubric data. We evaluate SDM on ProbeMotion, a new evaluation suite spanning synthetic and real videos with camera motion, object motion, and combined dynamics. SDM outperforms backbone baselines using global CLS or average-pooled features, and compares favorably to strongly supervised representations such as VGGT on several probes, despite using substantially weaker supervision. These results suggest that pretrained image models can be readily repurposed into structured video-dynamics representations, providing a useful inductive bias for learning and analyzing latent video dynamics.",
-      "matchedBy": [
-        "hugging face daily",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
       ]
     },
     {
@@ -32098,32 +32188,6 @@
       ]
     },
     {
-      "id": "2607.21554",
-      "title": "Strategic Plan for Neutral Atom Quantum Computation",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 77,
-      "paper": "https://arxiv.org/abs/2607.21554",
-      "source": "https://www.alphaxiv.org/abs/2607.21554",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21554.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2606.27374",
       "title": "World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays",
       "authors": "Manish Kumar Govind, Dominick Reilly, Smit Patel, Hieu Le, Srijan Das",
@@ -33538,6 +33602,39 @@
       ]
     },
     {
+      "id": "2505.15660",
+      "title": "Exploring the Limits of Vision-Language-Action Manipulations in Cross-task Generalization",
+      "authors": "Jiaming Zhou, Ke Ye, Jiayi Liu, Teli Ma, Zifan Wang, Ronghe QIU, Kun-Yu Lin, Zhilin Zhao, Junwei Liang",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 70,
+      "paper": "https://arxiv.org/abs/2505.15660",
+      "source": "https://paperswithcode.co/paper/2505.15660",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.15660.jpg",
+      "firstSeenAt": "2026-06-22T00:21:43.543Z",
+      "summary": "The generalization capabilities of vision-language-action (VLA) models to unseen tasks are crucial to achieving general-purpose robotic manipulation in open-world settings.However, the cross-task generalization capabilities of existing VLA models remain significantly underexplored.To address this gap, we introduce **AGNOSTOS**, a novel simulation benchmark designed to rigorously evaluate cross-task zero-shot generalization in manipulation. AGNOSTOS comprises 23 unseen manipulation tasks for test—distinct from common training task distributions—and incorporates two levels of generalization difficulty to assess robustness. Our systematic evaluation reveals that current VLA models, despite being trained on diverse datasets, struggle to generalize effectively to these unseen tasks. To overcome this limitation, we propose **Cross-Task In-Context Manipulation (X-ICM)**, a method that conditions large language models (LLMs) on in-context demonstrations from seen tasks to predict action sequences for unseen tasks.Additionally, we introduce a **dynamics-guided sample selection** strategy that identifies relevant demonstrations by capturing cross-task dynamics. On AGNOSTOS, X-ICM significantly improves cross-task zero-shot generalization performance over leading VLAs, achieving improvements of 6.0\\% over $\\pi_0$ and 7.9\\% over VoxPoser.We believe AGNOSTOS and X-ICM will serve as valuable tools for advancing general-purpose robotic manipulation.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Robotics",
+        "ACT",
+        "Chain-of-Thought (CoT)",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2412.10209",
       "title": "GAF: Gaussian Avatar Reconstruction from Monocular Videos via Multi-view Diffusion",
       "authors": "Jiapeng Tang, Davide Davoli, Tobias Kirschstein, Liam Schoneveld, Matthias Nießner",
@@ -33869,39 +33966,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2505.15660",
-      "title": "Exploring the Limits of Vision-Language-Action Manipulations in Cross-task Generalization",
-      "authors": "Jiaming Zhou, Ke Ye, Jiayi Liu, Teli Ma, Zifan Wang, Ronghe QIU, Kun-Yu Lin, Zhilin Zhao, Junwei Liang",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 69,
-      "paper": "https://arxiv.org/abs/2505.15660",
-      "source": "https://paperswithcode.co/paper/2505.15660",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.15660.jpg",
-      "firstSeenAt": "2026-06-22T00:21:43.543Z",
-      "summary": "The generalization capabilities of vision-language-action (VLA) models to unseen tasks are crucial to achieving general-purpose robotic manipulation in open-world settings.However, the cross-task generalization capabilities of existing VLA models remain significantly underexplored.To address this gap, we introduce **AGNOSTOS**, a novel simulation benchmark designed to rigorously evaluate cross-task zero-shot generalization in manipulation. AGNOSTOS comprises 23 unseen manipulation tasks for test—distinct from common training task distributions—and incorporates two levels of generalization difficulty to assess robustness. Our systematic evaluation reveals that current VLA models, despite being trained on diverse datasets, struggle to generalize effectively to these unseen tasks. To overcome this limitation, we propose **Cross-Task In-Context Manipulation (X-ICM)**, a method that conditions large language models (LLMs) on in-context demonstrations from seen tasks to predict action sequences for unseen tasks.Additionally, we introduce a **dynamics-guided sample selection** strategy that identifies relevant demonstrations by capturing cross-task dynamics. On AGNOSTOS, X-ICM significantly improves cross-task zero-shot generalization performance over leading VLAs, achieving improvements of 6.0\\% over $\\pi_0$ and 7.9\\% over VoxPoser.We believe AGNOSTOS and X-ICM will serve as valuable tools for advancing general-purpose robotic manipulation.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Robotics",
-        "ACT",
-        "Chain-of-Thought (CoT)",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Robotics",
-        "Frontier Training"
       ]
     },
     {
@@ -36645,6 +36709,38 @@
       ]
     },
     {
+      "id": "2503.09817",
+      "title": "Temporal Difference Flows",
+      "authors": "Jesse Farebrother, Matteo Pirotta, Andrea Tirinzoni, Remi Munos, Alessandro Lazaric, Ahmed Touati",
+      "org": "",
+      "published": "ICML 2025 Oral",
+      "score": 66,
+      "paper": "https://arxiv.org/abs/2503.09817",
+      "source": "https://paperswithcode.co/paper/2503.09817",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2503.09817.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Predictive models of the future are fundamental for an agent's ability to reason and plan. A common strategy learns a world model and unrolls it step-by-step at inference, where small errors can rapidly compound. Geometric Horizon Models (GHMs) offer a compelling alternative by directly making predictions of future states, avoiding cumulative inference errors. While GHMs can be conveniently learned by a generative analog to temporal difference (TD) learning, existing methods are negatively affected by bootstrapping predictions at train time and struggle to generate high-quality predictions at long horizons. This paper introduces Temporal Difference Flows (TD-Flow), which leverages the structure of a novel Bellman equation on probability paths alongside flow-matching techniques to learn accurate GHMs at over 5x the horizon length of prior methods. Theoretically, we establish a new convergence result and primarily attribute TD-Flow's efficacy to reduced gradient variance during training. We further show that similar arguments can be extended to diffusion-based methods. Empirically, we validate TD-Flow across a diverse set of domains on both generative metrics and downstream tasks, including policy evaluation. Moreover, integrating TD-Flow with recent behavior foundation models for planning over policies demonstrates substantial performance gains, underscoring its promise for long-horizon decision-making.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "Diffusion",
+        "Flow matching",
+        "Layer Normalization",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2406.04328",
       "title": "The Brain's Bitter Lesson: Scaling Speech Decoding With Self-Supervised Learning",
       "authors": "Dulhan Jayalath, Gilad Landau, Brendan Shillingford, Mark Woolrich, Oiwi Parker Jones",
@@ -37418,6 +37514,36 @@
       ]
     },
     {
+      "id": "2502.19896",
+      "title": "GenPC: Zero-shot Point Cloud Completion via 3D Generative Priors",
+      "authors": "An Li, Zhe Zhu, Mingqiang Wei",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2502.19896",
+      "source": "https://paperswithcode.co/paper/2502.19896",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2502.19896.jpg",
+      "firstSeenAt": "2026-07-26T00:12:10.609Z",
+      "summary": "Existing point cloud completion methods, which typically depend on predefined synthetic training datasets, encounter significant challenges when applied to out-of-distribution, real-world scans. To overcome this limitation, we introduce a zero-shot completion framework, termed GenPC, designed to reconstruct high-quality real-world scans by leveraging explicit 3D generative priors.Our key insight is that recent feed-forward 3D generative models, trained on extensive internet-scale data, have demonstrated the ability to perform 3D generation from single-view images in a zero-shot setting. To harness this for completion, we first develop a Depth Prompting module that links partial point clouds with image-to-3D generative models by leveraging depth images as a stepping stone. To retain the original partial structure in the final results, we designed the Geometric Preserving Fusion module that aligns the generated shape with input by adaptively adjusting its pose and scale.Extensive experiments on widely used benchmarks validate the superiority and generalizability of our approach, bringing us a step closer to robust real-world scan completion.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Gaussian splatting",
+        "Key-value cache",
+        "Multi-head attention",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2410.24204",
       "title": "GeoSplatting: Towards Geometry Guided Gaussian Splatting for Physically-based Inverse Rendering",
       "authors": "Kai Ye, Chong Gao, Guanbin Li, Wenzheng Chen, Baoquan Chen",
@@ -37821,6 +37947,36 @@
       ]
     },
     {
+      "id": "2410.03618",
+      "title": "Open-World Reinforcement Learning over Long Short-Term Imagination",
+      "authors": "Jiajian Li, Qi Wang, Yunbo Wang, Xin Jin, Yang Li, Wenjun Zeng, Xiaokang Yang",
+      "org": "",
+      "published": "ICLR 2025 Oral",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2410.03618",
+      "source": "https://paperswithcode.co/paper/2410.03618",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2410.03618.jpg",
+      "firstSeenAt": "2026-06-18T01:40:50.232Z",
+      "summary": "Training visual reinforcement learning agents in a high-dimensional open world presents significant challenges. While various model-based methods have improved sample efficiency by learning interactive world models, these agents tend to be “short-sighted”, as they are typically trained on short snippets of imagined experiences. We argue that the primary challenge in open-world decision-making is improving the exploration efficiency across a vast state space, especially for tasks that demand consideration of long-horizon payoffs. In this paper, we present LS-Imagine, which extends the imagination horizon within a limited number of state transition steps, enabling the agent to explore behaviors that potentially lead to promising long-term feedback. The foundation of our approach is to build a $\\textit{long short-term world model}$. To achieve this, we simulate goal-conditioned jumpy state transitions and compute corresponding affordance maps by zooming in on specific areas within single images. This facilitates the integration of direct long-term values into behavior learning. Our method demonstrates significant improvements over state-of-the-art techniques in MineDojo.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "World Models",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2502.20853",
       "title": "Oscillation-Reduced MXFP4 Training for Vision Transformers",
       "authors": "Yuxiang Chen, Haocheng Xi, Jun Zhu, Jianfei Chen",
@@ -38220,38 +38376,6 @@
       "category": "Serving",
       "categories": [
         "Serving",
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2503.09817",
-      "title": "Temporal Difference Flows",
-      "authors": "Jesse Farebrother, Matteo Pirotta, Andrea Tirinzoni, Remi Munos, Alessandro Lazaric, Ahmed Touati",
-      "org": "",
-      "published": "ICML 2025 Oral",
-      "score": 65,
-      "paper": "https://arxiv.org/abs/2503.09817",
-      "source": "https://paperswithcode.co/paper/2503.09817",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2503.09817.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Predictive models of the future are fundamental for an agent's ability to reason and plan. A common strategy learns a world model and unrolls it step-by-step at inference, where small errors can rapidly compound. Geometric Horizon Models (GHMs) offer a compelling alternative by directly making predictions of future states, avoiding cumulative inference errors. While GHMs can be conveniently learned by a generative analog to temporal difference (TD) learning, existing methods are negatively affected by bootstrapping predictions at train time and struggle to generate high-quality predictions at long horizons. This paper introduces Temporal Difference Flows (TD-Flow), which leverages the structure of a novel Bellman equation on probability paths alongside flow-matching techniques to learn accurate GHMs at over 5x the horizon length of prior methods. Theoretically, we establish a new convergence result and primarily attribute TD-Flow's efficacy to reduced gradient variance during training. We further show that similar arguments can be extended to diffusion-based methods. Empirically, we validate TD-Flow across a diverse set of domains on both generative metrics and downstream tasks, including policy evaluation. Moreover, integrating TD-Flow with recent behavior foundation models for planning over policies demonstrates substantial performance gains, underscoring its promise for long-horizon decision-making.",
-      "matchedBy": [
-        "papers with code",
-        "World Models",
-        "Diffusion",
-        "Flow matching",
-        "Layer Normalization",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -40225,36 +40349,6 @@
       "categories": [
         "Language Modeling",
         "Data / Retrieval"
-      ]
-    },
-    {
-      "id": "2410.03618",
-      "title": "Open-World Reinforcement Learning over Long Short-Term Imagination",
-      "authors": "Jiajian Li, Qi Wang, Yunbo Wang, Xin Jin, Yang Li, Wenjun Zeng, Xiaokang Yang",
-      "org": "",
-      "published": "ICLR 2025 Oral",
-      "score": 64,
-      "paper": "https://arxiv.org/abs/2410.03618",
-      "source": "https://paperswithcode.co/paper/2410.03618",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2410.03618.jpg",
-      "firstSeenAt": "2026-06-18T01:40:50.232Z",
-      "summary": "Training visual reinforcement learning agents in a high-dimensional open world presents significant challenges. While various model-based methods have improved sample efficiency by learning interactive world models, these agents tend to be “short-sighted”, as they are typically trained on short snippets of imagined experiences. We argue that the primary challenge in open-world decision-making is improving the exploration efficiency across a vast state space, especially for tasks that demand consideration of long-horizon payoffs. In this paper, we present LS-Imagine, which extends the imagination horizon within a limited number of state transition steps, enabling the agent to explore behaviors that potentially lead to promising long-term feedback. The foundation of our approach is to build a $\\textit{long short-term world model}$. To achieve this, we simulate goal-conditioned jumpy state transitions and compute corresponding affordance maps by zooming in on specific areas within single images. This facilitates the integration of direct long-term values into behavior learning. Our method demonstrates significant improvements over state-of-the-art techniques in MineDojo.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "World Models",
-        "language modeling",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -42322,6 +42416,35 @@
       ]
     },
     {
+      "id": "2507.09177",
+      "title": "Continual Reinforcement Learning by Planning with Online World Models",
+      "authors": "Zichen Liu, Guoji Fu, Chao Du, Wee Sun Lee, Min Lin",
+      "org": "",
+      "published": "ICML 2025 Spotlight",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2507.09177",
+      "source": "https://paperswithcode.co/paper/2507.09177",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2507.09177.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Continual reinforcement learning (CRL) refers to a naturalistic setting where an agent needs to endlessly evolve, by trial and error, to solve multiple tasks that are presented sequentially. One of the largest obstacles to CRL is that the agent may forget how to solve previous tasks when learning a new task, known as catastrophic forgetting. In this paper, we propose to address this challenge by planning with online world models. Specifically, we learn a Follow-The-Leader shallow model online to capture the world dynamics, in which we plan using model predictive control to solve a set of tasks specified by any reward functions. The online world model is immune to forgetting by construction with a proven regret bound of $\\mathcal{O}(\\sqrt{K^2D\\log(T)})$ under mild assumptions. The planner searches actions solely based on the latest online model, thus forming a FTL Online Agent (OA) that updates incrementally. To assess OA, we further design Continual Bench, a dedicated environment for CRL, and compare with several strong baselines under the same model-planning algorithmic framework. The empirical results show that OA learns continuously to solve new tasks while not forgetting old skills, outperforming agents built on deep world models with various continual learning techniques.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "World Models",
+        "language modeling",
+        "Agent Skills"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2505.20948",
       "title": "Controllable Logical Hypothesis Generation for Abductive Reasoning in Knowledge Graphs",
       "authors": "Yisen Gao, Jiaxin Bai, Tianshi Zheng, Ziwei Zhang, Qingyun Sun, Xingcheng Fu, Jianxin Li, Yangqiu Song",
@@ -42715,7 +42838,8 @@
         "papers with code",
         "World Models",
         "MuZero",
-        "language modeling"
+        "language modeling",
+        "State Space Models"
       ],
       "sources": [
         "paperswithcode"
@@ -42723,6 +42847,36 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2411.18289",
+      "title": "Don't Let Your Robot Be Harmful: Responsible Robotic Manipulation Via Safety-As-Policy",
+      "authors": "Ni, Minheng, Zhang, Lei, Chen, Zihan, Bai, Kaixin, Chen, Zhaopeng, Zhang, Jianwei, Zuo, Wangmeng",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2411.18289",
+      "source": "https://paperswithcode.co/paper/2411.18289",
+      "code": "",
+      "project": "https://sites",
+      "thumbnail": "./thumbs/2411.18289.jpg",
+      "firstSeenAt": "2026-06-19T01:52:13.519Z",
+      "summary": "Unthinking execution of human instructions in robotic manipulation can lead to severe safety risks, such as poisonings, fires, and even explosions. In this paper, we present responsible robotic manipulation, which requires robots to consider potential hazards in the real-world environment while completing instructions and performing complex operations safely and efficiently. However, such scenarios in real world are variable and risky for training. To address this challenge, we propose Safety-as-policy, which includes (i) a world model to automatically generate scenarios containing safety risks and conduct virtual interactions, and (ii) a mental model to infer consequences with reflections and gradually develop the cognition of safety, allowing robots to accomplish tasks while avoiding dangers. Additionally, we create the SafeBox synthetic dataset, which includes one hundred responsible robotic manipulation tasks with different safety risk scenarios and instructions, effectively reducing the risks associated with real-world experiments. Experiments demonstrate that Safety-as-policy can avoid risks and efficiently complete tasks in both synthetic dataset and real-world experiments, significantly outperforming baseline methods. Our SafeBox dataset shows consistent evaluation results with real-world scenarios, serving as a safe and effective benchmark for future research. Our code, data, and supplementary materials are available at: https://sites.google.com/view/safety-as-policy.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "Chain-of-Thought (CoT)",
+        "Few-shot prompting",
+        "GPT-3",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
       ]
     },
     {
@@ -47026,34 +47180,6 @@
       ]
     },
     {
-      "id": "2507.09177",
-      "title": "Continual Reinforcement Learning by Planning with Online World Models",
-      "authors": "Zichen Liu, Guoji Fu, Chao Du, Wee Sun Lee, Min Lin",
-      "org": "",
-      "published": "ICML 2025 Spotlight",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2507.09177",
-      "source": "https://paperswithcode.co/paper/2507.09177",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2507.09177.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Continual reinforcement learning (CRL) refers to a naturalistic setting where an agent needs to endlessly evolve, by trial and error, to solve multiple tasks that are presented sequentially. One of the largest obstacles to CRL is that the agent may forget how to solve previous tasks when learning a new task, known as catastrophic forgetting. In this paper, we propose to address this challenge by planning with online world models. Specifically, we learn a Follow-The-Leader shallow model online to capture the world dynamics, in which we plan using model predictive control to solve a set of tasks specified by any reward functions. The online world model is immune to forgetting by construction with a proven regret bound of $\\mathcal{O}(\\sqrt{K^2D\\log(T)})$ under mild assumptions. The planner searches actions solely based on the latest online model, thus forming a FTL Online Agent (OA) that updates incrementally. To assess OA, we further design Continual Bench, a dedicated environment for CRL, and compare with several strong baselines under the same model-planning algorithmic framework. The empirical results show that OA learns continuously to solve new tasks while not forgetting old skills, outperforming agents built on deep world models with various continual learning techniques.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "World Models",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2502.01084",
       "title": "Continuous Autoregressive Modeling with Stochastic Monotonic Alignment for Speech Synthesis",
       "authors": "Weiwei Lin, Chenhang HE",
@@ -47606,36 +47732,6 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2411.18289",
-      "title": "Don't Let Your Robot Be Harmful: Responsible Robotic Manipulation Via Safety-As-Policy",
-      "authors": "Ni, Minheng, Zhang, Lei, Chen, Zihan, Bai, Kaixin, Chen, Zhaopeng, Zhang, Jianwei, Zuo, Wangmeng",
-      "org": "",
-      "published": "ICRA 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2411.18289",
-      "source": "https://paperswithcode.co/paper/2411.18289",
-      "code": "",
-      "project": "https://sites",
-      "thumbnail": "./thumbs/2411.18289.jpg",
-      "firstSeenAt": "2026-06-19T01:52:13.519Z",
-      "summary": "Unthinking execution of human instructions in robotic manipulation can lead to severe safety risks, such as poisonings, fires, and even explosions. In this paper, we present responsible robotic manipulation, which requires robots to consider potential hazards in the real-world environment while completing instructions and performing complex operations safely and efficiently. However, such scenarios in real world are variable and risky for training. To address this challenge, we propose Safety-as-policy, which includes (i) a world model to automatically generate scenarios containing safety risks and conduct virtual interactions, and (ii) a mental model to infer consequences with reflections and gradually develop the cognition of safety, allowing robots to accomplish tasks while avoiding dangers. Additionally, we create the SafeBox synthetic dataset, which includes one hundred responsible robotic manipulation tasks with different safety risk scenarios and instructions, effectively reducing the risks associated with real-world experiments. Experiments demonstrate that Safety-as-policy can avoid risks and efficiently complete tasks in both synthetic dataset and real-world experiments, significantly outperforming baseline methods. Our SafeBox dataset shows consistent evaluation results with real-world scenarios, serving as a safe and effective benchmark for future research. Our code, data, and supplementary materials are available at: https://sites.google.com/view/safety-as-policy.",
-      "matchedBy": [
-        "papers with code",
-        "World Models",
-        "Chain-of-Thought (CoT)",
-        "Few-shot prompting",
-        "GPT-3",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics"
       ]
     },
     {
@@ -52936,6 +53032,39 @@
       ]
     },
     {
+      "id": "2505.20435",
+      "title": "The Shape of Adversarial Influence: Characterizing LLM Latent Spaces with Persistent Homology",
+      "authors": "Aideen Fay, Inés García-Redondo, Qiquan Wang, Haim Dubossarsky, Anthea Monod",
+      "org": "",
+      "published": "ICLR 2026 Oral",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2505.20435",
+      "source": "https://paperswithcode.co/paper/2505.20435",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.20435.jpg",
+      "firstSeenAt": "2026-07-04T00:16:44.280Z",
+      "summary": "Existing interpretability methods for Large Language Models (LLMs) predominantly capture linear directions or isolated features. This overlooks the high-dimensional, relational, and nonlinear geometry of model representations. We apply persistent homology (PH) to characterize how adversarial inputs reshape the geometry and topology of internal representation spaces of LLMs. This phenomenon, especially when considered across operationally different attack modes, remains poorly understood. We analyze six models (3.8B to 70B parameters) under two distinct attacks, indirect prompt injection and backdoor fine-tuning, and show that a consistent topological signature persists throughout. Adversarial inputs induce topological compression, where the latent space becomes structurally simpler, collapsing the latent space from varied, compact, small-scale features into fewer, dominant, large-scale ones. This signature is architecture-agnostic, emerges early in the network, and is highly discriminative across layers. By quantifying the shape of activation point clouds and neuron-level information flow, our framework reveals geometric invariants of representational change that complement existing linear interpretability methods.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "LoRa",
+        "PEFT",
+        "language modeling",
+        "frontier training",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Serving"
+      ]
+    },
+    {
       "id": "2505.24158",
       "title": "Threading Keyframe with Narratives: MLLMs as Strong Long Video Comprehenders",
       "authors": "Bo Fang, YuXin Song, Haoyuan Sun, Qiangqiang Wu, Wenhao Wu, Antoni B. Chan",
@@ -56832,6 +56961,33 @@
         "Language Modeling",
         "Frontier Training",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2503.17093",
+      "title": "ColabSfM: Collaborative Structure-from-Motion by Point Cloud Registration",
+      "authors": "Johan Edstedt, André Mateus, Alberto Jaenal",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2503.17093",
+      "source": "https://paperswithcode.co/paper/2503.17093",
+      "code": "https://github.com/EricssonResearch/ColabSfM",
+      "project": "",
+      "thumbnail": "./thumbs/2503.17093.jpg",
+      "firstSeenAt": "2026-07-26T00:12:10.609Z",
+      "summary": "Structure-from-Motion (SfM) is the task of estimating 3D structure and camera poses from images. We define Collaborative SfM (ColabSfM) as sharing distributed SfM reconstructions. Sharing maps requires estimating a joint reference frame, which is typically referred to as registration. However, there is a lack of scalable methods and training datasets for registering SfM reconstructions. In this paper, we tackle this challenge by proposing the scalable task of point cloud registration for SfM reconstructions. We find that current registration methods cannot register SfM point clouds when trained on existing datasets. To this end, we propose a SfM registration dataset generation pipeline, leveraging partial reconstructions from synthetically generated camera trajectories for each scene. Finally, we propose a simple but impactful neural refiner on top of the SotA registration method RoITr that yields significant improvements, which we call RefineRoITr. Our extensive experimental evaluation shows that our proposed pipeline and model enables ColabSfM. Code is available at https://github.com/EricssonResearch/ColabSfM.",
+      "matchedBy": [
+        "papers with code",
+        "Layer Normalization",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -63429,6 +63585,38 @@
       ]
     },
     {
+      "id": "2602.04212",
+      "title": "Language Models Struggle to Use Representations Learned In-Context",
+      "authors": "Michael A. Lepori, Tal Linzen, Ann Yuan, Katja Filippova",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2602.04212",
+      "source": "https://paperswithcode.co/paper/2602.04212",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.04212.jpg",
+      "firstSeenAt": "2026-07-26T00:12:10.609Z",
+      "summary": "Though large language models (LLMs) have enabled great success across a wide variety of tasks, they still appear to fall short of one of the loftier goals of artificial intelligence research: creating an artificial system that can adapt its behavior to radically new contexts upon deployment. One important step towards this goal is to create systems that can induce rich representations of data that are seen in-context, and then flexibly deploy these representations to accomplish goals. Recently, Park et al. 2024 demonstrated that current LLMs are indeed capable of inducing such representation from context (i.e., in-context representation learning). The present study investigates whether LLMs can use these representations to complete simple downstream tasks.We first assess whether open-weights LLMs can use in-context representations for next-token prediction, and then probe models using a novel task, adaptive world modeling. In both tasks, we find evidence that open-weights LLMs struggle to deploy representations of novel semantics that are defined in-context, even if they encode these semantics in their latent representations. Furthermore, we assess closed-source, state-of-the-art reasoning models on the adaptive world modeling task, demonstrating that even the most performant LLMs cannot reliably leverage novel patterns presented in-context. Overall, this work seeks to inspire novel methods for encouraging models to not only encode information presented in-context, but to do so in a manner that supports flexible deployment of this information.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Reasoning",
+        "Few-shot prompting",
+        "GPT-3",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2606.07100",
       "title": "LARA: Latent Action Representation Alignment for Vision-Language-Action Models",
       "authors": "Mengya Liu, Baoxiong Jia, Jiangyong Huang, Jingze Zhang, Siyuan Huang",
@@ -64498,6 +64686,37 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2604.24921",
+      "title": "Libra-VLA: Achieving Learning Equilibrium via Asynchronous Coarse-to-Fine Dual-System",
+      "authors": "Yifei Wei, Linqing Zhong, Yi Liu, Yuxiang Lu, Xindong He, Maoqing Yao, Guanghui Ren",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2604.24921",
+      "source": "https://paperswithcode.co/paper/2604.24921",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.24921.jpg",
+      "firstSeenAt": "2026-07-13T00:09:24.100Z",
+      "summary": "Vision-Language-Action (VLA) models are a promising paradigm for generalist robotic manipulation by grounding high-level semantic instructions into executable physical actions. However, prevailing approaches typically adopt a monolithic generation paradigm, directly mapping visual-linguistic features to high-frequency motor commands in a flat, non-hierarchical fashion. This strategy overlooks the inherent hierarchy of robotic manipulation, where complex actions can be naturally modeled in a Hybrid Action Space, decomposing into discrete macro-directional reaching and continuous micro-pose alignment, severely widening the semantic-actuation gap and imposing a heavy representational burden on grounding high-level semantics to continuous actions. To address this, we introduce Libra-VLA, a novel Coarse-to-Fine Dual-System VLA architecture. We explicitly decouple the learning complexity into a coarse-to-fine hierarchy to strike a training equilibrium, while simultaneously leveraging this structural modularity to implement an asynchronous execution strategy. The Semantic Planner predicts discrete action tokens capturing macro-directional intent, while the Action Refiner conditions on coarse intent to generate high-frequency continuous actions for precise alignment. Crucially, our empirical analysis reveals that performance follows an inverted-U curve relative to action decomposition granularity, peaking exactly when the learning difficulty is balanced between the two sub-systems. With the asynchronous design, our approach offers a scalable, robust, and responsive solution for open-world manipulation.",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "robotics",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Frontier Training"
       ]
     },
     {
@@ -71863,39 +72082,6 @@
       ]
     },
     {
-      "id": "2505.20435",
-      "title": "The Shape of Adversarial Influence: Characterizing LLM Latent Spaces with Persistent Homology",
-      "authors": "Aideen Fay, Inés García-Redondo, Qiquan Wang, Haim Dubossarsky, Anthea Monod",
-      "org": "",
-      "published": "ICLR 2026 Oral",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2505.20435",
-      "source": "https://paperswithcode.co/paper/2505.20435",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.20435.jpg",
-      "firstSeenAt": "2026-07-04T00:16:44.280Z",
-      "summary": "Existing interpretability methods for Large Language Models (LLMs) predominantly capture linear directions or isolated features. This overlooks the high-dimensional, relational, and nonlinear geometry of model representations. We apply persistent homology (PH) to characterize how adversarial inputs reshape the geometry and topology of internal representation spaces of LLMs. This phenomenon, especially when considered across operationally different attack modes, remains poorly understood. We analyze six models (3.8B to 70B parameters) under two distinct attacks, indirect prompt injection and backdoor fine-tuning, and show that a consistent topological signature persists throughout. Adversarial inputs induce topological compression, where the latent space becomes structurally simpler, collapsing the latent space from varied, compact, small-scale features into fewer, dominant, large-scale ones. This signature is architecture-agnostic, emerges early in the network, and is highly discriminative across layers. By quantifying the shape of activation point clouds and neuron-level information flow, our framework reveals geometric invariants of representational change that complement existing linear interpretability methods.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "LoRa",
-        "PEFT",
-        "language modeling",
-        "frontier training",
-        "serving"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training",
-        "Serving"
-      ]
-    },
-    {
       "id": "2510.01650",
       "title": "The Unseen Frontier: Pushing the Limits of LLM Sparsity with Surrogate-Free ADMM",
       "authors": "Kwanhee Lee, Hyeondo Jang, Dongyeop Lee, Dan Alistarh, Namhoon Lee",
@@ -72136,6 +72322,38 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2604.06155",
+      "title": "Toward Consistent World Models with Multi-Token Prediction and Latent Semantic Enhancement",
+      "authors": "Qimin Zhong, Hao Liao, Haiming Qin, Mingyang Zhou, Rui Mao, Wei Chen, Naipeng Chao",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2604.06155",
+      "source": "https://paperswithcode.co/paper/2604.06155",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.06155.jpg",
+      "firstSeenAt": "2026-07-26T00:12:10.609Z",
+      "summary": "Whether Large Language Models (LLMs) develop coherent internal world models remains a core debate. While conventional Next-Token Prediction (NTP) focuses on one-step-ahead supervision, Multi-Token Prediction (MTP) has shown promise in learning more structured representations. In this work, we provide a theoretical perspective analyzing the gradient inductive bias of MTP, supported by empirical evidence, showing that MTP promotes the convergence toward internal belief states by inducing representational contractivity via gradient coupling. However, we reveal that standard MTP often suffers from structural hallucinations, where discrete token supervision encourages illegal shortcuts in latent space that violate environmental constraints. To address this, we propose a novel method **Latent Semantic Enhancement MTP (LSE-MTP)**, which anchors predictions to ground-truth hidden state trajectories. Experiments on synthetic graphs and real-world Manhattan Taxi Ride show that LSE-MTP effectively bridges the gap between discrete tokens and continuous state representations, enhancing representation alignment, reducing structural hallucinations, and improving robustness to perturbations.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "World Models",
+        "Few-shot prompting",
+        "GPT-3",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -94501,37 +94719,6 @@
       ]
     },
     {
-      "id": "2604.24921",
-      "title": "Libra-VLA: Achieving Learning Equilibrium via Asynchronous Coarse-to-Fine Dual-System",
-      "authors": "Yifei Wei, Linqing Zhong, Yi Liu, Yuxiang Lu, Xindong He, Maoqing Yao, Guanghui Ren",
-      "org": "",
-      "published": "ACL 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2604.24921",
-      "source": "https://paperswithcode.co/paper/2604.24921",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2604.24921.jpg",
-      "firstSeenAt": "2026-07-13T00:09:24.100Z",
-      "summary": "Vision-Language-Action (VLA) models are a promising paradigm for generalist robotic manipulation by grounding high-level semantic instructions into executable physical actions. However, prevailing approaches typically adopt a monolithic generation paradigm, directly mapping visual-linguistic features to high-frequency motor commands in a flat, non-hierarchical fashion. This strategy overlooks the inherent hierarchy of robotic manipulation, where complex actions can be naturally modeled in a Hybrid Action Space, decomposing into discrete macro-directional reaching and continuous micro-pose alignment, severely widening the semantic-actuation gap and imposing a heavy representational burden on grounding high-level semantics to continuous actions. To address this, we introduce Libra-VLA, a novel Coarse-to-Fine Dual-System VLA architecture. We explicitly decouple the learning complexity into a coarse-to-fine hierarchy to strike a training equilibrium, while simultaneously leveraging this structural modularity to implement an asynchronous execution strategy. The Semantic Planner predicts discrete action tokens capturing macro-directional intent, while the Action Refiner conditions on coarse intent to generate high-frequency continuous actions for precise alignment. Crucially, our empirical analysis reveals that performance follows an inverted-U curve relative to action decomposition granularity, peaking exactly when the learning difficulty is balanced between the two sub-systems. With the asynchronous design, our approach offers a scalable, robust, and responsive solution for open-world manipulation.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "robotics",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2603.03765",
       "title": "LiDAR Prompted Spatio-Temporal Multi-View Stereo for Autonomous Driving",
       "authors": "Qihao Sun, Jiarun Liu, Ziqian Ni, Jianyun Xu, Sheng Yang, Tao Xie, Lijun Zhao, Ruifeng Li",
@@ -105013,6 +105200,38 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
+      ]
+    },
+    {
+      "id": "2606.01991",
+      "title": "SafeMCP: Proactive Power Regulation for LLM Agent Defense via Environment-Grounded Look-Ahead Reasoning",
+      "authors": "Lichao Wang, ZhaoXing Ren, Tianzhuo Yang, Jiaming Ji, Chi Harold Liu, Yaodong Yang, Juntao Dai",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2606.01991",
+      "source": "https://paperswithcode.co/paper/2606.01991",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.01991.jpg",
+      "firstSeenAt": "2026-07-26T00:12:10.609Z",
+      "summary": "As Large Language Model (LLM) agents increasingly leverage the Model Context Protocol (MCP) to operate in complex environments, the expansion of their action spaces offers agents unsafe capabilities and underscores the risk of power-seeking. While broad action space and greater environment influence are essential for task fulfillment, they creates a fragile risk surface where minor errors or hallucinations are magnified into catastrophic failures. In response, we propose SafeMCP, a server-side defense plugin that constrains tool acquisition via predictive reasoning regarding future safety risks. SafeMCP utilizes an internal world model for look-ahead reasoning to implement a two-tier defense: proactive tool filtering to constrain hazardous power expansion and immediate intervention as a fail-safe. To train SafeMCP, we introduce a three-stage pipeline comprising environmental dynamic grounding, safe policy initialization, and reinforcement learning (RL) with dual verifiable rewards. Experiments on PowerSeeking Bench, ToolEmu, and AgentHarm show that SafeMCP achieves a safe equilibrium, effectively mitigating risks while preserving agent utility.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Reinforcement Learning",
+        "World Models",
+        "ReAct",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -118600,36 +118819,6 @@
       ]
     },
     {
-      "id": "2607.21503",
-      "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
-      "authors": "Gaurav Dadhich",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.21503v1",
-      "source": "https://arxiv.org/abs/2607.21503v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21503.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, large tool definitions, and ballooning tool outputs. Agents drown in their own accumulating history while paying a token cost that grows every turn, producing missing recalls within and across conversations. The incumbent response treats this as a storage-and-retrieval problem. We argue that framing is too narrow. Actively managing what an agent holds in mind is a lifecycle, not merely a store: it spans deciding what to remember, extracting and structuring it, choosing the right store per data type, consolidating and forgetting while preserving provenance, deciding what is relevant now, anticipating what is needed next, and compacting context to a budget without losing what matters. In serious production this operates not over a single user but across an organizational scope hierarchy. We name this discipline Agentic Context Management (ACM) and decompose it into five primitives: architecting, ingesting, scoping, anticipating, and compacting & consolidation. We then make the economic case: naive context accumulation grows token cost quadratically in conversation length, crude summarization buys linear cost at the price of an accuracy cliff, and only validated compaction achieves linear cost with preserved fidelity. We describe a reference implementation, Maximem Synap, that realizes the five primitives as a multi-tenant service and reports 92% on LongMemEval and 93.2% on LoCoMo under the configuration detailed in Section 6. We close with dimensions existing benchmarks do not yet capture, latency, token efficiency, and context-rot resistance, and the frontier of decision-level and organization-level context the category points toward.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "serving",
-        "data / retrieval"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Serving",
-        "Data / Retrieval"
-      ]
-    },
-    {
       "id": "2607.01061",
       "title": "Agentic generation of verifiable rules for deterministic, self-expanding reaction classification",
       "authors": "Daniel Armstrong, Maarten Dobbelaere, Valentas Olikauskas, Helena Avila, Octavian Susanu, Jérôme Waser, Philippe Schwaller",
@@ -130107,32 +130296,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.21427",
-      "title": "Context-weighted Discrete Flow Matching",
-      "authors": "Daniil Cherniavskii, Daniel Severo, Karen Ullrich",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.21427v1",
-      "source": "https://arxiv.org/abs/2607.21427v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21427.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Discrete flow matching provides a flexible framework for generative modeling on discrete structures. However, the standard factorized training objective exposes the model to targets of varying difficulty, mixing well-conditioned, predictable tokens with ambiguous, high-entropy ones. We empirically demonstrate that the uncertainty over the value of each token is closely related to the density of available context in its neighborhood. Motivated by this observation, we propose a simple modification to the underlying continuous-time Markov chain (CTMC) that incorporates local context information. Our context-weighted sampler improves generation quality with negligible computational overhead, while our scaled cross-entropy loss function reweights the training signal from different tokens and reduces generative perplexity by up to 63% on OpenWebText. Moreover, our approach matches a strong semi-autoregressive block diffusion baseline in quality while retaining the ability to perform generation in any order. These results highlight the role of local context as an important factor in discrete generative modeling and show that simple context-aware modifications can significantly improve both sampling and training efficiency.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
         "Language Modeling"
       ]
     },
