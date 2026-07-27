@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-27T00:11:26.166Z",
+  "generatedAt": "2026-07-27T01:15:04.376Z",
   "sourceStats": {
-    "seed": 6757,
+    "seed": 6759,
     "paperswithcode": 540,
-    "arxiv": 125,
+    "arxiv": 25,
     "huggingface": 22,
     "alphaxiv": 20,
     "twitterSignals": 0,
@@ -3128,7 +3128,7 @@
       "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
       "authors": "Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao",
       "org": "",
-      "published": "2026-07-23",
+      "published": "2026-07-24",
       "score": 92,
       "paper": "https://arxiv.org/abs/2607.21557",
       "source": "https://www.alphaxiv.org/abs/2607.21557",
@@ -47171,6 +47171,38 @@
       ]
     },
     {
+      "id": "2506.00721",
+      "title": "Common Inpainted Objects In-N-Out of Context",
+      "authors": "Tianze Yang, Tyson Jordan, Ruitong Sun, Ninghao Liu, Jin Sun",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2506.00721",
+      "source": "https://paperswithcode.co/paper/2506.00721",
+      "code": "",
+      "project": "https://co-in-co",
+      "thumbnail": "./thumbs/2506.00721.jpg",
+      "firstSeenAt": "2026-06-18T01:40:50.232Z",
+      "summary": "We present Common Inpainted Objects In-N-Out of Context (COinCO), a novel dataset addressing the scarcity of out-of-context examples in existing vision datasets. By systematically replacing objects in COCO images through diffusion-based inpainting, we create 97,722 unique images featuring both contextually coherent and inconsistent scenes, enabling effective context learning. Each inpainted object is meticulously verified and categorized as in- or out-of-context through Large Vision Language Model assessments. We demonstrate three key tasks enabled by COinCO: (1) a fine-grained context reasoning approach that classifies objects as in- or out-of-context based on three criteria; (2) a novel Objects-from-Context prediction task that determines which new objects naturally belong in given scenes at both instance and clique level semantics, and (3) context-enhanced fake detection on state-of-the-art methods without fine-tuning. COinCO provides a controlled testbed with contextual variations, establishing a foundation for advancing context-aware visual understanding in computer vision, including image forensics. Code and dataset are available at https://co-in-co.github.io/.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Language Modeling",
+        "BERT",
+        "BigGAN",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2601.00126",
       "title": "Compositional Diffusion with Guided search for Long-Horizon Planning",
       "authors": "Utkarsh Aashu Mishra, David He, Yongxin Chen, Danfei Xu",
@@ -57201,38 +57233,6 @@
       ]
     },
     {
-      "id": "2506.00721",
-      "title": "Common Inpainted Objects In-N-Out of Context",
-      "authors": "Tianze Yang, Tyson Jordan, Ruitong Sun, Ninghao Liu, Jin Sun",
-      "org": "",
-      "published": "CVPR 2026",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2506.00721",
-      "source": "https://paperswithcode.co/paper/2506.00721",
-      "code": "",
-      "project": "https://co-in-co",
-      "thumbnail": "./thumbs/2506.00721.jpg",
-      "firstSeenAt": "2026-06-18T01:40:50.232Z",
-      "summary": "We present Common Inpainted Objects In-N-Out of Context (COinCO), a novel dataset addressing the scarcity of out-of-context examples in existing vision datasets. By systematically replacing objects in COCO images through diffusion-based inpainting, we create 97,722 unique images featuring both contextually coherent and inconsistent scenes, enabling effective context learning. Each inpainted object is meticulously verified and categorized as in- or out-of-context through Large Vision Language Model assessments. We demonstrate three key tasks enabled by COinCO: (1) a fine-grained context reasoning approach that classifies objects as in- or out-of-context based on three criteria; (2) a novel Objects-from-Context prediction task that determines which new objects naturally belong in given scenes at both instance and clique level semantics, and (3) context-enhanced fake detection on state-of-the-art methods without fine-tuning. COinCO provides a controlled testbed with contextual variations, establishing a foundation for advancing context-aware visual understanding in computer vision, including image forensics. Code and dataset are available at https://co-in-co.github.io/.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Language Modeling",
-        "BERT",
-        "BigGAN",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2503.12836",
       "title": "CompMarkGS: Robust Watermarking for Compressed 3D Gaussian Splatting",
       "authors": "Sumin In, Youngdong Jang, Utae Jeong, MinHyuk Jang, Hyeongcheol Park, Eunbyung Park, Sangpil Kim",
@@ -60124,6 +60124,38 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2602.21728",
+      "title": "Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling",
+      "authors": "Shiqi Yan, Yubo Chen, Ruiqi Zhou, Zhengxi Yao, Shuai Chen, Tianyi Zhang, Shijie Zhang, Wei-Qiang Zhang, Yongfeng Huang, Haixin Duan, Yunqi Zhang",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2602.21728",
+      "source": "https://paperswithcode.co/paper/2602.21728",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.21728.jpg",
+      "firstSeenAt": "2026-06-20T00:19:02.193Z",
+      "summary": "The reasoning process of Large Language Models (LLMs) is often plagued by hallucinations and missing facts in question-answering tasks. A promising solution is to ground LLMs' answers in verifiable knowledge sources, such as Knowledge Graphs (KGs). Prevailing KG-enhanced methods typically constrained LLM reasoning either by enforcing rules during generation or by imitating paths from a fixed set of demonstrations. However, they naturally confined the reasoning patterns of LLMs within the scope of prior experience or fine-tuning data, limiting their generalizability to out-of-distribution graph reasoning problems. To tackle this problem, in this paper, we propose Explore-on-Graph (EoG), a novel framework that encourages LLMs to autonomously explore a more diverse reasoning space on KGs. To incentivize exploration and discovery of novel reasoning paths, we propose to introduce reinforcement learning during training, whose reward is the correctness of the reasoning paths' final answers. To enhance the efficiency and meaningfulness of the exploration, we propose to incorporate path information as additional reward signals to refine the exploration process and reduce futile efforts. Extensive experiments on five KGQA benchmark datasets demonstrate that, to the best of our knowledge, our method achieves state-of-the-art performance, outperforming not only open-source but also even closed-source LLMs.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Reinforcement Learning",
+        "Few-shot prompting",
+        "Gemini 2.5",
+        "language modeling",
+        "data / retrieval"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
       ]
     },
     {
@@ -86865,38 +86897,6 @@
       "categories": [
         "Language Modeling",
         "Frontier Training"
-      ]
-    },
-    {
-      "id": "2602.21728",
-      "title": "Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling",
-      "authors": "Shiqi Yan, Yubo Chen, Ruiqi Zhou, Zhengxi Yao, Shuai Chen, Tianyi Zhang, Shijie Zhang, Wei-Qiang Zhang, Yongfeng Huang, Haixin Duan, Yunqi Zhang",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2602.21728",
-      "source": "https://paperswithcode.co/paper/2602.21728",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2602.21728.jpg",
-      "firstSeenAt": "2026-06-20T00:19:02.193Z",
-      "summary": "The reasoning process of Large Language Models (LLMs) is often plagued by hallucinations and missing facts in question-answering tasks. A promising solution is to ground LLMs' answers in verifiable knowledge sources, such as Knowledge Graphs (KGs). Prevailing KG-enhanced methods typically constrained LLM reasoning either by enforcing rules during generation or by imitating paths from a fixed set of demonstrations. However, they naturally confined the reasoning patterns of LLMs within the scope of prior experience or fine-tuning data, limiting their generalizability to out-of-distribution graph reasoning problems. To tackle this problem, in this paper, we propose Explore-on-Graph (EoG), a novel framework that encourages LLMs to autonomously explore a more diverse reasoning space on KGs. To incentivize exploration and discovery of novel reasoning paths, we propose to introduce reinforcement learning during training, whose reward is the correctness of the reasoning paths' final answers. To enhance the efficiency and meaningfulness of the exploration, we propose to incorporate path information as additional reward signals to refine the exploration process and reduce futile efforts. Extensive experiments on five KGQA benchmark datasets demonstrate that, to the best of our knowledge, our method achieves state-of-the-art performance, outperforming not only open-source but also even closed-source LLMs.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Reinforcement Learning",
-        "Few-shot prompting",
-        "Gemini 2.5",
-        "language modeling",
-        "data / retrieval"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
       ]
     },
     {
