@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-26T01:11:51.404Z",
+  "generatedAt": "2026-07-27T00:11:26.166Z",
   "sourceStats": {
     "seed": 6757,
     "paperswithcode": 540,
-    "arxiv": 0,
+    "arxiv": 125,
     "huggingface": 22,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 6757
+    "total": 6759
   },
   "papers": [
     {
@@ -1588,6 +1588,32 @@
       ]
     },
     {
+      "id": "2607.21366",
+      "title": "Hilbert Operator for Progressive Encoding (HOPE): A Mathematical Framework for Deconstructing Learned Representations in Deep Networks",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 94,
+      "paper": "https://arxiv.org/abs/2607.21366",
+      "source": "https://www.alphaxiv.org/abs/2607.21366",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21366.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.collective-operations",
       "title": "Inside TPU and GPU Clusters: The Anatomy of Collective Communication",
       "authors": "",
@@ -3015,32 +3041,6 @@
       ]
     },
     {
-      "id": "2607.21366",
-      "title": "Hilbert Operator for Progressive Encoding (HOPE): A Mathematical Framework for Deconstructing Learned Representations in Deep Networks",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 92,
-      "paper": "https://arxiv.org/abs/2607.21366",
-      "source": "https://www.alphaxiv.org/abs/2607.21366",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21366.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.hyperlora-implicit-neural-fields",
       "title": "HyperLoRA: Generating Implicit Neural Fields in Weight Space with LoRA Parameters",
       "authors": "",
@@ -3121,6 +3121,38 @@
       "category": "Serving",
       "categories": [
         "Serving"
+      ]
+    },
+    {
+      "id": "2607.21557",
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "authors": "Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2607.21557",
+      "source": "https://www.alphaxiv.org/abs/2607.21557",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21557.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "vision/multimodal",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -3424,6 +3456,34 @@
       ]
     },
     {
+      "id": "2607.21427",
+      "title": "Context-weighted Discrete Flow Matching",
+      "authors": "Daniil Cherniavskii, Daniel Severo, Karen Ullrich",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 91,
+      "paper": "https://arxiv.org/abs/2607.21427",
+      "source": "https://www.alphaxiv.org/abs/2607.21427",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21427.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Discrete flow matching provides a flexible framework for generative modeling on discrete structures. However, the standard factorized training objective exposes the model to targets of varying difficulty, mixing well-conditioned, predictable tokens with ambiguous, high-entropy ones. We empirically demonstrate that the uncertainty over the value of each token is closely related to the density of available context in its neighborhood. Motivated by this observation, we propose a simple modification to the underlying continuous-time Markov chain (CTMC) that incorporates local context information. Our context-weighted sampler improves generation quality with negligible computational overhead, while our scaled cross-entropy loss function reweights the training signal from different tokens and reduces generative perplexity by up to 63% on OpenWebText. Moreover, our approach matches a strong semi-autoregressive block diffusion baseline in quality while retaining the ability to perform generation in any order. These results highlight the role of local context as an important factor in discrete generative modeling and show that simple context-aware modifications can significantly improve both sampling and training efficiency.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.17024",
       "title": "ExpRL: Exploratory RL for LLM Mid-Training",
       "authors": "Violet Xiang, Amrith Setlur, Chase Blagden, Nick Haber, Aviral Kumar",
@@ -3650,38 +3710,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.21557",
-      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-      "authors": "Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 91,
-      "paper": "https://arxiv.org/abs/2607.21557",
-      "source": "https://www.alphaxiv.org/abs/2607.21557",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21557.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "vision/multimodal",
-        "hugging face daily",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -4044,6 +4072,32 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
+      ]
+    },
+    {
+      "id": "2607.21585",
+      "title": "Expanding Flow Maps",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 90,
+      "paper": "https://arxiv.org/abs/2607.21585",
+      "source": "https://www.alphaxiv.org/abs/2607.21585",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21585.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -6958,32 +7012,6 @@
       ]
     },
     {
-      "id": "2607.21585",
-      "title": "Expanding Flow Maps",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 85,
-      "paper": "https://arxiv.org/abs/2607.21585",
-      "source": "https://www.alphaxiv.org/abs/2607.21585",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21585.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2603.19137",
       "title": "GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning",
       "authors": "Yiren Lu, Yi Du, Disheng Liu",
@@ -7252,6 +7280,38 @@
       "categories": [
         "Vision/Multimodal",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2410.20724",
+      "title": "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+      "authors": "Mufei Li, Siqi Miao, Pan Li",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2410.20724",
+      "source": "https://paperswithcode.co/paper/2410.20724",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2410.20724.jpg",
+      "firstSeenAt": "",
+      "summary": "Large Language Models (LLMs) demonstrate strong reasoning abilities but face limitations such as hallucinations and outdated knowledge. Knowledge Graph (KG)-based Retrieval-Augmented Generation (RAG) addresses these issues by grounding LLM outputs in structured external knowledge from KGs. However, current KG-based RAG frameworks still struggle to optimize the trade-off between retrieval effectiveness and efficiency in identifying a suitable amount of relevant graph information for the LLM to digest. We introduce SubgraphRAG, extending the KG-based RAG framework that retrieves subgraphs and leverages LLMs for reasoning and answer prediction. Our approach innovatively integrates a lightweight multilayer perceptron (MLP) with a parallel triple-scoring mechanism for efficient and flexible subgraph retrieval while encoding directional structural distances to enhance retrieval effectiveness. The size of retrieved subgraphs can be flexibly adjusted to match the query's needs and the downstream LLM's capabilities. This design strikes a balance between model complexity and reasoning power, enabling scalable and generalizable retrieval processes. Notably, based on our retrieved subgraphs, smaller LLMs like Llama3.1-8B-Instruct deliver competitive results with explainable reasoning, while larger models like GPT-4o achieve state-of-the-art accuracy compared with previous baselines—all without fine-tuning. Extensive evaluations on the WebQSP and CWQ benchmarks highlight SubgraphRAG's strengths in efficiency, accuracy, and reliability by reducing hallucinations and improving response grounding.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "BERT",
+        "Chain-of-Thought (CoT)",
+        "Few-shot prompting",
+        "data / retrieval",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Language Modeling"
       ]
     },
     {
@@ -7907,34 +7967,28 @@
       ]
     },
     {
-      "id": "2410.20724",
-      "title": "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
-      "authors": "Mufei Li, Siqi Miao, Pan Li",
+      "id": "2607.21554",
+      "title": "Strategic Plan for Neutral Atom Quantum Computation",
+      "authors": "",
       "org": "",
-      "published": "ICLR 2025",
+      "published": "2026-07-23",
       "score": 84,
-      "paper": "https://arxiv.org/abs/2410.20724",
-      "source": "https://paperswithcode.co/paper/2410.20724",
+      "paper": "https://arxiv.org/abs/2607.21554",
+      "source": "https://www.alphaxiv.org/abs/2607.21554",
       "code": "",
       "project": "",
-      "thumbnail": "./thumbs/2410.20724.jpg",
-      "firstSeenAt": "",
-      "summary": "Large Language Models (LLMs) demonstrate strong reasoning abilities but face limitations such as hallucinations and outdated knowledge. Knowledge Graph (KG)-based Retrieval-Augmented Generation (RAG) addresses these issues by grounding LLM outputs in structured external knowledge from KGs. However, current KG-based RAG frameworks still struggle to optimize the trade-off between retrieval effectiveness and efficiency in identifying a suitable amount of relevant graph information for the LLM to digest. We introduce SubgraphRAG, extending the KG-based RAG framework that retrieves subgraphs and leverages LLMs for reasoning and answer prediction. Our approach innovatively integrates a lightweight multilayer perceptron (MLP) with a parallel triple-scoring mechanism for efficient and flexible subgraph retrieval while encoding directional structural distances to enhance retrieval effectiveness. The size of retrieved subgraphs can be flexibly adjusted to match the query's needs and the downstream LLM's capabilities. This design strikes a balance between model complexity and reasoning power, enabling scalable and generalizable retrieval processes. Notably, based on our retrieved subgraphs, smaller LLMs like Llama3.1-8B-Instruct deliver competitive results with explainable reasoning, while larger models like GPT-4o achieve state-of-the-art accuracy compared with previous baselines—all without fine-tuning. Extensive evaluations on the WebQSP and CWQ benchmarks highlight SubgraphRAG's strengths in efficiency, accuracy, and reliability by reducing hallucinations and improving response grounding.",
+      "thumbnail": "./thumbs/2607.21554.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "",
       "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "BERT",
-        "Chain-of-Thought (CoT)",
-        "Few-shot prompting",
-        "data / retrieval",
+        "alphaxiv hot",
         "language modeling"
       ],
       "sources": [
-        "paperswithcode"
+        "alphaxiv"
       ],
-      "category": "Data / Retrieval",
+      "category": "Language Modeling",
       "categories": [
-        "Data / Retrieval",
         "Language Modeling"
       ]
     },
@@ -8084,34 +8138,6 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2607.21427",
-      "title": "Context-weighted Discrete Flow Matching",
-      "authors": "Daniil Cherniavskii, Daniel Severo, Karen Ullrich",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 83,
-      "paper": "https://arxiv.org/abs/2607.21427",
-      "source": "https://www.alphaxiv.org/abs/2607.21427",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21427.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Discrete flow matching provides a flexible framework for generative modeling on discrete structures. However, the standard factorized training objective exposes the model to targets of varying difficulty, mixing well-conditioned, predictable tokens with ambiguous, high-entropy ones. We empirically demonstrate that the uncertainty over the value of each token is closely related to the density of available context in its neighborhood. Motivated by this observation, we propose a simple modification to the underlying continuous-time Markov chain (CTMC) that incorporates local context information. Our context-weighted sampler improves generation quality with negligible computational overhead, while our scaled cross-entropy loss function reweights the training signal from different tokens and reduces generative perplexity by up to 63% on OpenWebText. Moreover, our approach matches a strong semi-autoregressive block diffusion baseline in quality while retaining the ability to perform generation in any order. These results highlight the role of local context as an important factor in discrete generative modeling and show that simple context-aware modifications can significantly improve both sampling and training efficiency.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -8292,6 +8318,38 @@
       "category": "Data / Retrieval",
       "categories": [
         "Data / Retrieval"
+      ]
+    },
+    {
+      "id": "2607.21522",
+      "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+      "authors": "Hongxin Zhang, Chunru Lin, Junyan Li, Zhou Xian, Tsun-Hsuan Wang, Chuang Gan",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 83,
+      "paper": "https://arxiv.org/abs/2607.21522",
+      "source": "https://www.alphaxiv.org/abs/2607.21522",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21522.jpg",
+      "firstSeenAt": "2026-07-25T00:14:12.039Z",
+      "summary": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic system that emulates how humans traditionally create 4D worlds, yet automates the entire process. We present GS-Agent, an end-to-end multi-agent framework that integrates physics engines in the loop to generate realistic, dynamic, and controllable 4D physical worlds from natural language. Inspired by how humans build 4D worlds, GS-Agent decomposes the task into entity management, covering 3D asset curation, material tuning, placement, and motion control, and rendering configuration, including camera and lighting manipulation. Multiple agents with distinct expertise interact with the physics engine via code, seek multimodal feedback, and collaborate to iteratively construct 4D worlds that align with the given descriptions. Experimental results show that GS-Agent effectively converts natural language into diverse and physically plausible 4D worlds exhibiting rich interactions among liquids, deformable objects, and rigid bodies, while achieving cinematic camera and lighting control. We envision GS-Agent as a foundation for a new paradigm in 4D world generation, empowering creative content creation and physical AI. Project page at https://umass-embodied-agi.github.io/gs-agent/",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "robotics",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Language Modeling"
       ]
     },
     {
@@ -10061,32 +10119,6 @@
       "project": "",
       "thumbnail": "./thumbs/2606.23595.jpg",
       "firstSeenAt": "2026-06-25T00:21:13.185Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.21554",
-      "title": "Strategic Plan for Neutral Atom Quantum Computation",
-      "authors": "",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 80,
-      "paper": "https://arxiv.org/abs/2607.21554",
-      "source": "https://www.alphaxiv.org/abs/2607.21554",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21554.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -17943,6 +17975,32 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2606.gene-bench-pro",
+      "title": "GeneBench-Pro: Evaluating Multistage Statistical Reasoning in Genomics, Quantitative Biology, and Translational Biomedicine",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-24",
+      "score": 78,
+      "paper": "https://www.alphaxiv.org/abs/2606.gene-bench-pro",
+      "source": "https://www.alphaxiv.org/abs/2606.gene-bench-pro",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-27T00:11:26.166Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
         "Language Modeling"
       ]
     },
@@ -31920,6 +31978,32 @@
       ]
     },
     {
+      "id": "2607.21367",
+      "title": "A solution to 2-copy distillability of Werner states",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-23",
+      "score": 77,
+      "paper": "https://arxiv.org/abs/2607.21367",
+      "source": "https://www.alphaxiv.org/abs/2607.21367",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.21367.jpg",
+      "firstSeenAt": "2026-07-27T00:11:26.166Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.12360",
       "title": "Anatomy of Post-Training: Using Interpretability to Characterize Data and Shape the Learning Signal",
       "authors": "Leon Bergen, Usha Bhalla, Sidharth Baskaran, Max Loeffler, Raphael Sarfati, Dhruvil Gala, Ryan Panwar, Santiago Aranguri, Thomas Fel, Atticus Geiger, Matthew Kowal, Siddharth Boppana, Daniel Balsam, Owen Lewis, Jack Merullo, Thomas McGrath, Ekdeep Singh Lubana",
@@ -33816,6 +33900,38 @@
       ]
     },
     {
+      "id": "2512.11047",
+      "title": "WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control",
+      "authors": "Haoran Jiang, Jin Chen, Qingwen Bu, Li Chen, Modi Shi, Yanjie Zhang, Delong Li, Chuanzhe Suo, wang chuang, zhihui peng, Hongyang Li",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 70,
+      "paper": "https://arxiv.org/abs/2512.11047",
+      "source": "https://paperswithcode.co/paper/2512.11047",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.11047.jpg",
+      "firstSeenAt": "2026-06-22T02:07:22.829Z",
+      "summary": "Humanoid robots require precise locomotion and dexterous manipulation to perform challenging locomanipulation tasks. Yet existing approaches, modular or end-to-end, are deficient in manipulation-aware locomotion. This confines the robot to a limited workspace, preventing it from performing large-space loco-manipulation. We attribute this to: (1) the challenge of acquiring loco-manipulation knowledge due to the scarcity of humanoid teleoperation data, and (2) the difficulty of faithfully and reliably executing locomotion commands, stemming from the limited precision and stability of existing RL controllers. To acquire richer loco-manipulation knowledge, we propose a unified latent learning framework that enables Vision-Language-Action (VLA) system to learn from low-cost action-free egocentric videos. Moreover, an efficient data collection pipeline is devised to augment the dataset and scale the benefits. To more precisely execute the desired locomotion commands, we present a loco–manipulation–oriented (LMO) RL policy specifically tailored for accurate and stable core loco-manipulation movements, such as advancing, turning, and squatting. Building on these components, we introduce WholeBodyVLA, a unified framework for humanoid loco-manipulation. To the best of our knowledge, WholeBodyVLA is one of its kind enabling large-space humanoid loco–manipulation. It is verified via comprehensive experiments on the AgiBot X2 humanoid, outperforming prior baseline by 21.3%. It also demonstrates strong generalization and high extensibility across a broad range of tasks. Code and checkpoints would be made public.",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "LoRa",
+        "PEFT",
+        "VQ-VAE",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2410.07577",
       "title": "3D Vision-Language Gaussian Splatting",
       "authors": "Qucheng Peng, Benjamin Planche, Zhongpai Gao, Meng Zheng, Anwesa Choudhuri, Terrence Chen, Chen Chen, Ziyan Wu",
@@ -34247,38 +34363,6 @@
         "Vision/Multimodal",
         "Language Modeling",
         "Serving"
-      ]
-    },
-    {
-      "id": "2512.11047",
-      "title": "WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control",
-      "authors": "Haoran Jiang, Jin Chen, Qingwen Bu, Li Chen, Modi Shi, Yanjie Zhang, Delong Li, Chuanzhe Suo, wang chuang, zhihui peng, Hongyang Li",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 69,
-      "paper": "https://arxiv.org/abs/2512.11047",
-      "source": "https://paperswithcode.co/paper/2512.11047",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2512.11047.jpg",
-      "firstSeenAt": "2026-06-22T02:07:22.829Z",
-      "summary": "Humanoid robots require precise locomotion and dexterous manipulation to perform challenging locomanipulation tasks. Yet existing approaches, modular or end-to-end, are deficient in manipulation-aware locomotion. This confines the robot to a limited workspace, preventing it from performing large-space loco-manipulation. We attribute this to: (1) the challenge of acquiring loco-manipulation knowledge due to the scarcity of humanoid teleoperation data, and (2) the difficulty of faithfully and reliably executing locomotion commands, stemming from the limited precision and stability of existing RL controllers. To acquire richer loco-manipulation knowledge, we propose a unified latent learning framework that enables Vision-Language-Action (VLA) system to learn from low-cost action-free egocentric videos. Moreover, an efficient data collection pipeline is devised to augment the dataset and scale the benefits. To more precisely execute the desired locomotion commands, we present a loco–manipulation–oriented (LMO) RL policy specifically tailored for accurate and stable core loco-manipulation movements, such as advancing, turning, and squatting. Building on these components, we introduce WholeBodyVLA, a unified framework for humanoid loco-manipulation. To the best of our knowledge, WholeBodyVLA is one of its kind enabling large-space humanoid loco–manipulation. It is verified via comprehensive experiments on the AgiBot X2 humanoid, outperforming prior baseline by 21.3%. It also demonstrates strong generalization and high extensibility across a broad range of tasks. Code and checkpoints would be made public.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "LoRa",
-        "PEFT",
-        "VQ-VAE",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -38745,6 +38829,39 @@
       ]
     },
     {
+      "id": "2505.14030",
+      "title": "AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory",
+      "authors": "Zhiqian Lan, Yuxuan Jiang, Ruiqi Wang, Xuanbing Xie, Rongkui Zhang, Yicheng Zhu, LI PEIHANG, Tianshuo Yang, Tianxing Chen, Haoyu Gao, Xiaokang Yang, Xuelong Li, Hongyuan Zhang, Yao Mu, Ping Luo",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2505.14030",
+      "source": "https://paperswithcode.co/paper/2505.14030",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.14030.jpg",
+      "firstSeenAt": "2026-06-22T02:07:22.829Z",
+      "summary": "Vision-language-action (VLA) models have shown promise as generalist robotic policies by jointly leveraging visual, linguistic, and proprioceptive modalities to generate action trajectories. While recent benchmarks have advanced VLA research in domestic tasks, professional science-oriented domains remain underexplored. We introduce AutoBio, a simulation framework and benchmark designed to evaluate robotic automation in biology laboratory environments—an application domain that combines structured protocols with demanding precision and multimodal interaction. AutoBio extends existing simulation capabilities through a pipeline for digitizing real-world laboratory instruments, specialized physics plugins for mechanisms ubiquitous in laboratory workflows, and a rendering stack that support dynamic instrument interfaces and transparent materials through physically based rendering. Our benchmark comprises biologically grounded tasks spanning three difficulty levels, enabling standardized evaluation of language-guided robotic manipulation in experimental protocols. We provide infrastructure for demonstration generation and seamless integration with VLA models. Baseline evaluations with SOTA VLA models reveal significant gaps in precision manipulation, visual reasoning, and instruction following in scientific workflows. By releasing AutoBio, we aim to catalyze research on generalist robotic systems for complex, high-precision, and multimodal professional environments.",
+      "matchedBy": [
+        "papers with code",
+        "Instruction Following",
+        "Robotics",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "robotics",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2602.09657",
       "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
       "authors": "Xiaolou Sun, Wufei Si, Wenhui Ni, Yuntian Li, Dongming Wu, Fei Xie, Runwei Guan, He-Yang Xu, Henghui Ding, Yuan Wu, Yutao Yue, Yongming Huang, Hui Xiong",
@@ -41736,39 +41853,6 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2505.14030",
-      "title": "AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory",
-      "authors": "Zhiqian Lan, Yuxuan Jiang, Ruiqi Wang, Xuanbing Xie, Rongkui Zhang, Yicheng Zhu, LI PEIHANG, Tianshuo Yang, Tianxing Chen, Haoyu Gao, Xiaokang Yang, Xuelong Li, Hongyuan Zhang, Yao Mu, Ping Luo",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 63,
-      "paper": "https://arxiv.org/abs/2505.14030",
-      "source": "https://paperswithcode.co/paper/2505.14030",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.14030.jpg",
-      "firstSeenAt": "2026-06-22T02:07:22.829Z",
-      "summary": "Vision-language-action (VLA) models have shown promise as generalist robotic policies by jointly leveraging visual, linguistic, and proprioceptive modalities to generate action trajectories. While recent benchmarks have advanced VLA research in domestic tasks, professional science-oriented domains remain underexplored. We introduce AutoBio, a simulation framework and benchmark designed to evaluate robotic automation in biology laboratory environments—an application domain that combines structured protocols with demanding precision and multimodal interaction. AutoBio extends existing simulation capabilities through a pipeline for digitizing real-world laboratory instruments, specialized physics plugins for mechanisms ubiquitous in laboratory workflows, and a rendering stack that support dynamic instrument interfaces and transparent materials through physically based rendering. Our benchmark comprises biologically grounded tasks spanning three difficulty levels, enabling standardized evaluation of language-guided robotic manipulation in experimental protocols. We provide infrastructure for demonstration generation and seamless integration with VLA models. Baseline evaluations with SOTA VLA models reveal significant gaps in precision manipulation, visual reasoning, and instruction following in scientific workflows. By releasing AutoBio, we aim to catalyze research on generalist robotic systems for complex, high-precision, and multimodal professional environments.",
-      "matchedBy": [
-        "papers with code",
-        "Instruction Following",
-        "Robotics",
-        "Gaussian splatting",
-        "vision/multimodal",
-        "robotics",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics",
-        "Language Modeling"
       ]
     },
     {
@@ -48477,6 +48561,36 @@
       ]
     },
     {
+      "id": "2508.00961",
+      "title": "FinKario: Event-Enhanced Automated Construction of Financial Knowledge Graph",
+      "authors": "Xiang Li, Penglei Sun, Wanyun Zhou, Zikai Wei, Yongqi Zhang, Xiaowen Chu",
+      "org": "",
+      "published": "ACL 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2508.00961",
+      "source": "https://paperswithcode.co/paper/2508.00961",
+      "code": "https://github.com/Jackson906E/FinKario>",
+      "project": "",
+      "thumbnail": "./thumbs/2508.00961.jpg",
+      "firstSeenAt": "2026-07-16T00:08:16.826Z",
+      "summary": "Individual investors are significantly outnumbered and disadvantaged in financial markets, overwhelmed by abundant information and lacking professional analysis. Equity research reports stand out as crucial resources, offering valuable insights. By leveraging these reports, large language models (LLMs) can enhance investors’ decision-making capabilities and strengthen financial analysis. However, two key challenges limit their effectiveness: (1) the rapid evolution of market events often outpaces the slow update cycles of existing knowledge bases, (2) the long-form and unstructured nature of financial reports further hinders timely and context-aware integration by LLMs. To address these challenges, we tackle both data and methodological aspects. First, we introduce the Event-Enhanced Automated Construction of Financial Knowledge Graph (FinKario), a dataset comprising over 305,360 entities, 210,328 relational triples, and 19 distinct relation types. FinKario automatically integrates real-time company fundamentals and market events through prompt-driven extraction guided by professional institutional templates, providing structured and accessible financial insights for LLMs. Additionally, we propose a Two-Stage, Graph-Based retrieval strategy (FinKario-RAG), optimizing the retrieval of evolving, large-scale financial knowledge to ensure efficient and precise data access. Extensive experiments show that FinKario with FinKario-RAG achieves superior stock trend prediction accuracy, outperforming financial LLMs by 18.81% and institutional strategies by 17.85% on average in backtesting. [Our code is available at <https://github.com/Jackson906E/FinKario>.]",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Qwen3",
+        "data / retrieval",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2503.04475",
       "title": "ForestLPR: LiDAR Place Recognition in Forests Attentioning Multiple BEV Density Images",
       "authors": "Yanqing Shen, Turcan Tuna, Marco Hutter, Cesar Cadena, Nanning Zheng",
@@ -51863,6 +51977,39 @@
         "Robotics",
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2512.02729",
+      "title": "RoboWheel: A Data Engine from Real-World Human Demonstrations for Cross-Embodiment Robotic Learning",
+      "authors": "Yuhong Zhang, Zihan Gao, Shengpeng Li, Ling-Hao Chen, Kaisheng Liu, Runqing Cheng, Xiao Lin, Junjia Liu, Zhuoheng Li, Jingyi Feng, Ziyan He, Jintian Lin, Zheyan Huang, Zhifang Liu, Haoqian Wang",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2512.02729",
+      "source": "https://paperswithcode.co/paper/2512.02729",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.02729.jpg",
+      "firstSeenAt": "2026-06-22T00:21:43.543Z",
+      "summary": "We introduce Robowheel, a data engine that converts human hand-object interaction (HOI) videos into training-ready supervision for cross-morphology robotic learning. From monocular RGB/RGB-D inputs, we perform high-precision HOI reconstruction and enforce physical plausibility via a reinforcement learning (RL) optimizer that refines hand-object relative poses under contact and penetration constraints. The reconstructed, contact-rich trajectories are then retargeted to cross-embodiments, robot arms with simple end-effectors, dexterous hands, and humanoids, yielding executable actions and rollouts. To scale coverage, we build a simulation-augmented framework on Isaac Sim with diverse domain randomization (embodiments, trajectories, object retrieval, background textures, hand motion mirroring), which enriches the distributions of trajectories and observations while preserving spatial relationships and physical plausibility. The entire data pipeline forms an end-to-end pipeline from video - reconstruction - retargeting - augmentation - data acquisition.We validate the data on mainstream vision-language-action (VLA) and imitation learning architectures, demonstrating that trajectories produced by our pipeline are as stable as those from teleoperation and yield comparable continual performance gains. To our knowledge, this provides the first quantitative evidence that HOI modalities can serve as effective supervision for robotic learning. Compared with teleoperation, Robowheel is lightweight: a single monocular RGB(D) camera is sufficient to extract a universal, embodiment-agnostic motion representation that could be flexibly retargeted across embodiments. We further assemble a large-scale multimodal dataset combining multi-camera captures, monocular videos, and public HOI corpora for training and evaluating embodied models.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Robotics",
+        "Imitation learning",
+        "VLA",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Data / Retrieval"
       ]
     },
     {
@@ -60436,36 +60583,6 @@
       "categories": [
         "Language Modeling",
         "Serving"
-      ]
-    },
-    {
-      "id": "2508.00961",
-      "title": "FinKario: Event-Enhanced Automated Construction of Financial Knowledge Graph",
-      "authors": "Xiang Li, Penglei Sun, Wanyun Zhou, Zikai Wei, Yongqi Zhang, Xiaowen Chu",
-      "org": "",
-      "published": "ACL 2026",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2508.00961",
-      "source": "https://paperswithcode.co/paper/2508.00961",
-      "code": "https://github.com/Jackson906E/FinKario>",
-      "project": "",
-      "thumbnail": "./thumbs/2508.00961.jpg",
-      "firstSeenAt": "2026-07-16T00:08:16.826Z",
-      "summary": "Individual investors are significantly outnumbered and disadvantaged in financial markets, overwhelmed by abundant information and lacking professional analysis. Equity research reports stand out as crucial resources, offering valuable insights. By leveraging these reports, large language models (LLMs) can enhance investors’ decision-making capabilities and strengthen financial analysis. However, two key challenges limit their effectiveness: (1) the rapid evolution of market events often outpaces the slow update cycles of existing knowledge bases, (2) the long-form and unstructured nature of financial reports further hinders timely and context-aware integration by LLMs. To address these challenges, we tackle both data and methodological aspects. First, we introduce the Event-Enhanced Automated Construction of Financial Knowledge Graph (FinKario), a dataset comprising over 305,360 entities, 210,328 relational triples, and 19 distinct relation types. FinKario automatically integrates real-time company fundamentals and market events through prompt-driven extraction guided by professional institutional templates, providing structured and accessible financial insights for LLMs. Additionally, we propose a Two-Stage, Graph-Based retrieval strategy (FinKario-RAG), optimizing the retrieval of evolving, large-scale financial knowledge to ensure efficient and precise data access. Extensive experiments show that FinKario with FinKario-RAG achieves superior stock trend prediction accuracy, outperforming financial LLMs by 18.81% and institutional strategies by 17.85% on average in backtesting. [Our code is available at <https://github.com/Jackson906E/FinKario>.]",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Qwen3",
-        "data / retrieval",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Data / Retrieval",
-      "categories": [
-        "Data / Retrieval",
-        "Language Modeling"
       ]
     },
     {
@@ -69373,39 +69490,6 @@
         "Vision/Multimodal",
         "Language Modeling",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2512.02729",
-      "title": "RoboWheel: A Data Engine from Real-World Human Demonstrations for Cross-Embodiment Robotic Learning",
-      "authors": "Yuhong Zhang, Zihan Gao, Shengpeng Li, Ling-Hao Chen, Kaisheng Liu, Runqing Cheng, Xiao Lin, Junjia Liu, Zhuoheng Li, Jingyi Feng, Ziyan He, Jintian Lin, Zheyan Huang, Zhifang Liu, Haoqian Wang",
-      "org": "",
-      "published": "CVPR 2026",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2512.02729",
-      "source": "https://paperswithcode.co/paper/2512.02729",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2512.02729.jpg",
-      "firstSeenAt": "2026-06-22T00:21:43.543Z",
-      "summary": "We introduce Robowheel, a data engine that converts human hand-object interaction (HOI) videos into training-ready supervision for cross-morphology robotic learning. From monocular RGB/RGB-D inputs, we perform high-precision HOI reconstruction and enforce physical plausibility via a reinforcement learning (RL) optimizer that refines hand-object relative poses under contact and penetration constraints. The reconstructed, contact-rich trajectories are then retargeted to cross-embodiments, robot arms with simple end-effectors, dexterous hands, and humanoids, yielding executable actions and rollouts. To scale coverage, we build a simulation-augmented framework on Isaac Sim with diverse domain randomization (embodiments, trajectories, object retrieval, background textures, hand motion mirroring), which enriches the distributions of trajectories and observations while preserving spatial relationships and physical plausibility. The entire data pipeline forms an end-to-end pipeline from video - reconstruction - retargeting - augmentation - data acquisition.We validate the data on mainstream vision-language-action (VLA) and imitation learning architectures, demonstrating that trajectories produced by our pipeline are as stable as those from teleoperation and yield comparable continual performance gains. To our knowledge, this provides the first quantitative evidence that HOI modalities can serve as effective supervision for robotic learning. Compared with teleoperation, Robowheel is lightweight: a single monocular RGB(D) camera is sufficient to extract a universal, embodiment-agnostic motion representation that could be flexibly retargeted across embodiments. We further assemble a large-scale multimodal dataset combining multi-camera captures, monocular videos, and public HOI corpora for training and evaluating embodied models.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "Robotics",
-        "Imitation learning",
-        "VLA",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Data / Retrieval"
       ]
     },
     {
@@ -146567,36 +146651,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2607.21522",
-      "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
-      "authors": "Hongxin Zhang, Chunru Lin, Junyan Li, Zhou Xian, Tsun-Hsuan Wang, Chuang Gan",
-      "org": "",
-      "published": "2026-07-23",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.21522v1",
-      "source": "https://arxiv.org/abs/2607.21522v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.21522.jpg",
-      "firstSeenAt": "2026-07-25T00:14:12.039Z",
-      "summary": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic system that emulates how humans traditionally create 4D worlds, yet automates the entire process. We present GS-Agent, an end-to-end multi-agent framework that integrates physics engines in the loop to generate realistic, dynamic, and controllable 4D physical worlds from natural language. Inspired by how humans build 4D worlds, GS-Agent decomposes the task into entity management, covering 3D asset curation, material tuning, placement, and motion control, and rendering configuration, including camera and lighting manipulation. Multiple agents with distinct expertise interact with the physics engine via code, seek multimodal feedback, and collaborate to iteratively construct 4D worlds that align with the given descriptions. Experimental results show that GS-Agent effectively converts natural language into diverse and physically plausible 4D worlds exhibiting rich interactions among liquids, deformable objects, and rigid bodies, while achieving cinematic camera and lighting control. We envision GS-Agent as a foundation for a new paradigm in 4D world generation, empowering creative content creation and physical AI. Project page at https://umass-embodied-agi.github.io/gs-agent/",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "robotics",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics",
-        "Language Modeling"
       ]
     },
     {
