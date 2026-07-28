@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-28T00:10:36.371Z",
+  "generatedAt": "2026-07-28T01:01:31.005Z",
   "sourceStats": {
-    "seed": 6759,
+    "seed": 6881,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 16,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 6881
+    "total": 6885
   },
   "papers": [
     {
@@ -34506,6 +34506,33 @@
       ]
     },
     {
+      "id": "2502.03607",
+      "title": "Simultaneous Multi-Robot Motion Planning with Projected Diffusion Models",
+      "authors": "Jinhao Liang, Jacob K Christopher, Sven Koenig, Ferdinando Fioretto",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 70,
+      "paper": "https://arxiv.org/abs/2502.03607",
+      "source": "https://paperswithcode.co/paper/2502.03607",
+      "code": "https://github.com/RAISELab-atUVA/Diffusion-MRMP",
+      "project": "",
+      "thumbnail": "./thumbs/2502.03607.jpg",
+      "firstSeenAt": "2026-07-28T01:01:31.005Z",
+      "summary": "Recent advances in diffusion models hold significant potential in robotics, enabling the generation of diverse and smooth trajectories directly from raw representations of the environment. Despite this promise, applying diffusion models to motion planning remains challenging due to their difficulty in enforcing critical constraints, such as collision avoidance and kinematic feasibility. These limitations become even more pronounced in Multi-Robot Motion Planning (MRMP), where multiple robots must coordinate in shared spaces. To address these challenges, this work proposes **S**imultaneous **M**RMP **D**iffusion (SMD), a novel approach integrating constrained optimization into the diffusion sampling process to produce collision-free, kinematically feasible trajectories. Additionally, the paper introduces a comprehensive MRMP benchmark to evaluate trajectory planning algorithms across scenarios with varying robot densities, obstacle complexities, and motion constraints. Experimental results show SMD consistently outperforms classical and other learning-based motion planners, achieving higher success rates and efficiency in complex multi-robot environments. The code and implementation are available at https://github.com/RAISELab-atUVA/Diffusion-MRMP.",
+      "matchedBy": [
+        "papers with code",
+        "Diffusion",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
+    },
+    {
       "id": "2412.15182",
       "title": "STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning",
       "authors": "Marius Memmel, Jacob Berg, Bingqing Chen, Abhishek Gupta, Jonathan Francis",
@@ -38852,6 +38879,39 @@
       ]
     },
     {
+      "id": "2511.01571",
+      "title": "PixelVLA: Advancing Pixel-level Understanding in Vision-Language-Action Model",
+      "authors": "Wenqi Liang, Gan Sun, Yao He, Jiahua Dong, Suyan Dai, Ivan Laptev, Salman Khan, Yang Cong",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2511.01571",
+      "source": "https://paperswithcode.co/paper/2511.01571",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2511.01571.jpg",
+      "firstSeenAt": "2026-06-23T01:33:39.075Z",
+      "summary": "Vision-Language-Action models (VLAs) are emerging as powerful tools for learning generalizable visuomotor control policies. However, current VLAs are mostly trained on large-scale image–text–action data and remain limited in two key ways: (i) they struggle with pixel-level scene understanding, and (ii) they rely heavily on textual prompts, which reduces their flexibility in real-world settings. To address these challenges, we introduce PixelVLA, the first VLA model designed to support both pixel-level reasoning and multimodal prompting with text and visual inputs. Our approach is built on a new visuomotor instruction tuning framework that integrates a multiscale pixel-aware encoder with a visual prompting encoder. To train PixelVLA effectively, we further propose a two-stage automated annotation pipeline that generates Pixel-160K, a large-scale dataset with pixel-level annotations derived from existing robot data. Experiments on three standard VLA benchmarks and two VLA model variants show that PixelVLA improves manipulation success rates by $10.1\\%\\sim28.7\\%$ over OpenVLA, while requiring only $1.5\\%$ of its pretraining cost. These results demonstrate that PixelVLA can be integrated into existing VLAs to enable more accurate, efficient, and versatile robot control in complex environments. The dataset and code will be released as open source.",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "ACT",
+        "Diffusion Policy",
+        "LLaVa",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2511.04665",
       "title": "Real-To-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions",
       "authors": "Zhang, Kaifeng, Sha, Shuo, Jiang, Hanxiao, Loper, Matthew, Song, Hyunjong, Cai, Guangyan, Xu, Zhuo, Xiaochen, Hu, Zheng, Changxi, Li, Yunzhu",
@@ -41351,39 +41411,6 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2511.01571",
-      "title": "PixelVLA: Advancing Pixel-level Understanding in Vision-Language-Action Model",
-      "authors": "Wenqi Liang, Gan Sun, Yao He, Jiahua Dong, Suyan Dai, Ivan Laptev, Salman Khan, Yang Cong",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 64,
-      "paper": "https://arxiv.org/abs/2511.01571",
-      "source": "https://paperswithcode.co/paper/2511.01571",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2511.01571.jpg",
-      "firstSeenAt": "2026-06-23T01:33:39.075Z",
-      "summary": "Vision-Language-Action models (VLAs) are emerging as powerful tools for learning generalizable visuomotor control policies. However, current VLAs are mostly trained on large-scale image–text–action data and remain limited in two key ways: (i) they struggle with pixel-level scene understanding, and (ii) they rely heavily on textual prompts, which reduces their flexibility in real-world settings. To address these challenges, we introduce PixelVLA, the first VLA model designed to support both pixel-level reasoning and multimodal prompting with text and visual inputs. Our approach is built on a new visuomotor instruction tuning framework that integrates a multiscale pixel-aware encoder with a visual prompting encoder. To train PixelVLA effectively, we further propose a two-stage automated annotation pipeline that generates Pixel-160K, a large-scale dataset with pixel-level annotations derived from existing robot data. Experiments on three standard VLA benchmarks and two VLA model variants show that PixelVLA improves manipulation success rates by $10.1\\%\\sim28.7\\%$ over OpenVLA, while requiring only $1.5\\%$ of its pretraining cost. These results demonstrate that PixelVLA can be integrated into existing VLAs to enable more accurate, efficient, and versatile robot control in complex environments. The dataset and code will be released as open source.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "ACT",
-        "Diffusion Policy",
-        "LLaVa",
-        "vision/multimodal",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics",
-        "Language Modeling"
       ]
     },
     {
@@ -46006,7 +46033,8 @@
         "papers with code",
         "3D generation",
         "3D understanding",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -46199,6 +46227,36 @@
         "Language Modeling",
         "Vision/Multimodal",
         "Benchmark"
+      ]
+    },
+    {
+      "id": "2505.24746",
+      "title": "Tackling View-Dependent Semantics in 3D Language Gaussian Splatting",
+      "authors": "Jiazhong Cen, Xudong Zhou, Jiemin Fang, Changsong Wen, Lingxi Xie, XIAOPENG ZHANG, Wei Shen, Qi Tian",
+      "org": "",
+      "published": "ICML 2025",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2505.24746",
+      "source": "https://paperswithcode.co/paper/2505.24746",
+      "code": "https://github.com/https://github",
+      "project": "",
+      "thumbnail": "./thumbs/2505.24746.jpg",
+      "firstSeenAt": "2026-07-13T01:12:03.410Z",
+      "summary": "Recent advancements in 3D Gaussian Splatting (3D-GS) enable high-quality 3D scene reconstruction from RGB images. Many studies extend this paradigm for language-driven open-vocabulary scene understanding. However, most of them simply project 2D semantic features onto 3D Gaussians and overlook a fundamental gap between 2D and 3D understanding: a 3D object may exhibit various semantics from different viewpoints—a phenomenon we term **view-dependent semantics**. To address this challenge, we propose **LaGa** (**La**nguage **Ga**ussians), which establishes cross-view semantic connections by decomposing the 3D scene into objects. Then, it constructs view-aggregated semantic representations by clustering semantic descriptors and reweighting them based on multi-view semantics. Extensive experiments demonstrate that LaGa effectively captures key information from view-dependent semantics, enabling a more comprehensive understanding of 3D scenes. Notably, under the same settings, LaGa achieves a significant improvement of **+18.7\\% mIoU** over the previous SOTA on the LERF-OVS dataset. Our code is available at: https://github.com/https://github.com/SJTU-DeepVisionLab/LaGa.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "3D understanding",
+        "CLIP",
+        "DINO",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -51798,7 +51856,8 @@
         "papers with code",
         "3D generation",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -53778,36 +53837,6 @@
         "Robotics",
         "Serving",
         "Frontier Training"
-      ]
-    },
-    {
-      "id": "2505.24746",
-      "title": "Tackling View-Dependent Semantics in 3D Language Gaussian Splatting",
-      "authors": "Jiazhong Cen, Xudong Zhou, Jiemin Fang, Changsong Wen, Lingxi Xie, XIAOPENG ZHANG, Wei Shen, Qi Tian",
-      "org": "",
-      "published": "ICML 2025",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2505.24746",
-      "source": "https://paperswithcode.co/paper/2505.24746",
-      "code": "https://github.com/https://github",
-      "project": "",
-      "thumbnail": "./thumbs/2505.24746.jpg",
-      "firstSeenAt": "2026-07-13T01:12:03.410Z",
-      "summary": "Recent advancements in 3D Gaussian Splatting (3D-GS) enable high-quality 3D scene reconstruction from RGB images. Many studies extend this paradigm for language-driven open-vocabulary scene understanding. However, most of them simply project 2D semantic features onto 3D Gaussians and overlook a fundamental gap between 2D and 3D understanding: a 3D object may exhibit various semantics from different viewpoints—a phenomenon we term **view-dependent semantics**. To address this challenge, we propose **LaGa** (**La**nguage **Ga**ussians), which establishes cross-view semantic connections by decomposing the 3D scene into objects. Then, it constructs view-aggregated semantic representations by clustering semantic descriptors and reweighting them based on multi-view semantics. Extensive experiments demonstrate that LaGa effectively captures key information from view-dependent semantics, enabling a more comprehensive understanding of 3D scenes. Notably, under the same settings, LaGa achieves a significant improvement of **+18.7\\% mIoU** over the previous SOTA on the LERF-OVS dataset. Our code is available at: https://github.com/https://github.com/SJTU-DeepVisionLab/LaGa.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "3D understanding",
-        "CLIP",
-        "DINO",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
       ]
     },
     {
@@ -61371,6 +61400,36 @@
         "Vision/Multimodal",
         "Serving",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2509.26605",
+      "title": "Fine-tuning Behavioral Cloning Policies with Preference‑Based Reinforcement Learning",
+      "authors": "Mael Macuglia, Paul Friedrich, Giorgia Ramponi",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2509.26605",
+      "source": "https://paperswithcode.co/paper/2509.26605",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.26605.jpg",
+      "firstSeenAt": "2026-07-12T00:09:06.044Z",
+      "summary": "Deploying reinforcement learning (RL) in robotics, industry, and health care is blocked by two obstacles: the difficulty of specifying accurate rewards and the risk of unsafe, data-hungry exploration. We address this by proposing a two-stage framework that first learns a safe initial policy from a reward-free dataset of expert demonstrations, then fine-tunes it online using preference-based human feedback. We provide the first principled analysis of this offline-to-online approach and introduce BRIDGE, a unified algorithm that integrates both signals via an uncertainty-weighted objective. We derive regret bounds that shrink with the number of offline demonstrations, explicitly connecting the quantity of offline data to online sample efficiency. We validate BRIDGE in discrete and continuous control MuJoCo environments, showing it achieves lower regret than both standalone behavioral cloning and online preference-based RL. Our work establishes a theoretical foundation for designing more sample-efficient interactive agents.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Fine-tuning",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
       ]
     },
     {
@@ -72614,6 +72673,38 @@
       ]
     },
     {
+      "id": "2509.10678",
+      "title": "T2Bs: Text-to-Character Blendshapes via Video Generation",
+      "authors": "Jiahao Luo, Chaoyang Wang, Michael Vasilkovsky, Vladislav Shakhrai, Di Liu, Peiye Zhuang, Sergey Tulyakov, Peter Wonka, Hsin-Ying Lee, James Davis, Jian Wang",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2509.10678",
+      "source": "https://paperswithcode.co/paper/2509.10678",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2509.10678.jpg",
+      "firstSeenAt": "2026-06-25T00:21:13.185Z",
+      "summary": "We present T2Bs, a framework for generating high-quality, animatable character head morphable models from text by combining static text-to-3D generation with video diffusion. Text-to-3D models produce detailed static geometry but lack motion synthesis, while video diffusion models generate motion with temporal and multi-view geometric inconsistencies. T2Bs bridges this gap by leveraging deformable 3D Gaussian splatting to align static 3D assets with video outputs. By constraining motion with static geometry and employing a view-dependent deformation MLP, T2Bs (i) outperforms existing 4D generation methods in accuracy and expressiveness while reducing video artifacts and view inconsistencies, and (ii) reconstructs smooth, coherent, fully registered 3D geometries designed to scale for building morphable models with diverse, realistic facial motions. This enables synthesizing expressive, animatable character heads that surpass current 4D generation techniques.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Video generation",
+        "Gaussian splatting",
+        "GPT-4",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2510.15152",
       "title": "Tail-Optimized Caching for LLM Inference",
       "authors": "Wenxin Zhang, Yueying Li, Tianyi Peng, Ciamac C Moallemi",
@@ -72759,6 +72850,37 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
+      ]
+    },
+    {
+      "id": "2507.17336",
+      "title": "Temporal Smoothness-Aware Rate-Distortion Optimized 4D Gaussian Splatting",
+      "authors": "Hyeongmin Lee, Kyungjune Baek",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2507.17336",
+      "source": "https://paperswithcode.co/paper/2507.17336",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2507.17336.jpg",
+      "firstSeenAt": "2026-07-28T01:01:31.005Z",
+      "summary": "Dynamic 4D Gaussian Splatting (4DGS) effectively extends the high-speed rendering capabilities of 3D Gaussian Splatting (3DGS) to represent volumetric videos. However, the large number of Gaussians, substantial temporal redundancies, and especially the absence of an entropy-aware compression framework result in large storage requirements. Consequently, this poses significant challenges for practical deployment, efficient edge-device processing, and data transmission.In this paper, we introduce a novel end-to-end RD-optimized compression framework tailored for 4DGS, aiming to enable flexible, high-fidelity rendering across varied computational platforms.Leveraging Fully Explicit Dynamic Gaussian Splatting (Ex4DGS), one of the state-of-the-art 4DGS methods, as our baseline, we start from the existing 3DGS compression methods for compatibility while effectively addressing additional challenges introduced by the temporal axis. In particular, instead of storing motion trajectories independently per point, we employ a wavelet transform to reflect the real-world smoothness prior, significantly enhancing storage efficiency.This approach yields significantly improved compression ratios and provides a user-controlled balance between compression efficiency and rendering quality. Extensive experiments demonstrate the effectiveness of our method, achieving up to 91$\\times$ compression compared to the original Ex4DGS model while maintaining high visual fidelity. These results highlight the applicability of our framework for real-time dynamic scene rendering in diverse scenarios, from resource-constrained edge devices to high-performance environments.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Novel View Synthesis",
+        "Gaussian splatting",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving"
       ]
     },
     {
@@ -76173,7 +76295,8 @@
       "matchedBy": [
         "papers with code",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Continuous Control"
       ],
       "sources": [
         "paperswithcode"
@@ -81874,7 +81997,8 @@
         "papers with code",
         "3D generation",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -83124,7 +83248,8 @@
       "matchedBy": [
         "papers with code",
         "robotics",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Continuous Control"
       ],
       "sources": [
         "paperswithcode"
@@ -88527,36 +88652,6 @@
       ]
     },
     {
-      "id": "2509.26605",
-      "title": "Fine-tuning Behavioral Cloning Policies with Preference‑Based Reinforcement Learning",
-      "authors": "Mael Macuglia, Paul Friedrich, Giorgia Ramponi",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2509.26605",
-      "source": "https://paperswithcode.co/paper/2509.26605",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2509.26605.jpg",
-      "firstSeenAt": "2026-07-12T00:09:06.044Z",
-      "summary": "Deploying reinforcement learning (RL) in robotics, industry, and health care is blocked by two obstacles: the difficulty of specifying accurate rewards and the risk of unsafe, data-hungry exploration. We address this by proposing a two-stage framework that first learns a safe initial policy from a reward-free dataset of expert demonstrations, then fine-tunes it online using preference-based human feedback. We provide the first principled analysis of this offline-to-online approach and introduce BRIDGE, a unified algorithm that integrates both signals via an uncertainty-weighted objective. We derive regret bounds that shrink with the number of offline demonstrations, explicitly connecting the quantity of offline data to online sample efficiency. We validate BRIDGE in discrete and continuous control MuJoCo environments, showing it achieves lower regret than both standalone behavioral cloning and online preference-based RL. Our work establishes a theoretical foundation for designing more sample-efficient interactive agents.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "Fine-tuning",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Robotics"
-      ]
-    },
-    {
       "id": "2604.00455",
       "title": "First Logit Boosting: Visual Grounding Method to Mitigate Object Hallucination in Large Vision-Language Models",
       "authors": "Jiwoo Ha, Jongwoo Baek, Jinhyun So",
@@ -90022,7 +90117,8 @@
       "matchedBy": [
         "papers with code",
         "3D generation",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -91708,7 +91804,8 @@
       "summary": "Healthcare robotics has been gaining traction as a key area of research focused on enhancing human wellness. This paper explores the use of intelligent robots in the beauty industry, specifically within the context of photorejuvenation-based cosmetic dermatology, aimed at improving facial skin aesthetics. The beauty industry, traditionally labor-intensive, is experiencing a critical shortage of skilled beauticians, highlighting the opportunity for robotic technologies to meet this demand. However, integrating robots into cosmetic procedures presents unique challenges, particularly in tasks requiring high precision, such as laser pulse delivery and thermal dose management. This study addresses these challenges by introducing a deep learning approach for trajectory generation in laser path planning and a model-based control strategy for thermal dose regulation. Our empirical results demonstrate that the presented healthcare robots can deliver effective photorejuvenation treatments, suggesting a promising future for increased automation in cosmetic services.",
       "matchedBy": [
         "papers with code",
-        "robotics"
+        "robotics",
+        "Healthcare"
       ],
       "sources": [
         "paperswithcode"
@@ -97634,7 +97731,9 @@
       "matchedBy": [
         "papers with code",
         "3D generation",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis",
+        "Gaussian splatting"
       ],
       "sources": [
         "paperswithcode"
@@ -107915,7 +108014,8 @@
         "papers with code",
         "3D generation",
         "vision/multimodal",
-        "Image Inpainting"
+        "Image Inpainting",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -108223,7 +108323,8 @@
         "papers with code",
         "3D generation",
         "vision/multimodal",
-        "SLAM"
+        "SLAM",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -108400,7 +108501,9 @@
       "matchedBy": [
         "papers with code",
         "robotics",
-        "language modeling"
+        "language modeling",
+        "Reinforcement Learning",
+        "ACT"
       ],
       "sources": [
         "paperswithcode"
@@ -110253,6 +110356,39 @@
       ]
     },
     {
+      "id": "pwc-96802",
+      "title": "Stream-To-Act: ROS 2 Native Token Streaming for Continuous Motion Execution of Vision-Language-Action Models",
+      "authors": "Kim, Dahyun, Jeon, Yunseong, Park, Hongkyun, Kim, Jong-Chan",
+      "org": "",
+      "published": "ICRA 2026",
+      "score": 60,
+      "paper": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei2i_301",
+      "source": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei2i_301",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-07-28T01:01:31.005Z",
+      "summary": "Vision-Language Models (VLMs) are increasingly used in robotics for natural language understanding and executable plan generation, yet integrating them into real-time control pipelines remains challenging. Many existing systems rely on HTTP/JSON-based inference interfaces that require repeated Base64 serialization, introducing unnecessary overhead and increasing end-to-end latency. At the execution level, waiting for a full plan leads to stalls where no valid actions are available, while naive streaming of partial plans produces stop-and-go behavior due to token arrival gaps. To address these issues, we extend llama-ros with Stream-to-Act, a ROS2-native execution mechanism that begins acting once sufficient tokens arrive while ensuring continuous execution through an optimal start-time policy. Our open-source implementation is evaluated on RTX GPUs and NVIDIA Jetson platforms through end-to-end latency analysis, token generation throughput measurements, and execution timeline visualization. In addition, a Carla-based driving scenario illustrates how the proposed execution policy eliminates stop-and-go behavior and maintains continuous control, even when the total plan generation time remains unchanged.",
+      "matchedBy": [
+        "papers with code",
+        "Continuous Control",
+        "Image Understanding",
+        "Language Modeling",
+        "Reinforcement Learning",
+        "vision/multimodal",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2505.06835",
       "title": "Streaming Sliced Optimal Transport",
       "authors": "Khai Nguyen",
@@ -110840,38 +110976,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling",
-        "Vision/Multimodal",
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2509.10678",
-      "title": "T2Bs: Text-to-Character Blendshapes via Video Generation",
-      "authors": "Jiahao Luo, Chaoyang Wang, Michael Vasilkovsky, Vladislav Shakhrai, Di Liu, Peiye Zhuang, Sergey Tulyakov, Peter Wonka, Hsin-Ying Lee, James Davis, Jian Wang",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2509.10678",
-      "source": "https://paperswithcode.co/paper/2509.10678",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2509.10678.jpg",
-      "firstSeenAt": "2026-06-25T00:21:13.185Z",
-      "summary": "We present T2Bs, a framework for generating high-quality, animatable character head morphable models from text by combining static text-to-3D generation with video diffusion. Text-to-3D models produce detailed static geometry but lack motion synthesis, while video diffusion models generate motion with temporal and multi-view geometric inconsistencies. T2Bs bridges this gap by leveraging deformable 3D Gaussian splatting to align static 3D assets with video outputs. By constraining motion with static geometry and employing a view-dependent deformation MLP, T2Bs (i) outperforms existing 4D generation methods in accuracy and expressiveness while reducing video artifacts and view inconsistencies, and (ii) reconstructs smooth, coherent, fully registered 3D geometries designed to scale for building morphable models with diverse, realistic facial motions. This enables synthesizing expressive, animatable character heads that surpass current 4D generation techniques.",
-      "matchedBy": [
-        "papers with code",
-        "3D generation",
-        "Video generation",
-        "Gaussian splatting",
-        "GPT-4",
-        "vision/multimodal",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
         "Vision/Multimodal",
         "Robotics"
       ]
@@ -116143,6 +116247,38 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2602.14929",
+      "title": "WRIVINDER: Towards Spatial Intelligence for Geo-locating Ground Images onto Satellite Imagery",
+      "authors": "Chandrakanth Gudavalli, Tajuddin Manhar Mohammed, Abhay Yadav, Ananth Vishnu Bhaskar, Hardik Prajapati, Cheng Peng, Rama Chellappa, Shivkumar Chandrasekaran, B.S. Manjunath",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2602.14929",
+      "source": "https://paperswithcode.co/paper/2602.14929",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2602.14929.jpg",
+      "firstSeenAt": "2026-07-28T01:01:31.005Z",
+      "summary": "Aligning ground-level imagery with geo-registered satellite maps is crucial for mapping, navigation, and situational awareness, yet remains challenging under large viewpoint gaps or when GPS is unreliable. We introduce Wrivinder, a zero-shot, geometry-driven framework that aggregates multiple ground photographs to reconstruct a consistent 3D scene and align it with overhead satellite imagery. Wrivinder combines SfM reconstruction, 3D Gaussian Splatting, semantic grounding, and monocular depth-based metric cues to produce a stable zenith-view rendering that can be directly matched to satellite context for metrically accurate camera geo-localization. To support systematic evaluation of this task--which lacks suitable benchmarks--we also release MC-Sat, a curated dataset linking multi-view ground imagery with geo-registered satellite tiles across diverse outdoor environments. Together, Wrivinder and MC-Sat provide a first comprehensive baseline and testbed for studying geometry-centered cross-view alignment without paired supervision. In zero-shot experiments, Wrivinder achieves sub-30m geolocation accuracy across both dense and large-area scenes, highlighting the promise of geometry-based aggregation for robust ground-to-satellite localization. The MC-Sat dataset and Wrivinder codebase will be publicly released.",
+      "matchedBy": [
+        "papers with code",
+        "3D generation",
+        "Novel View Synthesis",
+        "Remote Sensing",
+        "Residual Block",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
       ]
     },
     {
