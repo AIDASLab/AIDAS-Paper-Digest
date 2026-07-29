@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-29T00:08:28.740Z",
+  "generatedAt": "2026-07-29T01:05:20.827Z",
   "sourceStats": {
-    "seed": 6885,
+    "seed": 6934,
     "paperswithcode": 540,
     "arxiv": 0,
     "huggingface": 31,
@@ -7365,7 +7365,8 @@
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
-        "data / retrieval"
+        "data / retrieval",
+        "language modeling"
       ],
       "sources": [
         "alphaxiv"
@@ -7427,6 +7428,39 @@
       ],
       "category": "Frontier Training",
       "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2412.18607",
+      "title": "DrivingGPT: Unifying Driving World Modeling and Planning with Multi-modal Autoregressive Transformers",
+      "authors": "Yuntao Chen, Yuqi Wang, Zhaoxiang Zhang",
+      "org": "",
+      "published": "ICCV 2025",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2412.18607",
+      "source": "https://paperswithcode.co/paper/2412.18607",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.18607.jpg",
+      "firstSeenAt": "2026-06-23T01:33:39.075Z",
+      "summary": "World model-based searching and planning are widely recognized as a promising path toward human-level physical intelligence. However, current driving world models primarily rely on video diffusion models, which specialize in visual generation but lack the flexibility to incorporate other modalities like action. In contrast, autoregressive transformers have demonstrated exceptional capability in modeling multimodal data. Our work aims to unify both driving model simulation and trajectory planning into a single sequence modeling problem. We introduce a multimodal driving language based on interleaved image and action tokens, and develop DrivingGPT to learn joint world modeling and planning through standard next-token prediction. Our DrivingGPT demonstrates strong performance in both action-conditioned video generation and end-to-end planning, outperforming strong baselines on large-scale nuPlan and NAVSIM benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "Video generation",
+        "World Models",
+        "Diffusion Transformer (DiT)",
+        "Few-shot prompting",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
         "Frontier Training",
         "Language Modeling"
       ]
@@ -8055,39 +8089,6 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2412.18607",
-      "title": "DrivingGPT: Unifying Driving World Modeling and Planning with Multi-modal Autoregressive Transformers",
-      "authors": "Yuntao Chen, Yuqi Wang, Zhaoxiang Zhang",
-      "org": "",
-      "published": "ICCV 2025",
-      "score": 84,
-      "paper": "https://arxiv.org/abs/2412.18607",
-      "source": "https://paperswithcode.co/paper/2412.18607",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2412.18607.jpg",
-      "firstSeenAt": "2026-06-23T01:33:39.075Z",
-      "summary": "World model-based searching and planning are widely recognized as a promising path toward human-level physical intelligence. However, current driving world models primarily rely on video diffusion models, which specialize in visual generation but lack the flexibility to incorporate other modalities like action. In contrast, autoregressive transformers have demonstrated exceptional capability in modeling multimodal data. Our work aims to unify both driving model simulation and trajectory planning into a single sequence modeling problem. We introduce a multimodal driving language based on interleaved image and action tokens, and develop DrivingGPT to learn joint world modeling and planning through standard next-token prediction. Our DrivingGPT demonstrates strong performance in both action-conditioned video generation and end-to-end planning, outperforming strong baselines on large-scale nuPlan and NAVSIM benchmarks.",
-      "matchedBy": [
-        "papers with code",
-        "Video generation",
-        "World Models",
-        "Diffusion Transformer (DiT)",
-        "Few-shot prompting",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -10509,6 +10510,39 @@
       ]
     },
     {
+      "id": "2412.11198",
+      "title": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control",
+      "authors": "Mariam Hassan, Sebastian Stapf, Ahmad Rahimi, Pedro M B Rezende, Yasaman Haghighi, David Brüggemann, Isinsu Katircioglu, Lin Zhang, Xiaoran Chen, Suman Saha, Marco Cannici, Elie Aljalbout, Botao Ye, Xi Wang, Aram Davtyan, Mathieu Salzmann, Davide Scaramuzza, Marc Pollefeys, Paolo Favaro, Alexandre Alahi",
+      "org": "",
+      "published": "CVPR 2025",
+      "score": 80,
+      "paper": "https://arxiv.org/abs/2412.11198",
+      "source": "https://paperswithcode.co/paper/2412.11198",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2412.11198.jpg",
+      "firstSeenAt": "",
+      "summary": "We present GEM, a Generalizable Ego-vision Multimodal world model that predicts future frames using a reference frame, sparse features, human poses, and ego-trajectories. Hence, our model has precise control over object dynamics, ego-agent motion and human poses. GEM generates paired RGB and depth outputs for richer spatial understanding. We introduce autoregressive noise schedules to enable stable long-horizon generations. Our dataset is comprised of 4000+ hours of multimodal data across domains like autonomous driving, egocentric human activities, and drone flights. Pseudo-labels are used to get depth maps, ego-trajectories, and human poses. We use a comprehensive evaluation framework, including a new Control of Object Manipulation (COM) metric, to assess controllability. Experiments show GEM excels at generating diverse, controllable scenarios and temporal consistency over long generations. Code, models, and datasets are fully open-sourced.",
+      "matchedBy": [
+        "papers with code",
+        "Depth Anything",
+        "LoRa",
+        "PEFT",
+        "Stable Diffusion",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2606.13174",
       "title": "Getting Better at Working With You: Compiling User Corrections into Runtime Enforcement for Coding Agents",
       "authors": "Yujun Zhou, Kehan Guo, Haomin Zhuang, Xiangqi Wang, Yue Huang, Zhenwen Liang, Pin-Yu Chen, Tian Gao, Nuno Moniz, Nitesh V. Chawla, Xiangliang Zhang",
@@ -11230,39 +11264,6 @@
         "Frontier Training",
         "Vision/Multimodal",
         "Serving"
-      ]
-    },
-    {
-      "id": "2412.11198",
-      "title": "GEM: A Generalizable Ego-Vision Multimodal World Model for Fine-Grained Ego-Motion, Object Dynamics, and Scene Composition Control",
-      "authors": "Mariam Hassan, Sebastian Stapf, Ahmad Rahimi, Pedro M B Rezende, Yasaman Haghighi, David Brüggemann, Isinsu Katircioglu, Lin Zhang, Xiaoran Chen, Suman Saha, Marco Cannici, Elie Aljalbout, Botao Ye, Xi Wang, Aram Davtyan, Mathieu Salzmann, Davide Scaramuzza, Marc Pollefeys, Paolo Favaro, Alexandre Alahi",
-      "org": "",
-      "published": "CVPR 2025",
-      "score": 79,
-      "paper": "https://arxiv.org/abs/2412.11198",
-      "source": "https://paperswithcode.co/paper/2412.11198",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2412.11198.jpg",
-      "firstSeenAt": "",
-      "summary": "We present GEM, a Generalizable Ego-vision Multimodal world model that predicts future frames using a reference frame, sparse features, human poses, and ego-trajectories. Hence, our model has precise control over object dynamics, ego-agent motion and human poses. GEM generates paired RGB and depth outputs for richer spatial understanding. We introduce autoregressive noise schedules to enable stable long-horizon generations. Our dataset is comprised of 4000+ hours of multimodal data across domains like autonomous driving, egocentric human activities, and drone flights. Pseudo-labels are used to get depth maps, ego-trajectories, and human poses. We use a comprehensive evaluation framework, including a new Control of Object Manipulation (COM) metric, to assess controllability. Experiments show GEM excels at generating diverse, controllable scenarios and temporal consistency over long generations. Code, models, and datasets are fully open-sourced.",
-      "matchedBy": [
-        "papers with code",
-        "Depth Anything",
-        "LoRa",
-        "PEFT",
-        "Stable Diffusion",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Robotics",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -34502,6 +34503,36 @@
       ]
     },
     {
+      "id": "2505.16394",
+      "title": "Raw2Drive: Reinforcement Learning with Aligned World Models for End-to-End Autonomous Driving (in CARLA v2)",
+      "authors": "Zhenjie Yang, Xiaosong Jia, Qifeng Li, Xue Yang, Maoqing Yao, Junchi Yan",
+      "org": "",
+      "published": "NeurIPS 2025",
+      "score": 73,
+      "paper": "https://arxiv.org/abs/2505.16394",
+      "source": "https://paperswithcode.co/paper/2505.16394",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2505.16394.jpg",
+      "firstSeenAt": "",
+      "summary": "Reinforcement Learning (RL) can mitigate the causal confusion and distribution shift inherent to imitation learning (IL). However, applying RL to end-to-end autonomous driving (E2E-AD) remains an open problem for its training difficulty, and IL is still the mainstream paradigm in both academia and industry. Recently Model-based Reinforcement Learning (MBRL) have demonstrated promising results in neural planning; however, these methods typically require privileged information as input rather than raw sensor data. We fill this gap by designing Raw2Drive, a dual-stream MBRL approach. Initially, we efficiently train an auxiliary privileged world model paired with a neural planner that uses privileged information as input. Subsequently, we introduce a raw sensor world model trained via our proposed Guidance Mechanism, which ensures consistency between the raw sensor world model and the privileged world model during rollouts. Finally, the raw sensor world model combines the prior knowledge embedded in the heads of the privileged world model to effectively guide the training of the raw sensor policy. Raw2Drive is so far the only RL based end-to-end method on CARLA Leaderboard 2.0, and Bench2Drive and it achieves state-of-the-art performance.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "robotics",
+        "benchmark",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2410.04585",
       "title": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
       "authors": "Pengcheng Jiang, Cao Xiao, Minhao Jiang, Parminder Bhatia, Taha Kass-Hout, Jimeng Sun, Jiawei Han",
@@ -34742,36 +34773,6 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
-      ]
-    },
-    {
-      "id": "2505.16394",
-      "title": "Raw2Drive: Reinforcement Learning with Aligned World Models for End-to-End Autonomous Driving (in CARLA v2)",
-      "authors": "Zhenjie Yang, Xiaosong Jia, Qifeng Li, Xue Yang, Maoqing Yao, Junchi Yan",
-      "org": "",
-      "published": "NeurIPS 2025",
-      "score": 72,
-      "paper": "https://arxiv.org/abs/2505.16394",
-      "source": "https://paperswithcode.co/paper/2505.16394",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2505.16394.jpg",
-      "firstSeenAt": "",
-      "summary": "Reinforcement Learning (RL) can mitigate the causal confusion and distribution shift inherent to imitation learning (IL). However, applying RL to end-to-end autonomous driving (E2E-AD) remains an open problem for its training difficulty, and IL is still the mainstream paradigm in both academia and industry. Recently Model-based Reinforcement Learning (MBRL) have demonstrated promising results in neural planning; however, these methods typically require privileged information as input rather than raw sensor data. We fill this gap by designing Raw2Drive, a dual-stream MBRL approach. Initially, we efficiently train an auxiliary privileged world model paired with a neural planner that uses privileged information as input. Subsequently, we introduce a raw sensor world model trained via our proposed Guidance Mechanism, which ensures consistency between the raw sensor world model and the privileged world model during rollouts. Finally, the raw sensor world model combines the prior knowledge embedded in the heads of the privileged world model to effectively guide the training of the raw sensor policy. Raw2Drive is so far the only RL based end-to-end method on CARLA Leaderboard 2.0, and Bench2Drive and it achieves state-of-the-art performance.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "robotics",
-        "benchmark",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -35483,6 +35484,36 @@
       ]
     },
     {
+      "id": "2412.08261",
+      "title": "FLIP: Flow-Centric Generative Planning as General-Purpose Manipulation World Model",
+      "authors": "Chongkai Gao, Haozhuo Zhang, Zhixuan Xu, Cai Zhehao, Lin Shao",
+      "org": "",
+      "published": "ICLR 2025",
+      "score": 70,
+      "paper": "https://arxiv.org/abs/2412.08261",
+      "source": "https://paperswithcode.co/paper/2412.08261",
+      "code": "",
+      "project": "https://nus-lins-lab",
+      "thumbnail": "./thumbs/2412.08261.jpg",
+      "firstSeenAt": "2026-06-15T04:11:43.389Z",
+      "summary": "We aim to develop a model-based planning framework for world models that can be scaled with increasing model and data budgets for general-purpose manipulation tasks with only language and vision inputs. To this end, we present FLow-CentrIc generative Planning (FLIP), a model-based planning algorithm on visual space that features three key modules: 1) a multi-modal flow generation model as the general-purpose action proposal module; 2) a flow-conditioned video generation model as the dynamics module; and 3) a vision-language representation learning model as the value module. Given an initial image and language instruction as the goal, FLIP can progressively search for long-horizon flow and video plans that maximize the discounted return to accomplish the task. FLIP is able to synthesize long-horizon plans across objects, robots, and tasks with image flows as the general action representation, and the dense flow information also provides rich guidance for long-horizon video generation. In addition, the synthesized flow and video plans can guide the training of low-level control policies for robot execution. Experiments on diverse benchmarks demonstrate that FLIP can improve both the success rates and quality of long-horizon video plan synthesis and has the interactive world model property, opening up wider applications for future works. Video demos are on our website: https://nus-lins-lab.github.io/flipweb/.",
+      "matchedBy": [
+        "papers with code",
+        "Video generation",
+        "vision/multimodal",
+        "robotics",
+        "World Models"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2412.10209",
       "title": "GAF: Gaussian Avatar Reconstruction from Monocular Videos via Multi-view Diffusion",
       "authors": "Jiapeng Tang, Davide Davoli, Tobias Kirschstein, Liam Schoneveld, Matthias Nießner",
@@ -35873,36 +35904,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2412.08261",
-      "title": "FLIP: Flow-Centric Generative Planning as General-Purpose Manipulation World Model",
-      "authors": "Chongkai Gao, Haozhuo Zhang, Zhixuan Xu, Cai Zhehao, Lin Shao",
-      "org": "",
-      "published": "ICLR 2025",
-      "score": 69,
-      "paper": "https://arxiv.org/abs/2412.08261",
-      "source": "https://paperswithcode.co/paper/2412.08261",
-      "code": "",
-      "project": "https://nus-lins-lab",
-      "thumbnail": "./thumbs/2412.08261.jpg",
-      "firstSeenAt": "2026-06-15T04:11:43.389Z",
-      "summary": "We aim to develop a model-based planning framework for world models that can be scaled with increasing model and data budgets for general-purpose manipulation tasks with only language and vision inputs. To this end, we present FLow-CentrIc generative Planning (FLIP), a model-based planning algorithm on visual space that features three key modules: 1) a multi-modal flow generation model as the general-purpose action proposal module; 2) a flow-conditioned video generation model as the dynamics module; and 3) a vision-language representation learning model as the value module. Given an initial image and language instruction as the goal, FLIP can progressively search for long-horizon flow and video plans that maximize the discounted return to accomplish the task. FLIP is able to synthesize long-horizon plans across objects, robots, and tasks with image flows as the general action representation, and the dense flow information also provides rich guidance for long-horizon video generation. In addition, the synthesized flow and video plans can guide the training of low-level control policies for robot execution. Experiments on diverse benchmarks demonstrate that FLIP can improve both the success rates and quality of long-horizon video plan synthesis and has the interactive world model property, opening up wider applications for future works. Video demos are on our website: https://nus-lins-lab.github.io/flipweb/.",
-      "matchedBy": [
-        "papers with code",
-        "Video generation",
-        "vision/multimodal",
-        "robotics",
-        "World Models"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics"
       ]
     },
     {
@@ -40807,6 +40808,39 @@
       ]
     },
     {
+      "id": "2512.12080",
+      "title": "BAgger: Backwards Aggregation for Mitigating Drift in Autoregressive Video Diffusion Models",
+      "authors": "Ryan Po, Eric Ryan Chan, Changan Chen, Gordon Wetzstein",
+      "org": "",
+      "published": "CVPR 2026",
+      "score": 64,
+      "paper": "https://arxiv.org/abs/2512.12080",
+      "source": "https://paperswithcode.co/paper/2512.12080",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.12080.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Autoregressive video models are promising for world modeling via next-frame prediction, but they suffer from exposure bias: a mismatch between training on clean contexts and inference on self-generated frames, causing errors to compound and quality to drift over time. We introduce Backwards Aggregation (BAgger), a self-supervised scheme that constructs corrective trajectories from the model's own rollouts, teaching it to recover from its mistakes. Unlike prior approaches that rely on few-step distillation and distribution-matching losses --which can hurt quality and diversity -- BAgger trains with standard score or flow matching objectives, avoiding large teachers and long-chain backpropagation through time. We instantiate BAgger on causal diffusion transformers and evaluate on text-to-video, video extension, and multi-prompt generation, observing more stable long-horizon motion and better visual consistency with reduced drift.",
+      "matchedBy": [
+        "papers with code",
+        "Video generation",
+        "Diffusion",
+        "Diffusion Transformer (DiT)",
+        "Flow matching",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Serving"
+      ]
+    },
+    {
       "id": "2510.07497",
       "title": "Can Speech LLMs Think while Listening?",
       "authors": "Yi-Jen Shih, Desh Raj, Chunyang Wu, Wei Zhou, SK Bong, Yashesh Gaur, Jay Mahadeokar, Ozlem Kalinli, Mike Seltzer",
@@ -43773,39 +43807,6 @@
       ]
     },
     {
-      "id": "2512.12080",
-      "title": "BAgger: Backwards Aggregation for Mitigating Drift in Autoregressive Video Diffusion Models",
-      "authors": "Ryan Po, Eric Ryan Chan, Changan Chen, Gordon Wetzstein",
-      "org": "",
-      "published": "CVPR 2026",
-      "score": 63,
-      "paper": "https://arxiv.org/abs/2512.12080",
-      "source": "https://paperswithcode.co/paper/2512.12080",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2512.12080.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Autoregressive video models are promising for world modeling via next-frame prediction, but they suffer from exposure bias: a mismatch between training on clean contexts and inference on self-generated frames, causing errors to compound and quality to drift over time. We introduce Backwards Aggregation (BAgger), a self-supervised scheme that constructs corrective trajectories from the model's own rollouts, teaching it to recover from its mistakes. Unlike prior approaches that rely on few-step distillation and distribution-matching losses --which can hurt quality and diversity -- BAgger trains with standard score or flow matching objectives, avoiding large teachers and long-chain backpropagation through time. We instantiate BAgger on causal diffusion transformers and evaluate on text-to-video, video extension, and multi-prompt generation, observing more stable long-horizon motion and better visual consistency with reduced drift.",
-      "matchedBy": [
-        "papers with code",
-        "Video generation",
-        "Diffusion",
-        "Diffusion Transformer (DiT)",
-        "Flow matching",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling",
-        "Serving"
-      ]
-    },
-    {
       "id": "2410.11234",
       "title": "Bayes Adaptive Monte Carlo Tree Search for Offline Model-based Reinforcement Learning",
       "authors": "Jiayu Chen, Le Xu, Wentse Chen, Jeff Schneider",
@@ -46380,7 +46381,8 @@
         "papers with code",
         "3D generation",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -47009,7 +47011,8 @@
         "papers with code",
         "3D generation",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -47384,6 +47387,37 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2511.04847",
+      "title": "Test-Time Adaptation for LLM Agents via Environment Interaction",
+      "authors": "Arthur Chen, Zuxin Liu, Jianguo Zhang, Akshara Prabhakar, Zhiwei Liu, Shelby Heinecke, Silvio Savarese, Victor Zhong, Caiming Xiong",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 63,
+      "paper": "https://arxiv.org/abs/2511.04847",
+      "source": "https://paperswithcode.co/paper/2511.04847",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2511.04847.jpg",
+      "firstSeenAt": "2026-06-24T00:10:37.469Z",
+      "summary": "Large language model (LLM)-based agents struggle to generalize to novel and complex environments, such as unseen websites or new sets of functions, due to a fundamental mismatch between their pre-training and test-time conditions. This challenge stems from two distinct failure modes: a syntactic misunderstanding of environment-specific components like observation formats, and a semantic misunderstanding of state-transition dynamics, which are only revealed at test time. To address these issues, we propose two distinct strategies for adapting LLM agents by leveraging environment-specific information from interaction that is available during deployment. First, an online syntactic alignment (SA) method parameterizes environmental nuances by learning a lightweight adaptation vector that biases the model's output distribution, enabling rapid alignment with an environment response format. Second, a deployment-time dynamics grounding (DG) method employs a persona-driven exploration phase to systematically probe and learn the environment's causal dynamics before task execution, equipping the agent with an in-context world model. We evaluate these strategies across diverse agentic benchmarks, including function calling and web navigation. Our empirical results show the effectiveness of both strategies across all benchmarks with minimal computational cost. We find that dynamics grounding is particularly effective in complex environments where unpredictable dynamics pose a major obstacle, demonstrating a robust path toward more generalizable and capable LLM-based agents. For example, on the WebArena multi-site split, this method increases the agent's success rate from 2\\% to 23\\%. We release our code.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "World Models",
+        "RLHF",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -55093,37 +55127,6 @@
       "categories": [
         "Robotics",
         "Serving"
-      ]
-    },
-    {
-      "id": "2511.04847",
-      "title": "Test-Time Adaptation for LLM Agents via Environment Interaction",
-      "authors": "Arthur Chen, Zuxin Liu, Jianguo Zhang, Akshara Prabhakar, Zhiwei Liu, Shelby Heinecke, Silvio Savarese, Victor Zhong, Caiming Xiong",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 62,
-      "paper": "https://arxiv.org/abs/2511.04847",
-      "source": "https://paperswithcode.co/paper/2511.04847",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2511.04847.jpg",
-      "firstSeenAt": "2026-06-24T00:10:37.469Z",
-      "summary": "Large language model (LLM)-based agents struggle to generalize to novel and complex environments, such as unseen websites or new sets of functions, due to a fundamental mismatch between their pre-training and test-time conditions. This challenge stems from two distinct failure modes: a syntactic misunderstanding of environment-specific components like observation formats, and a semantic misunderstanding of state-transition dynamics, which are only revealed at test time. To address these issues, we propose two distinct strategies for adapting LLM agents by leveraging environment-specific information from interaction that is available during deployment. First, an online syntactic alignment (SA) method parameterizes environmental nuances by learning a lightweight adaptation vector that biases the model's output distribution, enabling rapid alignment with an environment response format. Second, a deployment-time dynamics grounding (DG) method employs a persona-driven exploration phase to systematically probe and learn the environment's causal dynamics before task execution, equipping the agent with an in-context world model. We evaluate these strategies across diverse agentic benchmarks, including function calling and web navigation. Our empirical results show the effectiveness of both strategies across all benchmarks with minimal computational cost. We find that dynamics grounding is particularly effective in complex environments where unpredictable dynamics pose a major obstacle, demonstrating a robust path toward more generalizable and capable LLM-based agents. For example, on the WebArena multi-site split, this method increases the agent's success rate from 2\\% to 23\\%. We release our code.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "World Models",
-        "RLHF",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -64601,6 +64604,36 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2510.06448",
+      "title": "How NOT to benchmark your SITE metric: Beyond Static Leaderboards and Towards Realistic Evaluation.",
+      "authors": "Prabhant Singh, Sibylle Hess, Joaquin Vanschoren",
+      "org": "",
+      "published": "ICLR 2026",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2510.06448",
+      "source": "https://paperswithcode.co/paper/2510.06448",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2510.06448.jpg",
+      "firstSeenAt": "2026-06-24T00:10:37.469Z",
+      "summary": "Transferability estimation metrics are used to find a high-performing pre-trained model for a given target task without fine-tuning models and without access to the source dataset. Despite the growing interest in developing such metrics, the benchmarks used to measure their progress have gone largely unexamined. In this work, we empirically show the shortcomings of widely used benchmark setups to evaluate transferability estimation metrics. We argue that the benchmarks on which these metrics are evaluated are fundamentally flawed. We empirically demonstrate that their unrealistic model spaces and static performance hierarchies artificially inflate the perceived performance of existing metrics, to the point where simple, dataset-agnostic heuristics can outperform sophisticated methods. Our analysis reveals a critical disconnect between current evaluation protocols and the complexities of real-world model selection. To address this, we provide concrete recommendations for constructing more robust and realistic benchmarks to guide future research in a more meaningful direction.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "Label smoothing",
+        "Residual Block",
+        "ResNet",
+        "benchmark"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Benchmark",
+      "categories": [
+        "Benchmark"
       ]
     },
     {
@@ -89993,7 +90026,8 @@
         "papers with code",
         "3D generation",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Novel View Synthesis"
       ],
       "sources": [
         "paperswithcode"
@@ -94048,36 +94082,6 @@
       ]
     },
     {
-      "id": "2510.06448",
-      "title": "How NOT to benchmark your SITE metric: Beyond Static Leaderboards and Towards Realistic Evaluation.",
-      "authors": "Prabhant Singh, Sibylle Hess, Joaquin Vanschoren",
-      "org": "",
-      "published": "ICLR 2026",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2510.06448",
-      "source": "https://paperswithcode.co/paper/2510.06448",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2510.06448.jpg",
-      "firstSeenAt": "2026-06-24T00:10:37.469Z",
-      "summary": "Transferability estimation metrics are used to find a high-performing pre-trained model for a given target task without fine-tuning models and without access to the source dataset. Despite the growing interest in developing such metrics, the benchmarks used to measure their progress have gone largely unexamined. In this work, we empirically show the shortcomings of widely used benchmark setups to evaluate transferability estimation metrics. We argue that the benchmarks on which these metrics are evaluated are fundamentally flawed. We empirically demonstrate that their unrealistic model spaces and static performance hierarchies artificially inflate the perceived performance of existing metrics, to the point where simple, dataset-agnostic heuristics can outperform sophisticated methods. Our analysis reveals a critical disconnect between current evaluation protocols and the complexities of real-world model selection. To address this, we provide concrete recommendations for constructing more robust and realistic benchmarks to guide future research in a more meaningful direction.",
-      "matchedBy": [
-        "papers with code",
-        "World Models",
-        "Label smoothing",
-        "Residual Block",
-        "ResNet",
-        "benchmark"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Benchmark",
-      "categories": [
-        "Benchmark"
-      ]
-    },
-    {
       "id": "2510.01404",
       "title": "How Well Do Diffusion Policies Learn Kinematic Constraint Manifolds?",
       "authors": "Foland, Lexi, Cohn, Thomas, Wei, Adam, Pfaff, Nicholas Ezra, Chen, Boyuan, Tedrake, Russ",
@@ -96317,13 +96321,16 @@
         "papers with code",
         "Reinforcement Learning",
         "World Models",
-        "language modeling"
+        "language modeling",
+        "Diffusion Transformer (DiT)",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling",
+      "category": "Frontier Training",
       "categories": [
+        "Frontier Training",
         "Language Modeling"
       ]
     },
