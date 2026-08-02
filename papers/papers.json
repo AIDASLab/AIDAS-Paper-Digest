@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-02T00:10:30.711Z",
+  "generatedAt": "2026-08-02T01:11:38.194Z",
   "sourceStats": {
-    "seed": 7569,
+    "seed": 7572,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 38,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 7572
+    "total": 7573
   },
   "papers": [
     {
@@ -748,6 +748,32 @@
       "sources": [
         "arxiv",
         "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.ten-advancements",
+      "title": "Ten Advances in Mathematics and Theoretical Computer Science",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-02",
+      "score": 96,
+      "paper": "https://www.alphaxiv.org/abs/2607.ten-advancements",
+      "source": "https://www.alphaxiv.org/abs/2607.ten-advancements",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-08-02T01:11:38.194Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
         "alphaxiv"
       ],
       "category": "Language Modeling",
@@ -4783,7 +4809,7 @@
       "published": "2026-07-30",
       "score": 90,
       "paper": "https://arxiv.org/abs/2607.28595",
-      "source": "https://www.alphaxiv.org/abs/2607.28595",
+      "source": "https://huggingface.co/papers/2607.28595",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.28595.jpg",
