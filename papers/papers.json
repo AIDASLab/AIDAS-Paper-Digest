@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T01:09:54.105Z",
+  "generatedAt": "2026-08-02T00:10:30.711Z",
   "sourceStats": {
     "seed": 7569,
     "paperswithcode": 540,
@@ -7,7 +7,7 @@
     "huggingface": 38,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 7569
+    "total": 7572
   },
   "papers": [
     {
@@ -239,6 +239,32 @@
       "categories": [
         "Serving",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2607.hopfield-networks",
+      "title": "High-Capacity Generalized Hopfield Networks",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-31",
+      "score": 96,
+      "paper": "https://www.alphaxiv.org/abs/2607.hopfield-networks",
+      "source": "https://www.alphaxiv.org/abs/2607.hopfield-networks",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-08-02T00:10:30.711Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -1850,6 +1876,38 @@
       ]
     },
     {
+      "id": "2607.28568",
+      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+      "authors": "Junlin Yang, Che Jiang, Yu Fu, Tianwei Luo, Can Ren, Weizhi Wang, Kaikai Zhao, Hongyi Liu, Yuxin Zuo, Yuru Wang, Yuchen Fan, Kai Tian, Zhenzhao Yuan, Xiaojian Lin, Li Sheng, Rushi Qiang, Guoli Jia, Xingtai Lv, Ermo Hua, Dianqiao Lei, Youbang Sun, Ning Ding, Bowen Zhou, Kaiyan Zhang",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 94,
+      "paper": "https://arxiv.org/abs/2607.28568",
+      "source": "https://www.alphaxiv.org/abs/2607.28568",
+      "code": "https://github.com/FrontisAI/OpenRSI",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28568.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Recursive self-improvement (RSI) requires AI systems that improve the process of building AI (i.e., AI4AI); machine learning engineering (MLE) offers a concrete, executable testbed for studying this capability. We introduce OpenMLE, an open full-stack system for RSI research in MLE, spanning verifiable task environments with execution feedback (OpenMLE-Gym), operator learning (OpenMLE-RL), and long-horizon search (OpenMLE-Evo). On this stack we post-train Frontis-MA1 (35B) as a meta-evolution agent for MLE, aligning post-training and inference around four atomic program-evolution operators (Draft, Improve, Debug, Crossover): the same operators are trained via execution-grounded SFT and RL on data deduplicated against all evaluation benchmarks, then composed into long-horizon search, coupling learning and evolution in a single loop. On MLE-Bench Lite under a 12-hour per-task budget on one RTX 4090 capped at 12 GB VRAM, Frontis-MA1 (35B) improves Medal Average from 39.39% to 60.61% over its base model with OpenMLE-Evo, and reaches 71.21% with OpenMLE-Evo-Max (benchmark-independent experience priors and asynchronous search), exceeding GPT-5.5 + Codex and approaching GPT-5.6 Sol and the 2.8T Kimi K3. On held-out NatureBench Lite, both components transfer: with the framework fixed, swapping in the trained model raises Match-SOTA from 50% to 70%; with the model fixed, swapping in OpenMLE-Evo raises it from 20% to 50%. We release the model weights and the full OpenMLE stack to enable reproducible research on executable AI4AI toward RSI. Code: https://github.com/FrontisAI/OpenRSI",
+      "matchedBy": [
+        "papers with code",
+        "Continuous Control",
+        "Reinforcement Learning",
+        "Fine-tuning",
+        "GPT-5",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.21366",
       "title": "Hilbert Operator for Progressive Encoding (HOPE): A Mathematical Framework for Deconstructing Learned Representations in Deep Networks",
       "authors": "",
@@ -2547,38 +2605,6 @@
       ]
     },
     {
-      "id": "2607.28568",
-      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
-      "authors": "Junlin Yang, Che Jiang, Yu Fu, Tianwei Luo, Can Ren, Weizhi Wang, Kaikai Zhao, Hongyi Liu, Yuxin Zuo, Yuru Wang, Yuchen Fan, Kai Tian, Zhenzhao Yuan, Xiaojian Lin, Li Sheng, Rushi Qiang, Guoli Jia, Xingtai Lv, Ermo Hua, Dianqiao Lei, Youbang Sun, Ning Ding, Bowen Zhou, Kaiyan Zhang",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 93,
-      "paper": "https://arxiv.org/abs/2607.28568",
-      "source": "https://www.alphaxiv.org/abs/2607.28568",
-      "code": "https://github.com/FrontisAI/OpenRSI",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28568.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Recursive self-improvement (RSI) requires AI systems that improve the process of building AI (i.e., AI4AI); machine learning engineering (MLE) offers a concrete, executable testbed for studying this capability. We introduce OpenMLE, an open full-stack system for RSI research in MLE, spanning verifiable task environments with execution feedback (OpenMLE-Gym), operator learning (OpenMLE-RL), and long-horizon search (OpenMLE-Evo). On this stack we post-train Frontis-MA1 (35B) as a meta-evolution agent for MLE, aligning post-training and inference around four atomic program-evolution operators (Draft, Improve, Debug, Crossover): the same operators are trained via execution-grounded SFT and RL on data deduplicated against all evaluation benchmarks, then composed into long-horizon search, coupling learning and evolution in a single loop. On MLE-Bench Lite under a 12-hour per-task budget on one RTX 4090 capped at 12 GB VRAM, Frontis-MA1 (35B) improves Medal Average from 39.39% to 60.61% over its base model with OpenMLE-Evo, and reaches 71.21% with OpenMLE-Evo-Max (benchmark-independent experience priors and asynchronous search), exceeding GPT-5.5 + Codex and approaching GPT-5.6 Sol and the 2.8T Kimi K3. On held-out NatureBench Lite, both components transfer: with the framework fixed, swapping in the trained model raises Match-SOTA from 50% to 70%; with the model fixed, swapping in OpenMLE-Evo raises it from 20% to 50%. We release the model weights and the full OpenMLE stack to enable reproducible research on executable AI4AI toward RSI. Code: https://github.com/FrontisAI/OpenRSI",
-      "matchedBy": [
-        "papers with code",
-        "Continuous Control",
-        "Reinforcement Learning",
-        "Fine-tuning",
-        "GPT-5",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.13960",
       "title": "GigaWorld-Policy-0.5: A Faster and Stronger WAM Empowered by AutoResearch",
       "authors": "GigaWorld Team, Angen Ye, Angyuan Ma, Boyuan Wang, Chaojun Ni, Fangzheng Ye, Guan Huang, Guo Li, Guosheng Zhao, Haodong Yan, Hengtao Li, Jiwen Lu, KAI WANG, MingMing Yu, Qitang Hu, Qiuping Deng, Songling Liu, Xiaoyu Tian, XiaoFeng Wang, Xinyu Zhou, Xiuwei Xu, Xinze Chen, Yang Wang, Yejun Zeng, Yifan Chang, Yun Ye, Zhenyu Wu, Zhanqian Wu, Zheng Zhu",
@@ -2793,6 +2819,41 @@
         "Serving",
         "Vision/Multimodal",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2607.26760",
+      "title": "Metis: Memory Foundation Model",
+      "authors": "Zeyu Zhang, Ziliang Guo, Yihang Sun, Xichong Zhang, Xixuan Hao, Zehao Lin, Yang Zhang, Xiaoyan Zhao, Tong Shen, Bo Tang, Zhi-Qin John Xu, Junchi Yan, Haofen Wang, Xu Chen, Feiyu Xiong, Zhiyu Li, Tat-Seng Chua",
+      "org": "",
+      "published": "2026-07-29",
+      "score": 93,
+      "paper": "https://arxiv.org/abs/2607.26760",
+      "source": "https://www.alphaxiv.org/abs/2607.26760",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.26760.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large reasoning models. However, agent memory is still primarily implemented through external modules, leaving the native memory capability largely unexplored. In this paper, we take a first step toward this direction by introducing memory foundation models, which empower foundation models with native memory capabilities. We formalize native memory from two perspectives: a persistent and dynamically evolving memory state within the backbone, and native memory procedures that autonomously store and utilize information through model computation. We show that native memory offers advantages in architecture, end-to-end optimization, and efficiency. Based on this formulation, we propose Metis, the first prototype of memory foundation models. Metis introduces a new architecture that equips a foundation model with a native memory state, allowing historical information to be compressed into the model and accessed through memory attention. We construct large-scale memory-specific training data and introduce multiple optimization objectives to acquire these native memory procedures through mid-training. The online memory maintenance of Metis is gradient-free, and the memory update requires only a forward pass. At inference time, all learned model weights remain frozen, while the native memory states are autonomously transformed through standard forward computation. Through extensive experiments, we show that Metis exhibits native memory capabilities and further provide a detailed analysis of its strengths, limitations, and behaviors. To facilitate future research on memory foundation models, we release our project and model checkpoints.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Reasoning",
+        "Mid-training",
+        "Reasoning model",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -3463,6 +3524,40 @@
       ]
     },
     {
+      "id": "2607.27372",
+      "title": "Explorative Modeling: Unlocking a Third Pretraining Axis and End-to-End Generation",
+      "authors": "Alexi Gladstone, Heng Ji, Yilun Du",
+      "org": "",
+      "published": "2026-07-29",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2607.27372",
+      "source": "https://www.alphaxiv.org/abs/2607.27372",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.27372.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "The deep learning revolution, kicked off by AlexNet, taught us that end-to-end training beats decomposing a problem into hand-designed stages. Generative modeling, however, has remained the exception-despite generative models being remarkably capable, they are still not trained end-to-end. This is because, at its core, generative modeling is about handling distributions with many modes, and existing scalable approaches handle this the same way, by factoring the generation procedure, which prevents end-to-end generation. In this work, we introduce Explorative Modeling, a new paradigm that instead factors the training loop, exploring K candidate matches between model generations and data, and training on the best, so predictions commit to modes rather than blurring them. We find Explorative Models (XMs) useful in two settings. First, increasing exploration adds a third pretraining axis beyond parameters and data for existing generative models-where scaling exploration monotonically improves performance across both continuous and discrete domains (images, video, and language). Notably, gains from exploration increase with scale, climbing from 7% to 36% as data scales and from 13% to 23% as models grow, with efficiency gains more than doubling at 3x the compute. Concretely, exploration improves FLOP efficiency by 4.1x, sample efficiency by 6.2x, parameter efficiency by 47%, lifts the strongest of image-generation recipes to a near-state-of-the-art 1.43 FID on ImageNet without guidance, enables scaling how end-to-end existing models are, and unlocks scaling generalization. Second, XMs enable end-to-end reconstructive generative modeling, matching diffusion on control tasks with 16-256x fewer inference steps. Together, these results establish XMs as both a new pretraining axis for existing generative models and a standalone end-to-end generative modeling paradigm.",
+      "matchedBy": [
+        "papers with code",
+        "Procedural Generalization",
+        "Reinforcement Learning",
+        "Diffusion",
+        "Pre-training",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2607.2026",
       "title": "Harness Engineering for Self-Improvement",
       "authors": "",
@@ -4025,6 +4120,32 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.28336",
+      "title": "Correcting What You Cannot See: Credit Assignment for Perception Distillation in Multimodal Reasoners",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 91,
+      "paper": "https://arxiv.org/abs/2607.28336",
+      "source": "https://www.alphaxiv.org/abs/2607.28336",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28336.jpg",
+      "firstSeenAt": "2026-08-02T00:10:30.711Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -4877,7 +4998,7 @@
       "published": "2026-07-29",
       "score": 90,
       "paper": "https://arxiv.org/abs/2607.27180",
-      "source": "https://www.alphaxiv.org/abs/2607.27180",
+      "source": "https://paperswithcode.co/paper/2607.27180",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.27180.jpg",
@@ -5025,6 +5146,38 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2607.28624",
+      "title": "PhiZero: A World Model Built Around Physical Language",
+      "authors": "Shuyao Shang, Yuqi Wang, Ruopeng Gao, Xu Chen, Tieniu Tan, Lue Fan, Zhaoxiang Zhang",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 90,
+      "paper": "https://arxiv.org/abs/2607.28624",
+      "source": "https://www.alphaxiv.org/abs/2607.28624",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28624.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "We introduce PhiZero, a physical world model built around physical language, a compact discrete representation of world-state transitions. Existing physical world models typically predict future videos directly in pixel space, leaving the underlying world dynamics implicit within high-dimensional visual predictors. Motivated by humans' ability to abstract predictive structure from visual experience and organize it in natural language for explicit reasoning, we learn physical language from in-the-wild videos through self-supervision and use it to explicitly reason about how the physical world evolves. Accordingly, PhiZero adopts a reason-then-render paradigm: it first infers future world evolution as a physical-language sequence and then renders the inferred transitions into videos. Extensive experiments across generation and understanding benchmarks validate the ability of PhiZero to model physically coherent world evolution. We further show its potential for realistic and interactive world modeling, fine-grained action-conditioned simulation, and zero-shot motion transfer.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "vision/multimodal",
+        "language modeling",
+        "hugging face daily"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -5808,38 +5961,6 @@
       ]
     },
     {
-      "id": "2607.28624",
-      "title": "PhiZero: A World Model Built Around Physical Language",
-      "authors": "Shuyao Shang, Yuqi Wang, Ruopeng Gao, Xu Chen, Tieniu Tan, Lue Fan, Zhaoxiang Zhang",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 89,
-      "paper": "https://arxiv.org/abs/2607.28624",
-      "source": "https://www.alphaxiv.org/abs/2607.28624",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28624.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "We introduce PhiZero, a physical world model built around physical language, a compact discrete representation of world-state transitions. Existing physical world models typically predict future videos directly in pixel space, leaving the underlying world dynamics implicit within high-dimensional visual predictors. Motivated by humans' ability to abstract predictive structure from visual experience and organize it in natural language for explicit reasoning, we learn physical language from in-the-wild videos through self-supervision and use it to explicitly reason about how the physical world evolves. Accordingly, PhiZero adopts a reason-then-render paradigm: it first infers future world evolution as a physical-language sequence and then renders the inferred transitions into videos. Extensive experiments across generation and understanding benchmarks validate the ability of PhiZero to model physically coherent world evolution. We further show its potential for realistic and interactive world modeling, fine-grained action-conditioned simulation, and zero-shot motion transfer.",
-      "matchedBy": [
-        "papers with code",
-        "World Models",
-        "vision/multimodal",
-        "language modeling",
-        "hugging face daily"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.02515",
       "title": "PointDiT: Pixel-Space Diffusion for Monocular Geometry Estimation",
       "authors": "Haofei Xu, Rundi Wu, Philipp Henzler, Nikolai Kalischek, Michael Oechsle, Fabian Manhardt, Marc Pollefeys, Andreas Geiger, Federico Tombari, Michael Niemeyer",
@@ -5868,6 +5989,41 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
+      "id": "2607.28227",
+      "title": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
+      "authors": "Hanzhang Zhou, Panrong Tong, Xu Zhang, Quyu Kong, Chenglin Cai, Tianyu Xia, Gongjie Zhang, Jianan Zhang, Long Li, Long Chen, Lei Wang, Gaole Dai, Pengxiang Li, Liangyu Chen, Yue Wang, Steven Hoi",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 89,
+      "paper": "https://arxiv.org/abs/2607.28227",
+      "source": "https://www.alphaxiv.org/abs/2607.28227",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28227.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "GUI agents have the potential to become a general purpose executor over existing digital devices. To advance them toward real-world use, we envision agents that operate reliably on real devices, execute workflows across platforms, combine GUI interaction with CLI execution, complete long-horizon tasks, proactively initiate useful services, and autonomously improve their capabilities with minimal human effort. Guided by this vision, we present Qwen-UI-Agent, a real-world centric foundation GUI agent spanning mobile, computer-use, web, and DeepSearch environments. Qwen-UI-Agent combines diverse sandbox environments with a large-scale real-device mobile runtime. Its unified action space interleaves GUI operations with CLI execution and generates batched actions in a single model turn. An AutoResearch-style data flywheel uses agents to construct tasks and environments, diagnose failures, and plan subsequent iterations. Online RL supports training on trajectories exceeding 100 turns, with over 10,000 concurrent environments accelerating rollout. A lightweight harness layer supports proactive service initiation and stateful workflows across mobile and computer. Across a broad suite of evaluations, Qwen-UI-Agent sets state-of-the-art performance on mobile-use benchmarks while delivering competitive performance on computer- and browser-use tasks against frontier models, including Opus 4.8, Gemini 3.1 Pro, and GPT-5.6 Sol. On mobile use, it achieves 82.1% on MobileWorld, 92.2% on MobileWorld-Real, and 97.5% on AndroidDaily. On computer use, it achieves 79.5% on OSWorld-Verified and a 40.0% partial-progress score on OSWorld-v2. On browser use and GUI grounding, it achieves 73.6% on WebArena and 81.5% on ScreenSpot-Pro, respectively.",
+      "matchedBy": [
+        "papers with code",
+        "Computer Use Agents",
+        "Reinforcement Learning",
+        "Claude 4",
+        "GPT-5",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode",
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
         "Frontier Training"
       ]
     },
@@ -6148,6 +6304,41 @@
       "categories": [
         "Data / Retrieval",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2607.28611",
+      "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+      "authors": "Chongjian Ge, Hanwen Jiang, Tianyu Wang, Jiuxiang Gu, Yiran Xu, Ziwen Chen, Shaoteng Liu, Jing Shi, Yicong Hong, Zefan Cai, Hailin Jin, Hao Tan",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 88,
+      "paper": "https://arxiv.org/abs/2607.28611",
+      "source": "https://www.alphaxiv.org/abs/2607.28611",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28611.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Visual generation increasingly requires high-resolution images, long videos, and multimodal context, making the quadratic cost of full attention prohibitive. We introduce Chimera, a hybrid visual diffusion backbone with a principled scaling recipe. Chimera processes text, image, and video tokens in one raster-ordered stream without positional embeddings. It combines Kimi Delta Attention (KDA) for long-context state tracking with O(N) complexity, interleaved Multi-head Latent Attention (MLA) for direct global interaction, and modality-aware short convolutions for local spatiotemporal context. Sparse Mixture-of-Experts (MoE) layers expand capacity while controlling activated compute. To scale this heterogeneous architecture, we introduce HeteroP, a module-wise scheme that transfers hyperparameters across width and depth according to each tensor's functional fan-in and model depth. HeteroP yields a consistently tuned family used to fit Chinchilla-style compute-optimal laws for activated model size, training-token count, and image-video data ratio. Guided by these laws, we train an 11B-parameter Chimera with 2B activated parameters. Experiments show three results. First, measured by pretraining diffusion loss, the dense backbone is 1.7x as compute-efficient as a matched full-attention Wan-2.1 2B baseline, while the complete system reaches 7.3x. Second, without length-specific fine-tuning, Chimera extrapolates zero-shot from 5-second training clips to 30-second videos, with only 6.5% FID degradation in the last five seconds. Third, the fitted laws show that compute-optimal image pretraining divides compute nearly evenly between activated model size and training-token count, whereas video pretraining modestly favors model size at higher budgets. These results establish a foundation for designing and scaling efficient long-context diffusion architectures.",
+      "matchedBy": [
+        "papers with code",
+        "Convolution",
+        "Diffusion",
+        "Diffusion Transformer (DiT)",
+        "Embedding",
+        "frontier training",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode",
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -7077,41 +7268,6 @@
         "Vision/Multimodal",
         "Frontier Training",
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.26760",
-      "title": "Metis: Memory Foundation Model",
-      "authors": "Zeyu Zhang, Ziliang Guo, Yihang Sun, Xichong Zhang, Xixuan Hao, Zehao Lin, Yang Zhang, Xiaoyan Zhao, Tong Shen, Bo Tang, Zhi-Qin John Xu, Junchi Yan, Haofen Wang, Xu Chen, Feiyu Xiong, Zhiyu Li, Tat-Seng Chua",
-      "org": "",
-      "published": "2026-07-29",
-      "score": 87,
-      "paper": "https://arxiv.org/abs/2607.26760",
-      "source": "https://www.alphaxiv.org/abs/2607.26760",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.26760.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large reasoning models. However, agent memory is still primarily implemented through external modules, leaving the native memory capability largely unexplored. In this paper, we take a first step toward this direction by introducing memory foundation models, which empower foundation models with native memory capabilities. We formalize native memory from two perspectives: a persistent and dynamically evolving memory state within the backbone, and native memory procedures that autonomously store and utilize information through model computation. We show that native memory offers advantages in architecture, end-to-end optimization, and efficiency. Based on this formulation, we propose Metis, the first prototype of memory foundation models. Metis introduces a new architecture that equips a foundation model with a native memory state, allowing historical information to be compressed into the model and accessed through memory attention. We construct large-scale memory-specific training data and introduce multiple optimization objectives to acquire these native memory procedures through mid-training. The online memory maintenance of Metis is gradient-free, and the memory update requires only a forward pass. At inference time, all learned model weights remain frozen, while the native memory states are autonomously transformed through standard forward computation. Through extensive experiments, we show that Metis exhibits native memory capabilities and further provide a detailed analysis of its strengths, limitations, and behaviors. To facilitate future research on memory foundation models, we release our project and model checkpoints.",
-      "matchedBy": [
-        "papers with code",
-        "Agents",
-        "Reasoning",
-        "Mid-training",
-        "Reasoning model",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -8862,41 +9018,6 @@
       ]
     },
     {
-      "id": "2607.28611",
-      "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
-      "authors": "Chongjian Ge, Hanwen Jiang, Tianyu Wang, Jiuxiang Gu, Yiran Xu, Ziwen Chen, Shaoteng Liu, Jing Shi, Yicong Hong, Zefan Cai, Hailin Jin, Hao Tan",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 84,
-      "paper": "https://arxiv.org/abs/2607.28611",
-      "source": "https://www.alphaxiv.org/abs/2607.28611",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28611.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Visual generation increasingly requires high-resolution images, long videos, and multimodal context, making the quadratic cost of full attention prohibitive. We introduce Chimera, a hybrid visual diffusion backbone with a principled scaling recipe. Chimera processes text, image, and video tokens in one raster-ordered stream without positional embeddings. It combines Kimi Delta Attention (KDA) for long-context state tracking with O(N) complexity, interleaved Multi-head Latent Attention (MLA) for direct global interaction, and modality-aware short convolutions for local spatiotemporal context. Sparse Mixture-of-Experts (MoE) layers expand capacity while controlling activated compute. To scale this heterogeneous architecture, we introduce HeteroP, a module-wise scheme that transfers hyperparameters across width and depth according to each tensor's functional fan-in and model depth. HeteroP yields a consistently tuned family used to fit Chinchilla-style compute-optimal laws for activated model size, training-token count, and image-video data ratio. Guided by these laws, we train an 11B-parameter Chimera with 2B activated parameters. Experiments show three results. First, measured by pretraining diffusion loss, the dense backbone is 1.7x as compute-efficient as a matched full-attention Wan-2.1 2B baseline, while the complete system reaches 7.3x. Second, without length-specific fine-tuning, Chimera extrapolates zero-shot from 5-second training clips to 30-second videos, with only 6.5% FID degradation in the last five seconds. Third, the fitted laws show that compute-optimal image pretraining divides compute nearly evenly between activated model size and training-token count, whereas video pretraining modestly favors model size at higher budgets. These results establish a foundation for designing and scaling efficient long-context diffusion architectures.",
-      "matchedBy": [
-        "papers with code",
-        "Convolution",
-        "Diffusion",
-        "Diffusion Transformer (DiT)",
-        "Embedding",
-        "frontier training",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode",
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
-        "Vision/Multimodal"
-      ]
-    },
-    {
       "id": "2607.18238",
       "title": "Color superconductors and holon metals from doping a Fractional Chern insulator",
       "authors": "",
@@ -10471,7 +10592,7 @@
       "published": "2026-07-30",
       "score": 82,
       "paper": "https://arxiv.org/abs/2607.28627",
-      "source": "https://www.alphaxiv.org/abs/2607.28627",
+      "source": "https://huggingface.co/papers/2607.28627",
       "code": "https://github.com/avaxiao/ReToken",
       "project": "",
       "thumbnail": "./thumbs/2607.28627.jpg",
@@ -10887,6 +11008,38 @@
       ]
     },
     {
+      "id": "2607.27652",
+      "title": "Harness-G: A Graph-Structured Harness for Search Agents",
+      "authors": "Yanning Hou, Haoyuan Chen, Sihang Zhou, Xiaoshu Chen, Xirui Liu, Duanyang Yuan, Lingyuan Meng, Quan Liu, Jian Huang",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 81,
+      "paper": "https://arxiv.org/abs/2607.27652",
+      "source": "https://www.alphaxiv.org/abs/2607.27652",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.27652.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Reinforcement learning (RL) search agents commonly model retrieval as free-form natural-language query generation and optimize multi-turn interactions using final-answer rewards. Current studies mainly improve training with denser or more structured credit signals, but rarely examine whether retrieval is properly formulated at the policy-environment interface. We observe pronounced retrieval aliasing during Search-R1 training: rollouts for the same question continue to generate distinct query strings, yet their accumulated evidence sets increasingly overlap. We call this phenomenon retrieval-equivalence collapse; in this regime, trajectories approach utility equivalence with respect to retrieval decisions, leaving within-group returns with little effective retrieval contrast. To address this problem, we propose Harness-G, a graph-structured retrieval framework that redesigns this interface. It reformulates free-form query generation as finite action selection: the policy selects an evidence sentence or entity, or chooses to answer, while the environment constructs the menu, tracks retrieval state, and validates and executes each choice. This interface reduces linguistic aliasing and makes same-state alternatives directly comparable. Building on this interface, we introduce Structured Non-myopic Credit (SNC), which uses a frozen answer scorer to compare the selected action with its alternatives and assigns downstream gains to the earlier actions that enabled them. Across six QA benchmarks, Harness-G achieves the highest average F1 at both evaluated model scales, outperforming the strongest baseline, Graph-R1, by 10.74 points at 1.5B and 3.98 points at 3B.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Multi-turn",
+        "language modeling",
+        "data / retrieval"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
+    },
+    {
       "id": "2606.14409",
       "title": "Hy-Embodied-0.5-VLA: From Vision-Language-Action Models to a Real-World Robot Learning Stack",
       "authors": "He Zhang, Lingzhu Xiang, Haitao Lin, Zeyu Huang, Minghui Wang, Dingyan Zhong, Yubo Dong, Yihao Wu, Yongming Rao, Dongsheng Zhang, Wanjia He, Ling Chen, Kai Huang, Jiahao Chen, Sichang Su, Xumin Yu, Ziyi Wang, Chengwei Zhu, Xiao Teng, Yuchun Guo, Yufeng Zhang, Yuandong Liu, Rui Wang, Zisheng Lu, Han Hu, Zhengyou Zhang",
@@ -11054,41 +11207,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.28227",
-      "title": "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents",
-      "authors": "Hanzhang Zhou, Panrong Tong, Xu Zhang, Quyu Kong, Chenglin Cai, Tianyu Xia, Gongjie Zhang, Jianan Zhang, Long Li, Long Chen, Lei Wang, Gaole Dai, Pengxiang Li, Liangyu Chen, Yue Wang, Steven Hoi",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 81,
-      "paper": "https://arxiv.org/abs/2607.28227",
-      "source": "https://www.alphaxiv.org/abs/2607.28227",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28227.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "GUI agents have the potential to become a general purpose executor over existing digital devices. To advance them toward real-world use, we envision agents that operate reliably on real devices, execute workflows across platforms, combine GUI interaction with CLI execution, complete long-horizon tasks, proactively initiate useful services, and autonomously improve their capabilities with minimal human effort. Guided by this vision, we present Qwen-UI-Agent, a real-world centric foundation GUI agent spanning mobile, computer-use, web, and DeepSearch environments. Qwen-UI-Agent combines diverse sandbox environments with a large-scale real-device mobile runtime. Its unified action space interleaves GUI operations with CLI execution and generates batched actions in a single model turn. An AutoResearch-style data flywheel uses agents to construct tasks and environments, diagnose failures, and plan subsequent iterations. Online RL supports training on trajectories exceeding 100 turns, with over 10,000 concurrent environments accelerating rollout. A lightweight harness layer supports proactive service initiation and stateful workflows across mobile and computer. Across a broad suite of evaluations, Qwen-UI-Agent sets state-of-the-art performance on mobile-use benchmarks while delivering competitive performance on computer- and browser-use tasks against frontier models, including Opus 4.8, Gemini 3.1 Pro, and GPT-5.6 Sol. On mobile use, it achieves 82.1% on MobileWorld, 92.2% on MobileWorld-Real, and 97.5% on AndroidDaily. On computer use, it achieves 79.5% on OSWorld-Verified and a 40.0% partial-progress score on OSWorld-v2. On browser use and GUI grounding, it achieves 73.6% on WebArena and 81.5% on ScreenSpot-Pro, respectively.",
-      "matchedBy": [
-        "papers with code",
-        "Computer Use Agents",
-        "Reinforcement Learning",
-        "Claude 4",
-        "GPT-5",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode",
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -11425,7 +11543,7 @@
       "published": "2026-07-30",
       "score": 80,
       "paper": "https://arxiv.org/abs/2607.28625",
-      "source": "https://www.alphaxiv.org/abs/2607.28625",
+      "source": "https://huggingface.co/papers/2607.28625",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.28625.jpg",
@@ -11513,6 +11631,36 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2607.28229",
+      "title": "EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents",
+      "authors": "Luigi Sigillo, Matteo Silvestri, Francesco Tabaro, Rajat Bhatnagar, Syed Irtaza Mubashar, Matt Jeffryes, Daljit Nijjer, Vittorio Perera, Ola Spjuth, Julio Saez-Rodriguez, Melissa Harrison, Fabio Petroni",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 80,
+      "paper": "https://arxiv.org/abs/2607.28229",
+      "source": "https://www.alphaxiv.org/abs/2607.28229",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28229.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "The web is increasingly accessed by AI agents rather than humans. Every agent needs knowledge, especially in the life-sciences, where agentic pipelines are growing fast. Access to the literature is a crucial part of that need, and resources such as Europe PMC, with over 40M indexed records, are widely used to meet it. Yet these resources were not built for AI agents: they take keywords and complex syntax and return whole papers, so every agent must learn the syntax, issue several searches, and read full papers to find the evidence it needs. We introduce EMBL AI Librarian, a knowledge layer that upgrades the Europe PMC interface for AI agents: an agent asks in natural language and receives evidence that answers it. A single LLM orchestrates the whole knowledge retrieval process: it plans complementary subqueries executed by the live Europe PMC search engine, then reads the selected papers and locates the relevant evidence. We evaluate Librarian across four benchmarks: literature synthesis, claim verification, open-domain question answering, and downstream biology tasks such as protocol questions and sequence manipulation. On ScholarQABench, Librarian improves Citation F1 by more than $16$ points over strong recently published baselines. Used as the retrieval layer of an existing claim-verification pipeline, it increases agreement with expert consensus; and on the open-form LitQA2 benchmark, a GPT-5.4 agent scores about $8$ points higher when grounded in Librarian than with web search. Overall, our results show that equipping life-science agents with the Librarian knowledge layer improves performance across a range of tasks. We release our code publicly at https://github.com/petroni-lab/librarian",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "robotics",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Robotics"
       ]
     },
     {
@@ -12588,7 +12736,7 @@
       "published": "2026-07-29",
       "score": 79,
       "paper": "https://arxiv.org/abs/2607.27380",
-      "source": "https://www.alphaxiv.org/abs/2607.27380",
+      "source": "https://huggingface.co/papers/2607.27380",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.27380.jpg",
@@ -15867,6 +16015,32 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2607.27366",
+      "title": "BridgeAlign: Bridging Preference Alignment for Humanities and Social Sciences",
+      "authors": "",
+      "org": "",
+      "published": "2026-07-29",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2607.27366",
+      "source": "https://www.alphaxiv.org/abs/2607.27366",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.27366.jpg",
+      "firstSeenAt": "2026-08-02T00:10:30.711Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -19894,40 +20068,6 @@
       ]
     },
     {
-      "id": "2607.27372",
-      "title": "Explorative Modeling: Unlocking a Third Pretraining Axis and End-to-End Generation",
-      "authors": "Alexi Gladstone, Heng Ji, Yilun Du",
-      "org": "",
-      "published": "2026-07-29",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.27372",
-      "source": "https://www.alphaxiv.org/abs/2607.27372",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.27372.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "The deep learning revolution, kicked off by AlexNet, taught us that end-to-end training beats decomposing a problem into hand-designed stages. Generative modeling, however, has remained the exception-despite generative models being remarkably capable, they are still not trained end-to-end. This is because, at its core, generative modeling is about handling distributions with many modes, and existing scalable approaches handle this the same way, by factoring the generation procedure, which prevents end-to-end generation. In this work, we introduce Explorative Modeling, a new paradigm that instead factors the training loop, exploring K candidate matches between model generations and data, and training on the best, so predictions commit to modes rather than blurring them. We find Explorative Models (XMs) useful in two settings. First, increasing exploration adds a third pretraining axis beyond parameters and data for existing generative models-where scaling exploration monotonically improves performance across both continuous and discrete domains (images, video, and language). Notably, gains from exploration increase with scale, climbing from 7% to 36% as data scales and from 13% to 23% as models grow, with efficiency gains more than doubling at 3x the compute. Concretely, exploration improves FLOP efficiency by 4.1x, sample efficiency by 6.2x, parameter efficiency by 47%, lifts the strongest of image-generation recipes to a near-state-of-the-art 1.43 FID on ImageNet without guidance, enables scaling how end-to-end existing models are, and unlocks scaling generalization. Second, XMs enable end-to-end reconstructive generative modeling, matching diffusion on control tasks with 16-256x fewer inference steps. Together, these results establish XMs as both a new pretraining axis for existing generative models and a standalone end-to-end generative modeling paradigm.",
-      "matchedBy": [
-        "papers with code",
-        "Procedural Generalization",
-        "Reinforcement Learning",
-        "Diffusion",
-        "Pre-training",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2606.11075",
       "title": "Exploring the Design Space of Reward Backpropagation for Flow Matching",
       "authors": "Ruoyu Wang, Boye Niu, Xiangxin Zhou, Yushi Huang, Tongliang Liu, Chi Zhang",
@@ -22000,37 +22140,6 @@
         "Vision/Multimodal",
         "Frontier Training",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2607.27652",
-      "title": "Harness-G: A Graph-Structured Harness for Search Agents",
-      "authors": "Yanning Hou, Haoyuan Chen, Sihang Zhou, Xiaoshu Chen, Xirui Liu, Duanyang Yuan, Lingyuan Meng, Quan Liu, Jian Huang",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.27652",
-      "source": "https://huggingface.co/papers/2607.27652",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.27652.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Reinforcement learning (RL) search agents commonly model retrieval as free-form natural-language query generation and optimize multi-turn interactions using final-answer rewards. Current studies mainly improve training with denser or more structured credit signals, but rarely examine whether retrieval is properly formulated at the policy-environment interface. We observe pronounced retrieval aliasing during Search-R1 training: rollouts for the same question continue to generate distinct query strings, yet their accumulated evidence sets increasingly overlap. We call this phenomenon retrieval-equivalence collapse; in this regime, trajectories approach utility equivalence with respect to retrieval decisions, leaving within-group returns with little effective retrieval contrast. To address this problem, we propose Harness-G, a graph-structured retrieval framework that redesigns this interface. It reformulates free-form query generation as finite action selection: the policy selects an evidence sentence or entity, or chooses to answer, while the environment constructs the menu, tracks retrieval state, and validates and executes each choice. This interface reduces linguistic aliasing and makes same-state alternatives directly comparable. Building on this interface, we introduce Structured Non-myopic Credit (SNC), which uses a frozen answer scorer to compare the selected action with its alternatives and assigns downstream gains to the earlier actions that enabled them. Across six QA benchmarks, Harness-G achieves the highest average F1 at both evaluated model scales, outperforming the strongest baseline, Graph-R1, by 10.74 points at 1.5B and 3.98 points at 3B.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "Multi-turn",
-        "language modeling",
-        "data / retrieval"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
       ]
     },
     {
@@ -71578,7 +71687,8 @@
         "papers with code",
         "Looped Transformer",
         "frontier training",
-        "language modeling"
+        "language modeling",
+        "DeepSeek Sparse Attention"
       ],
       "sources": [
         "paperswithcode"
@@ -82619,7 +82729,8 @@
         "papers with code",
         "DUSt3R",
         "Gaussian splatting",
-        "vision/multimodal"
+        "vision/multimodal",
+        "3D understanding"
       ],
       "sources": [
         "paperswithcode"
@@ -152877,34 +152988,6 @@
       "category": "Frontier Training",
       "categories": [
         "Frontier Training",
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2607.28229",
-      "title": "EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents",
-      "authors": "Luigi Sigillo, Matteo Silvestri, Francesco Tabaro, Rajat Bhatnagar, Syed Irtaza Mubashar, Matt Jeffryes, Daljit Nijjer, Vittorio Perera, Ola Spjuth, Julio Saez-Rodriguez, Melissa Harrison, Fabio Petroni",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.28229v1",
-      "source": "https://arxiv.org/abs/2607.28229v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28229.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "The web is increasingly accessed by AI agents rather than humans. Every agent needs knowledge, especially in the life-sciences, where agentic pipelines are growing fast. Access to the literature is a crucial part of that need, and resources such as Europe PMC, with over 40M indexed records, are widely used to meet it. Yet these resources were not built for AI agents: they take keywords and complex syntax and return whole papers, so every agent must learn the syntax, issue several searches, and read full papers to find the evidence it needs. We introduce EMBL AI Librarian, a knowledge layer that upgrades the Europe PMC interface for AI agents: an agent asks in natural language and receives evidence that answers it. A single LLM orchestrates the whole knowledge retrieval process: it plans complementary subqueries executed by the live Europe PMC search engine, then reads the selected papers and locates the relevant evidence. We evaluate Librarian across four benchmarks: literature synthesis, claim verification, open-domain question answering, and downstream biology tasks such as protocol questions and sequence manipulation. On ScholarQABench, Librarian improves Citation F1 by more than $16$ points over strong recently published baselines. Used as the retrieval layer of an existing claim-verification pipeline, it increases agreement with expert consensus; and on the open-form LitQA2 benchmark, a GPT-5.4 agent scores about $8$ points higher when grounded in Librarian than with web search. Overall, our results show that equipping life-science agents with the Librarian knowledge layer improves performance across a range of tasks. We release our code publicly at https://github.com/petroni-lab/librarian",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "robotics"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
         "Robotics"
       ]
     },
