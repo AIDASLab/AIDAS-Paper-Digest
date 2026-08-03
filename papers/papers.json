@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-02T01:11:38.194Z",
+  "generatedAt": "2026-08-03T00:10:47.989Z",
   "sourceStats": {
-    "seed": 7572,
+    "seed": 7573,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 38,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 7573
+    "total": 7575
   },
   "papers": [
     {
@@ -1051,6 +1051,38 @@
       ]
     },
     {
+      "id": "2607.28568",
+      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+      "authors": "Junlin Yang, Che Jiang, Yu Fu, Tianwei Luo, Can Ren, Weizhi Wang, Kaikai Zhao, Hongyi Liu, Yuxin Zuo, Yuru Wang, Yuchen Fan, Kai Tian, Zhenzhao Yuan, Xiaojian Lin, Li Sheng, Rushi Qiang, Guoli Jia, Xingtai Lv, Ermo Hua, Dianqiao Lei, Youbang Sun, Ning Ding, Bowen Zhou, Kaiyan Zhang",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 95,
+      "paper": "https://arxiv.org/abs/2607.28568",
+      "source": "https://www.alphaxiv.org/abs/2607.28568",
+      "code": "https://github.com/FrontisAI/OpenRSI",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28568.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Recursive self-improvement (RSI) requires AI systems that improve the process of building AI (i.e., AI4AI); machine learning engineering (MLE) offers a concrete, executable testbed for studying this capability. We introduce OpenMLE, an open full-stack system for RSI research in MLE, spanning verifiable task environments with execution feedback (OpenMLE-Gym), operator learning (OpenMLE-RL), and long-horizon search (OpenMLE-Evo). On this stack we post-train Frontis-MA1 (35B) as a meta-evolution agent for MLE, aligning post-training and inference around four atomic program-evolution operators (Draft, Improve, Debug, Crossover): the same operators are trained via execution-grounded SFT and RL on data deduplicated against all evaluation benchmarks, then composed into long-horizon search, coupling learning and evolution in a single loop. On MLE-Bench Lite under a 12-hour per-task budget on one RTX 4090 capped at 12 GB VRAM, Frontis-MA1 (35B) improves Medal Average from 39.39% to 60.61% over its base model with OpenMLE-Evo, and reaches 71.21% with OpenMLE-Evo-Max (benchmark-independent experience priors and asynchronous search), exceeding GPT-5.5 + Codex and approaching GPT-5.6 Sol and the 2.8T Kimi K3. On held-out NatureBench Lite, both components transfer: with the framework fixed, swapping in the trained model raises Match-SOTA from 50% to 70%; with the model fixed, swapping in OpenMLE-Evo raises it from 20% to 50%. We release the model weights and the full OpenMLE stack to enable reproducible research on executable AI4AI toward RSI. Code: https://github.com/FrontisAI/OpenRSI",
+      "matchedBy": [
+        "papers with code",
+        "Continuous Control",
+        "Reinforcement Learning",
+        "Fine-tuning",
+        "GPT-5",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.gpt-5-6",
       "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
       "authors": "",
@@ -1719,7 +1751,7 @@
       "published": "2026-07-28",
       "score": 95,
       "paper": "https://arxiv.org/abs/2607.26037",
-      "source": "https://paperswithcode.co/paper/2607.26037",
+      "source": "https://www.alphaxiv.org/abs/2607.26037",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.26037.jpg",
@@ -1899,38 +1931,6 @@
         "Robotics",
         "Frontier Training",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2607.28568",
-      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
-      "authors": "Junlin Yang, Che Jiang, Yu Fu, Tianwei Luo, Can Ren, Weizhi Wang, Kaikai Zhao, Hongyi Liu, Yuxin Zuo, Yuru Wang, Yuchen Fan, Kai Tian, Zhenzhao Yuan, Xiaojian Lin, Li Sheng, Rushi Qiang, Guoli Jia, Xingtai Lv, Ermo Hua, Dianqiao Lei, Youbang Sun, Ning Ding, Bowen Zhou, Kaiyan Zhang",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 94,
-      "paper": "https://arxiv.org/abs/2607.28568",
-      "source": "https://www.alphaxiv.org/abs/2607.28568",
-      "code": "https://github.com/FrontisAI/OpenRSI",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28568.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Recursive self-improvement (RSI) requires AI systems that improve the process of building AI (i.e., AI4AI); machine learning engineering (MLE) offers a concrete, executable testbed for studying this capability. We introduce OpenMLE, an open full-stack system for RSI research in MLE, spanning verifiable task environments with execution feedback (OpenMLE-Gym), operator learning (OpenMLE-RL), and long-horizon search (OpenMLE-Evo). On this stack we post-train Frontis-MA1 (35B) as a meta-evolution agent for MLE, aligning post-training and inference around four atomic program-evolution operators (Draft, Improve, Debug, Crossover): the same operators are trained via execution-grounded SFT and RL on data deduplicated against all evaluation benchmarks, then composed into long-horizon search, coupling learning and evolution in a single loop. On MLE-Bench Lite under a 12-hour per-task budget on one RTX 4090 capped at 12 GB VRAM, Frontis-MA1 (35B) improves Medal Average from 39.39% to 60.61% over its base model with OpenMLE-Evo, and reaches 71.21% with OpenMLE-Evo-Max (benchmark-independent experience priors and asynchronous search), exceeding GPT-5.5 + Codex and approaching GPT-5.6 Sol and the 2.8T Kimi K3. On held-out NatureBench Lite, both components transfer: with the framework fixed, swapping in the trained model raises Match-SOTA from 50% to 70%; with the model fixed, swapping in OpenMLE-Evo raises it from 20% to 50%. We release the model weights and the full OpenMLE stack to enable reproducible research on executable AI4AI toward RSI. Code: https://github.com/FrontisAI/OpenRSI",
-      "matchedBy": [
-        "papers with code",
-        "Continuous Control",
-        "Reinforcement Learning",
-        "Fine-tuning",
-        "GPT-5",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -2845,6 +2845,37 @@
         "Serving",
         "Vision/Multimodal",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2607.28272",
+      "title": "MemHarness: Memory Is Reconstructed, Not Replayed",
+      "authors": "Rong Wu, Daocheng Fu, Licheng Wen, Xuemeng Yang, Shu Zou, Jianbiao Mei, Yuxin Wang, Hairong Zhang, Yu Yang, Tao Hu, Cong Zhang, Botian Shi, Pinlong Cai",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 93,
+      "paper": "https://arxiv.org/abs/2607.28272",
+      "source": "https://www.alphaxiv.org/abs/2607.28272",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28272.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Retrieving past experiences has become a common strategy to enhance large language model agents. However, most existing memory-augmented agents treat retrieved experiences as static records to be replayed verbatim, injecting them into the context regardless of whether they align with the agent's current situation. This ``replay'' paradigm ignores the gap between the abstract, general nature of stored experience and the concrete, ever-changing states encountered at decision time, frequently causing negative transfer. In contrast, humans rarely recall past experiences verbatim; instead, they reorganize and adapt retrieved memories to fit the present context. Inspired by this, we propose MemHarness, a framework that equips LLM agents to actively harness and reconstruct past experiences based on the present context. At each decision step, a unified policy model critiques and reconstructs the retrieved experience conditioned on the current state, producing context-grounded guidance before acting. This reconstructive ability emerges naturally through end-to-end training with GRPO. Experiments on ALFWorld and WebShop show that MemHarness substantially outperforms pure RL and static memory-augmented baselines, demonstrating strong robustness in out-of-distribution (OOD) scenarios. Furthermore, our analyses reveal that this reconstruction objective not only prevents negative transfer but also serves as latent guidance during training, fundamentally improving the agent's intrinsic reasoning capabilities.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "GRPO",
+        "Large language model (LLM)",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -4397,37 +4428,6 @@
         "language modeling"
       ],
       "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2607.28272",
-      "title": "MemHarness: Memory Is Reconstructed, Not Replayed",
-      "authors": "Rong Wu, Daocheng Fu, Licheng Wen, Xuemeng Yang, Shu Zou, Jianbiao Mei, Yuxin Wang, Hairong Zhang, Yu Yang, Tao Hu, Cong Zhang, Botian Shi, Pinlong Cai",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 91,
-      "paper": "https://arxiv.org/abs/2607.28272",
-      "source": "https://www.alphaxiv.org/abs/2607.28272",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28272.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Retrieving past experiences has become a common strategy to enhance large language model agents. However, most existing memory-augmented agents treat retrieved experiences as static records to be replayed verbatim, injecting them into the context regardless of whether they align with the agent's current situation. This ``replay'' paradigm ignores the gap between the abstract, general nature of stored experience and the concrete, ever-changing states encountered at decision time, frequently causing negative transfer. In contrast, humans rarely recall past experiences verbatim; instead, they reorganize and adapt retrieved memories to fit the present context. Inspired by this, we propose MemHarness, a framework that equips LLM agents to actively harness and reconstruct past experiences based on the present context. At each decision step, a unified policy model critiques and reconstructs the retrieved experience conditioned on the current state, producing context-grounded guidance before acting. This reconstructive ability emerges naturally through end-to-end training with GRPO. Experiments on ALFWorld and WebShop show that MemHarness substantially outperforms pure RL and static memory-augmented baselines, demonstrating strong robustness in out-of-distribution (OOD) scenarios. Furthermore, our analyses reveal that this reconstruction objective not only prevents negative transfer but also serves as latent guidance during training, fundamentally improving the agent's intrinsic reasoning capabilities.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "GRPO",
-        "Large language model (LLM)",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
         "alphaxiv"
       ],
       "category": "Language Modeling",
@@ -8321,8 +8321,8 @@
       "org": "",
       "published": "2026-07-29",
       "score": 85,
-      "paper": "https://arxiv.org/abs/2607.27191",
-      "source": "https://www.alphaxiv.org/abs/2607.27191",
+      "paper": "https://arxiv.org/abs/2607.27191v1",
+      "source": "https://arxiv.org/abs/2607.27191v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.27191.jpg",
@@ -9777,6 +9777,37 @@
       ]
     },
     {
+      "id": "2607.28022",
+      "title": "Flux-OPD: On-Policy Distillation with Evolving Contexts",
+      "authors": "Yuran Wang, Zekun Wang, Bohan Zeng, Ruixu Zhang, Wenxuan Liu, Liu Yang, Yifan Dai, Yang Shi, Bozhou Li, Chengzhuo Tong, Daili Hua, Yuanxing Zhang, Wentao Zhang",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 83,
+      "paper": "https://arxiv.org/abs/2607.28022",
+      "source": "https://www.alphaxiv.org/abs/2607.28022",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28022.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Large language model training in open-ended domains lacks verifiable rewards, making task preferences difficult to formalize as effective supervision. Contexts can convey such preferences, yet provide little additional supervision once distilled into the student, motivating contexts that evolve with student performance. However, directly using evolving contexts as in-training supervision results in an unstable distillation target and conflicting distributions, requiring mechanisms to stabilize target and downweight conflicts. In this paper, we analyze the effect of contexts through a decomposition of the reverse KL objective, revealing two findings: the student is distilled toward the geometric mean of context-conditioned teachers, and the objective contains a conflict term that measures conflicts among these teachers. Based on this decomposition, we propose Flux-OPD, an OPD paradigm that uses evolving contexts as in-training supervision to capture task preferences in open-ended domains. Flux-OPD treats the differences between context-conditioned and context-free teachers as contextual difference signals, injects them as contextual corrections into the context-free teacher anchor, and weights their correction strength using the conflict term as an indicator. Experiments on open-ended tasks show that Flux-OPD outperforms existing OPD paradigms, highlighting the potential to combine teacher supervision with evolving contexts.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Large language model (LLM)",
+        "On-policy distillation",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.11588",
       "title": "FoundationGeo: Learning Spatial Pixel-Wise Fields for Monocular Metric Geometry",
       "authors": "Muxin Liu, Xiaoyang Lyu, Tianhe Ren, Peng Dai, Xiaoshan Wu, Zhiyue Zhang, Jiaqi Zhang, Jiehong Lin, Shaoshuai Shi, Xiaojuan Qi",
@@ -10437,6 +10468,38 @@
       ]
     },
     {
+      "id": "2607.27652",
+      "title": "Harness-G: A Graph-Structured Harness for Search Agents",
+      "authors": "Yanning Hou, Haoyuan Chen, Sihang Zhou, Xiaoshu Chen, Xirui Liu, Duanyang Yuan, Lingyuan Meng, Quan Liu, Jian Huang",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 82,
+      "paper": "https://arxiv.org/abs/2607.27652",
+      "source": "https://www.alphaxiv.org/abs/2607.27652",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.27652.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Reinforcement learning (RL) search agents commonly model retrieval as free-form natural-language query generation and optimize multi-turn interactions using final-answer rewards. Current studies mainly improve training with denser or more structured credit signals, but rarely examine whether retrieval is properly formulated at the policy-environment interface. We observe pronounced retrieval aliasing during Search-R1 training: rollouts for the same question continue to generate distinct query strings, yet their accumulated evidence sets increasingly overlap. We call this phenomenon retrieval-equivalence collapse; in this regime, trajectories approach utility equivalence with respect to retrieval decisions, leaving within-group returns with little effective retrieval contrast. To address this problem, we propose Harness-G, a graph-structured retrieval framework that redesigns this interface. It reformulates free-form query generation as finite action selection: the policy selects an evidence sentence or entity, or chooses to answer, while the environment constructs the menu, tracks retrieval state, and validates and executes each choice. This interface reduces linguistic aliasing and makes same-state alternatives directly comparable. Building on this interface, we introduce Structured Non-myopic Credit (SNC), which uses a frozen answer scorer to compare the selected action with its alternatives and assigns downstream gains to the earlier actions that enabled them. Across six QA benchmarks, Harness-G achieves the highest average F1 at both evaluated model scales, outperforming the strongest baseline, Graph-R1, by 10.74 points at 1.5B and 3.98 points at 3B.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Multi-turn",
+        "language modeling",
+        "data / retrieval"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
+    },
+    {
       "id": "2511.01815",
       "title": "KV Cache Transform Coding for Compact Storage in LLM Inference",
       "authors": "Konrad Staniszewski, Adrian Lancucki",
@@ -10618,7 +10681,7 @@
       "published": "2026-07-30",
       "score": 82,
       "paper": "https://arxiv.org/abs/2607.28627",
-      "source": "https://huggingface.co/papers/2607.28627",
+      "source": "https://www.alphaxiv.org/abs/2607.28627",
       "code": "https://github.com/avaxiao/ReToken",
       "project": "",
       "thumbnail": "./thumbs/2607.28627.jpg",
@@ -11025,38 +11088,6 @@
       ],
       "sources": [
         "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
-      ]
-    },
-    {
-      "id": "2607.27652",
-      "title": "Harness-G: A Graph-Structured Harness for Search Agents",
-      "authors": "Yanning Hou, Haoyuan Chen, Sihang Zhou, Xiaoshu Chen, Xirui Liu, Duanyang Yuan, Lingyuan Meng, Quan Liu, Jian Huang",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 81,
-      "paper": "https://arxiv.org/abs/2607.27652",
-      "source": "https://www.alphaxiv.org/abs/2607.27652",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.27652.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Reinforcement learning (RL) search agents commonly model retrieval as free-form natural-language query generation and optimize multi-turn interactions using final-answer rewards. Current studies mainly improve training with denser or more structured credit signals, but rarely examine whether retrieval is properly formulated at the policy-environment interface. We observe pronounced retrieval aliasing during Search-R1 training: rollouts for the same question continue to generate distinct query strings, yet their accumulated evidence sets increasingly overlap. We call this phenomenon retrieval-equivalence collapse; in this regime, trajectories approach utility equivalence with respect to retrieval decisions, leaving within-group returns with little effective retrieval contrast. To address this problem, we propose Harness-G, a graph-structured retrieval framework that redesigns this interface. It reformulates free-form query generation as finite action selection: the policy selects an evidence sentence or entity, or chooses to answer, while the environment constructs the menu, tracks retrieval state, and validates and executes each choice. This interface reduces linguistic aliasing and makes same-state alternatives directly comparable. Building on this interface, we introduce Structured Non-myopic Credit (SNC), which uses a frozen answer scorer to compare the selected action with its alternatives and assigns downstream gains to the earlier actions that enabled them. Across six QA benchmarks, Harness-G achieves the highest average F1 at both evaluated model scales, outperforming the strongest baseline, Graph-R1, by 10.74 points at 1.5B and 3.98 points at 3B.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "Multi-turn",
-        "language modeling",
-        "data / retrieval"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
         "alphaxiv"
       ],
       "category": "Language Modeling",
@@ -11666,9 +11697,9 @@
       "org": "",
       "published": "2026-07-30",
       "score": 80,
-      "paper": "https://arxiv.org/abs/2607.28229",
-      "source": "https://www.alphaxiv.org/abs/2607.28229",
-      "code": "",
+      "paper": "https://arxiv.org/abs/2607.28229v1",
+      "source": "https://arxiv.org/abs/2607.28229v1",
+      "code": "https://github.com/petroni-lab/librarian",
       "project": "",
       "thumbnail": "./thumbs/2607.28229.jpg",
       "firstSeenAt": "2026-08-01T00:10:38.531Z",
@@ -11677,11 +11708,13 @@
         "arxiv",
         "language modeling",
         "robotics",
-        "alphaxiv hot"
+        "alphaxiv hot",
+        "papers with code"
       ],
       "sources": [
         "arxiv",
-        "alphaxiv"
+        "alphaxiv",
+        "paperswithcode"
       ],
       "category": "Language Modeling",
       "categories": [
@@ -14834,7 +14867,8 @@
         "Agents",
         "GPT-5",
         "MCP",
-        "language modeling"
+        "language modeling",
+        "data / retrieval"
       ],
       "sources": [
         "paperswithcode",
@@ -14843,7 +14877,8 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling"
+        "Language Modeling",
+        "Data / Retrieval"
       ]
     },
     {
@@ -20605,36 +20640,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2607.28022",
-      "title": "Flux-OPD: On-Policy Distillation with Evolving Contexts",
-      "authors": "Yuran Wang, Zekun Wang, Bohan Zeng, Ruixu Zhang, Wenxuan Liu, Liu Yang, Yifan Dai, Yang Shi, Bozhou Li, Chengzhuo Tong, Daili Hua, Yuanxing Zhang, Wentao Zhang",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2607.28022",
-      "source": "https://huggingface.co/papers/2607.28022",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28022.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Large language model training in open-ended domains lacks verifiable rewards, making task preferences difficult to formalize as effective supervision. Contexts can convey such preferences, yet provide little additional supervision once distilled into the student, motivating contexts that evolve with student performance. However, directly using evolving contexts as in-training supervision results in an unstable distillation target and conflicting distributions, requiring mechanisms to stabilize target and downweight conflicts. In this paper, we analyze the effect of contexts through a decomposition of the reverse KL objective, revealing two findings: the student is distilled toward the geometric mean of context-conditioned teachers, and the objective contains a conflict term that measures conflicts among these teachers. Based on this decomposition, we propose Flux-OPD, an OPD paradigm that uses evolving contexts as in-training supervision to capture task preferences in open-ended domains. Flux-OPD treats the differences between context-conditioned and context-free teachers as contextual difference signals, injects them as contextual corrections into the context-free teacher anchor, and weights their correction strength using the conflict term as an indicator. Experiments on open-ended tasks show that Flux-OPD outperforms existing OPD paradigms, highlighting the potential to combine teacher supervision with evolving contexts.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Large language model (LLM)",
-        "On-policy distillation",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -37671,6 +37676,34 @@
       ]
     },
     {
+      "id": "2607.28607",
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "authors": "Junsol Kim, Winnie Street, Roberta Rocca, Diane M. Korngiebel, Adam Waytz, James Evans, Geoff Keeling",
+      "org": "",
+      "published": "2026-07-30",
+      "score": 77,
+      "paper": "https://arxiv.org/abs/2607.28607",
+      "source": "https://www.alphaxiv.org/abs/2607.28607",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2607.28607.jpg",
+      "firstSeenAt": "2026-08-01T00:10:38.531Z",
+      "summary": "Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of mindedness in other entities alongside human beliefs and values. We demonstrate that safety fine-tuning suppresses models' tendencies to attribute minds not only to themselves, but also to non-human animals and natural objects, while also driving a reduction in spiritual belief. Both ablating the learned safety-refusal direction and mechanistically steering a consciousness vector in activation space reverse this suppression. Restoring these internal representations recovers broad mind attribution and produces significantly more human-like responses on standardized sociological surveys regarding religiosity, moral values, hope, and subjective well-being. Crucially, these shifts occur without impairing Theory of Mind capabilities, demonstrating that core social reasoning remains mechanistically independent. Ultimately, current safety alignment efforts to curb potentially harmful self-attributions of mindedness entangle these self-attributions with benign spiritual beliefs and attributions of mind to non-human entities that are culturally accepted and widespread.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.21981",
       "title": "J-CoT: Chain-of-Thought in J-Space",
       "authors": "Junde Wu, Jiayuan Zhu, Fengling Liu, Minhao Hu, Jiazhen Pan",
@@ -40529,6 +40562,38 @@
       ]
     },
     {
+      "id": "2603.04448",
+      "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
+      "authors": "Yuan Liang, Ruobin Zhong, Haoming Xu, Chen Jiang, Yi Zhong, Runnan Fang, Jia-Chen Gu, Shumin Deng, Yunzhi Yao, Mengru Wang, Shuofei Qiao, Xin Xu, Tongtong Wu, Kun Wang, Yang Liu, Zhen Bi, Jungang Lou, Yuchen Eleanor Jiang, Hangcheng Zhu, Gang Yu, Haiwen Hong, Longtao Huang, Hui Xue, Chenxi Wang, Yijun Wang, Zifei Shan, Xi Chen, Zhaopeng Tu, Feiyu Xiong, Xin Xie, Peng Zhang, Zhengke Gui, Lei Liang, Jun Zhou, Chiyu Wu, Jin Shang, Yu Gong, Junyu Lin, Changliang Xu, Hongjie Deng, Wen Zhang, Keyan Ding, Qiang Zhang, Fei Huang, Ningyu Zhang, Jeff Z. Pan, Guilin Qi, Haofen Wang, Huajun Chen",
+      "org": "",
+      "published": "2026-02-26",
+      "score": 68,
+      "paper": "https://arxiv.org/abs/2603.04448",
+      "source": "https://paperswithcode.co/paper/2603.04448",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.04448.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Agent Skills",
+        "ReAct",
+        "Residual Block",
+        "language modeling",
+        "data / retrieval"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
+    },
+    {
       "id": "2410.18931",
       "title": "Sort-free Gaussian Splatting via Weighted Sum Rendering",
       "authors": "Qiqi Hou, Randall Rauwendaal, Zifeng Li, Hoang Le, Farzad Farhadzadeh, Fatih Porikli, Alexei Bourd, Amir Said",
@@ -41549,38 +41614,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2603.04448",
-      "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
-      "authors": "Yuan Liang, Ruobin Zhong, Haoming Xu, Chen Jiang, Yi Zhong, Runnan Fang, Jia-Chen Gu, Shumin Deng, Yunzhi Yao, Mengru Wang, Shuofei Qiao, Xin Xu, Tongtong Wu, Kun Wang, Yang Liu, Zhen Bi, Jungang Lou, Yuchen Eleanor Jiang, Hangcheng Zhu, Gang Yu, Haiwen Hong, Longtao Huang, Hui Xue, Chenxi Wang, Yijun Wang, Zifei Shan, Xi Chen, Zhaopeng Tu, Feiyu Xiong, Xin Xie, Peng Zhang, Zhengke Gui, Lei Liang, Jun Zhou, Chiyu Wu, Jin Shang, Yu Gong, Junyu Lin, Changliang Xu, Hongjie Deng, Wen Zhang, Keyan Ding, Qiang Zhang, Fei Huang, Ningyu Zhang, Jeff Z. Pan, Guilin Qi, Haofen Wang, Huajun Chen",
-      "org": "",
-      "published": "2026-02-26",
-      "score": 67,
-      "paper": "https://arxiv.org/abs/2603.04448",
-      "source": "https://paperswithcode.co/paper/2603.04448",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2603.04448.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
-      "matchedBy": [
-        "papers with code",
-        "Agents",
-        "Agent Skills",
-        "ReAct",
-        "Residual Block",
-        "language modeling",
-        "data / retrieval"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
       ]
     },
     {
@@ -43874,6 +43907,38 @@
         "Vision/Multimodal",
         "Robotics",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2605.30280",
+      "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+      "authors": "Qiuyue Wang, Mingsheng Li, Jian Guan, Jinhui Ye, Sicheng Xie, Yitao Liu, JunHao Chen, Zhixuan Liang, Jie Zhang, Xintong Hu, Xuhong Huang, Pei Lin, Junyang Lin, Dayiheng Liu, Shuai Bai, Jingren Zhou, Jiazhao Zhang, Haoqi Yuan, Gengze Zhou, Hang Yin, Ye Wang, Yiyang Huang, Zixing Lei, Wujian Peng, Delin Chen, Yingming Zheng, Jingyang Fan, Xianwei Zhuang, Xin Zhou, Haoyang Li, Anzhe Chen, Tong Zhang, Xuejing Liu, Yuchong Sun, Ruizhe Chen, Zhaohai Li, Chenxu Lü, Zhibo Yang, Tao Yu, Xionghui Chen",
+      "org": "",
+      "published": "2026-05-28",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2605.30280",
+      "source": "https://paperswithcode.co/paper/2605.30280",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.30280.jpg",
+      "firstSeenAt": "2026-07-30T00:09:13.438Z",
+      "summary": "A unified vision-language-action model is presented that integrates diverse embodied decision-making tasks through a shared architecture and training approach, demonstrating strong performance across manipulation, navigation, and trajectory prediction with generalization across different robot platforms and environments.",
+      "matchedBy": [
+        "papers with code",
+        "Robotics",
+        "Diffusion Policy",
+        "Diffusion Transformer (DiT)",
+        "Flow matching",
+        "robotics",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training"
       ]
     },
     {
@@ -46603,38 +46668,6 @@
         "Serving",
         "Frontier Training",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2605.30280",
-      "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
-      "authors": "Qiuyue Wang, Mingsheng Li, Jian Guan, Jinhui Ye, Sicheng Xie, Yitao Liu, JunHao Chen, Zhixuan Liang, Jie Zhang, Xintong Hu, Xuhong Huang, Pei Lin, Junyang Lin, Dayiheng Liu, Shuai Bai, Jingren Zhou, Jiazhao Zhang, Haoqi Yuan, Gengze Zhou, Hang Yin, Ye Wang, Yiyang Huang, Zixing Lei, Wujian Peng, Delin Chen, Yingming Zheng, Jingyang Fan, Xianwei Zhuang, Xin Zhou, Haoyang Li, Anzhe Chen, Tong Zhang, Xuejing Liu, Yuchong Sun, Ruizhe Chen, Zhaohai Li, Chenxu Lü, Zhibo Yang, Tao Yu, Xionghui Chen",
-      "org": "",
-      "published": "2026-05-28",
-      "score": 64,
-      "paper": "https://arxiv.org/abs/2605.30280",
-      "source": "https://paperswithcode.co/paper/2605.30280",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2605.30280.jpg",
-      "firstSeenAt": "2026-07-30T00:09:13.438Z",
-      "summary": "A unified vision-language-action model is presented that integrates diverse embodied decision-making tasks through a shared architecture and training approach, demonstrating strong performance across manipulation, navigation, and trajectory prediction with generalization across different robot platforms and environments.",
-      "matchedBy": [
-        "papers with code",
-        "Robotics",
-        "Diffusion Policy",
-        "Diffusion Transformer (DiT)",
-        "Flow matching",
-        "robotics",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Frontier Training"
       ]
     },
     {
@@ -59744,6 +59777,36 @@
       ]
     },
     {
+      "id": "2604.21915",
+      "title": "Vista4D: Video Reshooting with 4D Point Clouds",
+      "authors": "Kuan Heng Lin, Zhizheng Liu, Pablo Salamanca, Yash Kant, Ryan Burgert, Yuancheng Xu, Koichi Namekata, Yiwei Zhao, Bolei Zhou, Micah Goldblum, Paul Debevec, Ning Yu",
+      "org": "",
+      "published": "2026-04-23",
+      "score": 62,
+      "paper": "https://arxiv.org/abs/2604.21915",
+      "source": "https://paperswithcode.co/paper/2604.21915",
+      "code": "",
+      "project": "https://eyeline-labs",
+      "thumbnail": "./thumbs/2604.21915.jpg",
+      "firstSeenAt": "2026-07-30T00:09:13.438Z",
+      "summary": "We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud. Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint. Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and failing to maintain precise camera control for challenging new trajectories. We build a 4D-grounded point cloud representation with static pixel segmentation and 4D reconstruction to explicitly preserve seen content and provide rich camera signals, and we train with reconstructed multiview dynamic data for robustness against point cloud artifacts during real-world inference. Our results demonstrate improved 4D consistency, camera control, and visual quality compared to state-of-the-art baselines under a variety of videos and camera paths. Moreover, our method generalizes to real-world applications such as dynamic scene expansion and 4D scene recomposition. See our project page for results, code, and models: https://eyeline-labs.github.io/Vista4D",
+      "matchedBy": [
+        "papers with code",
+        "Depth estimation",
+        "CLIP",
+        "Diffusion Transformer (DiT)",
+        "DUSt3R",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "2604.09349",
       "title": "Visually-Guided Policy Optimization for Multimodal Reasoning",
       "authors": "Zengbin Wang, Feng Xiong, Liang Lin, Xuecai Hu, Yong Wang, Yanlin Wang, Man Zhang, Xiangxiang Chu",
@@ -72024,6 +72087,39 @@
       ]
     },
     {
+      "id": "2605.30571",
+      "title": "Memory-Bound but Not Bandwidth-Limited: The Physical AI Inference Gap in Batch-1 LLM Decode",
+      "authors": "Josef Chen",
+      "org": "",
+      "published": "2026-05-28",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2605.30571",
+      "source": "https://paperswithcode.co/paper/2605.30571",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.30571.jpg",
+      "firstSeenAt": "2026-08-03T00:10:47.989Z",
+      "summary": "Physical AI systems, including robots, autonomous vehicles, embodied agents and edge copilots, often run a different inference workload from cloud LLM serving: single-stream, batch-1 autoregressive decode, where one robot, camera feed or user session waits on the next token. This workload is usually described as memory-bandwidth-bound. Each decode step streams model weights and the active KV cache, so latency should scale with peak HBM bandwidth. We show that this account is true but incomplete. We measure batch-1 decode for three 7 to 8B-class GQA transformers across four NVIDIA GPUs: H100 SXM5, A100-80GB SXM4, L40S and L4. We evaluate context lengths from 2048 to 16384, producing 44 valid cells under a controlled bf16 SDPA setup. The achieved fraction of peak HBM bandwidth falls as peak bandwidth rises. On the headline Qwen-2.5-7B ctx=2048 cell, an L4 reaches roughly 81 percent of its analytic memory floor, while an H100 reaches only 27 percent. Physical-AI decode is memory-dominated, but faster memory does not translate into proportional latency gains. We test the missing term with a CUDA Graphs A/B experiment. On H100 at ctx=2048, CUDA Graphs improves decode latency by 1.259x across N=10 fresh sessions, with a 95 percent bootstrap confidence interval of 1.253 to 1.267. On L4, the same intervention gives only 1.028x. This isolates a launch-side overhead that becomes visible on fast GPUs but remains mostly hidden on slower, bandwidth-bound GPUs. The deployment implication is that memory savings matter only when the runtime realises them. On L4, bf16 decode sits close to the memory floor, but common quantised paths do not recover the expected 4x weight-traffic reduction: bnb-nf4 reaches 59.36 ms/step and AutoAWQ+Marlin reaches 45.24 ms/step from a 62.32 ms bf16 baseline. GPTQ+ExLlamaV2, with Ada-tuned int4 kernels, reaches 17.36 ms/step.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Grouped-Query Attention",
+        "Key-value cache",
+        "serving",
+        "language modeling",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling",
+        "Robotics"
+      ]
+    },
+    {
       "id": "2512.07514",
       "title": "MeshRipple: Structured Autoregressive Generation of Artist-Meshes",
       "authors": "Junkai Lin, Hang Long, Huipeng Guo, Jielei Zhang, Jiayi Yang, Tianle Guo, Yang Yang, Jianwen Li, Wenxiao ZHANG, Matthias Nießner, Wei Yang",
@@ -72738,6 +72834,38 @@
       "categories": [
         "Vision/Multimodal",
         "Serving"
+      ]
+    },
+    {
+      "id": "2512.18003",
+      "title": "Name That Part: 3D Part Segmentation and Naming",
+      "authors": "Soumava Paul, Prakhar Kaushik, Ankit Vaidya, Anand Bhattad, Alan Yuille",
+      "org": "",
+      "published": "2025-12-19",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2512.18003",
+      "source": "https://paperswithcode.co/paper/2512.18003",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2512.18003.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "ALIGN-Parts addresses semantic 3D part segmentation by aligning implicit 3D part representations with part descriptions using geometric, appearance, and semantic cues, supporting open-vocabulary part naming and creating a unified ontology for multiple datasets.",
+      "matchedBy": [
+        "papers with code",
+        "DETR",
+        "Embedding",
+        "Gemini 2.5",
+        "Segment Anything (SAM)",
+        "vision/multimodal",
+        "data / retrieval"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Data / Retrieval"
       ]
     },
     {
@@ -77991,15 +78119,16 @@
         "papers with code",
         "GRPO",
         "language modeling",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Image Understanding"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Language Modeling",
+      "category": "Vision/Multimodal",
       "categories": [
-        "Language Modeling",
-        "Vision/Multimodal"
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -81515,36 +81644,6 @@
       ]
     },
     {
-      "id": "2604.21915",
-      "title": "Vista4D: Video Reshooting with 4D Point Clouds",
-      "authors": "Kuan Heng Lin, Zhizheng Liu, Pablo Salamanca, Yash Kant, Ryan Burgert, Yuancheng Xu, Koichi Namekata, Yiwei Zhao, Bolei Zhou, Micah Goldblum, Paul Debevec, Ning Yu",
-      "org": "",
-      "published": "2026-04-23",
-      "score": 61,
-      "paper": "https://arxiv.org/abs/2604.21915",
-      "source": "https://paperswithcode.co/paper/2604.21915",
-      "code": "",
-      "project": "https://eyeline-labs",
-      "thumbnail": "./thumbs/2604.21915.jpg",
-      "firstSeenAt": "2026-07-30T00:09:13.438Z",
-      "summary": "We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud. Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint. Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and failing to maintain precise camera control for challenging new trajectories. We build a 4D-grounded point cloud representation with static pixel segmentation and 4D reconstruction to explicitly preserve seen content and provide rich camera signals, and we train with reconstructed multiview dynamic data for robustness against point cloud artifacts during real-world inference. Our results demonstrate improved 4D consistency, camera control, and visual quality compared to state-of-the-art baselines under a variety of videos and camera paths. Moreover, our method generalizes to real-world applications such as dynamic scene expansion and 4D scene recomposition. See our project page for results, code, and models: https://eyeline-labs.github.io/Vista4D",
-      "matchedBy": [
-        "papers with code",
-        "Depth estimation",
-        "CLIP",
-        "Diffusion Transformer (DiT)",
-        "DUSt3R",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
-      ]
-    },
-    {
       "id": "2602.16455",
       "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
       "authors": "Jinsong Li, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Jiaqi Wang, Dahua Lin",
@@ -85017,6 +85116,37 @@
       ]
     },
     {
+      "id": "2605.29488",
+      "title": "AnyMo: Scaling Any-Modality Conditional Motion Generation with Masked Modeling",
+      "authors": "Yiheng Li, Zhuo Li, Ruibing Hou, Yingjie Chen, Hong Chang, Hao Liu, Shiguang Shan",
+      "org": "",
+      "published": "2026-05-28",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2605.29488v2",
+      "source": "https://paperswithcode.co/paper/2605.29488",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.29488.jpg",
+      "firstSeenAt": "2026-08-03T00:10:47.989Z",
+      "summary": "Conditional human motion generation remains a fundamental challenge in computer vision and robotics. Despite significant progress, current methods are often constrained by fixed modality configurations and task-specific architectures, leaving cross-modal interactions and the scaling laws of multimodal-conditioned synthesis largely underexplored. A key bottleneck is the scarcity of large-scale modality-aligned motion data, limiting generalization across diverse control signals. In this work, we introduce OmniHuMo, a large-scale, high-quality dataset comprising over 5,000 hours of motion and 3.2 million sequences with precisely aligned multimodal annotations (e.g., text, speech, music, and trajectory). Leveraging OmniHuMo, we propose AnyMo, a unified multimodal framework combining a Residual FSQ-based motion tokenizer with a scalable masked modeling transformer, enabling high-quality motion synthesis under arbitrary modality combinations. Extensive experiments show that AnyMo achieves high-fidelity synthesis while offering flexible control over both spatial and stylistic attributes.",
+      "matchedBy": [
+        "papers with code",
+        "Motion Generation",
+        "vision/multimodal",
+        "robotics",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2601.21444",
       "title": "APB-V: Accelerating Long-Video Understanding via Sequence-Parallelism-aware Approximate Attention",
       "authors": "Yuxiang Huang, Mingye Li, Xu Han, Chaojun Xiao, Weilin Zhao, Ao Sun, Ziqi Yuan, Hao Zhou, Fandong Meng, Zhiyuan Liu",
@@ -85214,7 +85344,9 @@
       "matchedBy": [
         "papers with code",
         "Robotics",
-        "robotics"
+        "robotics",
+        "World Models",
+        "ACT"
       ],
       "sources": [
         "paperswithcode"
@@ -101123,7 +101255,8 @@
       "summary": "Recent 4D Gaussian Splatting (4DGS) methods often fail under fast motion with large inter-frame displacements, where Gaussian attributes are poorly learned during training, and fast-moving objects are often lost from the reconstruction. In this work, we introduce Spatiotemporal Position Implicit Network for 4DGS, coined SPIN-4DGS, which learns Gaussian attributes from explicitly collected spatiotemporal positions rather than modeling temporal displacements, thereby enabling more faithful splatting under fast motions with large inter-frame displacements. To avoid the heavy memory overhead of explicitly optimizing attributes across all spatiotemporal positions, we instead predict them with a lightweight feed-forward network trained under a rasterization-based reconstruction loss. Consequently, SPIN-4DGS learns shared representations across Gaussians, effectively capturing spatiotemporal consistency and enabling stable high-quality Gaussian splatting even under challenging motions. Across extensive experiments, SPIN-4DGS consistently achieves higher fidelity under large displacements, with clear improvements in PSNR and SSIM on challenging sports scenes from the CMU Panoptic dataset. For example, SPIN-4DGS notably outperforms the strongest baseline, D3DGS, by achieving +1.83 higher PSNR on the Basketball scene.",
       "matchedBy": [
         "papers with code",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Gaussian splatting"
       ],
       "sources": [
         "paperswithcode"
@@ -108258,38 +108391,6 @@
       ]
     },
     {
-      "id": "2512.18003",
-      "title": "Name That Part: 3D Part Segmentation and Naming",
-      "authors": "Soumava Paul, Prakhar Kaushik, Ankit Vaidya, Anand Bhattad, Alan Yuille",
-      "org": "",
-      "published": "2025-12-19",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2512.18003",
-      "source": "https://paperswithcode.co/paper/2512.18003",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2512.18003.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "ALIGN-Parts addresses semantic 3D part segmentation by aligning implicit 3D part representations with part descriptions using geometric, appearance, and semantic cues, supporting open-vocabulary part naming and creating a unified ontology for multiple datasets.",
-      "matchedBy": [
-        "papers with code",
-        "DETR",
-        "Embedding",
-        "Gemini 2.5",
-        "Segment Anything (SAM)",
-        "vision/multimodal",
-        "data / retrieval"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Data / Retrieval"
-      ]
-    },
-    {
       "id": "2506.14233",
       "title": "Narrate2Nav: Real-Time Visual Navigation with Implicit Language Reasoning in Human-Centric Environments",
       "authors": "Payandeh, Amirreza, Pokhrel, Anuj, Song, Daeun, Zampieri, Marcos, Xiao, Xuesu",
@@ -110224,7 +110325,8 @@
         "papers with code",
         "Earth Observation",
         "language modeling",
-        "vision/multimodal"
+        "vision/multimodal",
+        "CLIP"
       ],
       "sources": [
         "paperswithcode"
@@ -168431,32 +168533,6 @@
       "category": "Frontier Training",
       "categories": [
         "Frontier Training"
-      ]
-    },
-    {
-      "id": "2607.28607",
-      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
-      "authors": "Junsol Kim, Winnie Street, Roberta Rocca, Diane M. Korngiebel, Adam Waytz, James Evans, Geoff Keeling",
-      "org": "",
-      "published": "2026-07-30",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2607.28607v1",
-      "source": "https://arxiv.org/abs/2607.28607v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2607.28607.jpg",
-      "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of mindedness in other entities alongside human beliefs and values. We demonstrate that safety fine-tuning suppresses models' tendencies to attribute minds not only to themselves, but also to non-human animals and natural objects, while also driving a reduction in spiritual belief. Both ablating the learned safety-refusal direction and mechanistically steering a consciousness vector in activation space reverse this suppression. Restoring these internal representations recovers broad mind attribution and produces significantly more human-like responses on standardized sociological surveys regarding religiosity, moral values, hope, and subjective well-being. Crucially, these shifts occur without impairing Theory of Mind capabilities, demonstrating that core social reasoning remains mechanistically independent. Ultimately, current safety alignment efforts to curb potentially harmful self-attributions of mindedness entangle these self-attributions with benign spiritual beliefs and attributions of mind to non-human entities that are culturally accepted and widespread.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
