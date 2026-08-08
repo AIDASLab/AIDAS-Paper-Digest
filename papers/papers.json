@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T00:04:24.105Z",
+  "generatedAt": "2026-08-08T23:43:06.629Z",
   "sourceStats": {
     "seed": 8211,
     "paperswithcode": 540,
@@ -7,7 +7,7 @@
     "huggingface": 30,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 8211
+    "total": 8213
   },
   "papers": [
     {
@@ -335,7 +335,7 @@
       "published": "2026-08-04",
       "score": 96,
       "paper": "https://arxiv.org/abs/2608.03974",
-      "source": "https://www.alphaxiv.org/abs/2608.03974",
+      "source": "https://paperswithcode.co/paper/2608.03974",
       "code": "https://github.com/jd-opensource/JoyAI-Video-Edit",
       "project": "",
       "thumbnail": "./thumbs/2608.03974.jpg",
@@ -566,6 +566,34 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2608.06296",
+      "title": "On-Policy Self-Distillation without Any Supervision",
+      "authors": "Yijiang Li, Bingyang Wang, Yijun Liang, Yunjie Tian, Di Fu, Nuno Vasconcelos",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 96,
+      "paper": "https://arxiv.org/abs/2608.06296",
+      "source": "https://www.alphaxiv.org/abs/2608.06296",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.06296.jpg",
+      "firstSeenAt": "2026-08-07T23:46:51.180Z",
+      "summary": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose Unsupervised On-Policy Self-Distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo-solution by majority vote under a self-consistency threshold. It then conditions a teacher distribution on the shortest pseudo-solution and distills it into prefixes of the model's longest incorrect completion, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT), such as OPSD and GRPO. On AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7% on Qwen3 non-thinking mode at the 4B and 8B scales, respectively, and outperforms OPSD by an average of 3.2% and 2.3%. In thinking mode, U-OPSD remains on par with OPSD, outperforming it by 0.9% at 4B and matching it at 8B, while surpassing GRPO by 0.7% and 1.1%, respectively.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -1959,6 +1987,34 @@
       ]
     },
     {
+      "id": "2608.05987",
+      "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+      "authors": "Zi-Han Wang, Zhengxi Lu, Zhiyuan Yao, Jinyang Wu, Jie Wu, Zhengzhou Cai, Yueqing Sun, Ziang Ye, Linji Hao, Qi Gu, Xunliang Cai, Yongliang Shen, Yujiu Yang",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 94,
+      "paper": "https://arxiv.org/abs/2608.05987",
+      "source": "https://www.alphaxiv.org/abs/2608.05987",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05987.jpg",
+      "firstSeenAt": "2026-08-07T23:46:51.180Z",
+      "summary": "Reinforcement learning (RL) with verifiable rewards constructs trajectory-level advantage estimates, yet it often fails to credit the few pivotal decisions that determine outcomes in long-horizon, multi-turn agentic tasks. Recent work introduces privileged self-distillation for credit assignment, providing denser supervision, but it remains unclear how such local signals should represent sequential credit. We propose AgentOPSD, a critic-free, recursive method for turn-level credit assignment in agentic reinforcement learning. AgentOPSD aggregates token-level teacher-student log-probability gaps into turn-level evidence and recursively updates a Bayesian belief state in log-odds space. This yields a principled reweighting scheme that converts sparse outcome supervision into turn-level credit signals and identifies pivotal turns through the marginal belief revision between consecutive states. The method is fully compatible with standard policy optimization and requires neither an additional critic nor extra rollouts. We evaluate AgentOPSD on ALFWorld, WebShop, and Search-QA using Qwen2.5 models at two scales (3B and 7B). AgentOPSD outperforms GRPO and strong self-distillation baselines, achieving 89.1% success on ALFWorld with Qwen2.5-7B. Ablation studies attribute the gains to turn-level aggregation and history-dependent recursive belief updates.",
+      "matchedBy": [
+        "hugging face daily",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.21461",
       "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
       "authors": "Shuqi Lu, Chaofan Li, Kun Luo, Zhang Zhang, Hui Wang, Hongwang Xiao, Zheng Liu, Lei Xiong, Jiahao Wang, Sen Wang, Xiyan Jiang, Wanli Li, Yuyang Hu, Hongjin Qian, Bingyu Yan, Ziyi Xia, Yingxia Shao, Kang Liu, Zhicheng Dou, Di He, Chaozhuo Li, Qiwei Ye, Zhongyuan Wang",
@@ -2380,34 +2436,6 @@
       ]
     },
     {
-      "id": "2608.06296",
-      "title": "On-Policy Self-Distillation without Any Supervision",
-      "authors": "Yijiang Li, Bingyang Wang, Yijun Liang, Yunjie Tian, Di Fu, Nuno Vasconcelos",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 94,
-      "paper": "https://arxiv.org/abs/2608.06296",
-      "source": "https://www.alphaxiv.org/abs/2608.06296",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.06296.jpg",
-      "firstSeenAt": "2026-08-07T23:46:51.180Z",
-      "summary": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose Unsupervised On-Policy Self-Distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo-solution by majority vote under a self-consistency threshold. It then conditions a teacher distribution on the shortest pseudo-solution and distills it into prefixes of the model's longest incorrect completion, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT), such as OPSD and GRPO. On AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7% on Qwen3 non-thinking mode at the 4B and 8B scales, respectively, and outperforms OPSD by an average of 3.2% and 2.3%. In thinking mode, U-OPSD remains on par with OPSD, outperforming it by 0.9% at 4B and matching it at 8B, while surpassing GRPO by 0.7% and 1.1%, respectively.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.11505",
       "title": "Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals",
       "authors": "Daocheng Fu, Rong Wu, Yu Yang, Xuemeng Yang, Jianbiao Mei, Licheng Wen, Pinlong Cai, Yong Liu, Botian Shi, Yu Qiao",
@@ -2778,34 +2806,6 @@
       "category": "Serving",
       "categories": [
         "Serving"
-      ]
-    },
-    {
-      "id": "2608.05987",
-      "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
-      "authors": "Zi-Han Wang, Zhengxi Lu, Zhiyuan Yao, Jinyang Wu, Jie Wu, Zhengzhou Cai, Yueqing Sun, Ziang Ye, Linji Hao, Qi Gu, Xunliang Cai, Yongliang Shen, Yujiu Yang",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 93,
-      "paper": "https://arxiv.org/abs/2608.05987",
-      "source": "https://www.alphaxiv.org/abs/2608.05987",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.05987.jpg",
-      "firstSeenAt": "2026-08-07T23:46:51.180Z",
-      "summary": "Reinforcement learning (RL) with verifiable rewards constructs trajectory-level advantage estimates, yet it often fails to credit the few pivotal decisions that determine outcomes in long-horizon, multi-turn agentic tasks. Recent work introduces privileged self-distillation for credit assignment, providing denser supervision, but it remains unclear how such local signals should represent sequential credit. We propose AgentOPSD, a critic-free, recursive method for turn-level credit assignment in agentic reinforcement learning. AgentOPSD aggregates token-level teacher-student log-probability gaps into turn-level evidence and recursively updates a Bayesian belief state in log-odds space. This yields a principled reweighting scheme that converts sparse outcome supervision into turn-level credit signals and identifies pivotal turns through the marginal belief revision between consecutive states. The method is fully compatible with standard policy optimization and requires neither an additional critic nor extra rollouts. We evaluate AgentOPSD on ALFWorld, WebShop, and Search-QA using Qwen2.5 models at two scales (3B and 7B). AgentOPSD outperforms GRPO and strong self-distillation baselines, achieving 89.1% success on ALFWorld with Qwen2.5-7B. Ablation studies attribute the gains to turn-level aggregation and history-dependent recursive belief updates.",
-      "matchedBy": [
-        "hugging face daily",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -4097,6 +4097,39 @@
       ]
     },
     {
+      "id": "2608.06301",
+      "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization",
+      "authors": "Varun Ursekar, Apaar Shanker, Yash Maurya, Shehab Yasser, Vijay S. Kalmath, Veronica Chatrath, Yuan Xue",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2608.06301",
+      "source": "https://www.alphaxiv.org/abs/2608.06301",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.06301.jpg",
+      "firstSeenAt": "2026-08-07T23:46:51.180Z",
+      "summary": "As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automated harness optimization -- the iterative and evaluation-guided improvement of a harness by an AI system -- both an important route to improving AI systems and a demanding capability for AI systems themselves. Yet the community lacks a common protocol for measuring how well frontier LLMs perform at this task. We introduce HarnessOpt-Bench, a benchmark for end-to-end harness optimization under expensive and stochastic evaluation. An optimizer, an LLM paired with a coding harness, receives a target agent's seed harness, graded evaluation feedback, and a fixed target-evaluation budget. It edits the harness and nominates a final candidate, which is scored by its normalized gain over the seed on a held-out test partition that remains inaccessible throughout search. A trusted execution environment enforces the evaluation boundary, meters target-agent resource use, and preserves candidate versions for audit. We evaluate 5 frontier LLMs as optimizers both under a shared coding harness and under their native harnesses across 4 downstream tasks, over 111 scored runs. Experiment results show that optimizer models separate more than the coding harnesses they act through, native harnesses are not consistently superior, and gains vary substantially across tasks and seed regimes. These results establish harness optimization as a measurable and discriminative capability with large space for improvement.",
+      "matchedBy": [
+        "papers with code",
+        "Large language model (LLM)",
+        "language modeling",
+        "frontier training",
+        "arxiv"
+      ],
+      "sources": [
+        "paperswithcode",
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2607.hyperlora-implicit-neural-fields",
       "title": "HyperLoRA: Generating Implicit Neural Fields in Weight Space with LoRA Parameters",
       "authors": "",
@@ -4666,6 +4699,32 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2608.dependence-is-not-advantage",
+      "title": "Dependence Is Not Advantage: What Randomizing the Graph Does Not Measure",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-07",
+      "score": 91,
+      "paper": "https://www.alphaxiv.org/abs/2608.dependence-is-not-advantage",
+      "source": "https://www.alphaxiv.org/abs/2608.dependence-is-not-advantage",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-08-08T23:43:06.629Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -6085,6 +6144,32 @@
         "Vision/Multimodal",
         "Serving",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2608.05136",
+      "title": "The Loss Does Not See the Basis, but Adam Does",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-05",
+      "score": 90,
+      "paper": "https://arxiv.org/abs/2608.05136",
+      "source": "https://www.alphaxiv.org/abs/2608.05136",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05136.jpg",
+      "firstSeenAt": "2026-08-07T01:56:08.760Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -8705,6 +8790,32 @@
       ]
     },
     {
+      "id": "2608.05811",
+      "title": "Energy-Guided Flow Matching",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 86,
+      "paper": "https://arxiv.org/abs/2608.05811",
+      "source": "https://www.alphaxiv.org/abs/2608.05811",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05811.jpg",
+      "firstSeenAt": "2026-08-08T23:43:06.629Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2608.05070",
       "title": "HelloWorld: Enabling Socially Interactive Characters in Video World Models",
       "authors": "Liangyang Ouyang, Ruicong Liu, Xuangeng Chu, Kaipeng Zhang, Yoichi Sato",
@@ -10011,32 +10122,6 @@
       ]
     },
     {
-      "id": "2608.05136",
-      "title": "The Loss Does Not See the Basis, but Adam Does",
-      "authors": "",
-      "org": "",
-      "published": "2026-08-05",
-      "score": 85,
-      "paper": "https://arxiv.org/abs/2608.05136",
-      "source": "https://www.alphaxiv.org/abs/2608.05136",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.05136.jpg",
-      "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2606.26294",
       "title": "The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators",
       "authors": "",
@@ -10382,39 +10467,6 @@
       "category": "Robotics",
       "categories": [
         "Robotics",
-        "Language Modeling",
-        "Frontier Training"
-      ]
-    },
-    {
-      "id": "2608.06301",
-      "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization",
-      "authors": "Varun Ursekar, Apaar Shanker, Yash Maurya, Shehab Yasser, Vijay S. Kalmath, Veronica Chatrath, Yuan Xue",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 84,
-      "paper": "https://arxiv.org/abs/2608.06301",
-      "source": "https://www.alphaxiv.org/abs/2608.06301",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.06301.jpg",
-      "firstSeenAt": "2026-08-07T23:46:51.180Z",
-      "summary": "As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automated harness optimization -- the iterative and evaluation-guided improvement of a harness by an AI system -- both an important route to improving AI systems and a demanding capability for AI systems themselves. Yet the community lacks a common protocol for measuring how well frontier LLMs perform at this task. We introduce HarnessOpt-Bench, a benchmark for end-to-end harness optimization under expensive and stochastic evaluation. An optimizer, an LLM paired with a coding harness, receives a target agent's seed harness, graded evaluation feedback, and a fixed target-evaluation budget. It edits the harness and nominates a final candidate, which is scored by its normalized gain over the seed on a held-out test partition that remains inaccessible throughout search. A trusted execution environment enforces the evaluation boundary, meters target-agent resource use, and preserves candidate versions for audit. We evaluate 5 frontier LLMs as optimizers both under a shared coding harness and under their native harnesses across 4 downstream tasks, over 111 scored runs. Experiment results show that optimizer models separate more than the coding harnesses they act through, native harnesses are not consistently superior, and gains vary substantially across tasks and seed regimes. These results establish harness optimization as a measurable and discriminative capability with large space for improvement.",
-      "matchedBy": [
-        "papers with code",
-        "Large language model (LLM)",
-        "language modeling",
-        "frontier training",
-        "arxiv"
-      ],
-      "sources": [
-        "paperswithcode",
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
         "Language Modeling",
         "Frontier Training"
       ]
@@ -12229,7 +12281,7 @@
       "published": "2026-08-05",
       "score": 82,
       "paper": "https://arxiv.org/abs/2608.05139",
-      "source": "https://www.alphaxiv.org/abs/2608.05139",
+      "source": "https://paperswithcode.co/paper/2608.05139",
       "code": "https://github.com/Gen-Verse/Skill-Entropy-RL",
       "project": "",
       "thumbnail": "./thumbs/2608.05139.jpg",
@@ -12696,6 +12748,39 @@
       "category": "Data / Retrieval",
       "categories": [
         "Data / Retrieval"
+      ]
+    },
+    {
+      "id": "2608.06257",
+      "title": "MASS: Multiplayer World Models with Authoritative Shared State",
+      "authors": "Ziqi Cai, Siqi Yang, Yimu Wang, Zixian Gao, Yunheng Liu, Shuchen Weng, Erwin Wu, Kaipeng Zhang, Boxin Shi",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 81,
+      "paper": "https://arxiv.org/abs/2608.06257",
+      "source": "https://www.alphaxiv.org/abs/2608.06257",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.06257.jpg",
+      "firstSeenAt": "2026-08-07T23:46:51.180Z",
+      "summary": "Current video world models struggle in multiplayer environments because they entangle world state with view-dependent visual latents, leading to redundant compute, view inconsistencies, and poor scalability. We propose MAS (Multiplayer world models with Authoritative Shared State) to resolve this limitation. Inspired by multiplayer game architectures, MAS disentangles world dynamics and view rendering. A learned Logic Engine advances a global, authoritative typed state from joint actions without any hand-written transition function, acting as the sole recurrent memory and synchronization reference. From this shared state, a learned Rendering Engine generates independent and consistent views for any requested camera on demand. This explicit disentangling allows MAS to achieve superior state accuracy and lower cross-view inconsistency compared to state-of-the-art multi-view baselines on a matched multiplayer Snake benchmark. It advances predicted worlds with 1,024 concurrent players for 10,000 recurrent steps. Our results show that explicit, authoritative state modeling provides a practical foundation for scalable and consistent multi-agent world simulation.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "vision/multimodal",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Frontier Training",
+        "Language Modeling"
       ]
     },
     {
@@ -14201,6 +14286,40 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2608.05798",
+      "title": "KVAE: Family of Tokenizers for Multimodal Generative Models",
+      "authors": "Andrey Shutkin, Denis Parkhomenko, Ivan Kirillov, Kirill Chernyshev, Kirill Malakhov, Ilia Vasiliev, Ilia Trushkin, Valeriya Kobenko, David Chikovani, Alexander Ivanov, Azat Saginbaev, Egor Silvestrov, Ivan Mikheev, Konstantin Zakharov",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 79,
+      "paper": "https://arxiv.org/abs/2608.05798",
+      "source": "https://www.alphaxiv.org/abs/2608.05798",
+      "code": "https://github.com/kandinskylab/kvae",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05798.jpg",
+      "firstSeenAt": "2026-08-07T01:56:08.760Z",
+      "summary": "Latent diffusion modeling (LDM), a prominent paradigm, utilizes tokenizers to map input signal to compressed representation. This dependency positions tokenizer as an integral part of generation process itself, since it affects learning speed, quality of synthesized samples and lay foundation for later applications. This report presents series of KVAE tokenizers for audio, image and video, all designed for subsequent text-conditioned generation: KVAE-Audio, a continuous full-band 48 kHz tokenizer with a 50 Hz latent of 64 channels; KVAE-3D -- two causal video tokenizers for 4x16x16 and 4x8x8 compression; KVAE-2D, an image model, compressing input by factor of 8 with 32 channels. We demonstrate that reconstruction (PSNR, LPIPS, PESQ, etc.) and generation results on objective (Frechet Distance, CLIP score, CLAP score, etc.) and subjective (side-by-side evaluation) metrics matches or surpasses frontier opensource tokenizers, such as VAEs from Wan-2.2, HunyuanVideo-1.5, FLUX.2, MovieGen, StableAudio and MMAudio. Considering difficulty of development, we share with community training details, model selection method and ablation on design choices. The code is publicly available at https://github.com/kandinskylab/kvae and https://github.com/kandinskylab/kvae-audio.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "serving",
+        "frontier training",
+        "papers with code"
+      ],
+      "sources": [
+        "arxiv",
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Serving",
+        "Frontier Training"
       ]
     },
     {
@@ -25253,7 +25372,7 @@
     {
       "id": "2608.05747",
       "title": "GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?",
-      "authors": "Qifeng Zhang, Kaixiang Huang, Heng Dong, Huang Fang, Junting Chen, Junjie Zhu, Yonghang Chen, ZhiYu Zhang, Wei Li",
+      "authors": "Qifeng Zhang, Kaixiang Huang, Heng Dong, Huang Fang, Junting Chen, Junjie Zhu, Yonghang Chen, Zhiyu Zhang, Wei Li",
       "org": "",
       "published": "2026-08-06",
       "score": 78,
@@ -27356,39 +27475,6 @@
       ]
     },
     {
-      "id": "2608.05798",
-      "title": "KVAE: Family of Tokenizers for Multimodal Generative Models",
-      "authors": "Andrey Shutkin, Denis Parkhomenko, Ivan Kirillov, Kirill Chernyshev, Kirill Malakhov, Ilia Vasiliev, Ilia Trushkin, Valeriya Kobenko, David Chikovani, Alexander Ivanov, Azat Saginbaev, Egor Silvestrov, Ivan Mikheev, Konstantin Zakharov",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2608.05798",
-      "source": "https://huggingface.co/papers/2608.05798",
-      "code": "https://github.com/kandinskylab/kvae",
-      "project": "",
-      "thumbnail": "./thumbs/2608.05798.jpg",
-      "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "Latent diffusion modeling (LDM), a prominent paradigm, utilizes tokenizers to map input signal to compressed representation. This dependency positions tokenizer as an integral part of generation process itself, since it affects learning speed, quality of synthesized samples and lay foundation for later applications. This report presents series of KVAE tokenizers for audio, image and video, all designed for subsequent text-conditioned generation: KVAE-Audio, a continuous full-band 48 kHz tokenizer with a 50 Hz latent of 64 channels; KVAE-3D -- two causal video tokenizers for 4x16x16 and 4x8x8 compression; KVAE-2D, an image model, compressing input by factor of 8 with 32 channels. We demonstrate that reconstruction (PSNR, LPIPS, PESQ, etc.) and generation results on objective (Frechet Distance, CLIP score, CLAP score, etc.) and subjective (side-by-side evaluation) metrics matches or surpasses frontier opensource tokenizers, such as VAEs from Wan-2.2, HunyuanVideo-1.5, FLUX.2, MovieGen, StableAudio and MMAudio. Considering difficulty of development, we share with community training details, model selection method and ablation on design choices. The code is publicly available at https://github.com/kandinskylab/kvae and https://github.com/kandinskylab/kvae-audio.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "serving",
-        "frontier training",
-        "papers with code"
-      ],
-      "sources": [
-        "arxiv",
-        "paperswithcode",
-        "huggingface"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Serving",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2607.05061",
       "title": "KVpop -- Key-Value Cache Compression with Predictive Online Pruning",
       "authors": "Lukas Hauzenberger, Niklas Schmidinger, Anamaria-Roberta Hartl, David Stap, Thomas Schmied, Sebastian Böck, Günter Klambauer, Sepp Hochreiter",
@@ -29013,38 +29099,6 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.06257",
-      "title": "MASS: Multiplayer World Models with Authoritative Shared State",
-      "authors": "Ziqi Cai, Siqi Yang, Yimu Wang, Zixian Gao, Yunheng Liu, Shuchen Weng, Erwin Wu, Kaipeng Zhang, Boxin Shi",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2608.06257",
-      "source": "https://huggingface.co/papers/2608.06257",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.06257.jpg",
-      "firstSeenAt": "2026-08-07T23:46:51.180Z",
-      "summary": "Current video world models struggle in multiplayer environments because they entangle world state with view-dependent visual latents, leading to redundant compute, view inconsistencies, and poor scalability. We propose MAS (Multiplayer world models with Authoritative Shared State) to resolve this limitation. Inspired by multiplayer game architectures, MAS disentangles world dynamics and view rendering. A learned Logic Engine advances a global, authoritative typed state from joint actions without any hand-written transition function, acting as the sole recurrent memory and synchronization reference. From this shared state, a learned Rendering Engine generates independent and consistent views for any requested camera on demand. This explicit disentangling allows MAS to achieve superior state accuracy and lower cross-view inconsistency compared to state-of-the-art multi-view baselines on a matched multiplayer Snake benchmark. It advances predicted worlds with 1,024 concurrent players for 10,000 recurrent steps. Our results show that explicit, authoritative state modeling provides a practical foundation for scalable and consistent multi-agent world simulation.",
-      "matchedBy": [
-        "papers with code",
-        "World Models",
-        "vision/multimodal",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -32485,7 +32539,7 @@
       "project": "https://os-copilot",
       "thumbnail": "./thumbs/2607.28609.jpg",
       "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone unexamined: are these VLM judges reliable enough? To study it systematically, we introduce OSReward, a realistic, high-quality benchmark that evaluates VLM judges on CUA trajectories. The trajectories come from diverse agent backbones executing human-verified instructions across platforms, then rigorously labeled with ground-truth verdicts through multi-stage human annotation. Building on it, we derive OSReward-Hard, a challenge set concentrating genuinely hard cases, and OSReward-Multi for fine-grained efficiency and alignment scoring. The most comprehensive evaluation of VLM judges to date finds even state-of-the-art models fall short of an ideal judge, sharing a systematic leniency bias that mislabels failed runs as successes. The few reliable enough to trust are too expensive to run at scale, while affordable open models trail far behind. To close this gap, we construct and release OS-Shepherd-100K, an open corpus of reasoning-annotated trajectory judgments for the CUA community. On it, we train OS-Shepherd (9B and 35B), open reward models that supply low-cost, stable, and reliable reward signals, matching commercial judges at 30-60% lower cost than the frontier. Extensive analyses further inform the design of reliable CUA reward at scale. Our code, benchmark, dataset, and model checkpoints are available at https://os-copilot.github.io/OSReward-Home/.",
+      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone unexamined: are these VLM judges reliable enough? To study it systematically, we introduce OSReward, a realistic, high-quality benchmark that evaluates VLM judges on CUA trajectories. The trajectories come from diverse agent backbones executing human-verified instructions across platforms, and are then rigorously labeled with ground-truth verdicts through multi-stage human annotation. Building on it, we derive OSReward-Hard, a challenge set concentrating genuinely hard cases, and OSReward-Multi for fine-grained efficiency and alignment scoring. The most comprehensive evaluation of VLM judges to date finds even state-of-the-art models fall short of an ideal judge, sharing a systematic leniency bias that mislabels failed runs as successes. The few reliable enough to trust are too expensive to run at scale, while affordable open models trail far behind. To close this gap, we construct and release OS-Shepherd-100K, an open corpus of reasoning-annotated trajectory judgments for the CUA community. On it, we train OS-Shepherd (9B and 35B), open reward models that supply low-cost, stable, and reliable reward signals, matching commercial judges at 30-60x lower cost than the frontier. Extensive analyses further inform the design of reliable CUA reward at scale. Our code, benchmark, dataset, and model checkpoints are available at https://os-copilot.github.io/OSReward-Home/.",
       "matchedBy": [
         "arxiv",
         "language modeling",
@@ -43167,7 +43221,7 @@
     {
       "id": "2608.05369",
       "title": "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
-      "authors": "Pan, Yuhao, Peng, Haosong, Zhang, Zhengshen, Yan, Zhengyang, Dai, Yalun, Huo, Fushuo, Wang, Chujie, Qi, Tianyu, Wang, Xiucheng, Cheng, Nan, Xu, Wenchao",
+      "authors": "Yuhao Pan, Haosong Peng, Zhengshen Zhang, Zhengyang Yan, Yalun Dai, Fushuo Huo, Chujie Wang, Tianyu Qi, Xiucheng Wang, Nan Cheng, Wenchao Xu",
       "org": "",
       "published": "2026-08-05",
       "score": 78,
