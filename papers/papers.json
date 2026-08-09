@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-09T00:00:13.162Z",
+  "generatedAt": "2026-08-09T23:45:06.403Z",
   "sourceStats": {
     "seed": 8213,
     "paperswithcode": 540,
-    "arxiv": 175,
+    "arxiv": 0,
     "huggingface": 30,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 8213
+    "total": 8217
   },
   "papers": [
     {
@@ -1165,6 +1165,32 @@
         "Robotics",
         "Vision/Multimodal",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2608.05811",
+      "title": "Energy-Guided Flow Matching",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 95,
+      "paper": "https://arxiv.org/abs/2608.05811",
+      "source": "https://www.alphaxiv.org/abs/2608.05811",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05811.jpg",
+      "firstSeenAt": "2026-08-08T23:43:06.629Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -2809,6 +2835,36 @@
       ]
     },
     {
+      "id": "2608.05144",
+      "title": "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
+      "authors": "Boxiu Li, Zimo Wen, Yijia Fan, Junxiang Lei, Sufeng Guo, Jiaao Wu, Ruize Tang, Mukai Li, Yifei Shen, Xiaoyu Chen, Wanbo Zhang, Runjing Gu, Yifei Gao, Yuheng Wu, Xuyao Huang, Zelong Zhao, Jiachen Zhang, Shibo Hu, Hangxi Guo, Yilin Chen, Yuzhe Zhang, Fan Yang, Chuan Wen, Xian Zhang, Xuanhe Zhou, Zhijie Deng",
+      "org": "",
+      "published": "2026-08-05",
+      "score": 93,
+      "paper": "https://arxiv.org/abs/2608.05144",
+      "source": "https://www.alphaxiv.org/abs/2608.05144",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05144.jpg",
+      "firstSeenAt": "2026-08-07T01:56:08.760Z",
+      "summary": "Long-horizon reasoning requires an agentic runtime that can persist when evidence supports its current approach and pivot when measurements reveal failure, hidden constraints, or a misspecified objective. We present Argus, a persistent, self-evolving runtime in which Manager, Planner, Engineer, and Reviewer execute bounded missions over durable project state. Argus separates stable user intent from operational objectives, constraints, and verification criteria, and admits memories, skills, procedures, verifiers, routing decisions, and rejected routes only after role-owned review and, when available, task-native verification. Model weights remain fixed; self-evolution occurs through persistent runtime state and control policy, with autonomous execution between operator-owned escalation points. Across seven GPT-5.5 benchmark arenas, Argus achieves about 78% on SWE-Bench Pro versus 59% for Direct Copilot while using 1.41 times the aggregate tokens. After verification-gated self-evolution, mature SWE-Bench waves use 21% fewer solve-input tokens and 15% less active workflow time per task than startup waves, while recording 34 verifier recoveries and 22 strict review-loop rescues. Argus also reaches 76.8% on AARRI-Bench and a 28.0-point gap on mathematical data synthesis, with competitive GPU-kernel and language-model-training results. Beyond benchmarks, an optimized RWKV6 kernel was merged upstream; a multi-day mathematics campaign retained falsified routes and proof-backed frontier updates; and six paper pipelines completed 254 missions with 16 stage rollbacks. These results show that a fixed-weight, self-evolving harness can revise, recover, and accumulate verified approaches while producing structured trajectories for future supervised and reinforcement learning.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "frontier training",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2607.01224",
       "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
       "authors": "Shengguang Wu, Hao Zhu, Yuhui Zhang, Xiaohan Wang, Serena Yeung-Levy",
@@ -3280,10 +3336,10 @@
       "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
       "authors": "Aniri, Jinhe Bi, Peng Liao, Zengjie Jin, Volker Tresp, Fei Shen, Yunpu Ma, Tat-Seng Chua",
       "org": "",
-      "published": "2026-08-06",
+      "published": "2026-08-05",
       "score": 93,
       "paper": "https://arxiv.org/abs/2608.05131",
-      "source": "https://www.alphaxiv.org/abs/2608.05131",
+      "source": "https://paperswithcode.co/paper/2608.05131",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.05131.jpg",
@@ -4409,6 +4465,32 @@
       ]
     },
     {
+      "id": "2608.05136",
+      "title": "The Loss Does Not See the Basis, but Adam Does",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-05",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2608.05136",
+      "source": "https://www.alphaxiv.org/abs/2608.05136",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05136.jpg",
+      "firstSeenAt": "2026-08-07T01:56:08.760Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.08393",
       "title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning",
       "authors": "Lu Dai, Ziyang Rao, Yili Wang, Hanqing Wang, Hao Liu, Hui Xiong",
@@ -5322,6 +5404,32 @@
       ]
     },
     {
+      "id": "2608.chebyshev-trace-riemann-hypothesis",
+      "title": "A Chebyshev Trace Criterion for the Riemann Hypothesis",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-08",
+      "score": 90,
+      "paper": "https://www.alphaxiv.org/abs/2608.chebyshev-trace-riemann-hypothesis",
+      "source": "https://www.alphaxiv.org/abs/2608.chebyshev-trace-riemann-hypothesis",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-08-09T23:45:06.403Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.23079",
       "title": "AdaReP:Adaptive Re-Planning under Model Mismatch for Neural World-Model Predictive Control",
       "authors": "Yutian Cheng, Xiaojian Ma, Xianhao Wang, Min Yang, Rongpeng Su, Hangxin Liu, Xi Chen, Shuai Li, Qing Li",
@@ -5382,36 +5490,6 @@
         "Frontier Training",
         "Robotics",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2608.05144",
-      "title": "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
-      "authors": "Boxiu Li, Zimo Wen, Yijia Fan, Junxiang Lei, Sufeng Guo, Jiaao Wu, Ruize Tang, Mukai Li, Yifei Shen, Xiaoyu Chen, Wanbo Zhang, Runjing Gu, Yifei Gao, Yuheng Wu, Xuyao Huang, Zelong Zhao, Jiachen Zhang, Shibo Hu, Hangxi Guo, Yilin Chen, Yuzhe Zhang, Fan Yang, Chuan Wen, Xian Zhang, Xuanhe Zhou, Zhijie Deng",
-      "org": "",
-      "published": "2026-08-05",
-      "score": 90,
-      "paper": "https://arxiv.org/abs/2608.05144",
-      "source": "https://www.alphaxiv.org/abs/2608.05144",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.05144.jpg",
-      "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "Long-horizon reasoning requires an agentic runtime that can persist when evidence supports its current approach and pivot when measurements reveal failure, hidden constraints, or a misspecified objective. We present Argus, a persistent, self-evolving runtime in which Manager, Planner, Engineer, and Reviewer execute bounded missions over durable project state. Argus separates stable user intent from operational objectives, constraints, and verification criteria, and admits memories, skills, procedures, verifiers, routing decisions, and rejected routes only after role-owned review and, when available, task-native verification. Model weights remain fixed; self-evolution occurs through persistent runtime state and control policy, with autonomous execution between operator-owned escalation points. Across seven GPT-5.5 benchmark arenas, Argus achieves about 78% on SWE-Bench Pro versus 59% for Direct Copilot while using 1.41 times the aggregate tokens. After verification-gated self-evolution, mature SWE-Bench waves use 21% fewer solve-input tokens and 15% less active workflow time per task than startup waves, while recording 34 verifier recoveries and 22 strict review-loop rescues. Argus also reaches 76.8% on AARRI-Bench and a 28.0-point gap on mathematical data synthesis, with competitive GPU-kernel and language-model-training results. Beyond benchmarks, an optimized RWKV6 kernel was merged upstream; a multi-day mathematics campaign retained falsified routes and proof-backed frontier updates; and six paper pipelines completed 254 missions with 16 stage rollbacks. These results show that a fixed-weight, self-evolving harness can revise, recover, and accumulate verified approaches while producing structured trajectories for future supervised and reinforcement learning.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "frontier training",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -6144,32 +6222,6 @@
         "Vision/Multimodal",
         "Serving",
         "Frontier Training"
-      ]
-    },
-    {
-      "id": "2608.05136",
-      "title": "The Loss Does Not See the Basis, but Adam Does",
-      "authors": "",
-      "org": "",
-      "published": "2026-08-05",
-      "score": 90,
-      "paper": "https://arxiv.org/abs/2608.05136",
-      "source": "https://www.alphaxiv.org/abs/2608.05136",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.05136.jpg",
-      "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -8776,32 +8828,6 @@
       "project": "",
       "thumbnail": "./thumbs/2607.05378.jpg",
       "firstSeenAt": "2026-07-08T00:10:49.528Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.05811",
-      "title": "Energy-Guided Flow Matching",
-      "authors": "",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 86,
-      "paper": "https://arxiv.org/abs/2608.05811",
-      "source": "https://www.alphaxiv.org/abs/2608.05811",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.05811.jpg",
-      "firstSeenAt": "2026-08-08T23:43:06.629Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -11442,6 +11468,34 @@
       ]
     },
     {
+      "id": "2608.06370",
+      "title": "The Bitter Lesson of Tool Calling",
+      "authors": "Ishan Patel, Sahil Sen, Elias Lumer, Vamse Kumar Subbiah",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 83,
+      "paper": "https://arxiv.org/abs/2608.06370",
+      "source": "https://www.alphaxiv.org/abs/2608.06370",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.06370.jpg",
+      "firstSeenAt": "2026-08-07T23:46:51.180Z",
+      "summary": "Tool use transforms LLMs into agents that act beyond their training data, and for code-capable models, programmatic tool calling extends this further by replacing rigid JSON calls with scripts that chain and parallelize naturally. However, a systematic evaluation of tools as code on an established benchmark across current and prior model generations under real-world task conditions has not been conducted. In this work, we empirically compare programmatic tool calling (PTC) to native JSON tool calling across 14 language models on BFCL v4. In the programmatic tool calling paradigm, tools are exposed as typed Python stubs that the model invokes through code, with execution and results handled in a single agent turn. Programmatic tool calling matches or exceeds native JSON tool calling in 11 of 14 models on BFCL v4, with the GPT-5.6 family achieving a 10.6% improvement over the JSON tool calling baseline. Further, it matches or outperforms baseline in 13 of 14 models under parallel fan-out, and holds stable under context rot conditions where baseline degrades 2.3% on average. Our results demonstrate that programmatic tool calling is a viable and robust alternative to JSON tool calling, with performance tracking model capability across release generations.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.12800",
       "title": "UniVR: Thinking in Visual Space for Unified Visual Reasoning",
       "authors": "Zhongwei Ren, Yunchao Wei, Yao Zhao, Weibo Gong, Xiao Liu, Anran Wang, Xiangtai Li, Xiaojie Jin",
@@ -11855,6 +11909,38 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.05747",
+      "title": "GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?",
+      "authors": "Qifeng Zhang, Kaixiang Huang, Heng Dong, Huang Fang, Junting Chen, Junjie Zhu, Yonghang Chen, ZhiYu Zhang, Wei Li",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 82,
+      "paper": "https://arxiv.org/abs/2608.05747",
+      "source": "https://www.alphaxiv.org/abs/2608.05747",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05747.jpg",
+      "firstSeenAt": "2026-08-07T23:46:51.180Z",
+      "summary": "Spatial intelligence is fundamental to embodied agents, yet existing benchmarks focus on local spatial perception from single or few viewpoints, overlooking global spatial awareness over continuous, long-horizon visual streams. To address this limitation, we introduce the Global-Spatial-Temporal Benchmark (GST-Bench), a VQA benchmark for global spatial intelligence in video understanding, comprising human-verified questions derived from 6,790 minutes of synthetically generated video. It requires models to perform accurate spatial inference from novel viewpoints unseen in the input video and to map egocentric observations onto global top-down images. A comprehensive evaluation of 22 state-of-the-art VLMs exposes a striking gap between models and humans: the strongest zero-shot model attains only 42.68, far below the human score of 79.08. To probe the cause of this gap, we construct GST-Bench-Local and find that models, despite strong local spatial understanding under the same task formulation, still fail to consolidate long-horizon observations into a globally consistent scene representation. We further provide GST-Train, a dataset for global spatial reasoning, as a complementary resource to facilitate future research on this challenge.",
+      "matchedBy": [
+        "papers with code",
+        "Image Understanding",
+        "Video Understanding",
+        "vision/multimodal",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -12451,6 +12537,36 @@
       "categories": [
         "Robotics",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2608.06216",
+      "title": "Continual Learning in Transition",
+      "authors": "Zhiyan Hou, Dan Zhang, Tao Feng, Liyuan Wang, Wei Li, Xiangzhao Hao, Hongyan An, Junfeng Fang, Haokai Ma, Zhaohui Xu, Haiyun Guo, Jinqiao Wang, Tat-Seng Chua",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 81,
+      "paper": "https://arxiv.org/abs/2608.06216",
+      "source": "https://www.alphaxiv.org/abs/2608.06216",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.06216.jpg",
+      "firstSeenAt": "2026-08-07T01:56:08.760Z",
+      "summary": "Classical continual learning (CL) has primarily focused on enabling models to update and retain knowledge through parameter-centric mechanisms, e.g., training strategies, architectural designs, and weight adaptation. However, emerging paradigms are reshaping the scope of CL beyond this traditional model adaptation view. For instance, on-policy learning broadens the space of update mechanisms; test-time training extends CL from the training phase to inference; and external harness components such as memory, skill libraries, and interaction protocols extend the evolutionary boundaries of model capabilities far beyond the static parameter space. Collectively, these developments indicate a transition from parameter-centric learning toward system-level adaptation. To characterize this transition, we examine the evolution of continual learning through three dimensions: When, How, and Where learning occurs. The How dimension encompasses off-policy, on-policy, and beyond-gradient optimization mechanics. The When dimension captures evolution across pre-training, post-training, and inference-time stages. The Where dimension delineates updates occurring within internal parameters versus external structural constraints. Anchored by this tri-axial framework, we systematically survey representative methods, trace the ongoing transition of continual learning, and discuss the key challenges, broader implications, and future directions arising from this paradigm shift.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -14296,7 +14412,7 @@
       "published": "2026-08-06",
       "score": 79,
       "paper": "https://arxiv.org/abs/2608.05798",
-      "source": "https://www.alphaxiv.org/abs/2608.05798",
+      "source": "https://huggingface.co/papers/2608.05798",
       "code": "https://github.com/kandinskylab/kvae",
       "project": "",
       "thumbnail": "./thumbs/2608.05798.jpg",
@@ -14880,6 +14996,32 @@
       "category": "Benchmark",
       "categories": [
         "Benchmark"
+      ]
+    },
+    {
+      "id": "2608.boundary-layer-calculus-chebyshev-prime-filters",
+      "title": "A Boundary-Layer Calculus for Chebyshev Prime Filters",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-09",
+      "score": 78,
+      "paper": "https://www.alphaxiv.org/abs/2608.boundary-layer-calculus-chebyshev-prime-filters",
+      "source": "https://www.alphaxiv.org/abs/2608.boundary-layer-calculus-chebyshev-prime-filters",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-08-09T23:45:06.403Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -20116,34 +20258,6 @@
       ]
     },
     {
-      "id": "2608.06216",
-      "title": "Continual Learning in Transition",
-      "authors": "Zhiyan Hou, Dan Zhang, Tao Feng, Liyuan Wang, Wei Li, Xiangzhao Hao, Hongyan An, Junfeng Fang, Haokai Ma, Zhaohui Xu, Haiyun Guo, Jinqiao Wang, Tat-Seng Chua",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2608.06216",
-      "source": "https://huggingface.co/papers/2608.06216",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.06216.jpg",
-      "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "Classical continual learning (CL) has primarily focused on enabling models to update and retain knowledge through parameter-centric mechanisms, e.g., training strategies, architectural designs, and weight adaptation. However, emerging paradigms are reshaping the scope of CL beyond this traditional model adaptation view. For instance, on-policy learning broadens the space of update mechanisms; test-time training extends CL from the training phase to inference; and external harness components such as memory, skill libraries, and interaction protocols extend the evolutionary boundaries of model capabilities far beyond the static parameter space. Collectively, these developments indicate a transition from parameter-centric learning toward system-level adaptation. To characterize this transition, we examine the evolution of continual learning through three dimensions: When, How, and Where learning occurs. The How dimension encompasses off-policy, on-policy, and beyond-gradient optimization mechanics. The When dimension captures evolution across pre-training, post-training, and inference-time stages. The Where dimension delineates updates occurring within internal parameters versus external structural constraints. Anchored by this tri-axial framework, we systematically survey representative methods, trace the ongoing transition of continual learning, and discuss the key challenges, broader implications, and future directions arising from this paradigm shift.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "hugging face daily"
-      ],
-      "sources": [
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2608.03874",
       "title": "ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?",
       "authors": "Tianyi Guan, Yiding Wang, Haotong Yang, Siyuan Cao, Shirui Liu, Yi Hu, Jiaqi Li, Muhan Zhang",
@@ -21996,8 +22110,8 @@
       "org": "",
       "published": "2026-08-04",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2608.03207v1",
-      "source": "https://arxiv.org/abs/2608.03207v1",
+      "paper": "https://arxiv.org/abs/2608.03207",
+      "source": "https://paperswithcode.co/paper/2608.03207",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.03207.jpg",
@@ -22672,7 +22786,7 @@
     {
       "id": "2608.06197",
       "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
-      "authors": "Zishan Xu, Zhiyuan Yao, Yuxin Chen, Yifu Guo, Zhengxi Lu, Yuquan Lu, Jinyang Huang, Yan Xu, Yasheng Wang, Weinan Zhang, Xingshan Zeng, Weiwen Liu",
+      "authors": "Zishan Xu, Zhiyuan Yao, Yuxin Chen, Yifu Guo, Zhengxi Lu, YUQUAN LU, JinYang Huang, Yan Xu, Yasheng Wang, Weinan Zhang, Xingshan Zeng, Weiwen Liu",
       "org": "",
       "published": "2026-08-06",
       "score": 78,
@@ -24083,7 +24197,7 @@
     {
       "id": "2608.06020",
       "title": "From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models",
-      "authors": "Jiale Han, Xiang Li, Jing Qian, Wenyuan Gu, Pin Gao, Ye Luo, Hongyuan Zha, Dacheng Tao, Benyou Wang, Lin William Cong",
+      "authors": "Jiale Han, Xiang Li, Jing Qian, Wenyuan Gu, Pin Gao, Ye Luo, Hongyuan Zha, DaCheng Tao, Benyou Wang, Lin William Cong",
       "org": "",
       "published": "2026-08-06",
       "score": 78,
@@ -24431,7 +24545,8 @@
         "papers with code",
         "vision/multimodal",
         "robotics",
-        "hugging face daily"
+        "hugging face daily",
+        "CLIP"
       ],
       "sources": [
         "paperswithcode",
@@ -24515,7 +24630,8 @@
         "papers with code",
         "Healthcare",
         "language modeling",
-        "hugging face daily"
+        "hugging face daily",
+        "Few-shot prompting"
       ],
       "sources": [
         "paperswithcode",
@@ -25366,37 +25482,6 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.05747",
-      "title": "GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?",
-      "authors": "Qifeng Zhang, Kaixiang Huang, Heng Dong, Huang Fang, Junting Chen, Junjie Zhu, Yonghang Chen, Zhiyu Zhang, Wei Li",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2608.05747",
-      "source": "https://huggingface.co/papers/2608.05747",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.05747.jpg",
-      "firstSeenAt": "2026-08-07T23:46:51.180Z",
-      "summary": "Spatial intelligence is fundamental to embodied agents, yet existing benchmarks focus on local spatial perception from single or few viewpoints, overlooking global spatial awareness over continuous, long-horizon visual streams. To address this limitation, we introduce the Global-Spatial-Temporal Benchmark (GST-Bench), a VQA benchmark for global spatial intelligence in video understanding, comprising human-verified questions derived from 6,790 minutes of synthetically generated video. It requires models to perform accurate spatial inference from novel viewpoints unseen in the input video and to map egocentric observations onto global top-down images. A comprehensive evaluation of 22 state-of-the-art VLMs exposes a striking gap between models and humans: the strongest zero-shot model attains only 42.68, far below the human score of 79.08. To probe the cause of this gap, we construct GST-Bench-Local and find that models, despite strong local spatial understanding under the same task formulation, still fail to consolidate long-horizon observations into a globally consistent scene representation. We further provide GST-Train, a dataset for global spatial reasoning, as a complementary resource to facilitate future research on this challenge.",
-      "matchedBy": [
-        "papers with code",
-        "Image Understanding",
-        "Video Understanding",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -31403,7 +31488,8 @@
         "papers with code",
         "benchmark",
         "frontier training",
-        "hugging face daily"
+        "hugging face daily",
+        "Few-shot prompting"
       ],
       "sources": [
         "paperswithcode",
@@ -32041,7 +32127,7 @@
       "project": "",
       "thumbnail": "./thumbs/2608.05802.jpg",
       "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "On-Policy Distillation (OPD) is emerging as a promising alternative to reinforcement learning for LLM post-training, yet its effectiveness in multilingual settings remains underexplored. We study OPD and its advanced variant, On-Policy Delta Distillation (OPD$^2$), for mathematical reasoning in English, Korean, and Japanese. OPD$^2$ improves OPD by using the probability gap between a post-trained teacher and its base model as the learning signal. Experiments with Qwen3 show that OPD$^2$ consistently outperforms the original OPD, with particularly strong improvements in Korean and Japanese, and generally narrows the English-Korean performance gap. We further find that English-only OPD can also increase performance for Korean and Japanese, but often shifts the responses toward English, highlighting the importance of multilingual data to preserving target-language responses.",
+      "summary": "On-Policy Distillation (OPD) is emerging as a promising alternative to reinforcement learning for LLM post-training, yet its effectiveness in multilingual settings remains underexplored. We study OPD and its advanced variant, On-Policy Delta Distillation (OPD^2), for mathematical reasoning in English, Korean, and Japanese. OPD^2 improves OPD by using the probability gap between a post-trained teacher and its base model as the learning signal. Experiments with Qwen3 show that OPD^2 consistently outperforms the original OPD, with particularly strong improvements in Korean and Japanese, and generally narrows the English-Korean performance gap. We further find that English-only OPD can also increase performance for Korean and Japanese, but often shifts the responses toward English, highlighting the importance of multilingual data to preserving target-language responses.",
       "matchedBy": [
         "arxiv",
         "language modeling",
@@ -32539,7 +32625,7 @@
       "project": "https://os-copilot",
       "thumbnail": "./thumbs/2607.28609.jpg",
       "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone unexamined: are these VLM judges reliable enough? To study it systematically, we introduce OSReward, a realistic, high-quality benchmark that evaluates VLM judges on CUA trajectories. The trajectories come from diverse agent backbones executing human-verified instructions across platforms, and are then rigorously labeled with ground-truth verdicts through multi-stage human annotation. Building on it, we derive OSReward-Hard, a challenge set concentrating genuinely hard cases, and OSReward-Multi for fine-grained efficiency and alignment scoring. The most comprehensive evaluation of VLM judges to date finds even state-of-the-art models fall short of an ideal judge, sharing a systematic leniency bias that mislabels failed runs as successes. The few reliable enough to trust are too expensive to run at scale, while affordable open models trail far behind. To close this gap, we construct and release OS-Shepherd-100K, an open corpus of reasoning-annotated trajectory judgments for the CUA community. On it, we train OS-Shepherd (9B and 35B), open reward models that supply low-cost, stable, and reliable reward signals, matching commercial judges at 30-60x lower cost than the frontier. Extensive analyses further inform the design of reliable CUA reward at scale. Our code, benchmark, dataset, and model checkpoints are available at https://os-copilot.github.io/OSReward-Home/.",
+      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone unexamined: are these VLM judges reliable enough? To study it systematically, we introduce OSReward, a realistic, high-quality benchmark that evaluates VLM judges on CUA trajectories. The trajectories come from diverse agent backbones executing human-verified instructions across platforms, then rigorously labeled with ground-truth verdicts through multi-stage human annotation. Building on it, we derive OSReward-Hard, a challenge set concentrating genuinely hard cases, and OSReward-Multi for fine-grained efficiency and alignment scoring. The most comprehensive evaluation of VLM judges to date finds even state-of-the-art models fall short of an ideal judge, sharing a systematic leniency bias that mislabels failed runs as successes. The few reliable enough to trust are too expensive to run at scale, while affordable open models trail far behind. To close this gap, we construct and release OS-Shepherd-100K, an open corpus of reasoning-annotated trajectory judgments for the CUA community. On it, we train OS-Shepherd (9B and 35B), open reward models that supply low-cost, stable, and reliable reward signals, matching commercial judges at 30-60% lower cost than the frontier. Extensive analyses further inform the design of reliable CUA reward at scale. Our code, benchmark, dataset, and model checkpoints are available at https://os-copilot.github.io/OSReward-Home/.",
       "matchedBy": [
         "arxiv",
         "language modeling",
@@ -43221,7 +43307,7 @@
     {
       "id": "2608.05369",
       "title": "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
-      "authors": "Yuhao Pan, Haosong Peng, Zhengshen Zhang, Zhengyang Yan, Yalun Dai, Fushuo Huo, Chujie Wang, Tianyu Qi, Xiucheng Wang, Nan Cheng, Wenchao Xu",
+      "authors": "Pan, Yuhao, Peng, Haosong, Zhang, Zhengshen, Yan, Zhengyang, Dai, Yalun, Huo, Fushuo, Wang, Chujie, Qi, Tianyu, Wang, Xiucheng, Cheng, Nan, Xu, Wenchao",
       "org": "",
       "published": "2026-08-05",
       "score": 78,
@@ -43311,8 +43397,8 @@
       "org": "",
       "published": "2026-08-05",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2608.04964v1",
-      "source": "https://arxiv.org/abs/2608.04964v1",
+      "paper": "https://arxiv.org/abs/2608.04964",
+      "source": "https://paperswithcode.co/paper/2608.04964",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.04964.jpg",
@@ -43886,6 +43972,32 @@
       "project": "",
       "thumbnail": "./thumbs/2606.22832.jpg",
       "firstSeenAt": "2026-06-24T00:10:37.469Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.05459",
+      "title": "Moduli of the Sourceless Framed Beltrami-Vekua Normal Form",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-05",
+      "score": 77,
+      "paper": "https://arxiv.org/abs/2608.05459",
+      "source": "https://www.alphaxiv.org/abs/2608.05459",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05459.jpg",
+      "firstSeenAt": "2026-08-09T23:45:06.403Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -46048,6 +46160,38 @@
       ]
     },
     {
+      "id": "2603.04448",
+      "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
+      "authors": "Yuan Liang, Ruobin Zhong, Haoming Xu, Chen Jiang, Yi Zhong, Runnan Fang, Jia-Chen Gu, Shumin Deng, Yunzhi Yao, Mengru Wang, Shuofei Qiao, Xin Xu, Tongtong Wu, Kun Wang, Yang Liu, Zhen Bi, Jungang Lou, Yuchen Eleanor Jiang, Hangcheng Zhu, Gang Yu, Haiwen Hong, Longtao Huang, Hui Xue, Chenxi Wang, Yijun Wang, Zifei Shan, Xi Chen, Zhaopeng Tu, Feiyu Xiong, Xin Xie, Peng Zhang, Zhengke Gui, Lei Liang, Jun Zhou, Chiyu Wu, Jin Shang, Yu Gong, Junyu Lin, Changliang Xu, Hongjie Deng, Wen Zhang, Keyan Ding, Qiang Zhang, Fei Huang, Ningyu Zhang, Jeff Z. Pan, Guilin Qi, Haofen Wang, Huajun Chen",
+      "org": "",
+      "published": "2026-02-26",
+      "score": 69,
+      "paper": "https://arxiv.org/abs/2603.04448",
+      "source": "https://paperswithcode.co/paper/2603.04448",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2603.04448.jpg",
+      "firstSeenAt": "2026-06-17T03:24:16.484Z",
+      "summary": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Agent Skills",
+        "ReAct",
+        "Residual Block",
+        "language modeling",
+        "data / retrieval"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
+    },
+    {
       "id": "2405.05905",
       "title": "Truthful Aggregation of LLMs with an Application to Online Advertising",
       "authors": "Ermis Soumalias, Michael Curry, Sven Seuken",
@@ -46699,38 +46843,6 @@
         "Serving",
         "Language Modeling",
         "Frontier Training"
-      ]
-    },
-    {
-      "id": "2603.04448",
-      "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
-      "authors": "Yuan Liang, Ruobin Zhong, Haoming Xu, Chen Jiang, Yi Zhong, Runnan Fang, Jia-Chen Gu, Shumin Deng, Yunzhi Yao, Mengru Wang, Shuofei Qiao, Xin Xu, Tongtong Wu, Kun Wang, Yang Liu, Zhen Bi, Jungang Lou, Yuchen Eleanor Jiang, Hangcheng Zhu, Gang Yu, Haiwen Hong, Longtao Huang, Hui Xue, Chenxi Wang, Yijun Wang, Zifei Shan, Xi Chen, Zhaopeng Tu, Feiyu Xiong, Xin Xie, Peng Zhang, Zhengke Gui, Lei Liang, Jun Zhou, Chiyu Wu, Jin Shang, Yu Gong, Junyu Lin, Changliang Xu, Hongjie Deng, Wen Zhang, Keyan Ding, Qiang Zhang, Fei Huang, Ningyu Zhang, Jeff Z. Pan, Guilin Qi, Haofen Wang, Huajun Chen",
-      "org": "",
-      "published": "2026-02-26",
-      "score": 68,
-      "paper": "https://arxiv.org/abs/2603.04448",
-      "source": "https://paperswithcode.co/paper/2603.04448",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2603.04448.jpg",
-      "firstSeenAt": "2026-06-17T03:24:16.484Z",
-      "summary": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
-      "matchedBy": [
-        "papers with code",
-        "Agents",
-        "Agent Skills",
-        "ReAct",
-        "Residual Block",
-        "language modeling",
-        "data / retrieval"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
       ]
     },
     {
@@ -89224,7 +89336,7 @@
     {
       "id": "2606.04291",
       "title": "A Cookbook of 3D Vision: Data, Learning Paradigms, and Application",
-      "authors": "Zongxia Li, Hongyang Du, Dawei Liu, Runhao Li, Haoyuan Song, Qingyu Zhang, YuBo Wang, Jingcheng Ni, Shihang Gui, Congchao Dong, Tao Hu",
+      "authors": "Haoyuan Song, Hongyang Du, Zongxia Li, Dawei Liu, Runhao Li, Qingyu Zhang, YuBo Wang, Jingcheng Ni, Shihang Gui, Congchao Dong, Tao Hu",
       "org": "",
       "published": "2026-06-02",
       "score": 60,
@@ -92849,7 +92961,8 @@
         "arxiv",
         "data / retrieval",
         "serving",
-        "papers with code"
+        "papers with code",
+        "BERT"
       ],
       "sources": [
         "arxiv",
@@ -94882,7 +94995,8 @@
       "matchedBy": [
         "papers with code",
         "language modeling",
-        "data / retrieval"
+        "data / retrieval",
+        "RLVR"
       ],
       "sources": [
         "paperswithcode"
@@ -98012,7 +98126,9 @@
       "matchedBy": [
         "arxiv",
         "data / retrieval",
-        "papers with code"
+        "papers with code",
+        "Retrieval",
+        "ColBERT"
       ],
       "sources": [
         "arxiv",
@@ -100382,7 +100498,9 @@
       "matchedBy": [
         "papers with code",
         "vision/multimodal",
-        "frontier training"
+        "frontier training",
+        "Earth Observation",
+        "Remote Sensing"
       ],
       "sources": [
         "paperswithcode"
@@ -110552,7 +110670,8 @@
         "papers with code",
         "language modeling",
         "benchmark",
-        "data / retrieval"
+        "data / retrieval",
+        "ReAct"
       ],
       "sources": [
         "paperswithcode"
@@ -114827,7 +114946,8 @@
         "arxiv",
         "language modeling",
         "papers with code",
-        "Language Modeling"
+        "Language Modeling",
+        "Diffusion"
       ],
       "sources": [
         "arxiv",
@@ -117136,6 +117256,32 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2608.05263",
+      "title": "OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality",
+      "authors": "Yidian Chen, Yingzi Gu, Natan Vidra, Spurthi Setty, Sharon Zheng",
+      "org": "",
+      "published": "2026-08-05",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2608.05263",
+      "source": "https://paperswithcode.co/paper/2608.05263",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05263.jpg",
+      "firstSeenAt": "2026-08-09T23:45:06.403Z",
+      "summary": "Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without diagnosing why a pipeline failed, where a cascade began, or which routing decision caused the breakdown. OrchestraBench evaluates failure, recovery, and decomposition through a controlled, seed-reproducible failure-injection harness over templated enterprise workflows. It introduces cascade radius and per-failure-mode recovery as primary metrics and compares routing policies with bootstrap confidence intervals and paired tests. On a 26-case gold-labelled diagnostic, a keyword/flag router scored 0% on adversarial cases with misleading or missing surface flags, whereas an intent-reasoning model router scored 100%, matching the oracle. Controlled mechanism probes with a real Claude agent over a verifiable arithmetic dependency chain revealed three failure-handling tiers across five MAST modes: tool faults recovered fully (1.0), ambiguous delegation recovered partially (0.30), and three latent or semantic modes never recovered (0.0). This ordering persisted when the computation was reframed as a loan-approval workflow and across Sonnet, Opus, and Haiku, although absolute rates shifted with context. Blind retry reproduced latent faults and increased time to detection, indicating that detection and attribution are necessary for containment. Cascade radius increased with pipeline depth (mean 0.9 to 4.7 across depths 3-7). A trusted-state repair ablation showed that apparent containment gains primarily came from the trusted-state signal rather than autonomous detection. These results are controlled-chain mechanism probes, not domain-workload claims.",
+      "matchedBy": [
+        "papers with code",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -126982,6 +127128,36 @@
       ]
     },
     {
+      "id": "2608.05774",
+      "title": "SR-JEPA: Learning Predictive Latent State in 3D Scenes",
+      "authors": "Zihan Zhou, Qifu Wen, Xi Zeng",
+      "org": "",
+      "published": "2026-08-06",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2608.05774",
+      "source": "https://paperswithcode.co/paper/2608.05774",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.05774.jpg",
+      "firstSeenAt": "2026-08-07T01:56:08.760Z",
+      "summary": "Joint-embedding predictive architectures learn by predicting latent representations of missing observations, yet many masked JEPAs are evaluated primarily through the encoders they produce. We ask what a trained predictive pathway itself infers when an entire entity is absent from a native 3D scene. We introduce SR-JEPA, a point-native JEPA for scene-scale point clouds whose original frozen predictive pathway can be queried at a supplied location. At evaluation, every point of one object is removed before encoding and replaced by the same shape-free 32-point query at its centroid. Training uses only self-contained 3D EMA targets: no reconstruction, semantic labels, language, or lifted 2D features. On 5,953 held-out ARKitScenes objects, the imputed latent reaches 43.13% semantic-identity macro accuracy, 22.18 points above the strongest floor. Randomizing the prediction path removes 9.78 points, while substituting matched donor context removes 21.98 points. On 8,570 Sr3D support pairs, the full latent reaches 41.15 AP; identity decoded from the missing-object latent, combined with anchor identity and geometry, reaches 39.37 AP, leaving an unresolved 1.78-point residual. These results reveal a queryable, compositional 3D predictive state: the model completes context-dependent entity content, which downstream computation combines with metric geometry.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "papers with code",
+        "3D understanding",
+        "Self-supervised learning"
+      ],
+      "sources": [
+        "arxiv",
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
       "id": "pwc-95893",
       "title": "SRCF-UAV: Sparse Radar-Camera Fusion for 3D UAV Detection",
       "authors": "Zhao, Yiming, Gong, Zijun, Yang, Yang, Cui, Ying",
@@ -132241,7 +132417,8 @@
         "arxiv",
         "robotics",
         "vision/multimodal",
-        "papers with code"
+        "papers with code",
+        "World Models"
       ],
       "sources": [
         "arxiv",
@@ -218181,32 +218358,6 @@
       ]
     },
     {
-      "id": "2608.05774",
-      "title": "SR-JEPA: Learning Predictive Latent State in 3D Scenes",
-      "authors": "Zihan Zhou, Qifu Wen, Xi Zeng",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2608.05774v1",
-      "source": "https://arxiv.org/abs/2608.05774v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.05774.jpg",
-      "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "Joint-embedding predictive architectures learn by predicting latent representations of missing observations, yet many masked JEPAs are evaluated primarily through the encoders they produce. We ask what a trained predictive pathway itself infers when an entire entity is absent from a native 3D scene. We introduce SR-JEPA, a point-native JEPA for scene-scale point clouds whose original frozen predictive pathway can be queried at a supplied location. At evaluation, every point of one object is removed before encoding and replaced by the same shape-free 32-point query at its centroid. Training uses only self-contained 3D EMA targets: no reconstruction, semantic labels, language, or lifted 2D features. On 5,953 held-out ARKitScenes objects, the imputed latent reaches 43.13% semantic-identity macro accuracy, 22.18 points above the strongest floor. Randomizing the prediction path removes 9.78 points, while substituting matched donor context removes 21.98 points. On 8,570 Sr3D support pairs, the full latent reaches 41.15 AP; identity decoded from the missing-object latent, combined with anchor identity and geometry, reaches 39.37 AP, leaving an unresolved 1.78-point residual. These results reveal a queryable, compositional 3D predictive state: the model completes context-dependent entity content, which downstream computation combines with metric geometry.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
-      ]
-    },
-    {
       "id": "2606.26800",
       "title": "SSI-Policy: Learning Structured Scene Interfaces for Vision-Language Robotic Manipulation",
       "authors": "Kaijun Wang, Zikai Ouyang, Xuping Wu, Jinyi Hong, Wei Pan, Haibo Lu, Jia Pan, Wei Zhang, Linfang Zheng",
@@ -222424,32 +222575,6 @@
       "thumbnail": "./thumbs/2606.23306.jpg",
       "firstSeenAt": "2026-06-24T00:10:37.469Z",
       "summary": "We study the limits of CTC-internal scoring for N-best hypothesis selection and locate the information bottleneck separating acoustic confidence from linguistic plausibility. Eleven CTC-internal and acoustic-feature scoring strategies produce no statistically significant WER improvement over greedy decoding on LibriSpeech dev-other at G=16 (all p > 0.05). The exhaustion is systematic: CTC's Spearman $ρ$ between hypothesis score and per-utterance WER degrades from -0.574 at G=4 to -0.270 at G=128, a 53% loss driven by blank-path proliferation. This establishes that the discriminative capacity of CTC-internal representations is saturated: no recombination of acoustic signals can close the oracle gap. Confirming that the bottleneck is linguistic, not acoustic, external linguistic information introduced via MBR decoding breaks through it. MBR-CER decoding with a RoBERTa pseudo-log-likelihood (PLL) posterior ($τ$=10, G=128) achieves 5.42% WER on held-out LibriSpeech test-other (greedy 5.96%, $Δ$=-0.535 pp, p<0.0001, 9.0% relative). RoBERTa PLL $ρ$ degrades only 21% over the same range, retaining discriminating power where CTC loses it. Applied without retuning across two Zipformer architectures, three domains (LibriSpeech, TED-LIUM 3, VoxPopuli), and four MUSAN noise levels, the recipe gives significant gains in 11 of 13 conditions. On the training side, standard MWER training via the CTC forward-backward algorithm implements Rao-Blackwellized REINFORCE at the output projection (variance about 3x below Viterbi). Yet sequence-level fine-tuning fails at near-converged checkpoints: all four MWER configurations on CR-CTC collapse (+6.18 to +8.90 pp WER), as a training oracle gap of 0.007 pp provides no usable reward signal.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.06370",
-      "title": "The Bitter Lesson of Tool Calling",
-      "authors": "Ishan Patel, Sahil Sen, Elias Lumer, Vamse Kumar Subbiah",
-      "org": "",
-      "published": "2026-08-06",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2608.06370v1",
-      "source": "https://arxiv.org/abs/2608.06370v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.06370.jpg",
-      "firstSeenAt": "2026-08-07T23:46:51.180Z",
-      "summary": "Tool use transforms LLMs into agents that act beyond their training data, and for code-capable models, programmatic tool calling extends this further by replacing rigid JSON calls with scripts that chain and parallelize naturally. However, a systematic evaluation of tools as code on an established benchmark across current and prior model generations under real-world task conditions has not been conducted. In this work, we empirically compare programmatic tool calling (PTC) to native JSON tool calling across 14 language models on BFCL v4. In the programmatic tool calling paradigm, tools are exposed as typed Python stubs that the model invokes through code, with execution and results handled in a single agent turn. Programmatic tool calling matches or exceeds native JSON tool calling in 11 of 14 models on BFCL v4, with the GPT-5.6 family achieving a 10.6% improvement over the JSON tool calling baseline. Further, it matches or outperforms baseline in 13 of 14 models under parallel fan-out, and holds stable under context rot conditions where baseline degrades 2.3% on average. Our results demonstrate that programmatic tool calling is a viable and robust alternative to JSON tool calling, with performance tracking model capability across release generations.",
       "matchedBy": [
         "arxiv",
         "language modeling"
