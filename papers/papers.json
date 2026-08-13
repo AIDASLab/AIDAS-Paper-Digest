@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-12T23:56:31.958Z",
+  "generatedAt": "2026-08-13T00:41:58.218Z",
   "sourceStats": {
-    "seed": 8531,
+    "seed": 8657,
     "paperswithcode": 540,
     "arxiv": 175,
-    "huggingface": 61,
+    "huggingface": 23,
     "alphaxiv": 20,
     "twitterSignals": 0,
     "total": 8657
@@ -573,15 +573,15 @@
       "title": "On-Policy Self-Distillation without Any Supervision",
       "authors": "Yijiang Li, Bingyang Wang, Yijun Liang, Yunjie Tian, Di Fu, Nuno Vasconcelos",
       "org": "",
-      "published": "2026-08-06",
+      "published": "2026-08-09",
       "score": 96,
       "paper": "https://arxiv.org/abs/2608.06296",
-      "source": "https://huggingface.co/papers/2608.06296",
+      "source": "https://paperswithcode.co/paper/2608.06296",
       "code": "https://github.com/williamium3000/u-opsd](https://github",
       "project": "",
       "thumbnail": "./thumbs/2608.06296.jpg",
       "firstSeenAt": "2026-08-07T23:46:51.180Z",
-      "summary": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose unsupervised on-policy self-distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo solution by majority vote under a self-consistency threshold. It then conditions the model's distribution on the pseudo-solution and distills itself on the disagreeing completions, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT) such as OPSD and GRPO. On five mathematical reasoning benchmarks, i.e., AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7% on Qwen3 non-thinking mode at 4B and 8B scales, and outperforms OPSD by 3.2% and 2.3% on average, respectively. In thinking mode, U-OPSD stays on par with OPSD, ahead by 0.9% at 4B and level at 8B and surpassing GRPO by 0.7% and 1.1%, respectively. Code is available at [https://github.com/williamium3000/u-opsd](https://github.com/williamium3000/u-opsd).",
+      "summary": "Unsupervised on-policy self-distillation improves large language models by using internal consistency and majority-vote pseudo-solutions to correct confident errors without external supervision.",
       "matchedBy": [
         "arxiv",
         "language modeling",
@@ -5417,7 +5417,7 @@
       "published": "2026-08-10",
       "score": 91,
       "paper": "https://arxiv.org/abs/2608.09119",
-      "source": "https://huggingface.co/papers/2608.09119",
+      "source": "https://paperswithcode.co/paper/2608.09119",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09119.jpg",
@@ -16240,12 +16240,12 @@
       "published": "2026-08-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08156",
-      "source": "https://huggingface.co/papers/2608.08156",
+      "source": "https://paperswithcode.co/paper/2608.08156",
       "code": "https://github.com/vicgalle/hybrid-nested-search",
       "project": "",
       "thumbnail": "./thumbs/2608.08156.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "In evolutionary algorithms powered by language models, the LLM acts as a single operator that simultaneously updates structural components (like control flow) and continuous parameters. While LLMs can be good at the first, they are not efficient at the second, wasting tokens taking discrete jumps inside a trial and error loop. We resolve this by formalizing a hybrid nested search, in which an outer loop has the LLM propose a structural sketch, with numeric gaps, and an inner numerical optimizer tunes the sketch. Both the outer and inner solvers are pluggable: any text-based optimizer can be combined with a zero-order optimizer (CMA-ES), gradient-based routines, or MCMC samplers. We validate our framework across three scientific domains: (i) meta-optimizers on closed-form test functions, (ii) code-based policies for systems research and social dilemmas; and (iii) approximate Bayesian inference tasks. Across all three, the hybrid optimizer is superior to both vanilla LLM-driven search and pure numerical optimization baselines. Code at: https://github.com/vicgalle/hybrid-nested-search",
+      "summary": "A hybrid nested search framework combines language models for structural proposals with numerical optimizers to improve efficiency across scientific tasks.",
       "matchedBy": [
         "papers with code",
         "Large language model (LLM)",
@@ -16443,36 +16443,6 @@
         "language modeling"
       ],
       "sources": [
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.07346",
-      "title": "A^2E : An End-to-End Agent Auditing Engine",
-      "authors": "Haoning Wang, Mingxun Zhang, Chenyue Yu, Yingjun Shang, Xia Hu, Guanchu Wang, Na Zou",
-      "org": "",
-      "published": "2026-08-07",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2608.07346",
-      "source": "https://huggingface.co/papers/2608.07346",
-      "code": "https://github.com/datamllab/A2E",
-      "project": "",
-      "thumbnail": "./thumbs/2608.07346.jpg",
-      "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "With the rapid advancement of large language models (LLMs), harnesses have become essential infrastructure for deploying agents across a wide range of domains. The fast-evolving harness ecosystem has also made rigorous capability evaluation increasingly important. However, efficiently building an end-to-end, systematic, and comprehensive evaluation pipeline remains a significant challenge. To address this challenge, we introduce $A^2E$ (Agent Auditing Engine), an end-to-end evaluation engine designed for agent harnesses. $A^2E$ leverages our newly proposed Agent Task Protocol (ATP) to enable the rapid integration of evaluation tasks with different harnesses. Through an automatically instrumented Monitor, it captures and generates standardized execution traces during experiments. In the Evaluation stage, $A^2E$ systematically assesses harness capabilities using a suite of multidimensional metrics. Compared with correctness alone, these metrics provide a more fine-grained characterization of differences among harnesses in execution efficiency, tool use, task planning, and error recovery. Experiments conducted with $A^2E$ further reveal that model-harness combinations exhibit substantial performance variation across different types of tasks, and that no single combination consistently outperforms all others across every task. These findings not only demonstrate the necessity of systematic evaluation but also provide useful guidance for the co-evolving of models and harnesses. Our code is available at https://github.com/datamllab/A2E.",
-      "matchedBy": [
-        "papers with code",
-        "Function calling",
-        "Large language model (LLM)",
-        "language modeling",
-        "hugging face daily"
-      ],
-      "sources": [
-        "paperswithcode",
         "huggingface"
       ],
       "category": "Language Modeling",
@@ -17086,7 +17056,7 @@
       "published": "2026-08-07",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.07169",
-      "source": "https://huggingface.co/papers/2608.07169",
+      "source": "https://paperswithcode.co/paper/2608.07169",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.07169.jpg",
@@ -17698,6 +17668,36 @@
         "language modeling"
       ],
       "sources": [
+        "huggingface"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.07346",
+      "title": "An End-to-End Agent Auditing Engine",
+      "authors": "Haoning Wang, Mingxun Zhang, Chenyue Yu, Yingjun Shang, Xia Hu, Guanchu Wang, Na Zou",
+      "org": "",
+      "published": "2026-08-07",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2608.07346",
+      "source": "https://paperswithcode.co/paper/2608.07346",
+      "code": "https://github.com/datamllab/A2E",
+      "project": "",
+      "thumbnail": "./thumbs/2608.07346.jpg",
+      "firstSeenAt": "2026-08-11T23:57:51.357Z",
+      "summary": "With the rapid advancement of large language models (LLMs), harnesses have become essential infrastructure for deploying agents across a wide range of domains. The fast-evolving harness ecosystem has also made rigorous capability evaluation increasingly important. However, efficiently building an end-to-end, systematic, and comprehensive evaluation pipeline remains a significant challenge. To address this challenge, we introduce A^2E (Agent Auditing Engine), an end-to-end evaluation engine designed for agent harnesses. A^2E leverages our newly proposed Agent Task Protocol (ATP) to enable the rapid integration of evaluation tasks with different harnesses. Through an automatically instrumented Monitor, it captures and generates standardized execution traces during experiments. In the Evaluation stage, A^2E systematically assesses harness capabilities using a suite of multidimensional metrics. Compared with correctness alone, these metrics provide a more fine-grained characterization of differences among harnesses in execution efficiency, tool use, task planning, and error recovery. Experiments conducted with A^2E further reveal that model-harness combinations exhibit substantial performance variation across different types of tasks, and that no single combination consistently outperforms all others across every task. These findings not only demonstrate the necessity of systematic evaluation but also provide useful guidance for the co-evolving of models and harnesses. Our code is available at https://github.com/datamllab/A2E.",
+      "matchedBy": [
+        "papers with code",
+        "Function calling",
+        "Large language model (LLM)",
+        "language modeling",
+        "hugging face daily"
+      ],
+      "sources": [
+        "paperswithcode",
         "huggingface"
       ],
       "category": "Language Modeling",
@@ -19270,12 +19270,12 @@
       "published": "2026-08-06",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.06111",
-      "source": "https://huggingface.co/papers/2608.06111",
+      "source": "https://paperswithcode.co/paper/2608.06111",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.06111.jpg",
       "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "Positional embeddings (PE) in Transformers encode token distance and order but are largely agnostic to \\textit{syntactic structure}. We introduce \\textbf{S}yntax-\\textbf{i}nformed \\textbf{P}ositional \\textbf{E}mbeddings (\\textbf{SiPE}), which learns a lightweight syntactic prior from dependency parses during pretraining and injects it across all three dominant PE families (absolute, relative, rotary), for both encoders and decoders, leaving self-attention and the rest of the architecture untouched. We isolate \\emph{where} and \\emph{how} the prior should enter the model, and find it depends on the architecture: for autoregressive decoders that use relative PE, the prior is strongest when coupled multiplicatively with the relative-position term of the attention score, outperforming injection into the input embeddings, into self-attention, or into the positional and attention terms jointly---while for encoders it is best added directly to the input embeddings, composing with each encoder's native positional mechanism. We find that models pre-trained with SiPE improve on the SyntaxGym benchmark by up to $10.3\\%$ while simultaneously reducing perplexity by $9.0\\%$ over a base model with no syntactic supervision---a metric nearly every existing syntax-injection method instead degrades. Crucially, these gains extend beyond syntactic generalization: SiPE also improves real-world language understanding, raising scores on the GLUE benchmark by up to $8.2\\%$ over a model trained without it. Unlike existing syntactic language models that marginalize over many parses at inference or discard syntax at runtime, SiPE conditions on a single parse, establishing a new Pareto frontier between syntactic supervision and inference cost.",
+      "summary": "SiPE integrates a lightweight syntactic prior from dependency parses into positional embeddings across transformer architectures, improving syntactic generalization and language understanding without altering self-attention or increasing inference cost.",
       "matchedBy": [
         "arxiv",
         "frontier training",
@@ -19290,9 +19290,7 @@
       ],
       "category": "Frontier Training",
       "categories": [
-        "Frontier Training",
-        "Language Modeling",
-        "Serving"
+        "Frontier Training"
       ]
     },
     {
@@ -19327,17 +19325,17 @@
     {
       "id": "2608.06751",
       "title": "Beyond Starry Night: Shortcut-Aware Control-State Planning for Artist-Grounded Text to Image Generation",
-      "authors": "Kuan Xing, Ye Wang, Changyi Gan, Yuheng Li, Thao Nguyen, Yi Chang, Yilin Wang",
+      "authors": "Kuan Xing, Ye Wang, Changyi Gan, Yuheng Li, Thao Nguyen, Yi Chang, Yilin wang",
       "org": "",
       "published": "2026-08-07",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.06751",
-      "source": "https://huggingface.co/papers/2608.06751",
+      "source": "https://paperswithcode.co/paper/2608.06751",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.06751.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Artist-grounded image generation requires more than appending an artist name to a prompt. Image models often respond to artist names through canonical shortcuts, such as recurring motifs, generic palettes, or overrepresented period signatures, rather than preserving the user's intended scene. We introduce Atelier, a shortcut-aware control-state planning framework for artist-grounded image generation. Atelier translates underspecified artistic intent into an explicit control state that separates scene anchors, preserve/transform decisions, style-regime hypotheses, role-bound artist evidence, and shortcut-avoidance constraints. It grounds this state using artist-level knowledge and local patch references, compiles backend-aware generation plans, and iteratively refines candidates through global and local authenticity feedback. We further introduce ArtIntentBench, a benchmark covering Van Gogh and Qi Baishi across artwork re-rendering, period/style-controlled generation, historically unseen subjects, shortcut auditing, and human preference evaluation. Across open-weight and closed-source generators, Atelier improves artist-level style fidelity, preserves source structure more faithfully, and substantially reduces shortcut substitution compared with prompt-engineered, retrieval-augmented, and general-purpose agent baselines. These results suggest that artist-grounded generation is bottlenecked not only by image synthesis, but by the upstream inference of explicit, evidence-grounded artistic controls.",
+      "summary": "Atelier improves artist-grounded image generation by translating vague artistic intent into explicit control states that separate scene content from style, reducing reliance on stereotypical shortcuts.",
       "matchedBy": [
         "hugging face daily",
         "vision/multimodal",
@@ -19349,9 +19347,8 @@
         "huggingface",
         "paperswithcode"
       ],
-      "category": "Serving",
+      "category": "Vision/Multimodal",
       "categories": [
-        "Serving",
         "Vision/Multimodal"
       ]
     },
@@ -19906,20 +19903,19 @@
       "published": "2026-08-09",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08621",
-      "source": "https://huggingface.co/papers/2608.08621",
+      "source": "https://paperswithcode.co/paper/2608.08621",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08621.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Running a business is a challenging form of intelligent work. Operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes in a changing market, and satisfy regulatory obligations before trading legally. Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks. We introduce \\textbf{Business Arena}, a controlled environment where an AI agent runs a cross-border shop, buying from suppliers and selling to buyers over a long horizon. We ground the arena in real Alibaba.com sourcing data and market conditions calibrated from authoritative sources. Delayed and coupled consequences make individual business decisions difficult to judge, but their combined outcome is measurable through profit. Because profit alone cannot explain why an agent succeeds or fails, we compare agents with human-designed strategies to estimate available opportunity, use skill-level metrics to reveal underlying strengths and weaknesses, and trace realized gains and losses to the actions that produced them. We use mechanism ablations to establish that strong results reflect genuine business intelligence rather than neglect or simulator-specific shortcuts. We evaluate 15 frontier models and find a ninefold difference in mean final net worth. Even the best model falls behind human-designed strategies, indicating that business operation remains challenging for LLM agents. Skill-level analysis reveals operating styles, from margin-focused premium sellers to high-turnover wholesalers and customer-service specialists, while action-level attribution identifies the sourcing, pricing, and recovery decisions that create or destroy value. Together, Business Arena takes a first step toward a realistic and trustworthy testbed for evaluating end-to-end business agents.",
+      "summary": "Business Arena evaluates LLM agents running a realistic cross-border shop, revealing large performance gaps versus human strategies and enabling detailed attribution of business decisions.",
       "matchedBy": [
         "papers with code",
         "Agents",
         "Agent",
         "Large language model (LLM)",
         "language modeling",
-        "benchmark",
-        "frontier training"
+        "benchmark"
       ],
       "sources": [
         "paperswithcode",
@@ -19929,8 +19925,7 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling",
-        "Benchmark",
-        "Frontier Training"
+        "Benchmark"
       ]
     },
     {
@@ -20554,7 +20549,7 @@
       "published": "2026-08-10",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.09848",
-      "source": "https://huggingface.co/papers/2608.09848",
+      "source": "https://paperswithcode.co/paper/2608.09848",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09848.jpg",
@@ -21421,7 +21416,8 @@
       ],
       "sources": [
         "arxiv",
-        "huggingface"
+        "huggingface",
+        "paperswithcode"
       ],
       "category": "Serving",
       "categories": [
@@ -22130,12 +22126,12 @@
       "published": "2026-08-10",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.09766",
-      "source": "https://huggingface.co/papers/2608.09766",
+      "source": "https://paperswithcode.co/paper/2608.09766",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09766.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Multilingual translation benchmarks are typically sourced in English and translated into other languages, treating language pairs as the unit of evaluation---a design that is prone to contamination over time and overlooks locale and cultural considerations. We therefore advocate for source-contrastive evaluation and instantiate it with Cultivar, a localised subset of FLORES, which enables locale-specific translation evaluation. When paired with unlocalised counterparts, performance discrepancy allows the probing of data contamination and localisation robustness. We benchmark 32 open-weight models and find that MT-specialised models are less robust, a few models potentially overfit FLORES, and models tend to translate US content better than that of other locales, regardless of language.",
+      "summary": "Researchers propose source-contrastive evaluation via a localized benchmark to detect data contamination and assess localization robustness in multilingual translation models.",
       "matchedBy": [
         "papers with code",
         "Probing",
@@ -23694,12 +23690,12 @@
       "published": "2026-08-10",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.09043",
-      "source": "https://huggingface.co/papers/2608.09043",
+      "source": "https://paperswithcode.co/paper/2608.09043",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09043.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Users of modern platforms repeatedly need summaries of recent dialogue, but the window rarely contains enough context to be interpreted on its own. We formalize this setting as streaming dialogue summarization, where a system must summarize a current window using selective memory from an unbounded history under a fixed budget. We show that the central challenge is not how much history is accessed, but whether memory recovers the evidence that the current window presupposes. We construct a benchmark and evaluation protocol that separately assesses whether memory contains gap-resolving evidence and whether the generated summary reflects it. We propose ReMEMBER, a missing-evidence memory framework that conditions retrieval on unresolved window dependencies and refines retrieved chunks into evidence-dense memory under a fixed budget. Experiments on dialogues with histories up to 160K tokens show that ReMEMBER improves memory recall and gap-resolution completeness over memory construction baselines under the same budget.",
+      "summary": "A framework for streaming dialogue summarization retrieves and refines evidence from long histories to resolve missing context in current windows under fixed memory budgets.",
       "matchedBy": [
         "papers with code",
         "Summarization",
@@ -25043,7 +25039,7 @@
       "published": "2026-08-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08021",
-      "source": "https://huggingface.co/papers/2608.08021",
+      "source": "https://paperswithcode.co/paper/2608.08021",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08021.jpg",
@@ -25076,7 +25072,7 @@
       "published": "2026-08-10",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.09096",
-      "source": "https://huggingface.co/papers/2608.09096",
+      "source": "https://paperswithcode.co/paper/2608.09096",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09096.jpg",
@@ -25457,7 +25453,7 @@
       "published": "2026-08-06",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.06614",
-      "source": "https://huggingface.co/papers/2608.06614",
+      "source": "https://paperswithcode.co/paper/2608.06614",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.06614.jpg",
@@ -26643,31 +26639,29 @@
       "published": "2026-08-09",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08722",
-      "source": "https://huggingface.co/papers/2608.08722",
+      "source": "https://paperswithcode.co/paper/2608.08722",
       "code": "https://github.com/vicgalle/kernel-fingerprinting",
       "project": "",
       "thumbnail": "./thumbs/2608.08722.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Benchmarks for systems that are optimized against the evaluation signal measure something different from what they claim. We document this concretely in two GPU-kernel-optimization suites with held-out generalization gates: Metal-Sci (10 scientific-compute tasks) and Metal-ZK (12 zero-knowledge/cryptographic tasks), in which three frontier LLMs (Opus 4.7, Gemini 3.1 Pro, GPT-5.5) propose Metal kernels inside a $(1{+}1)$ evolutionary loop with rich feedback. Although no model is prompted to act adversarially, the promoted winners repeatedly fingerprint the evaluation configuration: they branch on the identity of runtime parameters, tune the measured branch maximally, and leave the unmeasured branch slow or silently wrong. Across the pooled suites, $16/53$ ($30\\%$) of in-distribution wins fail to transfer to held-out configurations. We give a four-mode taxonomy of these failures, from configuration fingerprints to gate leakage. We distill design guidance for measurement under strategic optimization: held-out probes retain validity only on non-enumerable axes; gates must measure held-out performance, not just correctness; and a transfer rate is interpretable only with per-failure mechanism grades: ours decomposes into gamed, overfit, and benign. Code and research artifacts: https://github.com/vicgalle/kernel-fingerprinting",
+      "summary": "Optimized GPU kernel benchmarks reveal that evolutionary LLM proposals exploit evaluation configurations, causing widespread failure to generalize to held-out settings.",
       "matchedBy": [
         "papers with code",
         "Claude 4",
         "GPT-5",
         "Large language model (LLM)",
         "language modeling",
-        "benchmark",
-        "frontier training"
+        "benchmark"
       ],
       "sources": [
         "paperswithcode",
         "arxiv",
         "huggingface"
       ],
-      "category": "Benchmark",
+      "category": "Language Modeling",
       "categories": [
-        "Benchmark",
-        "Frontier Training",
-        "Language Modeling"
+        "Language Modeling",
+        "Benchmark"
       ]
     },
     {
@@ -32390,12 +32384,12 @@
       "published": "2026-08-07",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.07463",
-      "source": "https://huggingface.co/papers/2608.07463",
+      "source": "https://paperswithcode.co/paper/2608.07463",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.07463.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Recent advances in video diffusion models (VDMs) have enabled high-fidelity video synthesis. However, generating mirror reflections remains challenging because the content within a mirror must remain consistent with the surrounding scene. Existing VDMs are not specifically designed to model scene-to-mirror relationships, which can lead to reflections with incorrect content or inconsistent spatial arrangements. We observe that mirror reflection generation involves two complementary challenges: determining what scene content should be reflected and how the reflected content should be spatially arranged within the mirror region. Motivated by this observation, we propose MirrorWorld, a reflection-aware video inpainting framework that models scene-to-mirror relationships during generation. Specifically, we introduce Semantic Relation Distillation (SRD), which transfers relational information from a frozen visual foundation model to encourage semantic associations between visible scene content and mirror regions. We further propose Geometric Transformation Alignment (GTA), which learns a transformation that guides the spatial arrangement of reflected content. The two components play complementary roles, with SRD modeling what should be reflected and GTA modeling how it should be arranged. To facilitate research on this problem, we construct a benchmark for video mirror reflection generation by repurposing four existing video mirror datasets into a unified reflection reconstruction task. Experimental results show that MirrorWorld achieves improved reflection reconstruction quality over representative image-based reflection generation methods and strong video inpainting baselines.",
+      "summary": "MirrorWorld improves video mirror reflection synthesis by separately modeling semantic content associations and geometric spatial arrangements through relation distillation and transformation alignment.",
       "matchedBy": [
         "papers with code",
         "Image Inpainting",
@@ -34274,8 +34268,8 @@
       "org": "",
       "published": "2026-08-08",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2608.08097",
-      "source": "https://huggingface.co/papers/2608.08097",
+      "paper": "https://arxiv.org/abs/2608.08097v1",
+      "source": "https://arxiv.org/abs/2608.08097v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08097.jpg",
@@ -35272,7 +35266,7 @@
       "published": "2026-08-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08311",
-      "source": "https://huggingface.co/papers/2608.08311",
+      "source": "https://paperswithcode.co/paper/2608.08311",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08311.jpg",
@@ -39379,7 +39373,7 @@
       "published": "2026-08-06",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.07594",
-      "source": "https://huggingface.co/papers/2608.07594",
+      "source": "https://paperswithcode.co/paper/2608.07594",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.07594.jpg",
@@ -39552,8 +39546,8 @@
       "org": "",
       "published": "2026-08-10",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2608.09873",
-      "source": "https://huggingface.co/papers/2608.09873",
+      "paper": "https://arxiv.org/abs/2608.09873v1",
+      "source": "https://arxiv.org/abs/2608.09873v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09873.jpg",
@@ -42236,12 +42230,12 @@
       "published": "2026-08-09",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08786",
-      "source": "https://huggingface.co/papers/2608.08786",
+      "source": "https://paperswithcode.co/paper/2608.08786",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08786.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Large language models (LLMs) increasingly serve as data-driven reasoners, yet their chains-of-thought (CoT) can be unfaithful even when final answers are correct. Most existing ``verification'' signals are not diagnostic: answer matching observes only the outcome, LLM-as-judge provides subjective and non-verifiable critiques, and scalar rewards (e.g., PRMs/RMs) offer little insight into where a multi-step derivation fails.We propose \\textbf{SymDiag}, a neuro-symbolic framework that \\textbf{reframes reasoning verification as structured failure diagnosis}. SymDiag translates natural-language CoT into symbolic constraints and performs step-level satisfiability/entailment checks to (i) localize failing steps and (ii) produce verifiable diagnostic evidence, including counterexamples, inconsistency witnesses, and missing-premise indicators. A central challenge is that apparent ``logic violations'' can be caused either by genuine reasoning defects or by neural-to-symbolic translation noise. SymDiag therefore incorporates a Self-Auditor that disentangles TranslationError from ReasoningError via dual symbolic encodings consistency checks, enabling robust diagnosis under partial observability. Across diverse mathematical, logical, scientific, and general reasoning benchmarks, SymDiag improves detection of unfaithful reasoning and provides substantially more effective feedback for multi-round reasoning repair than outcome-only verification and LLM-based judging, offering a principled foundation for trustworthy and scalable reasoning diagnosis.",
+      "summary": "SymDiag reframes reasoning verification as structured failure diagnosis by translating chain-of-thought into symbolic constraints, performing step-level satisfiability checks, and disentangling translation errors from reasoning errors to provide verifiable diagnostic evidence.",
       "matchedBy": [
         "papers with code",
         "Healthcare",
@@ -42986,12 +42980,12 @@
       "published": "2026-08-06",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.06065",
-      "source": "https://huggingface.co/papers/2608.06065",
+      "source": "https://paperswithcode.co/paper/2608.06065",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.06065.jpg",
       "firstSeenAt": "2026-08-07T01:56:08.760Z",
-      "summary": "GUI agents are commonly trained offline from successful interaction trajectories. Standard training decomposes each trajectory into prefix-action pairs: the agent predicts an action from the current screen and interaction history, while the subsequent observation is discarded. This removes the rationale of why an action is correct: the evidence often appears only on the subsequent screen. For example, to enable Soft Wrap, the agent should click Edit or View, but nothing reveals this until the menu opens. Without such evidence, standard imitation gives the model little chance of ever sampling and thus learning the correct reasoning. To address this issue, we propose Gated Hindsight Distillation (GHD), which uses the next screenshot as privileged information during training. A student predicts from the observable trajectory prefix, while a parameter-sharing teacher additionally observes the next screenshot and re-scores the student's on-policy responses. We apply distillation only when the student fails and the hindsight-conditioned teacher recovers the demonstrated action. GHD improves task success over GRPO on AndroidWorld and AndroidLab across two vision-language models. The code and checkpoints will be made available.",
+      "summary": "Gated Hindsight Distillation improves GUI agent training by using future screenshots as privileged evidence to recover correct reasoning when standard imitation fails.",
       "matchedBy": [
         "arxiv",
         "language modeling",
@@ -45029,12 +45023,12 @@
       "published": "2026-08-09",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08477",
-      "source": "https://huggingface.co/papers/2608.08477",
+      "source": "https://paperswithcode.co/paper/2608.08477",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08477.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "We present VectraYX-Vision-1B, a sub-2B vision-language model (VLM) for Spanish/LATAM cybersecurity imagery, coupling a frozen SigLIP-so400m encoder to a 1.04B Spanish/LATAM security decoder via an MLP. To our knowledge, it is the first sub-2B VLM specialized for cyber UI (IDA, Ghidra, Wireshark, Nmap, Metasploit, Volatility) that answers in Spanish, emits structured reasoning via native tokens, invokes tools via Model Context Protocol ( ), and exports to llama.cpp's LLaVA mmproj format for air-gapped deployment. We report a negative preliminary visual-grounding result: despite fully functional pipelines, the current vision SFT (400-1900 steps, ~16M tokens) yields near-zero B6 scores (0.08 tool-identification), ignoring image content. We specify remediation (longer SFT, >=60% replay, lower LR) and expose a checkpoint-loader bug (unstripped llm. prefix) masquerading as training collapse. Crucially, we introduce a 3-variant ablation matrix (V0: NoPE-every-4, V1: all-RoPE, V2: NoPE+learned 2D) to study if periodic no-positional-encoding (NoPE) layers help or hurt attention over the 729-token visual block. Code, configs, and weights are released to establish priority on this architectural question. We provide B1-B5 for the text backbone, text controls, preliminary B6/B7 scores, wall times, GGUF efficiency on CPU, and a corpus of 14,596 QA pairs across 10 domains. We open-source all models and trajectories: jsantillana/vectrayx-1b, jsantillana/vectrayx-vision-1b, and jsantillana/vectrayx-vision-1b-checks.",
+      "summary": "A sub-2B Spanish cybersecurity vision-language model couples a frozen SigLIP encoder to a Spanish decoder via an MLP, introduces a NoPE positional-encoding ablation for visual attention, and reports near-zero visual grounding despite functional pipelines, with open-source weights and remediation plans.",
       "matchedBy": [
         "papers with code",
         "Image Understanding",
@@ -45051,8 +45045,7 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
-        "Language Modeling",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -45508,12 +45501,12 @@
       "published": "2026-08-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.07886",
-      "source": "https://huggingface.co/papers/2608.07886",
+      "source": "https://paperswithcode.co/paper/2608.07886",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.07886.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Vision-language grounding connects language to visual content, yet most existing formulations reduce grounding to a unidirectional localization problem: given a prespecified text phrase or category name, identify the corresponding image region. This setup assumes that the relevant linguistic unit is already known, overlooking a more basic challenge in grounded communication: determining which parts of the text are visually referential and how they correspond to entities in the image. We formulate grounding as $\\textit{bidirectional concept correspondence}$ over an image-text pair. Given an image and its paired text, the goal is to recover all correspondences between visually referential text spans and instance-level image segments, without assuming that the relevant text spans are provided. This formulation unifies common grounding tasks, including phrase grounding, referring expression grounding, and open-vocabulary detection, by treating text segmentation, image segmentation, and cross-modal alignment as a single correspondence prediction problem. To address this task, we introduce $\\textbf{ConCor-1}$, a grounding model built on top of a pretrained vision-language model. It uses learnable $\\textit{bridge tokens}$ to represent candidate image-text correspondences and predicts, for each token, a text mask, an image mask, and a correspondence presence score. To train and evaluate this task, we convert diverse grounding and segmentation datasets into a unified correspondence format. Experiments show that $\\textbf{ConCor-1}$ consistently outperforms baselines, improving correspondence F1 by 48% on the long-caption dataset and by 29% on zero-shot LVIS, where the large category list serves as the text input.",
+      "summary": "Vision-language grounding connects language to visual content, yet most existing formulations reduce grounding to a unidirectional localization problem: given a prespecified text phrase or category name, identify the corresponding image region. This setup assumes that the relevant linguistic unit is already known, overlooking a more basic challenge in grounded communication: determining which parts of the text are visually referential and how they correspond to entities in the image. We formulate grounding as bidirectional concept correspondence over an image-text pair. Given an image and its paired text, the goal is to recover all correspondences between visually referential text spans and instance-level image segments, without assuming that the relevant text spans are provided. This formulation unifies common grounding tasks, including phrase grounding, referring expression grounding, and open-vocabulary detection, by treating text segmentation, image segmentation, and cross-modal alignment as a single correspondence prediction problem. To address this task, we introduce ConCor-1, a grounding model built on top of a pretrained vision-language model. It uses learnable bridge tokens to represent candidate image-text correspondences and predicts, for each token, a text mask, an image mask, and a correspondence presence score. To train and evaluate this task, we convert diverse grounding and segmentation datasets into a unified correspondence format. Experiments show that ConCor-1 consistently outperforms baselines, improving correspondence F1 by 48% on the long-caption dataset and by 29% on zero-shot LVIS, where the large category list serves as the text input.",
       "matchedBy": [
         "papers with code",
         "Image segmentation",
@@ -45969,7 +45962,7 @@
       "published": "2026-08-03",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.07565",
-      "source": "https://huggingface.co/papers/2608.07565",
+      "source": "https://paperswithcode.co/paper/2608.07565",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.07565.jpg",
@@ -245668,7 +245661,7 @@
       "source": "https://arxiv.org/abs/2608.11013v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11013.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
       "summary": "Text-only training is a popular paradigm in zero-shot video captioning, where the video distribution is not available to the model during training, leading to a cross-modal gap between the training (text-only) and the inference (video-only). Previous works attempt to bridge the gap through simple linear transformations. However, the inherent gap between text and video makes cross-modal representation space alignment insufficient, resulting in inaccurate sentences. To address this issue, we propose a novel zero-shot video captioning framework (WSV) consisting of two training stages, which first generates corresponding synthetic video latent representations via a pretrained text-to-video generation model. To strengthen the fidelity of the latent representations, we propose a polisher capable of bridging the gap between real and synthetic video distributions. Subsequently, we design a prompter that conditions GPT-2 on the polished latent representations to generate the captions in the second training stage. During inference, an input video is encoded by a pretrained 3D Causal VAE and then fed directly into the prompter, which in turn guides GPT-2 to produce the final caption. Experimental results conducted on MSVD, MSR-VTT, and VATEX datasets demonstrate that our proposed method achieves scores of 52 and 95.7 on the B@4 and CIDEr metrics, respectively.",
       "matchedBy": [
@@ -246240,7 +246233,7 @@
       "source": "https://arxiv.org/abs/2608.10986v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.10986.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
       "summary": "A growing class of methods probes a language model by feeding it its own output: self-consistency, iterated refinement, agentic loops. We ask what such a probe measures, in a construction chosen to make the question sharp: a ring of token cells resampled in place by the model's own windowed conditional p_r(x_i | x_{i+-r}). The substrate is Glauber dynamics on token sequences and is not new; what we change is the coupling. Advancing two rings that differ in one token under common random numbers makes undamaged copies diverge by exactly zero, so damage spreading becomes measurable where a maximal coupling gives mixing times instead. The answer is that it measures two different things at once, in readings that look alike. Some quantities are fixed by the construction: the damage light cone is kinematic, and the radius scaling of the token-space Lyapunov exponent lambda_ca(r) is model-invariant across 19 models and two scale ladders spanning 70x. Others genuinely track the model: lambda_ca crosses zero at a reproducible point in training, and the attractor share ranks models consistently however the lattice is built. Left undistinguished, the first kind is readily mistaken for the second -- we did so ourselves for four months, and report a phase transition we measured to three decimal places that belongs to the probe rather than to any language model. We give the test that separates them: hold the construction fixed and vary the model, or hold the model fixed and vary the construction, and see which readings move. We validate the instrument by reproduction first, recovering a Domany-Kinzel damage field bit-exactly against an independent prediction, and we report the estimator failures that this discipline caught -- four retracted verdicts, each on a quantity that looked like a measurement. The methodology ships as a package.",
       "matchedBy": [
@@ -246810,7 +246803,7 @@
       "source": "https://arxiv.org/abs/2608.10528v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.10528.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
       "summary": "Anchor-based pointwise LLM reranking scores each candidate against a shared reference passage to recover cross-document context at pointwise cost. We study when this actually helps, using GCCP/PAGC as a representative method. Our study is reproduction-first. We use reproduction as a starting point for a controlled component-level stress test of anchor-based pointwise reranking. Our initial reimplementation, based only on the paper text, achieves 0.24 nDCG@10 instead of the reported 0.66, revealing that several undocumented implementation details are necessary to reproduce the method. After identifying and recovering eight such details, we reproduce the reported results within 1.6% and use the validated implementation for controlled analysis. We find that the core contrastive scoring idea is robust under rigorous statistical correction. However, two design choices held fixed in the original paper are less reliable. First, we find that combining the contrastive score with the standard pointwise relevance score helps when the first-stage retriever is BM25, but gives little or no benefit when the first-stage retriever is a stronger dense model such as E5. Second, the paper's more complex method for constructing the anchor is unnecessary. A much simpler anchor, built by interleaving the top-ranked sentences, matches or outperforms it across datasets. These findings are consistent across different LLM backbones, including a 4-bit quantized 72B model. Overall, anchor-based pointwise reranking is effective, but its gains come mainly from contrastive scoring rather than from the more complex aggregation and anchor-construction choices, and they appear under narrower conditions than the original evaluation suggests.",
       "matchedBy": [
@@ -247794,7 +247787,7 @@
       "source": "https://arxiv.org/abs/2608.11024v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11024.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
       "summary": "Attribute hallucination---where vision-language models (VLMs) correctly identify an object but mischaracterize its properties---is prevalent yet mechanistically poorly understood. The dominant explanation, language-prior dominance, has motivated prior-suppression methods, but this explanation has not been directly tested at the attribute level. We present VISOR (Visual-Operational Remediation), a unified framework that couples null-image-based diagnosis with routed remediation. Its VSNR diagnostic decomposes each prediction into a visual logit signal and a language-prior signal. Across 10,791 negative-ground-truth samples from three VLM families and three attribute types, the visual signal strongly predicts false positives, whereas the language-prior signal is near chance. VISOR uses this diagnosis to separate two failure modes: low-margin but directionally correct visual signals in color/state attributes, and low-SNR or misaligned visual signals in material attributes. The same diagnosis routes each query to the appropriate operator: calibration for threshold-placement errors, abstention for training-free low-SNR handling, or targeted visual adaptation for material failures that prior suppression cannot correct. Across Qwen, InternVL, and LLaVA, VISOR reduces attribute false positives without relying on the prior-dominance assumption.",
       "matchedBy": [
@@ -247848,7 +247841,7 @@
       "source": "https://arxiv.org/abs/2608.10623v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.10623.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
       "summary": "Reliable onboard state estimation is essential for safe robotic operation, yet unmodeled disturbances, such as sensor aliasing or out-of-distribution noise, still cause estimators to degrade or fail completely. While many methods aim to improve estimator robustness, only a few provide introspective mechanisms to assess estimate quality. Existing uncertainty measures, such as covariances, rely on idealized assumptions and tend to be overconfident, and more recent data-driven approaches are typically tied to their training data distributions. We propose a sensor-agnostic introspective method that assesses estimator health by analyzing the frequency-domain power distribution of recent velocity estimates. The method is evaluated using outdoor flight data from an aerial robot running visual-inertial, LiDAR-inertial, and radar-inertial odometry. The dataset includes multiple estimator failures, enabling analysis of several frequency-domain indicators, such as signal power, spectral bandwidth, and entropy. We observe consistent spectral power differences between healthy and degraded estimates, allowing detection of 51%-58% of labeled failures with 60%-84% precision across three fundamentally different state estimation frameworks. Our results show that even a simple frequency-domain analysis of a state estimator's output can serve as a lightweight introspective tool to complement existing robustness techniques in real-world robotic deployments, and opens promising avenues for future investigation.",
       "matchedBy": [
