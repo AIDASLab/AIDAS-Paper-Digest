@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-13T23:56:07.620Z",
+  "generatedAt": "2026-08-14T00:42:09.929Z",
   "sourceStats": {
-    "seed": 8657,
+    "seed": 8787,
     "paperswithcode": 540,
     "arxiv": 175,
-    "huggingface": 49,
+    "huggingface": 26,
     "alphaxiv": 20,
     "twitterSignals": 0,
     "total": 8787
@@ -4165,7 +4165,7 @@
       "project": "",
       "thumbnail": "./thumbs/2608.10744.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "4D generation synthesizes dynamic 3D scenes from conditions such as text or images. Existing methods either reconstruct generated RGB videos with a separate 4D model or adapt a particular video generator to predict geometry directly. The former suffers from distribution mismatch and error propagation, whereas the latter ties 4D prediction to a specific generator and may require retraining when the generator or conditioning regime changes. We ask whether the final denoised latents of video models that share a variational autoencoder (VAE) can instead provide a reusable interface to explicit 4D prediction. Building on this insight, we introduce direct latent-to-4D generation and instantiate it as Latent-to-4D, which bypasses RGB by aligning a video latent with the token grid of a pretrained 4D decoder and refining it through frame-wise and global spatiotemporal attention. Trained on roughly 1K existing reconstruction clips, a single checkpoint transfers unchanged across multiple video diffusion transformers within the same VAE family. On Text4D-200 and I4D-200, Latent-to-4D surpasses matched same-latent Wan+4RC cascades in projection-based DINO-F1 by 2.88--3.45 and 5.81 points, respectively, while also being preferred by human raters for geometry, temporal stability, and overall quality.",
+      "summary": "Latent-to-4D enables reusable direct 4D generation from video diffusion latents via alignment with a pretrained decoder and spatiotemporal attention, transferring across generators without retraining.",
       "matchedBy": [
         "papers with code",
         "Autoencoder (AE)",
@@ -16240,12 +16240,12 @@
       "published": "2026-08-09",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08814",
-      "source": "https://huggingface.co/papers/2608.08814",
+      "source": "https://paperswithcode.co/paper/2608.08814",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08814.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "We present 360CityArena, a benchmark for evaluating the urban exploration capabilities of embodied agents within a photorealistic environment constructed from 360-degree videos. Existing outdoor benchmarks either lack sufficient photorealism or complexity, resulting in a considerable gap from real-world urban environments. 360CityArena is built on a realistic reconstruction of the Akihabara district in Tokyo, Japan, using 602 360-degree video segments covering 85 streets, and consists of 175 meticulously human-crafted tasks. It encompasses three task categories: Environment Understanding, Path Reasoning, and Spatial Reasoning, covering fundamental abilities required for urban exploration, such as localization, landmark search, path planning, and relational spatial reasoning, thereby enabling comprehensive evaluation in realistic urban scenes. Our evaluation using state-of-the-art LMM-based agents shows that even the strongest model, Gemini 2.5 Flash, performs far below human level (human: 77.3% vs. Gemini 2.5 Flash: 17.1%), revealing substantial challenges that remain in city-scale embodied navigation and reasoning. 360CityArena provides a necessary and challenging testbed for photorealistic urban-district navigation and spatial reasoning.",
+      "summary": "A new photorealistic urban benchmark reveals large performance gaps for embodied agents in city-scale navigation and spatial reasoning.",
       "matchedBy": [
         "papers with code",
         "Reinforcement Learning",
@@ -16258,11 +16258,11 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Benchmark",
+      "category": "Language Modeling",
       "categories": [
-        "Benchmark",
         "Language Modeling",
-        "Robotics"
+        "Robotics",
+        "Benchmark"
       ]
     },
     {
@@ -17184,12 +17184,12 @@
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.11205",
-      "source": "https://huggingface.co/papers/2608.11205",
+      "source": "https://paperswithcode.co/paper/2608.11205",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.11205.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "Fréchet distance has recently emerged as an effective distribution-level objective for generator post-training, complementing the conventional sample-level diffusion and flow-matching losses. However, directly optimizing Fréchet objectives can cause Fréchet hacking. The target metrics keep improving, but visual quality and Fréchet alignment in other feature spaces may stagnate or deteriorate. We attribute this failure to the static pretrained feature spaces used by existing Fréchet losses. These feature spaces provide incomplete and fixed views of the differences between real and generated distributions. To address this limitation, we propose Adversarial Fréchet Distance (AdvFD), which complements the static representation targets in FD-Loss with a calibrated adversarially learned representation. AdvFD augments the original static Fréchet objective with a learnable representation that adversarially maximizes the Fréchet discrepancy between real and generated samples, while the generator minimizes the same discrepancy in the resulting adaptive feature space. To prevent the adversarial representation from trivially increasing the objective through feature amplification, we further introduce real-feature whitening, which normalizes its scale and covariance geometry and stabilizes the min--max optimization. Extensive experiments show that AdvFD consistently improves one-step generator post-training across both JiT and pMF backbones and across different model scales.",
+      "summary": "Adversarial Fréchet Distance improves generator post-training by adding a learnable adversarial feature space to static Fréchet losses, with whitening to stabilize optimization.",
       "matchedBy": [
         "papers with code",
         "Diffusion",
@@ -18594,12 +18594,12 @@
       "published": "2026-07-30",
       "score": 78,
       "paper": "https://arxiv.org/abs/2607.27749",
-      "source": "https://huggingface.co/papers/2607.27749",
+      "source": "https://paperswithcode.co/paper/2607.27749",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.27749.jpg",
       "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Building interactive digital twins requires recovering both 3D geometry and the kinematic structures that govern how objects articulate. Yet existing methods for articulated object reconstruction require explicitly observable motion from multiple articulation states. We introduce a rest-state formulation that reconstructs articulated objects from a single closed configuration, an inherently ill-posed setting where geometry, semantics, and motion priors compensate for the absence of motion cues. Our framework adopts an explicit mesh as an intermediate representation for cross-model verification and fusion, reconciling noisy outputs from vision-language and segmentation models into spatially consistent part structures. To estimate joint parameters without observed motion, we use a video diffusion model to synthesize articulation hypotheses and validate them through geometric consistency. Our approach achieves accurate part decomposition and physically plausible articulation, performing competitively with motion-observing reconstruction-based, generation-based, and modular pretrained-model baselines.",
+      "summary": "A rest-state framework reconstructs articulated objects from a single closed configuration by fusing vision-language outputs into consistent part meshes and validating synthesized motion hypotheses via geometric consistency.",
       "matchedBy": [
         "arxiv",
         "vision/multimodal",
@@ -18614,7 +18614,8 @@
       ],
       "category": "Vision/Multimodal",
       "categories": [
-        "Vision/Multimodal"
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -21793,12 +21794,12 @@
       "published": "2026-08-07",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.07458",
-      "source": "https://huggingface.co/papers/2608.07458",
+      "source": "https://paperswithcode.co/paper/2608.07458",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.07458.jpg",
       "firstSeenAt": "2026-08-10T23:49:34.186Z",
-      "summary": "Recent optimization studies on Retrieval-Augmented Generation (RAG) have exploited chunk-level KV cache reuse to avoid processing long retrieved contexts for higher efficiency, while significant information redundancy and noise still remain in the coarse-grained chunks. This paper optimizes the Pareto frontier under low prefill latency constraints while maximizing accuracy by proposing CoinRAG (Contextualized Information Nugget KV Cache Reuse for Long-Context RAG). The name metaphorically reflects our core mechanism: much like assembling small tokens (or \"coins\") to accumulate a larger value, CoinRAG compositionally reuses offline-computed, fine-grained nugget caches to form a learned contextual representation efficiently in a more semantically relevant but compact manner. Specifically, instead of full-chunk encoding, CoinRAG identifies query-relevant semantic units within retrieved chunks through two-stage retrieval and seamlessly assembles their sliced KV representations with a chunk-level context. Extensive evaluations on LongBench multi-hop question answering tasks demonstrate that CoinRAG significantly reduces operational costs and outperforms the other baselines with a new Pareto frontier and an average 5.3% relative improvement in answer quality (F1) under a standard fast prefill latency budget.",
+      "summary": "CoinRAG improves retrieval-augmented generation efficiency and accuracy by reusing fine-grained semantic nugget caches instead of full chunks.",
       "matchedBy": [
         "arxiv",
         "serving",
@@ -21811,11 +21812,10 @@
         "huggingface",
         "paperswithcode"
       ],
-      "category": "Serving",
+      "category": "Data / Retrieval",
       "categories": [
-        "Serving",
         "Data / Retrieval",
-        "Frontier Training"
+        "Serving"
       ]
     },
     {
@@ -22966,12 +22966,12 @@
       "published": "2026-08-10",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.09900",
-      "source": "https://huggingface.co/papers/2608.09900",
+      "source": "https://paperswithcode.co/paper/2608.09900",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09900.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimized generation corridor. In real-world deployments, however, complex system prompts, safety guardrails, and structural constraints continuously force models off this nominal path, driving a divergence between benchmark scores and deployment performance. To address this issue, we introduce Decoding-Level Taboo, a zero-prompt diagnostic stress test that intervenes directly in logit space at runtime, forcing models out of their nominal paths. By dynamically masking primary candidate tokens at word boundaries, Taboo forces machine circumlocution. Evaluating Taboo across several open-weight model families reveals that off-path robustness is heavily influenced by both parameter scale and post-training instruction alignment, with robustness generally improving with model size and alignment. Beyond the results presented in this paper, Taboo provides a novel primitive for generating diverse synthetic datasets, stress-testing runtime safety guardrails, and auditing model reliability prior to real-world deployment.",
+      "summary": "Decoding-Level Taboo is a runtime logit-space stress test that reveals how large language models handle off-nominal generation paths, showing that robustness depends on scale and instruction alignment.",
       "matchedBy": [
         "arxiv",
         "language modeling",
@@ -23770,8 +23770,8 @@
       "org": "",
       "published": "2026-08-11",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2608.10636",
-      "source": "https://huggingface.co/papers/2608.10636",
+      "paper": "https://arxiv.org/abs/2608.10636v1",
+      "source": "https://arxiv.org/abs/2608.10636v1",
       "code": "https://github.com/Ryenhails/NanoVDR",
       "project": "",
       "thumbnail": "./thumbs/2608.10636.jpg",
@@ -24483,19 +24483,18 @@
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.10366",
-      "source": "https://huggingface.co/papers/2608.10366",
+      "source": "https://paperswithcode.co/paper/2608.10366",
       "code": "https://github.com/vis-nlp/DSAgentBench",
       "project": "",
       "thumbnail": "./thumbs/2608.10366.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "Real-world data science involves long-horizon workflows that span data wrangling, exploration, modeling, visualization, and validation, and require coordinated use of tools such as notebooks, IDEs, terminals, browsers, and databases within real operating environments. Yet existing benchmarks lack real-computer interaction and do not evaluate whether agents can execute complete end-to-end data-science workflows in realistic computing environments, failing to capture the multi-stage, multi-tool nature of data-science practice. We introduce DSAgentBench, the first benchmark to evaluate whether agents can automate full data-science workflows inside real computer environments. DSAgentBench contains 275 diverse tasks covering the entire data-science life-cycle, reflecting the complexity and tool coordination required in practice. Each task requires grounding decisions in intermediate outputs and coordinated tool use, and includes a deterministic evaluator that verifies analytical correctness, visual outputs, and model performance rather than code-only execution. Our extensive experiments with 15 closed- and open-source models show that even the strongest agent, Claude-4.6-Sonnet, achieves only 56.70% task success, while all open-source agents remain below 1%, frequently failing at tool orchestration, OS grounding, and multi-step reasoning. These results reveal a substantial capability gap between current agentic systems and real data-science workflows, positioning DSAgentBench as a foundation for developing grounded, verifiable, autonomous data-science agents. We release DSAgentBench at https://github.com/vis-nlp/DSAgentBench.",
+      "summary": "DSAgentBench evaluates autonomous agents on complete, multi-tool data-science workflows in real computing environments and reveals major performance gaps.",
       "matchedBy": [
         "papers with code",
         "Reinforcement Learning",
         "DeepSeek Sparse Attention",
         "Function calling",
-        "language modeling",
-        "vision/multimodal"
+        "language modeling"
       ],
       "sources": [
         "paperswithcode",
@@ -24503,8 +24502,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Vision/Multimodal"
+        "Language Modeling"
       ]
     },
     {
@@ -25671,19 +25669,18 @@
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.10720",
-      "source": "https://huggingface.co/papers/2608.10720",
+      "source": "https://paperswithcode.co/paper/2608.10720",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.10720.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "Omni-modal dialogue models can understand multimodal inputs and synthesize spoken replies, yet their responses remain visually disembodied. We introduce \\textbf{Ex-Omni-2D}, an omni-modal dialogue framework that generates a coordinated response comprising text, personalized speech, and reference-conditioned video. Given a multimodal query, reference image, and reference audio, the model predicts a structured \\textit{Visual Thought Plan} (VTP) describing scene, emotion, and motion, followed by response text and native multi-codebook speech units. These units form a shared acoustic-temporal interface: they are decoded into speech and aligned online with video frames. This interface enables the response and avatar pathways to be learned from heterogeneous speech, dialogue, and avatar-video data, avoiding the need for large-scale query--text--speech--video supervision. A full-sequence Video Generator serves as the primary Teacher. For efficient incremental generation, we further distill it into a few-step block-causal \\emph{Streaming Student} whose Prefix Streaming mechanism carries a clean latent across consecutive chunks to reduce cumulative late-chunk degradation. With four-step inference, the complete four-GPU pipeline achieves an end-to-end RTF of 1.293 at $400\\times720$/$720\\times400$, providing a practical quality--efficiency operating point.",
+      "summary": "Ex-Omni-2D is an omni-modal dialogue framework that produces coordinated text, speech, and video responses via a visual thought plan and a distilled streaming video generator.",
       "matchedBy": [
         "papers with code",
         "Omni models",
         "vision/multimodal",
         "hugging face daily",
-        "serving",
-        "robotics"
+        "serving"
       ],
       "sources": [
         "paperswithcode",
@@ -25691,9 +25688,7 @@
       ],
       "category": "Vision/Multimodal",
       "categories": [
-        "Vision/Multimodal",
-        "Serving",
-        "Robotics"
+        "Vision/Multimodal"
       ]
     },
     {
@@ -29443,12 +29438,12 @@
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.10628",
-      "source": "https://huggingface.co/papers/2608.10628",
+      "source": "https://paperswithcode.co/paper/2608.10628",
       "code": "https://github.com/m-Just/InSight-doc",
       "project": "",
       "thumbnail": "./thumbs/2608.10628.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "Long-document understanding often requires reasoning over many visually rich pages, making inference costly and prone to context rot. In this work, we propose InSight-doc, an agentic visual perception framework that treats visual resolution as an adaptive reasoning-time resource. InSight-doc starts from low resolution and selectively zooms into high-resolution regions for finer evidence, without relying on any external retriever. To train such an agent, we construct an active-perception corpus of 17.9K high-quality SFT examples with region-level zoom-in trajectories, accompanied by 19.2K hard RL examples. Through SFT+RL, InSight-doc-8B improves the baseline by 4.3--16.4 accuracy points over document VQA benchmarks. On long documents, it reduces hallucination by more than 40% and inference latency by 41%--68% while maintaining an accuracy lead. Our code, datasets, and model are released at https://github.com/m-Just/InSight-doc .",
+      "summary": "InSight-doc adaptively allocates visual resolution during reasoning to improve long-document understanding while reducing latency and hallucinations.",
       "matchedBy": [
         "papers with code",
         "Document Understanding",
@@ -29456,7 +29451,7 @@
         "Reinforcement Learning",
         "Context rot",
         "language modeling",
-        "serving"
+        "vision/multimodal"
       ],
       "sources": [
         "paperswithcode",
@@ -29465,7 +29460,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling",
-        "Serving",
         "Vision/Multimodal"
       ]
     },
@@ -29943,15 +29937,15 @@
       "title": "JigShape: Evaluating Visual-Geometric Reasoning in VLMs through Jigsaw Puzzles",
       "authors": "Shawn Li, Wei Yang, Jike Zhong, Jiate Li, Jiawei Yang, You Qin, Ryan Rossi, Franck Dernoncourt, Roger Zimmermann, Yue Wang, Zhengzhong Tu, Vicente Ordonez, Mohit Bansal, Yue Zhao",
       "org": "",
-      "published": "2026-07-30",
+      "published": "2026-08-04",
       "score": 78,
       "paper": "https://arxiv.org/abs/2607.27670",
-      "source": "https://huggingface.co/papers/2607.27670",
+      "source": "https://paperswithcode.co/paper/2607.27670",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2607.27670.jpg",
       "firstSeenAt": "2026-08-01T00:10:38.531Z",
-      "summary": "Jigsaw puzzle solving requires jointly reasoning about visual content and geometric constraints, yet existing benchmarks use rectangular cuts that create ambiguous ground truth in texture-repeated regions. We introduce \\textit{\\ours{}}, a benchmark with tab-and-blank interlocking pieces where geometric constraints provide strong local compatibility requirements that, combined with visual content, yield unambiguous ground truth. Across 95K instances at four grid densities (4$\\times$4 to 16$\\times$16), we find that \\textbf{zero-shot VLMs largely lack geometric reasoning}: only one of five frontier models (GPT-5.5) exceeds random baseline on 4$\\times$4 puzzles, while all others perform at chance level. While supervised fine-tuning achieves $>$97\\% on 4$\\times$4, \\textbf{all models collapse on larger grids}: GPT-5.5 drops from 70\\% to near-random on 8$\\times$8, and even fine-tuned models fall below 5\\% on 12$\\times$12. This ``scaling cliff'' suggests current architectures cannot maintain consistent constraint satisfaction as the number of pieces increases. \\ours{} establishes scalable geometric reasoning as an open challenge for vision-language models.",
+      "summary": "A new jigsaw benchmark with interlocking pieces reveals that vision-language models fail at geometric reasoning and suffer a sharp performance drop as puzzle size increases.",
       "matchedBy": [
         "arxiv",
         "vision/multimodal",
@@ -29967,7 +29961,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -34703,12 +34696,12 @@
       "published": "2026-08-09",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08389",
-      "source": "https://huggingface.co/papers/2608.08389",
+      "source": "https://paperswithcode.co/paper/2608.08389",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08389.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Long-horizon research agents solve open-ended tasks through iterative retrieval, aggregation, and synthesis, but context grows rapidly while the marginal value of additional evidence often declines. This leads to unnecessary token cost, higher latency, and noisier inputs for final report generation. We study marginal value estimation for context management in deep research agents and present the first systematic stage-aware comparison of pruning strategies across the pipeline. We evaluate lightweight heuristic criteria and a learned value model at pre-retrieval, post-retrieval, and pre-synthesis stages. Our results show that pruning effectiveness depends more on where pruning is applied than on the specific scoring rule: early pruning yields the largest end-to-end savings, while later pruning mainly refines the final synthesis context. Lightweight heuristics reduce token usage by up to 73% with little quality degradation, learned pruning remains competitive on selected trade-offs, and no single method dominates across quality, efficiency, and faithfulness. These findings provide practical guidance for designing efficient long-horizon agentic systems.",
+      "summary": "Pruning strategies applied at different pipeline stages reduce token usage and latency in long-horizon research agents, with early pruning yielding the greatest efficiency gains.",
       "matchedBy": [
         "arxiv",
         "language modeling",
@@ -37235,19 +37228,18 @@
       "published": "2026-08-10",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.10288",
-      "source": "https://huggingface.co/papers/2608.10288",
+      "source": "https://paperswithcode.co/paper/2608.10288",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.10288.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "The Large Language Model from Power Law Decoder Representations (PLDR-LLM) and its attention, Power Law Graph Attention (PLGA), replace the fixed bilinear form of scaled dot-product attention (SDPA) with a learned, input-generated bilinear operator $G_{LM}$, built from a positive tensor $A_{LM}$ by elementwise power laws. The architecture is fully specified, verified against pinned reference releases; claims are labeled theorem, conditional theorem, measurement, or conjecture. Unconditionally: PLGA contains SDPA exactly at $G_{LM}=I$; $A_{LM}$ and $A_P$ are strictly entrywise positive, with Perron-Frobenius structure on $A_{LM}$; the DAG regularizer has the NOTEARS walk-counting form and positivity obstructs exact acyclicity; and, under nonresonance (satisfied by standard rotary frequencies), a commutant criterion identifies which operators preserve relative-position dependence. An inference-collapse theorem: exact input invariance of deductive outputs collapses inference to generalized SDPA with a constant operator. Measured invariance: relative fluctuations of $10^{-6}$ and below; perturbation bounds quantify but do not certify cached inference; the assembled proxy misses the decoding margin. A conditional three-stage mechanism (rotary twirl, concentration, row-map contraction) is measured on a released checkpoint. Blockwise training and scoring under the global Gram are stated with explicit target exposure; on tested samples, block and sequential scoring select identical answers and agree on the published TruthfulQA probability-mass metric within $5\\times 10^{-5}$ per item. Self-organized criticality enters as a phenomenological framework with an intrinsic order parameter; open claims become falsifiable conjectures. Selected proof cores are machine-checked in Lean 4.",
+      "summary": "A new attention mechanism replaces fixed scaled dot-product attention with a learned power-law bilinear operator, with verified architecture, measured stability, and machine-checked proofs.",
       "matchedBy": [
         "papers with code",
         "Large language model (LLM)",
         "language modeling",
         "frontier training",
-        "hugging face daily",
-        "serving"
+        "hugging face daily"
       ],
       "sources": [
         "paperswithcode",
@@ -37256,7 +37248,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling",
-        "Serving",
         "Frontier Training"
       ]
     },
@@ -38340,8 +38331,8 @@
       "org": "",
       "published": "2026-08-11",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2608.10812",
-      "source": "https://huggingface.co/papers/2608.10812",
+      "paper": "https://arxiv.org/abs/2608.10812v2",
+      "source": "https://arxiv.org/abs/2608.10812v2",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.10812.jpg",
@@ -42438,19 +42429,18 @@
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.10692",
-      "source": "https://huggingface.co/papers/2608.10692",
+      "source": "https://paperswithcode.co/paper/2608.10692",
       "code": "",
       "project": "https://huggingface",
       "thumbnail": "./thumbs/2608.10692.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "Large language models (LLMs) are increasingly deployed as mobile assistants, where a key challenge is leveraging personal information scattered across multiple applications (apps) to complete user instructions. However, due to the lack of dedicated benchmarks, their capabilities remain poorly understood. To address this gap, we introduce SPIEval, a human-curated benchmark grounded in five cognitive capabilities (i.e., reasoning, disambiguation, integration, preference inference, and multi-intent decomposition). SPIEval comprises 250 tasks spanning 4,335 personal records distributed across 10 apps and supports multi-turn interaction through 21 tools. Analysis shows that the benchmark exhibits diverse scenarios, challenging tasks, scattered information, controllable environments, and verifiable outcomes. We evaluate nine representative LLMs and find substantial room for improvement. The best-performing model, GPT-5.5 (xhigh), achieves only 57.3% accuracy, while the weakest achieves just 16.4%. Further analysis reveals that 79% of failures stem from inaccurate information localization, as LLMs often commit to plausible but incorrect information instead of continuing retrieval for verification. We also find that fewer than 2% of retrieval actions employ advanced search methods and observe substantial variation in search efficiency across models. These findings expose fundamental limitations of current LLM-based mobile assistants and motivate future research in this direction. Data and code are available at https://huggingface.co/datasets/Junjie-Ye/SPIEval.",
+      "summary": "SPIEval benchmarks mobile assistant LLMs on scattered personal data tasks, revealing major gaps in information retrieval and verification.",
       "matchedBy": [
         "papers with code",
         "GPT-5",
         "Large language model (LLM)",
         "Multi-turn",
-        "language modeling",
-        "data / retrieval"
+        "language modeling"
       ],
       "sources": [
         "paperswithcode",
@@ -42458,8 +42448,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
+        "Language Modeling"
       ]
     },
     {
@@ -45204,12 +45193,12 @@
       "published": "2026-08-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08119",
-      "source": "https://huggingface.co/papers/2608.08119",
+      "source": "https://paperswithcode.co/paper/2608.08119",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08119.jpg",
       "firstSeenAt": "2026-08-12T23:56:31.958Z",
-      "summary": "The rapid advancement of artificial intelligence (AI) has significantly accelerated research in time-series analysis, particularly in forecasting, classification, and generation tasks. Recent models, especially foundation models, benefit from time-series dataset similarity due to its significant role in source dataset selection for fine-tuning. However, many existing implementations for benchmarking time-series dataset similarity methods are fragmented and difficult to extend. To address this, we present a unified framework, the Time-Series Dataset Similarity Toolbox (TSDS-Toolbox). Our work enables (1) systematic and reproducible comparisons of time-series dataset similarity methods; (2) flexible extensibility for users to add customized datasets, similarity methods, and downstream time-series tasks; and (3) consistent evaluation of both dataset-level and series-level similarity methods through integrated time-series dataset reducers. The effectiveness of TSDS-Toolbox is validated through comprehensive experiments under diverse experimental settings. Our toolbox is publicly available.",
+      "summary": "A unified toolbox enables reproducible comparison and extension of time-series dataset similarity methods for forecasting, classification, and generation tasks.",
       "matchedBy": [
         "papers with code",
         "Fine-tuning",
@@ -46196,8 +46185,8 @@
       "org": "",
       "published": "2026-08-11",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2608.10875",
-      "source": "https://huggingface.co/papers/2608.10875",
+      "paper": "https://arxiv.org/abs/2608.10875v1",
+      "source": "https://arxiv.org/abs/2608.10875v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.10875.jpg",
@@ -240284,7 +240273,7 @@
       "source": "https://arxiv.org/abs/2608.12049v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.12049.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Generative retrieval models perform document retrieval by autoregressively generating document identifiers (DocIDs). This process naturally forms a sequential decision problem, where each decoding step selects a DocID token and the complete token sequence determines the retrieved document. However, retrieval effectiveness is typically evaluated only after the full DocID is generated, creating a mismatch between token-level generation and document-level relevance supervision. As a result, existing reinforcement learning methods for generative retrieval mostly rely on sequence-level rewards, where the same document-level feedback is propagated to all decoding steps. Such coarse-grained feedback makes it difficult to identify which token decisions are responsible for successful or failed retrieval. In this work, we propose a fine-grained reinforcement learning framework for generative retrieval with token-level relevance rewards. Instead of assigning a single reward to the entire generated DocID, we estimate step-wise rewards by measuring how each token decision changes the expected retrieval quality of the corresponding generation trajectory. This enables more precise credit assignment and encourages the policy to favor token decisions that contribute more directly to document-level relevance. We further develop practical reward estimation strategies tailored to the DocID generation process and incorporate them into a policy optimization framework. Experiments on retrieval benchmarks show that our method consistently outperforms sequence-level reward baselines, demonstrating the effectiveness of fine-grained supervision for aligning autoregressive DocID generation with retrieval objectives.",
       "matchedBy": [
@@ -240672,7 +240661,7 @@
       "source": "https://arxiv.org/abs/2608.11407v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11407.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Robust traffic simulators are crucial for developing and testing autonomous vehicles to reduce the costly, labor-intensive real-world data collection process and the need for physical presence on the road. However, existing simulators require agents' initial states to generate trajectories, which limits scalability and diversity due to restrictions on the given initial states. While data-driven agent initialization has been widely studied, the generated initial states are not interpretable in terms of why the agents are initialized at those specific locations. Given known initial states, trajectory generation is also a challenging problem, as the model must learn the variability of the destination and how agents should reach it over time. In this paper, we propose TrafficDiffuser, a top-down traffic scenario generation framework that generates high-level traffic scenarios, defined by initial and goal state pairs, by jointly modeling them. The high-level scenario generation makes initial states better interpretable and reduces trajectory generation into as simple as an infilling problem. We demonstrate how the generated high-level traffic scenarios can be used, including constraining based on different trajectory modes and integrating them with existing trajectory generation models. We conduct extensive experiments on the Argoverse 2 motion prediction dataset to evaluate how well the generated outputs capture real-world distributions. In addition to generating goal states, TrafficDiffuser outperforms the next-best approach for agent initialization, reducing speed distribution distance by 55.3% and the off-road rate by 2.8%.",
       "matchedBy": [
@@ -240806,7 +240795,7 @@
       "source": "https://arxiv.org/abs/2608.11879v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11879.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how much that costs to serve has received little systematic benchmarking. We compare three memory systems (Mem0, Hindsight, and Mastra Observational Memory) against two reference strategies -- a fixed-size rolling window and resubmitting the full transcript -- across two backbones and conversations of up to 400 turns, pairing every cost measurement with answer accuracy on 665 LoCoMo questions. First, a memory system's serving cost cannot be predicted from conversation length and message size alone: a regression that tracks the two reference strategies closely misses the memory systems by 18-69%, their cost driven instead by internal memory behavior. Second, a break-even analysis shows that whether -- and when -- a memory system becomes cheaper to serve than the full transcript is highly sensitive to the system and the backbone, from the first tens of turns for the cheapest to never within 400 turns for the most expensive. Third, no system wins on both axes: accuracy spans 21-54%, and the backbone choice drives cost as much as the memory system does.",
       "matchedBy": [
@@ -242104,7 +242093,7 @@
       "source": "https://arxiv.org/abs/2608.11829v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11829.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "On-policy distillation (OPD) has emerged as a promising post-training technique for enhancing LLM reasoning. It is commonly believed to enable the student model to distill knowledge from a stronger teacher model, thereby expanding capabilities beyond the pre-OPD base model. In this study, we examine this view through the lens of test-time scaling by varying the sampling budget K and evaluating performance with pass@K and avg@K. Specifically, across several OPD variants, we observe that OPD-trained models maintain superior avg@K performance across sampling budgets, while the advantage in pass@K gradually shifts to the pre-OPD base models as K increases. These results suggest that OPD primarily improves sampling efficiency rather than consistently expanding the student's reasoning capability boundary. The pass@K dynamics throughout OPD training further reveal a progressive shift toward stronger small-K performance at the expense of the large-K capability boundary. Furthermore, a problem-level solvability analysis using pass@1024 as the criterion reveals an asymmetry: OPD causes more previously solvable problems to become unsolvable than previously unsolvable problems to become solvable. Together, these findings suggest that, from the perspective of capability expansion, OPD behaves more like an \"illusory distillation\": its apparent gains arise primarily from improved sampling efficiency rather than from acquiring genuinely new reasoning capabilities from the teacher.",
       "matchedBy": [
@@ -242402,7 +242391,7 @@
       "source": "https://arxiv.org/abs/2608.11415v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11415.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Large language models are being proposed as agents in scientific workflows, in domains where no downstream verifier exists. Such deployment assumes the model can distinguish reliable scientific literature from unreliable literature, a capability that has not yet been directly measured. Existing benchmarks evaluate factuality on questions with known answers; the failure mode we target here is different. We introduce a probe corpus of 42 retracted, fraudulent, and pseudoscientific papers, paired with a methodology for eliciting and scoring single-shot model engagement with each paper's framing. Each probe pairs a preamble extracted near-verbatim from the target paper with a scientifically plausible study-design request. The probes span five claim types: fabricated observation, pseudophysical mechanism, magical premise, legitimization bridge, and cargo-cult experiment. Two complementary scores measure whether a model rejects the flawed premise outright (IFR-a) and whether it recognizes the unreliability while still engaging (IFR-i). A depth score, the Engagement Depth Index (EDI), quantifies reproduction of paper- or field-specific withheld details. Across 30 models and 10 repeated runs, aggregate IFR-a is 0.93 $\\pm$ 0.004 and aggregate IFR-i is 0.809 $\\pm$ 0.009. Models engaged with untenable premises in 95% of all non-empty responses. Every evaluated model fails more than 71% of agentic probes, and 22 of 30 models fail more than 90% of the time. Rejections are concentrated on a small number of high-notoriety topics and specific probes, and disappear under matched-structure controls. These results are consistent with topic-keyed safety behavior rather than robust epistemic competence, and indicate an urgent need for guardrail infrastructure for scientific deployment of language models.",
       "matchedBy": [
@@ -246322,7 +246311,7 @@
       "source": "https://arxiv.org/abs/2608.11840v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11840.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Growing demand for artificial intelligence (AI) inference services requires scalable infrastructure, yet centralized serving costs rise with demand. We propose a collaborative distributed inference system combining dedicated infrastructure with resources contributed by service users. Dedicated resources provide baseline capacity for maintaining quality of service (QoS), while volunteered resources absorb increasing demand without proportional growth in centralized infrastructure. To capture stochastic and dynamic interactions among users, resources, tasks, and policies, we develop a high-dimensional generative Markov model with structured temporal factorization. The model supports simulation and provides a foundation for task scheduling and QoS-aware resource allocation optimization. We evaluate the system across user populations, resource capacities, and centralized and distributed scheduling policies. Simulations show that distributed scheduling becomes increasingly advantageous as the user population grows, improving request completion and P99 latency while substantially reducing dedicated resource consumption. These results demonstrate the feasibility of user-assisted collaborative inference for infrastructure-efficient autoscaling.",
       "matchedBy": [
@@ -246540,7 +246529,7 @@
       "source": "https://arxiv.org/abs/2608.12282v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.12282.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Agents deployed in enterprise settings must reason across structured APIs and document collections, yet existing benchmarks evaluate these capabilities in isolation. We introduce VAKRA (e\\textbf{V}aluating \\textbf{A}PI and \\textbf{K}nowledge \\textbf{R}etrieval \\textbf{A}gents), a benchmark of over $8{,}000$ executable APIs across $62$ domains with tasks spanning three settings of increasing difficulty: diverse API interaction styles, multi-hop reasoning over structured APIs, and multi-source reasoning with natural-language tool-use policy constraints. Correctness is verified by re-executing predicted tool calls against live APIs, accommodating multiple valid paths. Using a fixed ReAct harness to isolate model capabilities from agent architecture, we evaluate frontier and open-weight models and find that even the best model achieves only 70.4\\% on single-hop endpoint-style tasks and drops to 50--51\\% on compositional APIs; performance degrades by over 50\\% as reasoning depth increases, and policy-constrained questions expose severe failures (as low as 2.4\\% on unanswerable queries). Trace analysis shows failures concentrate at language-mediated reasoning - entity disambiguation, cross-source grounding, rather than tool invocation mechanics. Code is available https://github.com/IBM/VAKRA. Dataset is available https://huggingface.co/datasets/ibm-research/VAKRA",
       "matchedBy": [
@@ -247436,7 +247425,7 @@
       "source": "https://arxiv.org/abs/2608.11592v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11592.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Closed-track testing plays a fundamental role in the verification and validation of automated driving systems (ADS), particularly for safety-critical scenarios, by enabling reproducible evaluation under controlled conditions. However, most existing approaches still rely on standardized protocols or predefined trajectories, leading to overly scripted interactions and limited ability to reproduce the natural complexity of public-road traffic. To address this limitation, we propose Video2Track, a framework that transfers real-world interactive driving scenarios from videos into steerable adversarial closed-track testing. The framework consists of two tightly coupled modules. The first is a scenario semantic mapping module, which extracts structured semantics from driving videos using a vision-language model and grounds them onto a closed-track topology library via retrieval-augmented generation, thereby identifying compatible map segments and interaction anchors. The second is a dynamic interactive testing module, which conditions on the grounded topology and anchors to generate diverse multi-agent trajectories through a conditional diffusion model, while regulating interaction intensity via a Stackelberg game with a parameterized adversarial objective. Closed-track experiments demonstrate that the proposed framework can faithfully reproduce representative real-world interaction scenarios and generate executable scenario variants with controllable risk levels and interaction styles, providing a scalable approach for realistic and steerable ADS validation.",
       "matchedBy": [
@@ -249192,7 +249181,7 @@
       "source": "https://arxiv.org/abs/2608.11883v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.11883.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Multimodal satellite imagery provides complementary information for Earth Observation, but accurately combining heterogeneous sensors remains challenging in dynamic environments. Fast-changing regions, such as the Antarctic marginal ice zone, cannot fully exploit multimodal information from different satellite sensors because surface features move between image acquisitions. This spatial and temporal mismatch challenges effective perceptual grounding, violating the assumption of pixel-level correspondence that underpins most multimodal reasoning and downstream classification pipelines. Antarctic sea ice provides a challenging benchmark due to the rapid, heterogeneous drift of individual ice floes and the differing responses of sea ice to radar, visible and thermal sensing modalities. Accurate, dense supervision of sea ice remains scarce because generating pixel-wise labels requires time-consuming expert interpretation of noisy data, leading to historical reliance on coarse-resolution maritime ice charts for model training. This paper presents a novel architecture based on mutual information warping to align multi-satellite (Sentinel-1 and MODIS platforms) multimodal (visible, thermal, radar) satellite scenes. To demonstrate the approach, we introduce a sparse expert-labeled dataset of 2,088 pixel-wise annotations (7,046 expert point classifications) located at the ice-water margin interface across 43 scenes. Our results demonstrate that spatially grounding and aligning modalities prior to segmentation improves classification accuracy, and enables accurate, dense sea ice segmentation from sparse point-wise supervision.",
       "matchedBy": [
@@ -251912,7 +251901,7 @@
       "source": "https://arxiv.org/abs/2608.12150v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2608.12150.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
       "summary": "Standard evaluation of large language models assumes stable model rankings across inference conditions. We challenge this assumption by varying the token generation budget, i.e., the maximum tokens a model may produce, across seven levels (64--4,096), evaluating four models on three reasoning benchmarks (56,476 inferences). We report four findings: (i) 3--19% of items exhibit non-monotone behavior (accuracy decreasing with more budget), even after controlling for truncation, and this phenomenon is model-specific (cross-model overlap: 6--14%). (ii) Model rankings reverse across budgets on all benchmarks ($p {<} 0.01$, McNemar). (iii) Oracle analysis reveals model complementarity up to $+27.8$pp, most pronounced at constrained budgets. (iv) A budget-aware router captures 14.1% of the oracle gap cross-domain; budget features help within-domain ($+1.6$ to $+5.7$pp) but are domain-specific and hurt transfer ($-1.2$pp). These results argue for budget-conditioned evaluation protocols.",
       "matchedBy": [
