@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-14T23:57:17.944Z",
+  "generatedAt": "2026-08-15T23:33:59.060Z",
   "sourceStats": {
     "seed": 8935,
     "paperswithcode": 540,
     "arxiv": 175,
-    "huggingface": 59,
+    "huggingface": 32,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 8935
+    "total": 8939
   },
   "papers": [
     {
@@ -1078,7 +1078,7 @@
       "published": "2026-08-10",
       "score": 95,
       "paper": "https://arxiv.org/abs/2608.09888",
-      "source": "https://www.alphaxiv.org/abs/2608.09888",
+      "source": "https://paperswithcode.co/paper/2608.09888",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09888.jpg",
@@ -1881,6 +1881,34 @@
       ]
     },
     {
+      "id": "2608.13331",
+      "title": "Training AI Scientists to Replicate Research",
+      "authors": "Damon Falck, Samer Sabri, Anja Surina, Thom Foster, Anya Sims, Sam Devlin, Dylan Rogers, Tantum Collins, Kaloyan Aleksiev, Louis Kirsch, Edward Hughes",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 95,
+      "paper": "https://arxiv.org/abs/2608.13331",
+      "source": "https://www.alphaxiv.org/abs/2608.13331",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13331.jpg",
+      "firstSeenAt": "2026-08-14T23:34:21.613Z",
+      "summary": "The replicability of papers is a cornerstone of scientific knowledge, ensuring the reliability of existing results and providing a base for further experiments. The act of replication typically illuminates details that were previously underspecified, and thus requires similar hypothesis-driven exploration to open-ended research. In this work, we develop Replica, a scalable task space for paper replication. To provide reward signal, we introduce an auto-generated rubric-based judge that has low noise and agrees with human assessment of replication quality. We post-train Faraday, a 27B-parameter \"AI Scientist\" agent that leverages coding agents as tools, surpassing the performance of Claude Opus 4.8 and GPT-5.5 on held-out replication tasks. Qualitative analysis of individual rollouts reveals that Faraday adopts a more scientifically-principled approach. We believe that our results provide a stepping stone towards AI agents capable of long-horizon scientific innovation without requiring complex harnesses.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.27205",
       "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
       "authors": "Hengyi Xie, Chenfei Yao, Xianjin Wu, Xuanyang Xi, Yiping Tang, Di Xu, Yingying Zhu, Dingkang Liang, Xiang Bai, Han Ding",
@@ -2280,6 +2308,40 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.13560",
+      "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+      "authors": "Yaxin Luo, Haobin Jiang, Jialv Zou, Xu Huang, Wenhao Yan, Haodong Li, Zhengrong Yue, Jing Li, Xiaofu Chen, Xiaohan Zhao, Jiacheng Liu, Jiacheng Cui, Zhiqiang Shen, Xiaotong Li",
+      "org": "Meituan and MBZUAI researchers developed AutoDesign, a meta-harness optimization framework enabling design systems to recursively improve their operational components based on human-aligned evaluations. Applied to academic paper-to-poster generation, it achieved a PosterBench Score of 78.32, outperforming other systems by over 7 points, and autonomously generated posters in 40 minutes at under $3 each.",
+      "published": "2026-08-13",
+      "score": 94,
+      "paper": "https://arxiv.org/abs/2608.13560",
+      "source": "https://www.alphaxiv.org/abs/2608.13560",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13560.jpg",
+      "firstSeenAt": "2026-08-14T23:34:21.613Z",
+      "summary": "Transforming multimodal sources into condensed and structured media outputs can be fundamentally conceptualized as a long-horizon agentic process centered on a model-harness system. While an ideal harness system should align with human design priors and accumulate reusable experience through empirical exploration to drive recursive self-improvement, existing paradigms remain static and fall short of this capability. In this paper, we present AutoDesign, a framework that aligns with human design priors, where a meta-harness optimizer guides a code agent to recursively improve harness based on rollout feedback. To instantiate and evaluate this framework, we focus on the academic paper-to-poster generation task and introduce PosterBench, comprising a 100-paper Main Track spanning five disciplines and PosterBench-mini, a shared 10-paper subset for controlled evaluation. On the PosterBench Main Track, AutoDesign achieves the highest score of 78.32, surpassing the closed-source commercial system Claude Design by 7.45 points. Across seven controlled code-agent-model configurations, integrating the learned DesignHarness consistently improves performance, increasing the average PosterBench Score from 54.99 to 67.39 (+12.4%). In a fully autonomous long-horizon loop, it executes 253 tool calls and 11 editing turns within 40 minutes for under $3, reaching average conference-poster quality in human evaluation. A system-blind human study further demonstrates that AutoDesign achieves the highest human preference among evaluated systems.",
+      "matchedBy": [
+        "papers with code",
+        "Reinforcement Learning",
+        "Function calling",
+        "Recursive Self-Improvement",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode",
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -5140,12 +5202,12 @@
       "published": "2026-08-12",
       "score": 91,
       "paper": "https://arxiv.org/abs/2608.12307",
-      "source": "https://www.alphaxiv.org/abs/2608.12307",
+      "source": "https://paperswithcode.co/paper/2608.12307",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.12307.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whether such transfer can instead occur at test time. We study strong-to-weak scaffolding: whether a stronger builder model can construct inference-time harnesses that help a weaker target model solve tasks more reliably without any parameter updates. Using four representative Theory-of-Mind benchmarks, each builder model uses 5% of the data as a validation set to iteratively refine its harness over multiple rounds, after which the finalized harness is evaluated on the full test set. Empirically, this form of test-time capability transfer is highly effective, nearly doubling average target-model performance from 0.49 to 0.91. Our analysis shows that the gains come primarily from offloading unstable model reasoning into deterministic code, benchmark-specific routing, and strict answer-format enforcement, rather than from encouraging the target model to reason more extensively or sample more broadly. We further find that builder-model reasoning effort improves harness quality monotonically, platform effects are modest relative to the builder model's own capability, and weaker target models receive the largest gains. These results suggest that inference-time harness design is an important complement to conventional training-time distillation, enabling strong models to transfer cognitive structure to weaker models without retraining.",
+      "summary": "Stronger models can build inference-time harnesses that substantially improve weaker models' task performance without parameter updates by offloading reasoning into structured code and routing.",
       "matchedBy": [
         "papers with code",
         "On-policy distillation",
@@ -5195,40 +5257,6 @@
         "Language Modeling",
         "Data / Retrieval",
         "Frontier Training"
-      ]
-    },
-    {
-      "id": "2608.13560",
-      "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
-      "authors": "Yaxin Luo, Haobin Jiang, Jialv Zou, Xu Huang, Wenhao Yan, Haodong Li, Zhengrong Yue, Jing Li, Xiaofu Chen, Xiaohan Zhao, Jiacheng Liu, Jiacheng Cui, Zhiqiang Shen, Xiaotong Li",
-      "org": "Meituan and MBZUAI researchers developed AutoDesign, a meta-harness optimization framework enabling design systems to recursively improve their operational components based on human-aligned evaluations. Applied to academic paper-to-poster generation, it achieved a PosterBench Score of 78.32, outperforming other systems by over 7 points, and autonomously generated posters in 40 minutes at under $3 each.",
-      "published": "2026-08-13",
-      "score": 91,
-      "paper": "https://arxiv.org/abs/2608.13560",
-      "source": "https://www.alphaxiv.org/abs/2608.13560",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13560.jpg",
-      "firstSeenAt": "2026-08-14T23:34:21.613Z",
-      "summary": "Transforming multimodal sources into condensed and structured media outputs can be fundamentally conceptualized as a long-horizon agentic process centered on a model-harness system. While an ideal harness system should align with human design priors and accumulate reusable experience through empirical exploration to drive recursive self-improvement, existing paradigms remain static and fall short of this capability. In this paper, we present AutoDesign, a framework that aligns with human design priors, where a meta-harness optimizer guides a code agent to recursively improve harness based on rollout feedback. To instantiate and evaluate this framework, we focus on the academic paper-to-poster generation task and introduce PosterBench, comprising a 100-paper Main Track spanning five disciplines and PosterBench-mini, a shared 10-paper subset for controlled evaluation. On the PosterBench Main Track, AutoDesign achieves the highest score of 78.32, surpassing the closed-source commercial system Claude Design by 7.45 points. Across seven controlled code-agent-model configurations, integrating the learned DesignHarness consistently improves performance, increasing the average PosterBench Score from 54.99 to 67.39 (+12.4%). In a fully autonomous long-horizon loop, it executes 253 tool calls and 11 editing turns within 40 minutes for under $3, reaching average conference-poster quality in human evaluation. A system-blind human study further demonstrates that AutoDesign achieves the highest human preference among evaluated systems.",
-      "matchedBy": [
-        "papers with code",
-        "Reinforcement Learning",
-        "Function calling",
-        "Recursive Self-Improvement",
-        "language modeling",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode",
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Vision/Multimodal"
       ]
     },
     {
@@ -5625,6 +5653,39 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.12149",
+      "title": "Massive Activations in Hybrid Linear Attention Large Language Models: Pre-Attention Spikes and Inter-Spike Plateaus",
+      "authors": "Zunhai Su, Bohan Sun, Xialie Zhuang, Shuibai Zhang, He Xiao, Jing Xiong, Hengyuan Zhang, Zhongzhu Zhou, Tiantian Zhang, Ngai Wong, Chuan-Wei Kuo",
+      "org": "",
+      "published": "2026-08-12",
+      "score": 91,
+      "paper": "https://arxiv.org/abs/2608.12149",
+      "source": "https://www.alphaxiv.org/abs/2608.12149",
+      "code": "https://github.com/StartluxLabs/Massive-Activations-HLA",
+      "project": "",
+      "thumbnail": "./thumbs/2608.12149.jpg",
+      "firstSeenAt": "2026-08-13T23:56:07.620Z",
+      "summary": "We present the first systematic study of Massive activations (MAs) in layer-interleaved HLA LLMs and uncover two architecture-aligned morphologies: MAs consistently spike immediately before full attention layers, forming pre-attention spikes (PAS), and can persist through intervening linear attention layers, giving rise to inter-spike plateaus (ISP). As full attention becomes denser, successive PAS become increasingly connected through ISP, ultimately recovering the stable MA morphology of full attention LLMs. We establish the recurrence of this organization across five linear attention architectures, six hybridization configurations, five data domains, and representative open-source hybrid models spanning 1.2B to 397B total parameters. Controlled pretraining of GDN-based hybrids at scales up to 1.3B shows that both morphologies emerge early and respond asymmetrically to output gating: full attention output gating strongly attenuates their absolute magnitudes without eliminating their layerwise organization, whereas removing GDN gates yields comparatively modest amplification. Mechanistically, our systematic-outlier analysis supports a shared lifecycle account governed by the timing of MA cancellation. PAS follows a localized write-sink-cancel process, while the extended persistence of ISP is consistent with delayed cancellation. At the full attention limit, this account recovers the stable MA morphology characteristic of full attention LLMs. Our code is available at https://github.com/StartluxLabs/Massive-Activations-HLA.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "language modeling",
+        "alphaxiv hot",
+        "papers with code"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv",
+        "paperswithcode",
+        "huggingface"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -6565,12 +6626,12 @@
       "published": "2026-08-10",
       "score": 90,
       "paper": "https://arxiv.org/abs/2608.09926",
-      "source": "https://huggingface.co/papers/2608.09926",
+      "source": "https://paperswithcode.co/paper/2608.09926",
       "code": "",
       "project": "https://lat-dyn-reason",
       "thumbnail": "./thumbs/2608.09926.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "The world evolves following its dynamics, i.e., its laws of motion. However, leading video diffusion models largely fit the pixels without modeling how the pixels transit over time. Thus, they render visually plausible frames but may not accurately obey the laws. To capture the dynamics purely from pixels, we introduce Latent Dynamics Reasoning (LDR). LDR casts the latent transition as an explicit kinematic integration, where the lower-order dynamics are integrated numerically and the model regresses only the third- and higher-order residual that drives the rollout. For this integration to extrapolate better, LDR runs it on a structured latent rather than dense convolutional features. Following PhyWorld, we validate LDR on a controlled white-box physics benchmark spanning five tasks (uniform motion, parabola, collision, bouncing, looming), focusing on out-of-distribution scenarios that reveal whether a model has truly learned the underlying dynamics. LDR extrapolates the learned dynamics far better: the gap between its in- and out-of-distribution error is over 20$\\times$ smaller than the video diffusion baseline's, under both single- and joint-task training at 256$^2$ resolution, while using 26$\\times$ fewer parameters and running 143$\\times$ faster. LDR can even generalize under severe shift: for example, trained only on red balls moving left-to-right, it correctly predicts the motion of a blue square moving right-to-left. To our knowledge, this is the first video world model that extrapolates learned dynamics beyond its training distribution. Project page: https://lat-dyn-reason.github.io/",
+      "summary": "Latent Dynamics Reasoning integrates kinematic dynamics in structured latent space to enable video world models that extrapolate physical laws far beyond training distributions with far fewer parameters and faster inference.",
       "matchedBy": [
         "alphaxiv hot",
         "language modeling",
@@ -6583,10 +6644,10 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Vision/Multimodal",
+      "category": "Language Modeling",
       "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
+        "Language Modeling",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -6984,8 +7045,8 @@
       "org": "",
       "published": "2026-08-13",
       "score": 90,
-      "paper": "https://arxiv.org/abs/2608.13482",
-      "source": "https://www.alphaxiv.org/abs/2608.13482",
+      "paper": "https://arxiv.org/abs/2608.13482v1",
+      "source": "https://arxiv.org/abs/2608.13482v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.13482.jpg",
@@ -7179,6 +7240,32 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.12629",
+      "title": "CAKE: Compiler-Agent Co-Design for Frontier Kernel Evolution",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-12",
+      "score": 89,
+      "paper": "https://arxiv.org/abs/2608.12629",
+      "source": "https://www.alphaxiv.org/abs/2608.12629",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.12629.jpg",
+      "firstSeenAt": "2026-08-15T23:33:59.060Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "frontier training"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
       ]
     },
     {
@@ -9104,6 +9191,32 @@
       ]
     },
     {
+      "id": "2608.13040",
+      "title": "Latent On-Policy Self-Distillation",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 87,
+      "paper": "https://arxiv.org/abs/2608.13040",
+      "source": "https://www.alphaxiv.org/abs/2608.13040",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13040.jpg",
+      "firstSeenAt": "2026-08-15T23:33:59.060Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.15768",
       "title": "LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies",
       "authors": "Jialei Chen, Kai Wang, Kang Chen, Shuaihang Chen, Feng Gao, Wenhao Tang, Zhiyuan Li, Weilin Liu, Zhuyu Yao, Boxun Li, Yuanbo Xu, Chao Yu",
@@ -9826,6 +9939,32 @@
       ]
     },
     {
+      "id": "2608.13194",
+      "title": "Fidelity-Constrained Anchoring for Black-Box Denoisers",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 86,
+      "paper": "https://arxiv.org/abs/2608.13194",
+      "source": "https://www.alphaxiv.org/abs/2608.13194",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13194.jpg",
+      "firstSeenAt": "2026-08-14T23:34:21.613Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2608.08888",
       "title": "Full-bandwidth transformer",
       "authors": "Xi Wang, Ziyang Cai, Zheng Zhan, Harry Dong, Ying Fan, Gustavo de Rosa, Tim Pearce, John Langford",
@@ -9833,7 +9972,7 @@
       "published": "2026-08-09",
       "score": 86,
       "paper": "https://arxiv.org/abs/2608.08888",
-      "source": "https://huggingface.co/papers/2608.08888",
+      "source": "https://www.alphaxiv.org/abs/2608.08888",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08888.jpg",
@@ -10515,6 +10654,32 @@
       "project": "",
       "thumbnail": "./thumbs/2607.29660.jpg",
       "firstSeenAt": "2026-08-04T00:15:34.706Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.13433",
+      "title": "Algebraic Decomposition Theory for Transformer Length Generalization",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2608.13433",
+      "source": "https://www.alphaxiv.org/abs/2608.13433",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13433.jpg",
+      "firstSeenAt": "2026-08-15T23:33:59.060Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -11282,34 +11447,6 @@
       ]
     },
     {
-      "id": "2608.13331",
-      "title": "Training AI Scientists to Replicate Research",
-      "authors": "Damon Falck, Samer Sabri, Anja Surina, Thom Foster, Anya Sims, Sam Devlin, Dylan Rogers, Tantum Collins, Kaloyan Aleksiev, Louis Kirsch, Edward Hughes",
-      "org": "",
-      "published": "2026-08-13",
-      "score": 85,
-      "paper": "https://arxiv.org/abs/2608.13331",
-      "source": "https://www.alphaxiv.org/abs/2608.13331",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13331.jpg",
-      "firstSeenAt": "2026-08-14T23:34:21.613Z",
-      "summary": "The replicability of papers is a cornerstone of scientific knowledge, ensuring the reliability of existing results and providing a base for further experiments. The act of replication typically illuminates details that were previously underspecified, and thus requires similar hypothesis-driven exploration to open-ended research. In this work, we develop Replica, a scalable task space for paper replication. To provide reward signal, we introduce an auto-generated rubric-based judge that has low noise and agrees with human assessment of replication quality. We post-train Faraday, a 27B-parameter \"AI Scientist\" agent that leverages coding agents as tools, surpassing the performance of Claude Opus 4.8 and GPT-5.5 on held-out replication tasks. Qualitative analysis of individual rollouts reveals that Faraday adopts a more scientifically-principled approach. We believe that our results provide a stepping stone towards AI agents capable of long-horizon scientific innovation without requiring complex harnesses.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.22531",
       "title": "Twins: Learn to Predict Unified Representations with Focal Loss",
       "authors": "Kaixiong Gong, Xin Cai, Bin Lin, Hao Wang, Yunlong Lin, Mingzhe Zheng, Bohao Li, Jian-Wei Zhang, Miles Yang, Zhao Zhong, Liefeng Bo, Xiangyu Yue",
@@ -11424,6 +11561,38 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.13546",
+      "title": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World",
+      "authors": "Yuanyang Yin, Gongxuan Wang, Yifan Zhan, Chuanhao Li, Kaipeng Zhang, Feng Zhao",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 84,
+      "paper": "https://arxiv.org/abs/2608.13546",
+      "source": "https://www.alphaxiv.org/abs/2608.13546",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13546.jpg",
+      "firstSeenAt": "2026-08-14T23:34:21.613Z",
+      "summary": "Interactive world models must support persistent memory, responsive interaction, and long-horizon generation, yet these requirements place conflicting demands on the model. Maintaining history in the denoiser context or key-value cache incurs growing cost, forcing a trade-off between session length and retained memory, while low-latency interaction relies on few-step generation whose capabilities are bounded by its teacher. Evoke addresses both limitations by externalizing persistent world state and redesigning the teacher for long-horizon interactive generation. Scene geometry is maintained in an external, camera-indexed world state bank, from which only view-relevant information is retrieved, keeping the denoiser context bounded as the session grows. Rather than treating the teacher as a fixed generator, we design it for long-horizon supervision: its sparse attention combines chunk-wise grouping, retrieval of selected distant frames, and a linear-attention global state, yielding linear growth in memory and compute while enabling supervision over long horizons. Such supervision exposes content drift that stays locally plausible within short windows, while per-chunk conditioning enables prompt changes and event control throughout the sequence. A 30-second distribution-matching objective, applied under self-forced rollouts, transfers both capabilities to a three-step student that uses no classifier-free guidance, improving resistance to long-term drift while preserving responsive conditioning. With bounded context and recurrent external memory, Evoke supports open-ended, continuously evolving generation; on a single H200 at $384\\times 640$, each $1.5\\,\\mathrm{s}$ chunk is generated in $2.11\\,\\mathrm{s}$. As a three-step world model, Evoke achieves state-of-the-art performance on WBench while remaining competitive on VBench-Long and VBench-2.0.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "Classifier-free guidance",
+        "Key-value cache",
+        "Sparse attention",
+        "serving"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving"
       ]
     },
     {
@@ -12223,38 +12392,6 @@
       ]
     },
     {
-      "id": "2608.13546",
-      "title": "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World",
-      "authors": "Yuanyang Yin, Gongxuan Wang, Yifan Zhan, Chuanhao Li, Kaipeng Zhang, Feng Zhao",
-      "org": "",
-      "published": "2026-08-13",
-      "score": 83,
-      "paper": "https://arxiv.org/abs/2608.13546",
-      "source": "https://www.alphaxiv.org/abs/2608.13546",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13546.jpg",
-      "firstSeenAt": "2026-08-14T23:34:21.613Z",
-      "summary": "Interactive world models must support persistent memory, responsive interaction, and long-horizon generation, yet these requirements place conflicting demands on the model. Maintaining history in the denoiser context or key-value cache incurs growing cost, forcing a trade-off between session length and retained memory, while low-latency interaction relies on few-step generation whose capabilities are bounded by its teacher. Evoke addresses both limitations by externalizing persistent world state and redesigning the teacher for long-horizon interactive generation. Scene geometry is maintained in an external, camera-indexed world state bank, from which only view-relevant information is retrieved, keeping the denoiser context bounded as the session grows. Rather than treating the teacher as a fixed generator, we design it for long-horizon supervision: its sparse attention combines chunk-wise grouping, retrieval of selected distant frames, and a linear-attention global state, yielding linear growth in memory and compute while enabling supervision over long horizons. Such supervision exposes content drift that stays locally plausible within short windows, while per-chunk conditioning enables prompt changes and event control throughout the sequence. A 30-second distribution-matching objective, applied under self-forced rollouts, transfers both capabilities to a three-step student that uses no classifier-free guidance, improving resistance to long-term drift while preserving responsive conditioning. With bounded context and recurrent external memory, Evoke supports open-ended, continuously evolving generation; on a single H200 at $384\\times 640$, each $1.5\\,\\mathrm{s}$ chunk is generated in $2.11\\,\\mathrm{s}$. As a three-step world model, Evoke achieves state-of-the-art performance on WBench while remaining competitive on VBench-Long and VBench-2.0.",
-      "matchedBy": [
-        "papers with code",
-        "World Models",
-        "Classifier-free guidance",
-        "Key-value cache",
-        "Sparse attention",
-        "serving"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Serving",
-      "categories": [
-        "Serving"
-      ]
-    },
-    {
       "id": "2607.21588",
       "title": "AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation",
       "authors": "Mengfei Zhao, Dihong Huang, Yikai Tang, Peihao Li, Mingxuan Yan, Ruiqi Zhuang, Yanjia Huang, Jie Wang, Hai Zhai, Tony Zhou, Rui Zhang, Zhexi Luo, Yuchen Huang, Jianfei Yang, Jiachen Li",
@@ -13024,6 +13161,35 @@
       ]
     },
     {
+      "id": "2608.13417",
+      "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+      "authors": "Yiwei Li, Wanli Yang, Hexiang Tan, Xiangzhou Huang, Zhengyu Chen, Ziran Li, Borun Chen, Shanglin Lei, Huaisheng Zhu, Hao Tian, Fei Sun, Xunliang Cai, Jingang Wang",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 82,
+      "paper": "https://arxiv.org/abs/2608.13417",
+      "source": "https://www.alphaxiv.org/abs/2608.13417",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13417.jpg",
+      "firstSeenAt": "2026-08-14T23:34:21.613Z",
+      "summary": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2606.21906",
       "title": "Deeper is Not Always Better: Mitigating the Alignment Tax via Confident Layer Decoding",
       "authors": "Xuanming Zhang, Sining Zhoubian, Yuxuan Chen, Tianyi Tang, An Yang, Sean Du, Chujie Zheng, Fei Huang, Dayiheng Liu, Gao Huang, Jingren Zhou",
@@ -13219,32 +13385,6 @@
       ],
       "sources": [
         "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.13194",
-      "title": "Fidelity-Constrained Anchoring for Black-Box Denoisers",
-      "authors": "",
-      "org": "",
-      "published": "2026-08-13",
-      "score": 82,
-      "paper": "https://arxiv.org/abs/2608.13194",
-      "source": "https://www.alphaxiv.org/abs/2608.13194",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13194.jpg",
-      "firstSeenAt": "2026-08-14T23:34:21.613Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
         "alphaxiv"
       ],
       "category": "Language Modeling",
@@ -13878,6 +14018,32 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2608.13446",
+      "title": "Blue Noise as a Lattice Gibbs Ensemble",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 81,
+      "paper": "https://arxiv.org/abs/2608.13446",
+      "source": "https://www.alphaxiv.org/abs/2608.13446",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13446.jpg",
+      "firstSeenAt": "2026-08-15T23:33:59.060Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -15261,7 +15427,7 @@
       "published": "2026-08-13",
       "score": 80,
       "paper": "https://arxiv.org/abs/2608.13552",
-      "source": "https://www.alphaxiv.org/abs/2608.13552",
+      "source": "https://huggingface.co/papers/2608.13552",
       "code": "https://github.com/kxding/PlayWorld",
       "project": "",
       "thumbnail": "./thumbs/2608.13552.jpg",
@@ -16137,39 +16303,6 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2608.12149",
-      "title": "Massive Activations in Hybrid Linear Attention Large Language Models: Pre-Attention Spikes and Inter-Spike Plateaus",
-      "authors": "Zunhai Su, Bohan Sun, Xialie Zhuang, Shuibai Zhang, He Xiao, Jing Xiong, Hengyuan Zhang, Zhongzhu Zhou, Tiantian Zhang, Ngai Wong, Chuan-Wei Kuo",
-      "org": "",
-      "published": "2026-08-12",
-      "score": 79,
-      "paper": "https://arxiv.org/abs/2608.12149",
-      "source": "https://huggingface.co/papers/2608.12149",
-      "code": "https://github.com/StartluxLabs/Massive-Activations-HLA",
-      "project": "",
-      "thumbnail": "./thumbs/2608.12149.jpg",
-      "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "We present the first systematic study of Massive activations (MAs) in layer-interleaved HLA LLMs and uncover two architecture-aligned morphologies: MAs consistently spike immediately before full attention layers, forming pre-attention spikes (PAS), and can persist through intervening linear attention layers, giving rise to inter-spike plateaus (ISP). As full attention becomes denser, successive PAS become increasingly connected through ISP, ultimately recovering the stable MA morphology of full attention LLMs. We establish the recurrence of this organization across five linear attention architectures, six hybridization configurations, five data domains, and representative open-source hybrid models spanning 1.2B to 397B total parameters. Controlled pretraining of GDN-based hybrids at scales up to 1.3B shows that both morphologies emerge early and respond asymmetrically to output gating: full attention output gating strongly attenuates their absolute magnitudes without eliminating their layerwise organization, whereas removing GDN gates yields comparatively modest amplification. Mechanistically, our systematic-outlier analysis supports a shared lifecycle account governed by the timing of MA cancellation. PAS follows a localized write-sink-cancel process, while the extended persistence of ISP is consistent with delayed cancellation. At the full attention limit, this account recovers the stable MA morphology characteristic of full attention LLMs. Our code is available at https://github.com/StartluxLabs/Massive-Activations-HLA.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "language modeling",
-        "alphaxiv hot",
-        "papers with code"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv",
-        "paperswithcode",
-        "huggingface"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
-        "Language Modeling"
       ]
     },
     {
@@ -19150,25 +19283,25 @@
     {
       "id": "2608.06729",
       "title": "AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models",
-      "authors": "Guiyu Zhao, Longteng Guo, Yanghong Mei, Zilin Zhu, Yu Zhang, Bin Cao, Mingming Yu, Xingjian He, Jie Jiang, Jing Liu",
+      "authors": "Guiyu Zhao, Longteng Guo, Yanghong Mei, Zilin Zhu, Yu Zhang, Bin Cao, MingMing Yu, Xingjian He, Jie Jiang, Jing Liu",
       "org": "",
       "published": "2026-08-07",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.06729",
-      "source": "https://huggingface.co/papers/2608.06729",
+      "source": "https://paperswithcode.co/paper/2608.06729",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.06729.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "While Vision-Language-Action (VLA) models have advanced embodied AI, their fundamentally reactive paradigm severely limits performance in partially observable and long-horizon tasks. When restricted to a single wrist-mounted camera, they inevitably suffer from perception forgetting as objects exit the field of view, and temporal task-progress forgetting} during multi-step execution. To overcome these bottlenecks, we propose AtlasVLA, a novel framework that transitions from direct reactive manipulation to proactive reasoning through a persistent world-ego state. AtlasVLA features a dual-memory architecture: a 4D Persistent World State Memory that lifts transient 2D observations into a globally updated, voxel-hashed spatial state to resolve visual blind spots, and an Ego-Working State Memory that tracks historical ego state and task progress. By conditioning a diffusion transformer (DiT) on this joint World-Ego state, AtlasVLA enables robust spatial reasoning. Extensive evaluations across LIBERO, RLBench, and real-world benchmarks demonstrate that AtlasVLA achieves state-of-the-art performance using solely a wrist camera. Remarkably, it decisively outperforms multi-view baselines, yielding absolute success rate improvements of 9.4% on LIBERO-Long and 17.5% in real-world long-horizon tasks.",
+      "summary": "AtlasVLA improves embodied AI by replacing reactive control with proactive reasoning via persistent world-ego memory, enabling robust long-horizon manipulation from a single wrist camera.",
       "matchedBy": [
         "papers with code",
         "Robotics",
         "Diffusion Transformer (DiT)",
         "VLA",
         "robotics",
-        "vision/multimodal",
-        "frontier training"
+        "frontier training",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode",
@@ -19177,8 +19310,8 @@
       "category": "Robotics",
       "categories": [
         "Robotics",
-        "Vision/Multimodal",
-        "Frontier Training"
+        "Frontier Training",
+        "Language Modeling"
       ]
     },
     {
@@ -19858,35 +19991,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.13417",
-      "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
-      "authors": "Yiwei Li, Wanli Yang, Hexiang Tan, Xiangzhou Huang, Zhengyu Chen, Ziran Li, Borun Chen, Shanglin Lei, Huaisheng Zhu, Hao Tian, Fei Sun, Xunliang Cai, Jingang Wang",
-      "org": "",
-      "published": "2026-08-13",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2608.13417",
-      "source": "https://www.alphaxiv.org/abs/2608.13417",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13417.jpg",
-      "firstSeenAt": "2026-08-14T23:34:21.613Z",
-      "summary": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training"
       ]
     },
     {
@@ -20961,12 +21065,12 @@
       "published": "2026-08-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08160",
-      "source": "https://huggingface.co/papers/2608.08160",
+      "source": "https://paperswithcode.co/paper/2608.08160",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08160.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "The rapid advancement of Large Language Models (LLMs) is revolutionizing AI for Games by enabling open-ended and fluid interactive storytelling. However, existing research has largely overlooked the critical challenge of maintaining long-horizon logical consistency and narrative integrity against unconstrained user interventions. To address this, we formulate this challenge as Narrative Commitment Preservation (NCP), and take interactive narrative as our testbed. We introduce NCP-Bench, a benchmark of 100 narrative environments derived from movie synopses. Each environment includes a structured narrative specification (trajectory, commitments, and initial facts) that we can automatically check throughout the interaction between the player agent and the narrator agent. Experiments across state-of-the-art LLMs reveal a substantial long-horizon consistency gap: high linguistic quality does not guarantee commitment preservation; even strong models frequently generate logically conflicting content under adversarial interventions, with the best-performing model (GPT-5.2) achieving only 42% survival rate after 20 turns and fact conflict rates ranging from 40% to 68% across models, and only isolated runs satisfying all achievement commitments within the 100-turn limit.",
+      "summary": "The study introduces a benchmark and formalizes narrative commitment preservation to evaluate long-horizon logical consistency in interactive storytelling with large language models.",
       "matchedBy": [
         "papers with code",
         "Agent",
@@ -27257,12 +27361,12 @@
       "published": "2026-08-13",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.12836",
-      "source": "https://huggingface.co/papers/2608.12836",
+      "source": "https://paperswithcode.co/paper/2608.12836",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.12836.jpg",
       "firstSeenAt": "2026-08-14T23:34:21.613Z",
-      "summary": "Large language models often fail when answer options require combining atomic judgments under explicit logical operators, even when they judge the individual atoms correctly. We study compound options connected by AND, OR, and NEITHER/NOR, introducing a framework that decomposes each option into atomic answers and scores contrastive hypotheses about each one, so the model never sees a compound option. An operator-constrained integer linear program then composes the calibrated scores into a single prediction. We evaluate on LOGICAL-COMMONSENSEQA and introduce LOGICAL-SATA, a reading-comprehension benchmark derived from SATA-Bench. Our framework improves Macro-F1 from 48.3 to 77.0 on the human-validated LOGICAL-COMMONSENSEQA split and from 47.0 to 75.6 on LOGICAL-SATA, with the largest gains on NEITHER/NOR.",
+      "summary": "A framework decomposes compound logical options into atomic judgments and uses constrained optimization to improve reasoning over AND, OR, and NEITHER/NOR operators.",
       "matchedBy": [
         "papers with code",
         "Large language model (LLM)",
@@ -27537,12 +27641,12 @@
       "published": "2026-08-12",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.11562",
-      "source": "https://huggingface.co/papers/2608.11562",
+      "source": "https://paperswithcode.co/paper/2608.11562",
       "code": "",
       "project": "https://codingwzp",
       "thumbnail": "./thumbs/2608.11562.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Videos captured through glass often contain reflections that degrade visual quality and interfere with downstream vision tasks. Although single-image reflection removal has been extensively studied, video reflection removal remains largely underexplored due to the lack of paired video data, temporally coherent removal models, and dedicated evaluation benchmarks. We present a closed-loop framework that unifies physics-grounded reflection simulation, diffusion-based video dereflection, and benchmark evaluation. Our S2R-Synthesis pipeline generates paired reflected and reflection-free videos by performing physics-grounded augmentation in the structure space and rendering realistic reflected videos with a trained video diffusion renderer; the augmentation models key glass-related effects including roughness-induced blur, thickness-induced ghosting, and reflectance variation. Based on the synthesized data, we introduce S2R-Removal, the first diffusion-based video reflection removal model, which adapts a pretrained video diffusion prior through reflection-aware latent adaptation and one-step pixel-geometric refinement, recovering the clean transmission in a single denoising step. We further build S2R-Bench, the first benchmark for video reflection removal, supporting both full-reference evaluation and real-world human perceptual assessment. Experiments on S2R-Bench and multiple public image benchmarks demonstrate state-of-the-art performance and faster inference than even non-diffusion baselines, and validate the effectiveness of S2R-Synthesis. Project page: https://codingwzp.github.io/VideoDereflection_S2R.",
+      "summary": "A closed-loop framework combining physics-based video synthesis, diffusion-based video dereflection, and a new benchmark achieves state-of-the-art video reflection removal with fast inference.",
       "matchedBy": [
         "papers with code",
         "Diffusion",
@@ -27794,12 +27898,12 @@
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.11367",
-      "source": "https://huggingface.co/papers/2608.11367",
+      "source": "https://paperswithcode.co/paper/2608.11367",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.11367.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Estimating human gaze targets from images in-the-wild is an important and formidable task. Existing approaches primarily employ brittle, multi-stage pipelines that require explicit inputs, like head bounding boxes and human pose, in order to identify the subject of gaze analysis. As a result, detection errors can cascade and lead to failure. Moreover, these prior works lack the flexibility of specifying the gaze analysis task via natural language prompting, an approach which has been shown to have significant benefits in convenience and scalability for other image analysis tasks. To overcome these limitations, we introduce the Promptable Gaze Target Estimation (PGE) task, a new end-to-end, concept-driven paradigm for gaze analysis. PGE conditions gaze prediction on flexible user text or visual prompts (e.g., \"the boy in the red shirt\" or \"person in point [0.52, 0.48]\") to identify a specific subject for gaze analysis. This approach integrates subject localization with gaze estimation, and eliminates the rigid dependency on intermediate analysis stages. We develop a scalable data engine to generate Gaze-Co (Gaze Estimation with Concepts), a dataset and benchmark of 120K high-quality, prompt-annotated image pairs. We also propose GazeAnywhere, the first model designed for PGE. GazeAnywhere uses a transformer-based detector to fuse features from frozen encoders and simultaneously solves subject localization, in/out-of-frame presence, and gaze target heatmap estimation. GazeAnywhere achieves state-of-the-art performance on multiple PGE benchmarks, setting a strong baseline for this new problem even on a difficult out-of-domain, real-world clinical dataset. GazeAnywhere is open-sourced in github.com/IrohXu/GazeAnywhere.",
+      "summary": "A new promptable paradigm integrates subject localization and gaze estimation into an end-to-end transformer model that uses text or visual prompts to identify subjects and predict gaze targets without multi-stage pipelines.",
       "matchedBy": [
         "papers with code",
         "Transformer",
@@ -28966,27 +29070,25 @@
       "published": "2026-08-12",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.11574",
-      "source": "https://huggingface.co/papers/2608.11574",
+      "source": "https://paperswithcode.co/paper/2608.11574",
       "code": "https://github.com/ryhara/hand_visibility_detector",
       "project": "",
       "thumbnail": "./thumbs/2608.11574.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Hand Pose Estimation (HPE) is a fundamental technology for various applications such as AR/VR and robotics. In these applications, the visibility of each hand joint in the image is crucial for assessing the reliability of estimation results under occlusion. However, most existing HPE methods output joint positions without explicitly indicating their visibility. Although some methods account for occlusion or visibility, visibility estimation has mainly been used as an auxiliary signal for improving pose estimation. To our knowledge, per-joint hand visibility estimation has not been systematically studied as a standalone task. In this work, we propose Hand Visibility Detector, a model for estimating the visibility of individual hand joints, and present the first systematic investigation of visibility estimation as an independent task. We show that leveraging the prior knowledge of HPE models pretrained on large-scale data as a backbone yields high performance in this task. We further demonstrate the utility of Hand Visibility Detector on a downstream task of 3D hand pose annotation via multi-view triangulation of 2D keypoints, showing that visibility-weighted triangulation reduces reprojection error. Our method is released as a ready-to-use package, and the code and demo are available at https://github.com/ryhara/hand_visibility_detector .",
+      "summary": "This work introduces a dedicated model for per-joint hand visibility estimation and demonstrates its benefit for multi-view 3D hand pose annotation.",
       "matchedBy": [
         "papers with code",
         "Pose Estimation",
         "vision/multimodal",
         "hugging face daily",
-        "language modeling",
-        "robotics"
+        "language modeling"
       ],
       "sources": [
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Robotics",
+      "category": "Vision/Multimodal",
       "categories": [
-        "Robotics",
         "Vision/Multimodal"
       ]
     },
@@ -32897,17 +32999,17 @@
     {
       "id": "2608.11616",
       "title": "MBA: Multimodal Benchmark and Agents for Real-World Business Ideation",
-      "authors": "Hojun Choi, Jaeyo Shin, Suin Lee, Hyunjung Shim",
+      "authors": "Hojun Choi, Jaeyo Shin, SuIn Lee, Hyunjung Shim",
       "org": "",
       "published": "2026-08-12",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.11616",
-      "source": "https://huggingface.co/papers/2608.11616",
+      "source": "https://paperswithcode.co/paper/2608.11616",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.11616.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Agentic systems powered by large language models (LLMs) have opened new opportunities for business ideation. Yet existing approaches remain confined to a text-only paradigm, despite the inherently multimodal nature of real-world contexts. We thus introduce MBA-Bench, the first multimodal benchmark for training and evaluating business ideation agents, comprising 30K samples across six domains, each domain characterized by distinct visual cues not fully conveyed by text alone. Concretely, we automatically caption images and employ GPT-4o to generate five reference ideas for each of three business questions through retrieval query generation, market evidence retrieval, and evidence-augmented synthesis. Following prior work, we evaluate agents across six business-oriented criteria using MLLM-as-a-Judge. To consider settings where criteria are hidden or disclosed, we present MBA-b and MBA-k for blind and known, respectively. We train both with two novel reward objectives---creativity and feasibility---while MBA-k further optimizes the six disclosed criteria for eight in total. Both are trained via LoRA-based supervised fine-tuning followed by group relative policy optimization with these setting-specific rewards. For extensive experiments on MBA-Bench, we set up two baselines accommodating either captions only or multimodal inputs, with the latter nearing closed-source performance on several metrics. MBA-b and MBA-k outperform caption baselines by 63.9% and 77.1%, and multimodal baselines by 25.6% and 35.8%, respectively.",
+      "summary": "Researchers introduce MBA-Bench, a multimodal benchmark for business ideation agents, and propose MBA-b and MBA-k models trained with creativity and feasibility rewards via LoRA fine-tuning and group relative policy optimization, significantly outperforming text-only and multimodal baselines.",
       "matchedBy": [
         "papers with code",
         "Fine-tuning",
@@ -33024,31 +33126,27 @@
       "published": "2026-08-12",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.12036",
-      "source": "https://huggingface.co/papers/2608.12036",
+      "source": "https://paperswithcode.co/paper/2608.12036",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.12036.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "AI models have achieved remarkable success across diverse domains, yet the mechanisms underlying their capabilities and the risks they may pose remain poorly understood. As AI development becomes faster and increasingly automated, mechanistic exploration remains largely manual, widening the gap between what models can do and our ability to understand and control them. To bridge this gap, we introduce Mechanist, an agentic system that uses AI as a scientific instrument for the autonomous discovery of mechanisms underlying AI intelligence. To support autonomous mechanistic discovery, we construct an interpretability-focused knowledge graph of approximately 13,000 papers and integrate it with a multidisciplinary database of 43 million papers spanning 26 fields. We further curate a library of 32 foundational methods for mechanism analysis, causal intervention, and validation. Compared with Claude Code and existing AI-scientist systems, Mechanist generates more valuable mechanism hypotheses and executes experiments more reliably. Mechanist also demonstrates a progression from discovering model behaviors to explaining and controlling AI models. Specifically, Mechanist first uncovers a counterintuitive safety risk in scientific laboratories, showing that unsafe traits can transfer across modalities through apparently safe training data. Mechanist then develops a mechanism theory of belief, revealing how models represent world knowledge, form beliefs, infer the beliefs of others, and how these mechanisms emerge during pretraining. Finally, Mechanist translates these mechanistic insights into practical interventions that improve model performance across diverse scenarios and steer scientific foundation models toward generating DNA sequences with specified properties.",
+      "summary": "Mechanist is an autonomous agentic system that uses AI to discover and control the mechanisms underlying model intelligence, generating hypotheses, performing causal interventions, and improving safety and performance.",
       "matchedBy": [
         "papers with code",
         "Reinforcement Learning",
         "Pre-training",
         "language modeling",
-        "hugging face daily",
-        "frontier training",
-        "data / retrieval"
+        "hugging face daily"
       ],
       "sources": [
         "paperswithcode",
         "huggingface",
         "alphaxiv"
       ],
-      "category": "Frontier Training",
+      "category": "Language Modeling",
       "categories": [
-        "Frontier Training",
-        "Language Modeling",
-        "Data / Retrieval"
+        "Language Modeling"
       ]
     },
     {
@@ -35300,12 +35398,12 @@
       "published": "2026-08-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.08107",
-      "source": "https://huggingface.co/papers/2608.08107",
+      "source": "https://paperswithcode.co/paper/2608.08107",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08107.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Multimodal expansion of large language models (LLMs) enables new perceptual capabilities but often compromises the language intelligence acquired during pretraining. In this work, we investigate this phenomenon from the perspective of internal adaptation dynamics and discover that neurons in pretrained LLMs exhibit heterogeneous plasticity during multimodal learning: some neurons are critical for preserving language capabilities, while others are more adaptive to multimodal knowledge. Based on this insight, we propose NeuPAT (Neuron-aware Plasticity Allocation Tuning), a lightweight and architecture-agnostic framework that allocates neuron-wise update constraints during multimodal instruction tuning. NeuPAT uses a small-scale probing stage to estimate neuron adaptation patterns and selectively protects language-sensitive neurons while promoting multimodal adaptation through more plastic neurons. Experiments across diverse LLM families demonstrate that NeuPAT recovers 94.5\\% of the language capability degradation caused by vanilla tuning on 11 language benchmarks while maintaining comparable multimodal performance, providing an effective approach for capability-preserving multimodal expansion.",
+      "summary": "NeuPAT selectively constrains updates to language-sensitive neurons during multimodal tuning to preserve LLM language capabilities while enabling perceptual adaptation.",
       "matchedBy": [
         "papers with code",
         "Large language model (LLM)",
@@ -35319,10 +35417,10 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Frontier Training",
+      "category": "Vision/Multimodal",
       "categories": [
-        "Frontier Training",
         "Vision/Multimodal",
+        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -36988,12 +37086,12 @@
       "published": "2026-08-10",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.09805",
-      "source": "https://huggingface.co/papers/2608.09805",
+      "source": "https://paperswithcode.co/paper/2608.09805",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.09805.jpg",
       "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Exploration has been a focus of reinforcement learning research for a long time. Recently, there has been growing evidence that it is also an important ingredient in LLM reinforcement learning recipes that can significantly impact downstream performance. Many existing methods control exploration in the action-space, for example, using temperature scaling. However, these methods cannot reorder tokens but only influence the variance in the output distribution. This limits exploration and can lead to divergence or stalled training. Here, we investigate parameter-space exploration, where rollouts are generated by sampling different policies from a posterior that may each explore different rollouts. Sampling less or more diverse policies is then a complementary control lever over exploration. We introduce a family of methods called Perturbed Parameter Policy Optimization (3PO) which use different sampling strategies and different rollout grouping for reward estimation. Experiments on OLMo-3-1025-7B and Qwen2.5-Math-7B across mathematical reasoning and code generation tasks show that these approaches consistently improve average downstream performance over standard GRPO at a near-identical FLOPs cost. Moreover, using multiple parameter samples consistently produces fewer zero-advantage groups and malformed or incorrect rollouts during training than GRPO and action-space baselines. Overall, our work presents evidence that parameter-space exploration can improve reinforcement learning for LLMs.",
+      "summary": "Parameter-space exploration via perturbed policy sampling improves LLM reinforcement learning by diversifying rollouts and reducing training failures compared to action-space methods.",
       "matchedBy": [
         "arxiv",
         "language modeling",
@@ -39728,8 +39826,8 @@
       "org": "",
       "published": "2026-08-11",
       "score": 78,
-      "paper": "https://arxiv.org/abs/2608.11045",
-      "source": "https://huggingface.co/papers/2608.11045",
+      "paper": "https://arxiv.org/abs/2608.11045v1",
+      "source": "https://arxiv.org/abs/2608.11045v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.11045.jpg",
@@ -41731,17 +41829,17 @@
     {
       "id": "2608.11350",
       "title": "Self-Evolving Embodied Agents via Skill-Harness Evolution",
-      "authors": "Peidong Wang, Zhiming Ma, Ying Chang, Xufang Luo, Xiaocui Yang, Shi Feng, Yuqing Yang, Dongsheng Li",
+      "authors": "Peidong Wang, ZhiMing Ma, Ying Chang, Xufang Luo, Xiaocui Yang, Shi Feng, Yuqing Yang, Dongsheng Li",
       "org": "",
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.11350",
-      "source": "https://huggingface.co/papers/2608.11350",
+      "source": "https://paperswithcode.co/paper/2608.11350",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.11350.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Embodied agents are increasingly built as systems around foundation models, where performance depends not only on model weights but also on the skills, context, action interfaces, and execution harness surrounding the model. While supervised fine-tuning and reinforcement learning can adapt agents to new environments, they require additional data, rewards, and training runs; meanwhile, many train-free code-centric approaches rely on programmable robot APIs that may be unavailable in fixed-interface settings. We propose SHAPER, a self-evolving framework for train-free embodied adaptation that keeps model parameters frozen and improves the non-parametric agent system by evolving reusable skills and a context-code harness through target-environment rollouts. In SHAPER, the same frozen model can serve as both planner and optimizer, refining its external skills and context-code harness without parameter updates. We evaluate SHAPER on VLABench and ESI-Bench, covering embodied agents with different low-level action interfaces, and compare against pure execution, supervised fine-tuning, and test-time-scaling baselines such as verifier-free selection and voting. Our results suggest that skill-and-harness optimization is a practical route to self-evolving embodied agents when model training is expensive, unavailable, or undesirable.",
+      "summary": "SHAPER is a train-free framework that improves embodied agents by evolving reusable skills and a context-code harness around a frozen foundation model through environment rollouts.",
       "matchedBy": [
         "papers with code",
         "Reinforcement Learning",
@@ -41749,7 +41847,7 @@
         "Fine-tuning",
         "VLA",
         "robotics",
-        "language modeling"
+        "frontier training"
       ],
       "sources": [
         "paperswithcode",
@@ -41759,8 +41857,8 @@
       "category": "Robotics",
       "categories": [
         "Robotics",
-        "Language Modeling",
-        "Frontier Training"
+        "Frontier Training",
+        "Language Modeling"
       ]
     },
     {
@@ -41799,29 +41897,29 @@
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.10708",
-      "source": "https://huggingface.co/papers/2608.10708",
+      "source": "https://paperswithcode.co/paper/2608.10708",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.10708.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Recent Vision Foundation Models (VFMs) predict depth, camera pose, and pointmap in a single forward pass without per-scene optimization, achieving strong generalization. However, enforcing explicit multi-view geometric consistency, e.g., through bundle adjustment, is computationally costly and is thus not imposed during VFM pretraining, so such inconsistency can arise. To address this, implicit self-consistency derived from model outputs (e.g., pointmaps, features), though enforced at test-time in prior work, delivers inherently limited performance gain, especially on scenes where the pretrained VFM is highly inaccurate. In contrast to this implicit signal, we propose Self-Geometry, a plug-and-play test-time adaptation pipeline that directly imposes explicit multi-view geometric constraints using 2D pixel correspondences as pseudo ground-truth. Our proposed Self-Geometry consists of Geometric Disentanglement Optimization, which combines Multi-View Consistency and Epipolar Consistency losses with Gradient Disentanglement to prevent gradient conflict; Frame Angular-Neighbor, a view sampler based on SO(3) geodesic distances for lightly imposing these constraints; and Lightweight TTA, which adapts VFMs via LoRA. Our method achieves consistent improvements in both pose and geometry estimation across six VFMs (VGGT, $π^3$, DA3-Giant/Large/Base/Small) and four benchmarks (7Scenes, ETH3D, ScanNet++, HiRoom).",
+      "summary": "Self-Geometry improves vision foundation model predictions by enforcing explicit multi-view geometric constraints via test-time adaptation with LoRA, disentangled losses, and angular neighbor sampling.",
       "matchedBy": [
         "papers with code",
         "LoRa",
         "Pre-training",
         "Self-Consistency",
         "VGGT",
-        "frontier training",
-        "vision/multimodal"
+        "vision/multimodal",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Frontier Training",
+      "category": "Vision/Multimodal",
       "categories": [
-        "Frontier Training",
-        "Vision/Multimodal"
+        "Vision/Multimodal",
+        "Frontier Training"
       ]
     },
     {
@@ -42399,12 +42497,12 @@
       "published": "2026-08-11",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.10615",
-      "source": "https://huggingface.co/papers/2608.10615",
+      "source": "https://paperswithcode.co/paper/2608.10615",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.10615.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Discrete diffusion models for categorical generation are defined by a corruption kernel, which determines the intermediate state space and the associated reverse prediction problem. We study uniform discrete diffusion and ask whether its training objective and reverse transitions can be enriched without changing the underlying categorical corruption process. We introduce Simplax, an exact Dirichlet--categorical augmentation that couples each corrupted categorical state with an auxiliary simplex-valued variable while preserving the original uniform diffusion process as its categorical marginal. This augmentation yields a tractable Rao--Blackwellized reverse-bridge objective and a corresponding stochastic reverse sampler, while retaining the corrupted categorical state as the denoiser input. Empirically, Simplax improves the generative perplexity--entropy tradeoff on unconditional OpenWebText generation. On Sudoku, a model trained exclusively on $30$-clue puzzles achieves the highest accuracy among the compared methods across all evaluated clue densities, including the minimum uniquely solvable $17$-clue regime, and also achieves the highest validity in unconditional generation.",
+      "summary": "Simplax enriches uniform discrete diffusion via Dirichlet-categorical augmentation to improve reverse sampling and generative quality on text and Sudoku tasks.",
       "matchedBy": [
         "papers with code",
         "Diffusion",
@@ -42716,12 +42814,12 @@
       "published": "2026-08-06",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.05604",
-      "source": "https://huggingface.co/papers/2608.05604",
+      "source": "https://paperswithcode.co/paper/2608.05604",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.05604.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Large Language Models (LLMs) increasingly act as agents whose procedural knowledge is stored in reusable skill packages and loaded at inference time. As skill libraries grow, a central challenge is to expose the smallest sufficient executable context under a limited context budget. Existing systems struggle to reuse routines below the whole-skill level, preserve procedural contracts during compression, keep compressed routines executable and expandable, and update the compressed library as skills evolve. These challenges reveal a unit mismatch: skills are retrieved as packages, compressed as text, and converted into execution graphs only after retrieval, whereas reliable reuse requires a contract-bearing procedural unit. We propose SkillZip, an execution-aware procedural abstraction framework that performs contract-preserving compression over section-level graphs. SkillZip rewrites recurring contract-valid motifs into reversible ported macros while preserving boundary signatures, dependency closure, verifier reachability, and source-level expansion. At inference time, it hydrates a compact, dependency-closed context and expands macros only when required. ReZip further integrates new skills and revises risky macros using execution evidence. Comprehensive experiments1 on technical and embodied agent benchmarks show SkillZip consistently outperforms the strongest baseline by up to 12.2 points, while achieving a 3.46x compression ratio with 99.2% dependency preservation and 98.7% verifier reachability. Scaling analyses further confirm robust retrieval across skill libraries ranging from 200 to 100K skills.",
+      "summary": "SkillZip compresses reusable procedural skills into contract-preserving, executable graph units to enable efficient retrieval and expansion under limited context budgets.",
       "matchedBy": [
         "papers with code",
         "Agent Skills",
@@ -44897,12 +44995,12 @@
       "published": "2026-08-06",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.06270",
-      "source": "https://huggingface.co/papers/2608.06270",
+      "source": "https://paperswithcode.co/paper/2608.06270",
       "code": "https://github.com/OpenCausaLab/CauAudit",
       "project": "",
       "thumbnail": "./thumbs/2608.06270.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "The \"thinking-with-images\" paradigm equips multimodal LLMs with active visual operations such as crop-and-zoom. However, models using these operations often achieve only marginal or negative gains over direct inference at substantially higher token cost. They may also repeatedly crop irrelevant regions and fail on questions that direct inference answers correctly. We ask whether the returned visual evidence causally affects the answer. To answer this question, we formulate visual tool-use as a causal graph that separates observation-mediated paths from action-induced shortcuts. We then audit it through interventions at the three levels: policy (comparing tool-use with direct inference), trajectory (corrupting all observations during rollout), and step (counterfactually replacing one individual observation under a fixed prefix). Our step-level estimand, Visual Evidence Gain, isolates the contribution of each returned observation. Across six representative models and five fine-grained perception benchmarks, we uncover policy miscalibration with two failure modes. In Calling Without Looking, returned observations have no causal effect on the answer. In Looking Without Planning, observations are informative but the call schedule is incoherent. A trajectory-level diagnostic decomposes the policy-level accuracy gain and shows that the gain is concentrated in a Calibrated minority. We term this discrepancy the illusion of visual tool-use: despite aggregate accuracy gains, visual tool-use is not causally effective across a broad range of rollouts. The code is available at https://github.com/OpenCausaLab/CauAudit.",
+      "summary": "Visual tool-use in multimodal LLMs often lacks causal effectiveness, with returned observations frequently failing to influence answers or being used incoherently despite aggregate accuracy improvements.",
       "matchedBy": [
         "papers with code",
         "Large language model (LLM)",
@@ -45316,10 +45414,13 @@
       "matchedBy": [
         "hugging face daily",
         "language modeling",
-        "serving"
+        "serving",
+        "papers with code",
+        "Mathematics"
       ],
       "sources": [
-        "huggingface"
+        "huggingface",
+        "paperswithcode"
       ],
       "category": "Serving",
       "categories": [
@@ -45559,12 +45660,12 @@
       "published": "2026-08-12",
       "score": 78,
       "paper": "https://arxiv.org/abs/2608.11878",
-      "source": "https://huggingface.co/papers/2608.11878",
+      "source": "https://paperswithcode.co/paper/2608.11878",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.11878.jpg",
       "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "Large language model (LLM) agents integrated with external tools are vulnerable to indirect prompt injections embedded in environmental states. However, existing studies largely rely on manually implemented or reused environments, stochastic LLM-based tool simulation, and predefined injection locations, limiting scalable security research across broader domains. To bridge this gap, we propose **ToolHazard**, a scalable adversarial environment synthesis framework that reduces human engineering and supports expansion with additional seed domains and compute. Through an Environment Simulator, an Attacker Agent, and a User Simulator, ToolHazard synthesizes executable stateful environments, discovers viable injection points and generates environment-specific payloads, and constructs state-grounded long-horizon tasks. Based on ToolHazard, we build **ToolHazard-Bench** for stress-testing agents under complex workflows and diverse environmental attacks. Experiments reveal substantial agent vulnerabilities and show that injection timing and placement affect attack effectiveness. Moreover, ToolHazard-generated alignment data improves security on both ToolHazard-Bench and AgentDojo while preserving benign task utility.",
+      "summary": "ToolHazard is a scalable framework that synthesizes adversarial environments to test LLM agents against indirect prompt injections, revealing vulnerabilities and improving defensive alignment.",
       "matchedBy": [
         "papers with code",
         "Large language model (LLM)",
@@ -49583,6 +49684,36 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2608.09696",
+      "title": "Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models",
+      "authors": "Kevin Murphy",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 77,
+      "paper": "https://arxiv.org/abs/2608.09696",
+      "source": "https://www.alphaxiv.org/abs/2608.09696",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.09696.jpg",
+      "firstSeenAt": "2026-08-11T23:57:51.357Z",
+      "summary": "Predicting the answer to interventional ``what if'' questions --- the outcome of an action never taken --- requires a \\emph{mechanistic}, causal model, not a curve fit; and learning such a model requires \\emph{experiments}, because passive data leaves its mechanisms unidentified. Experiments are expensive, so the central problem is \\emph{data efficiency}. We present the Model Discovery Agent (MDA), which couples a large language model (LLM), used as a \\emph{proposer} of candidate structures, with standard Bayesian machinery --- sequential Monte Carlo (SMC) for parameter and structure posteriors, simulation-based inference (SBI) for intractable likelihoods, and value-of-information (VoI) for experiment design --- to discover latent mechanistic world models from few interventions. MDA operates in the M-open setting: when the truth lies outside the current hypothesis class, a predictive check flags the inadequacy and the proposer expands the hypothesis space with a new model whose parameters are then identified by designed experiments. We show that \\emph{discovery and design reinforce}: the design step identifies the mechanism the discovery step proposes, and the identified mechanism improves predictions, enabling further discoveries from the remaining unexplained residuals. On three different benchmarks --- covering physics (\\DPbench, \\citep{wiemann2026discoverphysics}), chemistry (\\CHEMbench, \\citep{kabra2026autoscilab}) and biology (\\HHbench, a new partially observed single-neuron electrophysiology benchmark we create) --- we show that MDA sets a new SOTA in terms of data-efficient model learning and reliable interventional prediction ability.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "frontier training",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -79711,6 +79842,38 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2605.16928",
+      "title": "Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps",
+      "authors": "Yanke Zhou, Yiduo Li, Hanlin Tang, Maohua Li, Kan Liu, Lan Tao, Lin Qu, Yuan Yao, Xiaoxing Ma",
+      "org": "",
+      "published": "2026-05-16",
+      "score": 61,
+      "paper": "https://arxiv.org/abs/2605.16928",
+      "source": "https://paperswithcode.co/paper/2605.16928",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2605.16928.jpg",
+      "firstSeenAt": "2026-07-30T00:09:13.438Z",
+      "summary": "RTPurbo leverages intrinsic sparsity in full-attention LLMs to achieve efficient long-context inference with minimal training overhead, enabling significant speedups while maintaining near-lossless accuracy.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "Key-value cache",
+        "Large language model (LLM)",
+        "Prefill",
+        "serving",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
       ]
     },
     {
@@ -110384,38 +110547,6 @@
       "categories": [
         "Vision/Multimodal",
         "Serving"
-      ]
-    },
-    {
-      "id": "2605.16928",
-      "title": "Full Attention Strikes Back: Transferring Full Attention into Sparse within Hundred Training Steps",
-      "authors": "Yanke Zhou, Yiduo Li, Hanlin Tang, Maohua Li, Kan Liu, Lan Tao, Lin Qu, Yuan Yao, Xiaoxing Ma",
-      "org": "",
-      "published": "2026-05-16",
-      "score": 60,
-      "paper": "https://arxiv.org/abs/2605.16928",
-      "source": "https://paperswithcode.co/paper/2605.16928",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2605.16928.jpg",
-      "firstSeenAt": "2026-07-30T00:09:13.438Z",
-      "summary": "RTPurbo leverages intrinsic sparsity in full-attention LLMs to achieve efficient long-context inference with minimal training overhead, enabling significant speedups while maintaining near-lossless accuracy.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "Key-value cache",
-        "Large language model (LLM)",
-        "Prefill",
-        "serving",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Serving",
-      "categories": [
-        "Serving",
-        "Language Modeling"
       ]
     },
     {
@@ -207239,34 +207370,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.09696",
-      "title": "Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models",
-      "authors": "Kevin Murphy",
-      "org": "",
-      "published": "2026-08-10",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2608.09696v2",
-      "source": "https://arxiv.org/abs/2608.09696v2",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.09696.jpg",
-      "firstSeenAt": "2026-08-11T23:57:51.357Z",
-      "summary": "Predicting the answer to interventional ``what if'' questions --- the outcome of an action never taken --- requires a \\emph{mechanistic}, causal model, not a curve fit; and learning such a model requires \\emph{experiments}, because passive data leaves its mechanisms unidentified. Experiments are expensive, so the central problem is \\emph{data efficiency}. We present the Model Discovery Agent (MDA), which couples a large language model (LLM), used as a \\emph{proposer} of candidate structures, with standard Bayesian machinery --- sequential Monte Carlo (SMC) for parameter and structure posteriors, simulation-based inference (SBI) for intractable likelihoods, and value-of-information (VoI) for experiment design --- to discover latent mechanistic world models from few interventions. MDA operates in the M-open setting: when the truth lies outside the current hypothesis class, a predictive check flags the inadequacy and the proposer expands the hypothesis space with a new model whose parameters are then identified by designed experiments. We show that \\emph{discovery and design reinforce}: the design step identifies the mechanism the discovery step proposes, and the identified mechanism improves predictions, enabling further discoveries from the remaining unexplained residuals. On three different benchmarks --- covering physics (\\DPbench, \\citep{wiemann2026discoverphysics}), chemistry (\\CHEMbench, \\citep{kabra2026autoscilab}) and biology (\\HHbench, a new partially observed single-neuron electrophysiology benchmark we create) --- we show that MDA sets a new SOTA in terms of data-efficient model learning and reliable interventional prediction ability.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
