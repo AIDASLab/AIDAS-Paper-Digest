@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T23:53:51.512Z",
+  "generatedAt": "2026-08-16T23:33:42.729Z",
   "sourceStats": {
     "seed": 8939,
     "paperswithcode": 540,
@@ -7,7 +7,7 @@
     "huggingface": 32,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 8939
+    "total": 8940
   },
   "papers": [
     {
@@ -2985,6 +2985,32 @@
       ]
     },
     {
+      "id": "2608.11859",
+      "title": "Small-Scale Experiments: Are We There Yet?",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-12",
+      "score": 94,
+      "paper": "https://arxiv.org/abs/2608.11859",
+      "source": "https://www.alphaxiv.org/abs/2608.11859",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.11859.jpg",
+      "firstSeenAt": "2026-08-13T23:56:07.620Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2608.09802",
       "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
       "authors": "Yuling Shi, Jinghan Xu, Kelin Fu, Wenhao Zeng, Shilin He, Lei Zhang, Yue Liu, Zelin Zhao, Terry Yue Zhuo, Jialun Cao, Siyu Ye, Tianyu Liu, Kai Cai, Shing-Chi Cheung, Xiaodong Gu",
@@ -4763,6 +4789,32 @@
       ]
     },
     {
+      "id": "2608.13040",
+      "title": "Latent On-Policy Self-Distillation",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2608.13040",
+      "source": "https://www.alphaxiv.org/abs/2608.13040",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13040.jpg",
+      "firstSeenAt": "2026-08-15T23:33:59.060Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2510.09665",
       "title": "LMCache: An Efficient KV Cache Layer for Enterprise-Scale LLM Inference",
       "authors": "Yihua Cheng, Yuhan Liu, Jiayi Yao",
@@ -6373,6 +6425,32 @@
       ]
     },
     {
+      "id": "2608.chen2026flux",
+      "title": "Flux-Form Spatiotemporal Neural Operators for Coarse-Grained Dynamics of Multiscale PDEs",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-16",
+      "score": 90,
+      "paper": "https://www.alphaxiv.org/abs/2608.chen2026flux",
+      "source": "https://www.alphaxiv.org/abs/2608.chen2026flux",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-08-16T23:33:42.729Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.18231",
       "title": "FM-VLA: Force-based Memory for Vision-Language-Action Models in Contact-Rich Manipulation",
       "authors": "Ruicheng Li, Qixiu Li, Ruichun Ma, Yu Deng, Lin Luo, Zhiying Du, Jianfeng Xiang, Huizhi Liang, Ruicheng Wang, Jiaolong Yang, Baining Guo",
@@ -7045,8 +7123,8 @@
       "org": "",
       "published": "2026-08-13",
       "score": 90,
-      "paper": "https://arxiv.org/abs/2608.13482v1",
-      "source": "https://arxiv.org/abs/2608.13482v1",
+      "paper": "https://arxiv.org/abs/2608.13482",
+      "source": "https://www.alphaxiv.org/abs/2608.13482",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.13482.jpg",
@@ -8043,6 +8121,32 @@
       ]
     },
     {
+      "id": "2608.13433",
+      "title": "Algebraic Decomposition Theory for Transformer Length Generalization",
+      "authors": "",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 88,
+      "paper": "https://arxiv.org/abs/2608.13433",
+      "source": "https://www.alphaxiv.org/abs/2608.13433",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13433.jpg",
+      "firstSeenAt": "2026-08-15T23:33:59.060Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.19847",
       "title": "AtomMem: Building Simple and Effective Memory System for LLM Agents via Atomic Facts",
       "authors": "Yanyu Yao, Shangze Li, Zhi Zheng, Hui Zheng, Qi Liu, Tong Xu, Enhong Chen",
@@ -8706,32 +8810,6 @@
       ]
     },
     {
-      "id": "2608.11859",
-      "title": "Small-Scale Experiments: Are We There Yet?",
-      "authors": "",
-      "org": "",
-      "published": "2026-08-12",
-      "score": 88,
-      "paper": "https://arxiv.org/abs/2608.11859",
-      "source": "https://www.alphaxiv.org/abs/2608.11859",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.11859.jpg",
-      "firstSeenAt": "2026-08-13T23:56:07.620Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.27197",
       "title": "The Maxwell Conjecture is False",
       "authors": "",
@@ -9188,32 +9266,6 @@
         "Vision/Multimodal",
         "Language Modeling",
         "Serving"
-      ]
-    },
-    {
-      "id": "2608.13040",
-      "title": "Latent On-Policy Self-Distillation",
-      "authors": "",
-      "org": "",
-      "published": "2026-08-13",
-      "score": 87,
-      "paper": "https://arxiv.org/abs/2608.13040",
-      "source": "https://www.alphaxiv.org/abs/2608.13040",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13040.jpg",
-      "firstSeenAt": "2026-08-15T23:33:59.060Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -9972,7 +10024,7 @@
       "published": "2026-08-09",
       "score": 86,
       "paper": "https://arxiv.org/abs/2608.08888",
-      "source": "https://www.alphaxiv.org/abs/2608.08888",
+      "source": "https://huggingface.co/papers/2608.08888",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.08888.jpg",
@@ -10668,32 +10720,6 @@
       ]
     },
     {
-      "id": "2608.13433",
-      "title": "Algebraic Decomposition Theory for Transformer Length Generalization",
-      "authors": "",
-      "org": "",
-      "published": "2026-08-13",
-      "score": 85,
-      "paper": "https://arxiv.org/abs/2608.13433",
-      "source": "https://www.alphaxiv.org/abs/2608.13433",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13433.jpg",
-      "firstSeenAt": "2026-08-15T23:33:59.060Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.18235",
       "title": "Automated Discovery Has No Universally Superior Harness",
       "authors": "",
@@ -11048,6 +11074,42 @@
         "Language Modeling",
         "Frontier Training",
         "Serving"
+      ]
+    },
+    {
+      "id": "2608.13558",
+      "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+      "authors": "Bobo Li, Hao Fei, Tianjie Ju, Mong-Li Lee, Wynne Hsu",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2608.13558",
+      "source": "https://www.alphaxiv.org/abs/2608.13558",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13558.jpg",
+      "firstSeenAt": "2026-08-14T23:34:21.613Z",
+      "summary": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Omni models",
+        "language modeling",
+        "arxiv",
+        "vision/multimodal",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode",
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -11571,7 +11633,7 @@
       "published": "2026-08-13",
       "score": 84,
       "paper": "https://arxiv.org/abs/2608.13546",
-      "source": "https://www.alphaxiv.org/abs/2608.13546",
+      "source": "https://huggingface.co/papers/2608.13546",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2608.13546.jpg",
@@ -11593,6 +11655,35 @@
       "category": "Serving",
       "categories": [
         "Serving"
+      ]
+    },
+    {
+      "id": "2608.13417",
+      "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+      "authors": "Yiwei Li, Wanli Yang, Hexiang Tan, Xiangzhou Huang, Zhengyu Chen, Ziran Li, Borun Chen, Shanglin Lei, Huaisheng Zhu, Hao Tian, Fei Sun, Xunliang Cai, Jingang Wang",
+      "org": "",
+      "published": "2026-08-13",
+      "score": 84,
+      "paper": "https://arxiv.org/abs/2608.13417",
+      "source": "https://www.alphaxiv.org/abs/2608.13417",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2608.13417.jpg",
+      "firstSeenAt": "2026-08-14T23:34:21.613Z",
+      "summary": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
       ]
     },
     {
@@ -11945,42 +12036,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2608.13558",
-      "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
-      "authors": "Bobo Li, Hao Fei, Tianjie Ju, Mong-Li Lee, Wynne Hsu",
-      "org": "",
-      "published": "2026-08-13",
-      "score": 84,
-      "paper": "https://arxiv.org/abs/2608.13558",
-      "source": "https://www.alphaxiv.org/abs/2608.13558",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13558.jpg",
-      "firstSeenAt": "2026-08-14T23:34:21.613Z",
-      "summary": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
-      "matchedBy": [
-        "papers with code",
-        "Agents",
-        "Omni models",
-        "language modeling",
-        "arxiv",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode",
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -13158,35 +13213,6 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
-      ]
-    },
-    {
-      "id": "2608.13417",
-      "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
-      "authors": "Yiwei Li, Wanli Yang, Hexiang Tan, Xiangzhou Huang, Zhengyu Chen, Ziran Li, Borun Chen, Shanglin Lei, Huaisheng Zhu, Hao Tian, Fei Sun, Xunliang Cai, Jingang Wang",
-      "org": "",
-      "published": "2026-08-13",
-      "score": 82,
-      "paper": "https://arxiv.org/abs/2608.13417",
-      "source": "https://www.alphaxiv.org/abs/2608.13417",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2608.13417.jpg",
-      "firstSeenAt": "2026-08-14T23:34:21.613Z",
-      "summary": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training"
       ]
     },
     {
@@ -15427,7 +15453,7 @@
       "published": "2026-08-13",
       "score": 80,
       "paper": "https://arxiv.org/abs/2608.13552",
-      "source": "https://huggingface.co/papers/2608.13552",
+      "source": "https://www.alphaxiv.org/abs/2608.13552",
       "code": "https://github.com/kxding/PlayWorld",
       "project": "",
       "thumbnail": "./thumbs/2608.13552.jpg",
@@ -19189,7 +19215,8 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling"
+        "Language Modeling",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -27371,7 +27398,8 @@
         "papers with code",
         "Large language model (LLM)",
         "language modeling",
-        "hugging face daily"
+        "hugging face daily",
+        "Few-shot prompting"
       ],
       "sources": [
         "paperswithcode",
