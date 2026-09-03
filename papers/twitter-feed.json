@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T01:36:52.892Z",
+  "generatedAt": "2026-09-03T01:17:02.650Z",
   "signals": [
     {
       "id": "2094130588047266206",
@@ -834,91 +834,6 @@
         "like_count": 31,
         "retweet_count": 8,
         "reply_count": 14
-      },
-      "urls": []
-    },
-    {
-      "id": "2084378418989379822",
-      "handle": "OpenAI",
-      "name": "OpenAI",
-      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
-      "verified": true,
-      "text": "The result is a faster, more natural conversation with ChatGPT Voice from the moment a session starts.\nHow we built it: openai.com/index/continuo…",
-      "createdAt": "Mon Aug 03 20:38:35 +0000 2026",
-      "permalink": "https://twitter.com/OpenAI/status/2084378418989379822",
-      "media": [],
-      "metrics": {
-        "like_count": 821,
-        "retweet_count": 54,
-        "reply_count": 34
-      },
-      "urls": [
-        "https://openai.com/index/continuous-voice-interaction-with-gpt-live/"
-      ]
-    },
-    {
-      "id": "2084378417320141196",
-      "handle": "OpenAI",
-      "name": "OpenAI",
-      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
-      "verified": true,
-      "text": "Audio moves through a dedicated fast path, while deeper reasoning and tool use happen asynchronously.\nWe also reduced voice-session startup from six network round trips to one.",
-      "createdAt": "Mon Aug 03 20:38:35 +0000 2026",
-      "permalink": "https://twitter.com/OpenAI/status/2084378417320141196",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HO0ubl0aMAA3H2r.png"
-        }
-      ],
-      "metrics": {
-        "like_count": 1072,
-        "retweet_count": 60,
-        "reply_count": 34
-      },
-      "urls": []
-    },
-    {
-      "id": "2084378415818579975",
-      "handle": "OpenAI",
-      "name": "OpenAI",
-      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
-      "verified": true,
-      "text": "GPT-Live can listen while it speaks.\nTo make that feel natural at ChatGPT scale, we rebuilt the voice stack from client to model.\nThis new architecture keeps audio flowing continuously, so deeper reasoning and tool use don't interrupt the conversation.",
-      "createdAt": "Mon Aug 03 20:38:34 +0000 2026",
-      "permalink": "https://twitter.com/OpenAI/status/2084378415818579975",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HO0uUesbYAAaHzK.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 4867,
-        "retweet_count": 365,
-        "reply_count": 289
-      },
-      "urls": []
-    },
-    {
-      "id": "2084367708439949343",
-      "handle": "omarsar0",
-      "name": "elvis",
-      "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_normal.jpg",
-      "verified": true,
-      "text": "// Model or Harness //\nGreat paper if you are building with agents in production.\n(bookmark it)\nIt organizes 41 agent failure modes by the interaction they originate in. Each mode gets assigned to an edge between two components (model, harness, user, tools, memory,",
-      "createdAt": "Mon Aug 03 19:56:02 +0000 2026",
-      "permalink": "https://twitter.com/omarsar0/status/2084367708439949343",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HO0pYkGb0AAYObF.png"
-        }
-      ],
-      "metrics": {
-        "like_count": 119,
-        "retweet_count": 15,
-        "reply_count": 6
       },
       "urls": []
     }
