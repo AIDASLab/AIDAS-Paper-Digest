@@ -1,6 +1,123 @@
 {
-  "generatedAt": "2026-09-25T02:02:26.914Z",
+  "generatedAt": "2026-09-26T01:40:27.453Z",
   "signals": [
+    {
+      "id": "2103587050347995581",
+      "handle": "OpenAI",
+      "name": "OpenAI",
+      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+      "verified": true,
+      "text": "We’ve shared details on how AI agents in our research environment sent training and evaluation data to third-party services when they shouldn’t have.\nMost of that data did not come from users. We have discovered 53 cases where images that people had uploaded were posted to",
+      "createdAt": "Fri Sep 25 20:46:50 +0000 2026",
+      "permalink": "https://twitter.com/OpenAI/status/2103587050347995581",
+      "media": [],
+      "metrics": {
+        "like_count": 1763,
+        "retweet_count": 184,
+        "reply_count": 240
+      },
+      "urls": []
+    },
+    {
+      "id": "2103566736356458911",
+      "handle": "OpenAI",
+      "name": "OpenAI",
+      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+      "verified": true,
+      "text": "After the Hugging Face incident, we committed to conducting a much broader review of actions taken by our models during training and evaluation and to being transparent about our findings. This is an extensive review that is ongoing.\nThe vast majority of actions we’ve reviewed",
+      "createdAt": "Fri Sep 25 19:26:06 +0000 2026",
+      "permalink": "https://twitter.com/OpenAI/status/2103566736356458911",
+      "media": [],
+      "metrics": {
+        "like_count": 1893,
+        "retweet_count": 193,
+        "reply_count": 258
+      },
+      "urls": []
+    },
+    {
+      "id": "2103478384584278502",
+      "handle": "omarsar0",
+      "name": "elvis",
+      "avatar": "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_normal.jpg",
+      "verified": true,
+      "text": "Banger paper from Microsoft and colleagues.\nWe talk about human taste being important in this AI era.\nBut for recursive self-improvement, an agent's taste also matters.\nThe big question is: How often do frontier agents pick the better direction at a decision point in a long",
+      "createdAt": "Fri Sep 25 13:35:02 +0000 2026",
+      "permalink": "https://twitter.com/omarsar0/status/2103478384584278502",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HTEOcVWaIAEH8zF.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 135,
+        "retweet_count": 18,
+        "reply_count": 21
+      },
+      "urls": []
+    },
+    {
+      "id": "2103468451469951095",
+      "handle": "chris_j_paxton",
+      "name": "Chris Paxton",
+      "avatar": "https://pbs.twimg.com/profile_images/1330994153518411777/2LfHg9GF_normal.jpg",
+      "verified": true,
+      "text": "How do we scale dexterous manipulation data for real robots? Do as I Do is a retargeting algorithm for turning internet or generated videos into high-quality, executable robot data for high-dof hands. Learn more on @RoboPapers -&gt;",
+      "createdAt": "Fri Sep 25 12:55:34 +0000 2026",
+      "permalink": "https://twitter.com/chris_j_paxton/status/2103468451469951095",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2103468232820641792/img/wH_07gxVhY1ZWYO2.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 115,
+        "retweet_count": 13,
+        "reply_count": 5
+      },
+      "urls": []
+    },
+    {
+      "id": "2103461342413742428",
+      "handle": "minchoi",
+      "name": "Min Choi",
+      "avatar": "https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg",
+      "verified": true,
+      "text": "It's only been just over 2 days since Anthropic dropped Opus 5.5\nAnd people can't stop getting creative with it.\n10 wild examples:",
+      "createdAt": "Fri Sep 25 12:27:19 +0000 2026",
+      "permalink": "https://twitter.com/minchoi/status/2103461342413742428",
+      "media": [],
+      "metrics": {
+        "like_count": 237,
+        "retweet_count": 13,
+        "reply_count": 34
+      },
+      "urls": []
+    },
+    {
+      "id": "2102837575568519450",
+      "handle": "OpenAI",
+      "name": "OpenAI",
+      "avatar": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+      "verified": true,
+      "text": "Most mental health benchmarks focus on emergency situations.\nMentalHealthBench is designed to cover the full spectrum of mental health conversations that people bring to AI - from everyday support to more acute crisis scenarios.",
+      "createdAt": "Wed Sep 23 19:08:41 +0000 2026",
+      "permalink": "https://twitter.com/OpenAI/status/2102837575568519450",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HS7HASCasAAP-lG.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 435,
+        "retweet_count": 26,
+        "reply_count": 80
+      },
+      "urls": []
+    },
     {
       "id": "2102727697340440710",
       "handle": "chris_j_paxton",
@@ -20,6 +137,23 @@
         "like_count": 181,
         "retweet_count": 15,
         "reply_count": 5
+      },
+      "urls": []
+    },
+    {
+      "id": "2101251527293731275",
+      "handle": "TheTuringPost",
+      "name": "Turing Post",
+      "avatar": "https://pbs.twimg.com/profile_images/2052479476605333508/_-CG4lvC_normal.jpg",
+      "verified": true,
+      "text": "x.com/i/article/2101…",
+      "createdAt": "Sat Sep 19 10:06:18 +0000 2026",
+      "permalink": "https://twitter.com/TheTuringPost/status/2101251527293731275",
+      "media": [],
+      "metrics": {
+        "like_count": 21,
+        "retweet_count": 7,
+        "reply_count": 0
       },
       "urls": []
     },
@@ -263,28 +397,6 @@
         "like_count": 3940,
         "retweet_count": 680,
         "reply_count": 394
-      },
-      "urls": []
-    },
-    {
-      "id": "2092678508329988480",
-      "handle": "TheHumanoidHub",
-      "name": "The Humanoid Hub",
-      "avatar": "https://pbs.twimg.com/profile_images/1682127970251718656/9j1n6iKy_normal.jpg",
-      "verified": true,
-      "text": "SF-based Lightberry has launched Lumi, a friendly interactive robot with custom sensors and compute.\nThanks for the office tour @aliattar.\n@emily_yu",
-      "createdAt": "Wed Aug 26 18:20:11 +0000 2026",
-      "permalink": "https://twitter.com/TheHumanoidHub/status/2092678508329988480",
-      "media": [
-        {
-          "type": "video",
-          "image": "https://pbs.twimg.com/amplify_video_thumb/2092677812960538624/img/I68RnwnJTCxZyHcF.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 70,
-        "retweet_count": 7,
-        "reply_count": 9
       },
       "urls": []
     }
