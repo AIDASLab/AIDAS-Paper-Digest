@@ -1,6 +1,142 @@
 {
-  "generatedAt": "2026-10-09T03:18:05.626Z",
+  "generatedAt": "2026-10-10T02:30:55.187Z",
   "signals": [
+    {
+      "id": "2108716805166415966",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "That's a wrap on #COLM2026! Thank you to everyone who stopped by our booth, joined our evening gathering, &amp; talked open research with us.\nCatch up on the papers, interviews, &amp; highlights from the week. 👇\nallenai.org/blog/colm-2026…",
+      "createdAt": "Sat Oct 10 00:30:39 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2108716805166415966",
+      "media": [],
+      "metrics": {
+        "like_count": 5,
+        "retweet_count": 0,
+        "reply_count": 0
+      },
+      "urls": [
+        "https://allenai.org/blog/colm-2026-recap"
+      ]
+    },
+    {
+      "id": "2108584152119263583",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "Read more about the design decisions behind our scheduler, rollout lessons, &amp; what we’re tackling next: allenai.org/blog/impactful…",
+      "createdAt": "Fri Oct 09 15:43:32 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2108584152119263583",
+      "media": [],
+      "metrics": {
+        "like_count": 9,
+        "retweet_count": 1,
+        "reply_count": 0
+      },
+      "urls": [
+        "https://allenai.org/blog/impactful-scheduling"
+      ]
+    },
+    {
+      "id": "2108584151083286894",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "Over a 30-day test with our new scheduler, teams received 98% of the GPU hours they were owed, accounting for actual demand.\nCluster occupancy stayed at 98%, with spare capacity available to interruptible work that didn’t draw down a team’s budget.",
+      "createdAt": "Fri Oct 09 15:43:31 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2108584151083286894",
+      "media": [],
+      "metrics": {
+        "like_count": 6,
+        "retweet_count": 0,
+        "reply_count": 1
+      },
+      "urls": []
+    },
+    {
+      "id": "2108549082474225741",
+      "handle": "Alibaba_Qwen",
+      "name": "Qwen",
+      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
+      "verified": true,
+      "text": "Edit:",
+      "createdAt": "Fri Oct 09 13:24:10 +0000 2026",
+      "permalink": "https://twitter.com/Alibaba_Qwen/status/2108549082474225741",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUMIJwpb0AA_Q48.jpg"
+        },
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUMILAXbcAAlYCp.png"
+        },
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUMIMMdaQAAZ8kR.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 62,
+        "retweet_count": 0,
+        "reply_count": 2
+      },
+      "urls": []
+    },
+    {
+      "id": "2108549078456148283",
+      "handle": "Alibaba_Qwen",
+      "name": "Qwen",
+      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
+      "verified": true,
+      "text": "Pics:",
+      "createdAt": "Fri Oct 09 13:24:09 +0000 2026",
+      "permalink": "https://twitter.com/Alibaba_Qwen/status/2108549078456148283",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUMIGanbMAA5rUn.jpg"
+        },
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUMIGaiakAADnGH.jpg"
+        },
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUMIGagbEAATULw.jpg"
+        },
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUMIGafa8AAib1w.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 92,
+        "retweet_count": 4,
+        "reply_count": 3
+      },
+      "urls": []
+    },
+    {
+      "id": "2108549075218120949",
+      "handle": "Alibaba_Qwen",
+      "name": "Qwen",
+      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
+      "verified": true,
+      "text": "🚀 Meet Qwen-Image-2.1-Turbo — create and edit images in just 8 denoising steps! Open weights now available!\nBuilt on Qwen-Image-2.1, Turbo is an accelerated checkpoint on the same 7B visual generation architecture.\nFewer steps does not mean lower quality: it still generates",
+      "createdAt": "Fri Oct 09 13:24:09 +0000 2026",
+      "permalink": "https://twitter.com/Alibaba_Qwen/status/2108549075218120949",
+      "media": [],
+      "metrics": {
+        "like_count": 3400,
+        "retweet_count": 354,
+        "reply_count": 142
+      },
+      "urls": []
+    },
     {
       "id": "2108302545953157156",
       "handle": "AnthropicAI",
@@ -211,9 +347,9 @@
         }
       ],
       "metrics": {
-        "like_count": 1398,
-        "retweet_count": 258,
-        "reply_count": 204
+        "like_count": 1430,
+        "retweet_count": 266,
+        "reply_count": 217
       },
       "urls": [
         "https://synthid.com"
@@ -328,9 +464,9 @@
         }
       ],
       "metrics": {
-        "like_count": 556,
-        "retweet_count": 44,
-        "reply_count": 26
+        "like_count": 558,
+        "retweet_count": 43,
+        "reply_count": 31
       },
       "urls": []
     },
@@ -372,9 +508,9 @@
         }
       ],
       "metrics": {
-        "like_count": 40490,
+        "like_count": 40549,
         "retweet_count": 4570,
-        "reply_count": 1999
+        "reply_count": 2006
       },
       "urls": []
     },
@@ -853,9 +989,9 @@
       "permalink": "https://twitter.com/drfeifei/status/2104664403681632453",
       "media": [],
       "metrics": {
-        "like_count": 8193,
-        "retweet_count": 984,
-        "reply_count": 457
+        "like_count": 8201,
+        "retweet_count": 983,
+        "reply_count": 459
       },
       "urls": []
     },
