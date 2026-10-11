@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T02:43:37.942Z",
+  "generatedAt": "2026-10-11T01:51:26.844Z",
   "sourceStats": {
     "seed": 15036,
     "paperswithcode": 540,
@@ -7,7 +7,7 @@
     "huggingface": 72,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 15036
+    "total": 15038
   },
   "papers": [
     {
@@ -2893,6 +2893,41 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2610.11959",
+      "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+      "authors": "Xiaomi LLM-Core Team, Zongming Qiao, Ziyue Hua, Zirui Ou, Zihao Yue, Zihan Jiang, Zhuo Huang, Zhiyang Chen, Zhixian Zheng, Zhipeng Xu, Zhengrui Ma, Yuyang Hu, Yuhang Dong, Yuechen Zhang, Yudong Wang, Yuanxin Liu, Yixin Yang, Yishuo Cai, Yikai Zhao, Yihan Yan, Yifan Zhang, Yifan Song, Xiyu Wei, Xing Zhang, Xin Zhang, Xiaoqian Liu, Xiaodong Ji, Xiangwei Deng, Xueyu Guo, Wenhan Ma, Weimin Xiong, Weikun Wang, Weiji Zhuang, Shuo Liu, Shuhuai Ren, Shuhao Gu, Shimao Chen, Shijie Cao, Shihua Yu, Shicheng Li, Shengjie Zhou, Shaolei Zhang, Rang Li, Qiying Wang, Qingkai Fang, Qianli Chen, Minzheng Wang, Liwen Wang, Linli Yao, Linghao Zhang, Liangyu Cheng, Liang Zhao, Lei Li, Jinhao Dong, Jinyu Xiang, Jianyu Wei, Jiangshan Duo, Huaqiu Liu, Huanjie Fan, Hongyi Guan, Hongshen Xu, Hao Tian, Hanyu Li, Hailin Zhang, Gang Wang, Fuli Luo, Feng Wei, Dong Zhang, Dawei Zhu, Chiheng Lou, Chenhong He, Chenhao He, Chenghua Liu, Bowen Ye, Bowen Shen, Boshen Xu, Bo Yang, Bingquan Xia, Bangjun Xiao, Baixuan Xu, Zhouxiang Mao, Zhiyang Zhang, Zhixiang Xu, Zhenru Lin, Zhengju Tang, Zhaojun Huang, Yuzhe Weng, Yuxing Xiang, Yuxiao Li, Yuheng Yang, Yuhang Wang, Yuchen Liu, Yuanyuan Tian, Yuanliang Dong, Yu Cheng, Yongzhe He, Yongshun Liang, Yong Wang, Yiyan Wang, Yitian Gong, Yijie Zhang, Yanshu Xin, Xun Zhang, Xingjian Zhao, Wenyu Yang, Wenshan Huang, Wenhao Li, Tingwei Huang, Tianyu Yu, Tianyang Lu, Taoyu Yang, Sinan Du, Shutong Tian, Shulin Du, Shengfan Wang, Shanchuan Fang, Qihao Zhang, Qibin Yang, Qian Yu, Qian Tu, Pengrong Xie, Peipei Wang, Peidian Li, Minkun Guo, Mingchen Shao, Luohan Gao, Lijie Wang, Liang Shi, Kaiqi Chen, Kaiming Liu, Kaifei Wang, Kai Yang, Jinlong Xue, Jiechen Zhang, Jiaxuan Liu, Hongxu An, Hao Peng, Hanglong Lü, Guonan Wang, Feiyu Yang, Fanyu Cao, Fangyue Liu, Fan Cui, Cong Wang, Chun Chen, Chenxu Bai, Chengxuan Zhu, Chenghua Wang, Boyi Zeng",
+      "org": "",
+      "published": "2026-10-08",
+      "score": 95,
+      "paper": "https://arxiv.org/abs/2610.11959",
+      "source": "https://www.alphaxiv.org/abs/2610.11959",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.11959.jpg",
+      "firstSeenAt": "2026-10-10T02:19:13.253Z",
+      "summary": "Reinforcement learning (RL) is the central training paradigm for advancing large foundation models towards self-improvement. This report introduces the MiMo-V2.6 series, an omni-modal family that pushes the frontier of model intelligence by scaling RL compute. Prior to RL, we conduct mid-training on a broad multimodal corpus to provide ample exploration space, and build a solid infrastructure on the pretrained hybrid-SWA architecture to support subsequent scale-up. We scale RL compute along three dimensions: (1) larger batches and higher throughput, with an asynchronous training that consumes 1,568 samples and 2.7-3.7B tokens per step at context lengths of up to 1M; (2) more diverse and complex environments, spanning code, general, visual, and cyber domains under a mixture of agent harnesses; and (3) more grader compute, via groupwise agentic grading that yields more accurate reward signals for long-horizon tasks and steers the model towards shorter, more token-efficient solutions. To keep training stable at scale, we freeze the MoE router and establish a multi-layer defense against reward hacking. We further build infrastructure for mixed-task agentic RL, including a unified trajectory representation, high-concurrency multi-framework rollout, decoupled control and data planes, and training-inference consistency. We open-source the training dynamics, RL environments, and RL framework to facilitate reproduction and further research on scaled RL and model self-improvement.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Omni models",
+        "Reinforcement Learning",
+        "Mid-training",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling",
+        "Serving"
       ]
     },
     {
@@ -7321,6 +7356,32 @@
       ]
     },
     {
+      "id": "2610.12176",
+      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 93,
+      "paper": "https://arxiv.org/abs/2610.12176",
+      "source": "https://www.alphaxiv.org/abs/2610.12176",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.12176.jpg",
+      "firstSeenAt": "2026-10-10T02:19:13.253Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2609.29171",
       "title": "Representation World Model: Learning States, Transition and Executable Plans in Representation",
       "authors": "Yijun Yuan, Weicheng Zheng, Weibang Wang, Minghui Qin, Chang Sun, Junhao Huang, Kenan Li, Anmin Liu, Yicheng Yao, Hang Zhao",
@@ -9802,6 +9863,32 @@
       ]
     },
     {
+      "id": "2610.11692",
+      "title": "Can Jev be Your Q or Policy in Reinforcement Learning?",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 91,
+      "paper": "https://arxiv.org/abs/2610.11692",
+      "source": "https://www.alphaxiv.org/abs/2610.11692",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.11692.jpg",
+      "firstSeenAt": "2026-10-10T02:19:13.253Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2608.llm-agents-creativity-evaluation",
       "title": "Can LLM Agents Discover? Evaluating Creativity on ML Engineering Tasks",
       "authors": "",
@@ -10519,41 +10606,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2610.11959",
-      "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
-      "authors": "Xiaomi LLM-Core Team, Zongming Qiao, Ziyue Hua, Zirui Ou, Zihao Yue, Zihan Jiang, Zhuo Huang, Zhiyang Chen, Zhixian Zheng, Zhipeng Xu, Zhengrui Ma, Yuyang Hu, Yuhang Dong, Yuechen Zhang, Yudong Wang, Yuanxin Liu, Yixin Yang, Yishuo Cai, Yikai Zhao, Yihan Yan, Yifan Zhang, Yifan Song, Xiyu Wei, Xing Zhang, Xin Zhang, Xiaoqian Liu, Xiaodong Ji, Xiangwei Deng, Xueyu Guo, Wenhan Ma, Weimin Xiong, Weikun Wang, Weiji Zhuang, Shuo Liu, Shuhuai Ren, Shuhao Gu, Shimao Chen, Shijie Cao, Shihua Yu, Shicheng Li, Shengjie Zhou, Shaolei Zhang, Rang Li, Qiying Wang, Qingkai Fang, Qianli Chen, Minzheng Wang, Liwen Wang, Linli Yao, Linghao Zhang, Liangyu Cheng, Liang Zhao, Lei Li, Jinhao Dong, Jinyu Xiang, Jianyu Wei, Jiangshan Duo, Huaqiu Liu, Huanjie Fan, Hongyi Guan, Hongshen Xu, Hao Tian, Hanyu Li, Hailin Zhang, Gang Wang, Fuli Luo, Feng Wei, Dong Zhang, Dawei Zhu, Chiheng Lou, Chenhong He, Chenhao He, Chenghua Liu, Bowen Ye, Bowen Shen, Boshen Xu, Bo Yang, Bingquan Xia, Bangjun Xiao, Baixuan Xu, Zhouxiang Mao, Zhiyang Zhang, Zhixiang Xu, Zhenru Lin, Zhengju Tang, Zhaojun Huang, Yuzhe Weng, Yuxing Xiang, Yuxiao Li, Yuheng Yang, Yuhang Wang, Yuchen Liu, Yuanyuan Tian, Yuanliang Dong, Yu Cheng, Yongzhe He, Yongshun Liang, Yong Wang, Yiyan Wang, Yitian Gong, Yijie Zhang, Yanshu Xin, Xun Zhang, Xingjian Zhao, Wenyu Yang, Wenshan Huang, Wenhao Li, Tingwei Huang, Tianyu Yu, Tianyang Lu, Taoyu Yang, Sinan Du, Shutong Tian, Shulin Du, Shengfan Wang, Shanchuan Fang, Qihao Zhang, Qibin Yang, Qian Yu, Qian Tu, Pengrong Xie, Peipei Wang, Peidian Li, Minkun Guo, Mingchen Shao, Luohan Gao, Lijie Wang, Liang Shi, Kaiqi Chen, Kaiming Liu, Kaifei Wang, Kai Yang, Jinlong Xue, Jiechen Zhang, Jiaxuan Liu, Hongxu An, Hao Peng, Hanglong Lü, Guonan Wang, Feiyu Yang, Fanyu Cao, Fangyue Liu, Fan Cui, Cong Wang, Chun Chen, Chenxu Bai, Chengxuan Zhu, Chenghua Wang, Boyi Zeng",
-      "org": "",
-      "published": "2026-10-08",
-      "score": 91,
-      "paper": "https://arxiv.org/abs/2610.11959",
-      "source": "https://www.alphaxiv.org/abs/2610.11959",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.11959.jpg",
-      "firstSeenAt": "2026-10-10T02:19:13.253Z",
-      "summary": "Reinforcement learning (RL) is the central training paradigm for advancing large foundation models towards self-improvement. This report introduces the MiMo-V2.6 series, an omni-modal family that pushes the frontier of model intelligence by scaling RL compute. Prior to RL, we conduct mid-training on a broad multimodal corpus to provide ample exploration space, and build a solid infrastructure on the pretrained hybrid-SWA architecture to support subsequent scale-up. We scale RL compute along three dimensions: (1) larger batches and higher throughput, with an asynchronous training that consumes 1,568 samples and 2.7-3.7B tokens per step at context lengths of up to 1M; (2) more diverse and complex environments, spanning code, general, visual, and cyber domains under a mixture of agent harnesses; and (3) more grader compute, via groupwise agentic grading that yields more accurate reward signals for long-horizon tasks and steers the model towards shorter, more token-efficient solutions. To keep training stable at scale, we freeze the MoE router and establish a multi-layer defense against reward hacking. We further build infrastructure for mixed-task agentic RL, including a unified trajectory representation, high-concurrency multi-framework rollout, decoupled control and data planes, and training-inference consistency. We open-source the training dynamics, RL environments, and RL framework to facilitate reproduction and further research on scaled RL and model self-improvement.",
-      "matchedBy": [
-        "papers with code",
-        "Agents",
-        "Omni models",
-        "Reinforcement Learning",
-        "Mid-training",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
-        "Language Modeling",
-        "Serving"
       ]
     },
     {
@@ -12947,6 +12999,34 @@
       ]
     },
     {
+      "id": "2610.12424",
+      "title": "RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments",
+      "authors": "Zimo Wen, Yijin Chen, Yuxuan Cao, Wendi Chen, Yanwen Zou, Wenye Yu, Fuhang Kuang, Han Xue, Jun Lv, Chuan Wen, Cewu Lu",
+      "org": "",
+      "published": "2026-10-08",
+      "score": 90,
+      "paper": "https://arxiv.org/abs/2610.12424",
+      "source": "https://www.alphaxiv.org/abs/2610.12424",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.12424.jpg",
+      "firstSeenAt": "2026-10-09T03:07:06.282Z",
+      "summary": "A generalist robot should not only perform diverse tasks but also improve through experience, turning what it learns during execution into capabilities that later tasks can reuse. Robot agents that act through code can already repair programs from execution feedback, yet it remains a central challenge to organize this experience around the task structure that gives it meaning, so that each repair is attributed to the responsible capability, supported by execution evidence, and validated before it is reused. We introduce RoboRSI, a robot self-improvement system built on Top-Down Skill Refinement (TSR). TSR decomposes tasks into compound, atomic, and base skills with scoped responsibilities and explicit input--output contracts, attributes each execution outcome to the responsible branch, and confines revision to that branch. Building upon this structure, a Manager, Planner, Engineer, and Reviewer coordinate planning, execution, diagnosis, and the validated release of new skills, while people steer the process through objectives and corrections; stable skill sequences are further consolidated into reusable compound skills. On a mobile manipulator, RoboRSI develops multi-object household cleanup over 104 rounds. In simulation, it achieves the highest success rate on LIBERO, LIBERO-PRO, LIBERO-Plus, and RoboTwin, exceeding the strongest baseline by 2.7 to 11.0 percentage points.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.20033",
       "title": "Robots Acquire Manipulation Skills in Seconds from a Single Human Video",
       "authors": "Guangyan Chen, Meiling Wang, Te Cui, Zichen Zhou, Qi Shao, Shalfun Li, Hang Su, Roy Gan, Hao Wang, Mengyin Fu, Yi Yang, Yufeng Yue",
@@ -13446,6 +13526,38 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2610.12465",
+      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "authors": "Octi Zhang, Mateo Guaman Castro, Patrick Yin, Ignacio Dagnino, Abhishek Gupta, Rosario Scalise, Byron Boots",
+      "org": "",
+      "published": "2026-10-08",
+      "score": 89,
+      "paper": "https://arxiv.org/abs/2610.12465",
+      "source": "https://www.alphaxiv.org/abs/2610.12465",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.12465.jpg",
+      "firstSeenAt": "2026-10-09T03:07:06.282Z",
+      "summary": "General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively parallel simulation, can alleviate much of this engineering burden on several manipulation problems. However, we find that naively scaling this paradigm to more precise or dynamic problems remains non-trivial. While simulator resets can help with exploration, uniformly sampling over this distribution wastes a growing fraction of learning experience on task configurations the policy has already mastered or cannot yet attempt. This makes it challenging to see the expected benefits of scaling parallel environments for RL, since much of the learning signal in a batch is wasted during learning. To mitigate this, we introduce Success Guided Sampling (SGS), a simple adaptive sampler that concentrates RL training on task configurations around the frontier of the policy's capabilities. Doing so allows large-scale simulated RL to make the most out of the experience in a batch, enabling much more effective scaling to large-scale parallel simulation. Across experiments using up to $2^{20}$ (over one million) parallel environments, SGS enables RL to solve challenging multi-terrain quadruped locomotion and contact-rich assembly tasks that prior methods fail to solve. Finally, we distill the learned manipulation policies into RGB-based policies and demonstrate zero-shot transfer to several challenging assembly tasks on real hardware. Project website: https://sgs-rl.github.io/.",
+      "matchedBy": [
+        "arxiv",
+        "robotics",
+        "language modeling",
+        "frontier training",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -19672,32 +19784,6 @@
       ]
     },
     {
-      "id": "2610.12176",
-      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 86,
-      "paper": "https://arxiv.org/abs/2610.12176",
-      "source": "https://www.alphaxiv.org/abs/2610.12176",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.12176.jpg",
-      "firstSeenAt": "2026-10-10T02:19:13.253Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2609.12277",
       "title": "Reinforcement Learning over Patient Trajectories for Clinical Reasoning in EHR Foundation Models",
       "authors": "",
@@ -24122,6 +24208,37 @@
       ]
     },
     {
+      "id": "2610.12452",
+      "title": "BrickBench: Evaluating Agentic Brick Design",
+      "authors": "Peter Kulits, Yiqing Xu, R. Kenny Jones, Cordelia Schmid, Jiajun Wu",
+      "org": "",
+      "published": "2026-10-08",
+      "score": 83,
+      "paper": "https://arxiv.org/abs/2610.12452",
+      "source": "https://www.alphaxiv.org/abs/2610.12452",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.12452.jpg",
+      "firstSeenAt": "2026-10-10T02:19:13.253Z",
+      "summary": "We propose BrickBench, a benchmark for agentic text-conditioned LEGO-set design. Given a prompt, an agent is tasked with producing an assembly that not only satisfies semantic and design criteria, but that can also be physically built. To do so, it must select parts from a discrete library and reason jointly about local and global constraints. We score validity, alignment, and design across three settings that vary in scale and part availability. We provide BrickAgent, an environment for coding agents to construct, inspect, and validate their designs. We find that leading agents largely satisfy verifiable physical and semantic requirements, but fall short of human designs. We release our benchmark and environment at http://www.brickben.ch",
+      "matchedBy": [
+        "papers with code",
+        "Coding Agents",
+        "language modeling",
+        "hugging face daily",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2609.36730",
       "title": "Can Agents Design Libraries for Agents?",
       "authors": "Gabriel Orlanski, Alex L. Zhang, Avi Trost, Vincent Sunn Chen, Frederic Sala, Aws Albarghouthi, Ludwig Schmidt",
@@ -24144,32 +24261,6 @@
       "sources": [
         "paperswithcode",
         "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2610.11692",
-      "title": "Can Jev be Your Q or Policy in Reinforcement Learning?",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 83,
-      "paper": "https://arxiv.org/abs/2610.11692",
-      "source": "https://www.alphaxiv.org/abs/2610.11692",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.11692.jpg",
-      "firstSeenAt": "2026-10-10T02:19:13.253Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
         "alphaxiv"
       ],
       "category": "Language Modeling",
@@ -29966,34 +30057,6 @@
       ]
     },
     {
-      "id": "2610.12424",
-      "title": "RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments",
-      "authors": "Zimo Wen, Yijin Chen, Yuxuan Cao, Wendi Chen, Yanwen Zou, Wenye Yu, Fuhang Kuang, Han Xue, Jun Lv, Chuan Wen, Cewu Lu",
-      "org": "",
-      "published": "2026-10-08",
-      "score": 80,
-      "paper": "https://arxiv.org/abs/2610.12424",
-      "source": "https://www.alphaxiv.org/abs/2610.12424",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.12424.jpg",
-      "firstSeenAt": "2026-10-09T03:07:06.282Z",
-      "summary": "A generalist robot should not only perform diverse tasks but also improve through experience, turning what it learns during execution into capabilities that later tasks can reuse. Robot agents that act through code can already repair programs from execution feedback, yet it remains a central challenge to organize this experience around the task structure that gives it meaning, so that each repair is attributed to the responsible capability, supported by execution evidence, and validated before it is reused. We introduce RoboRSI, a robot self-improvement system built on Top-Down Skill Refinement (TSR). TSR decomposes tasks into compound, atomic, and base skills with scoped responsibilities and explicit input--output contracts, attributes each execution outcome to the responsible branch, and confines revision to that branch. Building upon this structure, a Manager, Planner, Engineer, and Reviewer coordinate planning, execution, diagnosis, and the validated release of new skills, while people steer the process through objectives and corrections; stable skill sequences are further consolidated into reusable compound skills. On a mobile manipulator, RoboRSI develops multi-object household cleanup over 104 rounds. In simulation, it achieves the highest success rate on LIBERO, LIBERO-PRO, LIBERO-Plus, and RoboTwin, exceeding the strongest baseline by 2.7 to 11.0 percentage points.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2610.09426",
       "title": "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement",
       "authors": "",
@@ -30580,38 +30643,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2610.12465",
-      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
-      "authors": "Octi Zhang, Mateo Guaman Castro, Patrick Yin, Ignacio Dagnino, Abhishek Gupta, Rosario Scalise, Byron Boots",
-      "org": "",
-      "published": "2026-10-08",
-      "score": 79,
-      "paper": "https://arxiv.org/abs/2610.12465",
-      "source": "https://www.alphaxiv.org/abs/2610.12465",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.12465.jpg",
-      "firstSeenAt": "2026-10-09T03:07:06.282Z",
-      "summary": "General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively parallel simulation, can alleviate much of this engineering burden on several manipulation problems. However, we find that naively scaling this paradigm to more precise or dynamic problems remains non-trivial. While simulator resets can help with exploration, uniformly sampling over this distribution wastes a growing fraction of learning experience on task configurations the policy has already mastered or cannot yet attempt. This makes it challenging to see the expected benefits of scaling parallel environments for RL, since much of the learning signal in a batch is wasted during learning. To mitigate this, we introduce Success Guided Sampling (SGS), a simple adaptive sampler that concentrates RL training on task configurations around the frontier of the policy's capabilities. Doing so allows large-scale simulated RL to make the most out of the experience in a batch, enabling much more effective scaling to large-scale parallel simulation. Across experiments using up to $2^{20}$ (over one million) parallel environments, SGS enables RL to solve challenging multi-terrain quadruped locomotion and contact-rich assembly tasks that prior methods fail to solve. Finally, we distill the learned manipulation policies into RGB-based policies and demonstrate zero-shot transfer to several challenging assembly tasks on real hardware. Project website: https://sgs-rl.github.io/.",
-      "matchedBy": [
-        "arxiv",
-        "robotics",
-        "language modeling",
-        "frontier training",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Language Modeling",
-        "Frontier Training"
       ]
     },
     {
@@ -31478,6 +31509,32 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2610.next-concept-modeling-parallel-generation",
+      "title": "NCM: Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 79,
+      "paper": "https://www.alphaxiv.org/abs/2610.next-concept-modeling-parallel-generation",
+      "source": "https://www.alphaxiv.org/abs/2610.next-concept-modeling-parallel-generation",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-10-11T01:51:26.844Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
         "Language Modeling"
       ]
     },
@@ -41306,35 +41363,6 @@
         "Vision/Multimodal",
         "Robotics",
         "Frontier Training"
-      ]
-    },
-    {
-      "id": "2610.12452",
-      "title": "BrickBench: Evaluating Agentic Brick Design",
-      "authors": "Peter Kulits, Yiqing Xu, R. Kenny Jones, Cordelia Schmid, Jiajun Wu",
-      "org": "",
-      "published": "2026-10-08",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2610.12452",
-      "source": "https://huggingface.co/papers/2610.12452",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.12452.jpg",
-      "firstSeenAt": "2026-10-10T02:19:13.253Z",
-      "summary": "We propose BrickBench, a benchmark for agentic text-conditioned LEGO-set design. Given a prompt, an agent is tasked with producing an assembly that not only satisfies semantic and design criteria, but that can also be physically built. To do so, it must select parts from a discrete library and reason jointly about local and global constraints. We score validity, alignment, and design across three settings that vary in scale and part availability. We provide BrickAgent, an environment for coding agents to construct, inspect, and validate their designs. We find that leading agents largely satisfy verifiable physical and semantic requirements, but fall short of human designs. We release our benchmark and environment at http://www.brickben.ch",
-      "matchedBy": [
-        "papers with code",
-        "Coding Agents",
-        "language modeling",
-        "hugging face daily"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -73073,7 +73101,7 @@
       "published": "2026-10-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2610.12299",
-      "source": "https://huggingface.co/papers/2610.12299",
+      "source": "https://www.alphaxiv.org/abs/2610.12299",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.12299.jpg",
@@ -73089,7 +73117,8 @@
       "sources": [
         "arxiv",
         "paperswithcode",
-        "huggingface"
+        "huggingface",
+        "alphaxiv"
       ],
       "category": "Robotics",
       "categories": [
@@ -76138,12 +76167,12 @@
       "published": "2026-10-06",
       "score": 78,
       "paper": "https://arxiv.org/abs/2610.08963",
-      "source": "https://huggingface.co/papers/2610.08963",
+      "source": "https://paperswithcode.co/paper/2610.08963",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.08963.jpg",
       "firstSeenAt": "2026-10-08T02:41:51.968Z",
-      "summary": "Asynchronous reinforcement learning (RL) for large language model (LLM) agents trains one policy on trajectories generated by another: rollouts come from stale checkpoints, and the inference engine's probabilities differ from the trainer's even at identical parameters. Standard remedies either clip importance ratios, which biases the update, or, as in GRPO, sample a group of responses per prompt, which is costly when episodes are long. We propose KL-Regularized Policy Optimization (KLPO), a framework that anchors the KL regularizer at the sampler. The regularized improvement step then has a closed-form Gibbs solution, and KLPO fits its log-ratio optimality condition by least squares on the sampler's own trajectories, so the sampler probability enters through a log-ratio and no importance weights are needed. Profiling out the regression intercept replaces the intractable log-partition function with the signal's sampler mean plus a sampler-to-trainer KL divergence. For token-level policy mirror descent targets, we show that the resulting gradient can be computed from terminal returns without a critic, via sampler-centered scores or a single trajectory residual, even under stochastic tool outputs. We further prove that independent Monte Carlo estimates of the KL term keep these gradients unbiased, derive the exact KL gap of cheaper top-$K$ and binary approximations, and show that SPPO, GPO, REBEL, and BPO arise as special cases of KLPO. The result is a critic-free update that uses one rollout per prompt and requires neither a learned normalizer nor a group of responses.",
+      "summary": "Asynchronous reinforcement learning (RL) for large language model (LLM) agents trains one policy on trajectories generated by another: rollouts come from stale checkpoints, and the inference engine's probabilities differ from the trainer's even at identical parameters. Standard remedies either clip importance ratios, which biases the update, or, as in GRPO, sample a group of responses per prompt, which is costly when episodes are long. We propose KL-Regularized Policy Optimization (KLPO), a framework that anchors the KL regularizer at the sampler. The regularized improvement step then has a closed-form Gibbs solution, and KLPO fits its log-ratio optimality condition by least squares on the sampler's own trajectories, so the sampler probability enters through a log-ratio and no importance weights are needed. Profiling out the regression intercept replaces the intractable log-partition function with the signal's sampler mean plus a sampler-to-trainer KL divergence. For token-level policy mirror descent targets, we show that the resulting gradient can be computed from terminal returns without a critic, via sampler-centered scores or a single trajectory residual, even under stochastic tool outputs. We further prove that independent Monte Carlo estimates of the KL term keep these gradients unbiased, derive the exact KL gap of cheaper top-K and binary approximations, and show that SPPO, GPO, REBEL, and BPO arise as special cases of KLPO. The result is a critic-free update that uses one rollout per prompt and requires neither a learned normalizer nor a group of responses.",
       "matchedBy": [
         "papers with code",
         "Reinforcement Learning",
@@ -103591,7 +103620,7 @@
       "published": "2026-10-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2610.12403",
-      "source": "https://www.alphaxiv.org/abs/2610.12403",
+      "source": "https://huggingface.co/papers/2610.12403",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.12403.jpg",
@@ -108172,6 +108201,32 @@
       "project": "",
       "thumbnail": "./thumbs/2609.09119.jpg",
       "firstSeenAt": "2026-09-11T01:03:03.571Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2610.11751",
+      "title": "Dino Forcing Flow Models: Do not denoise what you can predict",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 77,
+      "paper": "https://arxiv.org/abs/2610.11751",
+      "source": "https://www.alphaxiv.org/abs/2610.11751",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.11751.jpg",
+      "firstSeenAt": "2026-10-11T01:51:26.844Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -113836,6 +113891,36 @@
       ]
     },
     {
+      "id": "2604.14362",
+      "title": "APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI",
+      "authors": "Pratyay Banerjee, Masud Moshtaghi, Shivashankar Subramanian, Amita Misra, Ankit Chadha",
+      "org": "",
+      "published": "2026-04-15",
+      "score": 65,
+      "paper": "https://arxiv.org/abs/2604.14362",
+      "source": "https://paperswithcode.co/paper/2604.14362",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.14362.jpg",
+      "firstSeenAt": "2026-07-11T00:08:11.762Z",
+      "summary": "Large language models still struggle with reliable long-term conversational memory: simply enlarging context windows or applying naïve retrieval often introduces noise and destabilizes responses. We present APEX-MEM, a conversational memory system that combines three key innovations: (1) a property graph which use domain-agnostic ontology to structure conversations as temporally grounded events in an entity-centric framework, (2) append-only storage that preserves the full temporal evolution of information, and (3) a multi-tool retrieval agent that understands and resolves conflicting or evolving information at query time, producing a compact and contextually relevant memory summary. This retrieval-time resolution preserves the full interaction history while suppressing irrelevant details. APEX-MEM achieves 88.88% accuracy on LOCOMO and 86.2% on LongMemEval, outperforming state-of-the-art session-aware approaches and demonstrating that structured property graphs enable more temporally coherent long-term conversational reasoning.",
+      "matchedBy": [
+        "papers with code",
+        "Language Modeling",
+        "language modeling",
+        "data / retrieval",
+        "ReAct"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Data / Retrieval"
+      ]
+    },
+    {
       "id": "2503.02358",
       "title": "Are Large Vision Language Models Good Game Players?",
       "authors": "Xinyu Wang, Bohan Zhuang, Qi Wu",
@@ -115620,36 +115705,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2604.14362",
-      "title": "APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI",
-      "authors": "Pratyay Banerjee, Masud Moshtaghi, Shivashankar Subramanian, Amita Misra, Ankit Chadha",
-      "org": "",
-      "published": "2026-04-15",
-      "score": 64,
-      "paper": "https://arxiv.org/abs/2604.14362",
-      "source": "https://paperswithcode.co/paper/2604.14362",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2604.14362.jpg",
-      "firstSeenAt": "2026-07-11T00:08:11.762Z",
-      "summary": "Large language models still struggle with reliable long-term conversational memory: simply enlarging context windows or applying naïve retrieval often introduces noise and destabilizes responses. We present APEX-MEM, a conversational memory system that combines three key innovations: (1) a property graph which use domain-agnostic ontology to structure conversations as temporally grounded events in an entity-centric framework, (2) append-only storage that preserves the full temporal evolution of information, and (3) a multi-tool retrieval agent that understands and resolves conflicting or evolving information at query time, producing a compact and contextually relevant memory summary. This retrieval-time resolution preserves the full interaction history while suppressing irrelevant details. APEX-MEM achieves 88.88% accuracy on LOCOMO and 86.2% on LongMemEval, outperforming state-of-the-art session-aware approaches and demonstrating that structured property graphs enable more temporally coherent long-term conversational reasoning.",
-      "matchedBy": [
-        "papers with code",
-        "Language Modeling",
-        "language modeling",
-        "data / retrieval",
-        "ReAct"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Data / Retrieval"
       ]
     },
     {
@@ -192257,7 +192312,9 @@
       "matchedBy": [
         "papers with code",
         "Embedding",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Image Understanding",
+        "Language Modeling"
       ],
       "sources": [
         "paperswithcode"
