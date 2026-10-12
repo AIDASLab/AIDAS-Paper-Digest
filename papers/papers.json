@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-12T02:22:25.370Z",
+  "generatedAt": "2026-10-12T02:38:50.036Z",
   "sourceStats": {
-    "seed": 15038,
+    "seed": 15176,
     "paperswithcode": 540,
     "arxiv": 175,
-    "huggingface": 82,
+    "huggingface": 83,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 15176
+    "total": 15177
   },
   "papers": [
     {
@@ -59262,6 +59262,32 @@
       ],
       "sources": [
         "arxiv",
+        "huggingface"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2610.06354",
+      "title": "GraphDecisionBench: Benchmarking System One Models on Graph Tasks",
+      "authors": "Xianliang Yang, Yapu Zhang, Li Zhao",
+      "org": "",
+      "published": "2026-10-05",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2610.06354",
+      "source": "https://huggingface.co/papers/2610.06354",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.06354.jpg",
+      "firstSeenAt": "2026-10-12T02:38:50.036Z",
+      "summary": "Large language models (LLMs) are increasingly explored for graph understanding and decision-making, while System One models such as Jev select directly from supplied options. However, the capabilities of System One models on graph-related tasks remain unclear. We introduce GraphDecide, a model-independent benchmark that combines structural task profiles, matched graph-text input contrasts and heuristic-proposal controls to diagnose graph decision performance. We evaluate Jev and related choice-based models alongside language-model baselines, covering fourteen model-interface configurations. Jev's results illustrate the benchmark's central distinctions: accurate adjacency recognition does not guarantee broader structural correctness, joint graph-text input does not consistently improve prediction, and feasible construction does not establish high solution quality. Its task contracts, candidate interfaces and scoring rules support comparison across native selectors and language-model adapters. Code and aggregate results are available at https://github.com/VictorYXL/JevGraphBench.",
+      "matchedBy": [
+        "hugging face daily",
+        "language modeling"
+      ],
+      "sources": [
         "huggingface"
       ],
       "category": "Language Modeling",
@@ -411247,7 +411273,7 @@
       "source": "https://arxiv.org/abs/2610.13872v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13872.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Accurate detection of drivable area is essential for autonomous driving and advanced driver assistance systems. While state-of-the-art methods focus on general traversability estimation, they prove inadequate for snow-covered roads where following existing wheel tracks offers crucial advantages: improved traction, predictable vehicle dynamics, and verified path stability. To address this, we propose a low-cost, self-supervised approach detecting safety-critical wheel tracks using synchronized RGB-I (RGB + Long-Wave Infrared) imagery. Our method automatically generates training labels by projecting future wheel trajectories from recorded GNSS data. A neural network is designed to identify wheel tracks with the 4-channel RGB-I images from challenging, white-out road surfaces. Experimental results demonstrate the effectiveness of our approach in visually monotonous and featureless adverse environment, offering a robust and cost-effective alternative for winter autonomy. The newly introduced ThermalTrack dataset is available at: https://digitalcommons.mtu.edu/thermaltrack/.",
       "matchedBy": [
@@ -411385,7 +411411,7 @@
       "source": "https://arxiv.org/abs/2610.12806v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.12806.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "We study byte-level autoregressive language models whose hidden state is a small quantum register, whose transitions are learned token-conditioned quantum channels, and whose next-byte probabilities come directly from Born-rule measurements without a learned classical vocabulary projection or softmax. In the fixed-width recurrent setting, unitary dynamics cannot contract or reset stored distinctions; experimentally, unitary recurrence loses to its retrained one-token control in every tested variant. Introducing learned dissipation, then token-conditioned dissipative gating, yields useful memory beyond one token. The gated model improves test negative log-likelihood by 0.20 +/- 0.03 nats/byte over retrained parameter-matched one-token controls at context length 12, and by 0.29-0.33 at longer contexts, but never beats retrained two-token controls. A key-value recall benchmark shows a width-dependent threshold: one stored pair meets the pre-registered accuracy bar at 4-5 memory qubits, two pairs at 6-7, and three pairs remain unsolved. This is consistent with, but does not establish, a capacity explanation for the short effective memory horizon. As a secondary result, one-qubit models reach lower stationary memory entropy than a heuristically optimized classical predictive frontier at matched error in 9/9 seeds. On IBM Heron hardware, computational-basis memory-register distributions show signal against a uniform null in 12/12 circuits across prefixes of up to 12 tokens, next-bit probabilities pass pre-registered accuracy bars at four-token prefixes, and bytes are generated autoregressively by sampling physically measured bit probabilities. The tested models are classically simulable and substantially worse than classical n-gram baselines. We claim no computational quantum advantage.",
       "matchedBy": [
@@ -411605,7 +411631,7 @@
       "source": "https://arxiv.org/abs/2610.13617v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13617.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "User simulators are gaining attention as environments to train LLM assistants that can better cope with the nuances of multi-turn conversations with real users. Prior work on user simulation has emphasized generating realistic user utterances, leaving unexplored their potential as a source of direct feedback on the assistant's responses. Such evaluation signals may not be explicitly communicated in language, but can instead reside in the latent reasoning of users. In this work, we introduce user simulators with intrinsic feedback, namely, models equipped with latent evaluation states: internal thoughts, reactions, and scalar ratings that evaluate the assistant from a first-person user perspective at each conversation turn. We train LLM-based simulators using interaction logs between real users and assistants and demonstrate that intrinsic feedback improves simulation realism and critiquing behaviors versus prompted simulator baselines, while also providing turn-level evaluations that existing fine-tuned simulators lack. Further, evaluations generated by our trained simulators correlate better with human judgments than those of prompted simulators of the same size. Lastly, our experiments reveal that simulators with intrinsic feedback provide effective reward signals for multi-turn RL training, matching setups that rely on external judge LLMs for rewards while cutting RL compute by more than half.",
       "matchedBy": [
@@ -412067,7 +412093,7 @@
       "source": "https://arxiv.org/abs/2610.13020v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13020.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Reinforcement learning (RL) has become a dominant paradigm for enhancing LLMs' reasoning capabilities. Yet long-horizon autoregressive rollouts introduce a fundamental limitation: local policy mismatch can compound into severe state distribution shift over trajectories. Existing LLM RL methods, such as GRPO and GSPO, control policy mismatch at the token or sequence level, but overlook this trajectory-induced shift, causing training instability and eventual collapse as the horizon grows. To close the state distribution gap, we propose Trajectory-Aware Policy Optimization (TAPO), a principled framework that theoretically derives the state-distribution correction from the off-policy policy gradient and incorporates it into the RL objective. TAPO further employs a geometric-mean estimator for variance reduction, together with a length-aware dynamic clipping that prevents overly deviated updates across the trajectory. Extensive experiments demonstrate that TAPO significantly surpasses existing LLM RL algorithms across eight competition-level benchmarks, achieving up to 48% and 12% improvement over GRPO on mathematical reasoning and algorithmic coding, with substantially enhanced training stability.",
       "matchedBy": [
@@ -415055,7 +415081,7 @@
       "source": "https://arxiv.org/abs/2610.13783v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13783.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Memes play a central role in modern online communication, especially in contexts of political conflict where visual and textual cues combine to convey persuasive messages. We study persuasive technique detection in Ukrainian memes using vision-language models (VLMs). We introduce UkrMeme, a dataset of 200 organically produced Ukrainian wartime memes annotated for persuasion techniques, and PTM-UA, a Ukrainian translation of a subset of the Propaganda 950 benchmark that preserves original visual content while translating meme text. We evaluate VLMs in a zero-shot prompting setup across image, text, and multimodal inputs using hierarchical F1 metrics. Finally, we compare Layer-wise Relevance Propagation (LRP) and model-generated token attributions and analyze the semantic categories of evidence emphasized by each explanation method.",
       "matchedBy": [
@@ -419677,7 +419703,7 @@
       "source": "https://arxiv.org/abs/2610.13695v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13695.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Any automation within reliability-critical contexts such as medicine or law has to be transparent and verifiable. Despite their advantages, current LLM-based systems do not meet these requirements due to their inherent black-box nature. Retrieval Augmented Generation (RAG) attempts to ground the generative process in the relevant interpretable documents, thereby reducing the risk of AI 'hallucinations' and potentially enabling verification of the initial generation context. However, as the number and size of potential sources increases, naive retrieval approaches tend to perform worse, ignoring critical context elements. In this paper we aim to tackle this problem in the context of German Legal Code. Using structure-driven parsing to create a Knowledge Graph (KG) for the source document navigation and retrieval, we compare several KG-informed chunking and retrieval strategies and evaluate their effect on the accuracy of retrieved citations.",
       "matchedBy": [
@@ -424971,7 +424997,7 @@
       "source": "https://arxiv.org/abs/2610.13416v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13416.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Large language model (LLM) agents are becoming direct users of the open web. As they take on increasingly complex and information-intensive tasks, effective web access is becoming a core capability for agentic problem solving. Existing approaches have advanced agentic web access through different access models, including search-augmented agents, browser-based agents, and, more recently, filesystem-based agents. Nevertheless, as users expect agents to complete long-horizon, end-to-end tasks, they increasingly need to conduct broad information gathering, perform browser actions, and revisit acquired evidence within a single trajectory. Yet our preliminary analyses reveal that existing access models struggle to meet these demands. They primarily support either information gathering or browser interaction, while combining their capabilities can involve substantial costs or performance trade-offs. To this end, we present Web\\$hell, an interface that unifies web access under a single access model. Using a common schema defined by WebContract, WebCompiler compiles live webpages into addressable information and action objects. These objects are maintained in WebCache and handled through a shared set of operations, providing agents with consistent, operable, and persistent web access. Through extensive experiments across web search, web navigation, and deep research benchmarks, we show that Web\\$hell achieves strong task performance at lower cost. Our results further indicate the importance of interface design for effective web access, with Web\\$hell opening new possibilities for more capable and efficient LLM agents on the web.",
       "matchedBy": [
@@ -425893,7 +425919,7 @@
       "source": "https://arxiv.org/abs/2610.12995v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.12995.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Supervised fine-tuning (SFT) remains a widely used approach for post-training large language models, because fixed demonstrations can directly introduce desired reasoning strategies and behavioral patterns. Yet forcing a model to imitate externally provided trajectories may also interfere with behaviors already supported by pretraining, limiting generalization beyond the training distribution. Recent dynamic SFT methods mitigate this issue by reweighting token-level supervision according to model-side signals such as predictive probability, prior support, or distributional compatibility. However, model compatibility is not equivalent to learning value: a token that is weakly supported by the current model may either be an undesirable mismatch or precisely the task-specific decision that the demonstration is intended to teach. We propose CIG-SFT, an information-theoretic framework that estimates the task-conditioned information carried by each demonstrated token. Under teacher forcing, we compare the token likelihood from a frozen reference model with and without access to the task input while keeping the gold solution prefix fixed. The resulting conditional information gain quantifies how much the task itself reduces uncertainty about the demonstrated decision. We then convert this information into a KL-regularized projection of the current policy and derive an equivalent scalar-weighted SFT objective whose logit gradient exactly matches that of the projected target. Across mathematical reasoning and code-generation benchmarks, CIG-SFT consistently outperforms standard SFT and recent adaptive fine-tuning baselines, with particularly strong improvements in generalization to challenging evaluation distributions, while requiring neither additional training data nor online rollouts.",
       "matchedBy": [
@@ -427549,7 +427575,7 @@
       "source": "https://arxiv.org/abs/2610.13788v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13788.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "LiDAR-inertial odometry (LIO) is widely used for real-time localization and mapping, but its reliability can degrade substantially in subterranean environments affected by smoke, dust, and other airborne obscurants, whereas radar remains comparatively robust. This article presents a one-class temporal learning framework for LiDAR degradation detection and reliability-aware localization under such conditions. A broad set of degradation-sensitive cues, including spatial, cross-modal, geometric/motion, intensity, and measurement-recency features, is evaluated to characterize changes in LiDAR sensing quality. Their temporal evolution is modelled over sliding windows using an LSTM autoencoder trained exclusively on nominal operation, enabling deviations from healthy sensor behaviour to be detected without requiring labelled degradation data. The resulting LiDAR reliability estimate governs adaptive selection between LIO and radar inertial odometry (RIO), retaining LIO during reliable sensing and transferring localization authority to RIO when degradation is detected. The framework is evaluated using real-world ground robot data collected in GNSS-denied subterranean tunnels under nominal and dense-smoke conditions. Experimental results demonstrate degradation detection, adaptive modality switching, and continued localization output under severe LiDAR degradation. A feature family ablation study further shows that a reduced feature representation can improve degradation-aware localization performance in the evaluated dense-smoke scenarios, highlighting the importance of feature parsimony in one-class sensor degradation detection. The code will be released as open source to support reproducibility and further research.",
       "matchedBy": [
@@ -427763,7 +427789,7 @@
       "source": "https://arxiv.org/abs/2610.13465v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13465.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Multimodal LLMs can fail to read text embedded in an image's coarse structure (text a human recovers by squinting) and report that no text is present. We name this class Squint Text and study it as a recognition deficiency, motivated by cases from a production moderation pipeline. We introduce SquintBench, comprising 1076 production-derived moderation images, and SquintCtrl, a controlled synthetic suite for mechanism diagnosis. Frozen-weight analysis shows that hidden text leaves a coarse signal while glyph identity is weakly represented; identity becomes substantially more accessible when the correct spatial regions are supplied, implicating spatial selection as a major bottleneck. Suppressing high-frequency content also improves reading at a fixed visual-token budget, while visual token count may also contribute. These findings motivate Squint OPSD: a frozen teacher receives a downscaled view and the ground-truth transcription as privileged context, and its token-level distributions supervise a student along on-policy trajectories. At inference, the student reads the original image alone. Squint OPSD reaches 88.61 ANLS on SquintBench, versus 26.50 for the unadapted backbone, 24.44 for the best general-purpose model on the original view, and 68.60 at best for an off-the-shelf model under a downscaled view. These results substantially narrow the gap between available visual evidence and its generated read-out without auxiliary views at inference.",
       "matchedBy": [
@@ -429205,7 +429231,7 @@
       "source": "https://arxiv.org/abs/2610.13910v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13910.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Vision-Language Models (VLMs) increasingly analyze and reason about images, yet it remains unclear whether their internal representations faithfully encode the structured relations required for such reasoning. We introduce EICS (Evaluation-Invariant Concept Stability), a metric for testing whether representations consistently encode concepts under controlled one-concept interventions, and CASP-VL (Causally controlled Spatial Perturbations for Vision-Language models), a benchmark of causally controlled spatial perturbations derived from Visual Genome scene graphs. Across multiple VLM architectures, we find that spatial relations are represented substantially less faithfully than lexical information, even when the same models score well above chance on compositional benchmarks. Further analysis shows that the relation is identifiable at the predicate's own tokens but is lost when the sentence is aggregated into a global representation, whether through the (EOS) token or by mean pooling. These findings reveal a systematic failure invisible to output-based evaluation: VLMs do not preserve, in the representation used downstream, relational information that is present in their own input.",
       "matchedBy": [
@@ -429815,7 +429841,7 @@
       "source": "https://arxiv.org/abs/2610.13915v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13915.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Self-supervised learning on 3D medical images commonly relies on random sub-volume sampling during pretraining. However, random cropping implicitly treats all spatial regions as equally worth observing, despite anatomical priors and spatial redundancy that make regions inherently unequal in their value for representation learning. To this end, we first show through controlled crop-quality manipulations that better sub-volumes lead to better downstream transfer, revealing the observation policy as an overlooked bottleneck in 3D medical SSL. Motivated by this finding, we revisit sub-volume sampling as a \\emph{where-to-look} problem. We propose \\textbf{\\method}, a plug-and-play framework that replaces random cropping with an offline coarse-to-fine probe bank guided by \\textit{anatomy-awareness}, \\textit{informativeness}, and \\textit{diversity}. We instantiate \\method as a lightweight \\lite variant using geometric and image-statistical cues, and a diagnostic \\feat variant using frozen visual features, to examine whether lightweight volume-intrinsic priors suffice or richer semantic cues reliably provide additional value. Extensive experiments across multiple 3D medical SSL backbones and downstream tasks demonstrate that \\method-\\lite consistently improves transfer performance over random sampling. Mechanistic analyses further attribute these gains to more anatomically plausible and informative observations, reduced spatial redundancy, more efficient learning dynamics, and more structured representations.",
       "matchedBy": [
@@ -432415,7 +432441,7 @@
       "source": "https://arxiv.org/abs/2610.13886v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13886.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Personal agents increasingly connect to services across the web and applications by using tools. As the effects of their actions accumulate and interact across services, unintended or harmful outcomes can arise when agents fulfill benign user requests. Proactively identifying these compositional failures requires systematically exploring diverse cross-service paths. Existing red-teaming methods often simply prompt LLMs to identify potentially harmful paths from task and environment descriptions or decompose harmful objectives specified by humans or LLMs into seemingly benign action combinations. However, generation is biased toward patterns learned during training, potentially favoring familiar tool combinations and leaving novel cross-service interactions underexplored. To address this, we propose X-AgentRed, a self-evolving red-teaming framework that discovers harmful tool call paths through a graph of tool dependencies and expands and refines them using execution feedback. By analyzing each tool's effects, potential harms, and preconditions for execution, the red-teaming agent constructs a directed graph that captures how one tool's effects can satisfy another's execution preconditions. Recipes sampled from this graph are instantiated as realistic scenarios in which agents can produce harmful outcomes. Execution feedback enables self-improvement by diversifying paths that produce harm through tool substitution and refining preconditions at blocked steps in unsuccessful paths to enable further execution. Across four frontier agentic models, X-AgentRed achieves $1.77\\times$ the harmful path rate of STAC and explores a more diverse set of tools, yielding $2.99\\times$ the tool coverage on average.",
       "matchedBy": [
@@ -433807,7 +433833,7 @@
       "source": "https://arxiv.org/abs/2610.13605v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2610.13605.jpg",
       "firstSeenAt": "2026-10-12T02:22:25.370Z",
       "summary": "Dynamic vocabularies built on-the-fly via Lempel-Ziv-Welch (LZW) compression let a language model represent the same text in fewer tokens, but prior work shows that this efficiency comes at a cost to reasoning and perplexity. We show that this quality gap is not a fundamental price of compression but can be substantially closed through targeted improvements to the compression layer and LZW codec, without modifying the underlying pretrained language model. Our analysis reveals four key issues: (1) LZW's compression algorithm creates an implicit conflict between the input embedding and the output embedding, a tension that a single shared embedding cannot resolve; (2) naively applying RoPE to LZW-compressed sequences ignores that merged tokens can span multiple tokens; (3) merging certain tokens (notably digits) disproportionately hurts downstream accuracy; and (4) dynamic vocabularies introduce an inherent segmentation ambiguity that confounds standard evaluation. We address these through decoupled input/output dynamic embedding layer, size-aware RoPE positioning, and a modified LZW codec supporting selective merges and multi-view segmentations. Across four models, our recipe improves perplexity on every corpus we evaluated as well as mathematical reasoning accuracy, closing roughly half the quality gap between zip2zip and the uncompressed baseline at a similar compression ratio on general text. This represents a significant step toward lossless adaptive-vocabulary compression for language models.",
       "matchedBy": [
