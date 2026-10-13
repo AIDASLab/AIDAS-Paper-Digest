@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-13T03:32:13.705Z",
+  "generatedAt": "2026-10-13T03:50:45.660Z",
   "sourceStats": {
-    "seed": 15177,
+    "seed": 15243,
     "paperswithcode": 540,
     "arxiv": 175,
-    "huggingface": 68,
+    "huggingface": 70,
     "alphaxiv": 20,
     "twitterSignals": 0,
-    "total": 15243
+    "total": 15245
   },
   "papers": [
     {
@@ -1651,6 +1651,38 @@
         "papers with code",
         "Agent Harness",
         "Large language model (LLM)",
+        "Recursive Self-Improvement",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2610.13912",
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "authors": "Taoyong Cui, Pinxian Zeng, Wanghan Xu, Hao Xiao, Shuhan Xue, Qiang Gao, Wanli Ouyang, Pheng Ann Heng, Zhenfei Yin, Yingcheng Wu, Ling Yang",
+      "org": "",
+      "published": "2026-10-09",
+      "score": 96,
+      "paper": "https://arxiv.org/abs/2610.13912",
+      "source": "https://www.alphaxiv.org/abs/2610.13912",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.13912.jpg",
+      "firstSeenAt": "2026-10-12T02:22:25.370Z",
+      "summary": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to guide action and learning-data selection. Observed feedback drives policy or workflow improvement and conditional world-model adaptation, while component and compatibility checks govern the retention of updated policy-model pairs. Across diverse computational and scientific domains, RSI-Anything demonstrates substantial gains. In code repair, with the coder fixed, success increases from 26.3% with a static verifier to 29.2% through predictive selection and 31.2% after world-model adaptation, at comparable test usage. Graphical user interface (GUI) evaluations showed higher task completion, while average actions decrease by 39.4%. Across five successive policy versions, laboratory-planning scores more than double from 21.80% to 46.01%. In reaction optimization, RSI-Anything achieves 96.15% mean best observed yield versus 82.16% for Bayesian optimization under the same 40-experiment budget. An end-to-end immune-science application further connects workflow evolution and predictive modeling with therapeutic hypothesis generation. These results demonstrate how predictive world models and retained system updates enable recursive improvement across diverse environments.",
+      "matchedBy": [
+        "papers with code",
+        "World Models",
+        "Bayesian Optimization",
+        "JEPA",
         "Recursive Self-Improvement",
         "language modeling"
       ],
@@ -3355,38 +3387,6 @@
         "language modeling"
       ],
       "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2610.13912",
-      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
-      "authors": "Taoyong Cui, Pinxian Zeng, Wanghan Xu, Hao Xiao, Shuhan Xue, Qiang Gao, Wanli Ouyang, Pheng Ann Heng, Zhenfei Yin, Yingcheng Wu, Ling Yang",
-      "org": "",
-      "published": "2026-10-09",
-      "score": 95,
-      "paper": "https://arxiv.org/abs/2610.13912",
-      "source": "https://www.alphaxiv.org/abs/2610.13912",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.13912.jpg",
-      "firstSeenAt": "2026-10-12T02:22:25.370Z",
-      "summary": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to guide action and learning-data selection. Observed feedback drives policy or workflow improvement and conditional world-model adaptation, while component and compatibility checks govern the retention of updated policy-model pairs. Across diverse computational and scientific domains, RSI-Anything demonstrates substantial gains. In code repair, with the coder fixed, success increases from 26.3% with a static verifier to 29.2% through predictive selection and 31.2% after world-model adaptation, at comparable test usage. Graphical user interface (GUI) evaluations showed higher task completion, while average actions decrease by 39.4%. Across five successive policy versions, laboratory-planning scores more than double from 21.80% to 46.01%. In reaction optimization, RSI-Anything achieves 96.15% mean best observed yield versus 82.16% for Bayesian optimization under the same 40-experiment budget. An end-to-end immune-science application further connects workflow evolution and predictive modeling with therapeutic hypothesis generation. These results demonstrate how predictive world models and retained system updates enable recursive improvement across diverse environments.",
-      "matchedBy": [
-        "papers with code",
-        "World Models",
-        "Bayesian Optimization",
-        "JEPA",
-        "Recursive Self-Improvement",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode",
-        "huggingface",
         "alphaxiv"
       ],
       "category": "Language Modeling",
@@ -6917,16 +6917,17 @@
         "Diffusion Transformer (DiT)",
         "Transformer",
         "frontier training",
-        "vision/multimodal"
+        "vision/multimodal",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode",
         "huggingface",
         "alphaxiv"
       ],
-      "category": "Frontier Training",
+      "category": "Language Modeling",
       "categories": [
-        "Frontier Training",
+        "Language Modeling",
         "Vision/Multimodal"
       ]
     },
@@ -13586,6 +13587,39 @@
       ]
     },
     {
+      "id": "2610.13947",
+      "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
+      "authors": "Xudong Cai, Ruijie Zhu, Haoliang Shang, Ruining Li, Marc Pollefeys, Shangzhe Wu, Andrea Vedaldi, Chuanxia Zheng",
+      "org": "",
+      "published": "2026-10-09",
+      "score": 90,
+      "paper": "https://arxiv.org/abs/2610.13947",
+      "source": "https://www.alphaxiv.org/abs/2610.13947",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.13947.jpg",
+      "firstSeenAt": "2026-10-12T02:22:25.370Z",
+      "summary": "In this paper, we study physically grounded articulated 3D asset generation---moving the goal from reproducing how objects look to capturing how they move and function. Inspired by the literature on procedural and agentic generation, we present Artisan, a system that extends the latest method Articraft by introducing a multi-agent pipeline with physical simulation feedback, enabling comprehensive attributes beyond geometry, appearance, and physically plausible articulation, such as collision-free motion, stability under gravity, and accurate mass and material properties. Furthermore, we construct a unified benchmark spanning four key aspects: spatial fidelity, physical plausibility, downstream task performance, and overall quality. The benchmark encompasses 100 reference assets from ArtVIP and LightWheel, 50 stability prompts, and 50 ABO objects with reference masses, with protocols evaluating various metrics. Through extensive evaluation of more than 10 representative models, Artisan achieves competitive spatial fidelity while attaining the lowest collision rates and highest stability rates among the evaluated methods. Together, our system and benchmark establish insights for advancing 3D generation towards physically plausible, functionally usable assets.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "benchmark",
+        "papers with code",
+        "3D generation"
+      ],
+      "sources": [
+        "arxiv",
+        "paperswithcode",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Benchmark"
+      ]
+    },
+    {
       "id": "2607.13988",
       "title": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
       "authors": "Leitian Tao, Baolin Peng, Wenlin Yao, Tao Ge, Hao Cheng, Mike Hang Wang, Jianfeng Gao, Sharon Li",
@@ -18767,39 +18801,6 @@
       ]
     },
     {
-      "id": "2610.13947",
-      "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
-      "authors": "Xudong Cai, Ruijie Zhu, Haoliang Shang, Ruining Li, Marc Pollefeys, Shangzhe Wu, Andrea Vedaldi, Chuanxia Zheng",
-      "org": "",
-      "published": "2026-10-09",
-      "score": 87,
-      "paper": "https://arxiv.org/abs/2610.13947",
-      "source": "https://www.alphaxiv.org/abs/2610.13947",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.13947.jpg",
-      "firstSeenAt": "2026-10-12T02:22:25.370Z",
-      "summary": "In this paper, we study physically grounded articulated 3D asset generation---moving the goal from reproducing how objects look to capturing how they move and function. Inspired by the literature on procedural and agentic generation, we present Artisan, a system that extends the latest method Articraft by introducing a multi-agent pipeline with physical simulation feedback, enabling comprehensive attributes beyond geometry, appearance, and physically plausible articulation, such as collision-free motion, stability under gravity, and accurate mass and material properties. Furthermore, we construct a unified benchmark spanning four key aspects: spatial fidelity, physical plausibility, downstream task performance, and overall quality. The benchmark encompasses 100 reference assets from ArtVIP and LightWheel, 50 stability prompts, and 50 ABO objects with reference masses, with protocols evaluating various metrics. Through extensive evaluation of more than 10 representative models, Artisan achieves competitive spatial fidelity while attaining the lowest collision rates and highest stability rates among the evaluated methods. Together, our system and benchmark establish insights for advancing 3D generation towards physically plausible, functionally usable assets.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "benchmark",
-        "papers with code",
-        "3D generation"
-      ],
-      "sources": [
-        "arxiv",
-        "paperswithcode",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Benchmark"
-      ]
-    },
-    {
       "id": "2608.25198",
       "title": "Tunable Tool-Call Rates in LLM Agents via Representation Steering",
       "authors": "Yuqi Chen, Vincent Siu, Yang Liu, Dawn Song, Chenguang Wang",
@@ -19694,6 +19695,32 @@
       "project": "",
       "thumbnail": "./thumbs/2609.39137.jpg",
       "firstSeenAt": "2026-10-02T02:13:27.709Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2610.multi-head-gated-value-residuals",
+      "title": "Identity on Demand: Multi-Head Gated Value Residuals",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 86,
+      "paper": "https://www.alphaxiv.org/abs/2610.multi-head-gated-value-residuals",
+      "source": "https://www.alphaxiv.org/abs/2610.multi-head-gated-value-residuals",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-10-13T03:32:13.705Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -22821,7 +22848,7 @@
         "Classifier-free guidance",
         "Key-value cache",
         "Sparse attention",
-        "serving",
+        "language modeling",
         "vision/multimodal"
       ],
       "sources": [
@@ -22829,9 +22856,9 @@
         "huggingface",
         "alphaxiv"
       ],
-      "category": "Serving",
+      "category": "Language Modeling",
       "categories": [
-        "Serving",
+        "Language Modeling",
         "Vision/Multimodal",
         "Frontier Training"
       ]
@@ -25078,28 +25105,32 @@
     {
       "id": "2609.39601",
       "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
-      "authors": "",
+      "authors": "Qize Yu, Lianrui Fan, Boyu Chen, Jiaqi Liang, Xini Ding, Yue Chen, Zetian Song, Yuran Wang, Yi Zou, Kaixuan Wang, Tianxing Chen, Wenxuan Song, Bohan Zhou, Mingleyang Li, Siqiao Huang, Yuqi Ye, Caigao Jiang, Wei Wei, Ruihai Wu, Hang Zhang, Yixiao Ge, Shuchang Zhou, Shilong Liu, Xianming Liu, Ping Luo, Shiyu Huang",
       "org": "",
-      "published": "",
+      "published": "2026-09-30",
       "score": 83,
       "paper": "https://arxiv.org/abs/2609.39601",
-      "source": "https://www.alphaxiv.org/abs/2609.39601",
+      "source": "https://huggingface.co/papers/2609.39601",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2609.39601.jpg",
       "firstSeenAt": "2026-10-02T02:13:27.709Z",
-      "summary": "",
+      "summary": "Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforcement learning with GRPO, using supervision from public datasets and dedicated data engines. Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%). As a downstream visual backbone, GroundingPI improves performance on robotic manipulation and autonomous driving. On RoboTwin 2.0, it outperforms every mainstream backbone we evaluate in all four out-of-distribution settings, by up to 24.8% relative to the strongest backbone. On RoboCasa-GR1, GroundingPI trained with 50% of the demonstrations outperforms those baselines trained with 75%. On nuScenes, used as the visual backbone, GroundingPI attains an average open-loop L2 error of 0.296 m. We systematically analyze GroundingPI's pretraining in scale and data composition. Downstream autonomous driving and robotic manipulation improve as the pretraining is scaled. Analyzing the data recipe across these 11 perceptual capabilities shows dense grounding's substantial benefits for both, and OCR's potential as a catalyst for perceptual learning. These results support grounding as a perceptual foundation, and dedicated perceptual pretraining as a promising direction for foundation models of physical intelligence.",
       "matchedBy": [
         "alphaxiv hot",
         "vision/multimodal",
-        "frontier training"
+        "frontier training",
+        "hugging face daily",
+        "robotics"
       ],
       "sources": [
-        "alphaxiv"
+        "alphaxiv",
+        "huggingface"
       ],
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
+        "Robotics",
         "Frontier Training"
       ]
     },
@@ -29970,32 +30001,6 @@
       ]
     },
     {
-      "id": "2610.multi-head-gated-value-residuals",
-      "title": "Identity on Demand: Multi-Head Gated Value Residuals",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 80,
-      "paper": "https://www.alphaxiv.org/abs/2610.multi-head-gated-value-residuals",
-      "source": "https://www.alphaxiv.org/abs/2610.multi-head-gated-value-residuals",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "firstSeenAt": "2026-10-13T03:32:13.705Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2609.38177",
       "title": "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering",
       "authors": "Honggyu An, Jisang Han, Mungyeom Kim, Minkyeong Jeon, Heeseong Shin, WonJun Moon, Federico Tombari, Daniel Barath, Marc Pollefeys, Seungryong Kim, Sunghwan Hong, Jaewoo Jung, Hyeonseo Yu",
@@ -30238,6 +30243,32 @@
       ]
     },
     {
+      "id": "2610.pagegram-ngram-memory-flat-table",
+      "title": "PageGram: Multi-Head N-Gram Memory at the Read Cost of a Flat Table",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 80,
+      "paper": "https://www.alphaxiv.org/abs/2610.pagegram-ngram-memory-flat-table",
+      "source": "https://www.alphaxiv.org/abs/2610.pagegram-ngram-memory-flat-table",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-10-13T03:50:45.660Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2607.13027",
       "title": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
       "authors": "Hongru Cai, Yongqi Li, Ran Wei, Wenjie Li",
@@ -30401,11 +30432,9 @@
         "alphaxiv",
         "paperswithcode"
       ],
-      "category": "Robotics",
+      "category": "Language Modeling",
       "categories": [
-        "Robotics",
-        "Language Modeling",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -31652,15 +31681,17 @@
         "vision/multimodal",
         "papers with code",
         "Novel View Synthesis",
-        "alphaxiv hot"
+        "alphaxiv hot",
+        "language modeling"
       ],
       "sources": [
         "arxiv",
         "paperswithcode",
         "alphaxiv"
       ],
-      "category": "Vision/Multimodal",
+      "category": "Language Modeling",
       "categories": [
+        "Language Modeling",
         "Vision/Multimodal"
       ]
     },
@@ -33400,16 +33431,14 @@
         "Safety and Grounding",
         "Text Reranking",
         "Reranker (cross-encoder)",
-        "robotics",
         "language modeling"
       ],
       "sources": [
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Robotics",
+      "category": "Language Modeling",
       "categories": [
-        "Robotics",
         "Language Modeling"
       ]
     },
@@ -35290,9 +35319,8 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Frontier Training",
+      "category": "Language Modeling",
       "categories": [
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -35523,8 +35551,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -35584,9 +35611,8 @@
         "huggingface",
         "paperswithcode"
       ],
-      "category": "Data / Retrieval",
+      "category": "Language Modeling",
       "categories": [
-        "Data / Retrieval",
         "Language Modeling"
       ]
     },
@@ -38259,8 +38285,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -46525,6 +46550,32 @@
       ]
     },
     {
+      "id": "2610.correction-training-diffusion-models",
+      "title": "Correction Training for Diffusion Models",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 78,
+      "paper": "https://www.alphaxiv.org/abs/2610.correction-training-diffusion-models",
+      "source": "https://www.alphaxiv.org/abs/2610.correction-training-diffusion-models",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-10-13T03:50:45.660Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2609.36820",
       "title": "CorrGRPO: Correlation-Normalized GRPO for Multi-Reward Learning",
       "authors": "Wenbin Hu, Huihao Jing, Haochen Shi, Yuxuan Liu, Haoran Li, Yangqiu Song",
@@ -49628,7 +49679,7 @@
       "published": "2026-10-08",
       "score": 78,
       "paper": "https://arxiv.org/abs/2610.12572",
-      "source": "https://huggingface.co/papers/2610.12572",
+      "source": "https://www.alphaxiv.org/abs/2610.12572",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.12572.jpg",
@@ -49645,7 +49696,8 @@
       ],
       "sources": [
         "paperswithcode",
-        "huggingface"
+        "huggingface",
+        "alphaxiv"
       ],
       "category": "Vision/Multimodal",
       "categories": [
@@ -52887,17 +52939,14 @@
         "Reinforcement Learning",
         "Embedding",
         "robotics",
-        "frontier training",
         "language modeling"
       ],
       "sources": [
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Robotics",
+      "category": "Language Modeling",
       "categories": [
-        "Robotics",
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -54783,10 +54832,8 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Robotics",
+      "category": "Language Modeling",
       "categories": [
-        "Robotics",
-        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -57653,9 +57700,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Serving",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -60206,6 +60251,38 @@
       ]
     },
     {
+      "id": "2609.39600",
+      "title": "GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed",
+      "authors": "Qize Yu, Lianrui Fan, Bowen Ping, Xini Ding, Zetian Song, Junbo Niu, Kaixuan Wang, Tianxing Chen, Yue Chen, Minghua He, Yuran Wang, Jie Huang, Haojun Zhang, Min Chen, Hao Li, Wenxuan Song, Ruihai Wu, Xianming Liu, Shilong Liu, Shuchang Zhou, Ping Luo, Shiyu Huang",
+      "org": "",
+      "published": "2026-09-30",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2609.39600",
+      "source": "https://huggingface.co/papers/2609.39600",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2609.39600.jpg",
+      "firstSeenAt": "2026-10-01T02:07:47.936Z",
+      "summary": "Autoregressive (AR) grounding models serialize spatial predictions, introducing sequential latency and imposing a causal order on output tokens. We view grounding as visual evidence extraction: objects, locations, and spatial relations are jointly constrained by the image and query, yet their dependencies do not imply an intrinsic left-to-right generation order. This distinction makes bidirectional diffusion a natural fit, allowing spatial hypotheses to emerge in parallel and be jointly refined through iterative denoising. We introduce GroundAnything, a 4B-parameter grounding foundation model that reconciles fast parallel decoding with precise localization through blockwise denoising. Training combines grounding pretraining from public datasets and dedicated data engines, direct AR-to-diffusion conversion with joint AR and diffusion objectives, supervised fine-tuning, and GRPO-based reinforcement post-training. Across 30 grounding benchmarks, our autoregressive variant, GroundAnything-VLM, establishes a new overall state of the art among similarly sized models at 72.42%, remaining competitive with GPT-6 Astra (71.35%). With entropy-guided decoding, GroundAnything also surpasses the prior state of the art at this scale, averaging 61.75% versus 53.32% for the fast MTP-based LocateAnything model. We further explore decoding strategies, showing that an optional self-speculative mode achieves a $4.51\\times$ speedup over the AR counterpart with a 0.74 percentage-point drop in COCO F1mIoU. Infrastructure experiments show that progressive inference optimizations translate parallel decoding into practical speedups. These support efficient visual grounding in latency-sensitive real-world systems.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "vision/multimodal",
+        "frontier training",
+        "hugging face daily"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2609.23863",
       "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
       "authors": "Gehao Zhang, Weikai Huang, Shailesh Shailesh, Yiyan Peng, Jiafei Duan, Ranjay Krishna",
@@ -60398,16 +60475,14 @@
         "Grouped-Query Attention",
         "Key-value cache",
         "Multi-latent attention (MLA)",
-        "serving",
         "language modeling"
       ],
       "sources": [
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Serving",
+      "category": "Language Modeling",
       "categories": [
-        "Serving",
         "Language Modeling"
       ]
     },
@@ -61996,9 +62071,8 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Vision/Multimodal",
+      "category": "Language Modeling",
       "categories": [
-        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -69190,18 +69264,17 @@
         "serving",
         "vision/multimodal",
         "frontier training",
-        "papers with code"
+        "papers with code",
+        "language modeling"
       ],
       "sources": [
         "arxiv",
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Serving",
+      "category": "Language Modeling",
       "categories": [
-        "Serving",
-        "Vision/Multimodal",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -71576,8 +71649,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -77520,16 +77592,14 @@
         "Coding Agents",
         "Computer Use Agents",
         "Instruction Following",
-        "frontier training",
         "language modeling"
       ],
       "sources": [
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Frontier Training",
+      "category": "Language Modeling",
       "categories": [
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -87962,13 +88032,14 @@
       "project": "https://robocoach-ai",
       "thumbnail": "./thumbs/2609.39685.jpg",
       "firstSeenAt": "2026-10-01T02:07:47.936Z",
-      "summary": "Long-horizon robot manipulation reuses skills across many task compositions, but improving these compositions with additional end-to-end demonstrations is costly. A practical self-improving system must decide both what to teach next and where to apply that supervision. We present ROBOCOACH, a world-model-guided coaching framework that uses imagined failures to guide demonstration requests and expert updates. Its Route-Imagine-Diagnose-Improve (RIDI) loop executes reusable skill experts inside COACHWORLD, our shared action-conditioned world model, and uses a progress judge to record the first subtask that fails to complete. Aggregated records select which subtask demonstrations to acquire and which expert adapters to update. Across two simulation suites and two real-robot platforms, imagined and deployed success correlate over 22 task-policy pairs (rho = 0.840). Controlled comparisons show that our coaching method outperforms matched baselines under matched data budgets and update schedules. With only 150 additional subtask demonstrations, success rises from 13.3% to 75.0% on Franka and from 40.0% to 83.8% on AgileX. The coached experts also transfer to four held-out compositions, achieving an average success of 35.0%, compared with 0% for a shared-policy baseline updated with uniformly acquired demonstrations. Together, these results show that world models can serve as active coaches, turning imagined failures into targeted supervision for modular policy improvement. Project Page: https://robocoach-ai.github.io/",
+      "summary": "ROBOCOACH uses imagined failures from a shared action-conditioned world model to choose which subtask demonstrations to collect and which skill adapters to update. With 150 demonstrations, success improves from 13.3% to 75.0% on Franka, while imagined and deployed success correlate at ρ = 0.840.",
       "matchedBy": [
         "arxiv",
         "robotics",
         "papers with code",
         "Robotics",
-        "World Models"
+        "World Models",
+        "language modeling"
       ],
       "sources": [
         "arxiv",
@@ -87977,7 +88048,8 @@
       ],
       "category": "Robotics",
       "categories": [
-        "Robotics"
+        "Robotics",
+        "Language Modeling"
       ]
     },
     {
@@ -90315,9 +90387,8 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Frontier Training",
+      "category": "Language Modeling",
       "categories": [
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -92064,9 +92135,8 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Vision/Multimodal",
+      "category": "Language Modeling",
       "categories": [
-        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -93590,9 +93660,9 @@
         "huggingface",
         "paperswithcode"
       ],
-      "category": "Robotics",
+      "category": "Language Modeling",
       "categories": [
-        "Robotics",
+        "Language Modeling",
         "Vision/Multimodal"
       ]
     },
@@ -104702,8 +104772,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -107876,9 +107945,8 @@
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Robotics",
+      "category": "Language Modeling",
       "categories": [
-        "Robotics",
         "Language Modeling"
       ]
     },
@@ -108230,8 +108298,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Serving"
+        "Language Modeling"
       ]
     },
     {
@@ -143968,9 +144035,8 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Data / Retrieval",
+      "category": "Language Modeling",
       "categories": [
-        "Data / Retrieval",
         "Language Modeling"
       ]
     },
@@ -157176,7 +157242,7 @@
     {
       "id": "2606.04291",
       "title": "A Cookbook of 3D Vision: Data, Learning Paradigms, and Application",
-      "authors": "YuBo Wang, Jingcheng Ni, Shihang Gui, Congchao Dong, Tao Hu, Hongyang Du, Zongxia Li, Dawei Liu, Runhao Li, Haoyuan Song, Qingyu Zhang",
+      "authors": "Hongyang Du, Zongxia Li, Dawei Liu, Runhao Li, Haoyuan Song, Qingyu Zhang, YuBo Wang, Jingcheng Ni, Shihang Gui, Congchao Dong, Tao Hu",
       "org": "",
       "published": "2026-06-02",
       "score": 60,
@@ -159589,9 +159655,8 @@
       "sources": [
         "paperswithcode"
       ],
-      "category": "Vision/Multimodal",
+      "category": "Language Modeling",
       "categories": [
-        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -162047,7 +162112,7 @@
     {
       "id": "2606.05515",
       "title": "BRepCLIP: Contrastive Multimodal Pretraining on BRep Primitives for CAD Understanding",
-      "authors": "Mohammad Sadil Khan, Didier Stricker, Muhammad Zeshan Afzal, Muhammad Usama",
+      "authors": "Muhammad Usama, Didier Stricker, Mohammad Sadil Khan, Muhammad Zeshan Afzal",
       "org": "",
       "published": "2026-06-03",
       "score": 60,
@@ -171152,7 +171217,7 @@
       "project": "",
       "thumbnail": "",
       "firstSeenAt": "2026-07-30T00:09:13.438Z",
-      "summary": "This report documents an automated optimization study performed on the public release of FastGS, a CVPR 2026 paper that targets training-time efficiency for 3D Gaussian Splatting (3DGS) by accelerating the densification pipeline through a Multi-View Consistency Decision/Pruning (VCD/VCP) framework. The optimization was driven by AutoSOTA (`tsinghua-fib-lab/AutoSOTA`) and targeted PSNR on the Mip-NeRF 360 *bicycle* scene. Twenty-one iterations were executed against the released codebase. The headline result is an improvement on bicycle from a baseline PSNR of 24.8063 dB to 25.1873 dB (+0.381 dB, +1.54%), accompanied by a substantially larger SSIM gain (0.7203 → 0.7601, +5.53%) and a 29.16% reduction in LPIPS (0.2997 → 0.2123). The 5%-over-paper PSNR target of 28.791 dB was not reached. The accepted changes are concentrated in the densification controller and the multi-view scoring path, with the dominant lever being an iteration-dependent gradient-threshold decay (0.3× → 1.0×) that permits aggressive early densification and conservative late densification (+0.89% PSNR alone). The combined recipe also includes a finer split factor (`N=3`), a decaying importance-score threshold, anisotropy-guided pruning, and a reversed λ_dssim schedule that prioritises SSIM early and L1 late. The best configuration is captured at commit `dafb00a` (Iteration 17).",
+      "summary": "AutoSOTA improves FastGS densification by combining iteration-dependent gradient thresholds with multi-view scoring, finer splitting, and anisotropy pruning. On Mip-NeRF 360 bicycle, PSNR rises 24.8063→25.1873 dB, while LPIPS drops 29.16%.",
       "matchedBy": [
         "papers with code",
         "3D generation",
@@ -176356,16 +176421,13 @@
         "Long Context",
         "DeepSeek Sparse Attention",
         "Hyper-Connections",
-        "serving",
-        "frontier training"
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Serving",
+      "category": "Language Modeling",
       "categories": [
-        "Serving",
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -177946,15 +178008,13 @@
         "Coding Agents",
         "Language Modeling",
         "Long Context",
-        "frontier training",
         "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Frontier Training",
+      "category": "Language Modeling",
       "categories": [
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -180423,15 +180483,13 @@
         "Continual learning",
         "DINO",
         "LoRa",
-        "robotics",
         "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
-      "category": "Robotics",
+      "category": "Language Modeling",
       "categories": [
-        "Robotics",
         "Language Modeling"
       ]
     },
@@ -191787,7 +191845,7 @@
       "project": "",
       "thumbnail": "./thumbs/2605.31106.jpg",
       "firstSeenAt": "2026-08-06T00:09:18.684Z",
-      "summary": "Riemannian diffusion models generalize score-based generative modeling to manifold-supported data via stochastic diffusion equations on the manifold. However, training requires sampling from and differentiating the manifold heat kernel, which is rarely available in closed form beyond a few highly symmetric manifolds. We propose a general approach that approximates the heat kernel by directly solving the manifold heat equation with a physics-informed neural network (PINN). Given an explicit manifold specification, we choose a coordinate system, derive the corresponding heat (Fokker--Planck) equation and a short-time asymptotic approximation, and then train a PINN to learn the log heat kernel. The resulting surrogate enables both forward noising (heat-kernel sampling) and conditional-score evaluation for denoising score matching. We demonstrate the method on diverse manifolds including $S^2$, $SO(3)$, $\\mathrm{SPD}(n)$, and permutation-quotiented point clouds.",
+      "summary": "Approximate unavailable manifold heat kernels by solving the heat equation with a physics-informed neural network. Coordinate-specific Fokker–Planck equations and short-time asymptotics train a log-kernel surrogate for noising and conditional-score evaluation across manifolds including S², SO(3), SPD(n), and permutation-quotiented point clouds.",
       "matchedBy": [
         "papers with code",
         "Diffusion",
@@ -295818,36 +295876,6 @@
       ],
       "category": "Vision/Multimodal",
       "categories": [
-        "Vision/Multimodal",
-        "Frontier Training"
-      ]
-    },
-    {
-      "id": "2609.39600",
-      "title": "GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed",
-      "authors": "Qize Yu, Lianrui Fan, Bowen Ping, Xini Ding, Zetian Song, Junbo Niu, Kaixuan Wang, Tianxing Chen, Yue Chen, Minghua He, Yuran Wang, Jie Huang, Haojun Zhang, Min Chen, Hao Li, Wenxuan Song, Ruihai Wu, Xianming Liu, Shilong Liu, Shuchang Zhou, Ping Luo, Shiyu Huang",
-      "org": "",
-      "published": "2026-09-30",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2609.39600v1",
-      "source": "https://arxiv.org/abs/2609.39600v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2609.39600.jpg",
-      "firstSeenAt": "2026-10-01T02:07:47.936Z",
-      "summary": "Autoregressive (AR) grounding models serialize spatial predictions, introducing sequential latency and imposing a causal order on output tokens. We view grounding as visual evidence extraction: objects, locations, and spatial relations are jointly constrained by the image and query, yet their dependencies do not imply an intrinsic left-to-right generation order. This distinction makes bidirectional diffusion a natural fit, allowing spatial hypotheses to emerge in parallel and be jointly refined through iterative denoising. We introduce GroundAnything, a 4B-parameter grounding foundation model that reconciles fast parallel decoding with precise localization through blockwise denoising. Training combines grounding pretraining from public datasets and dedicated data engines, direct AR-to-diffusion conversion with joint AR and diffusion objectives, supervised fine-tuning, and GRPO-based reinforcement post-training. Across 30 grounding benchmarks, our autoregressive variant, GroundAnything-VLM, establishes a new overall state of the art among similarly sized models at 72.42%, remaining competitive with GPT-6 Astra (71.35%). With entropy-guided decoding, GroundAnything also surpasses the prior state of the art at this scale, averaging 61.75% versus 53.32% for the fast MTP-based LocateAnything model. We further explore decoding strategies, showing that an optional self-speculative mode achieves a $4.51\\times$ speedup over the AR counterpart with a 0.74 percentage-point drop in COCO F1mIoU. Infrastructure experiments show that progressive inference optimizations translate parallel decoding into practical speedups. These support efficient visual grounding in latency-sensitive real-world systems.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
         "Vision/Multimodal",
         "Frontier Training"
       ]
