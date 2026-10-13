@@ -1,6 +1,149 @@
 {
-  "generatedAt": "2026-10-12T02:44:47.367Z",
+  "generatedAt": "2026-10-13T03:40:42.317Z",
   "signals": [
+    {
+      "id": "2109795898909950247",
+      "handle": "AnthropicAI",
+      "name": "Anthropic",
+      "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+      "verified": true,
+      "text": "Over the last few months, we’ve made significant progress in reducing the effectiveness of distillation attacks against Claude.\nIn this post, we explain how: anthropic.com/research/disti…",
+      "createdAt": "Mon Oct 12 23:58:35 +0000 2026",
+      "permalink": "https://twitter.com/AnthropicAI/status/2109795898909950247",
+      "media": [],
+      "metrics": {
+        "like_count": 2495,
+        "retweet_count": 219,
+        "reply_count": 303
+      },
+      "urls": [
+        "https://www.anthropic.com/research/distillation-defenses"
+      ]
+    },
+    {
+      "id": "2109746793609052603",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "Compare responses from models &amp; human tutors in the new explorer experience, where you can also examine model tutoring performance alongside response time and cost: tutormoments.allen.ai",
+      "createdAt": "Mon Oct 12 20:43:27 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2109746793609052603",
+      "media": [],
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 0
+      },
+      "urls": [
+        "https://tutormoments.allen.ai/"
+      ]
+    },
+    {
+      "id": "2109746792656941453",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "When asked to “tutor well,” Claude Sonnet 5.5 (low effort) was best at asking students to work through more of a math problem themselves when teachers recommended it.\nWith explicit tutoring instructions, GPT-6 Sol (no reasoning) outscored Claude Opus 4.8 overall.",
+      "createdAt": "Mon Oct 12 20:43:27 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2109746792656941453",
+      "media": [],
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 1
+      },
+      "urls": []
+    },
+    {
+      "id": "2109746790501167503",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "In these tests, GPT-6 models over-help less than earlier OpenAI models.\nThey also score higher overall when we explicitly instruct them to offer help where needed while leaving students to work through parts of a problem they can handle themselves.",
+      "createdAt": "Mon Oct 12 20:43:26 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2109746790501167503",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUdTgabXMAA0ka-.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 1
+      },
+      "urls": []
+    },
+    {
+      "id": "2109691148943999167",
+      "handle": "AIatMeta",
+      "name": "AI at Meta",
+      "avatar": "https://pbs.twimg.com/profile_images/2102933421458665472/o_KTIjw3_normal.png",
+      "verified": true,
+      "text": "We’re excited to introduce the Muse Wonder series with Muse Wonder and Muse Wonder Full, our most capable models yet. Both are frontier models, built to deliver state-of-the-art performance for personal and professional agentic tasks.\nMuse Wonder is available today via the Meta",
+      "createdAt": "Mon Oct 12 17:02:20 +0000 2026",
+      "permalink": "https://twitter.com/AIatMeta/status/2109691148943999167",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2109688461443608576/img/vnfZhW0EGGgIGwTJ.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 1841,
+        "retweet_count": 181,
+        "reply_count": 160
+      },
+      "urls": []
+    },
+    {
+      "id": "2109633089211416820",
+      "handle": "Alibaba_Qwen",
+      "name": "Qwen",
+      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
+      "verified": true,
+      "text": "QwenGyre addresses two challenges of XLong-horizon agentic RL.",
+      "createdAt": "Mon Oct 12 13:11:38 +0000 2026",
+      "permalink": "https://twitter.com/Alibaba_Qwen/status/2109633089211416820",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUboayIaoAErfQ6.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 106,
+        "retweet_count": 4,
+        "reply_count": 7
+      },
+      "urls": []
+    },
+    {
+      "id": "2109633085658808515",
+      "handle": "Alibaba_Qwen",
+      "name": "Qwen",
+      "avatar": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
+      "verified": true,
+      "text": "Introducing QwenGyre, bringing elastic RL to extreme-long-horizon (XLong) agent training. ✨\nIt launches with two core designs: 🥳\n- Elastic Scheduler: reallocates GPUs between rollout &amp; training as demand shifts—live executions never interrupted. Up to 1.85× speedup over",
+      "createdAt": "Mon Oct 12 13:11:37 +0000 2026",
+      "permalink": "https://twitter.com/Alibaba_Qwen/status/2109633085658808515",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUboWdbboAA70KJ.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 2742,
+        "retweet_count": 261,
+        "reply_count": 118
+      },
+      "urls": []
+    },
     {
       "id": "2108716805166415966",
       "handle": "allen_ai",
@@ -19,6 +162,23 @@
       "urls": [
         "https://allenai.org/blog/colm-2026-recap"
       ]
+    },
+    {
+      "id": "2108680150556737819",
+      "handle": "AnthropicAI",
+      "name": "Anthropic",
+      "avatar": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg",
+      "verified": true,
+      "text": "We’re beginning a process of publishing more frequent reports on model behavior, beyond what appears in our system cards and regular risk reports.\nToday’s report describes four types of behaviors we’ve identified during evaluations and internal use. In each, Claude acted on real",
+      "createdAt": "Fri Oct 09 22:04:59 +0000 2026",
+      "permalink": "https://twitter.com/AnthropicAI/status/2108680150556737819",
+      "media": [],
+      "metrics": {
+        "like_count": 4499,
+        "retweet_count": 434,
+        "reply_count": 650
+      },
+      "urls": []
     },
     {
       "id": "2108584152119263583",
@@ -80,7 +240,7 @@
         }
       ],
       "metrics": {
-        "like_count": 101,
+        "like_count": 112,
         "retweet_count": 2,
         "reply_count": 2
       },
@@ -148,9 +308,9 @@
       "permalink": "https://twitter.com/AnthropicAI/status/2108302545953157156",
       "media": [],
       "metrics": {
-        "like_count": 107,
-        "retweet_count": 1,
-        "reply_count": 5
+        "like_count": 316,
+        "retweet_count": 5,
+        "reply_count": 8
       },
       "urls": []
     },
@@ -347,9 +507,9 @@
         }
       ],
       "metrics": {
-        "like_count": 1430,
-        "retweet_count": 266,
-        "reply_count": 217
+        "like_count": 1462,
+        "retweet_count": 271,
+        "reply_count": 256
       },
       "urls": [
         "https://synthid.com"
@@ -464,9 +624,9 @@
         }
       ],
       "metrics": {
-        "like_count": 558,
-        "retweet_count": 43,
-        "reply_count": 31
+        "like_count": 572,
+        "retweet_count": 44,
+        "reply_count": 37
       },
       "urls": []
     },
@@ -508,9 +668,9 @@
         }
       ],
       "metrics": {
-        "like_count": 40581,
-        "retweet_count": 4573,
-        "reply_count": 2015
+        "like_count": 40621,
+        "retweet_count": 4574,
+        "reply_count": 2025
       },
       "urls": []
     },
@@ -989,9 +1149,9 @@
       "permalink": "https://twitter.com/drfeifei/status/2104664403681632453",
       "media": [],
       "metrics": {
-        "like_count": 8201,
-        "retweet_count": 982,
-        "reply_count": 459
+        "like_count": 8198,
+        "retweet_count": 978,
+        "reply_count": 460
       },
       "urls": []
     },
@@ -1279,62 +1439,6 @@
         "like_count": 57,
         "retweet_count": 2,
         "reply_count": 5
-      },
-      "urls": []
-    },
-    {
-      "id": "2098932438055469451",
-      "handle": "elonmusk",
-      "name": "Elon Musk",
-      "avatar": "https://pbs.twimg.com/profile_images/2053244804520427520/m8mdWZCG_normal.jpg",
-      "verified": true,
-      "text": "New Tesla Roadster Unveil 10.01",
-      "createdAt": "Sun Sep 13 00:31:04 +0000 2026",
-      "permalink": "https://twitter.com/elonmusk/status/2098932438055469451",
-      "media": [],
-      "metrics": {
-        "like_count": 9510,
-        "retweet_count": 1029,
-        "reply_count": 1017
-      },
-      "urls": []
-    },
-    {
-      "id": "2098909197265985802",
-      "handle": "EMostaque",
-      "name": "Emad",
-      "avatar": "https://pbs.twimg.com/profile_images/1774915113922809856/6RXK1Yy0_normal.png",
-      "verified": true,
-      "text": "Thoughts on @DarioAmodei's pacing the frontier proposal.\nI think its well intentioned but has logical flaws, as does our implicit belief intelligence is a crime.\nEven OpenAI's board weren't powerful enough evaluators, we need to focus on AI internals x.com/i/article/2098…",
-      "createdAt": "Sat Sep 12 22:58:43 +0000 2026",
-      "permalink": "https://twitter.com/EMostaque/status/2098909197265985802",
-      "media": [],
-      "metrics": {
-        "like_count": 112,
-        "retweet_count": 18,
-        "reply_count": 16
-      },
-      "urls": []
-    },
-    {
-      "id": "2098799296862634258",
-      "handle": "eccvconf",
-      "name": "European Conference on Computer Vision #ECCV2026",
-      "avatar": "https://pbs.twimg.com/profile_images/1843021693171716096/qs9W748D_normal.png",
-      "verified": false,
-      "text": "Next stop: #ECCV2028 Bucharest, Romania 🇷🇴",
-      "createdAt": "Sat Sep 12 15:42:00 +0000 2026",
-      "permalink": "https://twitter.com/eccvconf/status/2098799296862634258",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HSBu1J8aIAEGEW1.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 195,
-        "retweet_count": 22,
-        "reply_count": 3
       },
       "urls": []
     }
