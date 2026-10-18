@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-18T01:00:52.233Z",
+  "generatedAt": "2026-10-18T01:31:15.345Z",
   "sourceStats": {
-    "seed": 16006,
+    "seed": 16009,
     "paperswithcode": 540,
-    "arxiv": 50,
+    "arxiv": 175,
     "huggingface": 84,
     "alphaxiv": 20,
     "twitterSignals": 0,
@@ -2336,13 +2336,14 @@
       "project": "",
       "thumbnail": "./thumbs/2610.20331.jpg",
       "firstSeenAt": "2026-10-16T01:19:30.528Z",
-      "summary": "Priming Models simplify one-step generation with reconstruction pretraining followed by feature-space distributional post-training. A fixed-noise denoising stage makes distributional optimization tractable, achieving FID 1.19 on ImageNet at 256×256 with roughly one-tenth the compute of comparable methods.",
+      "summary": "Diffusion and flow matching are now dominant frameworks for generative modeling in continuous domains, but they typically require multiple network evaluations at inference. This has motivated extensive research on one-step generative modeling primarily built on diffusion and flow, though existing approaches often rely on complex training machinery. In this work, we introduce Priming Models, a simple two-stage framework for training one-step generators. Motivated by the difficulty of distributional training from scratch, Priming Models are first trained on a reconstruction objective, e.g., pixel-space denoising at a fixed noise level, before undergoing feature-space distributional post-training. Our central scientific finding is that this simple reconstruction stage is already enough to entirely alleviate the difficulty of distributional training. Empirically, across class-conditional image generation, text-to-image generation, and world modeling, Priming Models significantly advance the Pareto frontier of training compute vs. generation quality. On ImageNet at $256 \\times 256$ resolution, we achieve a state-of-the-art FID of $1.19$ among one-step generators using approximately one-tenth the training compute of prior methods with comparable FID. We open-source our codebase at https://github.com/JaeyeonKim01/priming.",
       "matchedBy": [
         "papers with code",
         "vision/multimodal",
         "language modeling",
         "alphaxiv hot",
-        "arxiv"
+        "arxiv",
+        "frontier training"
       ],
       "sources": [
         "paperswithcode",
@@ -2352,6 +2353,7 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal",
+        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -31878,8 +31880,8 @@
       "org": "",
       "published": "2026-10-15",
       "score": 80,
-      "paper": "https://arxiv.org/abs/2610.22363",
-      "source": "https://www.alphaxiv.org/abs/2610.22363",
+      "paper": "https://arxiv.org/abs/2610.22363v1",
+      "source": "https://arxiv.org/abs/2610.22363v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.22363.jpg",
@@ -201123,29 +201125,29 @@
       "org": "",
       "published": "2026-10-15",
       "score": 60,
-      "paper": "https://arxiv.org/abs/2610.22178",
-      "source": "https://paperswithcode.co/paper/2610.22178",
+      "paper": "https://arxiv.org/abs/2610.22178v1",
+      "source": "https://arxiv.org/abs/2610.22178v1",
       "code": "https://github.com/kyutai-labs/reki",
       "project": "",
       "thumbnail": "./thumbs/2610.22178.jpg",
       "firstSeenAt": "2026-10-17T01:18:17.683Z",
-      "summary": "REKI pairs a vision-language model with a flow-matching action expert and persistent register tokens that summarize recent frames in the expert cache. This 2.4B model improves simulated and real-robot control, making pose oscillations about four times rarer.",
+      "summary": "We introduce REKI, a 2.4B vision-language-action model (VLA) pretrained exclusively on public data that sets a new Pareto frontier between performance and model size: on LIBERO-Plus, RoboTwin Clean2Rand and RoboCasa365, it is outperformed only by models about twice its size. REKI consists of a vision-language model (VLM) followed by a flow-matching action expert, and is pretrained on a curated mixture of public robot, egocentric human and vision-language data. Additionally, we endow it with a memory that gives the policy access to its recent past at negligible cost: a few register tokens in the action expert summarise the output of the VLM at each frame and persist in the expert's cache. This memory improves success in simulation and on real robots, and makes oscillations between poses about four times rarer. REKI uses a simple model design and training paradigm, and is optimised to be efficient at training and inference. We release the full code across data curation, training, inference and evaluation, deployment, and all pretrained and finetuned model weights: https://github.com/kyutai-labs/reki.",
       "matchedBy": [
         "arxiv",
         "frontier training",
         "robotics",
         "vision/multimodal",
-        "papers with code",
-        "language modeling"
+        "papers with code"
       ],
       "sources": [
         "arxiv",
         "paperswithcode"
       ],
-      "category": "Robotics",
+      "category": "Frontier Training",
       "categories": [
+        "Frontier Training",
         "Robotics",
-        "Language Modeling"
+        "Vision/Multimodal"
       ]
     },
     {
