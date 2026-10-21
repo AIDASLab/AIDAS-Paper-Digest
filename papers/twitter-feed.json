@@ -1,6 +1,82 @@
 {
-  "generatedAt": "2026-10-20T02:11:35.208Z",
+  "generatedAt": "2026-10-21T01:42:52.973Z",
   "signals": [
+    {
+      "id": "2112587248071770328",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "We hope FairStress gives researchers a way to uncover hidden asymmetries in model decision-making, test fixes, &amp; develop more consistent systems.\n📝 Blog: allenai.org/blog/fairstress\n📄 Paper: allenai.org/papers/fairstr…",
+      "createdAt": "Tue Oct 20 16:50:24 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2112587248071770328",
+      "media": [],
+      "metrics": {
+        "like_count": 1,
+        "retweet_count": 0,
+        "reply_count": 0
+      },
+      "urls": [
+        "https://allenai.org/blog/fairstress",
+        "https://allenai.org/papers/fairstress"
+      ]
+    },
+    {
+      "id": "2112587247023263943",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "Since LLMs have various biases in their decisions and reasoning, we then examined how training data might influence this, &amp; find that LLMs are never really taught fair decision-making yet are often aligned to prevent discrimination—which may explain over-correction patterns.",
+      "createdAt": "Tue Oct 20 16:50:24 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2112587247023263943",
+      "media": [],
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 1
+      },
+      "urls": []
+    },
+    {
+      "id": "2112587245601304695",
+      "handle": "allen_ai",
+      "name": "Ai2",
+      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
+      "verified": false,
+      "text": "We tested 9 approaches for reducing these gaps. Most didn’t reliably improve symmetric robustness; some hurt performance.\nOlder benchmarks like BBQ can miss overcorrection, but FairStress reveals the hidden asymmetries they overlook.",
+      "createdAt": "Tue Oct 20 16:50:23 +0000 2026",
+      "permalink": "https://twitter.com/allen_ai/status/2112587245601304695",
+      "media": [],
+      "metrics": {
+        "like_count": 0,
+        "retweet_count": 0,
+        "reply_count": 1
+      },
+      "urls": []
+    },
+    {
+      "id": "2110749836450713896",
+      "handle": "NVIDIAAI",
+      "name": "NVIDIA AI",
+      "avatar": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
+      "verified": true,
+      "text": "Meet NVIDIA Nemotron 3.5 Super VL\nOur new open model combines reasoning and tool use with text, image, document, and video understanding for long-running AI agents.\n120B total parameters with 12B active 🧵",
+      "createdAt": "Thu Oct 15 15:09:11 +0000 2026",
+      "permalink": "https://twitter.com/NVIDIAAI/status/2110749836450713896",
+      "media": [
+        {
+          "type": "video",
+          "image": "https://pbs.twimg.com/amplify_video_thumb/2110749075981336576/img/_CN2qjAbo_CBocnV.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 4417,
+        "retweet_count": 548,
+        "reply_count": 288
+      },
+      "urls": []
+    },
     {
       "id": "2110407190162849972",
       "handle": "allen_ai",
@@ -1296,9 +1372,9 @@
       "permalink": "https://twitter.com/drfeifei/status/2104664403681632453",
       "media": [],
       "metrics": {
-        "like_count": 8211,
-        "retweet_count": 980,
-        "reply_count": 462
+        "like_count": 8218,
+        "retweet_count": 984,
+        "reply_count": 464
       },
       "urls": []
     },
