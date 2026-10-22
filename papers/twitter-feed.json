@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-22T01:38:37.599Z",
+  "generatedAt": "2026-10-22T02:00:42.332Z",
   "signals": [
+    {
+      "id": "2112950889808097708",
+      "handle": "pabbeel",
+      "name": "Pieter Abbeel",
+      "avatar": "https://pbs.twimg.com/profile_images/1305267627/61089_706033241563_202809_38806847_7322449_n_normal.jpg",
+      "verified": true,
+      "text": "Game changer for humanoid full-body control training.  Now it's superfast (and cheap, just one GPU) to train a single policy on *all* the motions.  How come:\n(1) World model much faster than regular sim\n(2) Backprop through time collects way more signal than policy gradients",
+      "createdAt": "Wed Oct 21 16:55:23 +0000 2026",
+      "permalink": "https://twitter.com/pabbeel/status/2112950889808097708",
+      "media": [],
+      "metrics": {
+        "like_count": 362,
+        "retweet_count": 40,
+        "reply_count": 8
+      },
+      "urls": []
+    },
     {
       "id": "2112587248071770328",
       "handle": "allen_ai",
@@ -52,6 +69,32 @@
         "like_count": 0,
         "retweet_count": 0,
         "reply_count": 1
+      },
+      "urls": []
+    },
+    {
+      "id": "2111192101866316095",
+      "handle": "TheHumanoidHub",
+      "name": "The Humanoid Hub",
+      "avatar": "https://pbs.twimg.com/profile_images/1682127970251718656/9j1n6iKy_normal.jpg",
+      "verified": true,
+      "text": "Day 2 is also packed,\n@radbackwards sharing some awesome design insights.",
+      "createdAt": "Fri Oct 16 20:26:35 +0000 2026",
+      "permalink": "https://twitter.com/TheHumanoidHub/status/2111192101866316095",
+      "media": [
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUx2BhEakAAxlcO.jpg"
+        },
+        {
+          "type": "photo",
+          "image": "https://pbs.twimg.com/media/HUx2BhFaUAADk26.jpg"
+        }
+      ],
+      "metrics": {
+        "like_count": 83,
+        "retweet_count": 9,
+        "reply_count": 2
       },
       "urls": []
     },
@@ -174,9 +217,9 @@
       "permalink": "https://twitter.com/physical_int/status/2110115573082570878",
       "media": [],
       "metrics": {
-        "like_count": 214,
+        "like_count": 215,
         "retweet_count": 13,
-        "reply_count": 7
+        "reply_count": 6
       },
       "urls": [
         "https://pi.website/blog/api-beta"
@@ -198,7 +241,7 @@
         }
       ],
       "metrics": {
-        "like_count": 2302,
+        "like_count": 2307,
         "retweet_count": 246,
         "reply_count": 124
       },
