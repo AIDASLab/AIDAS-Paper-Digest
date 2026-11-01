@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-01T02:11:34.196Z",
+  "generatedAt": "2026-11-01T02:33:12.300Z",
   "sourceStats": {
-    "seed": 17955,
+    "seed": 17957,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 39,
     "alphaxiv": 21,
     "twitterSignals": 0,
-    "total": 17957
+    "total": 17960
   },
   "papers": [
     {
@@ -11022,6 +11022,32 @@
       ]
     },
     {
+      "id": "2610.16457",
+      "title": "SHOES: Sim-to-real Hardware-adaptation via On-policy Expansion of Skills for Legged Robots",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2610.16457",
+      "source": "https://www.alphaxiv.org/abs/2610.16457",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.16457.jpg",
+      "firstSeenAt": "2026-11-01T02:33:12.300Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2608.07449",
       "title": "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
       "authors": "Mingxuan Zheng, Yujin Zhou, Chuxue Cao, Boqin Yin, Yuyao Zhang, Jiapeng Sun, Shuaishuai Gong, Sirui Han, Yike Guo",
@@ -16777,6 +16803,36 @@
       ]
     },
     {
+      "id": "2610.40325",
+      "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
+      "authors": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan, Shruti Bhosale, Mike Lewis, Maryam Fazel-Zarandi, Shashank Rajput, Sujan Kumar Gonugondla",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 89,
+      "paper": "https://arxiv.org/abs/2610.40325",
+      "source": "https://www.alphaxiv.org/abs/2610.40325",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40325.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "Looping in transformer models reuses weights by repeatedly applying the same transformer, or parts of it, making the model deeper without increasing its parameter count. Whether looping is useful depends on which constraint dominates: model size, training compute, or autoregressive inference efficiency. We study these trade-offs jointly in dense decoder-only transformers trained from scratch, varying which parts of the model are looped, how many loops are applied, and how information is passed between loops. Our experiments span models with up to 1B parameters, trained on up to 155B tokens with up to $1.07\\times10^{21}$ FLOPs and 32 loops. We find that looping the full transformer generally gives the strongest quality at a fixed parameter budget, whereas looping a middle block of layers gives a better return when training FLOPs are constrained. Adding loops is not uniformly beneficial: gains eventually saturate, reverse, or become unstable. This motivates asking whether forcing every loop to use the same weights limits the benefit of deeper looping. We address this by adding small loop-specific low-rank adapters that improve quality, with larger gains as more loops are added. Looped transformers also suffer a decoding slowdown proportional to the number of loops. Parallel Loop Transformers address this by passing hidden states between loops across adjacent token positions, allowing loop stages to run concurrently. However, in our experiments the original formulation does not consistently retain the quality gains of ordinary looping. We find that preserving the current-token embedding and separately normalizing it and the previous-token hidden state before combining them recovers strong performance across model scales and training budgets. Together, these results show that effective looping requires matching the design to the resource constraint and inference setting.",
+      "matchedBy": [
+        "arxiv",
+        "serving",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.19531",
       "title": "ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?",
       "authors": "Yuyang Zhang, Wenyao Zhang, Zekun Qi, He Zhang, Haitao Lin, Jingbo Zhang, Yao Mu, Xiaokang Yang, Wenjun Zeng, Xin Jin",
@@ -21128,36 +21184,6 @@
         "Vision/Multimodal",
         "Language Modeling",
         "Serving"
-      ]
-    },
-    {
-      "id": "2610.40325",
-      "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
-      "authors": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan, Shruti Bhosale, Mike Lewis, Maryam Fazel-Zarandi, Shashank Rajput, Sujan Kumar Gonugondla",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 87,
-      "paper": "https://arxiv.org/abs/2610.40325",
-      "source": "https://www.alphaxiv.org/abs/2610.40325",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40325.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "Looping in transformer models reuses weights by repeatedly applying the same transformer, or parts of it, making the model deeper without increasing its parameter count. Whether looping is useful depends on which constraint dominates: model size, training compute, or autoregressive inference efficiency. We study these trade-offs jointly in dense decoder-only transformers trained from scratch, varying which parts of the model are looped, how many loops are applied, and how information is passed between loops. Our experiments span models with up to 1B parameters, trained on up to 155B tokens with up to $1.07\\times10^{21}$ FLOPs and 32 loops. We find that looping the full transformer generally gives the strongest quality at a fixed parameter budget, whereas looping a middle block of layers gives a better return when training FLOPs are constrained. Adding loops is not uniformly beneficial: gains eventually saturate, reverse, or become unstable. This motivates asking whether forcing every loop to use the same weights limits the benefit of deeper looping. We address this by adding small loop-specific low-rank adapters that improve quality, with larger gains as more loops are added. Looped transformers also suffer a decoding slowdown proportional to the number of loops. Parallel Loop Transformers address this by passing hidden states between loops across adjacent token positions, allowing loop stages to run concurrently. However, in our experiments the original formulation does not consistently retain the quality gains of ordinary looping. We find that preserving the current-token embedding and separately normalizing it and the previous-token hidden state before combining them recovers strong performance across model scales and training budgets. Together, these results show that effective looping requires matching the design to the resource constraint and inference setting.",
-      "matchedBy": [
-        "arxiv",
-        "serving",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Serving",
-      "categories": [
-        "Serving",
-        "Language Modeling"
       ]
     },
     {
@@ -27683,6 +27709,38 @@
       ]
     },
     {
+      "id": "2610.40565",
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "authors": "Pranjal Aggarwal, Sean Welleck",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 84,
+      "paper": "https://arxiv.org/abs/2610.40565",
+      "source": "https://www.alphaxiv.org/abs/2610.40565",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40565.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The core bottleneck is that creating better simulations requires significant expert effort and therefore does not scale. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. We select simulations based on U.S. GDP data to cover economically valuable physical work, define what makes a good simulation and a good task, and develop an adversarial creation-audit loop that checks each simulation and task against these definitions. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty. Even the best frontier models fail on every RoboWorld test task, achieving an average reward of only 0.06. Building on RoboWorld, we introduce several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, self-assisted learning from the model's own privileged experience, and code policies that generate demonstrations across varied scenes to train vision-language-action models (VLAs) such as $π_{0.5}$. Each of these substantially improves performance. We release our pipeline, RL environments, and benchmark to facilitate future research. Code and data are available at https://gym-anything.github.io/robotics",
+      "matchedBy": [
+        "arxiv",
+        "robotics",
+        "frontier training",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2610.29458",
       "title": "Harness Scaling for Generalizable Agentic Reinforcement Learning",
       "authors": "Fei Bai, Huatong Song, Chuan Hao, Ran Tao, Jian Yang, Bryan Dai, Wayne Xin Zhao, Ji-Rong Wen",
@@ -28840,8 +28898,8 @@
       "org": "",
       "published": "2026-10-29",
       "score": 84,
-      "paper": "https://arxiv.org/abs/2610.40256",
-      "source": "https://www.alphaxiv.org/abs/2610.40256",
+      "paper": "https://arxiv.org/abs/2610.40256v1",
+      "source": "https://arxiv.org/abs/2610.40256v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.40256.jpg",
@@ -138339,6 +138397,32 @@
       ]
     },
     {
+      "id": "2610.40618",
+      "title": "An ODE-based Sampler for Discrete Diffusion Models",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 77,
+      "paper": "https://arxiv.org/abs/2610.40618",
+      "source": "https://www.alphaxiv.org/abs/2610.40618",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40618.jpg",
+      "firstSeenAt": "2026-11-01T02:33:12.300Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.12360",
       "title": "Anatomy of Post-Training: Using Interpretability to Characterize Data and Shape the Learning Signal",
       "authors": "Leon Bergen, Usha Bhalla, Sidharth Baskaran, Max Loeffler, Raphael Sarfati, Dhruvil Gala, Ryan Panwar, Santiago Aranguri, Thomas Fel, Atticus Geiger, Matthew Kowal, Siddharth Boppana, Daniel Balsam, Owen Lewis, Jack Merullo, Thomas McGrath, Ekdeep Singh Lubana",
@@ -138805,38 +138889,6 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2610.40565",
-      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
-      "authors": "Pranjal Aggarwal, Sean Welleck",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 77,
-      "paper": "https://arxiv.org/abs/2610.40565",
-      "source": "https://www.alphaxiv.org/abs/2610.40565",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40565.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The core bottleneck is that creating better simulations requires significant expert effort and therefore does not scale. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. We select simulations based on U.S. GDP data to cover economically valuable physical work, define what makes a good simulation and a good task, and develop an adversarial creation-audit loop that checks each simulation and task against these definitions. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty. Even the best frontier models fail on every RoboWorld test task, achieving an average reward of only 0.06. Building on RoboWorld, we introduce several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, self-assisted learning from the model's own privileged experience, and code policies that generate demonstrations across varied scenes to train vision-language-action models (VLAs) such as $π_{0.5}$. Each of these substantially improves performance. We release our pipeline, RL environments, and benchmark to facilitate future research. Code and data are available at https://gym-anything.github.io/robotics",
-      "matchedBy": [
-        "arxiv",
-        "robotics",
-        "frontier training",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -139449,6 +139501,32 @@
       "category": "Serving",
       "categories": [
         "Serving"
+      ]
+    },
+    {
+      "id": "2610.agentic-chip-design-survey",
+      "title": "Agentic Chip Design: A Survey of Architectures, Design Methodologies, and Evaluation",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 76,
+      "paper": "https://www.alphaxiv.org/abs/2610.agentic-chip-design-survey",
+      "source": "https://www.alphaxiv.org/abs/2610.agentic-chip-design-survey",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-01T02:33:12.300Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
