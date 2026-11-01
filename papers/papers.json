@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-31T02:42:51.002Z",
+  "generatedAt": "2026-11-01T02:11:34.196Z",
   "sourceStats": {
-    "seed": 17954,
+    "seed": 17955,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 39,
     "alphaxiv": 21,
     "twitterSignals": 0,
-    "total": 17955
+    "total": 17957
   },
   "papers": [
     {
@@ -9322,6 +9322,34 @@
       ]
     },
     {
+      "id": "2610.40476",
+      "title": "Training language models in simulation for psychiatric intake",
+      "authors": "Samuel Schmidgall, Tim Strother, Alex Bijamov, Min Woo Sun, Anil Palepu, Akshay Goel, Ulysse Marteau-Ferey, Théo Moutakanni, Yubin Kim, Joseph Breda, Christina Chen, Justin Chen, Paul Jhun, Andrew Marshall, Sarah Montgomery-Taylor, Eun Kyoung Hong, Shashank Ravi, Kameron C. Black, David J. H. Wu, Austin Schoeffler, John Lyon Havlik, Elizabeth C. Stade, Jared Moore, Johannes C. Eichstaedt, Logan Pierce, Jeff Jopling, Johannes Thrul, Thomas H. McCoy, Neguine Rezaii, Mark S. Chen, Ellen E. Fitzsimmons-Craft, Shirley Wang, Desmond C. Ong, Katharina Schultebraucks, Torrey Creed, Bhavna Daryani, Aleksandra Faust, S. Sara Mahdavi, Caroline Figueroa, Eric Lin, Kate H. Bentley, Ernest Lim, Zhihan Jiang, Xuhai \"Orson\" Xu, Daniel McDuff, John Torous, Yun Liu, Po-Hsuan Cameron Chen, Mike Schaekermann, Joelle Barral, Alvin Rajkomar, Tao Tu, Lin Yang, Isaac Galatzer-Levy, David Racz, Valentin Liévin",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 93,
+      "paper": "https://arxiv.org/abs/2610.40476",
+      "source": "https://www.alphaxiv.org/abs/2610.40476",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40476.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "In psychiatric practice, the clinical intake interview remains a primary diagnostic instrument, requiring the clinician to establish rapport while disentangling complex, overlapping presentations. Here, we show that multi-turn reinforcement learning (RL) in simulation environments improves language model performance on structured text-based psychiatric intake, spanning history-taking, differential diagnosis, and initial management planning. In a randomized, double-blind crossover study ($N = 60$ matched scenario pairs, 120 encounters) comparing the RL-trained agent against its identically prompted base model, 32 board-certified psychiatrists role-played standardized patients while a separate panel of 15 independent, board-certified psychiatrists scored the de-identified transcripts. The trained agent outperformed the base model in 76.7% of matched scenario pairs ($p < 0.0001$), with gains on an adapted clinical-examination rubric ($d_z = 0.77$, $p < 0.0001$), patient-centered communication (82.0% vs. 65.2%, $p < 0.001$), and differential diagnosis appropriateness (68.3% vs. 33.3%, $p < 0.001$). Across 127 psychiatrist-validated simulated intake scenarios, the trained agent nearly doubled its base model's clinical rubric score (0.706 vs. 0.379; composite reward 0.564 vs. 0.294, $p < 0.0001$). To systematically probe conversational safety, we established two Delphi-consensus taxonomies, of clinical safety risks and relational competencies, from which 256 challenging adversarial presentations were derived; we find that training in simulation environments more than halved under-triage of acute safety risks (12.9% vs. 30.5%, $p < 0.0001$). Simulation environments thus provide a controlled testbed for training and stress-testing psychiatric conversational agents, with gains that transferred to psychiatrist-enacted encounters, though residual gaps require safeguards and clinician oversight.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2610.32977",
       "title": "UniAction: Unified Action Conditioning for World Models",
       "authors": "",
@@ -9705,6 +9733,32 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2604.07457",
+      "title": "CMP: Robust Whole-Body Tracking for Loco-Manipulation via Competence Manifold Projection",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2604.07457",
+      "source": "https://www.alphaxiv.org/abs/2604.07457",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.07457.jpg",
+      "firstSeenAt": "2026-11-01T02:11:34.196Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "robotics"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
       ]
     },
     {
@@ -13409,34 +13463,6 @@
         "Frontier Training",
         "Language Modeling",
         "Robotics"
-      ]
-    },
-    {
-      "id": "2610.40476",
-      "title": "Training language models in simulation for psychiatric intake",
-      "authors": "Samuel Schmidgall, Tim Strother, Alex Bijamov, Min Woo Sun, Anil Palepu, Akshay Goel, Ulysse Marteau-Ferey, Théo Moutakanni, Yubin Kim, Joseph Breda, Christina Chen, Justin Chen, Paul Jhun, Andrew Marshall, Sarah Montgomery-Taylor, Eun Kyoung Hong, Shashank Ravi, Kameron C. Black, David J. H. Wu, Austin Schoeffler, John Lyon Havlik, Elizabeth C. Stade, Jared Moore, Johannes C. Eichstaedt, Logan Pierce, Jeff Jopling, Johannes Thrul, Thomas H. McCoy, Neguine Rezaii, Mark S. Chen, Ellen E. Fitzsimmons-Craft, Shirley Wang, Desmond C. Ong, Katharina Schultebraucks, Torrey Creed, Bhavna Daryani, Aleksandra Faust, S. Sara Mahdavi, Caroline Figueroa, Eric Lin, Kate H. Bentley, Ernest Lim, Zhihan Jiang, Xuhai \"Orson\" Xu, Daniel McDuff, John Torous, Yun Liu, Po-Hsuan Cameron Chen, Mike Schaekermann, Joelle Barral, Alvin Rajkomar, Tao Tu, Lin Yang, Isaac Galatzer-Levy, David Racz, Valentin Liévin",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 91,
-      "paper": "https://arxiv.org/abs/2610.40476",
-      "source": "https://www.alphaxiv.org/abs/2610.40476",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40476.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "In psychiatric practice, the clinical intake interview remains a primary diagnostic instrument, requiring the clinician to establish rapport while disentangling complex, overlapping presentations. Here, we show that multi-turn reinforcement learning (RL) in simulation environments improves language model performance on structured text-based psychiatric intake, spanning history-taking, differential diagnosis, and initial management planning. In a randomized, double-blind crossover study ($N = 60$ matched scenario pairs, 120 encounters) comparing the RL-trained agent against its identically prompted base model, 32 board-certified psychiatrists role-played standardized patients while a separate panel of 15 independent, board-certified psychiatrists scored the de-identified transcripts. The trained agent outperformed the base model in 76.7% of matched scenario pairs ($p < 0.0001$), with gains on an adapted clinical-examination rubric ($d_z = 0.77$, $p < 0.0001$), patient-centered communication (82.0% vs. 65.2%, $p < 0.001$), and differential diagnosis appropriateness (68.3% vs. 33.3%, $p < 0.001$). Across 127 psychiatrist-validated simulated intake scenarios, the trained agent nearly doubled its base model's clinical rubric score (0.706 vs. 0.379; composite reward 0.564 vs. 0.294, $p < 0.0001$). To systematically probe conversational safety, we established two Delphi-consensus taxonomies, of clinical safety risks and relational competencies, from which 256 challenging adversarial presentations were derived; we find that training in simulation environments more than halved under-triage of acute safety risks (12.9% vs. 30.5%, $p < 0.0001$). Simulation environments thus provide a controlled testbed for training and stress-testing psychiatric conversational agents, with gains that transferred to psychiatrist-enacted encounters, though residual gaps require safeguards and clinician oversight.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -17672,6 +17698,32 @@
       ]
     },
     {
+      "id": "2610.39054",
+      "title": "Robotic Data Inoculation",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 89,
+      "paper": "https://arxiv.org/abs/2610.39054",
+      "source": "https://www.alphaxiv.org/abs/2610.39054",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.39054.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2608.scaling-automated-post-training",
       "title": "Scaling Automated Post-Training",
       "authors": "",
@@ -19748,6 +19800,32 @@
       ]
     },
     {
+      "id": "2610.39429",
+      "title": "ScheduleGen: Demonstration Generation via Skill Scheduling for Multi-Arm Imitation Learning",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 88,
+      "paper": "https://arxiv.org/abs/2610.39429",
+      "source": "https://www.alphaxiv.org/abs/2610.39429",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.39429.jpg",
+      "firstSeenAt": "2026-11-01T02:11:34.196Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2405.20323",
       "title": "Self-Supervised Street Gaussians for Autonomous Driving",
       "authors": "Huang, Nan, Wei, Xiaobao, Zheng, Wenzhao, An, Pengju, Lu, Ming, Zhan, Wei, Tomizuka, Masayoshi, Keutzer, Kurt, Zhang, Shanghang",
@@ -21053,6 +21131,36 @@
       ]
     },
     {
+      "id": "2610.40325",
+      "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
+      "authors": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan, Shruti Bhosale, Mike Lewis, Maryam Fazel-Zarandi, Shashank Rajput, Sujan Kumar Gonugondla",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 87,
+      "paper": "https://arxiv.org/abs/2610.40325",
+      "source": "https://www.alphaxiv.org/abs/2610.40325",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40325.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "Looping in transformer models reuses weights by repeatedly applying the same transformer, or parts of it, making the model deeper without increasing its parameter count. Whether looping is useful depends on which constraint dominates: model size, training compute, or autoregressive inference efficiency. We study these trade-offs jointly in dense decoder-only transformers trained from scratch, varying which parts of the model are looped, how many loops are applied, and how information is passed between loops. Our experiments span models with up to 1B parameters, trained on up to 155B tokens with up to $1.07\\times10^{21}$ FLOPs and 32 loops. We find that looping the full transformer generally gives the strongest quality at a fixed parameter budget, whereas looping a middle block of layers gives a better return when training FLOPs are constrained. Adding loops is not uniformly beneficial: gains eventually saturate, reverse, or become unstable. This motivates asking whether forcing every loop to use the same weights limits the benefit of deeper looping. We address this by adding small loop-specific low-rank adapters that improve quality, with larger gains as more loops are added. Looped transformers also suffer a decoding slowdown proportional to the number of loops. Parallel Loop Transformers address this by passing hidden states between loops across adjacent token positions, allowing loop stages to run concurrently. However, in our experiments the original formulation does not consistently retain the quality gains of ordinary looping. We find that preserving the current-token embedding and separately normalizing it and the previous-token hidden state before combining them recovers strong performance across model scales and training budgets. Together, these results show that effective looping requires matching the design to the resource constraint and inference setting.",
+      "matchedBy": [
+        "arxiv",
+        "serving",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2609.k2",
       "title": "Introducing K2 Horizon: Frontier Performance, Radically Open",
       "authors": "",
@@ -21738,32 +21846,6 @@
       "category": "Vision/Multimodal",
       "categories": [
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2610.39054",
-      "title": "Robotic Data Inoculation",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 87,
-      "paper": "https://arxiv.org/abs/2610.39054",
-      "source": "https://www.alphaxiv.org/abs/2610.39054",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.39054.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -24124,8 +24206,8 @@
       "org": "",
       "published": "2026-10-29",
       "score": 86,
-      "paper": "https://arxiv.org/abs/2610.40349",
-      "source": "https://www.alphaxiv.org/abs/2610.40349",
+      "paper": "https://arxiv.org/abs/2610.40349v1",
+      "source": "https://arxiv.org/abs/2610.40349v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.40349.jpg",
@@ -26073,6 +26155,32 @@
         "Language Modeling",
         "Frontier Training",
         "Serving"
+      ]
+    },
+    {
+      "id": "2610.40051",
+      "title": "Rethinking Pre-pretraining",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2610.40051",
+      "source": "https://www.alphaxiv.org/abs/2610.40051",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40051.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -29854,6 +29962,38 @@
       ]
     },
     {
+      "id": "2610.40495",
+      "title": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+      "authors": "Oliver Hahn, Rodrigo Marcuzzi, Sangeetha Grama Srinivasan, Alessandro Burzio, Sherwin Bahmani, Jiahui Huang, Stefan Roth, Shengyu Huang, Qunjie Zhou, Laura Leal-Taixé",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 83,
+      "paper": "https://arxiv.org/abs/2610.40495",
+      "source": "https://www.alphaxiv.org/abs/2610.40495",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40495.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "We present LucidLyra, a framework that makes generatively reconstructed 3D scenes directly queryable for semantics and instances in a feed-forward manner from video latents. While generative 3D reconstruction can synthesize virtual environments from a single image, downstream applications in robotics and physical AI require not only visual realism but also access to scene semantics and object identities. Existing 3D understanding approaches, however, require captured multi-view scenes, have limited generalization capabilities, or rely on expensive per-scene processing and optimization. To bridge this gap, our method distills complementary knowledge from a camera-controlled video diffusion model and frozen 2D vision foundation models into a unified model to jointly infer 3D Gaussians encoding geometry, appearance, open-vocabulary semantics, and class-agnostic instance cues. The resulting scenes support novel-view rendering, open-vocabulary segmentation, and object grouping without per-scene optimization, while training requires neither manual 3D annotations nor captured multi-view data. Our method outperforms baselines combining state-of-the-art 3DGS segmentation approaches with generative 3D scene reconstruction on curated synthetic and real-image-conditioned benchmarks, while preserving reconstruction quality. Furthermore, our latent formulation naturally extends to monocular video, reconstructing structured dynamic 3D scenes across time. By turning renderable but unstructured outputs into queryable 3D worlds, LucidLyra enables downstream applications including 3D scene editing, 3D asset mining, and robotic simulation.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "robotics",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2606.13473",
       "title": "MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling",
       "authors": "Jiacheng Chen, Xinyu Zhang, Shunkai Zhang, Yanmohan Wang, Lin Li, Tiancheng Qin, Qin Wang, Zhengmao Zhu, Tianle Li, Jingyang Li, Zehan Li, Binyang Jiang, Jin Zhu, Han Ding, Fei Yu, Chenyu Du, Zijian Song, Jiayuan Song, Zhi Zhang, Yunan Huang, Weiyu Cheng, Pengyu Zhao, Yu Cheng",
@@ -31319,6 +31459,36 @@
       "categories": [
         "Vision/Multimodal",
         "Robotics",
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2610.40655",
+      "title": "Elucidating the Design Space of LM Data Attribution",
+      "authors": "Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 82,
+      "paper": "https://arxiv.org/abs/2610.40655",
+      "source": "https://www.alphaxiv.org/abs/2610.40655",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40655.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multiple dataset properties simultaneously, making it impossible to isolate exactly why an attribution algorithm fails. To diagnose these failures, we explore the design space of LLM data attribution, with a primary focus on evaluation. We introduce the Controlled Attribution Benchmark (CATT) for fact tracing, in which we fine-tune LLMs on entirely fictitious knowledge, providing unambiguous ground truth for attribution. This synthetic setup allows us to systematically alter one dataset configuration at a time, such as document redundancy and lexical distractors. With this configurable evaluation, we demonstrate that redundancy and distractors consistently degrade attribution performance. Rather than proposing a new estimator, we examine two design choices that are underexplored: the loss used to compute gradients and how per-token attribution scores are aggregated into a document score. We find that the true causal evidence within a training document is highly localized, but standard methods dilute this evidence into noise by averaging attribution scores across the entire document. We find that replacing standard cross-entropy loss gradients with the negative log-odds gradients surfaces the critical tokens from other uninformative ones. We can then aggregate only the top token scores to improve ground truth recall by 35 to 72 percentage points across multiple baselines on our diagnostic benchmark. The negative log-odds correction also generalizes to FTRACE-TREX, improving counterfactual retraining performance for every method we test, by up to 4.9x.",
+      "matchedBy": [
+        "arxiv",
+        "data / retrieval",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Data / Retrieval",
+      "categories": [
+        "Data / Retrieval",
         "Language Modeling"
       ]
     },
@@ -32878,6 +33048,34 @@
       ]
     },
     {
+      "id": "2610.40503",
+      "title": "Algebraic World Model: From Exploration to Proofs",
+      "authors": "Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 81,
+      "paper": "https://arxiv.org/abs/2610.40503",
+      "source": "https://www.alphaxiv.org/abs/2610.40503",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40503.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "AI has made remarkable progress in mathematics, solving challenging problems with machine-checkable proofs in Lean, yet typically relying on predefined mathematical definitions and formal specifications. This raises a natural question: can it reason rigorously about an unknown world? We introduce the Algebraic World Model (AWM), a framework that turns interaction with unfamiliar environments into explicit mathematical models supporting formal reasoning. AWM explores the environment and develops executable Python hypotheses, continually testing and revising them against observations. It then structures these hypotheses into typed objects and shared rules, simplifies their structure through category-theory-guided transformations, and formalizes the resulting model in Lean 4 to prove reachability and impossibility. AWM can formally prove that a goal is unreachable, even beyond explored trajectories. On two impossible game levels, it constructs closed, kernel-checked Lean proofs excluding every legal winning sequence in all six runs, while Claude Opus 5.5 and GPT-6 Astra, equipped with coding tools, produce none in twelve baseline runs. Four of AWM's six initial bounds are correct, compared with one for Opus 5.5 and none for GPT-6 Astra; given only feedback that a cheaper win exists, AWM revises its rules and constructs new proofs, reaching six of six correct bounds. Moreover, AWM produces interpretable mathematical models whose rules can be inspected and tested step by step. Across all 25 public ARC-AGI-3 games, these models enable Lean to replay the winning trajectories of all 183 levels and generalize beyond observed play, predicting unseen transitions and detecting changes in game mechanics. With Claude Opus 5, AWM clears all levels with a score of 99.9, while its certified winning trajectories use only 43% of the human baseline's actions.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2610.atlas-neurons-continual-learning",
       "title": "Atlas Neurons: Continual Learning Without Replay, Task Labels or Backpropagation",
       "authors": "",
@@ -32988,8 +33186,8 @@
       "org": "",
       "published": "2026-10-29",
       "score": 81,
-      "paper": "https://arxiv.org/abs/2610.40532",
-      "source": "https://www.alphaxiv.org/abs/2610.40532",
+      "paper": "https://arxiv.org/abs/2610.40532v1",
+      "source": "https://arxiv.org/abs/2610.40532v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.40532.jpg",
@@ -35116,36 +35314,6 @@
       ]
     },
     {
-      "id": "2610.40655",
-      "title": "Elucidating the Design Space of LM Data Attribution",
-      "authors": "Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 80,
-      "paper": "https://arxiv.org/abs/2610.40655",
-      "source": "https://www.alphaxiv.org/abs/2610.40655",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40655.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multiple dataset properties simultaneously, making it impossible to isolate exactly why an attribution algorithm fails. To diagnose these failures, we explore the design space of LLM data attribution, with a primary focus on evaluation. We introduce the Controlled Attribution Benchmark (CATT) for fact tracing, in which we fine-tune LLMs on entirely fictitious knowledge, providing unambiguous ground truth for attribution. This synthetic setup allows us to systematically alter one dataset configuration at a time, such as document redundancy and lexical distractors. With this configurable evaluation, we demonstrate that redundancy and distractors consistently degrade attribution performance. Rather than proposing a new estimator, we examine two design choices that are underexplored: the loss used to compute gradients and how per-token attribution scores are aggregated into a document score. We find that the true causal evidence within a training document is highly localized, but standard methods dilute this evidence into noise by averaging attribution scores across the entire document. We find that replacing standard cross-entropy loss gradients with the negative log-odds gradients surfaces the critical tokens from other uninformative ones. We can then aggregate only the top token scores to improve ground truth recall by 35 to 72 percentage points across multiple baselines on our diagnostic benchmark. The negative log-odds correction also generalizes to FTRACE-TREX, improving counterfactual retraining performance for every method we test, by up to 4.9x.",
-      "matchedBy": [
-        "arxiv",
-        "data / retrieval",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Data / Retrieval",
-      "categories": [
-        "Data / Retrieval",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2607.28229",
       "title": "EMBL AI Librarian: Life-Sciences Knowledge Layer for AI Agents",
       "authors": "Luigi Sigillo, Matteo Silvestri, Francesco Tabaro, Rajat Bhatnagar, Syed Irtaza Mubashar, Matt Jeffryes, Daljit Nijjer, Vittorio Perera, Ola Spjuth, Julio Saez-Rodriguez, Melissa Harrison, Fabio Petroni",
@@ -36847,6 +37015,35 @@
       ]
     },
     {
+      "id": "2610.40362",
+      "title": "Your LR Schedule May Not Be Principled: Effective Learning Rate Scheduling in Weight-Normalized Training",
+      "authors": "Qifan Yu, Xinyu Ma, Xingyan Bin, Di He",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 80,
+      "paper": "https://arxiv.org/abs/2610.40362",
+      "source": "https://www.alphaxiv.org/abs/2610.40362",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40362.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "Weight-normalized (WN) training is emerging as a compelling alternative to conventional weight decay (WD), with recent studies reporting substantial pretraining loss gains. We show that these gains are driven primarily by the induced effective learning rate (ELR) trajectory rather than by normalization alone. Matching ELR trajectories largely collapses the training loss dynamics of WN and WD. Schedule design should therefore target ELR rather than the nominal learning rate (LR) alone. Building on this principle, we propose AIR (Affine Inverse-square-Root decay), which combines a theoretically derived $1/\\sqrt{t}$ decay with an affine adjustment to satisfy prescribed peak and terminal LRs over a finite training horizon. We further identify late-stage ELR scheduling as a key source of its gains, because a shared late schedule attenuates the effect of earlier LR choices. Experiments on 128 B-token Mixture-of-Experts pretraining demonstrate that AIR outperforms cosine and other candidate schedules in training loss, downstream performance, and hyperparameter robustness, reducing terminal training loss by approximately 0.01 relative to cosine at matched cumulative LR. Applying the same ELR trajectory to WD reproduces the corresponding training dynamics, showing that the benefits extend beyond fixed-norm training and establishing ELR as the principled scheduling object.",
+      "matchedBy": [
+        "hugging face daily",
+        "language modeling",
+        "frontier training",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2606.16733",
       "title": "A First-Principles Derivation of LLM Policy Optimization: From Expected Reward to GRPO and Its Structural Extensions",
       "authors": "",
@@ -37987,32 +38184,6 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
-      ]
-    },
-    {
-      "id": "2610.40051",
-      "title": "Rethinking Pre-pretraining",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 79,
-      "paper": "https://arxiv.org/abs/2610.40051",
-      "source": "https://www.alphaxiv.org/abs/2610.40051",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40051.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
       ]
     },
     {
@@ -63606,7 +63777,7 @@
       "published": "2026-10-29",
       "score": 78,
       "paper": "https://arxiv.org/abs/2610.39664",
-      "source": "https://www.alphaxiv.org/abs/2610.39664",
+      "source": "https://huggingface.co/papers/2610.39664",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2610.39664.jpg",
@@ -73591,7 +73762,7 @@
     {
       "id": "2610.18774",
       "title": "GreenWAM: A World Foundation Model for Robotics",
-      "authors": "G. Sidorov, Valerii Kornilov, Denis Grankin, P. Fedotova, A. Postnikov",
+      "authors": "G. Sidorov, Valerii Kornilov, Denis Grankin, Polina Fedotova, Aleksey Postnikov",
       "org": "",
       "published": "2026-10-13",
       "score": 78,
@@ -137333,33 +137504,6 @@
       ]
     },
     {
-      "id": "2610.40362",
-      "title": "Your LR Schedule May Not Be Principled: Effective Learning Rate Scheduling in Weight-Normalized Training",
-      "authors": "Qifan Yu, Xinyu Ma, Xingyan Bin, Di He",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2610.40362",
-      "source": "https://huggingface.co/papers/2610.40362",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40362.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "Weight-normalized (WN) training is emerging as a compelling alternative to conventional weight decay (WD), with recent studies reporting substantial pretraining loss gains. We show that these gains are driven primarily by the induced effective learning rate (ELR) trajectory rather than by normalization alone. Matching ELR trajectories largely collapses the training loss dynamics of WN and WD. Schedule design should therefore target ELR rather than the nominal learning rate (LR) alone. Building on this principle, we propose AIR (Affine Inverse-square-Root decay), which combines a theoretically derived $1/\\sqrt{t}$ decay with an affine adjustment to satisfy prescribed peak and terminal LRs over a finite training horizon. We further identify late-stage ELR scheduling as a key source of its gains, because a shared late schedule attenuates the effect of earlier LR choices. Experiments on 128 B-token Mixture-of-Experts pretraining demonstrate that AIR outperforms cosine and other candidate schedules in training loss, downstream performance, and hyperparameter robustness, reducing terminal training loss by approximately 0.01 relative to cosine at matched cumulative LR. Applying the same ELR trajectory to WD reproduces the corresponding training dynamics, showing that the benefits extend beyond fixed-norm training and establishing ELR as the principled scheduling object.",
-      "matchedBy": [
-        "hugging face daily",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "huggingface"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2610.37255",
       "title": "Your Policy Is Secretly a Harness: The Decision Geometry of Agent Interfaces",
       "authors": "Jian Mu, Ruibo Shen, Yao SHU",
@@ -138661,6 +138805,38 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2610.40565",
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "authors": "Pranjal Aggarwal, Sean Welleck",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 77,
+      "paper": "https://arxiv.org/abs/2610.40565",
+      "source": "https://www.alphaxiv.org/abs/2610.40565",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40565.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The core bottleneck is that creating better simulations requires significant expert effort and therefore does not scale. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. We select simulations based on U.S. GDP data to cover economically valuable physical work, define what makes a good simulation and a good task, and develop an adversarial creation-audit loop that checks each simulation and task against these definitions. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty. Even the best frontier models fail on every RoboWorld test task, achieving an average reward of only 0.06. Building on RoboWorld, we introduce several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, self-assisted learning from the model's own privileged experience, and code policies that generate demonstrations across varied scenes to train vision-language-action models (VLAs) such as $π_{0.5}$. Each of these substantially improves performance. We release our pipeline, RL environments, and benchmark to facilitate future research. Code and data are available at https://gym-anything.github.io/robotics",
+      "matchedBy": [
+        "arxiv",
+        "robotics",
+        "frontier training",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -185870,14 +186046,17 @@
       "summary": "Simple visual symbols can steer VLM behavior without matching models’ stated interpretations: a red heart can prompt recursive coding solutions. In communication games, models transmit abstract meanings creatively, but intuitive visual cues often fail across models.",
       "matchedBy": [
         "papers with code",
-        "vision/multimodal"
+        "vision/multimodal",
+        "Vision-language model (VLM)",
+        "language modeling"
       ],
       "sources": [
         "paperswithcode"
       ],
       "category": "Vision/Multimodal",
       "categories": [
-        "Vision/Multimodal"
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -188470,7 +188649,10 @@
       "summary": "Self-evolving agents improve aggregate performance but trade stability for plasticity across drifting tasks. Global prompt edits interfere across workflows, while similarity-based retrieval can collide on conflicting tasks, leaving current methods incomplete continual learners.",
       "matchedBy": [
         "papers with code",
-        "language modeling"
+        "language modeling",
+        "Agent Skills",
+        "GEPA",
+        "Large language model (LLM)"
       ],
       "sources": [
         "paperswithcode"
@@ -227520,7 +227702,9 @@
       "matchedBy": [
         "arxiv",
         "language modeling",
-        "papers with code"
+        "papers with code",
+        "Continuous Diffusion Language Model",
+        "Cross-Entropy (CE)"
       ],
       "sources": [
         "arxiv",
@@ -251106,32 +251290,6 @@
       "thumbnail": "./thumbs/2609.19482.jpg",
       "firstSeenAt": "2026-09-18T01:32:39.887Z",
       "summary": "Algebraic Retrieval lets AI agents compose search strategies at query time. Relevance criteria, eligibility constraints, and ranking preferences can be expressed together in a mathematical query. The query surface exposes available operations, so an agent can combine them for the question at hand and revise a program after inspecting results. We evaluate execution parity, not agent behavior or retrieval quality. Building on Programmatic Embedding Modulation (PEM), which exposes vector and score arithmetic during retrieval, we demonstrate contrastive scoring, candidate-pool reranking, and weighted ranking as composable queries, alongside executable SQL and PyTerrier counterparts. On the public 11,429-document Vaswani fixture, each program's implementations select the same document set with score differences below 1e-6; one tied pair orders differently across scoring paths.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2610.40503",
-      "title": "Algebraic World Model: From Exploration to Proofs",
-      "authors": "Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2610.40503v1",
-      "source": "https://arxiv.org/abs/2610.40503v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40503.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "AI has made remarkable progress in mathematics, solving challenging problems with machine-checkable proofs in Lean, yet typically relying on predefined mathematical definitions and formal specifications. This raises a natural question: can it reason rigorously about an unknown world? We introduce the Algebraic World Model (AWM), a framework that turns interaction with unfamiliar environments into explicit mathematical models supporting formal reasoning. AWM explores the environment and develops executable Python hypotheses, continually testing and revising them against observations. It then structures these hypotheses into typed objects and shared rules, simplifies their structure through category-theory-guided transformations, and formalizes the resulting model in Lean 4 to prove reachability and impossibility. AWM can formally prove that a goal is unreachable, even beyond explored trajectories. On two impossible game levels, it constructs closed, kernel-checked Lean proofs excluding every legal winning sequence in all six runs, while Claude Opus 5.5 and GPT-6 Astra, equipped with coding tools, produce none in twelve baseline runs. Four of AWM's six initial bounds are correct, compared with one for Opus 5.5 and none for GPT-6 Astra; given only feedback that a cheaper win exists, AWM revises its rules and constructs new proofs, reaching six of six correct bounds. Moreover, AWM produces interpretable mathematical models whose rules can be inspected and tested step by step. Across all 25 public ARC-AGI-3 games, these models enable Lean to replay the winning trajectories of all 183 levels and generalize beyond observed play, predicting unseen transitions and detecting changes in game mechanics. With Claude Opus 5, AWM clears all levels with a score of 99.9, while its certified winning trajectories use only 43% of the human baseline's actions.",
       "matchedBy": [
         "arxiv",
         "language modeling"
@@ -346533,36 +346691,6 @@
       ]
     },
     {
-      "id": "2610.40565",
-      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
-      "authors": "Pranjal Aggarwal, Sean Welleck",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2610.40565v1",
-      "source": "https://arxiv.org/abs/2610.40565v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40565.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "Realistic, fast robotics simulations could enable large-scale training of embodied AI models that transfer to the real world. However, despite decades of progress, available simulations cover only a narrow range of real-world tasks and physical phenomena. The core bottleneck is that creating better simulations requires significant expert effort and therefore does not scale. To address this, we introduce Gym-Anything for Robotics, a framework in which coding agents create realistic robotics simulations. Our core insight is that simulation creation is a coding agent task, so improvements in coding agents translate directly into richer and more faithful simulations. We select simulations based on U.S. GDP data to cover economically valuable physical work, define what makes a good simulation and a good task, and develop an adversarial creation-audit loop that checks each simulation and task against these definitions. Using this pipeline, we build RoboWorld, a set of 25 simulations with 25 test and 175 training RL environments of varying difficulty. Even the best frontier models fail on every RoboWorld test task, achieving an average reward of only 0.06. Building on RoboWorld, we introduce several new ways for frontier models to improve, including in-context learning across repeated attempts, a privileged teacher that reads the simulator state and teaches a student in context, self-assisted learning from the model's own privileged experience, and code policies that generate demonstrations across varied scenes to train vision-language-action models (VLAs) such as $π_{0.5}$. Each of these substantially improves performance. We release our pipeline, RL environments, and benchmark to facilitate future research. Code and data are available at https://gym-anything.github.io/robotics",
-      "matchedBy": [
-        "arxiv",
-        "robotics",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Frontier Training",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2610.37567",
       "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
       "authors": "Pranjal Aggarwal, Sean Welleck",
@@ -353881,34 +354009,6 @@
       "categories": [
         "Vision/Multimodal",
         "Frontier Training",
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2610.40325",
-      "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
-      "authors": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan, Shruti Bhosale, Mike Lewis, Maryam Fazel-Zarandi, Shashank Rajput, Sujan Kumar Gonugondla",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2610.40325v1",
-      "source": "https://arxiv.org/abs/2610.40325v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40325.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "Looping in transformer models reuses weights by repeatedly applying the same transformer, or parts of it, making the model deeper without increasing its parameter count. Whether looping is useful depends on which constraint dominates: model size, training compute, or autoregressive inference efficiency. We study these trade-offs jointly in dense decoder-only transformers trained from scratch, varying which parts of the model are looped, how many loops are applied, and how information is passed between loops. Our experiments span models with up to 1B parameters, trained on up to 155B tokens with up to $1.07\\times10^{21}$ FLOPs and 32 loops. We find that looping the full transformer generally gives the strongest quality at a fixed parameter budget, whereas looping a middle block of layers gives a better return when training FLOPs are constrained. Adding loops is not uniformly beneficial: gains eventually saturate, reverse, or become unstable. This motivates asking whether forcing every loop to use the same weights limits the benefit of deeper looping. We address this by adding small loop-specific low-rank adapters that improve quality, with larger gains as more loops are added. Looped transformers also suffer a decoding slowdown proportional to the number of loops. Parallel Loop Transformers address this by passing hidden states between loops across adjacent token positions, allowing loop stages to run concurrently. However, in our experiments the original formulation does not consistently retain the quality gains of ordinary looping. We find that preserving the current-token embedding and separately normalizing it and the previous-token hidden state before combining them recovers strong performance across model scales and training budgets. Together, these results show that effective looping requires matching the design to the resource constraint and inference setting.",
-      "matchedBy": [
-        "arxiv",
-        "serving",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Serving",
-      "categories": [
-        "Serving",
         "Language Modeling"
       ]
     },
@@ -381138,36 +381238,6 @@
         "Robotics",
         "Language Modeling",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2610.40495",
-      "title": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
-      "authors": "Oliver Hahn, Rodrigo Marcuzzi, Sangeetha Grama Srinivasan, Alessandro Burzio, Sherwin Bahmani, Jiahui Huang, Stefan Roth, Shengyu Huang, Qunjie Zhou, Laura Leal-Taixé",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2610.40495v1",
-      "source": "https://arxiv.org/abs/2610.40495v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40495.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "We present LucidLyra, a framework that makes generatively reconstructed 3D scenes directly queryable for semantics and instances in a feed-forward manner from video latents. While generative 3D reconstruction can synthesize virtual environments from a single image, downstream applications in robotics and physical AI require not only visual realism but also access to scene semantics and object identities. Existing 3D understanding approaches, however, require captured multi-view scenes, have limited generalization capabilities, or rely on expensive per-scene processing and optimization. To bridge this gap, our method distills complementary knowledge from a camera-controlled video diffusion model and frozen 2D vision foundation models into a unified model to jointly infer 3D Gaussians encoding geometry, appearance, open-vocabulary semantics, and class-agnostic instance cues. The resulting scenes support novel-view rendering, open-vocabulary segmentation, and object grouping without per-scene optimization, while training requires neither manual 3D annotations nor captured multi-view data. Our method outperforms baselines combining state-of-the-art 3DGS segmentation approaches with generative 3D scene reconstruction on curated synthetic and real-image-conditioned benchmarks, while preserving reconstruction quality. Furthermore, our latent formulation naturally extends to monocular video, reconstructing structured dynamic 3D scenes across time. By turning renderable but unstructured outputs into queryable 3D worlds, LucidLyra enables downstream applications including 3D scene editing, 3D asset mining, and robotic simulation.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "robotics",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics",
-        "Language Modeling"
       ]
     },
     {
