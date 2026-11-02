@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-02T02:28:52.020Z",
+  "generatedAt": "2026-11-02T02:44:35.808Z",
   "sourceStats": {
-    "seed": 17960,
+    "seed": 18044,
     "paperswithcode": 540,
     "arxiv": 175,
-    "huggingface": 39,
+    "huggingface": 40,
     "alphaxiv": 21,
     "twitterSignals": 0,
     "total": 18044
@@ -10446,6 +10446,38 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2610.13732",
+      "title": "LAPT-Scale: Scaling Embodied Policies with Latent Action Pre-Training on Human Videos",
+      "authors": "Zhiyuan Xiang, Peidong Liu, Mingyang Li, Jiawei Li, Wenhow Li, Wenbo Ding, Xiang Deng",
+      "org": "",
+      "published": "2026-10-09",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2610.13732",
+      "source": "https://www.alphaxiv.org/abs/2610.13732",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.13732.jpg",
+      "firstSeenAt": "2026-10-12T02:22:25.370Z",
+      "summary": "Scaling generalist robotic policies is limited by the high cost of collecting embodied interaction data. Large-scale egocentric human videos offer a rich alternative, but they lack robot action labels, and existing action annotation methods are often noisy under real-world visual complexity and diverse manipulation dynamics. We introduce LAPT-Scale, a scalable latent action pre-training paradigm with two components: LAPT-Scale-LAM learns continuous latent actions by explaining frame-to-frame visual transitions in human videos and uses them as human-derived supervision, while LAPT-Scale-Policy trains a VLA policy through human-video latent-action pre-training, target-robot embodiment alignment, and task-specific post-training. Unlike prior vector-quantized LAMs, LAPT-Scale-LAM uses a continuous latent space to preserve fine-grained motion and interaction dynamics. We further combine perceptual, semantic, and optical-flow alignment signals to improve transition-level supervision beyond pixel reconstruction. Trained on 23.3K hours of egocentric video, LAPT-Scale-LAM provides implicit action supervision for policy pre-training, yielding consistent scaling gains and improving real-robot success from 63.3% to 85.0% as annotated human video scales from 1K to 5K hours. The learned policy also generalizes to unseen visual conditions.",
+      "matchedBy": [
+        "arxiv",
+        "robotics",
+        "vision/multimodal",
+        "frontier training",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Frontier Training"
       ]
     },
     {
@@ -76123,6 +76155,38 @@
       "category": "Serving",
       "categories": [
         "Serving"
+      ]
+    },
+    {
+      "id": "2610.40373",
+      "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
+      "authors": "Rongxing Ding, Hongyu Qu, Kehong Wu, Xudong Wang, Fan Zhang, Xinguang Xiang, Xiangbo Shu",
+      "org": "",
+      "published": "2026-10-29",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2610.40373",
+      "source": "https://huggingface.co/papers/2610.40373",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2610.40373.jpg",
+      "firstSeenAt": "2026-10-31T02:20:56.649Z",
+      "summary": "Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones, and final goal states through a Hierarchical Dependency Mask (HDM), establishing dependencies across temporal horizons. Building upon these predictions, Structure-Aware Latent World Modeling organizes future latent representations along the horizon, view, and spatial dimensions to facilitate fine-grained retrieval. Furthermore, Action-Guided Factorized World Retrieval adaptively retrieves relevant future information from the structured latent world based on evolving action representations during denoising, providing targeted guidance for action generation. Extensive experiments on two simulation benchmarks and six real-world robotic manipulation tasks demonstrate the effectiveness of our approach.",
+      "matchedBy": [
+        "arxiv",
+        "robotics",
+        "vision/multimodal",
+        "frontier training",
+        "hugging face daily"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Frontier Training"
       ]
     },
     {
@@ -352422,36 +352486,6 @@
       ]
     },
     {
-      "id": "2610.40373",
-      "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
-      "authors": "Rongxing Ding, Hongyu Qu, Kehong Wu, Xudong Wang, Fan Zhang, Xinguang Xiang, Xiangbo Shu",
-      "org": "",
-      "published": "2026-10-29",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2610.40373v1",
-      "source": "https://arxiv.org/abs/2610.40373v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.40373.jpg",
-      "firstSeenAt": "2026-10-31T02:20:56.649Z",
-      "summary": "Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering their relevance to current action requirements. To address these limitations, we propose HiFOR, a hierarchical foresight framework with action-guided world retrieval. Specifically, Hierarchical Foresight Prediction jointly predicts short-term state evolution, semantic milestones, and final goal states through a Hierarchical Dependency Mask (HDM), establishing dependencies across temporal horizons. Building upon these predictions, Structure-Aware Latent World Modeling organizes future latent representations along the horizon, view, and spatial dimensions to facilitate fine-grained retrieval. Furthermore, Action-Guided Factorized World Retrieval adaptively retrieves relevant future information from the structured latent world based on evolving action representations during denoising, providing targeted guidance for action generation. Extensive experiments on two simulation benchmarks and six real-world robotic manipulation tasks demonstrate the effectiveness of our approach.",
-      "matchedBy": [
-        "arxiv",
-        "robotics",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2610.07377",
       "title": "High Speed Network Processing for Scientific Computing in the Open Cloud Testbed",
       "authors": "Miriam Leeser, Michael Zink, Suranga Handagala, Carlos Ruben Dell'Aquila, Verena Martinez Outschoorn, Rafael Coelho Lopes de Sa",
@@ -370409,36 +370443,6 @@
       "categories": [
         "Language Modeling",
         "Serving"
-      ]
-    },
-    {
-      "id": "2610.13732",
-      "title": "LAPT-Scale: Scaling Embodied Policies with Latent Action Pre-Training on Human Videos",
-      "authors": "Zhiyuan Xiang, Peidong Liu, Mingyang Li, Jiawei Li, Wenhow Li, Wenbo Ding, Xiang Deng",
-      "org": "",
-      "published": "2026-10-09",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2610.13732v1",
-      "source": "https://arxiv.org/abs/2610.13732v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2610.13732.jpg",
-      "firstSeenAt": "2026-10-12T02:22:25.370Z",
-      "summary": "Scaling generalist robotic policies is limited by the high cost of collecting embodied interaction data. Large-scale egocentric human videos offer a rich alternative, but they lack robot action labels, and existing action annotation methods are often noisy under real-world visual complexity and diverse manipulation dynamics. We introduce LAPT-Scale, a scalable latent action pre-training paradigm with two components: LAPT-Scale-LAM learns continuous latent actions by explaining frame-to-frame visual transitions in human videos and uses them as human-derived supervision, while LAPT-Scale-Policy trains a VLA policy through human-video latent-action pre-training, target-robot embodiment alignment, and task-specific post-training. Unlike prior vector-quantized LAMs, LAPT-Scale-LAM uses a continuous latent space to preserve fine-grained motion and interaction dynamics. We further combine perceptual, semantic, and optical-flow alignment signals to improve transition-level supervision beyond pixel reconstruction. Trained on 23.3K hours of egocentric video, LAPT-Scale-LAM provides implicit action supervision for policy pre-training, yielding consistent scaling gains and improving real-robot success from 63.3% to 85.0% as annotated human video scales from 1K to 5K hours. The learned policy also generalizes to unseen visual conditions.",
-      "matchedBy": [
-        "arxiv",
-        "robotics",
-        "vision/multimodal",
-        "frontier training"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Frontier Training"
       ]
     },
     {
