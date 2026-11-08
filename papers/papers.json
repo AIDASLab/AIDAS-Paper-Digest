@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-07T03:11:30.127Z",
+  "generatedAt": "2026-11-08T02:25:49.246Z",
   "sourceStats": {
-    "seed": 18890,
+    "seed": 18891,
     "paperswithcode": 540,
     "arxiv": 175,
     "huggingface": 32,
     "alphaxiv": 21,
     "twitterSignals": 0,
-    "total": 18891
+    "total": 18897
   },
   "papers": [
     {
@@ -391,7 +391,7 @@
     {
       "id": "2609.19969",
       "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
-      "authors": "Kexing Zhou, Jialiang Huang, Jialin Zhao, Jiamin Tang, Jian Zhou, Jianan Tong, Jianwen Li, Jiaqi Zhu, Jiarui Wang, Jiasheng Ye, Jiashi Li, Jiaxin Xu, Jiaying Ding, Jibai Lu, Jiewen Hu, Jin Yan, Jincheng Zhai, Jingchang Chen, Jingcheng Hu, Jingli Zhou, Jingsheng Xu, Jingting Xiang, Jingyan Yun, Jingyang Yuan, Jingyuan Cheng, Jinhua Zhu, Jinpeng Wang, Jinyi Chen, Jinyi Hu, Jiping Yu, Jueliang Guo, Junbo Pei, Junbo Sun, Junguang Jiang, Junjie Qiu, Junkang Zhou, Junqi Liu, Junren Li, Junxian Li, Junxiao Song, Junyi Guo, Kai Dong, Kaige Gao, Kang Guan, Kangdong Yuan, Ke Hong, Ke Xu, Kefan Zhao, Kexin Ji, Kexin Zhang, Kuai Yu, Lan Zhang, Lean Wang, Lecong Zhang, Lei Wang, Letian Gao, Liang Zhao, Liansheng Xu, Lihua Guo, Lingxiao Luo, Lingyue Fu, Litao Deng, Litong Wang, Liyue Zhang, Longhao Chen, Lu Chen, Luotian Huang, Luyao Ma, Luyao Wang, M. S. Di, Max Mei, Menghao Ye, Miao Cui, Mingchuan Zhang, Minghua Zhang, Minghui Tang, Mingjing Zhang, Mingqi Wei, Mingshu Chen, Mingxing Liu, Mingxu Zhou, Mingyu Xu, Mingyu Yang, Mingze Wang, Muyang Chen, Ni Shentu, Ning Wang, Niufang Ning, Panpan Huang, Peixin Cong, Peiyi Wang, Peiyuan Xin, Pengfei Ren, Pengfei Yan, Pengle Zhang, Qi Kang, Qi Tang, Qiancheng Wang, Qiang Li, Qihao Zhu, Qingyang Li, Qinyu Chen, Qiushi Du, Qizhou Guo, Rongxian Xu, Rui Ding, Rui Hu, Rui Tian, Rui Yu, Ruidong Zhu, Ruifan Xu, Ruihang Xia, Ruijie Lu, Ruilin Geng, Ruipeng Hong, Ruiqi Ge, Ruisong Zhang, Ruize Sun, Ruizhe Pan, Runji Wang, Runqian Chen, Runxin Xu, Ruohong Tian, Ruomeng Shen, Ruoyu Zhang, Ryan X., S. H. Liu, Shanghao Lu, Shangyan Zhou, Shanhuang Chen, Shaofei Cai, Shaoheng Nie, Shaoyuan Chen, Shengding Hu, Shengkai Lin, Shengwen Ran, Shengyu Liu, Shengyuan Jia, Shi Bai, Shi Feng, Shicheng Xu, Shichun Liu, Shiqiang Hu, Shirong Ma, Shiyu Wang, Shiyuan Feng, Shufan Gong, Shuhan Lin, Shuiping Yu, Shunfeng Zhou, Shuomeng Wang, Shuting Guo, Shuting Pan, Shuying Yu, Sinuo Cao, Siyi Lin, Sizhe Chen, Songyang Chen, Songyang Zhou, Tao Ni, Tao Yun, Tian Jin, Tian Pei, Tian Ye, Tianle Lin, Tianran Ji, Tianyi Cui, Tianyuan Yue, Tingting Yu, Tongrui Xiong, Wangding Zeng, Wei Liu, Wei zhang, Weibin Xu, Weihao Zeng, Weilin Zhao, Wen Liu, Wenfeng Liang, Wenjie Pang, Wenjing Luo, Wenjing Yao, Wenjun Gao, Wenkai Shao, Wenkai Yang, Wenli Zhang, Wenlu Wang, Wenlve Huang, Wenqian Yan, Xi Gao, Xiang He, Xiangli Li, Xiangwen Wang, Xiangying Zhang, Xiankui Wei, Xiao Bi, Xiaojian Qu, Xiaokang Chen, Xiaokang Zhang, Xiaotao Nie, Xiaoyao Zou, Xiaoyuan Li, Xicheng Guo, Xieting Chu, Xin Cheng, Xin Xie, Xinbo Xu, Xingchao Liu, Xingchen Liu, Xingkai Yu, Xingyou Li, Xintong Yao, Xinyang Chen, Xinyong Jiang, Xu Chen, Xuanyu Wang, Xubei Zhong, Xuecheng Su, Xuejie Liu, Xuheng Lin, Xujie Fan, Xuncheng Zhao, Xuwei Fu, Y. C. Yan, Y. H. Jiang, Y. T. Wu, Y. W. M., Y. Z. Wang, Yafei Gao, Yang Yang, Yanru Ma, Yanwen Huang, Yao Li, Yao Meng, Yao Zhao, Yaofeng Sun, Yaohui Wang, Yaoyang Ye, Yehang Yin, Yexinrui Wu, Yi Qian, Yi Tao, Yi Yu, Yichao Zhang, Yichen Jiang, Yicheng Wang, Yifan Ding, Yifan Shi, Yifeng Peng, Yifeng Zhai, Yijia Wu, Yiliang Xiong, Yilun Wang, Ying He, Ying Zhou, Yingjia Luo, Yinmin Zhong, Yiping Wang, Yisong Wang, Yixiang Zhang, Yixiao Chen, Yixuan Tan, Yixuan Wei, Yiyang Ma, Yiyao Yang, Yiyuan Liu, Yizai Cai, Yizhen Wei, Yizhi Wang, Yonglun Yang, Yongqi Zhuo, Yongqiang Guo, Yongtong Wu, Yu Wu, Yu Zhang, Yuan Bian, Cheng Yuan, Yuan Ou, Yuan Sun, Yuanfan Xu, Yuanhang Sun, Yuanhao Li, Yuchen Liu, Yuchen Yao, Yudong Han, Yuduan Wang, Yuhan Wu, Yuhao Meng, Yuheng Zou, Yunchuan Wang, Yunfan Xiao, Yunfan Xiong, Yupeng Chen, Yuqian Cao, Yuqian Wang, Yuqing Chen, Yushun Zhang, Yutong Lin, Yuwei Xiao, Yuxian Gu, Yuxiang Huang, Yuxiang Luo, Yuxiang You, Yuxin Xiang, Yuxuan Liu, Yuxuan Zhou, Yuyang Zhou, Yuzhe Guo, Yuzhen Huang, Yuzhuo Bai, Z. Y. Z., Zanlin Ni, Zehao Wang, Zehua Zhao, Zehui Ren, Zejun Zhao, Zhangli Sha, Zhanying Wang, Zhaochen Zhang, Zhaoshuai Du, Zhe Fu, Zhean Xu, Zhenda Xie, Zheng Liu, Zhengyan Zhang, Zhenhua Dong, Zhewen Hao, Zhibang Wang, Zhibin Gou, Zhicheng Ma, Zhihao Li, Zhihong Shao, Zhihuan Huang, Zhijie Li, Zhirui Lu, Zhixian Huang, Zhixuan Chen, Zhixuan Pan, Zhiyu Wu, Zhizhou Ren, Zhu He, Zhuoshu Li, Zhuping Zhang, Zian Xu, Zihao Wang, Zihui Gu, Zijia Zhu, Zili Zhang, Zilin Li, Zilong Hou, Zilong Lyu, Ziqiao Wang, Ziwei Xie, Ziya Zhang, Ziyi Gao, Zizheng Pan, Zonglin Li, Zongqing Yao, Zui Chen, Zuofan Wu, Chenchen Ling, Chengyu Hou, Chong Chen, D. Li, Di Qi, Dongjie Ji, Fang Wei, Fanyi Xia, Fei Xie, Feiyi Tan, Hailong Guo, Haiyan Zhai, Hui Zhou, Huihui Tan, Huijie Li, Jia Luo, Jia Song, Jialu Cai, Jian Liang, Jiangting Zhou, Jiaqi Gao, Jiayi Shao, Jie Chen, Jieyu Yang, Jin Chen, Jingde Zhang, Jingzi Zhou, Jinqian Wang, Jinyang Liu, Junhua Ling, Junmin Zheng, Kaicheng Yang, Le Su, Leyi Xia, Liangfeng Ding, Lin Zhuo, Linwang Ma, Linyan Zhu, Liyu Cai, Luqi Yao, M. K. Zhang, Meng Li, Miao Lin, Miaojun Wang, Min Zhang, Mingming Li, Mingming Wang, Mingze Yin, Minmin Han, Nan Cao, Ningxin Ma, Panpan Wang, Peihan Lin, Peng Zhang, Qian Ying, Qiang Xiang, Qiao Wang, Qingmiao Mao, Qiwei Jiang, Rongli Jin, Ruyi Chen, Sha Tao, Shangmian Sun, Shaoqing Wu, Shichao Zou, Si Lei, Tianyang Zhang, Tianyu Sun, Tingting Yin, W. L. Xiao, Wei An, Weiwei Lin, Yuxiang Chen, Wenqing Hou, X. Lin, Xiangfei Meng, Xianzhu Huang, Xiao Peng, Xiaoqian Li, Xiaoting Zhang, Xiaowen Sun, Xiaoxiang Wang, Xiaoyu Ye, Xinrou Zhang, Xue Cao, Xueyin Chen, Yanan Zhou, Yanhong Xu, Yao Xia, Yao Xu, Yi Shao, Yihong Zhang, Yiling Ma, Ying Tang, Yining Lou, Yiru Chen, Yishi Piao, Yixuan Chen, Yong Xiong, Yuchen Xuan, Yuehan Yang, Yuer Xu, Yukun Zha, Yunxian Ma, Yuping Lin, Yuting Yan, Yutong Xie, Yuwen Sheng, Yuxuan Zhu, Zekai Zhang, Zhe Ju, Zhenzhen Lin, Zheren Gao, Zheyang Sun, Zhigang Yan, Zhongyu Wu, Zihua Qu, Ziling Yan, Ziyi Wan, Jia Yu, Haiyang Shen, Jinzhao Sun, Yukun Li, Xiaohan Wang, Wei Li, Yuxin Chen, Xin Liu, Xiaodong Liu, Hao Li, Wei Wang, Yang Zhang, Xiang Li, Hao Jiang, Shuo Yang, PENG SUN, Zi Wang, Di Huang, Ruihan Yang, Xinyu Yang, Wentao Zhang, Xinyu Zhang, KaiFeng Chen, DeepSeek-AI, Anyi Xu, B. Li, Bangcai Lin, Bing Xue, BingCheng Xian, Bingzheng Xu, Bochao Wu, Bowei Zhang, Boyi Deng, C. C. Yu, Chao Jin, Chaofan Lin, Chen Dong, Chenbing Wang, Chenfan Feng, Chengda Lu, Chenggang Zhao, Chengqi Deng, ChengYuan Zhang, Chenhao Xu, Chenqi Zhao, Chenze Shao, Chuhao Wang, Chuqi Zhang, Damai Dai, Dejian Yang, Deli Chen, Di Wu, Donghao Li, Erhang Li, Eric Fu, F. Zhou, Fangwei Zhou, Fangyun Lin, Fangzhou Yuan, Feiyu Xia, Fucong Dai, Guangbo Hao, Guanglin Li, Guanting Chen, Guoai Cao, Guofan Fan, Guolai Meng, Guowei Li, Haichuan Zhang, Haiyang Ma, Han Li, Han Yu, Han Zhang, Hangyuan Deng, Hanwei Xu, HanXiang Xu, Hanxun Zhong, Hao Guo, Hao Qin, Haodong Wen, Haofen Liang, Haofeng Huang, Haohua Liu, Haoling Zhang, Haoming Luo, Haoran Yang, Haotian Xu, Haotian Yuan, Haoting Huang, Haowen Luo, Haoyang Cai, Haoyu Chen, Haozhe Ji, Hengran Zhang, Hengrui Wang, Hengxu Wu, Honghui Ding, Hongxuan Tang, Huadong Wang, Huanqi Cao, Huazuo Gao, Hui Qu, Hui Zeng, J. Yang, J. H. Jin, J. H. Zhang, J. X. Zou, Jiahui Zhou, Jiajun Chen, C.C. Yu, J.H. Jin, J.H. Zhang, J.X. Zou, M.S. Di, S.H. Liu, Wei Zhang, Y.C. Yan, Y.H. Jiang, Y.T. Wu, Y.W. M., Y.Z. Wang, Z.Y. Z., M.K. Zhang, W.L. Xiao",
+      "authors": "Shufan Gong, DeepSeek-AI, Anyi Xu, B. Li, Bangcai Lin, Bing Xue, BingCheng Xian, Bingzheng Xu, Bochao Wu, Bowei Zhang, Boyi Deng, C. C. Yu, Chao Jin, Chaofan Lin, Chen Dong, Chenbing Wang, Chenfan Feng, Chengda Lu, Chenggang Zhao, Chengqi Deng, ChengYuan Zhang, Chenhao Xu, Chenqi Zhao, Chenze Shao, Chuhao Wang, Chuqi Zhang, Damai Dai, Dejian Yang, Deli Chen, Di Wu, Donghao Li, Erhang Li, Eric Fu, F. Zhou, Fangwei Zhou, Fangyun Lin, Fangzhou Yuan, Feiyu Xia, Fucong Dai, Guangbo Hao, Guanglin Li, Guanting Chen, Guoai Cao, Guofan Fan, Guolai Meng, Guowei Li, Haichuan Zhang, Haiyang Ma, Han Li, Han Yu, Han Zhang, Hangyuan Deng, Hanwei Xu, HanXiang Xu, Hanxun Zhong, Hao Guo, Hao Qin, Haodong Wen, Haofen Liang, Haofeng Huang, Haohua Liu, Haoling Zhang, Haoming Luo, Haoran Yang, Haotian Xu, Shaoyuan Chen, Shengding Hu, Shengkai Lin, Shengwen Ran, Shengyu Liu, Shengyuan Jia, Shi Bai, Shi Feng, Shicheng Xu, Shichun Liu, Shiqiang Hu, Shirong Ma, Shiyu Wang, Shiyuan Feng, Shuhan Lin, Shuiping Yu, Shunfeng Zhou, Shuomeng Wang, Shuting Guo, Shuting Pan, Shuying Yu, Sinuo Cao, Siyi Lin, Sizhe Chen, Songyang Chen, Songyang Zhou, Tao Ni, Tao Yun, Tian Jin, Tian Pei, Tian Ye, Tianle Lin, Tianran Ji, Tianyi Cui, Tianyuan Yue, Tingting Yu, Tongrui Xiong, Wangding Zeng, Wei Liu, Wei zhang, Weibin Xu, Weihao Zeng, Weilin Zhao, Wen Liu, Wenfeng Liang, Wenjie Pang, Wenjing Luo, Wenjing Yao, Wenjun Gao, Wenkai Shao, Wenkai Yang, Wenli Zhang, Wenlu Wang, Wenlve Huang, Wenqian Yan, Xi Gao, Xiang He, Xiangli Li, Xiangwen Wang, Xiangying Zhang, Xiankui Wei, Xiao Bi, Xiaojian Qu, Xiaokang Chen, Xiaokang Zhang, Xiaotao Nie, Xiaoyao Zou, Xiaoyuan Li, Xicheng Guo, Xieting Chu, Xin Cheng, Xin Xie, Xinbo Xu, Xingchao Liu, Xingchen Liu, Xingkai Yu, Xingyou Li, Xintong Yao, Xinyang Chen, Xinyong Jiang, Xu Chen, Xuanyu Wang, Xubei Zhong, Xuecheng Su, Xuejie Liu, Xuheng Lin, Xujie Fan, Xuncheng Zhao, Xuwei Fu, Y. C. Yan, Y. H. Jiang, Y. T. Wu, Y. W. M., Y. Z. Wang, Yafei Gao, Yang Yang, Yanru Ma, Yanwen Huang, Yao Li, Yao Meng, Yao Zhao, Yaofeng Sun, Yaohui Wang, Yaoyang Ye, Yehang Yin, Yexinrui Wu, Yi Qian, Yi Tao, Yi Yu, Yichao Zhang, Yichen Jiang, Yicheng Wang, Yifan Ding, Yifan Shi, Yifeng Peng, Yifeng Zhai, Yijia Wu, Yiliang Xiong, Yilun Wang, Ying He, Ying Zhou, Yingjia Luo, Yinmin Zhong, Yiping Wang, Yisong Wang, Yixiang Zhang, Yixiao Chen, Yixuan Tan, Yixuan Wei, Yiyang Ma, Yiyao Yang, Yiyuan Liu, Yizai Cai, Yizhen Wei, Yizhi Wang, Yonglun Yang, Yongqi Zhuo, Yongqiang Guo, Yongtong Wu, Yu Wu, Yu Zhang, Yuan Bian, Cheng Yuan, Yuan Ou, Yuan Sun, Yuanfan Xu, Yuanhang Sun, Yuanhao Li, Wenqing Hou, X. Lin, Xiangfei Meng, Xianzhu Huang, Xiao Peng, Xiaoqian Li, Xiaoting Zhang, Xiaowen Sun, Xiaoxiang Wang, Xiaoyu Ye, Xinrou Zhang, Xue Cao, Xueyin Chen, Yanan Zhou, Yanhong Xu, Yao Xia, Yao Xu, Yi Shao, Yihong Zhang, Yiling Ma, Ying Tang, Yining Lou, Yiru Chen, Yishi Piao, Yixuan Chen, Yong Xiong, Yuchen Xuan, Yuehan Yang, Yuer Xu, Yukun Zha, Yunxian Ma, Yuping Lin, Yuting Yan, Yutong Xie, Yuwen Sheng, Yuxuan Zhu, Zekai Zhang, Zhe Ju, Zhenzhen Lin, Zheren Gao, Zheyang Sun, Zhigang Yan, Zhongyu Wu, Zihua Qu, Ziling Yan, Ziyi Wan, Jinzhao Sun, Yukun Li, Zi Wang, Xinyu Yang, Wentao Zhang, Xinyu Zhang, KaiFeng Chen, Junqi Liu, Pengfei Ren, Pengfei Yan, Pengle Zhang, Qi Kang, Qi Tang, Qiancheng Wang, Qiang Li, Qihao Zhu, Qingyang Li, Qinyu Chen, Qiushi Du, Qizhou Guo, Rongxian Xu, Rui Ding, Rui Hu, Rui Tian, Rui Yu, Ruidong Zhu, Ruifan Xu, Ruihang Xia, Ruijie Lu, Ruilin Geng, Ruipeng Hong, Ruiqi Ge, Ruisong Zhang, Ruize Sun, Ruizhe Pan, Runji Wang, Runqian Chen, Runxin Xu, Ruohong Tian, Ruomeng Shen, Ruoyu Zhang, Ryan X., S. H. Liu, Shanghao Lu, Shangyan Zhou, Shanhuang Chen, Shaofei Cai, Shaoheng Nie, Yuchen Liu, Yuchen Yao, Yudong Han, Yuduan Wang, Yuhan Wu, Yuhao Meng, Yuheng Zou, Yunchuan Wang, Yunfan Xiao, Yunfan Xiong, Yupeng Chen, Yuqian Cao, Yuqian Wang, Yuqing Chen, Yushun Zhang, Yutong Lin, Yuwei Xiao, Yuxian Gu, Yuxiang Huang, Yuxiang Luo, Yuxiang You, Yuxin Xiang, Yuxuan Liu, Yuxuan Zhou, Yuyang Zhou, Yuzhe Guo, Yuzhen Huang, Yuzhuo Bai, Z. Y. Z., Zanlin Ni, Zehao Wang, Zehua Zhao, Zehui Ren, Zejun Zhao, Zhangli Sha, Zhanying Wang, Zhaochen Zhang, Zhaoshuai Du, Zhe Fu, Zhean Xu, Zhenda Xie, Zheng Liu, Zhengyan Zhang, Zhenhua Dong, Zhewen Hao, Zhibang Wang, Zhibin Gou, Zhicheng Ma, Zhihao Li, Zhihong Shao, Zhihuan Huang, Zhijie Li, Zhirui Lu, Zhixian Huang, Zhixuan Chen, Zhixuan Pan, Zhiyu Wu, Zhizhou Ren, Zhu He, Zhuoshu Li, Zhuping Zhang, Zian Xu, Zihao Wang, Zihui Gu, Zijia Zhu, Zili Zhang, Zilin Li, Zilong Hou, Zilong Lyu, Ziqiao Wang, Ziwei Xie, Ziya Zhang, Ziyi Gao, Zizheng Pan, Zonglin Li, Zongqing Yao, Zui Chen, Zuofan Wu, Chenchen Ling, Chengyu Hou, Chong Chen, D. Li, Di Qi, Dongjie Ji, Fang Wei, Fanyi Xia, Fei Xie, Feiyi Tan, Hailong Guo, Haiyan Zhai, Hui Zhou, Huihui Tan, Huijie Li, Jia Luo, Jia Song, Jialu Cai, Jian Liang, Jiangting Zhou, Jiaqi Gao, Jiayi Shao, Jie Chen, Jieyu Yang, Jin Chen, Jingde Zhang, Jingzi Zhou, Jinqian Wang, Jinyang Liu, Junhua Ling, Junmin Zheng, Kaicheng Yang, Le Su, Leyi Xia, Liangfeng Ding, Lin Zhuo, Linwang Ma, Linyan Zhu, Liyu Cai, Luqi Yao, M. K. Zhang, Meng Li, Miao Lin, Miaojun Wang, Min Zhang, Mingming Li, Mingming Wang, Mingze Yin, Minmin Han, Nan Cao, Ningxin Ma, Panpan Wang, Peihan Lin, Peng Zhang, Qian Ying, Qiang Xiang, Qiao Wang, Qingmiao Mao, Qiwei Jiang, Rongli Jin, Ruyi Chen, Sha Tao, Shangmian Sun, Shaoqing Wu, Shichao Zou, Si Lei, Tianyang Zhang, Tianyu Sun, Tingting Yin, W. L. Xiao, Wei An, Weiwei Lin, Yuxiang Chen, Jia Yu, Haiyang Shen, Xiaohan Wang, Wei Li, Yuxin Chen, Xin Liu, Xiaodong Liu, Hao Li, Wei Wang, Yang Zhang, Xiang Li, Hao Jiang, Shuo Yang, PENG SUN, Di Huang, Ruihan Yang, Haotian Yuan, Haoting Huang, Haowen Luo, Haoyang Cai, Haoyu Chen, Haozhe Ji, Hengran Zhang, Hengrui Wang, Hengxu Wu, Honghui Ding, Hongxuan Tang, Huadong Wang, Huanqi Cao, Huazuo Gao, Hui Qu, Hui Zeng, J. Yang, J. H. Jin, J. H. Zhang, J. X. Zou, Jiahui Zhou, Jiajun Chen, Jialiang Huang, Jialin Zhao, Jiamin Tang, Jian Zhou, Jianan Tong, Jianwen Li, Jiaqi Zhu, Jiarui Wang, Jiasheng Ye, Jiashi Li, Jiaxin Xu, Jiaying Ding, Jibai Lu, Jiewen Hu, Jin Yan, Jincheng Zhai, Jingchang Chen, Jingcheng Hu, Jingli Zhou, Jingsheng Xu, Jingting Xiang, Jingyan Yun, Jingyang Yuan, Jingyuan Cheng, Jinhua Zhu, Jinpeng Wang, Jinyi Chen, Jinyi Hu, Jiping Yu, Jueliang Guo, Junbo Pei, Junbo Sun, Junguang Jiang, Junjie Qiu, Junkang Zhou, Junren Li, Junxian Li, Junxiao Song, Junyi Guo, Kai Dong, Kaige Gao, Kang Guan, Kangdong Yuan, Ke Hong, Ke Xu, Kefan Zhao, Kexin Ji, Kexin Zhang, Kexing Zhou, Kuai Yu, Lan Zhang, Lean Wang, Lecong Zhang, Lei Wang, Letian Gao, Liang Zhao, Liansheng Xu, Lihua Guo, Lingxiao Luo, Lingyue Fu, Litao Deng, Litong Wang, Liyue Zhang, Longhao Chen, Lu Chen, Luotian Huang, Luyao Ma, Luyao Wang, M. S. Di, Max Mei, Menghao Ye, Miao Cui, Mingchuan Zhang, Minghua Zhang, Minghui Tang, Mingjing Zhang, Mingqi Wei, Mingshu Chen, Mingxing Liu, Mingxu Zhou, Mingyu Xu, Mingyu Yang, Mingze Wang, Muyang Chen, Ni Shentu, Ning Wang, Niufang Ning, Panpan Huang, Peixin Cong, Peiyi Wang, Peiyuan Xin, C.C. Yu, J.H. Jin, J.H. Zhang, J.X. Zou, M.S. Di, S.H. Liu, Wei Zhang, Y.C. Yan, Y.H. Jiang, Y.T. Wu, Y.W. M., Y.Z. Wang, Z.Y. Z., M.K. Zhang, W.L. Xiao",
       "org": "",
       "published": "2026-09-17",
       "score": 96,
@@ -6922,6 +6922,35 @@
       ]
     },
     {
+      "id": "2611.08478",
+      "title": "Scientist World: Grow a Research World for AI-Scientists",
+      "authors": "Taiming Lu, Sachin Konan, Zhuang Liu",
+      "org": "",
+      "published": "2026-11-05",
+      "score": 94,
+      "paper": "https://arxiv.org/abs/2611.08478",
+      "source": "https://www.alphaxiv.org/abs/2611.08478",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.08478.jpg",
+      "firstSeenAt": "2026-11-07T02:46:27.338Z",
+      "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment. Our autonomous pipeline extracts each paper's open-ended research question and reproduces its proposed method as the baseline; an AI-Scientist entering the environment is evaluated against what the human authors achieved. We release the first 1,000 verified environments. With the world as an evaluation, we found that frontier AI-Scientists can already surpass the human researchers 74% of the time. As a record of how AI does science, it contains 6,400 hours of research traces, with every idea, experiment, failure, and success. As a training ground, we are able to raise (+158%) a small model to match frontier models in research ideation. At last, AI-Scientists' own world has arrived, grown from and growing with science itself.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2607.20368",
       "title": "Self Gradient Forcing: Native Long Video Extrapolation",
       "authors": "Junhao Zhuang, Shiyi Zhang, Yuxuan Bian, Yaowei Li, Yawen Luo, Yijun Liu, Weiyang Jin, Songchun Zhang, Xianglong He, Xuying Zhang, Haoran Li, Haoyang Huang, Zeyue Xue, Nan Duan",
@@ -8326,6 +8355,32 @@
       "project": "",
       "thumbnail": "./thumbs/2607.18433.jpg",
       "firstSeenAt": "2026-07-23T00:12:42.402Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2611.inkling-2-small",
+      "title": "Introducing Inkling 2 Small",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 93,
+      "paper": "https://www.alphaxiv.org/abs/2611.inkling-2-small",
+      "source": "https://www.alphaxiv.org/abs/2611.inkling-2-small",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-07T02:46:27.338Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -12191,6 +12246,32 @@
       ]
     },
     {
+      "id": "2604.15823",
+      "title": "Watching Movies Like a Human: Egocentric Emotion Understanding for Embodied Companions",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2604.15823",
+      "source": "https://www.alphaxiv.org/abs/2604.15823",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2604.15823.jpg",
+      "firstSeenAt": "2026-11-08T02:25:49.246Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "robotics"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
+    },
+    {
       "id": "2607.26246",
       "title": "Weak-to-Strong On-Policy Distillation",
       "authors": "Fangxu Yu, Zinan Lin, Xiaodong Liu, Weijia Xu, Michael Xu, Tianyi Zhou, Jianfeng Gao",
@@ -13292,32 +13373,6 @@
       "project": "",
       "thumbnail": "",
       "firstSeenAt": "2026-08-23T23:34:29.480Z",
-      "summary": "",
-      "matchedBy": [
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2611.inkling-2-small",
-      "title": "Introducing Inkling 2 Small",
-      "authors": "",
-      "org": "",
-      "published": "",
-      "score": 91,
-      "paper": "https://www.alphaxiv.org/abs/2611.inkling-2-small",
-      "source": "https://www.alphaxiv.org/abs/2611.inkling-2-small",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "firstSeenAt": "2026-11-07T02:46:27.338Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -16640,6 +16695,42 @@
       ]
     },
     {
+      "id": "2611.08373",
+      "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+      "authors": "Fuhao Li, Wenxuan Song, Qizhou Huang, Ziyang Zhou, Jingbo Wang, Junwu E, Pengwei Wang, Yan Wang, Shunbo Zhou, Haoang Li",
+      "org": "",
+      "published": "2026-11-05",
+      "score": 90,
+      "paper": "https://arxiv.org/abs/2611.08373",
+      "source": "https://www.alphaxiv.org/abs/2611.08373",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.08373.jpg",
+      "firstSeenAt": "2026-11-07T02:46:27.338Z",
+      "summary": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
+      "matchedBy": [
+        "papers with code",
+        "Continual Learning",
+        "Robotics",
+        "Spatial Understanding",
+        "Dropout",
+        "robotics",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode",
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics",
+        "Vision/Multimodal",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2607.22534",
       "title": "SM4RT: Learning Structured Motion Geometry for 4D Reconstruction",
       "authors": "Shing Ho J. Lin, Wenzhao Zheng, Dong Zhuo, Yuqi Wu, Jie Zhou, Jiwen Lu",
@@ -18174,6 +18265,36 @@
       ],
       "category": "Vision/Multimodal",
       "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2611.07245",
+      "title": "MAC-v2: Long-horizon model-based value expansion from pixels",
+      "authors": "Kwanyoung Park, Sergey Levine",
+      "org": "",
+      "published": "2026-11-04",
+      "score": 89,
+      "paper": "https://arxiv.org/abs/2611.07245",
+      "source": "https://www.alphaxiv.org/abs/2611.07245",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.07245.jpg",
+      "firstSeenAt": "2026-11-06T03:24:30.767Z",
+      "summary": "We study whether \\emph{long-horizon model-based value expansion} can serve as an effective framework in pixel-based offline reinforcement learning (RL). Long-horizon model-based value expansion from pixels is substantially harder than state-based environments, as the agent must learn both the representation and its dynamics, and errors from either can accumulate recursively over imagined trajectories. We introduce MAC-v2, which enables long-horizon model-based expansion from pixels by training a reconstruction-free latent world model with action chunking. By learning representations from prediction and control objectives, MAC-v2 does not need to encode control-irrelevant visual details that can hinder the dynamics prediction. Action chunking further mitigates the prediction error by reducing the number of recursive model predictions required for value expansion. Across diverse visual benchmarks including visual OGBench, MMBench2, Robomimic, and LIBERO-10, MAC-v2 achieves strong performance against model-free and model-based offline RL baselines. Our analyses show that long-horizon model-based value expansion is critical for the performance of MAC-v2, and that both action chunking and latent learning objectives are essential for reliable long-horizon latent imagination.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "vision/multimodal",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
         "Vision/Multimodal"
       ]
     },
@@ -20185,6 +20306,34 @@
       "category": "Frontier Training",
       "categories": [
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2611.08016",
+      "title": "Learning Dynamics of On-Policy Distillation",
+      "authors": "Guan Zhe Hong, Sumeet Ramesh Motwani, Liang Chen, Yangchen Pan, Junchi Yu, Jialin Yu, Philip Torr, Yi Ren",
+      "org": "",
+      "published": "2026-11-05",
+      "score": 88,
+      "paper": "https://arxiv.org/abs/2611.08016",
+      "source": "https://www.alphaxiv.org/abs/2611.08016",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.08016.jpg",
+      "firstSeenAt": "2026-11-07T02:46:27.338Z",
+      "summary": "On-policy distillation (OPD) is emerging as an important paradigm for language-model post-training, combining dense teacher supervision with training on student-generated trajectories. This creates a feedback loop where each update changes the student and thereby the training distribution that generates subsequent updates. Yet, how this feedback shapes learning and generalization remains poorly understood. We conduct a mechanistic analysis of OPD's learning dynamics, distinguishing the two feedback loop stages: conversion of the distillation signal into parameter updates, and broadcast through which these updates change predictions across prefixes and reshape the rollout distribution. This framework helps us understand both limited student responsiveness despite substantial teacher-student disagreement, and degeneration when updates that improve local teacher agreement also increase the probability of unsuccessful continuations, exposing the student to unreliable supervision in subsequent rollouts. Finally, we show that offline distillation can prepare a student for OPD without significantly improving immediate held-out accuracy. While OPD alone may degrade generation, it can yield substantial accuracy gains after sufficient offline preparation. Together, our results connect teacher supervision, student geometry, and the evolving rollout distribution in determining the learning dynamics of OPD and its effects on downstream performance.",
+      "matchedBy": [
+        "arxiv",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
       ]
     },
     {
@@ -25196,35 +25345,6 @@
       ]
     },
     {
-      "id": "2611.08478",
-      "title": "Scientist World: Grow a Research World for AI-Scientists",
-      "authors": "Taiming Lu, Sachin Konan, Zhuang Liu",
-      "org": "",
-      "published": "2026-11-05",
-      "score": 86,
-      "paper": "https://arxiv.org/abs/2611.08478",
-      "source": "https://www.alphaxiv.org/abs/2611.08478",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.08478.jpg",
-      "firstSeenAt": "2026-11-07T02:46:27.338Z",
-      "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment. Our autonomous pipeline extracts each paper's open-ended research question and reproduces its proposed method as the baseline; an AI-Scientist entering the environment is evaluated against what the human authors achieved. We release the first 1,000 verified environments. With the world as an evaluation, we found that frontier AI-Scientists can already surpass the human researchers 74% of the time. As a record of how AI does science, it contains 6,400 hours of research traces, with every idea, experiment, failure, and success. As a training ground, we are able to raise (+158%) a small model to match frontier models in research ideation. At last, AI-Scientists' own world has arrived, grown from and growing with science itself.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training"
-      ]
-    },
-    {
       "id": "2606.30639",
       "title": "Self-Evolving World Models for LLM Agent Planning",
       "authors": "Xuan Zhang, Wenxuan Zhang, See-Kiong Ng, Yang Deng",
@@ -26883,6 +27003,32 @@
       "category": "Frontier Training",
       "categories": [
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2611.08286",
+      "title": "Interactive Visual Gym: Evaluating Visual Interaction Models with Simulated Users in Interactive Worlds",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2611.08286",
+      "source": "https://www.alphaxiv.org/abs/2611.08286",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.08286.jpg",
+      "firstSeenAt": "2026-11-08T02:25:49.246Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -30248,6 +30394,42 @@
       ]
     },
     {
+      "id": "2611.08483",
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "authors": "Qile Jiang, George Em Karniadakis",
+      "org": "",
+      "published": "2026-11-05",
+      "score": 84,
+      "paper": "https://arxiv.org/abs/2611.08483",
+      "source": "https://www.alphaxiv.org/abs/2611.08483",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.08483.jpg",
+      "firstSeenAt": "2026-11-07T02:46:27.338Z",
+      "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Agent Swarms",
+        "Multi-Agent Systems",
+        "Reasoning",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode",
+        "arxiv",
+        "huggingface",
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training",
+        "Serving"
+      ]
+    },
+    {
       "id": "2609.30027",
       "title": "Synthetic Hospital: An Open, Verifiable, Physician-Validated Longitudinal EHR Benchmark",
       "authors": "Christine Park, Valerie Chen, Tim Dettmers",
@@ -32951,6 +33133,32 @@
       ]
     },
     {
+      "id": "2611.08417",
+      "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 82,
+      "paper": "https://arxiv.org/abs/2611.08417",
+      "source": "https://www.alphaxiv.org/abs/2611.08417",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.08417.jpg",
+      "firstSeenAt": "2026-11-08T02:25:49.246Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2608.23566",
       "title": "Best Practice Critic Optimization",
       "authors": "Penghui Qi, Xiangxin Zhou, Wee Sun Lee",
@@ -34268,42 +34476,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2611.08373",
-      "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
-      "authors": "Fuhao Li, Wenxuan Song, Qizhou Huang, Ziyang Zhou, Jingbo Wang, Junwu E, Pengwei Wang, Yan Wang, Shunbo Zhou, Haoang Li",
-      "org": "",
-      "published": "2026-11-05",
-      "score": 82,
-      "paper": "https://arxiv.org/abs/2611.08373",
-      "source": "https://www.alphaxiv.org/abs/2611.08373",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.08373.jpg",
-      "firstSeenAt": "2026-11-07T02:46:27.338Z",
-      "summary": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
-      "matchedBy": [
-        "papers with code",
-        "Continual Learning",
-        "Robotics",
-        "Spatial Understanding",
-        "Dropout",
-        "robotics",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "paperswithcode",
-        "arxiv",
-        "huggingface",
-        "alphaxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics",
-        "Vision/Multimodal",
-        "Frontier Training"
       ]
     },
     {
@@ -35869,34 +36041,6 @@
       ]
     },
     {
-      "id": "2611.08016",
-      "title": "Learning Dynamics of On-Policy Distillation",
-      "authors": "Guan Zhe Hong, Sumeet Ramesh Motwani, Liang Chen, Yangchen Pan, Junchi Yu, Jialin Yu, Philip Torr, Yi Ren",
-      "org": "",
-      "published": "2026-11-05",
-      "score": 81,
-      "paper": "https://arxiv.org/abs/2611.08016",
-      "source": "https://www.alphaxiv.org/abs/2611.08016",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.08016.jpg",
-      "firstSeenAt": "2026-11-07T02:46:27.338Z",
-      "summary": "On-policy distillation (OPD) is emerging as an important paradigm for language-model post-training, combining dense teacher supervision with training on student-generated trajectories. This creates a feedback loop where each update changes the student and thereby the training distribution that generates subsequent updates. Yet, how this feedback shapes learning and generalization remains poorly understood. We conduct a mechanistic analysis of OPD's learning dynamics, distinguishing the two feedback loop stages: conversion of the distillation signal into parameter updates, and broadcast through which these updates change predictions across prefixes and reshape the rollout distribution. This framework helps us understand both limited student responsiveness despite substantial teacher-student disagreement, and degeneration when updates that improve local teacher agreement also increase the probability of unsuccessful continuations, exposing the student to unreliable supervision in subsequent rollouts. Finally, we show that offline distillation can prepare a student for OPD without significantly improving immediate held-out accuracy. While OPD alone may degrade generation, it can yield substantial accuracy gains after sufficient offline preparation. Together, our results connect teacher supervision, student geometry, and the evolving rollout distribution in determining the learning dynamics of OPD and its effects on downstream performance.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2610.22316",
       "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
       "authors": "",
@@ -36449,6 +36593,32 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling",
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2611.08264",
+      "title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 81,
+      "paper": "https://arxiv.org/abs/2611.08264",
+      "source": "https://www.alphaxiv.org/abs/2611.08264",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.08264.jpg",
+      "firstSeenAt": "2026-11-08T02:25:49.246Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
         "Vision/Multimodal"
       ]
     },
@@ -67470,6 +67640,34 @@
       "category": "Robotics",
       "categories": [
         "Robotics",
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2611.08477",
+      "title": "EgoGeneralist: Unifying Egocentric Action-Video Tasks through Video-Native Modeling",
+      "authors": "Yanlin Jin, Bowen Yang, Cheng Zhang, Yifan Yang, Zhe Li, Jianfei Cai, Kai Zhu",
+      "org": "",
+      "published": "2026-11-05",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2611.08477",
+      "source": "https://www.alphaxiv.org/abs/2611.08477",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.08477.jpg",
+      "firstSeenAt": "2026-11-07T02:46:27.338Z",
+      "summary": "Modern video models possess strong visual priors, yet do not natively represent human action in metric 3D space. We present EgoGeneralist, which adapts pretrained video generators to unify action-conditioned egocentric video generation, pose estimation, and joint action-video generation. Our role-adaptive action renderer provides video-native representations for multidirectional action-video learning, making metric motion usable as both a spatial control signal and a recoverable generation target. Cross-stream action-video coupling establishes close correspondence between metric motion and visual dynamics through lightweight adaptation while preserving the pretrained visual prior. Together, these designs establish a generalist framework spanning five action-video tasks. Despite adaptation only on controlled laboratory recordings, EgoGeneralist generalizes to diverse unseen scenes and interactions with effective action control and visual quality, bridging pretrained visual knowledge and metric 3D human motion.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
         "Vision/Multimodal"
       ]
     },
@@ -127716,41 +127914,6 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
-      ]
-    },
-    {
-      "id": "2611.08483",
-      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
-      "authors": "Qile Jiang, George Em Karniadakis",
-      "org": "",
-      "published": "2026-11-05",
-      "score": 78,
-      "paper": "https://arxiv.org/abs/2611.08483",
-      "source": "https://huggingface.co/papers/2611.08483",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.08483.jpg",
-      "firstSeenAt": "2026-11-07T02:46:27.338Z",
-      "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.",
-      "matchedBy": [
-        "papers with code",
-        "Agents",
-        "Agent Swarms",
-        "Multi-Agent Systems",
-        "Reasoning",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "paperswithcode",
-        "arxiv",
-        "huggingface"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Frontier Training",
-        "Serving"
       ]
     },
     {
@@ -197738,6 +197901,39 @@
       ]
     },
     {
+      "id": "pwc-123299",
+      "title": "Beam Model Technical Report",
+      "authors": "Adam Abdulhamid, Osama Abuelsorour, Yasmin Alameddine, Carlo Alfano, Duarte Alves, Brandon Amos, Selvaraj Anandaraj, Arseni Anisimovich, George Antoniadis, Ioannis Antonoglou, Sheila Babayan, Neeraj Bahl, Märt Bakler, Vidhisha Balachandran, Cameron Banks, Thibaut Barroyer, Navroop Bath, Irwan Bello, Jeremy Berman, Fernanda Bernaldo, Mrityunjay Bhadauria, Sanyam Bhutani, Tolga Bolukbasi, Anudhyan Boral, Joseph Brennan, Ethan Brooks, Sam Buchanan, Anton Bulyenov, John Cai, Catherine Cang, Eason Chan, Elijah Chanakira, Nathan Chandrasekaran, Hao Chen, Hong-You Chen, Jeffrey Chen, Saurav Chhatrapati, Ting-Rui Chiang, Brian Tiger Chow, Aakanksha Chowdhery, Timothy Chung, Rob Claire, John D. Co-Reyes, Anthony Conte, Eduardo Coronado-Montoya, Julien Crozon, Drew Csillag, Joe Cummings, Jeff Da, Samira Daruki, Tim Dawson, Charlie Deck, Arash Delijani, Ousmane Dia, Randy Dodgen, Ryan Douglas, Omar El-Kishky, Ben Ellis, Gamaleldin Elsayed, Simon Fan, Patrick Fernandes, Gabriel Ferns, Nick Fram, Ankush Garg, Florent Gbelidji, Iaroslav Geraskin, Behrooz Ghorbani, Ivan Glushkov, Neil Gollapudi, Scott Goodfriend, Yoni Gozlan, Christopher Grimm, Suriya Gunasekar, Shruti Gupta, Joel Gustafson, Emre Guven, Jon Hackmann, Jeremy Hadidjojo, Jess Hamrick, Ethan Hellman, Joscha Hoche, Spurthi Amba Hombaiah, Uzair Honda, Zijian Hu, Dzmitry Huba, Nancy Hung, Vladimir Ivanov, Shomik Jain, Mojan Javaheripi, Kevin Martin Jose, Aymen Kallala, Amog Kamsetty, Min Hyung Kang, Steven Kapturowski, Ramtin Keramati, Samuel Kessler, Sabina Kim, Seonghyeon Kim, Ivan Komarov, Agni Kumar, Thanard Kurutach, Jessica Landon, James Larochelle, Michael Laskin, Jonathan Lee, Jonathan Leung, Chenyu Li, Haoran Li, Rongzhao Li, Michelle Light, Boyan Lin, Hai Lin, Xiayue Charles Lin, Michael Linden, Ollie Liu, Wei Liu, Zichang Liu, Brian Lui, Amr Mahdi, Raunak Manjani, Kobe Martin, Lucas Maystre, Francis McCann, Brendan McLaughlin, Isabel Mehta, Alishah Momin, Gerard Moreno-Torres Bertran, Adriana Murga, Swarnashree Mysore Sathyendra, Ashley Nagaki, Vishal Nandavanam, Swaroop Nath, Jake Nations, Angus Ng, Thien Nguyen, Tyler Nichols, Elia Ovalle, James Pelly, Michelle Pieszko, Sashank Pisupati, Oleksandr Polozov, Piyush Prasad, Drew Proud, Salman Quazi, Asfandyar Qureshi, Marko Radmilac, Mohit Raghavendra, Vikash Rai, Ralph Recto, Anurag Reddy, Aksel Reedi, Abby Reider, David Renardy, Matthias Reso, Pierre Roux, David Rubinstein, Paul Ruh, Ildar Safarov, Himanshu Sahni, Adrian Samatan, Simon Sandrew, Adriel Saporta, Rohan Savargaonkar, Vlad Savinov, Nick Schank, Jonathon Schwartz, Tim Seah, Ahmad Sharif, Miriam Shlimovich, Hamid Shojanazeri, Yusuf Sindi, Teak Sittipunt, Kurt Smith, Nicolas Sonnerat, Joe Spisak, Raunak Srivastava, Richard Steigerwald, Adam Stein, Stu Stewart, Arnaud Stiegler, Jingtong Su, Alicia Sun, Zoey Sun, Jakub Sygnowski, Douglas Teixeira, Chetan Tekur, Zachary Tellman, Helen Thatcher, Romal Thoppilan, Anil Tolwani, Konstantin Topaloglou-Mundy, Dmitry Ulyumdzhiev, Meet Vadakkanchery, Christopher Vanderschuere, Balaji Varadarajan, Rohan Varma, Balaji Veeramani, Andreas Verdelis, Risto Vuorio, Tom Walshe, Allen Wang, Ewen Wang, Taiyi Wang, Zach Wentz, Peter Wiese, Travis Wilson, Jason Winters, Sam Wiseman, Arvin Wu, Jin Wu, Kai WU, Kenneth Xu, Mira Yadav, Xianjun Yang, Yao-Yuan Yang, Xiaolan You, Renault Young, Christina Yu, Biao Zhang, Gavin Zhang, Mingrui Zhang, Shenao Zhang, Jiesi Zhao, Mengjun Zhao, Xingchen Zhao, Mike Zhou, Tong Zhou, Zhenpeng Zhou, Tina Zhu",
+      "org": "",
+      "published": "2026-10-05",
+      "score": 60,
+      "paper": "https://reflection.ai/documents/beam-model-tech-report.pdf",
+      "source": "https://reflection.ai/documents/beam-model-tech-report.pdf",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-10-15T01:27:21.001Z",
+      "summary": "Beam is a 501B-parameter sparse MoE with 23B active parameters, trained on 23.8T curated tokens and over 100M RL rollouts. It targets coding, reasoning, and agentic workloads with competitive open-weight performance and efficient inference.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Coding Agents",
+        "Language Modeling",
+        "Reasoning",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling",
+        "Robotics"
+      ]
+    },
+    {
       "id": "pwc-123119",
       "title": "Beckmann World Models: Direct Terminal-Map Learning for One-Step Action-Conditioned Prediction",
       "authors": "Adam Lee, Shobhit Agarwal, June Pyo Suh",
@@ -215845,36 +216041,6 @@
       ]
     },
     {
-      "id": "pwc-123299",
-      "title": "Introducing Beam: Reflection's 501B open-weight model",
-      "authors": "",
-      "org": "",
-      "published": "2026-10-05",
-      "score": 60,
-      "paper": "https://reflection.ai/blog/introducing-beam",
-      "source": "https://reflection.ai/blog/introducing-beam",
-      "code": "",
-      "project": "",
-      "thumbnail": "",
-      "firstSeenAt": "2026-10-15T01:27:21.001Z",
-      "summary": "Beam is a 501B-parameter sparse MoE with 23B active parameters, trained on 23.8T curated tokens and over 100M RL rollouts. It targets coding, reasoning, and agentic workloads with competitive open-weight performance and efficient inference.",
-      "matchedBy": [
-        "papers with code",
-        "Agents",
-        "Coding Agents",
-        "Language Modeling",
-        "Reasoning",
-        "language modeling"
-      ],
-      "sources": [
-        "paperswithcode"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "pwc-122987",
       "title": "Introducing Claude Haiku 5.5",
       "authors": "",
@@ -231554,6 +231720,38 @@
       ]
     },
     {
+      "id": "pwc-131976",
+      "title": "Ripple-65B Preview, a Frontier Open-Weight Model",
+      "authors": "",
+      "org": "",
+      "published": "2026-11-04",
+      "score": 60,
+      "paper": "https://www.ricursive.com/ripple",
+      "source": "https://www.ricursive.com/ripple",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-08T02:25:49.246Z",
+      "summary": "Ripple-65B Preview is a 65B-parameter open-weight model trained from scratch for agentic coding and general use. Its architecture is optimized for the lab’s training and serving platforms, and it sets a new U.S. open-weight high on agentic coding.",
+      "matchedBy": [
+        "papers with code",
+        "Code Generation",
+        "Language Modeling",
+        "Large language model (LLM)",
+        "Online Reinforcement Learning (Online RL)",
+        "language modeling",
+        "frontier training"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2509.24261",
       "title": "Risk-Sensitive Reinforcement Learning for Alleviating Exploration Dilemmas in Large Language Models",
       "authors": "Yuhua Jiang, Jiawei Huang, Yufeng Yuan, Xin Mao, YuYue, Qianchuan Zhao, Lin Yan",
@@ -242794,6 +242992,36 @@
       "categories": [
         "Vision/Multimodal",
         "Language Modeling"
+      ]
+    },
+    {
+      "id": "2611.07176",
+      "title": "VINO: Revisiting 3D Representation Learning with Volume Transformers",
+      "authors": "Adrian Kruse, Kadir Yilmaz, Daan de Geus, Francis Engelmann, Bastian Leibe",
+      "org": "",
+      "published": "2026-11-04",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2611.07176",
+      "source": "https://paperswithcode.co/paper/2611.07176",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.07176.jpg",
+      "firstSeenAt": "2026-11-08T02:25:49.246Z",
+      "summary": "VINO improves 3D scene representations by pairing a ViT-like Volume Transformer with cleaner self-supervised objectives. It separates teacher targets from student perturbations, predicts masked content from visible geometry, and uses view-consistent distillation, improving dense linear probing across indoor and outdoor benchmarks.",
+      "matchedBy": [
+        "papers with code",
+        "3D instance segmentation",
+        "3D semantic segmentation",
+        "Point Cloud Registration",
+        "Knowledge Distillation",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
       ]
     },
     {
@@ -327870,32 +328098,6 @@
       ]
     },
     {
-      "id": "2611.08477",
-      "title": "EgoGeneralist: Unifying Egocentric Action-Video Tasks through Video-Native Modeling",
-      "authors": "Yanlin Jin, Bowen Yang, Cheng Zhang, Yifan Yang, Zhe Li, Jianfei Cai, Kai Zhu",
-      "org": "",
-      "published": "2026-11-05",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2611.08477v1",
-      "source": "https://arxiv.org/abs/2611.08477v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.08477.jpg",
-      "firstSeenAt": "2026-11-07T02:46:27.338Z",
-      "summary": "Modern video models possess strong visual priors, yet do not natively represent human action in metric 3D space. We present EgoGeneralist, which adapts pretrained video generators to unify action-conditioned egocentric video generation, pose estimation, and joint action-video generation. Our role-adaptive action renderer provides video-native representations for multidirectional action-video learning, making metric motion usable as both a spatial control signal and a recoverable generation target. Cross-stream action-video coupling establishes close correspondence between metric motion and visual dynamics through lightweight adaptation while preserving the pretrained visual prior. Together, these designs establish a generalist framework spanning five action-video tasks. Despite adaptation only on controlled laboratory recordings, EgoGeneralist generalizes to diverse unseen scenes and interactions with effective action control and visual quality, bridging pretrained visual knowledge and metric 3D human motion.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal"
-      ]
-    },
-    {
       "id": "2607.28243",
       "title": "EgoGenesis: Egocentric World-Action Modeling with Online Anchored Projective Memory and Action-3D RoPE",
       "authors": "Zexuan Yan, Yuzhou Wu, Yue Ma, Zonghang He, Kaibo Yin, Xiaobing Tu, Yinggui Wang, Jinkui Ren, Xiantao Zhang, Shijian Wang, Jinghong Liu, Linfeng Zhang",
@@ -399739,34 +399941,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2611.07245",
-      "title": "MAC-v2: Long-horizon model-based value expansion from pixels",
-      "authors": "Kwanyoung Park, Sergey Levine",
-      "org": "",
-      "published": "2026-11-04",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2611.07245v1",
-      "source": "https://arxiv.org/abs/2611.07245v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.07245.jpg",
-      "firstSeenAt": "2026-11-06T03:24:30.767Z",
-      "summary": "We study whether \\emph{long-horizon model-based value expansion} can serve as an effective framework in pixel-based offline reinforcement learning (RL). Long-horizon model-based value expansion from pixels is substantially harder than state-based environments, as the agent must learn both the representation and its dynamics, and errors from either can accumulate recursively over imagined trajectories. We introduce MAC-v2, which enables long-horizon model-based expansion from pixels by training a reconstruction-free latent world model with action chunking. By learning representations from prediction and control objectives, MAC-v2 does not need to encode control-irrelevant visual details that can hinder the dynamics prediction. Action chunking further mitigates the prediction error by reducing the number of recursive model predictions required for value expansion. Across diverse visual benchmarks including visual OGBench, MMBench2, Robomimic, and LIBERO-10, MAC-v2 achieves strong performance against model-free and model-based offline RL baselines. Our analyses show that long-horizon model-based value expansion is critical for the performance of MAC-v2, and that both action chunking and latent learning objectives are essential for reliable long-horizon latent imagination.",
-      "matchedBy": [
-        "arxiv",
-        "language modeling",
-        "vision/multimodal"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Language Modeling",
-      "categories": [
-        "Language Modeling",
-        "Vision/Multimodal"
       ]
     },
     {
