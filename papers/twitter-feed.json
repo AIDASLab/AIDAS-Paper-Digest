@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T04:16:19.057Z",
+  "generatedAt": "2026-11-13T03:32:33.667Z",
   "signals": [
     {
       "id": "2119559755241046499",
@@ -310,108 +310,6 @@
         "like_count": 998,
         "retweet_count": 53,
         "reply_count": 76
-      },
-      "urls": []
-    },
-    {
-      "id": "2110115573082570878",
-      "handle": "physical_int",
-      "name": "Physical Intelligence",
-      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
-      "verified": true,
-      "text": "Upload robot data, fine-tune our most capable models and connect your robots to cloud hosted inference through the API. We handle the infrastructure so you can focus on what’s unique to your use case.\nSee what teams are building and join the beta at pi.website/blog/api-beta",
-      "createdAt": "Tue Oct 13 21:08:51 +0000 2026",
-      "permalink": "https://twitter.com/physical_int/status/2110115573082570878",
-      "media": [],
-      "metrics": {
-        "like_count": 225,
-        "retweet_count": 13,
-        "reply_count": 6
-      },
-      "urls": [
-        "https://pi.website/blog/api-beta"
-      ]
-    },
-    {
-      "id": "2110115571681690051",
-      "handle": "physical_int",
-      "name": "Physical Intelligence",
-      "avatar": "https://pbs.twimg.com/profile_images/1851742218887008256/gpCSC4VP_normal.png",
-      "verified": true,
-      "text": "Announcing the beta release of the Pi API. We’ve partnered with companies across diverse industries to adapt our models to their robots and applications, from harvesting strawberries to assembling servers. Now we’re opening access to more teams.",
-      "createdAt": "Tue Oct 13 21:08:50 +0000 2026",
-      "permalink": "https://twitter.com/physical_int/status/2110115571681690051",
-      "media": [
-        {
-          "type": "video",
-          "image": "https://pbs.twimg.com/amplify_video_thumb/2110114891558490112/img/vxPgb6XJ-d9vKdgV.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 2364,
-        "retweet_count": 249,
-        "reply_count": 138
-      },
-      "urls": []
-    },
-    {
-      "id": "2110094374344265793",
-      "handle": "allen_ai",
-      "name": "Ai2",
-      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
-      "verified": false,
-      "text": "Molmo 2 already knew how to track objects in video. Its open code let Kai modify the model, while its open training data helped him understand what it had learned and prepare his own data—turning a general-purpose model into one tailored to his research.",
-      "createdAt": "Tue Oct 13 19:44:37 +0000 2026",
-      "permalink": "https://twitter.com/allen_ai/status/2110094374344265793",
-      "media": [
-        {
-          "type": "photo",
-          "image": "https://pbs.twimg.com/media/HUiPo49XgAAz0LP.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 1,
-        "retweet_count": 0,
-        "reply_count": 0
-      },
-      "urls": []
-    },
-    {
-      "id": "2110094373224427548",
-      "handle": "allen_ai",
-      "name": "Ai2",
-      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
-      "verified": false,
-      "text": "Kai fine-tuned Molmo 2 on sonar video then trained it on examples of tracking errors, instructions, &amp; corrections.\nIn tests, Molmo2Fish could fix some mistakes after guidance—for example, when two salmon had been assigned the same track.",
-      "createdAt": "Tue Oct 13 19:44:36 +0000 2026",
-      "permalink": "https://twitter.com/allen_ai/status/2110094373224427548",
-      "media": [
-        {
-          "type": "video",
-          "image": "https://pbs.twimg.com/ext_tw_video_thumb/2110094357399224320/pu/img/vhYo6Joc0kj4MYtJ.jpg"
-        }
-      ],
-      "metrics": {
-        "like_count": 1,
-        "retweet_count": 0,
-        "reply_count": 1
-      },
-      "urls": []
-    },
-    {
-      "id": "2110094372322635923",
-      "handle": "allen_ai",
-      "name": "Ai2",
-      "avatar": "https://pbs.twimg.com/profile_images/1819065604370051072/UrIOp6zI_normal.png",
-      "verified": false,
-      "text": "Tracking salmon by analyzing video helps researchers monitor their populations. But when a salmon-tracking system makes a mistake, like an overcount, fixing it can mean editing clips frame after frame by hand.\nWhat if you could just tell the system to fix what it got wrong?",
-      "createdAt": "Tue Oct 13 19:44:36 +0000 2026",
-      "permalink": "https://twitter.com/allen_ai/status/2110094372322635923",
-      "media": [],
-      "metrics": {
-        "like_count": 0,
-        "retweet_count": 0,
-        "reply_count": 1
       },
       "urls": []
     }
