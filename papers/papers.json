@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T03:31:51.881Z",
+  "generatedAt": "2026-11-15T02:38:00.554Z",
   "sourceStats": {
     "seed": 19779,
     "paperswithcode": 540,
@@ -7,7 +7,7 @@
     "huggingface": 34,
     "alphaxiv": 21,
     "twitterSignals": 0,
-    "total": 19779
+    "total": 19787
   },
   "papers": [
     {
@@ -391,7 +391,7 @@
     {
       "id": "2609.19969",
       "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
-      "authors": "Yuhao Meng, Zhaoshuai Du, Zhe Fu, Zhean Xu, Zhenda Xie, Zheng Liu, Zhengyan Zhang, Zhenhua Dong, Zhewen Hao, Zhibang Wang, Zhibin Gou, Zhicheng Ma, Zhihao Li, Zhihong Shao, Zhihuan Huang, Zhijie Li, Zhirui Lu, Zhixian Huang, Zhixuan Chen, Zhixuan Pan, Zhiyu Wu, Zhizhou Ren, Zhu He, Zhuoshu Li, Zhuping Zhang, Zian Xu, Zihao Wang, Zihui Gu, Zijia Zhu, Zili Zhang, Zilin Li, Zilong Hou, Zilong Lyu, Ziqiao Wang, Ziwei Xie, Ziya Zhang, Ziyi Gao, Zizheng Pan, Zonglin Li, Zongqing Yao, Zui Chen, Zuofan Wu, Chenchen Ling, Chengyu Hou, Chong Chen, D. Li, Di Qi, Dongjie Ji, Fang Wei, Fanyi Xia, Fei Xie, Feiyi Tan, Hailong Guo, Haiyan Zhai, Hui Zhou, Huihui Tan, Huijie Li, Jia Luo, Jia Song, Jialu Cai, Jian Liang, Jiangting Zhou, Jiaqi Gao, Jiayi Shao, Jie Chen, Jieyu Yang, Jin Chen, Jingde Zhang, Jingzi Zhou, Jinqian Wang, Jinyang Liu, Junhua Ling, Junmin Zheng, Kaicheng Yang, Le Su, Leyi Xia, Liangfeng Ding, Lin Zhuo, Linwang Ma, Linyan Zhu, Liyu Cai, Luqi Yao, M. K. Zhang, Meng Li, Miao Lin, Miaojun Wang, Min Zhang, Mingming Li, Mingming Wang, Mingze Yin, Minmin Han, Nan Cao, Ningxin Ma, Panpan Wang, Peihan Lin, Peng Zhang, Qian Ying, Qiang Xiang, Qiao Wang, Qingmiao Mao, Qiwei Jiang, Rongli Jin, Ruyi Chen, Sha Tao, Shangmian Sun, Shaoqing Wu, Shichao Zou, Si Lei, Tianyang Zhang, Tianyu Sun, Tingting Yin, W. L. Xiao, Wei An, Weiwei Lin, Yuxiang Chen, DeepSeek-AI, Anyi Xu, B. Li, Bangcai Lin, Bing Xue, BingCheng Xian, Bingzheng Xu, Bochao Wu, Bowei Zhang, Boyi Deng, C. C. Yu, Chao Jin, Chaofan Lin, Chen Dong, Chenbing Wang, Chenfan Feng, Chengda Lu, Chenggang Zhao, Chengqi Deng, ChengYuan Zhang, Chenhao Xu, Chenqi Zhao, Chenze Shao, Chuhao Wang, Chuqi Zhang, Damai Dai, Dejian Yang, Deli Chen, Di Wu, Donghao Li, Erhang Li, Eric Fu, F. Zhou, Fangwei Zhou, Fangyun Lin, Fangzhou Yuan, Feiyu Xia, Fucong Dai, Guangbo Hao, Guanglin Li, Guanting Chen, Guoai Cao, Guofan Fan, Guolai Meng, Guowei Li, Haichuan Zhang, Haiyang Ma, Han Li, Han Yu, Han Zhang, Hangyuan Deng, Hanwei Xu, HanXiang Xu, Hanxun Zhong, Hao Guo, Hao Qin, Haodong Wen, Haofen Liang, Haofeng Huang, Haohua Liu, Haoling Zhang, Haoming Luo, Haoran Yang, Haotian Xu, Yuchen Liu, Yuchen Yao, Yudong Han, Yuduan Wang, Yuhan Wu, Yuheng Zou, Yunchuan Wang, Yunfan Xiao, Yunfan Xiong, Yupeng Chen, Yuqian Cao, Yuqian Wang, Yuqing Chen, Yushun Zhang, Yutong Lin, Yuwei Xiao, Yuxian Gu, Yuxiang Huang, Yuxiang Luo, Yuxiang You, Yuxin Xiang, Yuxuan Liu, Yuxuan Zhou, Yuyang Zhou, Yuzhe Guo, Yuzhen Huang, Yuzhuo Bai, Z. Y. Z., Zanlin Ni, Zehao Wang, Zehua Zhao, Zehui Ren, Zejun Zhao, Zhangli Sha, Zhanying Wang, Zhaochen Zhang, Xuheng Lin, KaiFeng Chen, Xinyu Zhang, Wentao Zhang, Xinyu Yang, Ruihan Yang, Di Huang, Zi Wang, PENG SUN, Shuo Yang, Hao Jiang, Xiang Li, Yang Zhang, Wei Wang, Hao Li, Xiaodong Liu, Xin Liu, Yuxin Chen, Wei Li, Xiaohan Wang, Yukun Li, Jinzhao Sun, Haiyang Shen, Jia Yu, Ying Zhou, Yingjia Luo, Yinmin Zhong, Yiping Wang, Yisong Wang, Yixiang Zhang, Yixiao Chen, Yixuan Tan, Yixuan Wei, Yiyang Ma, Yiyao Yang, Yiyuan Liu, Yizai Cai, Yizhen Wei, Yizhi Wang, Yonglun Yang, Yongqi Zhuo, Yongqiang Guo, Yongtong Wu, Yu Wu, Yu Zhang, Yuan Bian, Cheng Yuan, Yuan Ou, Yuan Sun, Yuanfan Xu, Yuanhang Sun, Yuanhao Li, Wenqing Hou, X. Lin, Xiangfei Meng, Xianzhu Huang, Xiao Peng, Xiaoqian Li, Xiaoting Zhang, Xiaowen Sun, Xiaoxiang Wang, Xiaoyu Ye, Xinrou Zhang, Xue Cao, Xueyin Chen, Yanan Zhou, Yanhong Xu, Yao Xia, Yao Xu, Yi Shao, Yihong Zhang, Yiling Ma, Ying Tang, Yining Lou, Yiru Chen, Yishi Piao, Yixuan Chen, Yong Xiong, Yuchen Xuan, Yuehan Yang, Yuer Xu, Yukun Zha, Yunxian Ma, Yuping Lin, Yuting Yan, Yutong Xie, Yuwen Sheng, Yuxuan Zhu, Zekai Zhang, Zhe Ju, Zhenzhen Lin, Zheren Gao, Zheyang Sun, Zhigang Yan, Zhongyu Wu, Zihua Qu, Ziling Yan, Ziyi Wan, Haotian Yuan, Haoting Huang, Haowen Luo, Haoyang Cai, Haoyu Chen, Haozhe Ji, Hengran Zhang, Hengrui Wang, Hengxu Wu, Honghui Ding, Hongxuan Tang, Huadong Wang, Huanqi Cao, Huazuo Gao, Hui Qu, Hui Zeng, J. Yang, J. H. Jin, J. H. Zhang, J. X. Zou, Jiahui Zhou, Jiajun Chen, Jialiang Huang, Jialin Zhao, Jiamin Tang, Jian Zhou, Jianan Tong, Jianwen Li, Jiaqi Zhu, Jiarui Wang, Jiasheng Ye, Jiashi Li, Jiaxin Xu, Jiaying Ding, Jibai Lu, Jiewen Hu, Jin Yan, Jincheng Zhai, Jingchang Chen, Jingcheng Hu, Jingli Zhou, Jingsheng Xu, Jingting Xiang, Jingyan Yun, Jingyang Yuan, Jingyuan Cheng, Jinhua Zhu, Jinpeng Wang, Jinyi Chen, Jinyi Hu, Jiping Yu, Jueliang Guo, Junbo Pei, Junbo Sun, Junguang Jiang, Junjie Qiu, Junkang Zhou, Junqi Liu, Junren Li, Junxian Li, Junxiao Song, Junyi Guo, Kai Dong, Kaige Gao, Kang Guan, Kangdong Yuan, Ke Hong, Ke Xu, Kefan Zhao, Kexin Ji, Kexin Zhang, Kexing Zhou, Kuai Yu, Lan Zhang, Lean Wang, Lecong Zhang, Lei Wang, Letian Gao, Liang Zhao, Liansheng Xu, Lihua Guo, Lingxiao Luo, Lingyue Fu, Litao Deng, Litong Wang, Liyue Zhang, Longhao Chen, Lu Chen, Luotian Huang, Luyao Ma, Luyao Wang, M. S. Di, Max Mei, Menghao Ye, Miao Cui, Mingchuan Zhang, Minghua Zhang, Minghui Tang, Mingjing Zhang, Mingqi Wei, Mingshu Chen, Mingxing Liu, Mingxu Zhou, Mingyu Xu, Mingyu Yang, Mingze Wang, Muyang Chen, Ni Shentu, Ning Wang, Niufang Ning, Panpan Huang, Peixin Cong, Peiyi Wang, Peiyuan Xin, Pengfei Ren, Pengfei Yan, Pengle Zhang, Qi Kang, Qi Tang, Qiancheng Wang, Qiang Li, Qihao Zhu, Qingyang Li, Qinyu Chen, Qiushi Du, Qizhou Guo, Rongxian Xu, Rui Ding, Rui Hu, Rui Tian, Rui Yu, Ruidong Zhu, Ruifan Xu, Ruihang Xia, Ruijie Lu, Ruilin Geng, Ruipeng Hong, Ruiqi Ge, Ruisong Zhang, Ruize Sun, Ruizhe Pan, Runji Wang, Runqian Chen, Runxin Xu, Ruohong Tian, Ruomeng Shen, Ruoyu Zhang, Ryan X., S. H. Liu, Shanghao Lu, Shangyan Zhou, Shanhuang Chen, Shaofei Cai, Shaoheng Nie, Shaoyuan Chen, Shengding Hu, Shengkai Lin, Shengwen Ran, Shengyu Liu, Shengyuan Jia, Shi Bai, Shi Feng, Shicheng Xu, Shichun Liu, Shiqiang Hu, Shirong Ma, Shiyu Wang, Shiyuan Feng, Shufan Gong, Shuhan Lin, Shuiping Yu, Shunfeng Zhou, Shuomeng Wang, Shuting Guo, Shuting Pan, Shuying Yu, Sinuo Cao, Siyi Lin, Sizhe Chen, Songyang Chen, Songyang Zhou, Tao Ni, Tao Yun, Tian Jin, Tian Pei, Tian Ye, Tianle Lin, Tianran Ji, Tianyi Cui, Tianyuan Yue, Tingting Yu, Tongrui Xiong, Wangding Zeng, Wei Liu, Wei zhang, Weibin Xu, Weihao Zeng, Weilin Zhao, Wen Liu, Wenfeng Liang, Wenjie Pang, Wenjing Luo, Wenjing Yao, Wenjun Gao, Wenkai Shao, Wenkai Yang, Wenli Zhang, Wenlu Wang, Wenlve Huang, Wenqian Yan, Xi Gao, Xiang He, Xiangli Li, Xiangwen Wang, Xiangying Zhang, Xiankui Wei, Xiao Bi, Xiaojian Qu, Xiaokang Chen, Xiaokang Zhang, Xiaotao Nie, Xiaoyao Zou, Xiaoyuan Li, Xicheng Guo, Xieting Chu, Xin Cheng, Xin Xie, Xinbo Xu, Xingchao Liu, Xingchen Liu, Xingkai Yu, Xingyou Li, Xintong Yao, Xinyang Chen, Xinyong Jiang, Xu Chen, Xuanyu Wang, Xubei Zhong, Xuecheng Su, Xuejie Liu, Xujie Fan, Xuncheng Zhao, Xuwei Fu, Y. C. Yan, Y. H. Jiang, Y. T. Wu, Y. W. M., Y. Z. Wang, Yafei Gao, Yang Yang, Yanru Ma, Yanwen Huang, Yao Li, Yao Meng, Yao Zhao, Yaofeng Sun, Yaohui Wang, Yaoyang Ye, Yehang Yin, Yexinrui Wu, Yi Qian, Yi Tao, Yi Yu, Yichao Zhang, Yichen Jiang, Yicheng Wang, Yifan Ding, Yifan Shi, Yifeng Peng, Yifeng Zhai, Yijia Wu, Yiliang Xiong, Yilun Wang, Ying He, C.C. Yu, J.H. Jin, J.H. Zhang, J.X. Zou, M.S. Di, S.H. Liu, Wei Zhang, Y.C. Yan, Y.H. Jiang, Y.T. Wu, Y.W. M., Y.Z. Wang, Z.Y. Z., M.K. Zhang, W.L. Xiao",
+      "authors": "Feiyu Xia, DeepSeek-AI, Anyi Xu, B. Li, Bangcai Lin, Bing Xue, BingCheng Xian, Bingzheng Xu, Bochao Wu, Bowei Zhang, Boyi Deng, C. C. Yu, Chao Jin, Chaofan Lin, Chen Dong, Chenbing Wang, Chenfan Feng, Chengda Lu, Chenggang Zhao, Chengqi Deng, ChengYuan Zhang, Chenhao Xu, Chenqi Zhao, Chenze Shao, Chuhao Wang, Chuqi Zhang, Damai Dai, Dejian Yang, Deli Chen, Di Wu, Donghao Li, Erhang Li, Eric Fu, F. Zhou, Fangwei Zhou, Fangyun Lin, Fangzhou Yuan, Fucong Dai, Guangbo Hao, Guanglin Li, Guanting Chen, Guoai Cao, Guofan Fan, Guolai Meng, Guowei Li, Haichuan Zhang, Haiyang Ma, Han Li, Han Yu, Han Zhang, Hangyuan Deng, Hanwei Xu, HanXiang Xu, Hanxun Zhong, Hao Guo, Hao Qin, Haodong Wen, Haofen Liang, Haofeng Huang, Haohua Liu, Haoling Zhang, Haoming Luo, Haoran Yang, Haotian Xu, Shaoyuan Chen, Shengding Hu, Shengkai Lin, Shengwen Ran, Shengyu Liu, Shengyuan Jia, Shi Bai, Shi Feng, Shicheng Xu, Shichun Liu, Shiqiang Hu, Shirong Ma, Shiyu Wang, Shiyuan Feng, Shufan Gong, Shuhan Lin, Shuiping Yu, Shunfeng Zhou, Shuomeng Wang, Shuting Guo, Shuting Pan, Shuying Yu, Sinuo Cao, Siyi Lin, Sizhe Chen, Songyang Chen, Songyang Zhou, Tao Ni, Tao Yun, Tian Jin, Tian Pei, Tian Ye, Tianle Lin, Tianran Ji, Tianyi Cui, Tianyuan Yue, Tingting Yu, Tongrui Xiong, Wangding Zeng, Wei Liu, Wei zhang, Weibin Xu, Weihao Zeng, Weilin Zhao, Wen Liu, Wenfeng Liang, Wenjie Pang, Wenjing Luo, Wenjing Yao, Wenjun Gao, Wenkai Shao, Wenkai Yang, Wenli Zhang, Wenlu Wang, Wenlve Huang, Wenqian Yan, Xi Gao, Xiang He, Xiangli Li, Xiangwen Wang, Xiangying Zhang, Xiankui Wei, Xiao Bi, Xiaojian Qu, Xiaokang Chen, Xiaokang Zhang, Xiaotao Nie, Xiaoyao Zou, Xiaoyuan Li, Xicheng Guo, Xieting Chu, Xin Cheng, Xin Xie, Xinbo Xu, Xingchao Liu, Xingchen Liu, Xingkai Yu, Xingyou Li, Xintong Yao, Xinyang Chen, Xinyong Jiang, Xu Chen, Xuanyu Wang, Xubei Zhong, Xuecheng Su, Xuejie Liu, Xuheng Lin, Xujie Fan, Xuncheng Zhao, Xuwei Fu, Y. C. Yan, Y. H. Jiang, Y. T. Wu, Y. W. M., Y. Z. Wang, Yafei Gao, Yang Yang, Yanru Ma, Yanwen Huang, Yao Li, Yao Meng, Yao Zhao, Yaofeng Sun, Yaohui Wang, Yaoyang Ye, Yehang Yin, Yexinrui Wu, Yi Qian, Yi Tao, Yi Yu, Yichao Zhang, Yichen Jiang, Yicheng Wang, Yifan Ding, Yifan Shi, Yifeng Peng, Yifeng Zhai, Yijia Wu, Yiliang Xiong, Yilun Wang, Ying He, Ying Zhou, Yingjia Luo, Yinmin Zhong, Yiping Wang, Yisong Wang, Yixiang Zhang, Yixiao Chen, Yixuan Tan, Yixuan Wei, Yiyang Ma, Yiyao Yang, Yiyuan Liu, Yizai Cai, Yizhen Wei, Yizhi Wang, Yonglun Yang, Yongqi Zhuo, Yongqiang Guo, Yongtong Wu, Yu Wu, Yu Zhang, Yuan Bian, Cheng Yuan, Yuan Ou, Yuan Sun, Yuanfan Xu, Yuanhang Sun, Yuanhao Li, Wenqing Hou, X. Lin, Xiangfei Meng, Xianzhu Huang, Xiao Peng, Xiaoqian Li, Xiaoting Zhang, Xiaowen Sun, Xiaoxiang Wang, Xiaoyu Ye, Xinrou Zhang, Xue Cao, Xueyin Chen, Yanan Zhou, Yanhong Xu, Yao Xia, Yao Xu, Yi Shao, Yihong Zhang, Yiling Ma, Ying Tang, Yining Lou, Yiru Chen, Yishi Piao, Yixuan Chen, Yong Xiong, Yuchen Xuan, Yuehan Yang, Yuer Xu, Yukun Zha, Yunxian Ma, Yuping Lin, Yuting Yan, Yutong Xie, Yuwen Sheng, Yuxuan Zhu, Zekai Zhang, Zhe Ju, Zhenzhen Lin, Zheren Gao, Zheyang Sun, Zhigang Yan, Zhongyu Wu, Zihua Qu, Ziling Yan, Ziyi Wan, Jia Yu, Haiyang Shen, Jinzhao Sun, Yukun Li, Yang Zhang, Hao Jiang, Di Huang, Ruihan Yang, Xinyu Zhang, KaiFeng Chen, Jianan Tong, Jianwen Li, Jiaqi Zhu, Jiarui Wang, Jiasheng Ye, Jiashi Li, Jiaxin Xu, Jiaying Ding, Jibai Lu, Jiewen Hu, Jin Yan, Jincheng Zhai, Jingchang Chen, Jingcheng Hu, Jingli Zhou, Jingsheng Xu, Jingting Xiang, Jingyan Yun, Jingyang Yuan, Jingyuan Cheng, Jinhua Zhu, Jinpeng Wang, Jinyi Chen, Jinyi Hu, Jiping Yu, Jueliang Guo, Junbo Pei, Junbo Sun, Junguang Jiang, Junjie Qiu, Junkang Zhou, Junqi Liu, Junren Li, Junxian Li, Junxiao Song, Junyi Guo, Kai Dong, Kaige Gao, Kang Guan, Kangdong Yuan, Ke Hong, Ke Xu, Kefan Zhao, Kexin Ji, Kexin Zhang, Kexing Zhou, Kuai Yu, Lan Zhang, Lean Wang, Lecong Zhang, Lei Wang, Letian Gao, Liang Zhao, Liansheng Xu, Lihua Guo, Lingxiao Luo, Lingyue Fu, Litao Deng, Litong Wang, Liyue Zhang, Longhao Chen, Lu Chen, Luotian Huang, Luyao Ma, Luyao Wang, M. S. Di, Max Mei, Menghao Ye, Miao Cui, Mingchuan Zhang, Minghui Tang, Mingjing Zhang, Mingqi Wei, Mingshu Chen, Mingxing Liu, Mingxu Zhou, Mingyu Xu, Mingyu Yang, Mingze Wang, Muyang Chen, Ni Shentu, Ning Wang, Niufang Ning, Panpan Huang, Peixin Cong, Peiyi Wang, Peiyuan Xin, Pengfei Ren, Pengfei Yan, Pengle Zhang, Qi Kang, Qi Tang, Qiancheng Wang, Qiang Li, Qihao Zhu, Qingyang Li, Qinyu Chen, Qiushi Du, Qizhou Guo, Rongxian Xu, Rui Ding, Rui Hu, Rui Tian, Rui Yu, Ruidong Zhu, Ruifan Xu, Ruihang Xia, Ruijie Lu, Ruilin Geng, Ruipeng Hong, Ruiqi Ge, Ruisong Zhang, Ruize Sun, Ruizhe Pan, Runji Wang, Runqian Chen, Runxin Xu, Ruohong Tian, Ruomeng Shen, Ruoyu Zhang, Ryan X., S. H. Liu, Shanghao Lu, Shangyan Zhou, Shanhuang Chen, Shaofei Cai, Shaoheng Nie, Yuchen Liu, Yuchen Yao, Yudong Han, Yuduan Wang, Yuhan Wu, Yuhao Meng, Yuheng Zou, Yunchuan Wang, Yunfan Xiao, Yunfan Xiong, Yupeng Chen, Yuqian Cao, Yuqian Wang, Yuqing Chen, Yushun Zhang, Yutong Lin, Yuwei Xiao, Yuxian Gu, Yuxiang Huang, Yuxiang Luo, Yuxiang You, Yuxin Xiang, Yuxuan Liu, Yuxuan Zhou, Yuyang Zhou, Yuzhe Guo, Yuzhen Huang, Yuzhuo Bai, Z. Y. Z., Zanlin Ni, Zehao Wang, Zehua Zhao, Zehui Ren, Zejun Zhao, Zhangli Sha, Zhanying Wang, Zhaochen Zhang, Zhaoshuai Du, Zhe Fu, Zhean Xu, Zhenda Xie, Zheng Liu, Zhengyan Zhang, Zhenhua Dong, Zhewen Hao, Zhibang Wang, Zhibin Gou, Zhicheng Ma, Zhihao Li, Zhihong Shao, Zhihuan Huang, Zhijie Li, Zhirui Lu, Zhixian Huang, Zhixuan Chen, Zhixuan Pan, Zhiyu Wu, Zhizhou Ren, Zhu He, Zhuoshu Li, Zhuping Zhang, Zian Xu, Zihao Wang, Zihui Gu, Zijia Zhu, Zili Zhang, Zilin Li, Zilong Hou, Zilong Lyu, Ziqiao Wang, Ziwei Xie, Ziya Zhang, Ziyi Gao, Zizheng Pan, Zonglin Li, Zongqing Yao, Zui Chen, Zuofan Wu, Chenchen Ling, Chengyu Hou, Chong Chen, D. Li, Di Qi, Dongjie Ji, Fang Wei, Fanyi Xia, Fei Xie, Feiyi Tan, Hailong Guo, Haiyan Zhai, Hui Zhou, Huihui Tan, Huijie Li, Jia Luo, Jia Song, Jialu Cai, Jian Liang, Jiangting Zhou, Jiaqi Gao, Jiayi Shao, Jie Chen, Jieyu Yang, Jin Chen, Jingde Zhang, Jingzi Zhou, Jinqian Wang, Jinyang Liu, Junhua Ling, Junmin Zheng, Kaicheng Yang, Le Su, Leyi Xia, Liangfeng Ding, Lin Zhuo, Linwang Ma, Linyan Zhu, Liyu Cai, Luqi Yao, M. K. Zhang, Meng Li, Miao Lin, Miaojun Wang, Min Zhang, Mingming Li, Mingming Wang, Mingze Yin, Minmin Han, Nan Cao, Ningxin Ma, Panpan Wang, Peihan Lin, Peng Zhang, Qian Ying, Qiang Xiang, Qiao Wang, Qingmiao Mao, Qiwei Jiang, Rongli Jin, Ruyi Chen, Sha Tao, Shangmian Sun, Shaoqing Wu, Shichao Zou, Si Lei, Tianyang Zhang, Tianyu Sun, Tingting Yin, W. L. Xiao, Wei An, Weiwei Lin, Yuxiang Chen, Minghua Zhang, Haotian Yuan, Haoting Huang, Haowen Luo, Haoyang Cai, Haoyu Chen, Haozhe Ji, Hengran Zhang, Hengrui Wang, Hengxu Wu, Honghui Ding, Hongxuan Tang, Huadong Wang, Huanqi Cao, Huazuo Gao, Hui Qu, Hui Zeng, J. Yang, J. H. Jin, J. H. Zhang, J. X. Zou, Jiahui Zhou, Jiajun Chen, Jialiang Huang, Jialin Zhao, Jiamin Tang, Jian Zhou, Xiaohan Wang, Wei Li, Yuxin Chen, Xin Liu, Xiaodong Liu, Hao Li, Wei Wang, Xiang Li, Shuo Yang, PENG SUN, Zi Wang, Xinyu Yang, Wentao Zhang, C.C. Yu, J.H. Jin, J.H. Zhang, J.X. Zou, M.S. Di, S.H. Liu, Wei Zhang, Y.C. Yan, Y.H. Jiang, Y.T. Wu, Y.W. M., Y.Z. Wang, Z.Y. Z., M.K. Zhang, W.L. Xiao",
       "org": "",
       "published": "2026-09-17",
       "score": 96,
@@ -17546,6 +17546,38 @@
       ]
     },
     {
+      "id": "2611.17110",
+      "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
+      "authors": "Jiachun Jin, Zetong Zhou, Haonan Wang, Xiao Yang, Jun Zhu, Zhijie Deng",
+      "org": "",
+      "published": "2026-11-12",
+      "score": 90,
+      "paper": "https://arxiv.org/abs/2611.17110",
+      "source": "https://www.alphaxiv.org/abs/2611.17110",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.17110.jpg",
+      "firstSeenAt": "2026-11-14T03:10:51.281Z",
+      "summary": "Embodied foundation models hinge on diverse robot interaction data, which are costly to collect. Egocentric human videos offer a complementary source of experience, and latent action models (LAMs) provide a popular means of leveraging these videos for policy supervision. Compared with world-action models (WAMs), LAMs can offer greater training efficiency and potentially lower inference costs by avoiding explicit pixel prediction during policy learning and execution. However, most existing LAMs learn latent actions solely through video reconstruction, which can cause their representations to cluster by visual appearance rather than by the underlying actions. As a result, they struggle to align human actions with their robot counterparts. To bridge the gap, we introduce SALA, which emphasizes establishing the semantic correspondence for latent actions. Without requiring paired data, we use the language descriptions of unpaired human and robot clips to estimate semantic similarities and supervise cross-embodiment correspondence. Specifically, we translate these similarities into soft neighborhood structures that guide human latent actions toward semantically related robot latents, while robot action reconstruction grounds the latent space in control. The resulting shared latent action space provides a unified supervision signal for training an embodied foundation model on both human and robot videos. Notably, latent action supervision enables scaling along two axes: (1) pre-training on increasing amounts of general human video consistently reduces robot action prediction error on downstream tasks, and (2) post-training on increasing amounts of task-specific human video substantially improves real-world robot task success rates.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "robotics",
+        "frontier training",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics",
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2607.15163",
       "title": "Scaling Behavior Foundation Model for Humanoid Robots",
       "authors": "Weishuai Zeng, Kangning Yin, Xiaojie Niu, Shunlin Lu, Weixiang Zhong, Jiahe Chen, Feiyu Jia, Xiao Chen, Zirui Wang, Furui Xu, Ming Zhou, Kailin Li, Weinan Zhang, He Wang, Li Yi, Dahua Lin, Jiangmiao Pang, Jingbo Wang",
@@ -19777,38 +19809,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2611.17110",
-      "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
-      "authors": "Jiachun Jin, Zetong Zhou, Haonan Wang, Xiao Yang, Jun Zhu, Zhijie Deng",
-      "org": "",
-      "published": "2026-11-12",
-      "score": 89,
-      "paper": "https://arxiv.org/abs/2611.17110",
-      "source": "https://www.alphaxiv.org/abs/2611.17110",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.17110.jpg",
-      "firstSeenAt": "2026-11-14T03:10:51.281Z",
-      "summary": "Embodied foundation models hinge on diverse robot interaction data, which are costly to collect. Egocentric human videos offer a complementary source of experience, and latent action models (LAMs) provide a popular means of leveraging these videos for policy supervision. Compared with world-action models (WAMs), LAMs can offer greater training efficiency and potentially lower inference costs by avoiding explicit pixel prediction during policy learning and execution. However, most existing LAMs learn latent actions solely through video reconstruction, which can cause their representations to cluster by visual appearance rather than by the underlying actions. As a result, they struggle to align human actions with their robot counterparts. To bridge the gap, we introduce SALA, which emphasizes establishing the semantic correspondence for latent actions. Without requiring paired data, we use the language descriptions of unpaired human and robot clips to estimate semantic similarities and supervise cross-embodiment correspondence. Specifically, we translate these similarities into soft neighborhood structures that guide human latent actions toward semantically related robot latents, while robot action reconstruction grounds the latent space in control. The resulting shared latent action space provides a unified supervision signal for training an embodied foundation model on both human and robot videos. Notably, latent action supervision enables scaling along two axes: (1) pre-training on increasing amounts of general human video consistently reduces robot action prediction error on downstream tasks, and (2) post-training on increasing amounts of task-specific human video substantially improves real-world robot task success rates.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "robotics",
-        "frontier training",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Robotics",
-        "Frontier Training"
       ]
     },
     {
@@ -22559,6 +22559,32 @@
       ]
     },
     {
+      "id": "2611.weight-space-reading-language-models",
+      "title": "Weight-Space Reading",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 88,
+      "paper": "https://www.alphaxiv.org/abs/2611.weight-space-reading-language-models",
+      "source": "https://www.alphaxiv.org/abs/2611.weight-space-reading-language-models",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-15T02:38:00.554Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2609.15309",
       "title": "When Agents Slow Down: Understanding LLM Agents' Test-Time Strategies via Elo-per-token Analysis",
       "authors": "kaiyuan liu, Qiuyang Mang, Bo Peng, Wenhao Chai, Hanchen Li, Shreyas Pimpalgaonkar, Luke Zettlemoyer, Alex Dimakis, Alvin Cheung",
@@ -23083,6 +23109,32 @@
       ]
     },
     {
+      "id": "2611.17309",
+      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 87,
+      "paper": "https://arxiv.org/abs/2611.17309",
+      "source": "https://www.alphaxiv.org/abs/2611.17309",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.17309.jpg",
+      "firstSeenAt": "2026-11-15T02:38:00.554Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2610.10846",
       "title": "Cross-Embodiment Robot Foundation World Models with Latent Actions",
       "authors": "",
@@ -23252,7 +23304,7 @@
       "published": "2026-11-12",
       "score": 87,
       "paper": "https://arxiv.org/abs/2611.16905",
-      "source": "https://www.alphaxiv.org/abs/2611.16905",
+      "source": "https://huggingface.co/papers/2611.16905",
       "code": "https://github.com/naver-ai/foam",
       "project": "",
       "thumbnail": "./thumbs/2611.16905.jpg",
@@ -25988,6 +26040,32 @@
       ]
     },
     {
+      "id": "2611.language-model-distillation-training-contexts",
+      "title": "Knowledge Distillation for Language Models: A Survey of Training Contexts and Supervision",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 86,
+      "paper": "https://www.alphaxiv.org/abs/2611.language-model-distillation-training-contexts",
+      "source": "https://www.alphaxiv.org/abs/2611.language-model-distillation-training-contexts",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-15T02:38:00.554Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2610.26834",
       "title": "Kronecker Delta Rule for Long Context Linear Attention",
       "authors": "Anamaria-Roberta Hartl, Levente Zólyomi, Michael List, Günter Klambauer, Sebastian Böck, Sepp Hochreiter",
@@ -27542,8 +27620,8 @@
       "org": "",
       "published": "2026-11-12",
       "score": 85,
-      "paper": "https://arxiv.org/abs/2611.16872",
-      "source": "https://www.alphaxiv.org/abs/2611.16872",
+      "paper": "https://arxiv.org/abs/2611.16872v1",
+      "source": "https://arxiv.org/abs/2611.16872v1",
       "code": "",
       "project": "",
       "thumbnail": "./thumbs/2611.16872.jpg",
@@ -27849,6 +27927,38 @@
         "Language Modeling",
         "Vision/Multimodal",
         "Robotics"
+      ]
+    },
+    {
+      "id": "2611.16642",
+      "title": "Dataset Distillation via Drifting",
+      "authors": "George Cazenavette, Angelina Quan, Giannis Daras, Antonio Torralba, Vincent Sitzmann",
+      "org": "",
+      "published": "2026-11-12",
+      "score": 85,
+      "paper": "https://arxiv.org/abs/2611.16642",
+      "source": "https://www.alphaxiv.org/abs/2611.16642",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.16642.jpg",
+      "firstSeenAt": "2026-11-14T03:10:51.281Z",
+      "summary": "The task of dataset distillation concerns the learning of a small set of synthetic samples that can serve as an effective replacement for a large real dataset when used for downstream tasks. While many solutions have been proposed since the problem's inception, most of them primarily seek to optimize the distilled data with respect to a classifier. In this work, we propose a new distillation method that learns a set of samples such that they directly approximate the per-class data distribution. Specifically, we \"drift\" our distilled data in the latent space of a feature extractor such that they move both toward the real data and away from each other without using a classification objective. We find that our drifted data cover the real distribution significantly better than existing methods while still serving as powerful training samples for classification. Furthermore, we showcase our method's use as a visualization tool for better interpreting models and extend it beyond images to other modalities. Our work advances the frontier of dataset distillation, offering a novel synthesis method and proposing distribution-based metrics as a complementary evaluation. More broadly, our findings help address the growing need to understand both data and models by uncovering more about how they interact.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "language modeling",
+        "frontier training",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling",
+        "Frontier Training"
       ]
     },
     {
@@ -31705,6 +31815,36 @@
       ]
     },
     {
+      "id": "2611.16591",
+      "title": "Singularity-Bench: Can Agents Build Agents?",
+      "authors": "Yang Zhou, Krish Agarwal, Zhuoming Chen, Zerui Wang, Zhenyu Zhang, Wenshuang Li, Xinpeng Wei, Zhichen Zeng, Jingyu Liu, Jue Wang, Sen Wu, Ziheng Jiang, Zhen Dong, Han Cai, Binhang Yuan, Ying Sheng, Ce Zhang, Bo Li, Beidi Chen",
+      "org": "",
+      "published": "2026-11-12",
+      "score": 84,
+      "paper": "https://arxiv.org/abs/2611.16591",
+      "source": "https://www.alphaxiv.org/abs/2611.16591",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.16591.jpg",
+      "firstSeenAt": "2026-11-14T03:10:51.281Z",
+      "summary": "Frontier AI agents increasingly succeed on realistic, long-horizon tasks and are beginning to improve the systems through which they operate. Yet existing benchmarks often restrict agents to narrow action spaces, use simplified environments, or rely on verification methods that are unreliable for evaluating arbitrary agent-generated systems. We introduce Singularity-Bench, an open-ended benchmark for autonomous AI development with six end-to-end tasks spanning pre-training, mid-training, post-training, inference, the agent harness, and cluster orchestration. Each task requires agents to implement core systems from a minimal starting point and evaluates them against mature human-engineered baselines on identical hardware. Additionally, through extensive red-teaming covering 9 of the 10 categories in the OWASP Top 10 for Agentic Applications, we expose reward-hacking vulnerabilities in the conventional Harbor framework and develop Breakwater, an extension of Harbor that blocks all attacks tested in our study. Across 11 agents built from 7 frontier models and 2 harnesses, Opus 5.5 with Claude Code matches or outperforms the human baseline on all six tasks with a Singularity-Index of 1.25, suggesting it may have the skills needed to reach the singularity. The remaining agents average only 0.58. Our vision is for Singularity-Bench to track how much of AI development agents can already automate and when they may transition from assisting to taking end-to-end responsibility for building stronger successors.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "language modeling",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2609.20818",
       "title": "SplashSplat: Reconstructing Splashing Liquids from Real-World Multi-View Videos",
       "authors": "Peiyu Liu, Dingxi Zhang, Federico Tombari, Marc Pollefeys, Christina Tsalicoglou, Daniel Barath",
@@ -33888,36 +34028,6 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling"
-      ]
-    },
-    {
-      "id": "2611.16591",
-      "title": "Singularity-Bench: Can Agents Build Agents?",
-      "authors": "Yang Zhou, Krish Agarwal, Zhuoming Chen, Zerui Wang, Zhenyu Zhang, Wenshuang Li, Xinpeng Wei, Zhichen Zeng, Jingyu Liu, Jue Wang, Sen Wu, Ziheng Jiang, Zhen Dong, Han Cai, Binhang Yuan, Ying Sheng, Ce Zhang, Bo Li, Beidi Chen",
-      "org": "",
-      "published": "2026-11-12",
-      "score": 83,
-      "paper": "https://arxiv.org/abs/2611.16591",
-      "source": "https://www.alphaxiv.org/abs/2611.16591",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.16591.jpg",
-      "firstSeenAt": "2026-11-14T03:10:51.281Z",
-      "summary": "Frontier AI agents increasingly succeed on realistic, long-horizon tasks and are beginning to improve the systems through which they operate. Yet existing benchmarks often restrict agents to narrow action spaces, use simplified environments, or rely on verification methods that are unreliable for evaluating arbitrary agent-generated systems. We introduce Singularity-Bench, an open-ended benchmark for autonomous AI development with six end-to-end tasks spanning pre-training, mid-training, post-training, inference, the agent harness, and cluster orchestration. Each task requires agents to implement core systems from a minimal starting point and evaluates them against mature human-engineered baselines on identical hardware. Additionally, through extensive red-teaming covering 9 of the 10 categories in the OWASP Top 10 for Agentic Applications, we expose reward-hacking vulnerabilities in the conventional Harbor framework and develop Breakwater, an extension of Harbor that blocks all attacks tested in our study. Across 11 agents built from 7 frontier models and 2 harnesses, Opus 5.5 with Claude Code matches or outperforms the human baseline on all six tasks with a Singularity-Index of 1.25, suggesting it may have the skills needed to reach the singularity. The remaining agents average only 0.58. Our vision is for Singularity-Bench to track how much of AI development agents can already automate and when they may transition from assisting to taking end-to-end responsibility for building stronger successors.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "language modeling",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -37503,6 +37613,35 @@
       ]
     },
     {
+      "id": "2611.17297",
+      "title": "Goal Encoding in LLMs",
+      "authors": "Arnab Sen Sharma, Eric Todd, Sheridan Feucht, Andy Arditi, Rohit Gandikota, Natalie Shapira, Gabriele Sarti, Constanza Fierro, Lisa Schut, David Bau",
+      "org": "",
+      "published": "2026-11-12",
+      "score": 81,
+      "paper": "https://arxiv.org/abs/2611.17297",
+      "source": "https://www.alphaxiv.org/abs/2611.17297",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.17297.jpg",
+      "firstSeenAt": "2026-11-14T03:10:51.281Z",
+      "summary": "We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We construct a coding setting with multiple sub-tasks that allows us to evaluate goal-seeking behavior and the selection of sub-goals. In this setting, we localize an encoding of the next sub-goal in the outputs of a sparse set of attention heads. The same heads can be used to decode the LM's future actions in natural language (e.g., \"I'm checking if a word is a palindrome\"). We verify that this encoding is causal for next action and is plastic: transplanting it into a different environment, e.g., another programming language, triggers the same operation realized with a different sequence of tokens. The LM also sustains the encoding throughout the action's execution, which is puzzling because a transformer LM without recurrence cannot carry a state forward for more tokens than it has layers left. We propose that it does not need to. Under a non-recurrent goal-seeking (NRGS) account, the LM frequently re-reads the goal from the task specification, compares it with the progress visible in the growing context, and pursues what remains. We test the predictions of this account with targeted causal interventions.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training"
+      ]
+    },
+    {
       "id": "2606.29148",
       "title": "GPC: Large-Scale Generative Pretraining for Transferable Motor Control",
       "authors": "Yi Shi, Yifeng Jiang, Chen Tessler, Xue Bin Peng",
@@ -39513,6 +39652,34 @@
       ]
     },
     {
+      "id": "2611.17142",
+      "title": "FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation",
+      "authors": "Liangjun Xing, Ke Fan, Kailin Li, Bin Wang, Xiaojie Niu, Qingwei Ben, Jiafei Cao, Wei Yao, Yebin Liu, Jingbo Wang, Weinan Zhang",
+      "org": "",
+      "published": "2026-11-12",
+      "score": 80,
+      "paper": "https://arxiv.org/abs/2611.17142",
+      "source": "https://www.alphaxiv.org/abs/2611.17142",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.17142.jpg",
+      "firstSeenAt": "2026-11-14T03:10:51.281Z",
+      "summary": "Humanoid loco-manipulation requires coordinated locomotion, balance regulation, and manipulation under frequent contacts, making teleoperated demonstration collection difficult: a practical controller must simultaneously provide precision, stability, and contact awareness. We propose FORGE, a force-aware multi-granularity control system with a coarse-to-fine command space spanning velocity navigation, planar foot placement, wrist-pose tracking, and optional force-conditioning inputs. Policy training requires no full-body human motion trajectories or joint-angle references; deployment consumes only sparse bilateral wrist poses relative to the pelvis, coarse motion commands, and optional desired wrist-load inputs. For sustained contact, FORGE combines a momentum observer with a learned correction trained using simulator contact-force supervision. At deployment, it estimates low-frequency, wrist-equivalent interaction forces from proprioception and reconstructed low-level arm PD torques, without wrist force/torque sensors. A quasi-static virtual-target loop uses this estimate and an optional desired applied-force input to adapt the wrist target. A frozen locomotion prior and asymmetric residual actions stabilize manipulation-induced whole-body corrections. Experiments evaluate unified-control stability, task-space tracking, quasi-static wrist-equivalent force estimation, squeezing forces during sustained contact with a rigid box, and downstream diffusion-policy execution of a squat-and-lift task across payload conditions. Website: https://bb0928.github.io/forge/.",
+      "matchedBy": [
+        "arxiv",
+        "robotics",
+        "alphaxiv hot"
+      ],
+      "sources": [
+        "arxiv",
+        "alphaxiv"
+      ],
+      "category": "Robotics",
+      "categories": [
+        "Robotics"
+      ]
+    },
+    {
       "id": "2609.03807",
       "title": "Free Pause Tokens",
       "authors": "",
@@ -39624,35 +39791,6 @@
       "category": "Language Modeling",
       "categories": [
         "Language Modeling"
-      ]
-    },
-    {
-      "id": "2611.17297",
-      "title": "Goal Encoding in LLMs",
-      "authors": "Arnab Sen Sharma, Eric Todd, Sheridan Feucht, Andy Arditi, Rohit Gandikota, Natalie Shapira, Gabriele Sarti, Constanza Fierro, Lisa Schut, David Bau",
-      "org": "",
-      "published": "2026-11-12",
-      "score": 80,
-      "paper": "https://arxiv.org/abs/2611.17297",
-      "source": "https://www.alphaxiv.org/abs/2611.17297",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.17297.jpg",
-      "firstSeenAt": "2026-11-14T03:10:51.281Z",
-      "summary": "We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We construct a coding setting with multiple sub-tasks that allows us to evaluate goal-seeking behavior and the selection of sub-goals. In this setting, we localize an encoding of the next sub-goal in the outputs of a sparse set of attention heads. The same heads can be used to decode the LM's future actions in natural language (e.g., \"I'm checking if a word is a palindrome\"). We verify that this encoding is causal for next action and is plastic: transplanting it into a different environment, e.g., another programming language, triggers the same operation realized with a different sequence of tokens. The LM also sustains the encoding throughout the action's execution, which is puzzling because a transformer LM without recurrence cannot carry a state forward for more tokens than it has layers left. We propose that it does not need to. Under a non-recurrent goal-seeking (NRGS) account, the LM frequently re-reads the goal from the task specification, compares it with the progress visible in the growing context, and pursues what remains. We test the predictions of this account with targeted causal interventions.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "alphaxiv hot",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training"
       ]
     },
     {
@@ -41663,34 +41801,6 @@
       ]
     },
     {
-      "id": "2611.17142",
-      "title": "FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation",
-      "authors": "Liangjun Xing, Ke Fan, Kailin Li, Bin Wang, Xiaojie Niu, Qingwei Ben, Jiafei Cao, Wei Yao, Yebin Liu, Jingbo Wang, Weinan Zhang",
-      "org": "",
-      "published": "2026-11-12",
-      "score": 79,
-      "paper": "https://arxiv.org/abs/2611.17142",
-      "source": "https://www.alphaxiv.org/abs/2611.17142",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.17142.jpg",
-      "firstSeenAt": "2026-11-14T03:10:51.281Z",
-      "summary": "Humanoid loco-manipulation requires coordinated locomotion, balance regulation, and manipulation under frequent contacts, making teleoperated demonstration collection difficult: a practical controller must simultaneously provide precision, stability, and contact awareness. We propose FORGE, a force-aware multi-granularity control system with a coarse-to-fine command space spanning velocity navigation, planar foot placement, wrist-pose tracking, and optional force-conditioning inputs. Policy training requires no full-body human motion trajectories or joint-angle references; deployment consumes only sparse bilateral wrist poses relative to the pelvis, coarse motion commands, and optional desired wrist-load inputs. For sustained contact, FORGE combines a momentum observer with a learned correction trained using simulator contact-force supervision. At deployment, it estimates low-frequency, wrist-equivalent interaction forces from proprioception and reconstructed low-level arm PD torques, without wrist force/torque sensors. A quasi-static virtual-target loop uses this estimate and an optional desired applied-force input to adapt the wrist target. A frozen locomotion prior and asymmetric residual actions stabilize manipulation-induced whole-body corrections. Experiments evaluate unified-control stability, task-space tracking, quasi-static wrist-equivalent force estimation, squeezing forces during sustained contact with a rigid box, and downstream diffusion-policy execution of a squat-and-lift task across payload conditions. Website: https://bb0928.github.io/forge/.",
-      "matchedBy": [
-        "arxiv",
-        "robotics",
-        "alphaxiv hot"
-      ],
-      "sources": [
-        "arxiv",
-        "alphaxiv"
-      ],
-      "category": "Robotics",
-      "categories": [
-        "Robotics"
-      ]
-    },
-    {
       "id": "2609.gaa-transistor-interface-geometry-transport",
       "title": "From Atomic-Scale Metrology to Transport Models: Reduced-Order Consequences of Directly Measured Interface Geometry in Gate-All-Around Transistor Channels",
       "authors": "",
@@ -42071,6 +42181,32 @@
       "categories": [
         "Language Modeling",
         "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2611.loopfill-speculative-decoding-looped-transformers",
+      "title": "LoopFill: Pipelined Multi-Token Speculative Decoding for Looped Transformers",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 79,
+      "paper": "https://www.alphaxiv.org/abs/2611.loopfill-speculative-decoding-looped-transformers",
+      "source": "https://www.alphaxiv.org/abs/2611.loopfill-speculative-decoding-looped-transformers",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-15T02:38:00.554Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "serving"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving"
       ]
     },
     {
@@ -223694,6 +223830,36 @@
       ]
     },
     {
+      "id": "pwc-133304",
+      "title": "Introducing Gemini 4 Hydrogen for Agentic Workflows",
+      "authors": "",
+      "org": "",
+      "published": "2026-11-12",
+      "score": 60,
+      "paper": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-15T02:38:00.554Z",
+      "summary": "Gemini 4 Hydrogen targets fast execution across everyday coding and agentic workflows, while Gemini 4 Carbon and Argon handle deep, long-horizon reasoning. The abstract reports no quantitative results.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Coding Agents",
+        "Long-Horizon Agents",
+        "Scientific Reasoning",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "pwc-131370",
       "title": "Introducing GPT-6.1 Terra",
       "authors": "",
@@ -223972,6 +224138,38 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "pwc-133302",
+      "title": "Introducing SubQ Snap: A Long-Context Decision Model for Enterprise Agents",
+      "authors": "",
+      "org": "",
+      "published": "2026-10-12",
+      "score": 60,
+      "paper": "https://subq.ai/introducing-subq-snap",
+      "source": "https://subq.ai/introducing-subq-snap",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-15T02:38:00.554Z",
+      "summary": "SubQ Snap applies Subquadratic Sparse Attention to structured decisions in agent workflows. It targets choices such as selecting relevant files, choosing tools, and routing steps to frontier models, building on a fully subquadratic LLM architecture.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Decision Making",
+        "Long Context",
+        "Decision Model",
+        "frontier training",
+        "language modeling"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -225314,6 +225512,36 @@
       ],
       "category": "Language Modeling",
       "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2611.16956",
+      "title": "Lara Mini Base: Language Diversity as a Resource, Not a Trade-off",
+      "authors": "Translated, Maria Pia Adinolfi, Isabelle Andrieu, Grazia Fiorella Anfuso, Melania Annunziata, Daniele Antonini, Marta Arena, Luca Barone, Dana Barras Franco, Francesca Basiricò, Francesca Bee, Sofia Bertini, Nicola Bertoldi, Giorgio Biancini, Alessandra Bigi, Giulia Boccalini, Tommaso Bonomo, Enrico Boscardi, Sebastien Bratieres, Francesco Brigante, Giulia Brignola, Romolo Buondestino, Brenda Patricia Byrne, Giorgia Campora, Edoardo Cappelli, Veronica Carascosi, Francesca Carducci, Cody Carlson, Davide Caroselli, Ambra Cascio, Dario Cascio, Mauro Cassani, Andrea Castro, Alessandro Cattelan, Giulia Ceccacci, Paola Cellini, Giulia Chiriatti, Federico Cialini, Valentina Ciarlariello, Daniele Cocozza, Emanuela Coghe, Kathleen Compares, Marco Comunità, Davide Conti, Helen Rebecca Corfield, Michele Cortellessa, Anna Cracco, Aurora Cuppone, Arianna D'Andrea, Maurizio Davoli, Andrea De Angelis, Andrea De Blasi, Rebecca De Giorgi, Annalisa De Petra, Arianna De Pilla, Joris Demiraj, Elena Deufemia, Federica Di Antonio, Pierluigi Di Cianni, Vincenzo Di Cicco, Michela Di Clemente, Alan Di Francesco, Ylenia Di Gese, Federica Di Iulio, Claudia Di Lorenzo, Andrea Di Paola, Giulia Di Pilla, Jessica Dickson, Francesco Elefante, Ilaria Fabrizio, Alessandro Falappa, Viviana Fantozzi, Antonio Farina, Andrea Fernandez Tostado Ro. Diego Andrea, Andrea Ferrari, Sara Ferri, Simona Ferri, Fabio Fioramonti, Stefano Florio, Mariachiara Fornaro, Anna Maria Foti, Niccolò Fransoni, Alessandro Fusacchia, Emma Gamba, Francesco Gasperoni, Davide Gattini, Marta Giani, Claudia Giannetti, Valerio Giannini, Antonella Giudici, Mara Gramendola, Michele Grandinetti, Eleonora Graziani, L'Meese Hope Greaney, Dario Gubernari, Filomena Guglielmi, Jonathan Hammond, Stephen William Harris, Rowena Elizabeth Hogg, Marta Hontanon Del Olmo, Marco Ilari, Kenneth Larry Jackson, Sagar Joshi, Bartosz Alberto Karman, Iuliia Khimenko, Valerio Lanni, Giulio Leonardi, Veronica Levco, Matteo Licci, Alessio Ligios, Noemi Lomartire, Domenico Lupinetti, Jennifer Mirjam Maechtlen, Chiara Maggiori, Maria Luisa Malerba, Francesco Marconi, Domenico Marini, Francesca Marsili, Andrea Martinelli, James Mc Groary, Matteo Menicacci, Andrew Steven Miller, Marco Moauro, Giuliana Molon, Ilaria Mongelluzzi, Emiliano Morghen, Giovanni Moscati, Filippo Musmeci, Flavia Napoleoni, Nicola Giuseppe Ninni, Beatrice Ottoni, Federica Pagliani, Nicolò Palmiero, Daniele Palumbo, Chiara Pantani, Stefano Paolucci, Deborah Paritario, Michela Pascale, Thomas Passera, Daniele Patrioli, Chiara Patrizi, Silvia Patrizi, Giulia Pelos, Simone Giovanni Perone, Cristiano Perrone, Joshua Peterson, Katia Piredda, Francesca Piscitelli, Alessandra Posca, Lorenzo Pratesi, Francesca Prencipe, Daniela Proietto Cuco, Mattia Pupino Marangio, Disheng Qiu, Mirco Ramo, Federica Rapagnà, Waldo Luis Ribeiro, Federico Ricciuti, Alessia Ridoni, Eleonora Risi Valdettaro, Jon Matthew Ritzdorf, Serena Rivera, Federico Roma, Arianna Ruggiero, Eleonora Ruggiu, Mariafrancesca Sagliocco, Vanessa Salvi, Alessio Sampieri, Elena Santanelli, Roberto Sastre, Luca Scofano, Alessandro Sdei, Giuseppe Sebastiani, Claudia Nicole Siegenthaler, Monica Signoretti, Nicola Sobieski, Biancamaria Soellner, Valentina Stati, Michael Stevens, Arianna Stissi, Fabiana Stomaci, Leonardo Taddei, Christopher Thomas, Maurizio Tiberi, John Tinsley, Riccardo Tittarelli, Carla Tocco, Martina Totaro, Barbara Veronika Totzauer, Alessio Tranzocchi, Letizia Treossi, Mara Trombetti, Marco Trombetti, Andrea Valenzi, Kirti Vashee, Giulia Vestita, Teodosio Vezza, Giulia Vignola, Sara Virtuoso, Valentina Volpini, Francesca Vurro, Jolita Zaksauskaite, Giulia Zanarella, Paolo Zanotti, Francesca Zavettieri, Irene Zorzi",
+      "org": "",
+      "published": "2026-11-12",
+      "score": 60,
+      "paper": "https://arxiv.org/abs/2611.16956v1",
+      "source": "https://arxiv.org/abs/2611.16956v1",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.16956.jpg",
+      "firstSeenAt": "2026-11-14T03:10:51.281Z",
+      "summary": "General-purpose language models are trained mostly on English: over open models we review, at most, non-English pretraining data makes up only a 12% share. Models built for European languages give them far more, but score well below general-purpose models of the same size. A common concern is that, in small models, languages compete for capacity. We present Lara Mini base, a model trained from scratch on 6T tokens in English and 44 other languages, which together cover all 24 official languages of the European Union. As training progresses, the 44 other languages together come to outweigh English. To give these languages enough capacity at low cost, Lara Mini base uses a mixture of experts architecture with 7.2B total and 0.6B active parameters. Among open base models with up to 2B active parameters, it achieves the highest average score across standard English, multilingual, math, and code benchmarks, ahead of models trained on 4 to 6 times as many tokens. Its margin is largest on multilingual benchmarks in the languages it supports and on math benchmarks. It supports contexts of up to 128k tokens. We find that our MoE architecture reduces capacity competition between languages. For a single user on one GPU, without quantization, it generates text at least 1.8 times faster than any model with a higher average score. We release the weights of Lara Mini base under the CC BY-NC-SA 4.0 license. In addition, we will release T-HellaSwag, a higher-quality machine translation of the commonsense reasoning benchmark HellaSwag into 110 language variants.",
+      "matchedBy": [
+        "arxiv",
+        "frontier training",
+        "language modeling",
+        "papers with code"
+      ],
+      "sources": [
+        "arxiv",
+        "paperswithcode"
+      ],
+      "category": "Frontier Training",
+      "categories": [
+        "Frontier Training",
         "Language Modeling"
       ]
     },
@@ -227240,6 +227468,34 @@
         "Vision/Multimodal",
         "Language Modeling",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "pwc-133313",
+      "title": "LLaVA-OneVision-2.5 Is Coming: From Edge Intelligence to Physical AI",
+      "authors": "",
+      "org": "",
+      "published": "2026-11-13",
+      "score": 60,
+      "paper": "https://github.com/LMMs-Lab/LLaVA-OneVision-2.5",
+      "source": "https://github.com/LMMs-Lab/LLaVA-OneVision-2.5",
+      "code": "",
+      "project": "",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-15T02:38:00.554Z",
+      "summary": "LLaVA-OneVision-2.5 targets edge video understanding in streaming and offline settings. Its integration with the VE2S visual intelligence workshop supports industrial assembly alerts and response.",
+      "matchedBy": [
+        "papers with code",
+        "vision/multimodal",
+        "robotics"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Robotics"
       ]
     },
     {
@@ -231841,6 +232097,38 @@
       "category": "Robotics",
       "categories": [
         "Robotics"
+      ]
+    },
+    {
+      "id": "pwc-133312",
+      "title": "Nex-N2.6",
+      "authors": "",
+      "org": "",
+      "published": "2026-11-11",
+      "score": 60,
+      "paper": "https://huggingface.co/nex-agi/Nex-N2.6",
+      "source": "https://huggingface.co/nex-agi/Nex-N2.6",
+      "code": "",
+      "project": "https://huggingface",
+      "thumbnail": "",
+      "firstSeenAt": "2026-11-15T02:38:00.554Z",
+      "summary": "Nex-N2.6 is a 321B-parameter multimodal agent built on GLM-5.3-Flash for computer use, coding, and long-horizon tool tasks. Its training targets repetitive reasoning and tool-use adherence; the release provides FP8-quantized weights.",
+      "matchedBy": [
+        "papers with code",
+        "Agents",
+        "Coding Agents",
+        "Computer Use Agents",
+        "Long-Horizon Agents",
+        "language modeling",
+        "vision/multimodal"
+      ],
+      "sources": [
+        "paperswithcode"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling",
+        "Vision/Multimodal"
       ]
     },
     {
@@ -251860,7 +252148,8 @@
         "arxiv",
         "vision/multimodal",
         "language modeling",
-        "papers with code"
+        "papers with code",
+        "Qwen2-VL"
       ],
       "sources": [
         "arxiv",
@@ -320930,36 +321219,6 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Frontier Training"
-      ]
-    },
-    {
-      "id": "2611.16642",
-      "title": "Dataset Distillation via Drifting",
-      "authors": "George Cazenavette, Angelina Quan, Giannis Daras, Antonio Torralba, Vincent Sitzmann",
-      "org": "",
-      "published": "2026-11-12",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2611.16642v1",
-      "source": "https://arxiv.org/abs/2611.16642v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.16642.jpg",
-      "firstSeenAt": "2026-11-14T03:10:51.281Z",
-      "summary": "The task of dataset distillation concerns the learning of a small set of synthetic samples that can serve as an effective replacement for a large real dataset when used for downstream tasks. While many solutions have been proposed since the problem's inception, most of them primarily seek to optimize the distilled data with respect to a classifier. In this work, we propose a new distillation method that learns a set of samples such that they directly approximate the per-class data distribution. Specifically, we \"drift\" our distilled data in the latent space of a feature extractor such that they move both toward the real data and away from each other without using a classification objective. We find that our drifted data cover the real distribution significantly better than existing methods while still serving as powerful training samples for classification. Furthermore, we showcase our method's use as a visualization tool for better interpreting models and extend it beyond images to other modalities. Our work advances the frontier of dataset distillation, offering a novel synthesis method and proposing distribution-based metrics as a complementary evaluation. More broadly, our findings help address the growing need to understand both data and models by uncovering more about how they interact.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "language modeling",
-        "frontier training"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
         "Language Modeling",
         "Frontier Training"
       ]
@@ -403050,34 +403309,6 @@
       "categories": [
         "Language Modeling",
         "Serving"
-      ]
-    },
-    {
-      "id": "2611.16956",
-      "title": "Lara Mini Base: Language Diversity as a Resource, Not a Trade-off",
-      "authors": "Translated, Maria Pia Adinolfi, Isabelle Andrieu, Grazia Fiorella Anfuso, Melania Annunziata, Daniele Antonini, Marta Arena, Luca Barone, Dana Barras Franco, Francesca Basiricò, Francesca Bee, Sofia Bertini, Nicola Bertoldi, Giorgio Biancini, Alessandra Bigi, Giulia Boccalini, Tommaso Bonomo, Enrico Boscardi, Sebastien Bratieres, Francesco Brigante, Giulia Brignola, Romolo Buondestino, Brenda Patricia Byrne, Giorgia Campora, Edoardo Cappelli, Veronica Carascosi, Francesca Carducci, Cody Carlson, Davide Caroselli, Ambra Cascio, Dario Cascio, Mauro Cassani, Andrea Castro, Alessandro Cattelan, Giulia Ceccacci, Paola Cellini, Giulia Chiriatti, Federico Cialini, Valentina Ciarlariello, Daniele Cocozza, Emanuela Coghe, Kathleen Compares, Marco Comunità, Davide Conti, Helen Rebecca Corfield, Michele Cortellessa, Anna Cracco, Aurora Cuppone, Arianna D'Andrea, Maurizio Davoli, Andrea De Angelis, Andrea De Blasi, Rebecca De Giorgi, Annalisa De Petra, Arianna De Pilla, Joris Demiraj, Elena Deufemia, Federica Di Antonio, Pierluigi Di Cianni, Vincenzo Di Cicco, Michela Di Clemente, Alan Di Francesco, Ylenia Di Gese, Federica Di Iulio, Claudia Di Lorenzo, Andrea Di Paola, Giulia Di Pilla, Jessica Dickson, Francesco Elefante, Ilaria Fabrizio, Alessandro Falappa, Viviana Fantozzi, Antonio Farina, Andrea Fernandez Tostado Ro. Diego Andrea, Andrea Ferrari, Sara Ferri, Simona Ferri, Fabio Fioramonti, Stefano Florio, Mariachiara Fornaro, Anna Maria Foti, Niccolò Fransoni, Alessandro Fusacchia, Emma Gamba, Francesco Gasperoni, Davide Gattini, Marta Giani, Claudia Giannetti, Valerio Giannini, Antonella Giudici, Mara Gramendola, Michele Grandinetti, Eleonora Graziani, L'Meese Hope Greaney, Dario Gubernari, Filomena Guglielmi, Jonathan Hammond, Stephen William Harris, Rowena Elizabeth Hogg, Marta Hontanon Del Olmo, Marco Ilari, Kenneth Larry Jackson, Sagar Joshi, Bartosz Alberto Karman, Iuliia Khimenko, Valerio Lanni, Giulio Leonardi, Veronica Levco, Matteo Licci, Alessio Ligios, Noemi Lomartire, Domenico Lupinetti, Jennifer Mirjam Maechtlen, Chiara Maggiori, Maria Luisa Malerba, Francesco Marconi, Domenico Marini, Francesca Marsili, Andrea Martinelli, James Mc Groary, Matteo Menicacci, Andrew Steven Miller, Marco Moauro, Giuliana Molon, Ilaria Mongelluzzi, Emiliano Morghen, Giovanni Moscati, Filippo Musmeci, Flavia Napoleoni, Nicola Giuseppe Ninni, Beatrice Ottoni, Federica Pagliani, Nicolò Palmiero, Daniele Palumbo, Chiara Pantani, Stefano Paolucci, Deborah Paritario, Michela Pascale, Thomas Passera, Daniele Patrioli, Chiara Patrizi, Silvia Patrizi, Giulia Pelos, Simone Giovanni Perone, Cristiano Perrone, Joshua Peterson, Katia Piredda, Francesca Piscitelli, Alessandra Posca, Lorenzo Pratesi, Francesca Prencipe, Daniela Proietto Cuco, Mattia Pupino Marangio, Disheng Qiu, Mirco Ramo, Federica Rapagnà, Waldo Luis Ribeiro, Federico Ricciuti, Alessia Ridoni, Eleonora Risi Valdettaro, Jon Matthew Ritzdorf, Serena Rivera, Federico Roma, Arianna Ruggiero, Eleonora Ruggiu, Mariafrancesca Sagliocco, Vanessa Salvi, Alessio Sampieri, Elena Santanelli, Roberto Sastre, Luca Scofano, Alessandro Sdei, Giuseppe Sebastiani, Claudia Nicole Siegenthaler, Monica Signoretti, Nicola Sobieski, Biancamaria Soellner, Valentina Stati, Michael Stevens, Arianna Stissi, Fabiana Stomaci, Leonardo Taddei, Christopher Thomas, Maurizio Tiberi, John Tinsley, Riccardo Tittarelli, Carla Tocco, Martina Totaro, Barbara Veronika Totzauer, Alessio Tranzocchi, Letizia Treossi, Mara Trombetti, Marco Trombetti, Andrea Valenzi, Kirti Vashee, Giulia Vestita, Teodosio Vezza, Giulia Vignola, Sara Virtuoso, Valentina Volpini, Francesca Vurro, Jolita Zaksauskaite, Giulia Zanarella, Paolo Zanotti, Francesca Zavettieri, Irene Zorzi",
-      "org": "",
-      "published": "2026-11-12",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2611.16956v1",
-      "source": "https://arxiv.org/abs/2611.16956v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.16956.jpg",
-      "firstSeenAt": "2026-11-14T03:10:51.281Z",
-      "summary": "General-purpose language models are trained mostly on English: over open models we review, at most, non-English pretraining data makes up only a 12% share. Models built for European languages give them far more, but score well below general-purpose models of the same size. A common concern is that, in small models, languages compete for capacity. We present Lara Mini base, a model trained from scratch on 6T tokens in English and 44 other languages, which together cover all 24 official languages of the European Union. As training progresses, the 44 other languages together come to outweigh English. To give these languages enough capacity at low cost, Lara Mini base uses a mixture of experts architecture with 7.2B total and 0.6B active parameters. Among open base models with up to 2B active parameters, it achieves the highest average score across standard English, multilingual, math, and code benchmarks, ahead of models trained on 4 to 6 times as many tokens. Its margin is largest on multilingual benchmarks in the languages it supports and on math benchmarks. It supports contexts of up to 128k tokens. We find that our MoE architecture reduces capacity competition between languages. For a single user on one GPU, without quantization, it generates text at least 1.8 times faster than any model with a higher average score. We release the weights of Lara Mini base under the CC BY-NC-SA 4.0 license. In addition, we will release T-HellaSwag, a higher-quality machine translation of the commonsense reasoning benchmark HellaSwag into 110 language variants.",
-      "matchedBy": [
-        "arxiv",
-        "frontier training",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Frontier Training",
-      "categories": [
-        "Frontier Training",
-        "Language Modeling"
       ]
     },
     {
