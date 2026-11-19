@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-19T04:09:26.492Z",
+  "generatedAt": "2026-11-19T04:29:44.583Z",
   "sourceStats": {
-    "seed": 20247,
+    "seed": 20397,
     "paperswithcode": 540,
     "arxiv": 175,
-    "huggingface": 52,
+    "huggingface": 55,
     "alphaxiv": 21,
     "twitterSignals": 0,
-    "total": 20397
+    "total": 20400
   },
   "papers": [
     {
@@ -391,7 +391,7 @@
     {
       "id": "2609.19969",
       "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
-      "authors": "Junyi Guo, Haoming Luo, Haoran Yang, Haotian Xu, Haotian Yuan, Haoting Huang, Haowen Luo, Haoyang Cai, Haoyu Chen, Haozhe Ji, Hengran Zhang, Hengrui Wang, Hengxu Wu, Honghui Ding, Hongxuan Tang, Huadong Wang, Huanqi Cao, Huazuo Gao, Hui Qu, Hui Zeng, J. Yang, J. H. Jin, J. H. Zhang, J. X. Zou, Jiahui Zhou, Jiajun Chen, Jialiang Huang, Jialin Zhao, Jiamin Tang, Jian Zhou, Jianan Tong, Jianwen Li, Jiaqi Zhu, Jiarui Wang, Jiasheng Ye, Jiashi Li, Jiaxin Xu, Jiaying Ding, Jibai Lu, Jiewen Hu, Jin Yan, Jincheng Zhai, Jingchang Chen, Jingcheng Hu, Jingli Zhou, Jingsheng Xu, Jingting Xiang, Jingyan Yun, Jingyang Yuan, Jingyuan Cheng, Jinhua Zhu, Jinpeng Wang, Jinyi Chen, Jinyi Hu, Jiping Yu, Jueliang Guo, Junbo Pei, Junbo Sun, Junguang Jiang, Junjie Qiu, Junkang Zhou, Junqi Liu, Junren Li, Junxian Li, Junxiao Song, Kai Dong, Kaige Gao, Kang Guan, Kangdong Yuan, Ke Hong, Ke Xu, Kefan Zhao, Kexin Ji, Kexin Zhang, Kexing Zhou, Kuai Yu, Lan Zhang, Lean Wang, Lecong Zhang, Lei Wang, Letian Gao, Liang Zhao, Liansheng Xu, Lihua Guo, Lingxiao Luo, Lingyue Fu, Litao Deng, Litong Wang, Liyue Zhang, Longhao Chen, Lu Chen, Luotian Huang, Luyao Ma, Luyao Wang, M. S. Di, Max Mei, Menghao Ye, Miao Cui, Mingchuan Zhang, Minghua Zhang, Minghui Tang, Mingjing Zhang, Mingqi Wei, Mingshu Chen, Mingxing Liu, Mingxu Zhou, Mingyu Xu, Mingyu Yang, Mingze Wang, Muyang Chen, Ni Shentu, Ning Wang, Niufang Ning, Panpan Huang, Peixin Cong, Peiyi Wang, Peiyuan Xin, Pengfei Ren, Pengfei Yan, Pengle Zhang, Qi Kang, Qi Tang, Qiancheng Wang, Qiang Li, Qihao Zhu, Qingyang Li, Qinyu Chen, Qiushi Du, Qizhou Guo, Rongxian Xu, Rui Ding, Rui Hu, Rui Tian, Rui Yu, Ruidong Zhu, Ruifan Xu, Ruihang Xia, Ruijie Lu, Ruilin Geng, Ruipeng Hong, Ruiqi Ge, Ruisong Zhang, Ruize Sun, Ruizhe Pan, Runji Wang, Runqian Chen, Runxin Xu, Ruohong Tian, Ruomeng Shen, Ruoyu Zhang, Ryan X., S. H. Liu, Shanghao Lu, Shangyan Zhou, Shanhuang Chen, Shaofei Cai, Shaoheng Nie, Shaoyuan Chen, Shengding Hu, Shengkai Lin, Shengwen Ran, Shengyu Liu, Shengyuan Jia, Shi Bai, Shi Feng, Shicheng Xu, Shichun Liu, Shiqiang Hu, Shirong Ma, Shiyu Wang, Shiyuan Feng, Shufan Gong, Shuhan Lin, Shuiping Yu, Shunfeng Zhou, Shuomeng Wang, Shuting Guo, Shuting Pan, Shuying Yu, Sinuo Cao, Siyi Lin, Sizhe Chen, Songyang Chen, Songyang Zhou, Tao Ni, Tao Yun, Tian Jin, Tian Pei, Tian Ye, Tianle Lin, Tianran Ji, Tianyi Cui, Tianyuan Yue, Tingting Yu, Tongrui Xiong, Wangding Zeng, Wei Liu, Wei zhang, Weibin Xu, Weihao Zeng, Weilin Zhao, Wen Liu, Wenfeng Liang, Wenjie Pang, Wenjing Luo, Wenjing Yao, Wenjun Gao, Wenkai Shao, Wenkai Yang, Wenli Zhang, Wenlu Wang, Wenlve Huang, Wenqian Yan, Xi Gao, Xiang He, Xiangli Li, Xiangwen Wang, Xiangying Zhang, Xiankui Wei, Xiao Bi, Xiaojian Qu, Xiaokang Chen, Xiaokang Zhang, Xiaotao Nie, Xiaoyao Zou, Xiaoyuan Li, Xicheng Guo, Xieting Chu, Xin Cheng, Xin Xie, Xinbo Xu, Xingchao Liu, Xingchen Liu, Xingkai Yu, Xingyou Li, Xintong Yao, Xinyang Chen, Xinyong Jiang, Xu Chen, Xuanyu Wang, Xubei Zhong, Xuecheng Su, Xuejie Liu, Xuheng Lin, Xujie Fan, Xuncheng Zhao, Xuwei Fu, Y. C. Yan, Y. H. Jiang, Y. T. Wu, Y. W. M., Y. Z. Wang, Yafei Gao, Yang Yang, Yanru Ma, Yanwen Huang, Yao Li, Yao Meng, Yao Zhao, Yaofeng Sun, Yaohui Wang, Yaoyang Ye, Yehang Yin, Yexinrui Wu, Yi Qian, Yi Tao, Yi Yu, Yichao Zhang, Yichen Jiang, Yicheng Wang, Yifan Ding, Yifan Shi, Yifeng Peng, Yifeng Zhai, Yijia Wu, Yiliang Xiong, Yilun Wang, Ying He, Ying Zhou, Yingjia Luo, Yinmin Zhong, Yiping Wang, Yisong Wang, Yixiang Zhang, Yixiao Chen, Yixuan Tan, Yixuan Wei, Yiyang Ma, Yiyao Yang, Yiyuan Liu, Yizai Cai, Yizhen Wei, Yizhi Wang, Yonglun Yang, Yongqi Zhuo, Yongqiang Guo, Yongtong Wu, Yu Wu, Yu Zhang, Yuan Bian, Cheng Yuan, Yuan Ou, Yuan Sun, Yuanfan Xu, Yuanhang Sun, Yuanhao Li, Yuchen Liu, Yuchen Yao, Yudong Han, Yuduan Wang, Yuhan Wu, Yuhao Meng, Yuheng Zou, Yunchuan Wang, Yunfan Xiao, Yunfan Xiong, Yupeng Chen, Yuqian Cao, Yuqian Wang, Yuqing Chen, Yushun Zhang, Yutong Lin, Yuwei Xiao, Yuxian Gu, Yuxiang Huang, Yuxiang Luo, Yuxiang You, Yuxin Xiang, Yuxuan Liu, Yuxuan Zhou, Yuyang Zhou, Yuzhe Guo, Yuzhen Huang, Yuzhuo Bai, Z. Y. Z., Zanlin Ni, Zehao Wang, Zehua Zhao, Zehui Ren, Zejun Zhao, Zhangli Sha, Zhanying Wang, Zhaochen Zhang, Zhaoshuai Du, Zhe Fu, Zhean Xu, Zhenda Xie, Zheng Liu, Zhengyan Zhang, Zhenhua Dong, Zhewen Hao, Zhibang Wang, Zhibin Gou, Zhicheng Ma, Zhihao Li, Zhihong Shao, Zhihuan Huang, Zhijie Li, Zhirui Lu, Zhixian Huang, Zhixuan Chen, Zhixuan Pan, Zhiyu Wu, Zhizhou Ren, Zhu He, Zhuoshu Li, Zhuping Zhang, Zian Xu, Zihao Wang, Zihui Gu, Zijia Zhu, Zili Zhang, Zilin Li, Zilong Hou, Zilong Lyu, Ziqiao Wang, Ziwei Xie, Ziya Zhang, Ziyi Gao, Zizheng Pan, Zonglin Li, Zongqing Yao, Zui Chen, Zuofan Wu, Chenchen Ling, Chengyu Hou, Chong Chen, D. Li, Di Qi, Dongjie Ji, Fang Wei, Fanyi Xia, Fei Xie, Feiyi Tan, Hailong Guo, Haiyan Zhai, Hui Zhou, Huihui Tan, Huijie Li, Jia Luo, Jia Song, Jialu Cai, Jian Liang, Jiangting Zhou, Jiaqi Gao, Jiayi Shao, Jie Chen, Jieyu Yang, Jin Chen, Jingde Zhang, Jingzi Zhou, Jinqian Wang, Jinyang Liu, Junhua Ling, Junmin Zheng, Kaicheng Yang, Le Su, Leyi Xia, Liangfeng Ding, Lin Zhuo, Linwang Ma, Linyan Zhu, Liyu Cai, Luqi Yao, M. K. Zhang, Meng Li, Miao Lin, Miaojun Wang, Min Zhang, Mingming Li, Mingming Wang, Mingze Yin, Minmin Han, Nan Cao, Ningxin Ma, Panpan Wang, Peihan Lin, Peng Zhang, Qian Ying, Qiang Xiang, Qiao Wang, Qingmiao Mao, Qiwei Jiang, Rongli Jin, Ruyi Chen, Sha Tao, Shangmian Sun, Shaoqing Wu, Shichao Zou, Si Lei, Tianyang Zhang, Tianyu Sun, Tingting Yin, W. L. Xiao, Wei An, Weiwei Lin, Yuxiang Chen, Wenqing Hou, X. Lin, Xiangfei Meng, Xianzhu Huang, Xiao Peng, Xiaoqian Li, Xiaoting Zhang, Xiaowen Sun, Xiaoxiang Wang, Xiaoyu Ye, Xinrou Zhang, Xue Cao, Xueyin Chen, Yanan Zhou, Yanhong Xu, Yao Xia, Yao Xu, Yi Shao, Yihong Zhang, Yiling Ma, Ying Tang, Yining Lou, Yiru Chen, Yishi Piao, Yixuan Chen, Yong Xiong, Yuchen Xuan, Yuehan Yang, Yuer Xu, Yukun Zha, Yunxian Ma, Yuping Lin, Yuting Yan, Yutong Xie, Yuwen Sheng, Yuxuan Zhu, Zekai Zhang, Zhe Ju, Zhenzhen Lin, Zheren Gao, Zheyang Sun, Zhigang Yan, Zhongyu Wu, Zihua Qu, Ziling Yan, Ziyi Wan, Jia Yu, Haiyang Shen, Jinzhao Sun, Yukun Li, Xiang Li, Hao Jiang, Zi Wang, Di Huang, Ruihan Yang, Xinyu Yang, KaiFeng Chen, DeepSeek-AI, Anyi Xu, B. Li, Bangcai Lin, Bing Xue, BingCheng Xian, Bingzheng Xu, Bochao Wu, Bowei Zhang, Boyi Deng, C. C. Yu, Chao Jin, Chaofan Lin, Chen Dong, Chenbing Wang, Chenfan Feng, Chengda Lu, Chenggang Zhao, Chengqi Deng, ChengYuan Zhang, Chenhao Xu, Chenqi Zhao, Chenze Shao, Chuhao Wang, Chuqi Zhang, Damai Dai, Dejian Yang, Deli Chen, Di Wu, Donghao Li, Erhang Li, Eric Fu, F. Zhou, Fangwei Zhou, Fangyun Lin, Fangzhou Yuan, Feiyu Xia, Fucong Dai, Guangbo Hao, Guanglin Li, Guanting Chen, Guoai Cao, Guofan Fan, Guolai Meng, Guowei Li, Haichuan Zhang, Haiyang Ma, Han Li, Han Yu, Han Zhang, Hangyuan Deng, Hanwei Xu, HanXiang Xu, Hanxun Zhong, Hao Guo, Hao Qin, Haodong Wen, Haofen Liang, Haofeng Huang, Haohua Liu, Haoling Zhang, Hao Li, Wei Wang, Yang Zhang, Shuo Yang, PENG SUN, Xiaohan Wang, Xin Liu, Xiaodong Liu, Yuxin Chen, Wentao Zhang, Xinyu Zhang, Wei Li, C.C. Yu, J.H. Jin, J.H. Zhang, J.X. Zou, M.S. Di, S.H. Liu, Wei Zhang, Y.C. Yan, Y.H. Jiang, Y.T. Wu, Y.W. M., Y.Z. Wang, Z.Y. Z., M.K. Zhang, W.L. Xiao",
+      "authors": "Ke Xu, Hengxu Wu, Honghui Ding, Hongxuan Tang, Huadong Wang, Huanqi Cao, Huazuo Gao, Hui Qu, Hui Zeng, J. Yang, J. H. Jin, J. H. Zhang, J. X. Zou, Jiahui Zhou, Jiajun Chen, Jialiang Huang, Jialin Zhao, Jiamin Tang, Jian Zhou, Jianan Tong, Jianwen Li, Jiaqi Zhu, Jiarui Wang, Jiasheng Ye, Jiashi Li, Jiaxin Xu, Jiaying Ding, Jibai Lu, Jiewen Hu, Jin Yan, Jincheng Zhai, Jingchang Chen, Jingcheng Hu, Jingli Zhou, Jingsheng Xu, Jingting Xiang, Jingyan Yun, Jingyang Yuan, Jingyuan Cheng, Jinhua Zhu, Jinpeng Wang, Jinyi Chen, Jinyi Hu, Jiping Yu, Jueliang Guo, Junbo Pei, Junbo Sun, Junguang Jiang, Junjie Qiu, Junkang Zhou, Junqi Liu, Junren Li, Junxian Li, Junxiao Song, Junyi Guo, Kai Dong, Kaige Gao, Kang Guan, Kangdong Yuan, Ke Hong, Kefan Zhao, Kexin Ji, Kexin Zhang, Kexing Zhou, Kuai Yu, Lan Zhang, Lean Wang, Lecong Zhang, Lei Wang, Letian Gao, Liang Zhao, Liansheng Xu, Lihua Guo, Lingxiao Luo, Lingyue Fu, Litao Deng, Litong Wang, Liyue Zhang, Longhao Chen, Lu Chen, Luotian Huang, Luyao Ma, Luyao Wang, M. S. Di, Max Mei, Menghao Ye, Miao Cui, Mingchuan Zhang, Minghua Zhang, Minghui Tang, Mingjing Zhang, Mingqi Wei, Mingshu Chen, Mingxing Liu, Mingxu Zhou, Mingyu Xu, Mingyu Yang, Mingze Wang, Muyang Chen, Ni Shentu, Ning Wang, Niufang Ning, Panpan Huang, Peixin Cong, Peiyi Wang, Peiyuan Xin, Pengfei Ren, Pengfei Yan, Pengle Zhang, Qi Kang, Qi Tang, Qiancheng Wang, Qiang Li, Qihao Zhu, Qingyang Li, Qinyu Chen, Qiushi Du, Qizhou Guo, Rongxian Xu, Rui Ding, Rui Hu, Rui Tian, Rui Yu, Ruidong Zhu, Ruifan Xu, Ruihang Xia, Ruijie Lu, Ruilin Geng, Ruipeng Hong, Ruiqi Ge, Ruisong Zhang, Ruize Sun, Ruizhe Pan, Runji Wang, Runqian Chen, Runxin Xu, Ruohong Tian, Ruomeng Shen, Ruoyu Zhang, Ryan X., S. H. Liu, Shanghao Lu, Shangyan Zhou, Shanhuang Chen, Shaofei Cai, Shaoheng Nie, Shaoyuan Chen, Shengding Hu, Shengkai Lin, Shengwen Ran, Shengyu Liu, Shengyuan Jia, Shi Bai, Shi Feng, Shicheng Xu, Shichun Liu, Shiqiang Hu, Shirong Ma, Shiyu Wang, Shiyuan Feng, Shufan Gong, Shuhan Lin, Shuiping Yu, Shunfeng Zhou, Shuomeng Wang, Shuting Guo, Shuting Pan, Shuying Yu, Sinuo Cao, Siyi Lin, Sizhe Chen, Songyang Chen, Songyang Zhou, Tao Ni, Tao Yun, Tian Jin, Tian Pei, Tian Ye, Tianle Lin, Tianran Ji, Tianyi Cui, Tianyuan Yue, Tingting Yu, Tongrui Xiong, Wangding Zeng, Wei Liu, Wei zhang, Weibin Xu, Weihao Zeng, Weilin Zhao, Wen Liu, Wenfeng Liang, Wenjie Pang, Wenjing Luo, Wenjing Yao, Wenjun Gao, Wenkai Shao, Wenkai Yang, Wenli Zhang, Wenlu Wang, Wenlve Huang, Wenqian Yan, Xi Gao, Xiang He, Xiangli Li, Xiangwen Wang, Xiangying Zhang, Xiankui Wei, Xiao Bi, Xiaojian Qu, Xiaokang Chen, Xiaokang Zhang, Xiaotao Nie, Xiaoyao Zou, Xiaoyuan Li, Xicheng Guo, Xieting Chu, Xin Cheng, Xin Xie, Xinbo Xu, Xingchao Liu, Xingchen Liu, Xingkai Yu, Xingyou Li, Xintong Yao, Xinyang Chen, Xinyong Jiang, Xu Chen, Xuanyu Wang, Xubei Zhong, Xuecheng Su, Xuejie Liu, Xuheng Lin, Xujie Fan, Xuncheng Zhao, Xuwei Fu, Y. C. Yan, Y. H. Jiang, Y. T. Wu, Y. W. M., Y. Z. Wang, Yafei Gao, Yang Yang, Yanru Ma, Yanwen Huang, Yao Li, Yao Meng, Yao Zhao, Yaofeng Sun, Yaohui Wang, Yaoyang Ye, Yehang Yin, Yexinrui Wu, Yi Qian, Yi Tao, Yi Yu, Yichao Zhang, Yichen Jiang, Yicheng Wang, Yifan Ding, Yifan Shi, Yifeng Peng, Yifeng Zhai, Yijia Wu, Yiliang Xiong, Yilun Wang, Ying He, Ying Zhou, Yingjia Luo, Yinmin Zhong, Yiping Wang, Yisong Wang, Yixiang Zhang, Yixiao Chen, Yixuan Tan, Yixuan Wei, Yiyang Ma, Yiyao Yang, Yiyuan Liu, Yizai Cai, Yizhen Wei, Yizhi Wang, Yonglun Yang, Yongqi Zhuo, Yongqiang Guo, Yongtong Wu, Yu Wu, Yu Zhang, Yuan Bian, Cheng Yuan, Yuan Ou, Yuan Sun, Yuanfan Xu, Yuanhang Sun, Yuanhao Li, Yuchen Liu, Yuchen Yao, Yudong Han, Yuduan Wang, Yuhan Wu, Yuhao Meng, Yuheng Zou, Yunchuan Wang, Yunfan Xiao, Yunfan Xiong, Yupeng Chen, Yuqian Cao, Yuqian Wang, Yuqing Chen, Yushun Zhang, Yutong Lin, Yuwei Xiao, Yuxian Gu, Yuxiang Huang, Yuxiang Luo, Yuxiang You, Yuxin Xiang, Yuxuan Liu, Yuxuan Zhou, Yuyang Zhou, Yuzhe Guo, Yuzhen Huang, Yuzhuo Bai, Z. Y. Z., Zanlin Ni, Zehao Wang, Zehua Zhao, Zehui Ren, Zejun Zhao, Zhangli Sha, Zhanying Wang, Zhaochen Zhang, Zhaoshuai Du, Zhe Fu, Zhean Xu, Zhenda Xie, Zheng Liu, Zhengyan Zhang, Zhenhua Dong, Zhewen Hao, Zhibang Wang, Zhibin Gou, Zhicheng Ma, Zhihao Li, Zhihong Shao, Zhihuan Huang, Zhijie Li, Zhirui Lu, Zhixian Huang, Zhixuan Chen, Zhixuan Pan, Zhiyu Wu, Zhizhou Ren, Zhu He, Zhuoshu Li, Zhuping Zhang, Zian Xu, Zihao Wang, Zihui Gu, Zijia Zhu, Zili Zhang, Zilin Li, Zilong Hou, Zilong Lyu, Ziqiao Wang, Ziwei Xie, Ziya Zhang, Ziyi Gao, Zizheng Pan, Zonglin Li, Zongqing Yao, Zui Chen, Zuofan Wu, Chenchen Ling, Chengyu Hou, Chong Chen, D. Li, Di Qi, Dongjie Ji, Fang Wei, Fanyi Xia, Fei Xie, Feiyi Tan, Hailong Guo, Haiyan Zhai, Hui Zhou, Huihui Tan, Huijie Li, Jia Luo, Jia Song, Jialu Cai, Jian Liang, Jiangting Zhou, Jiaqi Gao, Jiayi Shao, Jie Chen, Jieyu Yang, Jin Chen, Jingde Zhang, Jingzi Zhou, Jinqian Wang, Jinyang Liu, Junhua Ling, Junmin Zheng, Kaicheng Yang, Le Su, Leyi Xia, Liangfeng Ding, Lin Zhuo, Linwang Ma, Linyan Zhu, Liyu Cai, Luqi Yao, M. K. Zhang, Meng Li, Miao Lin, Miaojun Wang, Min Zhang, Mingming Li, Mingming Wang, Mingze Yin, Minmin Han, Nan Cao, Ningxin Ma, Panpan Wang, Peihan Lin, Peng Zhang, Qian Ying, Qiang Xiang, Qiao Wang, Qingmiao Mao, Qiwei Jiang, Rongli Jin, Ruyi Chen, Sha Tao, Shangmian Sun, Shaoqing Wu, Shichao Zou, Si Lei, Tianyang Zhang, Tianyu Sun, Tingting Yin, W. L. Xiao, Wei An, Weiwei Lin, Yuxiang Chen, Wenqing Hou, X. Lin, Xiangfei Meng, Xianzhu Huang, Xiao Peng, Xiaoqian Li, Xiaoting Zhang, Xiaowen Sun, Xiaoxiang Wang, Xiaoyu Ye, Xinrou Zhang, Xue Cao, Xueyin Chen, Yanan Zhou, Yanhong Xu, Yao Xia, Yao Xu, Yi Shao, Yihong Zhang, Yiling Ma, Ying Tang, Yining Lou, Yiru Chen, Yishi Piao, Yixuan Chen, Yong Xiong, Yuchen Xuan, Yuehan Yang, Yuer Xu, Yukun Zha, Yunxian Ma, Yuping Lin, Yuting Yan, Yutong Xie, Yuwen Sheng, Yuxuan Zhu, Zekai Zhang, Zhe Ju, Zhenzhen Lin, Zheren Gao, Zheyang Sun, Zhigang Yan, Zhongyu Wu, Zihua Qu, Ziling Yan, Ziyi Wan, Jia Yu, Haiyang Shen, Jinzhao Sun, Yukun Li, Xiaohan Wang, Wei Li, Yuxin Chen, Xin Liu, Xiaodong Liu, Hao Li, Wei Wang, Yang Zhang, Xiang Li, Hao Jiang, Shuo Yang, PENG SUN, Zi Wang, Di Huang, Ruihan Yang, Xinyu Yang, Wentao Zhang, Xinyu Zhang, KaiFeng Chen, DeepSeek-AI, Anyi Xu, B. Li, Bangcai Lin, Bing Xue, BingCheng Xian, Bingzheng Xu, Bochao Wu, Bowei Zhang, Boyi Deng, C. C. Yu, Chao Jin, Chaofan Lin, Chen Dong, Chenbing Wang, Chenfan Feng, Chengda Lu, Chenggang Zhao, Chengqi Deng, ChengYuan Zhang, Chenhao Xu, Chenqi Zhao, Chenze Shao, Chuhao Wang, Chuqi Zhang, Damai Dai, Dejian Yang, Deli Chen, Di Wu, Donghao Li, Erhang Li, Eric Fu, F. Zhou, Fangwei Zhou, Fangyun Lin, Fangzhou Yuan, Feiyu Xia, Fucong Dai, Guangbo Hao, Guanglin Li, Guanting Chen, Guoai Cao, Guofan Fan, Guolai Meng, Guowei Li, Haichuan Zhang, Haiyang Ma, Han Li, Han Yu, Han Zhang, Hangyuan Deng, Hanwei Xu, HanXiang Xu, Hanxun Zhong, Hao Guo, Hao Qin, Haodong Wen, Haofen Liang, Haofeng Huang, Haohua Liu, Haoling Zhang, Haoming Luo, Haoran Yang, Haotian Xu, Haotian Yuan, Haoting Huang, Haowen Luo, Haoyang Cai, Haoyu Chen, Haozhe Ji, Hengran Zhang, Hengrui Wang, C.C. Yu, J.H. Jin, J.H. Zhang, J.X. Zou, M.S. Di, S.H. Liu, Wei Zhang, Y.C. Yan, Y.H. Jiang, Y.T. Wu, Y.W. M., Y.Z. Wang, Z.Y. Z., M.K. Zhang, W.L. Xiao",
       "org": "",
       "published": "2026-09-17",
       "score": 96,
@@ -13330,6 +13330,32 @@
       "project": "",
       "thumbnail": "./thumbs/2605.10527.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
+      "summary": "",
+      "matchedBy": [
+        "alphaxiv hot",
+        "language modeling"
+      ],
+      "sources": [
+        "alphaxiv"
+      ],
+      "category": "Language Modeling",
+      "categories": [
+        "Language Modeling"
+      ]
+    },
+    {
+      "id": "2606.07514",
+      "title": "UniSHARP: Universal Sharp Monocular View Synthesis",
+      "authors": "",
+      "org": "",
+      "published": "",
+      "score": 92,
+      "paper": "https://arxiv.org/abs/2606.07514",
+      "source": "https://www.alphaxiv.org/abs/2606.07514",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2606.07514.jpg",
+      "firstSeenAt": "2026-11-19T04:29:44.583Z",
       "summary": "",
       "matchedBy": [
         "alphaxiv hot",
@@ -63927,16 +63953,14 @@
         "Reinforcement Learning",
         "Robotics",
         "Imitation learning",
-        "language modeling",
-        "vision/multimodal"
+        "language modeling"
       ],
       "sources": [
         "paperswithcode",
         "huggingface"
       ],
-      "category": "Vision/Multimodal",
+      "category": "Language Modeling",
       "categories": [
-        "Vision/Multimodal",
         "Language Modeling"
       ]
     },
@@ -92109,6 +92133,36 @@
         "Language Modeling",
         "Data / Retrieval",
         "Frontier Training"
+      ]
+    },
+    {
+      "id": "2611.24738",
+      "title": "Jeveration: System One Models Now Generate",
+      "authors": "Yuhe Liu, Qi Li, Shihua Zhang, Xinchao Wang",
+      "org": "",
+      "published": "2026-11-18",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2611.24738",
+      "source": "https://huggingface.co/papers/2611.24738",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.24738.jpg",
+      "firstSeenAt": "2026-11-19T04:09:26.492Z",
+      "summary": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent whole. We therefore condition all positions on a shared random state to coordinate parallel predictions, so that each draw yields a different but coherent image. Since the model tends to ignore this state under direct image supervision, we first learn a distribution over discrete image codes to guide single-pass generation. Beyond text-to-image generation, we further unify image-to-image generation and dense prediction within the same architecture, so that one checkpoint supports all three tasks, each in one forward pass. Experiments show that Jeveration generates a 512x512 image in 78 ms, up to 122x faster than existing unified models, while maintaining competitive image quality and dense prediction performance.",
+      "matchedBy": [
+        "arxiv",
+        "vision/multimodal",
+        "language modeling",
+        "hugging face daily"
+      ],
+      "sources": [
+        "arxiv",
+        "huggingface"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal",
+        "Language Modeling"
       ]
     },
     {
@@ -142793,6 +142847,36 @@
       ]
     },
     {
+      "id": "2611.14848",
+      "title": "Tideway: Phase-Aware Tiered Memory Management for MoE Inference on Consumer Devices",
+      "authors": "Yifei Wang, Tsun-yu Yang, Yechen Xu, Hancheng Ye, Qinsi Wang, Baijun Zhou, Tingjun Chen, Hai \"Helen\" Li, Danyang Zhuo, Yiran Chen",
+      "org": "",
+      "published": "2026-11-10",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2611.14848",
+      "source": "https://huggingface.co/papers/2611.14848",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.14848.jpg",
+      "firstSeenAt": "2026-11-19T04:29:44.583Z",
+      "summary": "Large language model (LLM) agents are rapidly becoming a dominant paradigm for AI applications. Recently, there is a growing demand to deploy large-scale Mixture-of-Experts (MoE) models locally on consumer PCs to balance data privacy, API costs, and inference efficiency. However, unlike datacenter servers with abundant DRAM, consumer devices are tightly constrained in both GPU VRAM and host RAM, forcing massive MoE weights to spill across VRAM, host RAM, and SSD. Under such spilling, we observe that existing systems fail to fully utilize this memory hierarchy, treating the tiers as independent caches and thrashing in inference. We present TIDEWAY, a system for efficient inference of large MoE models on memory-constrained consumer devices. Our core insight is to manage host RAM and GPU VRAM as a unified memory pool. Within this pool, TIDEWAY couples phase-aware memory layouts, which adapt to the distinct access patterns of prefill and decode, with an execution engine that optimizes CUDA Graph execution under expert paging. Our evaluations on representative consumer hardware with frontier MoE models demonstrate that TIDEWAY significantly outperforms state-of-the-art systems. On average, TIDEWAY achieves speedups of 1.97x in end-to-end latency and 2.40x in Time-to-First-Token (TTFT), along with 1.61x higher decode throughput against the fastest baseline. Our source code is publicly available at https://github.com/Afterglow231/Tideway .",
+      "matchedBy": [
+        "hugging face daily",
+        "language modeling",
+        "serving",
+        "frontier training"
+      ],
+      "sources": [
+        "huggingface"
+      ],
+      "category": "Serving",
+      "categories": [
+        "Serving",
+        "Frontier Training",
+        "Language Modeling"
+      ]
+    },
+    {
       "id": "2609.26978",
       "title": "Tight Regret Bound for Online Inverse Linear Optimization via Multiscale Matrix Weights",
       "authors": "",
@@ -148271,6 +148355,32 @@
       "sources": [
         "arxiv",
         "paperswithcode",
+        "huggingface"
+      ],
+      "category": "Vision/Multimodal",
+      "categories": [
+        "Vision/Multimodal"
+      ]
+    },
+    {
+      "id": "2611.21114",
+      "title": "VAE Rhythm: Temporal Decoding Traces for AI-Generated Video Detection",
+      "authors": "Ke Sun, Shuwei Li, Haiyang Mei, Mike Zheng Shou",
+      "org": "",
+      "published": "2026-11-16",
+      "score": 78,
+      "paper": "https://arxiv.org/abs/2611.21114",
+      "source": "https://huggingface.co/papers/2611.21114",
+      "code": "",
+      "project": "",
+      "thumbnail": "./thumbs/2611.21114.jpg",
+      "firstSeenAt": "2026-11-19T04:29:44.583Z",
+      "summary": "Visible artifacts are an unreliable cue for detecting generated videos, because newer generators learn to remove them. We instead detect a trace left by the generation pipeline itself. Most video generators decode latents with a 3D causal VAE that groups consecutive frames in time, so the fidelity of generated frames rises and falls periodically with their position in a group. We call this periodic trace VAE Rhythm. Real videos are captured frame by frame and do not have it. To reveal it without training, we propose a phase scan. The scan reconstructs a clip with an off-the-shelf VAE from successive start offsets and measures the periodicity of the reconstruction error across these offsets. We find VAE Rhythm in most of the 39 variants of 31 generators we test, including the closed-source Sora, Kling 3.0 and Seedance 2.0. We use the rhythm as a zero-shot score, as a plug-in for existing detectors and as a data engine that pairs real videos with their VAE reconstructions to train our detector CaDet. On DF26, the training-free rhythm score outperforms all 15 retrained baselines, and as a plug-in it improves all 19 tested detectors by 6.7% to 23.7% AUROC. CaDet achieves the best AUROC on AIGVDBench, DF26 and three 2026 closed-source models, and its variant trained without any generated video still exceeds 90% on AIGVDBench.",
+      "matchedBy": [
+        "hugging face daily",
+        "vision/multimodal"
+      ],
+      "sources": [
         "huggingface"
       ],
       "category": "Vision/Multimodal",
@@ -219469,8 +219579,7 @@
       ],
       "category": "Language Modeling",
       "categories": [
-        "Language Modeling",
-        "Frontier Training"
+        "Language Modeling"
       ]
     },
     {
@@ -408514,34 +408623,6 @@
       ]
     },
     {
-      "id": "2611.24738",
-      "title": "Jeveration: System One Models Now Generate",
-      "authors": "Yuhe Liu, Qi Li, Shihua Zhang, Xinchao Wang",
-      "org": "",
-      "published": "2026-11-18",
-      "score": 58,
-      "paper": "https://arxiv.org/abs/2611.24738v1",
-      "source": "https://arxiv.org/abs/2611.24738v1",
-      "code": "",
-      "project": "",
-      "thumbnail": "./thumbs/2611.24738.jpg",
-      "firstSeenAt": "2026-11-19T04:09:26.492Z",
-      "summary": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent whole. We therefore condition all positions on a shared random state to coordinate parallel predictions, so that each draw yields a different but coherent image. Since the model tends to ignore this state under direct image supervision, we first learn a distribution over discrete image codes to guide single-pass generation. Beyond text-to-image generation, we further unify image-to-image generation and dense prediction within the same architecture, so that one checkpoint supports all three tasks, each in one forward pass. Experiments show that Jeveration generates a 512x512 image in 78 ms, up to 122x faster than existing unified models, while maintaining competitive image quality and dense prediction performance.",
-      "matchedBy": [
-        "arxiv",
-        "vision/multimodal",
-        "language modeling"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "category": "Vision/Multimodal",
-      "categories": [
-        "Vision/Multimodal",
-        "Language Modeling"
-      ]
-    },
-    {
       "id": "2610.35010",
       "title": "JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies",
       "authors": "Wei Wang, Wenqiao Zhang, Zheqi Lv, Zheng Dong, Yingjie Niu, Jiaqi Zhu, Jun Xiao, Chao Li, Yueting Zhuang",
@@ -516090,7 +516171,7 @@
       "source": "https://arxiv.org/abs/2611.24499v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24499.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Robot learning systems require synchronized, high-quality demonstrations that combine visual, proprioceptive, and action data. However, collecting such datasets with mobile manipulators is often slowed down by fragmented teleoperation interfaces and manual post-processing workflows. This paper presents an integrated framework for teleoperated multimodal data collection on a Clearpath Dingo-O mobile base equipped with a Kinova Gen3 Lite manipulator and an Intel RealSense RGB-D camera. The framework combines single-controller operation of the base, arm, and recording process with an automated ROS-based pipeline for data capture, image-quality filtering, temporal synchronization, visualization, and export to machine-learning-ready Zarr datasets. We validate the system on a pick-and-place mobile-manipulation task in which the robot transports a bottle between two surfaces. The results show that the unified controller supports complete task execution and recording without external commands, while the data pipeline produces synchronized datasets for short demonstrations and identifies corrupted visual frames. The proposed framework provides a practical basis for producing structured demonstrations for robot-learning research.",
       "matchedBy": [
@@ -521376,7 +521457,7 @@
       "source": "https://arxiv.org/abs/2611.23483v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.23483.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Agentic multimodal large language models (MLLMs) that think with images interleave reasoning with zoom-in tool calls. However, this sequential loop is slow, and its answers carry no reliability score. Prior speculation of tokens, reasoning steps, or answers keeps the loop, and answer speculation also accepts confident errors. We find that the loop mostly adds one zoom-in step, with which a small model is ahead of the agent on most splits. Our key insight is to speculate the agent's next observation, which, unlike a drafted answer, can be verified, corrected, and used to test the answer. We propose SpecLook, a training-free speculate-and-verify framework with three levels. A small model drafts a glimpse and re-answers from it, and the question ends if the answer is unchanged and confident. Otherwise, the agent's large model verifies and corrects the glimpse without tools, and their answers are fused. Only questions that still lack evidence reach the agent, in one forward pass that SpecLook-Fast skips, so no question runs the loop. The trace scores every answer's reliability without labels. Extensive experiments on V*, HR-Bench, and POPE show that both are more accurate than every baseline on every split. SpecLook reaches 87.2% and 86.2% mean accuracy with 7.7x and 4.7x speedups over the DeepEyes-7B and Thyme-RL agents, and SpecLook-Fast reaches 9.9x and 6.3x.",
       "matchedBy": [
@@ -532380,7 +532461,7 @@
       "source": "https://arxiv.org/abs/2611.24702v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24702.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Measuring inter-node distances is the basis for network localization, whereas acquiring node positions does not require a fully connected graph of distances. Existing complete-ranging protocols for network localization require every node pair to exchange signals, which prolongs the ranging cycle. In this paper, we propose sparse signal-multiplexing network ranging (S-SM-NR), a task-oriented framework that adapts the transmit-listen schedule to the ranging task required by network localization. First, we establish the S-SM-NR framework by formulating the joint design of the task graph and the transmit-listen schedule. Then, we analyze the minimum round count required by S-SM-NR and establish a connectivity condition for network localization. Subsequently, we develop a closed-form joint design that constructs the sparse task graph and the balanced transmit-listen schedule. In particular, the joint design can achieve the minimum round count under the complete physical connectivity. Finally, simulations show that the proposed S-SM-NR scheme reduces the occupied-round count and improves the localization accuracy by shortening the ranging cycle.",
       "matchedBy": [
@@ -533744,7 +533825,7 @@
       "source": "https://arxiv.org/abs/2611.24883v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24883.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Robotic haircutting requires accurate motion execution and reliable communication to safely reproduce the operator's commands. Internet-based teleoperation is a key enabling technology to remotely perform precise manipulation tasks such as haircutting. However, communication uncertainties, including variable transmission delays and packet jitter, degrade synchronization between the master and slave systems and affect tracking performance. This paper presents a unilateral Internet teleoperation framework for robotic haircutting that takes into account experimentally measured communication uncertainties. Three delay-compensation techniques, namely Zero-Order Hold (ZOH), First-Order Hold (FOH), and Low-Pass Filtering (LPF), are evaluated together with a classical proportional-derivative (PD) controller and a passivity-based synchronization controller. Unlike conventional studies based on synthetic delay models, the proposed framework is validated using communication data acquired from a real cloud-based teleoperation platform, where both packet delay and effective delay are characterized. The results demonstrate that combining delay-compensation techniques with passivity-based synchronization improves the robustness of unilateral Internet teleoperation under realistic communication uncertainties, providing a reliable control framework for robotic haircutting applications.",
       "matchedBy": [
@@ -537252,7 +537333,7 @@
       "source": "https://arxiv.org/abs/2611.24793v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24793.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Visualizing intermediate representations could help us inspect the reasoning steps underlying a model output. Unified multimodal models offer this opportunity by combining understanding and generation in one architecture. Their image generators can access representations formed while processing text. We introduce the V-lens, which uses this connection to visualize a chosen token's hidden state without training a decoder. Across four diffusion-based and two purely autoregressive unified models, the resulting images reveal key intermediate concepts that connect a question to its answer even when the concepts are never named explicitly. Controlled tests show how this content changes with context, token position, and depth. We then introduce lens tuning, which supervises selected hidden states with pictures through the V-lens. Across BAGEL, SenseNova-U1, and HunyuanImage-3.0, the rate of correct visualizations of pronoun referents rises from 2-11% to 86-94%. Surprisingly, such visual supervision also improves text answers without supervising the answer tokens directly. Code is available at https://github.com/multimodal-ai-lab/V-lens.",
       "matchedBy": [
@@ -543119,7 +543200,7 @@
       "source": "https://arxiv.org/abs/2611.24554v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24554.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Visuomotor policies have demonstrated that imprecise low-cost robots can autonomously complete complex manipulation tasks. However, most inexpensive manipulators rely on compact and rigidly position-controlled servos for actuation, which complicate simulation, operation, and safety. This work introduces TinyARM-X, a framework for easily manufacturable, configurable, and torque-controllable low-cost ( 3 DoF robot within 10 min. Actuator modeling and dynamic compensation enable torque-controlled applications like mixed-reality impedance control teleoperation and simulator force feedback rendering. Experiments include mechanical benchmarking and real-world force-aware telemanipulation. The TinyARM-7 has a payload of 33.5 g, a max speed of 0.77 m/s, and a reach of 210 mm. Moreover, with dynamic compensation, the robot has a backdrive-breakaway force of 1.4 N and a backdrive-running force of 0.7 N. Additionally, Cartesian-Impedance Control (CIC) attains a translational stiffness of >15 N/m. Lastly, the TinyARM-X stack is open-sourced to disseminate accessible desktop-scale torque-controlled robotic manipulation to the community.",
       "matchedBy": [
@@ -550969,7 +551050,7 @@
       "source": "https://arxiv.org/abs/2611.24626v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24626.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "During human cortical development, functional systems become increasingly differentiated. We asked whether improved reasoning in language models involves a comparable regional reorganization. Applying diffusion-map embedding, used to characterize cortical organization, to matched base and reasoning-trained models from three families, we found broadly preserved gradient profiles with localized changes within a contiguous layer span. Grafting weights from these spans into instruction-tuned hosts improved mathematical reasoning on average, with gains rising with region overlap, while retaining more previously solved problems than grafts elsewhere. Across training, the span formed gradually during the early rise in performance, and grafts from intermediate stages helped. Grafts shifted most hosts partly towards their donors' behaviour and sometimes improved on problems the donors failed; the same analysis located a transferable span in a medical model. Together, these findings identify a reasoning-related region whose weights improve reasoning with low interference in the host's existing mathematical competence.",
       "matchedBy": [
@@ -554861,7 +554942,7 @@
       "source": "https://arxiv.org/abs/2611.24795v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24795.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Multimodal Large Language Models (MLLMs) struggle with accurately capturing camera-object relations, especially for object orientation, camera viewpoint, and camera shots. This stems from the fact that existing MLLMs are trained on images with limited diverse camera-object relations and corresponding textual descriptions. To address this, we propose a synthetic generation pipeline to create large-scale 3D visual instruction datasets. Our framework takes 3D assets as input and uses rendering and diffusion-based image generation models to create photorealistic images preserving precise camera-object relations. Additionally, large language models (LLMs) are used to generate text prompts for guiding visual instruction tuning and controlling image generation. We create Ultimate3D, a large-scale 3D-grounded 2D visual instruction dataset. Ultimate3D consists of 240K VQAs with precise camera-object annotations, and corresponding benchmark. MLLMs fine-tuned on our proposed dataset outperform commercial models by a large margin, achieving an average accuracy improvement of 29.7% on camera-object relation recognition tasks. Our code, dataset, and benchmark will contribute to broad MLLM applications.",
       "matchedBy": [
@@ -554971,7 +555052,7 @@
       "source": "https://arxiv.org/abs/2611.24941v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24941.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Generating physically based rendering (PBR) texture maps for a 3D mesh from a single reference image is highly ambiguous, as the observed appearance entangles material identity, surface reflectance, and illumination. While current generative methods produce realistic albedo maps, they still struggle to infer accurate metallic and roughness attributes for relighting. We present UltraTex, a cascaded multi-view framework that moves beyond appearance matching by integrating physical knowledge into multi-view diffusion-based PBR generation. UltraTex first jointly predicts albedo and world-space shading normals to generate more detailed albedo maps, and then predicts metallic-roughness (MR) maps conditioned on the generated albedo, reference image, and material semantic priors. To inject material semantics, a lightweight adapter transforms hidden-layer features of a vision-language model (VLM) into intrinsic material representation tokens, providing part-level knowledge anchors for MR estimation. To model material-light interaction, photometric representation alignment guides intermediate diffusion features toward ground-truth material renderings under controlled lighting. This makes metallic and roughness variations observable through highlight intensity, specular sharpness, and local reflectance contrast, providing stronger guidance for fine-grained material prediction without explicit lighting supervision. Extensive experiments show that UltraTex generates high-quality textures and outperforms existing open-source and commercial methods in visual fidelity, material accuracy, and physical plausibility.",
       "matchedBy": [
@@ -560191,7 +560272,7 @@
       "source": "https://arxiv.org/abs/2611.24757v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24757.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Online A/B testing is the standard approach for evaluating changes to user-facing systems, such as a new recommendation or ranking policy, before deployment. While the difference-in-means estimator of a standard A/B test is unbiased, it often suffers from high variance. When the treatment and production policies choose the same actions with similar probabilities, the resulting observations can add noise while providing little information about the difference between the policies. Consequently, A/B tests can require large amounts of traffic and long durations to detect small treatment effects. Existing variance-reduction methods mainly improve the estimator after the data-collection scheme has been fixed, and recent overlap-aware designs only optimize a single traffic split between the two policies; thereby, they cannot direct traffic to the actions on which the policies disagree. In this paper, we jointly optimize how actions are sampled and how the resulting observations are used to estimate the treatment effect. Our contributions are two-fold. First, building on pairwise off-policy evaluation, we derive the variance-optimal action-level logging policy for estimating the average treatment effect between two policies, which has a closed-form solution for any fixed control variate. Second, we use historical logs to jointly optimize the logging policy and a control variate to further reduce variance. Our experimental results in simulated policy A/B tests show that our designs estimate the average treatment effect more accurately than existing variance reduction methods on every evaluated setting, while generally improving statistical power and reducing how often the worse policy is selected. As a result, our designs enable practitioners to reach reliable deployment decisions with considerably less online traffic.",
       "matchedBy": [
@@ -561917,7 +561998,7 @@
       "source": "https://arxiv.org/abs/2611.24845v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24845.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Existing AI agents can retrieve information, call tools, run experiments, and produce multi-step outputs. Yet most are built around relatively static workflows and struggle to preserve reliable state as the environment changes. Financial trading makes this limitation especially consequential: prices, news, market conditions, portfolio positions, and available capital evolve continuously. A result is useful only when it remains tied to the correct time, data snapshot, and execution context. We present Vibe-Trading, a comprehensive agent-native trading framework and all-in-one workspace for building, evaluating, and evolving agents for financial trading. It unifies market research, financial data, strategy generation, backtesting, portfolio analysis, paper trading, multi-agent collaboration, and optional broker execution. Its central contribution is an architecture that keeps results, evidence, research history, and trading authority connected throughout the research-to-action process. Each result retains its source, temporal scope, configuration, and producing run. Shared evidence grounding enables verification, versioned research records support reproducible continuation, and an explicit authority gate separates strategy research from live execution. Together, these designs provide a practical foundation for trading agents whose results can be traced, reproduced, and acted on only under explicit authority.",
       "matchedBy": [
@@ -562061,7 +562142,7 @@
       "source": "https://arxiv.org/abs/2611.23606v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.23606.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Backward-compatible retrieval enables a new encoder to query the gallery that an old model has already encoded, so that a cross-modal retrieval system can be upgraded without re-encoding billions of items. Existing compatible methods either fit the old query and stay near the accuracy of the old model, or run the old and the new encoder for every query. We propose VIBRA, which matches relevance on the old gallery, corrects the errors of a single model with the barycenter of several views, which is itself a query in the old space, and trains the new encoder to inherit this consensus, so that models absent at deployment still shape every query. We show that the barycenter gains margin over the average of its views exactly when their hardest irrelevant items differ, and we characterize the share of this gain that one encoder can reach. On five benchmarks with five upgrades among six CLIP, MetaCLIP and SigLIP2 backbones, VIBRA is the best compatible method in all 50 settings, improving Recall@1 by up to 5.6 points over the strongest baseline and by up to 18.0 points over the old model, while adding less than 1 ms to the latency of the new encoder.",
       "matchedBy": [
@@ -562895,7 +562976,7 @@
       "source": "https://arxiv.org/abs/2611.24240v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24240.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Vision-language generation has predominantly relied on autoregressive and discrete diffusion models. Autoregressive models generate tokens sequentially, while discrete diffusion models typically predict tokens independently within each denoising step. We propose ViLFlow (Vision-Language Flow), a continuous-flow vision-language model that combines joint modeling of output embeddings with parallel token decoding. ViLFlow adapts pretrained continuous language generation to visual question answering and image captioning through learned image guidance and prediction-aware token decoding. A visually adapted teacher provides image-guided predictions as additional denoising supervision. The denoiser learns to reproduce these predictions directly, retaining one image-conditioned prediction per generation step. We train the token decoder on denoiser predictions and paired reference text to improve the conversion of continuous outputs into words. The decoder can be adapted independently, improving answering and captioning without further denoiser training. For captioning, it also supplies text feedback during late denoising, allowing decoded words to inform subsequent refinement. ViLFlow outperforms autoregressive and masked-diffusion baselines by up to 8.46 percentage points on VQAv2 and 4.50 points on GQA without GQA training. On COCO Karpathy test, it improves CIDEr by 16.25 over masked diffusion and 17.81 over sampled autoregression.",
       "matchedBy": [
@@ -569271,7 +569352,7 @@
       "source": "https://arxiv.org/abs/2611.24383v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24383.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Judgements of sexism are subjective and may vary across communities, yet sexism detection datasets usually reduce annotator judgements to a single majority label, obscuring disagreement and how models behave on contested cases. We introduce MuDAS, a dataset of YouTube comments in Saudi, Egyptian and Moroccan Arabic, each labelled by three native speakers of its dialect, with the individual annotations preserved. We use it to evaluate Arabic encoders fine-tuned with hard-label, soft-label and perspectivist objectives, GPT-5.6 Terra, and four Arabic-centric large language models. Model errors are more frequent on comments with annotator disagreement. Despite relatively close Macro-F1 scores, GPT-5.6 Terra and the fine-tuned encoders exhibit contrasting error patterns: GPT-5.6 Terra, even with the annotators' definition of sexism, over-classifies gender-related content such as religious advice on modesty, whereas the encoders miss implicit and prescriptive sexism. The Arabic-centric models also over-predict sexism and remain below the encoders. Disagreement-aware learning preserves Macro-F1, but soft labels improve alignment with annotators on contested comments at the expense of unanimous ones, and neither paradigm reliably identifies contested comments. Lower performance on Egyptian Arabic, clearest for the large language models, is not fully explained by the examined measures of test-set composition and dialectness. Majority-label scores can therefore hide contrasting error patterns that matter for content moderation.",
       "matchedBy": [
@@ -569705,7 +569786,7 @@
       "source": "https://arxiv.org/abs/2611.22161v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.22161.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "We post-train NVIDIA's Nemotron 3.5 Super (120B total, 12B active parameters) with reinforcement learning (RL) on five expert-built task datasets, one at a time: real-world software engineering, complex constraints, long-horizon tool use, professional chart understanding and enterprise document reasoning. Each run trains a fresh rank-32 LoRA adapter with CISPO on Tinker, with no supervised stage, and each adapter is compared with the base model on the same tasks, harness and settings. On twelve headline benchmarks, eight built by other groups and four by Surge AI, the gains range from +4.5 points on IFBench to +13.8 on GDP_pdf, which rises from 10.4% to 24.2%; SWE-bench Pro V2 rises from 86.9% to 92.1%, Terminal-Bench 2.1 from 63.9% to 70.3%, MultiChallenge from 58.3% to 66.6%, AutomationBench from 14.8% to 27.5% and Chartography from 39.4% to 50.6%. The document adapter, trained without API tools, also gains +8.0 points on AutomationBench. In attempts read side by side with the base model's on tasks each adapter newly solves, the base model's failures recur in a few modes, and each adapter does more often what the base model missed: the tool-use adapter finds the data and the rules before acting, the coding adapter writes its own test or scratch files on SWE-bench Pro V2, the constraints adapter carries earlier turns into its answers, the chart adapter measures the marks in code, and the document adapter reads AutomationBench's spreadsheets.",
       "matchedBy": [
@@ -570059,7 +570140,7 @@
       "source": "https://arxiv.org/abs/2611.20388v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.20388.jpg",
       "firstSeenAt": "2026-11-17T05:16:55.492Z",
       "summary": "Privacy controls can prevent an evaluator from linking purchases to the recommendations users received, while a merchant can still release complete item-level purchase counts for the evaluation cohort. We ask when these counts identify which recommender performs better. The counts constrain who could have bought each item. We bound the performance difference over all assignments consistent with the counts. A reduced transportation network handles full catalogs and can certify attainable endpoints. If the interval excludes zero, it identifies the better recommender for that cohort. With differentially private counts, one confidence guarantee applies jointly to all comparisons from the same release. In two e-commerce cohorts of about 20,000 and 100,000 users, exact counts narrowed every interval compared with bounds that ignored the counts. Most decisions involved a recommender that favors popular items. For NDCG@10, which rewards ranking purchased items higher, each setting combined one of three personalized pairs with a pattern and rate of missing links. Exact counts settled 14 of 168 settings in the smaller cohort and none of 81 in the larger cohort. In the smaller cohort, exact counts broken down by user group settled two personalized pairs when 90% of users remained linked, at the cost of revealing more about individual purchases. Whole-cohort private releases with one count per item retained much of the narrowing but settled no personalized pair in either cohort. Grouping less popular items into bins let private counts settle one personalized pair in the smaller cohort.",
       "matchedBy": [
@@ -570245,7 +570326,7 @@
       "source": "https://arxiv.org/abs/2611.23093v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.23093.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "Hierarchical models have been proposed as synthetic settings for studying language. However, their relevance to realistic language corpora remains underexplored. In this work, we introduce tree-grams, autoregressive generative $n$-gram models that build the conditional probability tensor $p(x_n \\mid x_{1:n-1})$ through a hierarchical composition of order-2 and order-3 tensors. $n$ controls the maximal context window, whereas a rank hyperparameter $d$ controls model capacity, yielding an interpretable and systematically scalable family of approximators of language. We show how tree-grams outperform existing $n$-gram baselines, while remaining competitive with deep transformer-based language models. We demonstrate the utility of such controlled approximations by using tree-grams as generative models. In particular, we show that hyperparameter transfer under $μ$P can be made more robust when narrower models are tuned on simpler data, generated by tree-grams with moderate $n$ and $d$. In addition, we show that entropy and effective range of correlations control performance gap after fine-tuning. This is because tree-grams allow us to explicitly control horizon and capacity. When allowed to route across candidate topologies, we observe emergent sparsity in tree-grams. Such concentrated routing permits pruning upto 95\\% of topologies without significant change in performance.",
       "matchedBy": [
@@ -571307,7 +571388,7 @@
       "source": "https://arxiv.org/abs/2611.22926v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.22926.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "Typed decision models combine natural-language understanding with a structured interface that returns a selected action and an option-level probability distribution without generating lengthy textual responses. Their low inference cost and response latency make them attractive for transportation problems with predefined alternatives. This paper investigates their effectiveness, robustness, and efficiency in two representative transportation tasks: individual travel-mode choice prediction and sequential traffic signal control. We systematically evaluate TypeSafe Jev and GPT-6 Luna Decisions against conventional transportation methods, reinforcement learning algorithms, and four chat-based large language models. Experiments on the Swissmetro dataset show that typed decision models achieve lower prediction accuracy than traditional discrete choice models and the strongest chat-based baseline, while their performance varies substantially with input representation and question framing. In closed-loop traffic signal control experiments, typed decision models demonstrate competitive performance against established controllers in several scenarios, but exhibit performance degradation under more challenging network conditions. Furthermore, the typed models achieve lower inference latency and computational cost than the evaluated chat-based large language models, highlighting their potential for efficient, zero-shot transportation decision-making. Overall, these findings demonstrate both the potential and limitations of typed decision models, emphasizing the importance of input design, task characteristics, and robustness evaluation for their effective application in transportation systems.",
       "matchedBy": [
@@ -571413,7 +571494,7 @@
       "source": "https://arxiv.org/abs/2611.24699v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24699.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Continual pre-training (CPT) is widely used to adapt pretrained language models to dialectal and non-standard language varieties, yet it remains unclear when this additional training is necessary, what drives its benefits, and whether aggregate evaluation scores adequately capture its effects. In this paper, we present a controlled study of CPT for Québec French language understanding across nine LLMs spanning different families and scales. Using a budget-matched protocol of 30M tokens per experiment, our results show that the benefit of CPT depends strongly on the starting model's existing competence in the target variety. When CPT is beneficial, the improvements are driven more by corpus composition than by data volume, with literary text accounting for most of the gain. Paired Québec and standard French evaluations further show that CPT primarily improves expression comprehension rather than grammatical competence, and that corpus register determines which regional expressions are acquired. These gains also involve capability-specific trade-offs, including declines in reading comprehension that aggregate scores can conceal. Overall, these findings show that CPT for dialectal adaptation should not be treated as a uniformly beneficial default. Instead, adaptation strategies should begin with a careful assessment of the base model's existing competence, accompanied by source-level data analysis and task-level evaluation.",
       "matchedBy": [
@@ -573517,7 +573598,7 @@
       "source": "https://arxiv.org/abs/2611.20335v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.20335.jpg",
       "firstSeenAt": "2026-11-17T05:16:55.492Z",
       "summary": "Language-model agents frequently select among candidate actions, such as tools and web elements. Should decision models score candidates independently or allow their scores to depend on other candidates? We investigate this question by comparing three approaches: Pointwise scoring, Setwise scoring, and Candidate Attention. Across five agent-decision benchmarks, Pointwise scoring remains competitive, while Setwise scoring performs better on some tool-selection and binary-decision tasks. Candidate Attention does not consistently improve upon Pointwise scoring, despite allowing cross-candidate interaction. Using two controlled synthetic tasks, we further examine whether models learn to use candidate-set information. With targeted relational training, Setwise models learn candidate dependencies and generalize to shifted inputs, while Candidate Attention shows weaker transfer. Our results show that access to other candidates does not guarantee effective comparison, and that its benefits depend on both task requirements and training.",
       "matchedBy": [
@@ -574013,7 +574094,7 @@
       "source": "https://arxiv.org/abs/2611.20702v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.20702.jpg",
       "firstSeenAt": "2026-11-17T05:16:55.492Z",
       "summary": "Upgrading the embedding model behind a vector index requires re-encoding the corpus. Recent work reuses the old index through adapters or window re-ranking. Across sixteen model pairs on passage and code corpora, plus eleven on Natural Questions (NQ), we find three results. First, reuse never avoids re-encoding: if migration must complete, every strategy eventually encodes every document; reuse only changes when that work is paid and the quality served meanwhile. Second, adapters should be compared with the old model, not only the new one. Of five adapter variants, only same-family LLM bridges beat the old model, and only by a negligible margin. Third, window re-ranking cost can be priced from the old index alone; pre-registered replays on all 8,841,823 passages confirmed the prediction on all three tested pairs. Workload skew also matters: across 36 further pre-registered Zipf replays, the planned family matched on 32. These findings yield three pre-migration rules: whether reuse is worthwhile, which strategy to use, and how deep a window to take. The depth rule priced every window that reached target quality to within 4 parts in 10^5 of the corpus. On NQ, a pre-committed plan selected the family on 10 of 11 pairs and priced every window exactly. Quality inputs transferred less reliably across corpus scale, so the model gap and window quality loss must be measured on the serving index.",
       "matchedBy": [
@@ -574039,7 +574120,7 @@
       "source": "https://arxiv.org/abs/2611.20417v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.20417.jpg",
       "firstSeenAt": "2026-11-17T05:16:55.492Z",
       "summary": "Cost-aware LLM routing often selects the cheapest policy meeting empirical risk and coverage constraints. Yet a router that passes an audit can violate its fixed service contract on new requests, even when candidate policies are constructed independently. We study this deployment-commitment decision with disjoint construction, audit, and test samples. Across 19 RouterBench task families, the cheapest audit-feasible router deploys in 91.82% of opportunities but violates the held-out contract in 32.22% of deployments. We introduce Menu-Aware Routing Commitment (MARC), which qualifies policies using audit evidence and a serving-cost tolerance to retain the apparent winner, deploy a supported alternative, or defer. Its practical policywise variant (MARC-P) reduces observed conditional failure to 0.73% at 85.79% deployment, with higher serving cost; fixed-margin and formal risk-control procedures provide competitive alternatives. Nested audits show how added evidence changes deployable policy sets, and learned semantic routing exhibits the same commitment failure. These results establish deployment commitment as a distinct operational decision connecting router evaluation, service reliability, and inference cost.",
       "matchedBy": [
@@ -574199,7 +574280,7 @@
       "source": "https://arxiv.org/abs/2611.22859v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.22859.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "A rare label seldom occurs alone, and a classifier can recover it from the frequent labels it co-occurs with, its companions, without having learned the label itself. Existing diagnostics of this need a trained model: none says before training whether a corpus admits the failure, or what the standard aggregate hides. Macro-F1, like any measure built from per-label confusion counts, is unchanged by how a label's recall divides between occurrences with and without a companion. We introduce a within-label estimand of that division, a reading rule under which a fall in dependence counts only if companion-free recall rises, and a statistic of training labels that bounds, before training, how far reported recall can exceed companion-free recall. Across 23 corpora, 7 training objectives and five families of label-correlation mechanisms, companion-free recall falls short on all six corpora where the estimand is defined. Up to 18.4% of the tail true positives macro-F1 credits would vanish at the companion-free rate, within the training-label bound on every corpus. No long-tail objective reduces the dependence, but architecture moves it. Models whose tail score is computed from other labels' predictions are strongly dependent.",
       "matchedBy": [
@@ -574251,7 +574332,7 @@
       "source": "https://arxiv.org/abs/2611.24470v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24470.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Planning with a visual world model requires deciding both which actions to execute and how long to search for them. We introduce Selective CEM Refinement (SCR), a learned rule for deciding whether to continue cross-entropy method (CEM) search with a frozen LeWorldModel. After five it- erations, the gate measures how far the mean first action chunk has moved, how much the mean terminal cost of elite plans has fallen, and how widely their first chunks vary. It returns the current plan for execution or continues the same search for ten more iterations. The gate requires no addi- tional world-model rollout. On 16 PushT scenes evaluated with two planning seeds, SCR succeeded in 25 of 32 trials, compared with 28 of 32 for fixed 15-iteration search (Fixed-15). All 25 SCR suc- cesses occurred in trials that Fixed-15 also solved, yield- ing 89.29% paired success retention. Across complete episodes, including replanning, SCR evaluated 23.81% fewer candidate plans and reduced mean controller time per eight-environment batch by 17.22%. Its observed suc- cess rate was 5.36 percentage points above an analytic mix- ture of the two fixed-depth controllers at the same expected candidate workload, although the difference changed sign across planning seeds. Compared with gating only at the initial solve under the same random-draw padding proto- col, gating again at replanning produced nine additional early exits. This reduced total candidate evaluations by 15.79%, while successes fell from 27 to 25.",
       "matchedBy": [
@@ -574303,7 +574384,7 @@
       "source": "https://arxiv.org/abs/2611.18458v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.18458.jpg",
       "firstSeenAt": "2026-11-17T05:16:55.492Z",
       "summary": "Clinical world models expose language-model agents to predicted patient responses, but simulations can be unreliable for poorly supported treatments or unfamiliar hospitals. We introduce Support-Gated World-Model decision support, a lightweight extension of a propose--simulate--refine agent. A recurrent dynamics ensemble predicts short-horizon physiological responses to documented norepinephrine dose categories, while a behavior model estimates observational action support. The interface withholds predictions with insufficient support or excessive ensemble disagreement and abstains when no candidate qualifies. Evaluation on eICU-CRD includes 70 hospitals and 30,700 decision transitions, with 14 hospitals held out for testing. At 62.0% factual-transition coverage, joint gating yields a MAP mean absolute error of 7.3 mmHg, compared with 9.2 mmHg for random selection at the same coverage. The gated agent achieves 60.0% agreement with recorded actions at 81.0% decision coverage, compared with 55.0% agreement and 99.5% coverage for an ungated ensemble agent. Component ablations show lower factual risk with joint gating than with either gate alone.These results characterize a reliability--coverage trade-off in selective clinical simulation; they do not identify individualized treatment effects or establish improved patient outcomes.",
       "matchedBy": [
@@ -575831,7 +575912,7 @@
       "source": "https://arxiv.org/abs/2611.23397v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.23397.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "On-policy distillation (OPD) trains a student language model to match a teacher model based on its own generations. When using OPD, one must choose whether to apply it at the sequence or token level and which divergence to minimize. However, despite the wide adoption of OPD in practice, the formal understanding of which OPD objective is appropriate for a given setting is limited. Toward addressing this gap, we theoretically analyze how the choice of OPD objective governs which tokens are prioritized, in what order, and how efficiently. Our analysis reveals that sequence-level OPD exhibits a future agreement bias, which myopic token-level objectives avoid. This bias induces a reverse learning order, in which sequence-level OPD first matches the teacher at later token positions, while at earlier positions it can favor tokens that are improbable under the teacher, and thus often undesirable. As for the choice of divergence, we prove that it strongly influences the amenability of OPD to gradient-based optimization. In particular, while the forward KL divergence enjoys a well-behaved objective landscape, other $f$-divergences, such as reverse KL, can suffer from vanishing gradients even when the student and teacher are far apart. Across language model post-training settings, we demonstrate the implications of these theoretical findings for which OPD objective is preferable, highlighting the importance of accounting for the interplay between the student, teacher, and task at hand.",
       "matchedBy": [
@@ -575939,7 +576020,7 @@
       "source": "https://arxiv.org/abs/2611.24888v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24888.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Large Language Models (LLMs) now perform strongly on Alan Turing's 1950 Imitation Game, so we propose a harder challenge, the Personal Imitation Game, which asks whether a machine can replicate a specific individual in conversation rather than a generic human. Testing with 30 participants, we establish a human baseline and report the identity signals interrogators rely on: stylometric features, personality traits, and biographical facts. To demonstrate the framework, we design an LLM-based system that plays the game for one of the paper's authors, drawing on an autoethnographic dataset spanning ten years of personal digital communication. In a 20-person deception study, interrogators choose our system over the author's own friends in 7 of 10 rounds, and the author over our system in 13 of 20; neither rate is distinguishable from chance at this sample size. We consider design improvements, applications of personal AI agents, and implications for identity and privacy.",
       "matchedBy": [
@@ -577571,7 +577652,7 @@
       "source": "https://arxiv.org/abs/2611.21882v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.21882.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "We present WM-Quant, to our knowledge, the first post-training quantization (PTQ) framework designed specifically for JEPA-style world models. Although world models typically feature relatively few parameters, action planning algorithms often require thousands of inferences, which can quickly become computationally expensive. PTQ is a natural way to reduce this cost. However, we show that in world models using autoregressive model predictive control (MPC) rollouts, quantization error can compound with each predictor step, resulting in action rankings from the quantized model becoming near-random. WM-Quant addresses this with three components that build on existing PTQ methods: early-encoder precision, control-path preservation, and rollout-aware scaling. Early-encoder precision protects accurate latent state and goal information to mitigate long-term error propagation. Control-path preservation allows the world model predictor to distinguish between fine-grained actions, significantly improving action rankings and execution. Rollout-aware scaling jointly calibrates encoder and per-step predictor activation ranges with respect to an entire rollout rather than a single prediction, reducing the cumulative rollout error. Across multiple world models, environments, and PTQ methods, WM-Quant substantially improves planning success at low bit-widths, approaching full-precision performance at W4A4.",
       "matchedBy": [
@@ -577683,7 +577764,7 @@
       "source": "https://arxiv.org/abs/2611.23192v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.23192.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "Goal recognition is the task of inferring an agent's intended goal from its observed behavior. Most existing work focuses on high-level symbolic recognition, abstracting away the continuous motion through which agents reach their goal. Methods that do reason over continuous trajectories rely on an explicit dynamics model that is hard to acquire and rarely transfers across settings. Neither approach explicitly learns how agents move toward each candidate goal, limiting accuracy on ambiguous trajectory prefixes where such knowledge is most needed. We present WoRD (Waypoint Recognition with Diffusion), which uses a learned trajectory prior to infer the agent's goal from partial observations. At each step, WoRD runs one warm-started denoising chain per candidate goal, steers each chain toward the observed trajectory through a closed-form log-likelihood gradient, and reweights the resulting samples by Bayes' rule into a calibrated posterior over goals. We evaluate WoRD on simulated robot settings, pedestrian trajectories, and vehicle trajectories using four metrics targeting distinct failure modes. Across all three settings, the same inference procedure preserves calibrated multimodal beliefs through ambiguous prefixes where filter- and classifier-based observers collapse to a single mode or grow overconfident.",
       "matchedBy": [
@@ -578551,7 +578632,7 @@
       "source": "https://arxiv.org/abs/2611.24869v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24869.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Rules govern how player actions change interactive worlds. Different rules create distinct gameplay experiences within similar scenes and action spaces. For customizable gameplay, generative world models must follow user-defined rules beyond real-world behaviors. However, realizing user-defined rules presents two challenges: Rule-State Persistence and Rule-to-Visual Realization. The former requires preserving rule definitions, dependencies, and world states across saving and loading, so that restored worlds follow the established rules. The latter requires accurately realizing rule-induced changes on designated objects and attributes, particularly when affected objects are unseen. In this paper, we propose WorldRuler, which organizes rule definitions, dependencies, and object states in an executable 3D rule graph and connects rule execution, video generation, and perceptual feedback in a closed loop. The graph supports joint saving and restoration of rules and world states, while dynamic object binding grounds rule-specified entities in visual instances and uses stored states to constrain generation from their first appearance. We further introduce object attribute state replacement and counterfactual reconstruction training, enabling accurate attribute control and compatible appearance and motion changes while limiting interference with unrelated content. We develop an automated data collection and annotation pipeline using GTA-V and Habitat to construct RuleVerse, a dataset of rule-driven interactions with detailed state and event annotations, including cases where rules take effect before affected objects become visible. Extensive experiments demonstrate the effectiveness of WorldRuler in preserving rule-state consistency across saving and loading and accurately realizing rule outcomes on designated objects and attributes.",
       "matchedBy": [
@@ -578689,7 +578770,7 @@
       "source": "https://arxiv.org/abs/2611.24187v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24187.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Visual inspection in field robotics and environmental monitoring must localize multiple targets under strict compute and sensing caps. Exhaustive sweeps waste calls on absent classes, while myopic and search-free policies stumble over heterogeneous tariff cliffs or discard viewport edits whose value emerges only after re-querying. We formulate inspection over frozen detectors as neuro-symbolic observation planning under partial observability, decoupling a compact recurrent world model (WM) from exact symbolic feasibility and tariff rules. Receding-horizon beam search with online replanning jointly schedules class queries, crops, enhancements, and termination (stop), paired with slack-aware shadow pricing and legal fallback at larger budgets. Across eight terrestrial, optical, and sonar benchmarks, multi-step lookahead outperforms static schedules and search-free offline RL under tight budgets -- gaining up to 28.4 AP percentage points over static priority on RUOD and 15.1 on ARIS -- while dynamic pricing lifts large-budget performance on all eight domains at 11 ms planning cost. Ultimately, pairing lightweight learned dynamics with exact symbolic constraints turns frozen detectors into adaptive, budget-aware inspection agents without retraining.",
       "matchedBy": [
@@ -579067,7 +579148,7 @@
       "source": "https://arxiv.org/abs/2611.20510v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.20510.jpg",
       "firstSeenAt": "2026-11-17T05:16:55.492Z",
       "summary": "Proposal-conditioned scene predictions can lack a common object-level reference across candidate trajectories. Aggregate planning scores also leave the objects and times associated with violations implicit. We present WTR-Drive (World-Task-Risk Driving), a Drive-JEPA-based planner that separates shared scene estimation from proposal-conditioned reasoning. A proposal-independent World Memory estimates object states, map structure, and future motion by re-reading the original visual features at each refinement round. Proposal feedback updates a residual Task branch without writing back to World Memory. This branch guides refinement through candidate-specific retrieval and gated visual feedback. A final Task readout supplies candidate-conditioned features for scoring. We derive structured risk targets from existing candidate-scoring rollouts without additional simulator calls. For at-fault collision and time-to-collision violations, the targets encode event existence, association with shared object slots, and the first violation time bin. On the NAVSIM navtest split, WTR-Drive achieves 94.66 PDMS on v1 and 88.24 EPDMS on v2 (expert-frame sequential evaluation). These scores are 0.96 and 0.44 points above the published Drive-JEPA values, respectively. Candidate-level analysis shows that higher best-candidate scores can coexist with lower selected-trajectory scores, revealing a gap between candidate quality and selection effectiveness.",
       "matchedBy": [
@@ -579455,7 +579536,7 @@
       "source": "https://arxiv.org/abs/2611.24283v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.24283.jpg",
       "firstSeenAt": "2026-11-19T04:09:26.492Z",
       "summary": "Accurate click-through rate (CTR) prediction depends on user representations that capture both persistent preferences and recent intent, yet processing extensive behavioral histories for every ranking request is costly under production compute and latency constraints. We present X-split ARGUS, a framework for ad ranking whose history compressor and online ranker are trained end to end. The compressor encodes past interactions into a compact set of tokens that are computed offline and reused across candidates, while the online ranker scores ads through cross-attention to these tokens and representations of recent events. Training combines an autoregressive loss for click feedback with distillation of candidate-specific click logits from a larger teacher that scores each candidate using the uncompressed history. The number of compressed history tokens and the length of recent history can be adjusted to fit serving compute and latency budgets. Offline evaluation shows a 0.81% relative reduction in normalized entropy (NE) compared with the production baseline. Deployment in a large-scale real-time bidding system increases online inference cost by 15% relative to the production baseline. An online A/B test against this baseline yields relative gains of 4.65% in a business metric reflecting the monetary value of conversions generated for advertisers and 2.96% in clicks.",
       "matchedBy": [
@@ -579889,7 +579970,7 @@
       "source": "https://arxiv.org/abs/2611.22280v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.22280.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "Sparse attention has been increasingly adopted by production LLMs for long-context inference, yet serving systems must still retain the full KV history, making GPU HBM capacity a key limit on serving concurrency. Existing systems offload the KV cache to host memory, but suffer from the limited bandwidth of PCIe and the limited capacity of host memory. Emerging scale-up memory pools (e.g., X-Mem) relieve both limits and open new opportunities for sparse-attention offloading. In this paper, we first conduct an in-depth analysis and reveal that, even with scale-up memory pools, decode throughput remains bounded by HBM capacity, as hot KV buffers and the fully resident indexer key (K-index) cache occupy substantial HBM. Moreover, the two caches exhibit distinct access patterns. Based on these insights, we present XM-Sparse, the first sparse-attention offloading system over scale-up memory expansion. The core idea of XM-Sparse is to offload both caches aggressively while matching each with an I/O mechanism tailored to its access pattern. Specifically, for dynamically selected KV entries, XM-Sparse fuses TMA-based retrieval with attention in a tile-level pipeline to hide on-demand retrieval latency. For predictable K-index accesses, it prefetches pages via SM-efficient GPU-initiated DMA and coordinates prefetching with latency-critical operations to avoid interfering with decoding. We have implemented XM-Sparse atop SGLang, and our experiments on DeepSeek-V3.2 and GLM-5.3 with an emulated scale-up memory pool show that XM-Sparse delivers up to 4.98$\\times$ and 4.52$\\times$ higher decode throughput than PCIe-based ECHO and HiSparse, respectively, and up to 1.34$\\times$ over a naive integration on the same platform, across 16K-1M contexts.",
       "matchedBy": [
@@ -579971,7 +580052,7 @@
       "source": "https://arxiv.org/abs/2611.20452v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.20452.jpg",
       "firstSeenAt": "2026-11-17T05:16:55.492Z",
       "summary": "We present XMimic and XSoma, which learn humanoid motion tracking and locomotion on rough terrain in under a minute of training. Both follow SuperMimic, which learns a world model of the robot and optimizes the policy with analytic gradients through short rollouts imagined in this model. Existing implementations of this method do not make use of larger GPUs, as every training iteration is a long chain of small GPU operations that run one after another. XMimic and XSoma therefore shorten this chain and run the steps of every iteration at the same time on up to four GPUs. We compile the complete training loop with JAX, including the MuJoCo Warp simulator. For locomotion, XSoma leaves only the dynamics of the robot to the world model and computes everything else exactly, including the terrain height under the feet. It learns with a horizon of one second and without a critic. On four H100 GPUs, XMimic learns to track all 40 LAFAN1 clips with the Unitree G1 in 0.86 minutes, 3.7 times faster than BlinkMimic on one GPU. XSoma reaches the tracking target that Holosoma's tests set for FastSAC in 0.77 minutes, 12.3 times faster than FastSAC on one GPU, while needing only an eighth of its environment steps.",
       "matchedBy": [
@@ -580163,7 +580244,7 @@
       "source": "https://arxiv.org/abs/2611.22898v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.22898.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "Arbitrary-scale super-resolution (ASSR) of remote sensing images remains challenging due to the limited high-frequency information in a single low-resolution (LR) observation. While multi-frame SR can exploit complementary sub-pixel information, existing approaches often require real multi-frame training sequences and repeated feature encoding, increasing data acquisition demands and computational costs. To address these limitations, we propose SPS-GS (Sub-Pixel-Shifted Gaussian Splatting), an encode-once framework that learns from multi-phase LR observations synthesized from individual high-resolution images, without requiring real multi-frame training sequences. Specifically, Phase-Coherent Aliasing Demodulation (PCAD) exploits shift-dependent aliasing through Fourier-based alignment, phase-aware residual fusion, and least-squares aliasing estimation, enabling multi-frame information to be integrated before a single deep encoding pass. Gaussian Projection Alignment (GPA) then iteratively refines Gaussian centers and colors using multi-observation back-projection to promote observation consistency. The refined Gaussians support continuous rendering at arbitrary scales. Extensive experiments on five remote sensing datasets demonstrate strong reconstruction performance against single-image and multi-frame SR baselines, while maintaining competitive inference efficiency at common scales. The code will be publicly released.",
       "matchedBy": [
@@ -580633,7 +580714,7 @@
       "source": "https://arxiv.org/abs/2611.22797v1",
       "code": "",
       "project": "",
-      "thumbnail": "",
+      "thumbnail": "./thumbs/2611.22797.jpg",
       "firstSeenAt": "2026-11-18T04:15:32.220Z",
       "summary": "Robot demonstrations are collected on different embodiments, leaving many robot-skill combinations unobserved. Pooling these data shares visual knowledge, while joint labels remain tied to the demonstrating kinematic chain. We propose a geometry-supervised training framework for zero-shot composition of familiar robots and skills. The central insight is that a demonstrated command provides a tool-space target for every robot that can realize it. Calibrated forward kinematics supplies this supervision to foreign native action interfaces without their joint labels for that skill. Native reconstruction retains demonstrated configurations, and positive reachability checks select targets for cross-robot supervision. A visual policy learns to predict shared actions and executes through the target robot's native decoder. During policy learning, one prediction receives geometric supervision through both source and foreign native realizations. Matched supervision controls, repeated policy training and evaluations across three backbones and two simulators demonstrate improved transfer to missing robot-task combinations.",
       "matchedBy": [
