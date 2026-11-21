@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T04:22:24.964Z",
+  "generatedAt": "2026-11-21T04:09:12.009Z",
   "signals": [
     {
       "id": "2123130414323888463",
@@ -12,9 +12,9 @@
       "permalink": "https://twitter.com/gdb/status/2123130414323888463",
       "media": [],
       "metrics": {
-        "like_count": 1210,
+        "like_count": 1234,
         "retweet_count": 92,
-        "reply_count": 78
+        "reply_count": 84
       },
       "urls": []
     },
@@ -32,6 +32,23 @@
         "like_count": 2413,
         "retweet_count": 98,
         "reply_count": 139
+      },
+      "urls": []
+    },
+    {
+      "id": "2122724571220472161",
+      "handle": "chris_j_paxton",
+      "name": "Chris Paxton",
+      "avatar": "https://pbs.twimg.com/profile_images/1330994153518411777/2LfHg9GF_normal.jpg",
+      "verified": true,
+      "text": "We usually explain the superiority of diffusion policy and flow-matching policies for robotics imitation learning as better support for multimodality, but paradoxically we always see that good real-world results hinge on removing essentially all multimodality from robot data.",
+      "createdAt": "Tue Nov 17 16:12:30 +0000 2026",
+      "permalink": "https://twitter.com/chris_j_paxton/status/2122724571220472161",
+      "media": [],
+      "metrics": {
+        "like_count": 78,
+        "retweet_count": 3,
+        "reply_count": 9
       },
       "urls": []
     },
@@ -68,9 +85,9 @@
       "permalink": "https://twitter.com/elonmusk/status/2122408454325416322",
       "media": [],
       "metrics": {
-        "like_count": 40971,
-        "retweet_count": 4869,
-        "reply_count": 5685
+        "like_count": 42442,
+        "retweet_count": 5076,
+        "reply_count": 6624
       },
       "urls": []
     },
@@ -186,9 +203,9 @@
         }
       ],
       "metrics": {
-        "like_count": 81,
+        "like_count": 83,
         "retweet_count": 14,
-        "reply_count": 8
+        "reply_count": 9
       },
       "urls": []
     },
@@ -274,23 +291,6 @@
         "like_count": 103,
         "retweet_count": 10,
         "reply_count": 18
-      },
-      "urls": []
-    },
-    {
-      "id": "2112950889808097708",
-      "handle": "pabbeel",
-      "name": "Pieter Abbeel",
-      "avatar": "https://pbs.twimg.com/profile_images/1305267627/61089_706033241563_202809_38806847_7322449_n_normal.jpg",
-      "verified": true,
-      "text": "Game changer for humanoid full-body control training.  Now it's superfast (and cheap, just one GPU) to train a single policy on *all* the motions.  How come:\n(1) World model much faster than regular sim\n(2) Backprop through time collects way more signal than policy gradients",
-      "createdAt": "Wed Oct 21 16:55:23 +0000 2026",
-      "permalink": "https://twitter.com/pabbeel/status/2112950889808097708",
-      "media": [],
-      "metrics": {
-        "like_count": 687,
-        "retweet_count": 67,
-        "reply_count": 19
       },
       "urls": []
     }
